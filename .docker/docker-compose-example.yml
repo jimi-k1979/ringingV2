@@ -1,0 +1,52 @@
+version: '3'
+
+# define the network
+networks:
+  web-network:
+
+# containers...
+services:
+  # cli container (phpUnit)
+  php-cli:
+    build:
+      context: ./php-cli
+    tty: true
+    volumes:
+      - ../:/var/www/gen2portal
+    networks:
+      - web-network
+
+  # fpm container
+  php-fast-cgi:
+    build:
+      context: ./php-fpm
+    tty: true
+    volumes:
+      - ../:/var/www/
+    networks:
+      - web-network
+
+  # nginx web server (could be used as a proxy)
+  webserver:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    tty: true
+    # connect to code and nginx config
+    volumes:
+      - ../:/var/www/
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - web-network
+
+  # mysql database
+  database:
+    build:
+      context: ./mysql
+    volumes:
+      - ../dbFiles/:/var/lib/mysql
+    networks:
+      - web-network
+    environment:
+      - MYSQL_ROOT_PASSWORD=exmaplePassword
