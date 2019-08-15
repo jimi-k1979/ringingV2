@@ -40,12 +40,12 @@ services:
     networks:
       - web-network
 
-  # mysql database
+  # postgres database
   database:
     build:
-      context: ./mysql
+      context: postgres
     volumes:
-      - ../dbFiles/:/var/lib/mysql
+      - ../dbFiles/:/var/lib/postgres
     networks:
       - web-network
     environment:
