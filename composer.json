@@ -1,0 +1,22 @@
+{
+  "name": "jimi-k1979/drl-archive",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "James Kerslake",
+      "email": "james@myconid.co.uk"
+    }
+  ],
+  "require": {
+
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "DrlArchive\\": "src/"
+    }
+  }
+}
