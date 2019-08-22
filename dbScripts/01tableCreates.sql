@@ -168,7 +168,7 @@ CREATE TABLE `extended_ring_part`
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
 
-CREATE TABLE `extended_ring_ringer`
+CREATE TABLE `extended_ring_part_ringer`
 (
     `id`                 int unsigned                           NOT NULL AUTO_INCREMENT,
     `extendedRingPartID` int unsigned                           NOT NULL,
@@ -176,10 +176,10 @@ CREATE TABLE `extended_ring_ringer`
     `bell`               varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
     `isConductor`        tinyint unsigned                       NOT NULL DEFAULT '0',
     PRIMARY KEY (`id`),
-    KEY `fk_extended_ring_ringer_part_idx` (`extendedRingPartID`),
-    KEY `fk_extended_ring_ringer_ringer_idx` (`ringerId`),
-    CONSTRAINT `fk_extended_ring_ringer_part` FOREIGN KEY (`extendedRingPartID`) REFERENCES `extended_ring_part` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT `fk_extended_ring_ringer_ringer` FOREIGN KEY (`ringerId`) REFERENCES `ringer` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+    KEY `fk_extended_ring_part_ringer_part_idx` (`extendedRingPartID`),
+    KEY `fk_extended_ring_part_ringer_ringer_idx` (`ringerId`),
+    CONSTRAINT `fk_extended_ring_part_ringer_part` FOREIGN KEY (`extendedRingPartID`) REFERENCES `extended_ring_part` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `fk_extended_ring_part_ringer_ringer` FOREIGN KEY (`ringerId`) REFERENCES `ringer` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;

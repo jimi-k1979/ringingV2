@@ -12,7 +12,7 @@ services:
       context: ./php-cli
     tty: true
     volumes:
-      - ../:/var/www/
+      - ../:/var/www
     networks:
       - web-network
 
@@ -22,7 +22,7 @@ services:
       context: ./php-fpm
     tty: true
     volumes:
-      - ../:/var/www/
+      - ../:/var/www
     networks:
       - web-network
 
@@ -40,18 +40,19 @@ services:
     networks:
       - web-network
 
-  # postgresql database
+  # mysql database
   database:
     build:
-      context: mysql
+      context: ./mysql
     volumes:
-      - ../dbFiles/:/var/lib/postgresql
+      - ../dbFiles/:/dbFiles/
+      - ../dbScripts/:/docker-entrypoint-initdb.d/
     networks:
       - web-network
     ports:
-      - "5432:5432"
+      - "3306:3306"
     environment:
-      - POSTGRES_DB=ringingV2
-      - POSTGRES_USER=EnterAUser
-      - POSTGRES_PASSWORD=EnterAPassword
-
+      - MYSQL_ROOT_PASSWORD=examplePassword
+      - MYSQL_DATABASE=ringingV2
+      - MYSQL_USER=ringer
+      - MYSQL_PASSWORD=examplePassword2
