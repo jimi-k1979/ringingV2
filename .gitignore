@@ -2,3 +2,4 @@
 .docker/docker-compose.yml
 dbFiles
 vendor
+/composer.lock
