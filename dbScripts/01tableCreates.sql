@@ -106,7 +106,7 @@ CREATE TABLE `DRL_incomplete_competition`
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
 
-CREATE TABLE `DRL_results`
+CREATE TABLE `DRL_result`
 (
     `id`         int unsigned     NOT NULL AUTO_INCREMENT,
     `position`   tinyint unsigned NOT NULL,
