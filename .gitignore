@@ -1,5 +1,5 @@
 .idea
-.docker/docker-compose.yml
+docker-compose.yml
 dbFiles
 vendor
-/composer.lock
+/html/phpinfo.php
