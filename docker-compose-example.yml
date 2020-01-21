@@ -9,7 +9,7 @@ services:
   # cli container (phpUnit)
   php-cli:
     build:
-      context: ./php-cli
+      context: .docker/php-cli
     tty: true
     volumes:
       - ../:/var/www
@@ -19,7 +19,7 @@ services:
   # fpm container
   php-fast-cgi:
     build:
-      context: ./php-fpm
+      context: .docker/php-fpm
     tty: true
     volumes:
       - ../:/var/www
@@ -29,7 +29,7 @@ services:
   # nginx web server (could be used as a proxy)
   webserver:
     build:
-      context: ./nginx
+      context: .docker/nginx
     ports:
       - "80:80"
     tty: true
@@ -43,7 +43,7 @@ services:
   # mysql database
   database:
     build:
-      context: ./mysql
+      context: .docker/mysql
     volumes:
       - ../dbFiles/:/dbFiles/
       - ../dbScripts/:/docker-entrypoint-initdb.d/
