@@ -2,6 +2,7 @@ CREATE TABLE `deanery`
 (
     `id`          int unsigned                           NOT NULL AUTO_INCREMENT,
     `deaneryName` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `northSouth`  enum ('north', 'south', 'outOfCounty'),
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
@@ -111,7 +112,7 @@ CREATE TABLE `DRL_result`
     `id`         int unsigned     NOT NULL AUTO_INCREMENT,
     `position`   tinyint unsigned NOT NULL,
     `pealNumber` tinyint unsigned DEFAULT NULL,
-    `faults`     float unsigned   NOT NULL,
+    `faults`     float            NOT NULL,
     `teamID`     int unsigned     NOT NULL,
     `eventID`    int unsigned     NOT NULL,
     `points`     tinyint unsigned NOT NULL,
@@ -256,7 +257,7 @@ CREATE TABLE `ladder_result`
     `id`          int unsigned       NOT NULL AUTO_INCREMENT,
     `fixtureId`   int unsigned       NOT NULL,
     `teamId`      int unsigned       NOT NULL,
-    `faults`      float unsigned     NOT NULL,
+    `faults`      float              NOT NULL,
     `winLoseDraw` enum ('w','l','d') NOT NULL,
     PRIMARY KEY (`id`),
     KEY `fk_ladder_result_fixture_idx` (`fixtureId`),
@@ -296,7 +297,7 @@ CREATE TABLE `other_result`
     `id`         int unsigned     NOT NULL AUTO_INCREMENT,
     `position`   tinyint unsigned NOT NULL,
     `pealNumber` tinyint unsigned DEFAULT NULL,
-    `faults`     float unsigned   NOT NULL,
+    `faults`     float            NOT NULL,
     `teamID`     int unsigned     NOT NULL,
     `eventID`    int unsigned     NOT NULL,
     PRIMARY KEY (`id`),
@@ -306,4 +307,4 @@ CREATE TABLE `other_result`
     CONSTRAINT `fk_other_result_team` FOREIGN KEY (`teamID`) REFERENCES `team` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
+  COLLATE = utf8mb4_unicode_ci;
