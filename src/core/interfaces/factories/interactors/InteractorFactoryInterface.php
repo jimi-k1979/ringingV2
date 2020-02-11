@@ -1,12 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace DrlArchive\core\interfaces\factories\interactors;
+namespace DrlArchive\core\factories\interactors;
 
 
 use DrlArchive\core\classes\Request;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+
 
 interface InteractorFactoryInterface
 {
