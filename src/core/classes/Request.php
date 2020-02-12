@@ -56,7 +56,8 @@ class Request
             if (isset($data[$key])) {
                 $this->updateModel($key, $data[$key]);
             } else {
-                $this->data[$key] = $this->schema[$key][$data[$key]['default'] ?? self::OPTION_DEFAULT] ?? null;
+                $this->data[$key] =
+                    $this->schema[$key][$data[$key]['default'] ?? self::OPTION_DEFAULT] ?? null;
             }
         }
     }
@@ -122,7 +123,8 @@ class Request
 
     private function checkForEmptyValue(string $field, $value): void
     {
-        $isRequired = $this->schema[$field][self::OPTION_REQUIRED] ?? self::DEFAULT_REQUIRED;
+        $isRequired = $this->schema[$field][self::OPTION_REQUIRED] ??
+            self::DEFAULT_REQUIRED;
 
         if ($isRequired && ('' === $value || $value === null)) {
             throw new InvalidArgumentException($field . ' is required');
@@ -165,7 +167,9 @@ class Request
     private function verifyEmail(string $value): void
     {
         if (filter_var($value, FILTER_VALIDATE_EMAIL) === false) {
-            throw new InvalidArgumentException('"' . $value . '" is not a valid email address.');
+            throw new InvalidArgumentException(
+                '"' . $value . '" is not a valid email address.'
+            );
         }
 
     }
@@ -174,11 +178,15 @@ class Request
     private function verifyString(string $field, $value): void
     {
         if (!is_string($value)) {
-            throw new InvalidArgumentException($field . ' is not a valid string.');
+            throw new InvalidArgumentException(
+                $field . ' is not a valid string.'
+            );
         }
 
-        $minLength = $this->schema[$field][self::OPTION_MIN] ?? self::DEFAULT_STRING_MIN_LENGTH;
-        $maxLength = $this->schema[$field][self::OPTION_MAX] ?? self::DEFAULT_STRING_MAX_LENGTH;
+        $minLength = $this->schema[$field][self::OPTION_MIN] ??
+            self::DEFAULT_STRING_MIN_LENGTH;
+        $maxLength = $this->schema[$field][self::OPTION_MAX] ??
+            self::DEFAULT_STRING_MAX_LENGTH;
 
         $valueLength = strlen($value);
 
@@ -203,15 +211,28 @@ class Request
     {
         $not_strict = false;
 
-        if (in_array($value, $this->schema[$field][self::OPTION_ALLOWED], $not_strict) === false) {
-            throw new InvalidArgumentException('The value provided for ' . $field . ' is not allowed');
+        if (
+            in_array(
+                $value,
+                $this->schema[$field][self::OPTION_ALLOWED], $not_strict
+            ) === false
+        ) {
+            throw new InvalidArgumentException(
+                'The value provided for ' . $field . ' is not allowed'
+            );
         }
     }
 
 
     private function verifyBool($value): void
     {
-        if (filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE) === null) {
+        if (
+            filter_var(
+                $value,
+                FILTER_VALIDATE_BOOLEAN,
+                FILTER_NULL_ON_FAILURE
+            ) === null
+        ) {
             throw new InvalidArgumentException('Value is not a boolean');
         }
     }
@@ -225,7 +246,14 @@ class Request
 
         $not_strict = false;
 
-        if (isset($field['allowed']) && in_array($value->getType(), $field['allowed'], $not_strict) === false) {
+        if (
+            isset($field['allowed']) &&
+            in_array(
+                $value->getType(),
+                $field['allowed'],
+                $not_strict
+            ) === false
+        ) {
             throw new InvalidArgumentException(
                 'Invalid file type, must be one of "'
                 . implode(', ', $field['allowed']));
@@ -327,7 +355,9 @@ class Request
     private function verifyBoolean(bool $value): void
     {
         if (filter_var($value, FILTER_VALIDATE_BOOLEAN) === false) {
-            throw new InvalidArgumentException('"' . $value . '" is not a valid boolean.');
+            throw new InvalidArgumentException(
+                '"' . $value . '" is not a valid boolean.'
+            );
         }
     }
 }
