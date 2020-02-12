@@ -10,22 +10,22 @@ use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 class TeamSql extends MysqlRepository implements TeamRepositoryInterface
 {
 
-    public function insertTeam(): TeamEntity
+    public function insertTeam(TeamEntity $teamEntity): TeamEntity
     {
         // TODO: Implement insertTeam() method.
     }
 
-    public function selectTeam(): TeamEntity
+    public function selectTeam(int $teamId): TeamEntity
     {
         // TODO: Implement selectTeam() method.
     }
 
-    public function updateTeam(): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): TeamEntity
     {
         // TODO: Implement updateTeam() method.
     }
 
-    public function deleteTeam(): bool
+    public function deleteTeam(TeamEntity $teamEntity): bool
     {
         // TODO: Implement deleteTeam() method.
     }

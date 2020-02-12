@@ -46,9 +46,10 @@ class TeamSpy implements TeamRepositoryInterface
     private $deletedCalled = false;
 
     /**
+     * @param TeamEntity $teamEntity
      * @return TeamEntity
      */
-    public function insertTeam(): TeamEntity
+    public function insertTeam(TeamEntity $teamEntity): TeamEntity
     {
         $this->insertCalled = true;
 
@@ -72,9 +73,10 @@ class TeamSpy implements TeamRepositoryInterface
     }
 
     /**
+     * @param int $teamId
      * @return TeamEntity
      */
-    public function selectTeam(): TeamEntity
+    public function selectTeam(int $teamId): TeamEntity
     {
         $this->selectCalled = true;
 
@@ -98,9 +100,10 @@ class TeamSpy implements TeamRepositoryInterface
     }
 
     /**
+     * @param TeamEntity $teamEntity
      * @return TeamEntity
      */
-    public function updateTeam(): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): TeamEntity
     {
         $this->updateCalled = true;
 
@@ -124,9 +127,10 @@ class TeamSpy implements TeamRepositoryInterface
     }
 
     /**
+     * @param TeamEntity $teamEntity
      * @return bool
      */
-    public function deleteTeam(): bool
+    public function deleteTeam(TeamEntity $teamEntity): bool
     {
         $this->deletedCalled = true;
 

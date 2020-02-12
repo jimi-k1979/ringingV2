@@ -18,11 +18,11 @@ abstract class Interactor implements InteractorInterface
     /**
      * @var PresenterInterface|null
      */
-    private $presenter;
+    protected $presenter;
     /**
      * @var Request|null
      */
-    private $request;
+    protected $request;
 
     /**
      * @param PresenterInterface|null $presenter
