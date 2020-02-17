@@ -15,7 +15,7 @@ class DeaneryDummy implements DeaneryRepositoryInterface
         return new DeaneryEntity();
     }
 
-    public function selectDeanery(int $deaneryId): DeaneryEntity
+    public function selectDeanery(int $id): DeaneryEntity
     {
         return new DeaneryEntity();
     }

@@ -17,7 +17,7 @@ class CreateTeamRequest extends Request
             parent::OPTION_REQUIRED => true,
         ],
         self::DEANERY => [
-            parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
+            parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_REQUIRED => true,
         ],
     ];
@@ -32,12 +32,12 @@ class CreateTeamRequest extends Request
         $this->updateModel(self::NAME, $input);
     }
 
-    public function getDeanery(): string
+    public function getDeanery(): int
     {
         return $this->data[self::DEANERY];
     }
 
-    public function setDeanery(string $input): void
+    public function setDeanery(int $input): void
     {
         $this->updateModel(self::DEANERY, $input);
     }
