@@ -30,6 +30,10 @@ class DeanerySpy implements DeaneryRepositoryInterface
      * @var bool
      */
     private $throwException = false;
+    /**
+     * @var bool
+     */
+    private $selectDeaneryCalled = false;
 
 
     public function setRepositoryThrowsException(): void
@@ -91,5 +95,12 @@ class DeanerySpy implements DeaneryRepositoryInterface
     public function hasSelectDeaneryBeenCalled(): bool
     {
         return $this->selectDeaneryCalled;
+    }
+
+    public function selectDeanery(int $deaneryId): DeaneryEntity
+    {
+        $this->selectDeaneryCalled = true;
+
+        return $this->deaneryValue ?? $this->createMockDeanery();
     }
 }
