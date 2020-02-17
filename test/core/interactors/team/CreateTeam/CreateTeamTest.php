@@ -9,6 +9,7 @@ use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeamRequest;
+use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
 use mocks\DeaneryDummy;
 use mocks\DeanerySpy;
 use mocks\PreseenterDummy;
@@ -144,6 +145,38 @@ class CreateTeamTest extends TestCase
                 'name' => 'Test team',
                 'deanery' => 'Test deanery',
             ],
+            $response->getData()
+        );
+    }
+
+    public function testFailingResponse(): void
+    {
+        $presenterSpy = new PresenterSpy();
+        $deanerySpy = new DeanerySpy();
+        $deanerySpy->setRepositoryThrowsException();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenterSpy);
+        $useCase->setDeaneryRepository($deanerySpy);
+        $useCase->execute();
+
+        $response = $presenterSpy->getResponse();
+
+        $this->assertEquals(
+            Response::STATUS_NOT_CREATED,
+            $response->getStatus()
+        );
+        $this->assertEquals(
+            'Team not created',
+            $response->getMessage()
+        );
+
+        $expectedData = [
+            'message' => 'No deanery found',
+            'code' => DeaneryRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+        ];
+        $this->assertEquals(
+            $expectedData,
             $response->getData()
         );
     }

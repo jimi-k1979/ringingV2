@@ -30,10 +30,6 @@ class DeanerySpy implements DeaneryRepositoryInterface
      * @var bool
      */
     private $throwException = false;
-    /**
-     * @var bool
-     */
-    private $selectDeaneryCalled = false;
 
 
     public function setRepositoryThrowsException(): void
@@ -82,7 +78,8 @@ class DeanerySpy implements DeaneryRepositoryInterface
         $this->selectDeaneryCalled = true;
         if ($this->throwException) {
             throw new RepositoryNoResults(
-                'No deanery found'
+                'No deanery found',
+                DeaneryRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
 
@@ -95,12 +92,5 @@ class DeanerySpy implements DeaneryRepositoryInterface
     public function hasSelectDeaneryBeenCalled(): bool
     {
         return $this->selectDeaneryCalled;
-    }
-
-    public function selectDeanery(int $deaneryId): DeaneryEntity
-    {
-        $this->selectDeaneryCalled = true;
-
-        return $this->deaneryValue ?? $this->createMockDeanery();
     }
 }

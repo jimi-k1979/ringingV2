@@ -8,6 +8,11 @@ use DrlArchive\core\entities\TeamEntity;
 
 interface TeamRepositoryInterface
 {
+    const UNABLE_TO_INSERT_EXCEPTION = 2201;
+    const NO_ROWS_FOUND_EXCEPTION = 2202;
+    const NO_ROWS_UPDATED = 2203;
+    const NO_ROWS_DELETED = 2204;
+
     public function insertTeam(TeamEntity $teamEntity): TeamEntity;
 
     public function selectTeam(int $teamId): TeamEntity;

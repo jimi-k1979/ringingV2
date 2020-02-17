@@ -76,20 +76,20 @@ class CreateTeam extends Interactor
             $this->transactionManager->commitTransaction();
         } catch (Exception $e) {
             $this->transactionManager->rollbackTransaction();
-            $this->createFailingResponse();
+            $this->createFailingResponse($e);
         }
 
         $this->sendResponse();
     }
 
-    private function fetchDeaneryEntity()
+    private function fetchDeaneryEntity(): void
     {
         $this->deaneryEntity = $this->deaneryRepository->selectDeanery(
             $this->request->getDeanery()
         );
     }
 
-    private function createTeamEntity()
+    private function createTeamEntity(): void
     {
         $teamEntity = new TeamEntity();
         $teamEntity->setName(
@@ -103,7 +103,7 @@ class CreateTeam extends Interactor
 
     }
 
-    private function createResponse()
+    private function createResponse(): void
     {
         $this->response = new CreateTeamResponse([
             Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
@@ -116,9 +116,16 @@ class CreateTeam extends Interactor
         ]);
     }
 
-    private function createFailingResponse()
+    private function createFailingResponse(Exception $e): void
     {
-
+        $this->response = new CreateTeamResponse([
+            Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
+            Response::RESPONSE_MESSAGE => 'Team not created',
+            Response::RESPONSE_DATA => [
+                'message' => $e->getMessage(),
+                'code' => $e->getCode(),
+            ],
+        ]);
     }
 
 
