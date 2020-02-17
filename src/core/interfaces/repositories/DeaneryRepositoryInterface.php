@@ -8,5 +8,7 @@ use DrlArchive\core\entities\DeaneryEntity;
 
 interface DeaneryRepositoryInterface
 {
+    public function selectDeanery(int $id): DeaneryEntity;
+
     public function getDeaneryByName(string $name): DeaneryEntity;
 }

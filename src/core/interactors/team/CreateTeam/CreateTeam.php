@@ -84,7 +84,7 @@ class CreateTeam extends Interactor
 
     private function fetchDeaneryEntity()
     {
-        $this->deaneryEntity = $this->deaneryRepository->getDeaneryByName(
+        $this->deaneryEntity = $this->deaneryRepository->selectDeanery(
             $this->request->getDeanery()
         );
     }

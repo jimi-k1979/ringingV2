@@ -38,7 +38,7 @@ class CreateTeamTest extends TestCase
         $request = new CreateTeamRequest(
             [
                 CreateTeamRequest::NAME => 'Test Team',
-                CreateTeamRequest::DEANERY => 'Test Deanery',
+                CreateTeamRequest::DEANERY => 1,
             ]
         );
         $useCase = new CreateTeam();
@@ -69,7 +69,7 @@ class CreateTeamTest extends TestCase
     {
         $transactionSpy = new TransactionManagerSpy();
         $deanerySpy = new DeanerySpy();
-        $deanerySpy->getDeaneryByNameThrowsException();
+        $deanerySpy->setRepositoryThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setDeaneryRepository($deanerySpy);
