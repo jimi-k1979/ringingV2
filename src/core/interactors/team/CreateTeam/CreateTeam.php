@@ -5,7 +5,6 @@ namespace DrlArchive\core\interactors\team\CreateTeam;
 
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
@@ -28,10 +27,6 @@ class CreateTeam extends Interactor
      * @var TransactionManagerInterface
      */
     private $transactionManager;
-    /**
-     * @var DeaneryEntity
-     */
-    private $deaneryEntity;
     /**
      * @var TeamEntity
      */
@@ -70,8 +65,8 @@ class CreateTeam extends Interactor
     {
         try {
             $this->transactionManager->startTransaction();
-            $this->fetchDeaneryEntity();
-            $this->createTeamEntity();
+            $this->createEntity();
+            $this->writeToDatabase();
             $this->createResponse();
             $this->transactionManager->commitTransaction();
         } catch (Exception $e) {
@@ -82,25 +77,23 @@ class CreateTeam extends Interactor
         $this->sendResponse();
     }
 
-    private function fetchDeaneryEntity(): void
+    private function createEntity(): void
     {
-        $this->deaneryEntity = $this->deaneryRepository->selectDeanery(
-            $this->request->getDeanery()
+        $this->teamEntity = new TeamEntity();
+        $this->teamEntity->setName(
+            $this->request->getName()
+        );
+        $this->teamEntity->setDeanery(
+            $this->deaneryRepository->selectDeanery(
+                $this->request->getDeanery()
+            )
         );
     }
 
-    private function createTeamEntity(): void
+    private function writeToDatabase(): void
     {
-        $teamEntity = new TeamEntity();
-        $teamEntity->setName(
-            $this->request->getName()
-        );
-        $teamEntity->setDeanery(
-            $this->deaneryEntity
-        );
-
-        $this->teamEntity = $this->teamRepository->insertTeam($teamEntity);
-
+        $this->teamEntity = $this->teamRepository
+            ->insertTeam($this->teamEntity);
     }
 
     private function createResponse(): void
