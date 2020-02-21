@@ -27,13 +27,27 @@ class CompetitionEntityTest extends TestCase
         );
     }
 
-    public function testName(): void
+    public function testNameProperty(): void
     {
         $competition = new CompetitionEntity();
         $competition->setName('Test');
         $this->assertEquals(
             'Test',
             $competition->getName()
+        );
+    }
+
+    public function testSingleTowerCompetitionProperty(): void
+    {
+        $competition = new CompetitionEntity();
+        $competition->setSingleTowerCompetition(true);
+        $this->assertTrue(
+            $competition->isSingleTowerCompetition()
+        );
+
+        $competition->setSingleTowerCompetition(false);
+        $this->assertFalse(
+            $competition->isSingleTowerCompetition()
         );
     }
 }

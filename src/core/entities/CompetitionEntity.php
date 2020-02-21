@@ -10,6 +10,10 @@ class CompetitionEntity extends Entity
      * @var string
      */
     private $name;
+    /**
+     * @var bool
+     */
+    private $singleTowerCompetition;
 
     /**
      * @return string
@@ -25,6 +29,22 @@ class CompetitionEntity extends Entity
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSingleTowerCompetition(): bool
+    {
+        return $this->singleTowerCompetition;
+    }
+
+    /**
+     * @param bool $singleTowerCompetition
+     */
+    public function setSingleTowerCompetition(bool $singleTowerCompetition): void
+    {
+        $this->singleTowerCompetition = $singleTowerCompetition;
     }
 
 }
