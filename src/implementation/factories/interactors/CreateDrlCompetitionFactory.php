@@ -10,7 +10,7 @@ use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompet
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
-use DrlArchive\implementation\factories\repositories\DrlDrlCompetitionRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\DrlCompetitionRepositoryFactory;
 
 class CreateDrlCompetitionFactory implements InteractorFactoryInterface
 {
@@ -20,7 +20,7 @@ class CreateDrlCompetitionFactory implements InteractorFactoryInterface
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
-        $useCase->setCompetitionRepository((new DrlDrlCompetitionRepositoryFactory())->create());
+        $useCase->setCompetitionRepository((new DrlCompetitionRepositoryFactory())->create());
         $useCase->setTransactionManager((new TransactionManagerFactory())->create());
         return $useCase;
 
