@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-namespace core\interactors\competition\createCompetition;
+namespace core\interactors\competition\createDrlCompetition;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\competition\createCompetition\CreateCompetition;
-use DrlArchive\core\interactors\competition\createCompetition\CreateCompetitionRequest;
+use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetition;
+use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
+use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use mocks\DrlCompetitionDummy;
+use mocks\DrlCompetitionSpy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
 use mocks\TransactionManagerDummy;
 use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
 
-class CreateCompetitionTest extends TestCase
+class CreateDrlCompetitionTest extends TestCase
 {
     public function testInstantiation(): void
     {
@@ -29,19 +29,19 @@ class CreateCompetitionTest extends TestCase
     }
 
     /**
-     * @return CreateCompetition
+     * @return CreateDrlCompetition
      */
-    public function createUseCase(): CreateCompetition
+    public function createUseCase(): CreateDrlCompetition
     {
-        $request = new CreateCompetitionRequest([
-            CreateCompetitionRequest::COMPETITION_NAME => 'Test competition',
-            CreateCompetitionRequest::IS_SINGLE_TOWER => true,
+        $request = new CreateDrlCompetitionRequest([
+            CreateDrlCompetitionRequest::COMPETITION_NAME => 'Test competition',
+            CreateDrlCompetitionRequest::IS_SINGLE_TOWER => true,
         ]);
 
-        $useCase = new CreateCompetition();
+        $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
-        $useCase->setCompetitionRepository(new CompetitionDummy());
+        $useCase->setCompetitionRepository(new DrlCompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
         return $useCase;
     }
@@ -60,7 +60,7 @@ class CreateCompetitionTest extends TestCase
 
     public function testInsertEntity(): void
     {
-        $competitionSpy = new CompetitionSpy();
+        $competitionSpy = new DrlCompetitionSpy();
         $useCase = $this->createUseCase();
         $useCase->setCompetitionRepository($competitionSpy);
         $useCase->execute();
@@ -85,7 +85,7 @@ class CreateCompetitionTest extends TestCase
     public function testTransactionRollbackOnFailure(): void
     {
         $transactionSpy = new TransactionManagerSpy();
-        $competitionSpy = new CompetitionSpy();
+        $competitionSpy = new DrlCompetitionSpy();
         $competitionSpy->setRepositoryThrowsException();
 
         $useCase = $this->createUseCase();
@@ -137,7 +137,7 @@ class CreateCompetitionTest extends TestCase
     public function testFailingResponse(): void
     {
         $presenterSpy = new PresenterSpy();
-        $competitionSpy = new CompetitionSpy();
+        $competitionSpy = new DrlCompetitionSpy();
         $competitionSpy->setRepositoryThrowsException();
 
         $useCase = $this->createUseCase();
@@ -155,7 +155,7 @@ class CreateCompetitionTest extends TestCase
         $this->assertEquals(
             [
                 'code' =>
-                    CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+                    DrlCompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
                 'message' => 'Unable to add a competition',
             ],
             $response->getData()
