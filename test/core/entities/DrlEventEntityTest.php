@@ -7,8 +7,8 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\LocationEntity;
 use PHPUnit\Framework\TestCase;
 
