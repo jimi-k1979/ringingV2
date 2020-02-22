@@ -3,8 +3,9 @@ declare(strict_types=1);
 
 namespace core\entities;
 
+use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\EventEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\entities\WinningRingerEntity;
 use PHPUnit\Framework\TestCase;
@@ -52,9 +53,9 @@ class WinningRingerEntityTest extends TestCase
     public function testEventProperty(): void
     {
         $winner = new WinningRingerEntity();
-        $winner->setEvent(new EventEntity());
+        $winner->setEvent(new DrlEventEntity());
         $this->assertInstanceOf(
-            EventEntity::class,
+            AbstractEventEntity::class,
             $winner->getEvent()
         );
     }

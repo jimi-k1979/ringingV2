@@ -15,7 +15,7 @@ class WinningRingerEntity extends Entity
      */
     private $ringer;
     /**
-     * @var EventEntity
+     * @var AbstractEventEntity
      */
     private $event;
 
@@ -52,17 +52,17 @@ class WinningRingerEntity extends Entity
     }
 
     /**
-     * @return EventEntity
+     * @return AbstractEventEntity
      */
-    public function getEvent(): EventEntity
+    public function getEvent(): AbstractEventEntity
     {
         return $this->event;
     }
 
     /**
-     * @param EventEntity $event
+     * @param AbstractEventEntity $event
      */
-    public function setEvent(EventEntity $event): void
+    public function setEvent(AbstractEventEntity $event): void
     {
         $this->event = $event;
     }

@@ -6,8 +6,9 @@ namespace test\core\entities;
 
 use DrlArchive\core\entities\AbstractResultEntity;
 use DrlArchive\core\entities\DrlResultEntity;
+use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\EventEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\TeamEntity;
 use PHPUnit\Framework\TestCase;
 
@@ -90,9 +91,9 @@ class DrlResultEntityTest extends TestCase
     public function testEventProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setEvent(new EventEntity());
+        $result->setEvent(new DrlEventEntity());
         $this->assertInstanceOf(
-            EventEntity::class,
+            AbstractEventEntity::class,
             $result->getEvent()
         );
     }
