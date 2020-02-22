@@ -3,11 +3,12 @@ declare(strict_types=1);
 
 namespace core\entities;
 
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\AbstractCompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\LocationEntity;
 use PHPUnit\Framework\TestCase;
 
@@ -50,9 +51,9 @@ class DrlEventEntityTest extends TestCase
     public function testCompetitionEntity(): void
     {
         $event = new DrlEventEntity();
-        $event->setCompetition(new CompetitionEntity());
+        $event->setCompetition(new DrlCompetitionEntity());
         $this->assertInstanceOf(
-            CompetitionEntity::class,
+            AbstractCompetitionEntity::class,
             $event->getCompetition()
         );
     }

@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace DrlArchive\core\interfaces\repositories;
 
 
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 
-interface CompetitionRepositoryInterface
+interface DrlCompetitionRepositoryInterface
 {
     const UNABLE_TO_INSERT_EXCEPTION = 2401;
     const NO_ROWS_FOUND_EXCEPTION = 2402;
@@ -14,8 +14,8 @@ interface CompetitionRepositoryInterface
     const NO_ROWS_DELETED = 2404;
 
     public function insertCompetition(
-        CompetitionEntity $entity
-    ): CompetitionEntity;
+        DrlCompetitionEntity $entity
+    ): DrlCompetitionEntity;
 
-    public function selectCompetition(int $id): CompetitionEntity;
+    public function selectCompetition(int $id): DrlCompetitionEntity;
 }

@@ -4,13 +4,13 @@ declare(strict_types=1);
 namespace traits;
 
 
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 
-trait CreateMockCompetitionTrait
+trait CreateMockDrlCompetitionTrait
 {
-    private function createMockCompetition(): CompetitionEntity
+    private function createMockDrlCompetition(): DrlCompetitionEntity
     {
-        $entity = new CompetitionEntity();
+        $entity = new DrlCompetitionEntity();
         $entity->setId(999);
         $entity->setName('Test competition');
         $entity->setSingleTowerCompetition(true);

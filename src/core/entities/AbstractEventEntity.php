@@ -11,7 +11,7 @@ abstract class AbstractEventEntity extends Entity
      */
     private $year;
     /**
-     * @var CompetitionEntity
+     * @var AbstractCompetitionEntity
      */
     private $competition;
     /**
@@ -40,17 +40,17 @@ abstract class AbstractEventEntity extends Entity
     }
 
     /**
-     * @return CompetitionEntity
+     * @return AbstractCompetitionEntity
      */
-    public function getCompetition(): CompetitionEntity
+    public function getCompetition(): AbstractCompetitionEntity
     {
         return $this->competition;
     }
 
     /**
-     * @param CompetitionEntity $competition
+     * @param AbstractCompetitionEntity $competition
      */
-    public function setCompetition(CompetitionEntity $competition): void
+    public function setCompetition(AbstractCompetitionEntity $competition): void
     {
         $this->competition = $competition;
     }

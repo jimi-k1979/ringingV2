@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 
-class CompetitionEntity extends Entity
+abstract class AbstractCompetitionEntity extends Entity
 {
     /**
      * @var string

@@ -4,22 +4,23 @@ declare(strict_types=1);
 namespace mocks;
 
 
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\AbstractCompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
-use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockCompetitionTrait;
+use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use traits\CreateMockDrlCompetitionTrait;
 
-class CompetitionSpy implements CompetitionRepositoryInterface
+class DrlCompetitionSpy implements DrlCompetitionRepositoryInterface
 {
-    use CreateMockCompetitionTrait;
+    use CreateMockDrlCompetitionTrait;
 
     /**
      * @var bool
      */
     private $throwException = false;
     /**
-     * @var CompetitionEntity
+     * @var DrlCompetitionEntity
      */
     private $insertCompetitionValue;
     /**
@@ -27,7 +28,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      */
     private $insertCompetitionCalled = false;
     /**
-     * @var CompetitionEntity
+     * @var DrlCompetitionEntity
      */
     private $selectCompetitionValue;
     /**
@@ -41,27 +42,27 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     }
 
     /**
-     * @param CompetitionEntity $entity
-     * @return CompetitionEntity
+     * @param DrlCompetitionEntity $entity
+     * @return DrlCompetitionEntity
      * @throws GeneralRepositoryErrorException
      */
     public function insertCompetition(
-        CompetitionEntity $entity
-    ): CompetitionEntity {
+        DrlCompetitionEntity $entity
+    ): DrlCompetitionEntity {
         $this->insertCompetitionCalled = true;
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to add a competition',
-                CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                DrlCompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
-        return $this->insertCompetitionValue ?? $this->createMockCompetition();
+        return $this->insertCompetitionValue ?? $this->createMockDrlCompetition();
     }
 
     /**
-     * @param CompetitionEntity $entity
+     * @param DrlCompetitionEntity $entity
      */
-    public function setInsertCompetitionValue(CompetitionEntity $entity): void
+    public function setInsertCompetitionValue(DrlCompetitionEntity $entity): void
     {
         $this->insertCompetitionValue = $entity;
     }
@@ -76,25 +77,25 @@ class CompetitionSpy implements CompetitionRepositoryInterface
 
     /**
      * @param int $id
-     * @return CompetitionEntity
+     * @return DrlCompetitionEntity
      * @throws RepositoryNoResults
      */
-    public function selectCompetition(int $id): CompetitionEntity
+    public function selectCompetition(int $id): DrlCompetitionEntity
     {
         $this->selectCompetitionCalled = true;
         if ($this->throwException) {
             throw new RepositoryNoResults(
                 'No competition found',
-                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+                DrlCompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
-        return $this->selectCompetitionValue ?? $this->createMockCompetition();
+        return $this->selectCompetitionValue ?? $this->createMockDrlCompetition();
     }
 
     /**
-     * @param CompetitionEntity $entity
+     * @param DrlCompetitionEntity $entity
      */
-    public function setSelectCompetitionValue(CompetitionEntity $entity): void
+    public function setSelectCompetitionValue(DrlCompetitionEntity $entity): void
     {
         $this->selectCompetitionValue = $entity;
     }
