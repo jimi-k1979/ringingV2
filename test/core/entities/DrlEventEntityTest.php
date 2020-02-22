@@ -4,25 +4,32 @@ declare(strict_types=1);
 namespace core\entities;
 
 use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\EventEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\LocationEntity;
 use PHPUnit\Framework\TestCase;
 
-class EventEntityTest extends TestCase
+class DrlEventEntityTest extends TestCase
 {
     public function testInstantiation(): void
     {
+        $entity = new DrlEventEntity();
         $this->assertInstanceOf(
             Entity::class,
-            new EventEntity()
+            $entity
+        );
+
+        $this->assertInstanceOf(
+            AbstractEventEntity::class,
+            $entity
         );
     }
 
     public function testIdProperty(): void
     {
-        $event = new EventEntity();
+        $event = new DrlEventEntity();
         $event->setId(4);
         $this->assertEquals(
             4,
@@ -32,7 +39,7 @@ class EventEntityTest extends TestCase
 
     public function testYearProperty(): void
     {
-        $event = new EventEntity();
+        $event = new DrlEventEntity();
         $event->setYear('2345');
         $this->assertEquals(
             '2345',
@@ -42,7 +49,7 @@ class EventEntityTest extends TestCase
 
     public function testCompetitionEntity(): void
     {
-        $event = new EventEntity();
+        $event = new DrlEventEntity();
         $event->setCompetition(new CompetitionEntity());
         $this->assertInstanceOf(
             CompetitionEntity::class,
@@ -52,7 +59,7 @@ class EventEntityTest extends TestCase
 
     public function testLocationProperty(): void
     {
-        $event = new EventEntity();
+        $event = new DrlEventEntity();
         $event->setLocation(new LocationEntity());
         $this->assertInstanceOf(
             LocationEntity::class,
@@ -62,7 +69,7 @@ class EventEntityTest extends TestCase
 
     public function testJudgesProperty(): void
     {
-        $event = new EventEntity();
+        $event = new DrlEventEntity();
         $event->setJudges([
             new JudgeEntity(),
             new JudgeEntity(),
