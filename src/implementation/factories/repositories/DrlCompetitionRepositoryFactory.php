@@ -9,7 +9,7 @@ use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
 use DrlArchive\implementation\repositories\sql\DrlCompetitionSql;
 use DrlArchive\implementation\repositories\sql\Database;
 
-class DrlDrlCompetitionRepositoryFactory implements DrlCompetitionRepositoryFactoryInterface
+class DrlCompetitionRepositoryFactory implements DrlCompetitionRepositoryFactoryInterface
 {
 
     public function create(): DrlCompetitionRepositoryInterface

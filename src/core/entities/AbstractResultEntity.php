@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace core\entities;
+namespace DrlArchive\core\entities;
 
 
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\TeamEntity;
 
-class ResultEntity extends Entity
+abstract class AbstractResultEntity extends Entity
 {
     /**
      * @var int
@@ -22,10 +22,6 @@ class ResultEntity extends Entity
      * @var float
      */
     private $faults;
-    /**
-     * @var null|int
-     */
-    private $points;
     /**
      * @var TeamEntity
      */
@@ -81,22 +77,6 @@ class ResultEntity extends Entity
     public function setFaults(float $faults): void
     {
         $this->faults = $faults;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getPoints(): ?int
-    {
-        return $this->points;
-    }
-
-    /**
-     * @param int|null $points
-     */
-    public function setPoints(?int $points): void
-    {
-        $this->points = $points;
     }
 
     /**
