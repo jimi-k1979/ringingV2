@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace DrlArchive\core\interactors\competition\createCompetition;
+namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 
 
 use DrlArchive\core\classes\Request;
 
-class CreateCompetitionRequest extends Request
+class CreateDrlCompetitionRequest extends Request
 {
     public const COMPETITION_NAME = 'name';
     public const IS_SINGLE_TOWER = 'singleTower';

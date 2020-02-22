@@ -3,23 +3,29 @@ declare(strict_types=1);
 
 namespace core\entities;
 
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\AbstractCompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\Entity;
 use PHPUnit\Framework\TestCase;
 
-class CompetitionEntityTest extends TestCase
+class DrlCompetitionEntityTest extends TestCase
 {
     public function testInstantiation(): void
     {
+        $entity = new DrlCompetitionEntity();
+        $this->assertInstanceOf(
+            AbstractCompetitionEntity::class,
+            $entity
+        );
         $this->assertInstanceOf(
             Entity::class,
-            new CompetitionEntity()
+            $entity
         );
     }
 
     public function testIdProperty(): void
     {
-        $competition = new CompetitionEntity();
+        $competition = new DrlCompetitionEntity();
         $competition->setId(4);
         $this->assertEquals(
             4,
@@ -29,7 +35,7 @@ class CompetitionEntityTest extends TestCase
 
     public function testNameProperty(): void
     {
-        $competition = new CompetitionEntity();
+        $competition = new DrlCompetitionEntity();
         $competition->setName('Test');
         $this->assertEquals(
             'Test',
@@ -39,7 +45,7 @@ class CompetitionEntityTest extends TestCase
 
     public function testSingleTowerCompetitionProperty(): void
     {
-        $competition = new CompetitionEntity();
+        $competition = new DrlCompetitionEntity();
         $competition->setSingleTowerCompetition(true);
         $this->assertTrue(
             $competition->isSingleTowerCompetition()

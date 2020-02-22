@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace DrlArchive\core\interactors\competition\createCompetition;
+namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\CompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
-class CreateCompetition extends Interactor
+class CreateDrlCompetition extends Interactor
 {
 
     /**
-     * @var CompetitionRepositoryInterface
+     * @var DrlCompetitionRepositoryInterface
      */
     private $competitionRepository;
     /**
@@ -23,15 +23,15 @@ class CreateCompetition extends Interactor
      */
     private $transactionManager;
     /**
-     * @var CompetitionEntity
+     * @var DrlCompetitionEntity
      */
     private $competitionEntity;
 
     /**
-     * @param CompetitionRepositoryInterface $competitionRepository
+     * @param DrlCompetitionRepositoryInterface $competitionRepository
      */
     public function setCompetitionRepository(
-        CompetitionRepositoryInterface $competitionRepository
+        DrlCompetitionRepositoryInterface $competitionRepository
     ): void {
         $this->competitionRepository = $competitionRepository;
     }
@@ -63,7 +63,7 @@ class CreateCompetition extends Interactor
 
     private function createEntity()
     {
-        $this->competitionEntity = new CompetitionEntity();
+        $this->competitionEntity = new DrlCompetitionEntity();
         $this->competitionEntity->setName(
             $this->request->getCompetitionName()
         );
@@ -81,7 +81,7 @@ class CreateCompetition extends Interactor
 
     private function createResponse()
     {
-        $this->response = new CreateCompetitionResponse([
+        $this->response = new CreateDrlCompetitionResponse([
             Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
             Response::RESPONSE_MESSAGE => 'Competition created successfully',
             Response::RESPONSE_DATA => [
@@ -95,7 +95,7 @@ class CreateCompetition extends Interactor
 
     private function createFailingResponse(Exception $e)
     {
-        $this->response = new CreateCompetitionResponse([
+        $this->response = new CreateDrlCompetitionResponse([
             Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
             Response::RESPONSE_MESSAGE => 'Unable to create competition',
             Response::RESPONSE_DATA => [
