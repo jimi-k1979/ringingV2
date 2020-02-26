@@ -11,6 +11,7 @@ class CreateDrlEventRequest extends Request
     public const LOCATION_ID = 'locationId';
     public const COMPETITION_ID = 'competitionId';
     public const YEAR = 'year';
+    public const JUDGES = 'judges';
 
     protected $schema = [
         self::LOCATION_ID => [
@@ -24,7 +25,12 @@ class CreateDrlEventRequest extends Request
         self::YEAR => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,
-        ]
+        ],
+        self::JUDGES => [
+            parent::OPTION_TYPE => parent::FIELD_TYPE_ARRAY,
+            parent::OPTION_REQUIRED => false,
+            parent::OPTION_ALLOW_NULL => true,
+        ],
     ];
 
     public function getLocationId(): int
@@ -55,6 +61,22 @@ class CreateDrlEventRequest extends Request
     public function setYear(string $input): void
     {
         $this->updateModel(self::YEAR, $input);
+    }
+
+    /**
+     * @return null|int[]
+     */
+    public function getJudges(): ?array
+    {
+        return $this->data[self::JUDGES];
+    }
+
+    /**
+     * @param int[]|null $input
+     */
+    public function setJudges(?array $input): void
+    {
+        $this->updateModel(self::JUDGES, $input);
     }
 
 }
