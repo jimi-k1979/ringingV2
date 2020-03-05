@@ -24,6 +24,8 @@ foreach (glob(__DIR__ . '/../src/**/**/*.php') as $file) {
 /**
  * Add mocks
  */
+require_once __DIR__ . '/traits/CreateMockDeaneryTrait.php';
+require_once __DIR__ . '/traits/CreateMockLocationTrait.php';
 foreach (glob(__DIR__ . '/traits/*.php') as $file) {
     require_once $file;
 }

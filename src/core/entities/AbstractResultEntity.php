@@ -5,7 +5,7 @@ namespace DrlArchive\core\entities;
 
 
 use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\EventEntity;
+use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\TeamEntity;
 
 abstract class AbstractResultEntity extends Entity
@@ -27,7 +27,7 @@ abstract class AbstractResultEntity extends Entity
      */
     private $team;
     /**
-     * @var EventEntity
+     * @var AbstractEventEntity
      */
     private $event;
 
@@ -96,17 +96,17 @@ abstract class AbstractResultEntity extends Entity
     }
 
     /**
-     * @return EventEntity
+     * @return AbstractEventEntity
      */
-    public function getEvent(): EventEntity
+    public function getEvent(): AbstractEventEntity
     {
         return $this->event;
     }
 
     /**
-     * @param EventEntity $event
+     * @param AbstractEventEntity $event
      */
-    public function setEvent(EventEntity $event): void
+    public function setEvent(AbstractEventEntity $event): void
     {
         $this->event = $event;
     }
