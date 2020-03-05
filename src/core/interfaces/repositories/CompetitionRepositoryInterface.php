@@ -6,7 +6,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
 
-interface DrlCompetitionRepositoryInterface
+interface CompetitionRepositoryInterface
 {
     const UNABLE_TO_INSERT_EXCEPTION = 2401;
     const NO_ROWS_FOUND_EXCEPTION = 2402;

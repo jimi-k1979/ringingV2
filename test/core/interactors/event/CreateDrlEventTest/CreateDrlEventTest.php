@@ -7,9 +7,9 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interfaces\repositories\DrlEventRepositoryInterface;
-use mocks\DrlEventDummy;
-use mocks\DrlEventSpy;
+use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use mocks\EventDummy;
+use mocks\EventSpy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
 use mocks\TransactionManagerDummy;
@@ -45,7 +45,7 @@ class CreateDrlEventTest extends TestCase
         $useCase = new CreateDrlEvent();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
-        $useCase->setEventRepository(new DrlEventDummy());
+        $useCase->setEventRepository(new EventDummy());
         $useCase->setTransactionRepository(new TransactionManagerDummy());
 
         return $useCase;
@@ -66,7 +66,7 @@ class CreateDrlEventTest extends TestCase
 
     public function testInsertIsCalled(): void
     {
-        $eventSpy = new DrlEventSpy();
+        $eventSpy = new EventSpy();
 
         $useCase = $this->createNewUseCase();
         $useCase->setEventRepository($eventSpy);
@@ -80,7 +80,7 @@ class CreateDrlEventTest extends TestCase
     public function testTransactionIsRolledBack(): void
     {
         $transactionSpy = new TransactionManagerSpy();
-        $eventSpy = new DrlEventSpy();
+        $eventSpy = new EventSpy();
         $eventSpy->setThrowException();
 
         $useCase = $this->createNewUseCase();
@@ -128,7 +128,7 @@ class CreateDrlEventTest extends TestCase
         $drlEvent->setCompetition($this->createMockDrlCompetition());
 
         $presenterSpy = new PresenterSpy();
-        $eventSpy = new DrlEventSpy();
+        $eventSpy = new EventSpy();
         $eventSpy->setDrlEventValue($drlEvent);
 
         $useCase = $this->createNewUseCase();
@@ -159,7 +159,7 @@ class CreateDrlEventTest extends TestCase
     public function testFailingResponse(): void
     {
         $presenterSpy = new PresenterSpy();
-        $eventSpy = new DrlEventSpy();
+        $eventSpy = new EventSpy();
         $eventSpy->setThrowException();
 
         $useCase = $this->createNewUseCase();
@@ -176,7 +176,7 @@ class CreateDrlEventTest extends TestCase
 
         $expectedResponse = [
             'message' => "Can't insert event",
-            'code' => DrlEventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+            'code' => EventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
         ];
 
         $this->assertEquals(

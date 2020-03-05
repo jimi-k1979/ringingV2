@@ -6,7 +6,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\DrlEventEntity;
 
-interface DrlEventRepositoryInterface
+interface EventRepositoryInterface
 {
     const UNABLE_TO_INSERT_EXCEPTION = 2501;
     const NO_ROWS_FOUND_EXCEPTION = 2502;

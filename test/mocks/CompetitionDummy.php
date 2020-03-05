@@ -5,10 +5,10 @@ namespace mocks;
 
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
-use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use traits\CreateMockDrlCompetitionTrait;
 
-class DrlCompetitionDummy implements DrlCompetitionRepositoryInterface
+class CompetitionDummy implements CompetitionRepositoryInterface
 {
     use CreateMockDrlCompetitionTrait;
 

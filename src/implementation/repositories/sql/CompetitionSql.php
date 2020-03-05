@@ -5,9 +5,9 @@ namespace DrlArchive\implementation\repositories\sql;
 
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
-use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 
-class DrlCompetitionSql extends MysqlRepository implements DrlCompetitionRepositoryInterface
+class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInterface
 {
 
     public function insertCompetition(DrlCompetitionEntity $entity): DrlCompetitionEntity

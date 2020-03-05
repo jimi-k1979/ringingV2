@@ -8,10 +8,10 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
-use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use traits\CreateMockDrlCompetitionTrait;
 
-class DrlCompetitionSpy implements DrlCompetitionRepositoryInterface
+class CompetitionSpy implements CompetitionRepositoryInterface
 {
     use CreateMockDrlCompetitionTrait;
 
@@ -53,7 +53,7 @@ class DrlCompetitionSpy implements DrlCompetitionRepositoryInterface
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to add a competition',
-                DrlCompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
         return $this->insertCompetitionValue ?? $this->createMockDrlCompetition();
@@ -86,7 +86,7 @@ class DrlCompetitionSpy implements DrlCompetitionRepositoryInterface
         if ($this->throwException) {
             throw new RepositoryNoResults(
                 'No competition found',
-                DrlCompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
         return $this->selectCompetitionValue ?? $this->createMockDrlCompetition();
