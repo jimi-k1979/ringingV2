@@ -66,7 +66,7 @@ class CreateDrlCompetitionTest extends TestCase
         $useCase->execute();
 
         $this->assertTrue(
-            $competitionSpy->hasInsertCompetitionBeenCalled()
+            $competitionSpy->hasInsertDrlCompetitionBeenCalled()
         );
     }
 

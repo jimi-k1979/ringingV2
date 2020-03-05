@@ -12,14 +12,22 @@ class CompetitionDummy implements CompetitionRepositoryInterface
 {
     use CreateMockDrlCompetitionTrait;
 
-    public function insertCompetition(
+    public function insertDrlCompetition(
         DrlCompetitionEntity $entity
     ): DrlCompetitionEntity {
         return $this->createMockDrlCompetition();
     }
 
-    public function selectCompetition(int $id): DrlCompetitionEntity
+    public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
         return new DrlCompetitionEntity();
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchDrlCompetition(string $string): array
+    {
+        return [$this->createMockDrlCompetition()];
     }
 }

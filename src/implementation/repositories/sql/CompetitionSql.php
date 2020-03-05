@@ -10,13 +10,21 @@ use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInterface
 {
 
-    public function insertCompetition(DrlCompetitionEntity $entity): DrlCompetitionEntity
+    public function insertDrlCompetition(DrlCompetitionEntity $entity): DrlCompetitionEntity
     {
         // TODO: Implement insertCompetition() method.
     }
 
-    public function selectCompetition(int $id): DrlCompetitionEntity
+    public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
         // TODO: Implement selectCompetition() method.
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchDrlCompetition(string $string): array
+    {
+        // TODO: Implement fuzzySearchDrlCompetition() method.
     }
 }

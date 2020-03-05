@@ -76,7 +76,7 @@ class CreateDrlCompetition extends Interactor
     private function writeToDatabase()
     {
         $this->competitionEntity = $this->competitionRepository
-            ->insertCompetition($this->competitionEntity);
+            ->insertDrlCompetition($this->competitionEntity);
     }
 
     private function createResponse()
