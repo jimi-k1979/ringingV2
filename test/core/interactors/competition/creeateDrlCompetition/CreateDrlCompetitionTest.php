@@ -7,9 +7,9 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetition;
 use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
-use mocks\DrlCompetitionDummy;
-use mocks\DrlCompetitionSpy;
+use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use mocks\CompetitionDummy;
+use mocks\CompetitionSpy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
 use mocks\TransactionManagerDummy;
@@ -41,7 +41,7 @@ class CreateDrlCompetitionTest extends TestCase
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
-        $useCase->setCompetitionRepository(new DrlCompetitionDummy());
+        $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
         return $useCase;
     }
@@ -60,13 +60,13 @@ class CreateDrlCompetitionTest extends TestCase
 
     public function testInsertEntity(): void
     {
-        $competitionSpy = new DrlCompetitionSpy();
+        $competitionSpy = new CompetitionSpy();
         $useCase = $this->createUseCase();
         $useCase->setCompetitionRepository($competitionSpy);
         $useCase->execute();
 
         $this->assertTrue(
-            $competitionSpy->hasInsertCompetitionBeenCalled()
+            $competitionSpy->hasInsertDrlCompetitionBeenCalled()
         );
     }
 
@@ -85,7 +85,7 @@ class CreateDrlCompetitionTest extends TestCase
     public function testTransactionRollbackOnFailure(): void
     {
         $transactionSpy = new TransactionManagerSpy();
-        $competitionSpy = new DrlCompetitionSpy();
+        $competitionSpy = new CompetitionSpy();
         $competitionSpy->setRepositoryThrowsException();
 
         $useCase = $this->createUseCase();
@@ -137,7 +137,7 @@ class CreateDrlCompetitionTest extends TestCase
     public function testFailingResponse(): void
     {
         $presenterSpy = new PresenterSpy();
-        $competitionSpy = new DrlCompetitionSpy();
+        $competitionSpy = new CompetitionSpy();
         $competitionSpy->setRepositoryThrowsException();
 
         $useCase = $this->createUseCase();
@@ -155,7 +155,7 @@ class CreateDrlCompetitionTest extends TestCase
         $this->assertEquals(
             [
                 'code' =>
-                    DrlCompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+                    CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
                 'message' => 'Unable to add a competition',
             ],
             $response->getData()

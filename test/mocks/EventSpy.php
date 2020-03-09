@@ -7,10 +7,10 @@ namespace mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\interfaces\repositories\DrlEventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use traits\CreateMockDrlEventTrait;
 
-class DrlEventSpy implements DrlEventRepositoryInterface
+class EventSpy implements EventRepositoryInterface
 {
     use CreateMockDrlEventTrait;
 
@@ -43,7 +43,7 @@ class DrlEventSpy implements DrlEventRepositoryInterface
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 "Can't insert event",
-                DrlEventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                EventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
 

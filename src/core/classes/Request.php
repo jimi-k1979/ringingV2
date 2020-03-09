@@ -57,7 +57,8 @@ class Request
                 $this->updateModel($key, $data[$key]);
             } else {
                 $this->data[$key] =
-                    $this->schema[$key][$data[$key]['default'] ?? self::OPTION_DEFAULT] ?? null;
+                    $this->schema[$key][$data[$key]['default'] ??
+                    self::OPTION_DEFAULT] ?? null;
             }
         }
     }
@@ -78,6 +79,7 @@ class Request
         !((
                 isset($this->schema[$field][self::OPTION_ALLOW_NULL])
                 && $this->schema[$field][self::OPTION_ALLOW_NULL]
+                && $value !== null
             )
             || self::DEFAULT_NULLABLE)
         ) {
@@ -273,6 +275,7 @@ class Request
             (
                 isset($this->schema[$field][self::OPTION_ALLOW_NULL])
                 && $this->schema[$field][self::OPTION_ALLOW_NULL]
+                && $value === null
             )
             || self::DEFAULT_NULLABLE
         ) {

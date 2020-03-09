@@ -7,7 +7,7 @@ namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interfaces\repositories\DrlCompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
@@ -15,7 +15,7 @@ class CreateDrlCompetition extends Interactor
 {
 
     /**
-     * @var DrlCompetitionRepositoryInterface
+     * @var CompetitionRepositoryInterface
      */
     private $competitionRepository;
     /**
@@ -28,10 +28,10 @@ class CreateDrlCompetition extends Interactor
     private $competitionEntity;
 
     /**
-     * @param DrlCompetitionRepositoryInterface $competitionRepository
+     * @param CompetitionRepositoryInterface $competitionRepository
      */
     public function setCompetitionRepository(
-        DrlCompetitionRepositoryInterface $competitionRepository
+        CompetitionRepositoryInterface $competitionRepository
     ): void {
         $this->competitionRepository = $competitionRepository;
     }
@@ -76,7 +76,7 @@ class CreateDrlCompetition extends Interactor
     private function writeToDatabase()
     {
         $this->competitionEntity = $this->competitionRepository
-            ->insertCompetition($this->competitionEntity);
+            ->insertDrlCompetition($this->competitionEntity);
     }
 
     private function createResponse()

@@ -5,10 +5,10 @@ namespace mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\interfaces\repositories\DrlEventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use traits\CreateMockDrlEventTrait;
 
-class DrlEventDummy implements DrlEventRepositoryInterface
+class EventDummy implements EventRepositoryInterface
 {
     use CreateMockDrlEventTrait;
 
