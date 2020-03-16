@@ -35,6 +35,11 @@ class LocationSpy implements LocationRepositoryInterface
      * @var LocationEntity
      */
     private $selectLocationValue;
+    /**
+     * @var bool
+     */
+    private $fuzzySearchLocationCalled;
+    private $fuzzySearchValue = [];
 
     public function setRepositoryThrowsException(): void
     {
@@ -108,4 +113,32 @@ class LocationSpy implements LocationRepositoryInterface
     {
         $this->selectLocationValue = $entity;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchLocation(string $search): array
+    {
+        $this->fuzzySearchLocationCalled = true;
+
+        return $this->fuzzySearchValue ?? [$this->createMockLocation()];
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFuzzySearchLocationBeenCalled(): bool
+    {
+        return $this->fuzzySearchLocationCalled;
+    }
+
+    /**
+     * @param array $fuzzySearchValue
+     */
+    public function setFuzzySearchValue(array $fuzzySearchValue): void
+    {
+        $this->fuzzySearchValue = $fuzzySearchValue;
+    }
+
+
 }

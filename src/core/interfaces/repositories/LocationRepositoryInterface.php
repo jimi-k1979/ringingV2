@@ -17,4 +17,10 @@ interface LocationRepositoryInterface
 
     public function selectLocation(int $locationId): LocationEntity;
 
+    /**
+     * @param string $search
+     * @return LocationEntity[]
+     */
+    public function fuzzySearchLocation(string $search): array;
+
 }
