@@ -21,4 +21,12 @@ class LocationDummy implements LocationRepositoryInterface
     {
         return $this->createMockLocation();
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchLocation(string $search): array
+    {
+        return [$this->createMockLocation()];
+    }
 }
