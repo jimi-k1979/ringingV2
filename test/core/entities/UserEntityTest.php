@@ -76,6 +76,7 @@ class UserEntityTest extends TestCase
                 'addNew' => true,
                 'editExisting' => true,
                 'approveEdit' => true,
+                'delete' => false,
             ]
         );
         $this->assertEquals(
@@ -83,6 +84,7 @@ class UserEntityTest extends TestCase
                 'addNew' => true,
                 'editExisting' => true,
                 'approveEdit' => true,
+                'delete' => false,
             ],
             $entity->getPermissions()
         );

@@ -13,21 +13,26 @@ class UserEntity extends Entity
      */
     private $username;
     /**
-     * @var string
+     * @var string|null
      */
     private $emailAddress;
     /**
-     * @var string
+     * @var string|null
      */
     private $password;
     /**
-     * @var int
+     * @var int|null
      */
     private $loginCount;
     /**
      * @var array
      */
-    private $permissions = [];
+    private $permissions = [
+        'addNew' => false,
+        'editExisting' => false,
+        'approveEdit' => false,
+        'delete' => false,
+    ];
 
     /**
      * @return string

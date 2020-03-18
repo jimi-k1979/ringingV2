@@ -8,6 +8,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
@@ -47,6 +48,9 @@ class CreateDrlCompetition extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised(
+            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+        );
         try {
             $this->transactionManager->startTransaction();
             $this->createEntity();
