@@ -7,10 +7,14 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearch;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
+use mocks\GuestUserDummy;
 use mocks\LocationDummy;
 use mocks\LocationSpy;
+use mocks\LoggedInUserDummy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockLocationTrait;
 
@@ -20,11 +24,24 @@ class LocationFuzzySearchTest extends TestCase
 
     public function testInstantiation(): void
     {
-        $useCase = new LocationFuzzySearch();
-
         $this->assertInstanceOf(
             Interactor::class,
-            $useCase
+            new LocationFuzzySearch()
+        );
+    }
+
+    public function testGuestUserIsAuthorised(): void
+    {
+        $userSpy = new GuestUserDummy();
+        $securitySpy = new SecurityRepositorySpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->setUserRepository($userSpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $securitySpy->hasIsUserAuthorisedCalled()
         );
     }
 
@@ -70,6 +87,8 @@ class LocationFuzzySearchTest extends TestCase
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setLocationRepository(new LocationDummy());
+        $useCase->setUserRepository(new LoggedInUserDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         return $useCase;
     }
 
