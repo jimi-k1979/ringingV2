@@ -4,14 +4,19 @@ declare(strict_types=1);
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use mocks\EventDummy;
 use mocks\EventSpy;
+use mocks\GuestUserDummy;
+use mocks\LoggedInUserDummy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use mocks\TransactionManagerDummy;
 use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
@@ -25,11 +30,36 @@ class CreateDrlEventTest extends TestCase
 
     public function testInstantiation(): void
     {
-        $useCase = $this->createNewUseCase();
         $this->assertInstanceOf(
             Interactor::class,
             new CreateDrlEvent()
         );
+    }
+
+    public function testUserIsAuthorised(): void
+    {
+        $securitySpy = new SecurityRepositorySpy();
+
+        $useCase = $this->createNewUseCase();
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $securitySpy->hasIsUserAuthorisedCalled()
+        );
+    }
+
+    public function testGuestUserIsUnauthorised(): void
+    {
+        $userSpy = new GuestUserDummy();
+        $securitySpy = new SecurityRepositorySpy();
+
+        $this->expectException(AccessDeniedException::class);
+
+        $useCase = $this->createNewUseCase();
+        $useCase->setUserRepository($userSpy);
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
     }
 
     private function createNewUseCase(): CreateDrlEvent
@@ -47,6 +77,8 @@ class CreateDrlEventTest extends TestCase
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setEventRepository(new EventDummy());
         $useCase->setTransactionRepository(new TransactionManagerDummy());
+        $useCase->setUserRepository(new LoggedInUserDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
 
         return $useCase;
     }
