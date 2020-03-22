@@ -11,8 +11,12 @@ use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompeti
 use DrlArchive\core\interactors\Interactor;
 use mocks\CompetitionDummy;
 use mocks\CompetitionSpy;
+use mocks\GuestUserDummy;
+use mocks\LoggedInUserDummy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockDrlCompetitionTrait;
 
@@ -42,8 +46,25 @@ class DrlCompetitionFuzzySearchTest extends TestCase
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
+        $useCase->setUserRepository(new LoggedInUserDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
 
         return $useCase;
+    }
+
+    public function testGuestUserIsAuthorised(): void
+    {
+        $userSpy = new GuestUserDummy();
+        $securitySpy = new SecurityRepositorySpy();
+
+        $useCase = $this->createNewUseCase();
+        $useCase->setUserRepository($userSpy);
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $securitySpy->hasIsUserAuthorisedCalled()
+        );
     }
 
     public function testGetCompetitionListIsCalled(): void
