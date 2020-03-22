@@ -10,6 +10,7 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
@@ -59,6 +60,10 @@ class CreateLocation extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised(
+            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+        );
+
         $this->transactionManager->startTransaction();
         try {
             $this->createEntity();
