@@ -7,7 +7,7 @@ namespace DrlArchive\core\interfaces\factories\repositories;
 
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 
-interface UserRepositoryFactory
+interface UserRepositoryFactoryInterface
 {
     public function create(?int $userId = null): UserRepositoryInterface;
 }
