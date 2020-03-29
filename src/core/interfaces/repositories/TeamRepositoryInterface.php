@@ -20,4 +20,10 @@ interface TeamRepositoryInterface
     public function updateTeam(TeamEntity $teamEntity): TeamEntity;
 
     public function deleteTeam(TeamEntity $teamEntity): bool;
+
+    /**
+     * @param string $searchTerm
+     * @return TeamEntity[]
+     */
+    public function fuzzySearchTeam(string $searchTerm): array;
 }
