@@ -6,11 +6,19 @@ namespace DrlArchive\core\interactors;
 
 use DrlArchive\core\classes\Request;
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\entities\UserEntity;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 
 abstract class Interactor implements InteractorInterface
 {
+    /**
+     * @var Request|null
+     */
+    protected $request;
     /**
      * @var Response|null
      */
@@ -20,9 +28,25 @@ abstract class Interactor implements InteractorInterface
      */
     protected $presenter;
     /**
-     * @var Request|null
+     * @var UserRepositoryInterface
      */
-    protected $request;
+    private $userRepository;
+    /**
+     * @var UserEntity
+     */
+    private $loggedInUser;
+    /**
+     * @var SecurityRepositoryInterface
+     */
+    private $securityRepository;
+
+    /**
+     * @param Request|null $request
+     */
+    public function setRequest(?Request $request): void
+    {
+        $this->request = $request;
+    }
 
     /**
      * @param PresenterInterface|null $presenter
@@ -32,12 +56,27 @@ abstract class Interactor implements InteractorInterface
         $this->presenter = $presenter;
     }
 
-    /**
-     * @param Request|null $request
-     */
-    public function setRequest(?Request $request): void
+    public function setSecurityRepository(SecurityRepositoryInterface $securityRepository): void
     {
-        $this->request = $request;
+        $this->securityRepository = $securityRepository;
+    }
+
+
+    public function setUserRepository(UserRepositoryInterface $userRepository): void
+    {
+        $this->userRepository = $userRepository;
+        $this->loggedInUser = $userRepository->getLoggedInUser();
+    }
+
+
+    protected function checkUserIsAuthorised(?string $permission = null): void
+    {
+        if (!$this->securityRepository->isUserAuthorised(
+            $this->loggedInUser,
+            $permission
+        )) {
+            throw new AccessDeniedException('Not authorised to view this page');
+        }
     }
 
     protected function sendResponse(): void

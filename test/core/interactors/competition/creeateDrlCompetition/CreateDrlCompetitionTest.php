@@ -4,14 +4,19 @@ declare(strict_types=1);
 namespace core\interactors\competition\createDrlCompetition;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetition;
 use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use mocks\CompetitionDummy;
 use mocks\CompetitionSpy;
+use mocks\GuestUserDummy;
+use mocks\LoggedInUserDummy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use mocks\TransactionManagerDummy;
 use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
@@ -33,17 +38,48 @@ class CreateDrlCompetitionTest extends TestCase
      */
     public function createUseCase(): CreateDrlCompetition
     {
-        $request = new CreateDrlCompetitionRequest([
-            CreateDrlCompetitionRequest::COMPETITION_NAME => 'Test competition',
-            CreateDrlCompetitionRequest::IS_SINGLE_TOWER => true,
-        ]);
+        $request = new CreateDrlCompetitionRequest(
+            [
+                CreateDrlCompetitionRequest::COMPETITION_NAME => 'Test competition',
+                CreateDrlCompetitionRequest::IS_SINGLE_TOWER => true,
+            ]
+        );
 
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
+        $useCase->setUserRepository(new LoggedInUserDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
+
         return $useCase;
+    }
+
+    public function testUserIsAuthorised(): void
+    {
+        $securitySpy = new SecurityRepositorySpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $securitySpy->hasIsUserAuthorisedCalled()
+        );
+    }
+
+    public function testGuestUserIsUnauthorised(): void
+    {
+        $userRepository = new GuestUserDummy();
+        $securitySpy = new SecurityRepositorySpy();
+
+        $this->expectException(AccessDeniedException::class);
+
+        $useCase = $this->createUseCase();
+        $useCase->setUserRepository($userRepository);
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
     }
 
     public function testTransactionHasStarted(): void

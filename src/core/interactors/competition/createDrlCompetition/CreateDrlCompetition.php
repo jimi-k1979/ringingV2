@@ -8,6 +8,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
@@ -47,6 +48,9 @@ class CreateDrlCompetition extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised(
+            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+        );
         try {
             $this->transactionManager->startTransaction();
             $this->createEntity();
@@ -61,7 +65,7 @@ class CreateDrlCompetition extends Interactor
         $this->presenter->send($this->response);
     }
 
-    private function createEntity()
+    private function createEntity(): void
     {
         $this->competitionEntity = new DrlCompetitionEntity();
         $this->competitionEntity->setName(
@@ -70,39 +74,41 @@ class CreateDrlCompetition extends Interactor
         $this->competitionEntity->setSingleTowerCompetition(
             $this->request->getSingleTower()
         );
-
     }
 
-    private function writeToDatabase()
+    private function writeToDatabase(): void
     {
         $this->competitionEntity = $this->competitionRepository
             ->insertDrlCompetition($this->competitionEntity);
     }
 
-    private function createResponse()
+    private function createResponse(): void
     {
-        $this->response = new CreateDrlCompetitionResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-            Response::RESPONSE_MESSAGE => 'Competition created successfully',
-            Response::RESPONSE_DATA => [
-                'id' => $this->competitionEntity->getId(),
-                'name' => $this->competitionEntity->getName(),
-                'singleTower' => $this->competitionEntity
-                    ->isSingleTowerCompetition()
-            ],
+        $this->response = new CreateDrlCompetitionResponse(
+            [
+                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
+                Response::RESPONSE_MESSAGE => 'Competition created successfully',
+                Response::RESPONSE_DATA => [
+                    'id' => $this->competitionEntity->getId(),
+                    'name' => $this->competitionEntity->getName(),
+                    'singleTower' => $this->competitionEntity
+                        ->isSingleTowerCompetition()
+                ],
         ]);
     }
 
-    private function createFailingResponse(Exception $e)
+    private function createFailingResponse(Exception $e): void
     {
-        $this->response = new CreateDrlCompetitionResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
-            Response::RESPONSE_MESSAGE => 'Unable to create competition',
-            Response::RESPONSE_DATA => [
-                'message' => $e->getMessage(),
-                'code' => $e->getCode(),
-            ],
-        ]);
+        $this->response = new CreateDrlCompetitionResponse(
+            [
+                Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
+                Response::RESPONSE_MESSAGE => 'Unable to create competition',
+                Response::RESPONSE_DATA => [
+                    'message' => $e->getMessage(),
+                    'code' => $e->getCode(),
+                ],
+            ]
+        );
     }
 
 }

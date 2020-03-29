@@ -12,6 +12,7 @@ use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
@@ -51,6 +52,9 @@ class CreateDrlEvent extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised(
+            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+        );
         try {
             $this->transactionManager->startTransaction();
             $this->createEntity();

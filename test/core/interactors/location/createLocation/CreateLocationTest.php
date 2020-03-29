@@ -4,15 +4,20 @@ declare(strict_types=1);
 namespace core\interactors\location\createLocation;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\location\createLocation\CreateLocation;
 use DrlArchive\core\interactors\location\createLocation\CreateLocationRequest;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use mocks\DeaneryDummy;
+use mocks\GuestUserDummy;
 use mocks\LocationDummy;
 use mocks\LocationSpy;
+use mocks\LoggedInUserDummy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use mocks\TransactionManagerDummy;
 use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
@@ -32,18 +37,49 @@ class CreateLocationTest extends TestCase
     {
         $request = new CreateLocationRequest([
             CreateLocationRequest::LOCATION_NAME => 'Test tower',
-            CreateLocationRequest::DEANERY => 1,
-            CreateLocationRequest::DEDICATION => 'S Test',
-            CreateLocationRequest::TENOR_WEIGHT => 'test cwt',
-        ]);
+                                                 CreateLocationRequest::DEANERY => 1,
+                                                 CreateLocationRequest::DEDICATION => 'S Test',
+                                                 CreateLocationRequest::TENOR_WEIGHT => 'test cwt',
+                                             ]
+        );
         $useCase = new CreateLocation();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setDeaneryRepository(new DeaneryDummy());
         $useCase->setLocationRepository(new LocationDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
+        $useCase->setUserRepository(new LoggedInUserDummy());
 
         return $useCase;
+    }
+
+    public function testUserIsAuthorised(): void
+    {
+        $securitySpy = new SecurityRepositorySpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $securitySpy->hasIsUserAuthorisedCalled()
+        );
+    }
+
+    public function testGuestUserIsNotAuthorised(): void
+    {
+        $securitySpy = new SecurityRepositorySpy();
+        $userSpy = new GuestUserDummy();
+
+        $this->expectException(
+            AccessDeniedException::class
+        );
+
+        $useCase = $this->createUseCase();
+        $useCase->setSecurityRepository($securitySpy);
+        $useCase->setUserRepository($userSpy);
+        $useCase->execute();
     }
 
     public function testTransactionIsStarted(): void

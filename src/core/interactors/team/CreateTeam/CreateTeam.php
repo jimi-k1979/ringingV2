@@ -8,6 +8,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
@@ -63,6 +64,9 @@ class CreateTeam extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised(
+            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+        );
         try {
             $this->transactionManager->startTransaction();
             $this->createEntity();

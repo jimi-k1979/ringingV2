@@ -30,6 +30,7 @@ class LocationFuzzySearch extends Interactor
 
     public function execute(): void
     {
+        $this->checkUserIsAuthorised();
         $this->searchForLocations();
         $this->generateResponse();
         $this->sendResponse();
