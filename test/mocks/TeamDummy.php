@@ -31,4 +31,12 @@ class TeamDummy implements TeamRepositoryInterface
     {
         return true;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchTeam(string $searchTerm): array
+    {
+        return [];
+    }
 }

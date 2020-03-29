@@ -5,6 +5,7 @@ namespace mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use traits\CreateMockTeamTrait;
 
@@ -44,6 +45,18 @@ class TeamSpy implements TeamRepositoryInterface
      * @var bool
      */
     private $deletedCalled = false;
+    /**
+     * @var TeamEntity[]
+     */
+    private $fuzzySearchValue;
+    /**
+     * @var bool
+     */
+    private $fuzzySearchCalled = false;
+    /**
+     * @var bool
+     */
+    private $fuzzySearchThrowsException = false;
 
     /**
      * @param TeamEntity $teamEntity
@@ -148,5 +161,38 @@ class TeamSpy implements TeamRepositoryInterface
     public function hasDeleteTeamBeenCalled(): bool
     {
         return $this->deletedCalled;
+    }
+
+    /**
+     * @inheritDoc
+     * @throws RepositoryNoResults
+     */
+    public function fuzzySearchTeam(string $searchTerm): array
+    {
+        $this->fuzzySearchCalled = true;
+
+        if ($this->fuzzySearchThrowsException) {
+            throw new RepositoryNoResults(
+                'No teams found',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fuzzySearchValue ?? [$this->createMockTeam()];
+    }
+
+    public function setFuzzySearchValue(array $results): void
+    {
+        $this->fuzzySearchValue = $results;
+    }
+
+    public function hasFuzzySearchTeamBeenCalled(): bool
+    {
+        return $this->fuzzySearchCalled;
+    }
+
+    public function setFuzzySearchThrowsException(): void
+    {
+        $this->fuzzySearchThrowsException = true;
     }
 }
