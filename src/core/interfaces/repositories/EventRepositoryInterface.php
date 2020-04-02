@@ -8,10 +8,10 @@ use DrlArchive\core\entities\DrlEventEntity;
 
 interface EventRepositoryInterface
 {
-    const UNABLE_TO_INSERT_EXCEPTION = 2501;
-    const NO_ROWS_FOUND_EXCEPTION = 2502;
-    const NO_ROWS_UPDATED = 2503;
-    const NO_ROWS_DELETED = 2504;
+    public const UNABLE_TO_INSERT_EXCEPTION = 2501;
+    public const NO_ROWS_FOUND_EXCEPTION = 2502;
+    public const NO_ROWS_UPDATED = 2503;
+    public const NO_ROWS_DELETED = 2504;
 
     public function insertEvent(
         DrlEventEntity $entity
