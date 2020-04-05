@@ -56,4 +56,15 @@ class RingerEntityTest extends TestCase
             $ringer->getNotes()
         );
     }
+
+    public function testGetFullName(): void
+    {
+        $ringer = new RingerEntity();
+        $ringer->setFirstName('Test');
+        $ringer->setLastName('Ringer');
+        $this->assertEquals(
+            'Test Ringer',
+            $ringer->getFullName()
+        );
+    }
 }

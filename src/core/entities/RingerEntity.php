@@ -67,4 +67,9 @@ class RingerEntity extends Entity
         $this->notes = $notes;
     }
 
+    public function getFullName(): string
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
+
 }
