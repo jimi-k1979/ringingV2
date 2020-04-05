@@ -8,10 +8,10 @@ use DrlArchive\core\entities\DrlCompetitionEntity;
 
 interface CompetitionRepositoryInterface
 {
-    const UNABLE_TO_INSERT_EXCEPTION = 2401;
-    const NO_ROWS_FOUND_EXCEPTION = 2402;
-    const NO_ROWS_UPDATED_EXCEPTION = 2403;
-    const NO_ROWS_DELETED_EXCEPTION = 2404;
+    public const UNABLE_TO_INSERT_EXCEPTION = 2401;
+    public const NO_ROWS_FOUND_EXCEPTION = 2402;
+    public const NO_ROWS_UPDATED_EXCEPTION = 2403;
+    public const NO_ROWS_DELETED_EXCEPTION = 2404;
 
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity

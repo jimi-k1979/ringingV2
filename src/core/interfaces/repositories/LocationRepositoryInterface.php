@@ -8,8 +8,8 @@ use DrlArchive\core\entities\LocationEntity;
 
 interface LocationRepositoryInterface
 {
-    const UNABLE_TO_INSERT_EXCEPTION = 2101;
-    const NO_ROWS_FOUND_EXCEPTION = 2102;
+    public const UNABLE_TO_INSERT_EXCEPTION = 2101;
+    public const NO_ROWS_FOUND_EXCEPTION = 2102;
 
     public function insertLocation(
         LocationEntity $locationEntity
