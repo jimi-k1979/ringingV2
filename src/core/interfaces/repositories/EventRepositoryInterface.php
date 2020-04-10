@@ -13,10 +13,10 @@ interface EventRepositoryInterface
     public const NO_ROWS_UPDATED = 2503;
     public const NO_ROWS_DELETED = 2504;
 
-    public function insertEvent(
+    public function insertDrlEvent(
         DrlEventEntity $entity
     ): DrlEventEntity;
 
-    public function selectCompetition(int $id): DrlEventEntity;
+    public function fetchDrlEvent(int $id): DrlEventEntity;
 
 }

@@ -90,7 +90,7 @@ class ResultSpy implements ResultRepositoryInterface
         if ($this->fetchDrlEventResultsThrowsException) {
             throw new RepositoryNoResults(
                 'Unable to create result',
-                ResultRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                ResultRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
         return $this->fetchDrlEventResultValue ??
@@ -107,9 +107,18 @@ class ResultSpy implements ResultRepositoryInterface
     /**
      * @param DrlResultEntity[] $fetchDrlEventResultValue
      */
-    public function setFetchDrlEventResultValue(array $fetchDrlEventResultValue): void
-    {
+    public function setFetchDrlEventResultValue(
+        array $fetchDrlEventResultValue
+    ): void {
         $this->fetchDrlEventResultValue = $fetchDrlEventResultValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchDrlEventResultsBeenCalled(): bool
+    {
+        return $this->fetchDrlEventResultsCalled;
     }
 
 

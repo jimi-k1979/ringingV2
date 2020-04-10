@@ -7,6 +7,7 @@ namespace mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use traits\CreateMockDrlEventTrait;
 
@@ -26,6 +27,18 @@ class EventSpy implements EventRepositoryInterface
      * @var DrlEventEntity|null
      */
     private $drlEventValue;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchEventThrowsException = false;
+    /**
+     * @var DrlEventEntity
+     */
+    private $fetchDrlEventValue;
 
     public function setThrowException(): void
     {
@@ -37,7 +50,7 @@ class EventSpy implements EventRepositoryInterface
      * @return DrlEventEntity
      * @throws GeneralRepositoryErrorException
      */
-    public function insertEvent(DrlEventEntity $entity): DrlEventEntity
+    public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
     {
         $this->insertEventCalled = true;
         if ($this->throwException) {
@@ -66,7 +79,47 @@ class EventSpy implements EventRepositoryInterface
         $this->drlEventValue = $drlEventValue;
     }
 
-    public function selectCompetition(int $id): DrlEventEntity
+    /**
+     * @param int $id
+     * @return DrlEventEntity
+     * @throws RepositoryNoResults
+     */
+    public function fetchDrlEvent(int $id): DrlEventEntity
     {
+        $this->fetchDrlEventCalled = true;
+        if ($this->fetchEventThrowsException) {
+            throw new RepositoryNoResults(
+                'No drl event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventValue ?? $this->createMockDrlEvent();
     }
+
+    /**
+     */
+    public function setFetchEventThrowsException(): void
+    {
+        $this->fetchEventThrowsException = true;
+    }
+
+    /**
+     * @param DrlEventEntity $fetchDrlEventValue
+     */
+    public function setFetchDrlEventValue(
+        DrlEventEntity $fetchDrlEventValue
+    ): void {
+        $this->fetchDrlEventValue = $fetchDrlEventValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchDrlEventBeenCalled(): bool
+    {
+        return $this->fetchDrlEventCalled;
+    }
+
+
 }

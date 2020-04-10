@@ -10,6 +10,7 @@ use DrlArchive\core\entities\DrlResultEntity;
 interface ResultRepositoryInterface
 {
     public const UNABLE_TO_INSERT_EXCEPTION = 2301;
+    public const NO_ROWS_FOUND_EXCEPTION = 2302;
 
     public function insertDrlResult(
         DrlResultEntity $resultEntity

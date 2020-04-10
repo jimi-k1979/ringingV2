@@ -97,7 +97,7 @@ class CreateDrlEvent extends Interactor
 
     private function insertNewEvent(): void
     {
-        $this->eventEntity = $this->eventRepository->insertEvent(
+        $this->eventEntity = $this->eventRepository->insertDrlEvent(
             $this->eventEntity
         );
     }
