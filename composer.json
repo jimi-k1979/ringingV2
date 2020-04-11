@@ -9,6 +9,7 @@
     }
   ],
   "require": {
+    "twig/twig": "^3.0",
     "ext-pdo": "*"
   },
   "require-dev": {
