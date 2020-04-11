@@ -12,12 +12,12 @@ class EventDummy implements EventRepositoryInterface
 {
     use CreateMockDrlEventTrait;
 
-    public function insertEvent(DrlEventEntity $entity): DrlEventEntity
+    public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
     {
         return $this->createMockDrlEvent();
     }
 
-    public function selectCompetition(int $id): DrlEventEntity
+    public function fetchDrlEvent(int $id): DrlEventEntity
     {
         return $this->createMockDrlEvent();
     }
