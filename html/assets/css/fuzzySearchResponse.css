@@ -1,0 +1,44 @@
+.ui-front {
+    z-index: 500;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: 0;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+    position: relative;
+    padding: 3px 1em 3px .4em;
+}
+
+.ui-widget {
+    font-size: 1.1em;
+}
+
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    color: #222222;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #d3d3d3;
+}
+

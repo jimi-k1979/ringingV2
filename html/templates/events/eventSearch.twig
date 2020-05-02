@@ -2,6 +2,13 @@
 
 {% block title %}Results Archive{% endblock %}
 
+{% block extraStyles %}
+    <link href="/assets/css/fuzzySearchResponse.css"
+          rel="stylesheet"
+          type="text/css"
+    >
+{% endblock %}
+
 {% block mainContent %}
     <div class="col blog-main">
         <h3 class="pb-1 my-4 font-italic border-bottom">
@@ -9,29 +16,40 @@
         </h3>
 
         <p>
-            Using the form below you can search for and view the results for any of
-            the events in the archive..
+            Using the forms below you can search for and view the results for
+            any of the events in the archive..
         </p>
 
         <div class="row mx-0">
 
             <div class="mb-1 col-md border">
                 <h4>Search by Event</h4>
+                <div class="autocomplete-suggestions"
+                     id="competition-suggestions"
+                >
+
+                </div>
                 <div class="event-search-form">
                     <div class="form-group row">
-                        <label for="event-text-search"
+                        <label for="competition-text-search"
                                class="col-2 col-md-12 col-lg-2 col-form-label"
                         >
                             Name
                         </label>
                         <div class="col-10 col-md-12 col-lg-10">
                             <input type="text"
-                                   name="event-text-search"
-                                   id="event-text-search"
+                                   name="competition-text-search"
+                                   id="competition-text-search"
                                    class="form-control"
                                    autocomplete="off"
                                    placeholder="Type name here"
                             >
+                            <input type="hidden"
+                                   name="hidden-competition-id"
+                                   id="hidden-competition-id"
+                                   value="0"
+                            >
+
                         </div>
                     </div>
                     <div class="form-group row">
@@ -54,6 +72,15 @@
                             </select>
                         </div>
                     </div>
+
+                    <button type="button"
+                            id="event-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
                 </div>
             </div>
 
@@ -72,7 +99,12 @@
                                    id="location-text-search"
                                    class="form-control"
                                    autocomplete="off"
-                                   placeholder="Type name here"
+                                   placeholder="Type location here"
+                            >
+                            <input type="hidden"
+                                   id="hidden-location-id"
+                                   name="hidden-location-id"
+                                   value="0"
                             >
                         </div>
                     </div>
@@ -116,6 +148,15 @@
                             </select>
                         </div>
                     </div>
+
+                    <button type="button"
+                            id="location-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
                 </div>
             </div>
 
@@ -129,12 +170,12 @@
                             Year
                         </label>
                         <div class="col-10 col-md-12 col-lg-10">
-                            <input type="text"
+                            <input type="number"
                                    name="year-text-search"
                                    id="year-text-search"
                                    class="form-control"
                                    autocomplete="off"
-                                   placeholder="Type name here"
+                                   placeholder="Type year here"
                             >
                         </div>
                     </div>
@@ -158,6 +199,15 @@
                             </select>
                         </div>
                     </div>
+
+                    <button type="button"
+                            id="year-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
                 </div>
             </div>
 
@@ -168,4 +218,11 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/eventSearch.js"
+    ></script>
 {% endblock %}
