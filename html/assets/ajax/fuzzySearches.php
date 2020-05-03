@@ -3,18 +3,8 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
-use DrlArchive\core\classes\Response;
-use DrlArchive\core\interfaces\boundaries\PresenterInterface;
-
 header('Content-Type: application/json');
 
-$presenter = new class implements PresenterInterface {
-
-    public function send(?Response $response = null)
-    {
-        // TODO: Implement send() method.
-    }
-};
 
 switch ($_POST['action']) {
     case 'fuzzySearchCompetitions':
