@@ -1,174 +1,342 @@
 -- Competitions
-INSERT INTO DRL_competition VALUES (1, '90th Anniversary 6 Bell');
-INSERT INTO DRL_competition VALUES (2, 'Alphington');
-INSERT INTO DRL_competition VALUES (3, 'Appledore 6 Bell');
-INSERT INTO DRL_competition VALUES (4, 'Appledore 8 Bell');
-INSERT INTO DRL_competition VALUES (5, 'Art Seymour');
-INSERT INTO DRL_competition VALUES (6, 'Ashreigney');
-INSERT INTO DRL_competition VALUES (7, 'Atherington');
-INSERT INTO DRL_competition VALUES (8, 'Barnstaple Deanery');
-INSERT INTO DRL_competition VALUES (9, 'Beaford');
-INSERT INTO DRL_competition VALUES (10, 'Belstone');
-INSERT INTO DRL_competition VALUES (11, 'Beric Bartlett');
-INSERT INTO DRL_competition VALUES (12, 'Bickington');
-INSERT INTO DRL_competition VALUES (13, 'Bickleigh');
-INSERT INTO DRL_competition VALUES (14, 'Bideford');
-INSERT INTO DRL_competition VALUES (15, 'Bigbury');
-INSERT INTO DRL_competition VALUES (16, 'Bishops Nympton');
-INSERT INTO DRL_competition VALUES (17, 'Bishops Tawton');
-INSERT INTO DRL_competition VALUES (18, 'Bovey Tracey');
-INSERT INTO DRL_competition VALUES (19, 'Bow');
-INSERT INTO DRL_competition VALUES (20, 'Braunton');
-INSERT INTO DRL_competition VALUES (21, 'Bridestowe');
-INSERT INTO DRL_competition VALUES (22, 'Bridford');
-INSERT INTO DRL_competition VALUES (23, 'Broadhempston');
-INSERT INTO DRL_competition VALUES (24, 'Buckland in the Moor');
-INSERT INTO DRL_competition VALUES (25, 'Burrington');
-INSERT INTO DRL_competition VALUES (26, 'C Delve Shield');
-INSERT INTO DRL_competition VALUES (27, 'C Ridge Shield');
-INSERT INTO DRL_competition VALUES (28, 'Cadbury Deanery');
-INSERT INTO DRL_competition VALUES (29, 'Chawleigh');
-INSERT INTO DRL_competition VALUES (30, 'Cheriton Fitzpaine');
-INSERT INTO DRL_competition VALUES (31, 'Chittlehampton 6 Bell');
-INSERT INTO DRL_competition VALUES (32, 'Chittlehampton 8 Bell');
-INSERT INTO DRL_competition VALUES (33, 'Chudleigh');
-INSERT INTO DRL_competition VALUES (34, 'Churston Ferrers');
-INSERT INTO DRL_competition VALUES (35, 'Coldridge');
-INSERT INTO DRL_competition VALUES (36, 'Colebrooke');
-INSERT INTO DRL_competition VALUES (37, 'Combe Martin');
-INSERT INTO DRL_competition VALUES (38, 'Cornwood');
-INSERT INTO DRL_competition VALUES (39, 'Coulthirst Shield');
-INSERT INTO DRL_competition VALUES (40, 'Dartmouth, St Petrox');
-INSERT INTO DRL_competition VALUES (41, 'Dartmouth, St Saviour');
-INSERT INTO DRL_competition VALUES (42, 'Dartmouth, Townstal');
-INSERT INTO DRL_competition VALUES (43, 'Dean Prior');
-INSERT INTO DRL_competition VALUES (44, 'Devon 8 Bell');
-INSERT INTO DRL_competition VALUES (45, 'Devon Association 5 Bell');
-INSERT INTO DRL_competition VALUES (46, 'Devon Association London Challenge');
-INSERT INTO DRL_competition VALUES (47, 'Devon Association Open 6 Bell');
-INSERT INTO DRL_competition VALUES (48, 'Devon Association Open 8 Bell');
-INSERT INTO DRL_competition VALUES (49, 'Diptford');
-INSERT INTO DRL_competition VALUES (50, 'Dittisham');
-INSERT INTO DRL_competition VALUES (51, 'Doddiscombsleigh');
-INSERT INTO DRL_competition VALUES (52, 'Dolton');
-INSERT INTO DRL_competition VALUES (53, 'Dowland 5 Bell');
-INSERT INTO DRL_competition VALUES (54, 'Down St Mary');
-INSERT INTO DRL_competition VALUES (55, 'Dunsford');
-INSERT INTO DRL_competition VALUES (56, 'East Portlemouth Bowl');
-INSERT INTO DRL_competition VALUES (57, 'Eggbuckland');
-INSERT INTO DRL_competition VALUES (58, 'Exbourne');
-INSERT INTO DRL_competition VALUES (59, 'Frithelstock');
-INSERT INTO DRL_competition VALUES (60, 'Gammon Cup');
-INSERT INTO DRL_competition VALUES (61, 'Georgeham');
-INSERT INTO DRL_competition VALUES (62, 'Great Torrington');
-INSERT INTO DRL_competition VALUES (63, 'Halwell');
-INSERT INTO DRL_competition VALUES (64, 'Hartland Deanery');
-INSERT INTO DRL_competition VALUES (65, 'Hartland Deanery Open');
-INSERT INTO DRL_competition VALUES (66, 'Heanton Punchardon');
-INSERT INTO DRL_competition VALUES (67, 'High Bickington 6 Bell');
-INSERT INTO DRL_competition VALUES (68, 'High Bickington 8 Bell');
-INSERT INTO DRL_competition VALUES (69, 'Highweek Jubilee Shield');
-INSERT INTO DRL_competition VALUES (70, 'Holbeton');
-INSERT INTO DRL_competition VALUES (71, 'Iddesleigh');
-INSERT INTO DRL_competition VALUES (72, 'Ide');
-INSERT INTO DRL_competition VALUES (73, 'Ilfracombe, Holy Trinity');
-INSERT INTO DRL_competition VALUES (74, 'Interdeanery');
-INSERT INTO DRL_competition VALUES (75, 'Kenn');
-INSERT INTO DRL_competition VALUES (76, 'Kenn Deanery');
-INSERT INTO DRL_competition VALUES (77, 'Kentisbeare');
-INSERT INTO DRL_competition VALUES (78, 'Kilkhampton 6 Bell');
-INSERT INTO DRL_competition VALUES (79, 'Kilkhampton 8 Bell');
-INSERT INTO DRL_competition VALUES (80, 'Kings Nympton');
-INSERT INTO DRL_competition VALUES (81, 'Kingsteignton');
-INSERT INTO DRL_competition VALUES (82, 'Lamerton');
-INSERT INTO DRL_competition VALUES (83, 'Landkey');
-INSERT INTO DRL_competition VALUES (84, 'Lapford');
-INSERT INTO DRL_competition VALUES (85, 'Littleham');
-INSERT INTO DRL_competition VALUES (86, 'Loddiswell');
-INSERT INTO DRL_competition VALUES (87, 'Lydford');
-INSERT INTO DRL_competition VALUES (88, 'Lynton');
-INSERT INTO DRL_competition VALUES (89, 'M Boundy Shield');
-INSERT INTO DRL_competition VALUES (90, 'Major Final');
-INSERT INTO DRL_competition VALUES (91, 'Maker');
-INSERT INTO DRL_competition VALUES (92, 'Mariansleigh');
-INSERT INTO DRL_competition VALUES (93, 'Marwood');
-INSERT INTO DRL_competition VALUES (94, 'Meavy');
-INSERT INTO DRL_competition VALUES (95, 'Merton');
-INSERT INTO DRL_competition VALUES (96, 'Minor Final');
-INSERT INTO DRL_competition VALUES (97, 'Molland');
-INSERT INTO DRL_competition VALUES (98, 'Monkleigh');
-INSERT INTO DRL_competition VALUES (99, 'Morchard Bishop');
-INSERT INTO DRL_competition VALUES (100, 'Moreton Deanery');
-INSERT INTO DRL_competition VALUES (101, 'Mortehoe');
-INSERT INTO DRL_competition VALUES (102, 'National 6 Bell');
-INSERT INTO DRL_competition VALUES (103, 'National 8 Bell');
-INSERT INTO DRL_competition VALUES (104, 'National Qualifier');
-INSERT INTO DRL_competition VALUES (105, 'Newton Abbot, Ipplepen and Torbay Deaneries');
-INSERT INTO DRL_competition VALUES (106, 'Newton Abbot, Wolborough');
-INSERT INTO DRL_competition VALUES (107, 'Newton St Cyres');
-INSERT INTO DRL_competition VALUES (108, 'North Devon Qualifier');
-INSERT INTO DRL_competition VALUES (109, 'North vs South');
-INSERT INTO DRL_competition VALUES (110, 'Okehampton Deanery');
-INSERT INTO DRL_competition VALUES (111, 'Petrockstowe');
-INSERT INTO DRL_competition VALUES (112, 'Plymouth and Ivybridge Deaneries');
-INSERT INTO DRL_competition VALUES (113, 'Plymtree');
-INSERT INTO DRL_competition VALUES (114, 'Poughill');
-INSERT INTO DRL_competition VALUES (115, 'Rose Ash');
-INSERT INTO DRL_competition VALUES (116, 'Sampford Courtenay');
-INSERT INTO DRL_competition VALUES (117, 'Shaugh Prior');
-INSERT INTO DRL_competition VALUES (118, 'Shebbear');
-INSERT INTO DRL_competition VALUES (119, 'Sheepstor');
-INSERT INTO DRL_competition VALUES (120, 'Shirwell');
-INSERT INTO DRL_competition VALUES (121, 'Shirwell Deanery');
-INSERT INTO DRL_competition VALUES (122, 'Shirwell Deanery Open');
-INSERT INTO DRL_competition VALUES (123, 'South Brent');
-INSERT INTO DRL_competition VALUES (124, 'South Devon 8 Bell');
-INSERT INTO DRL_competition VALUES (125, 'South Devon Qualifier');
-INSERT INTO DRL_competition VALUES (126, 'South Molton Deanery');
-INSERT INTO DRL_competition VALUES (127, 'South Petherwin');
-INSERT INTO DRL_competition VALUES (128, 'South Tawton');
-INSERT INTO DRL_competition VALUES (129, 'Spreyton');
-INSERT INTO DRL_competition VALUES (130, 'St Giles in the Wood');
-INSERT INTO DRL_competition VALUES (131, 'Stoke Gabriel');
-INSERT INTO DRL_competition VALUES (132, 'Stratton 6 Bell');
-INSERT INTO DRL_competition VALUES (133, 'Stratton 8 Bell');
-INSERT INTO DRL_competition VALUES (134, 'Swimbridge');
-INSERT INTO DRL_competition VALUES (135, 'Tamar Valley Guild');
-INSERT INTO DRL_competition VALUES (136, 'Tamar Valley Guild 8 Bell');
-INSERT INTO DRL_competition VALUES (137, 'Tamar Valley Guild Open');
-INSERT INTO DRL_competition VALUES (138, 'Tamar Valley Knockout Final');
-INSERT INTO DRL_competition VALUES (139, 'Tamar Valley Knockout Final - open');
-INSERT INTO DRL_competition VALUES (140, 'Tavistock Deanery');
-INSERT INTO DRL_competition VALUES (141, 'Taw and Torridge Cup');
-INSERT INTO DRL_competition VALUES (142, 'Tawstock 6 Bell');
-INSERT INTO DRL_competition VALUES (143, 'Tawstock Shield');
-INSERT INTO DRL_competition VALUES (144, 'Tedburn St Mary');
-INSERT INTO DRL_competition VALUES (145, 'Throwleigh');
-INSERT INTO DRL_competition VALUES (146, 'Torridge Valley Guild');
-INSERT INTO DRL_competition VALUES (147, 'Torridge Valley Guild Open');
-INSERT INTO DRL_competition VALUES (148, 'Totnes Deanery');
-INSERT INTO DRL_competition VALUES (149, 'Upton Pyne');
-INSERT INTO DRL_competition VALUES (150, 'Warkleigh');
-INSERT INTO DRL_competition VALUES (151, 'Weare Giffard');
-INSERT INTO DRL_competition VALUES (152, 'West Alvington');
-INSERT INTO DRL_competition VALUES (153, 'West Buckland');
-INSERT INTO DRL_competition VALUES (154, 'West Down');
-INSERT INTO DRL_competition VALUES (155, 'Widecombe in the Moor');
-INSERT INTO DRL_competition VALUES (156, 'Widecombe in the Moor 8 Bell');
-INSERT INTO DRL_competition VALUES (157, 'Witheridge');
-INSERT INTO DRL_competition VALUES (158, 'Woodleigh Deanery');
-INSERT INTO DRL_competition VALUES (159, 'Yarnscombe');
-INSERT INTO DRL_competition VALUES (160, 'Zeal Monachorum');
+INSERT INTO DRL_competition
+VALUES (1, '90th Anniversary 6 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (2, 'Alphington', 1);
+INSERT INTO DRL_competition
+VALUES (3, 'Appledore 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (4, 'Appledore 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (5, 'Art Seymour', 0);
+INSERT INTO DRL_competition
+VALUES (6, 'Ashreigney', 1);
+INSERT INTO DRL_competition
+VALUES (7, 'Atherington', 1);
+INSERT INTO DRL_competition
+VALUES (8, 'Barnstaple Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (9, 'Beaford', 1);
+INSERT INTO DRL_competition
+VALUES (10, 'Belstone', 1);
+INSERT INTO DRL_competition
+VALUES (11, 'Beric Bartlett', 0);
+INSERT INTO DRL_competition
+VALUES (12, 'Bickington', 1);
+INSERT INTO DRL_competition
+VALUES (13, 'Bickleigh', 1);
+INSERT INTO DRL_competition
+VALUES (14, 'Bideford', 1);
+INSERT INTO DRL_competition
+VALUES (15, 'Bigbury', 1);
+INSERT INTO DRL_competition
+VALUES (16, 'Bishops Nympton', 1);
+INSERT INTO DRL_competition
+VALUES (17, 'Bishops Tawton', 1);
+INSERT INTO DRL_competition
+VALUES (18, 'Bovey Tracey', 1);
+INSERT INTO DRL_competition
+VALUES (19, 'Bow', 1);
+INSERT INTO DRL_competition
+VALUES (20, 'Braunton', 1);
+INSERT INTO DRL_competition
+VALUES (21, 'Bridestowe', 1);
+INSERT INTO DRL_competition
+VALUES (22, 'Bridford', 1);
+INSERT INTO DRL_competition
+VALUES (23, 'Broadhempston', 1);
+INSERT INTO DRL_competition
+VALUES (24, 'Buckland in the Moor', 1);
+INSERT INTO DRL_competition
+VALUES (25, 'Burrington', 1);
+INSERT INTO DRL_competition
+VALUES (26, 'C Delve Shield', 0);
+INSERT INTO DRL_competition
+VALUES (27, 'C Ridge Shield', 0);
+INSERT INTO DRL_competition
+VALUES (28, 'Cadbury Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (29, 'Chawleigh', 1);
+INSERT INTO DRL_competition
+VALUES (30, 'Cheriton Fitzpaine', 1);
+INSERT INTO DRL_competition
+VALUES (31, 'Chittlehampton 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (32, 'Chittlehampton 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (33, 'Chudleigh', 1);
+INSERT INTO DRL_competition
+VALUES (34, 'Churston Ferrers', 1);
+INSERT INTO DRL_competition
+VALUES (35, 'Coldridge', 1);
+INSERT INTO DRL_competition
+VALUES (36, 'Colebrooke', 1);
+INSERT INTO DRL_competition
+VALUES (37, 'Combe Martin', 1);
+INSERT INTO DRL_competition
+VALUES (38, 'Cornwood', 1);
+INSERT INTO DRL_competition
+VALUES (39, 'Coulthirst Shield', 0);
+INSERT INTO DRL_competition
+VALUES (40, 'Dartmouth, St Petrox', 1);
+INSERT INTO DRL_competition
+VALUES (41, 'Dartmouth, St Saviour', 1);
+INSERT INTO DRL_competition
+VALUES (42, 'Dartmouth, Townstal', 1);
+INSERT INTO DRL_competition
+VALUES (43, 'Dean Prior', 1);
+INSERT INTO DRL_competition
+VALUES (44, 'Devon Association 8 Bell Final', 0);
+INSERT INTO DRL_competition
+VALUES (45, 'Devon Association 5 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (46, 'Devon Association London Challenge', 0);
+INSERT INTO DRL_competition
+VALUES (47, 'Devon Association Open 6 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (48, 'Devon Association Open 8 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (49, 'Diptford', 1);
+INSERT INTO DRL_competition
+VALUES (50, 'Dittisham', 1);
+INSERT INTO DRL_competition
+VALUES (51, 'Doddiscombsleigh', 1);
+INSERT INTO DRL_competition
+VALUES (52, 'Dolton', 1);
+INSERT INTO DRL_competition
+VALUES (53, 'Dowland 5 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (54, 'Down St Mary', 1);
+INSERT INTO DRL_competition
+VALUES (55, 'Dunsford', 1);
+INSERT INTO DRL_competition
+VALUES (56, 'East Portlemouth Bowl', 0);
+INSERT INTO DRL_competition
+VALUES (57, 'Eggbuckland', 1);
+INSERT INTO DRL_competition
+VALUES (58, 'Exbourne', 1);
+INSERT INTO DRL_competition
+VALUES (59, 'Frithelstock', 1);
+INSERT INTO DRL_competition
+VALUES (60, 'Gammon Cup', 0);
+INSERT INTO DRL_competition
+VALUES (61, 'Georgeham', 1);
+INSERT INTO DRL_competition
+VALUES (62, 'Great Torrington', 1);
+INSERT INTO DRL_competition
+VALUES (63, 'Halwell', 1);
+INSERT INTO DRL_competition
+VALUES (64, 'Hartland Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (65, 'Hartland Deanery Open', 0);
+INSERT INTO DRL_competition
+VALUES (66, 'Heanton Punchardon', 1);
+INSERT INTO DRL_competition
+VALUES (67, 'High Bickington 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (68, 'High Bickington 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (69, 'Highweek Jubilee Shield', 1);
+INSERT INTO DRL_competition
+VALUES (70, 'Holbeton', 1);
+INSERT INTO DRL_competition
+VALUES (71, 'Iddesleigh', 1);
+INSERT INTO DRL_competition
+VALUES (72, 'Ide', 1);
+INSERT INTO DRL_competition
+VALUES (73, 'Ilfracombe, Holy Trinity', 1);
+INSERT INTO DRL_competition
+VALUES (74, 'South Devon Interdeanery', 0);
+INSERT INTO DRL_competition
+VALUES (75, 'Kenn', 1);
+INSERT INTO DRL_competition
+VALUES (76, 'Kenn Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (77, 'Kentisbeare', 1);
+INSERT INTO DRL_competition
+VALUES (78, 'Kilkhampton 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (79, 'Kilkhampton 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (80, 'Kings Nympton', 1);
+INSERT INTO DRL_competition
+VALUES (81, 'Kingsteignton', 1);
+INSERT INTO DRL_competition
+VALUES (82, 'Lamerton', 1);
+INSERT INTO DRL_competition
+VALUES (83, 'Landkey', 1);
+INSERT INTO DRL_competition
+VALUES (84, 'Lapford', 1);
+INSERT INTO DRL_competition
+VALUES (85, 'Littleham', 1);
+INSERT INTO DRL_competition
+VALUES (86, 'Loddiswell', 1);
+INSERT INTO DRL_competition
+VALUES (87, 'Lydford', 1);
+INSERT INTO DRL_competition
+VALUES (88, 'Lynton', 1);
+INSERT INTO DRL_competition
+VALUES (89, 'M Boundy Shield', 0);
+INSERT INTO DRL_competition
+VALUES (90, 'Devon Association Major Final', 0);
+INSERT INTO DRL_competition
+VALUES (91, 'Maker', 1);
+INSERT INTO DRL_competition
+VALUES (92, 'Mariansleigh', 1);
+INSERT INTO DRL_competition
+VALUES (93, 'Marwood', 1);
+INSERT INTO DRL_competition
+VALUES (94, 'Meavy', 1);
+INSERT INTO DRL_competition
+VALUES (95, 'Merton', 1);
+INSERT INTO DRL_competition
+VALUES (96, 'Devon Association Minor Final', 0);
+INSERT INTO DRL_competition
+VALUES (97, 'Molland', 1);
+INSERT INTO DRL_competition
+VALUES (98, 'Monkleigh', 1);
+INSERT INTO DRL_competition
+VALUES (99, 'Morchard Bishop', 1);
+INSERT INTO DRL_competition
+VALUES (100, 'Moreton Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (101, 'Mortehoe', 1);
+INSERT INTO DRL_competition
+VALUES (102, 'Devon Association National 6 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (103, 'Devon Association National 8 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (104, 'Devon Association National Qualifier', 0);
+INSERT INTO DRL_competition
+VALUES (105, 'Newton Abbot, Ipplepen and Torbay Deaneries', 0);
+INSERT INTO DRL_competition
+VALUES (106, 'Newton Abbot, Wolborough', 1);
+INSERT INTO DRL_competition
+VALUES (107, 'Newton St Cyres', 1);
+INSERT INTO DRL_competition
+VALUES (108, 'Devon Association North Devon Qualifier', 0);
+INSERT INTO DRL_competition
+VALUES (109, 'North vs South', 0);
+INSERT INTO DRL_competition
+VALUES (110, 'Okehampton Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (111, 'Petrockstowe', 1);
+INSERT INTO DRL_competition
+VALUES (112, 'Plymouth and Ivybridge Deaneries', 0);
+INSERT INTO DRL_competition
+VALUES (113, 'Plymtree', 1);
+INSERT INTO DRL_competition
+VALUES (114, 'Poughill', 1);
+INSERT INTO DRL_competition
+VALUES (115, 'Rose Ash', 1);
+INSERT INTO DRL_competition
+VALUES (116, 'Sampford Courtenay', 1);
+INSERT INTO DRL_competition
+VALUES (117, 'Shaugh Prior', 1);
+INSERT INTO DRL_competition
+VALUES (118, 'Shebbear', 1);
+INSERT INTO DRL_competition
+VALUES (119, 'Sheepstor', 1);
+INSERT INTO DRL_competition
+VALUES (120, 'Shirwell', 1);
+INSERT INTO DRL_competition
+VALUES (121, 'Shirwell Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (122, 'Shirwell Deanery Open', 0);
+INSERT INTO DRL_competition
+VALUES (123, 'South Brent', 1);
+INSERT INTO DRL_competition
+VALUES (124, 'South Devon 8 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (125, 'Devon Association South Qualifier', 0);
+INSERT INTO DRL_competition
+VALUES (126, 'South Molton Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (127, 'South Petherwin', 1);
+INSERT INTO DRL_competition
+VALUES (128, 'South Tawton', 1);
+INSERT INTO DRL_competition
+VALUES (129, 'Spreyton', 1);
+INSERT INTO DRL_competition
+VALUES (130, 'St Giles in the Wood', 1);
+INSERT INTO DRL_competition
+VALUES (131, 'Stoke Gabriel', 1);
+INSERT INTO DRL_competition
+VALUES (132, 'Stratton 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (133, 'Stratton 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (134, 'Swimbridge', 1);
+INSERT INTO DRL_competition
+VALUES (135, 'Tamar Valley Guild', 0);
+INSERT INTO DRL_competition
+VALUES (136, 'Tamar Valley Guild 8 Bell', 0);
+INSERT INTO DRL_competition
+VALUES (137, 'Tamar Valley Guild Open', 0);
+INSERT INTO DRL_competition
+VALUES (138, 'Tamar Valley Knockout Final', 0);
+INSERT INTO DRL_competition
+VALUES (139, 'Tamar Valley Knockout Final - open', 0);
+INSERT INTO DRL_competition
+VALUES (140, 'Tavistock Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (141, 'Taw and Torridge Cup', 0);
+INSERT INTO DRL_competition
+VALUES (142, 'Tawstock 6 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (143, 'Tawstock Shield', 0);
+INSERT INTO DRL_competition
+VALUES (144, 'Tedburn St Mary', 1);
+INSERT INTO DRL_competition
+VALUES (145, 'Throwleigh', 1);
+INSERT INTO DRL_competition
+VALUES (146, 'Torridge Valley Guild', 0);
+INSERT INTO DRL_competition
+VALUES (147, 'Torridge Valley Guild Open', 0);
+INSERT INTO DRL_competition
+VALUES (148, 'Totnes Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (149, 'Upton Pyne', 1);
+INSERT INTO DRL_competition
+VALUES (150, 'Warkleigh', 1);
+INSERT INTO DRL_competition
+VALUES (151, 'Weare Giffard', 1);
+INSERT INTO DRL_competition
+VALUES (152, 'West Alvington', 1);
+INSERT INTO DRL_competition
+VALUES (153, 'West Buckland', 1);
+INSERT INTO DRL_competition
+VALUES (154, 'West Down', 1);
+INSERT INTO DRL_competition
+VALUES (155, 'Widecombe in the Moor', 1);
+INSERT INTO DRL_competition
+VALUES (156, 'Widecombe in the Moor 8 Bell', 1);
+INSERT INTO DRL_competition
+VALUES (157, 'Witheridge', 1);
+INSERT INTO DRL_competition
+VALUES (158, 'Woodleigh Deanery', 0);
+INSERT INTO DRL_competition
+VALUES (159, 'Yarnscombe', 1);
+INSERT INTO DRL_competition
+VALUES (160, 'Zeal Monachorum', 1);
 
 -- events
-INSERT INTO DRL_event VALUES (1, '2007', 72, 125);
-INSERT INTO DRL_event VALUES (2, '2007', 74, 222);
-INSERT INTO DRL_event VALUES (3, '2007', 44, 89);
-INSERT INTO DRL_event VALUES (4, '2007', 148, 111);
-INSERT INTO DRL_event VALUES (5, '2007', 158, 223);
-INSERT INTO DRL_event VALUES (6, '2007', 125, 63);
-INSERT INTO DRL_event VALUES (7, '2007', 108, 20);
-INSERT INTO DRL_event VALUES (8, '2007', 54, 85);
+INSERT INTO DRL_event
+VALUES (1, '2007', 72, 125);
+INSERT INTO DRL_event
+VALUES (2, '2007', 74, 222);
+INSERT INTO DRL_event
+VALUES (3, '2007', 44, 89);
+INSERT INTO DRL_event
+VALUES (4, '2007', 148, 111);
+INSERT INTO DRL_event
+VALUES (5, '2007', 158, 223);
+INSERT INTO DRL_event
+VALUES (6, '2007', 125, 63);
+INSERT INTO DRL_event
+VALUES (7, '2007', 108, 20);
+INSERT INTO DRL_event
+VALUES (8, '2007', 54, 85);
 INSERT INTO DRL_event VALUES (9, '2007', 96, 215);
 INSERT INTO DRL_event VALUES (10, '2007', 85, 150);
 INSERT INTO DRL_event VALUES (11, '2007', 110, 182);

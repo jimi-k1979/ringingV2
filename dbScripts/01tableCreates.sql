@@ -2,7 +2,7 @@ CREATE TABLE `deanery`
 (
     `id`          int unsigned                           NOT NULL AUTO_INCREMENT,
     `deaneryName` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `northSouth`  enum ('north', 'south', 'outOfCounty'),
+    `northSouth`  enum ('north', 'south', 'outOfCounty', 'n/a'),
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
