@@ -1,10 +1,12 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\implementation\repositories\sql;
 
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
@@ -26,7 +28,7 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
     public const TABLE_DRL_COMPETITION = 'DRL_competition dc';
 
     // where clauses
-    public const WHERE_NAME_LIKE = 'WHERE dc.competitionName LIKE :search';
+    public const WHERE_NAME_LIKE = 'dc.competitionName LIKE :search';
 
     public function insertDrlCompetition(DrlCompetitionEntity $entity): DrlCompetitionEntity
     {
@@ -40,6 +42,8 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
 
     /**
      * @inheritDoc
+     * @throws GeneralRepositoryErrorException
+     * @throws RepositoryNoResults
      */
     public function fuzzySearchDrlCompetition(string $string): array
     {
@@ -100,13 +104,13 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
     {
         $entity = new DrlCompetitionEntity();
         $entity->setId(
-            $result[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
+            (int)$result[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
         );
         $entity->setName(
             $result[substr(self::FIELD_NAME_COMPETITION_NAME, 4)]
         );
         $entity->setSingleTowerCompetition(
-            $result[substr(self::FIELD_NAME_IS_SINGLE_TOWER, 4)]
+            (bool)$result[substr(self::FIELD_NAME_IS_SINGLE_TOWER, 4)]
         );
 
         return $entity;

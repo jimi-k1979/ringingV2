@@ -6,7 +6,7 @@ namespace DrlArchive\implementation\factories\interactors\location;
 
 
 use DrlArchive\core\classes\Request;
-use DrlArchive\core\factories\interactors\InteractorFactoryInterface;
+use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearch;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;

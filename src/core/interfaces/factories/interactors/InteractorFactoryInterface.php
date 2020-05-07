@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DrlArchive\core\factories\interactors;
+namespace DrlArchive\core\interfaces\factories\interactors;
 
 
 use DrlArchive\core\classes\Request;

@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+
+use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
+use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
+use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
+
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
 header('Content-Type: application/json');
@@ -8,18 +13,30 @@ header('Content-Type: application/json');
 
 switch ($_POST['action']) {
     case 'fuzzySearchCompetitions':
-        echo json_encode(
-            [
+        try {
+            $request = new DrlCompetitionFuzzySearchRequest(
                 [
-                    'name' => 'Value',
-                    'id' => 123,
-                ],
+                    DrlCompetitionFuzzySearchRequest::SEARCH_TERM => $_POST['term'],
+                ]
+            );
+
+            $useCase = (new DrlCompetitionFuzzySearchFactory())->create(
+                new FuzzySearchPresenterJson(),
+                $request
+            );
+            $useCase->execute();
+        } catch (Exception $e) {
+            echo json_encode(
                 [
-                    'name' => 'another value',
-                    'id' => 124,
-                ],
-            ]
-        );
+                    [
+                        'name' => 'Nothing found',
+                        'id' => 0,
+                        'text' => 'Not found'
+                    ],
+                ]
+            );
+        }
+
         break;
 
     case 'fuzzySearchLocations':

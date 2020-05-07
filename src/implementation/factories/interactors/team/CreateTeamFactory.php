@@ -5,7 +5,7 @@ namespace DrlArchive\implementation\factories\interactors\team;
 
 
 use DrlArchive\core\classes\Request;
-use DrlArchive\core\factories\interactors\InteractorFactoryInterface;
+use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
