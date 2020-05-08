@@ -11,13 +11,14 @@ use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
-class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInterface
+class CompetitionSql extends MysqlRepository
+    implements CompetitionRepositoryInterface
 {
 
     // fields
-    public const SELECT_ID = 'dc.id';
-    public const SELECT_COMPETITION_NAME = 'dc.competitionName';
-    public const SELECT_IS_SINGLE_TOWER = 'dc.isSingleTower';
+    public const SELECT_DRL_COMPETITION_ID = 'dc.id';
+    public const SELECT_DRL_COMPETITION_NAME = 'dc.competitionName';
+    public const SELECT_DRL_COMPETITION_SINGLE_TOWER = 'dc.isSingleTower';
 
     // aliases
     public const FIELD_NAME_COMPETITION_ID = ' AS competitionId';
@@ -28,10 +29,12 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
     public const TABLE_DRL_COMPETITION = 'DRL_competition dc';
 
     // where clauses
-    public const WHERE_NAME_LIKE = 'dc.competitionName LIKE :search';
+    public const WHERE_DRL_COMPETITION_NAME_LIKE =
+        'dc.competitionName LIKE :search';
 
-    public function insertDrlCompetition(DrlCompetitionEntity $entity): DrlCompetitionEntity
-    {
+    public function insertDrlCompetition(
+        DrlCompetitionEntity $entity
+    ): DrlCompetitionEntity {
         // TODO: Implement insertCompetition() method.
     }
 
@@ -51,9 +54,9 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
 
         $query->setFields(
             [
-                self::SELECT_ID . self::FIELD_NAME_COMPETITION_ID,
-                self::SELECT_COMPETITION_NAME . self::FIELD_NAME_COMPETITION_NAME,
-                self::SELECT_IS_SINGLE_TOWER . self::FIELD_NAME_IS_SINGLE_TOWER,
+                self::SELECT_DRL_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
+                self::SELECT_DRL_COMPETITION_NAME . self::FIELD_NAME_COMPETITION_NAME,
+                self::SELECT_DRL_COMPETITION_SINGLE_TOWER . self::FIELD_NAME_IS_SINGLE_TOWER,
             ]
         );
 
@@ -65,13 +68,13 @@ class CompetitionSql extends MysqlRepository implements CompetitionRepositoryInt
 
         $query->setWhereClauses(
             [
-                self::WHERE_NAME_LIKE,
+                self::WHERE_DRL_COMPETITION_NAME_LIKE,
             ]
         );
 
         $query->setOrderBy(
             [
-                self::SELECT_COMPETITION_NAME,
+                self::SELECT_DRL_COMPETITION_NAME,
             ]
         );
 

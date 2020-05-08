@@ -21,4 +21,13 @@ class EventDummy implements EventRepositoryInterface
     {
         return $this->createMockDrlEvent();
     }
+
+    /**
+     * @param int $competitionId
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventsByCompetitionId(int $competitionId): array
+    {
+        return [$this->createMockDrlEvent()];
+    }
 }

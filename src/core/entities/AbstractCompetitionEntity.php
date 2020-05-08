@@ -6,6 +6,10 @@ namespace DrlArchive\core\entities;
 
 abstract class AbstractCompetitionEntity extends Entity
 {
+    public const COMPETITION_TYPE_OTHER = 0;
+    public const COMPETITION_TYPE_DRL = 1;
+    public const COMPETITION_TYPE_LADDER = 2;
+
     /**
      * @var string
      */

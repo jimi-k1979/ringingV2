@@ -12,6 +12,8 @@ class MysqlRepository extends Repository
     private const EMPTY_PASSWORD = '';
     private const EMPTY_USER = '';
 
+    public const ORDER_BY_DESC = ' DESC';
+
     /**
      * @var Database
      */

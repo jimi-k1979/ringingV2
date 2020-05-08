@@ -39,6 +39,14 @@ class EventSpy implements EventRepositoryInterface
      * @var DrlEventEntity
      */
     private $fetchDrlEventValue;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByCompetitionIdCalled = false;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private $fetchDrlEventsByCompetitionIdValue = [];
 
     public function setThrowException(): void
     {
@@ -121,5 +129,29 @@ class EventSpy implements EventRepositoryInterface
         return $this->fetchDrlEventCalled;
     }
 
+    /**
+     * @param int $competitionId
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventsByCompetitionId(int $competitionId): array
+    {
+        $this->fetchDrlEventsByCompetitionIdCalled = true;
+        if ($this->throwException) {
+            throw new RepositoryNoResults(
+                'No events found for that competition id',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fetchDrlEventsByCompetitionIdValue;
+    }
 
+    public function hasFetchDrlEventsByCompetitionIdBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByCompetitionIdCalled;
+    }
+
+    public function setFetchDrlEventsByCompetitionIdValue(array $value): void
+    {
+        $this->fetchDrlEventsByCompetitionIdValue = $value;
+    }
 }

@@ -6,6 +6,10 @@ namespace DrlArchive\core\entities;
 
 abstract class AbstractEventEntity extends Entity
 {
+    public const EVENT_TYPE_OTHER = 0;
+    public const EVENT_TYPE_DRL = 1;
+    public const EVENT_TYPE_LADDER = 2;
+
     /**
      * @var string
      */
