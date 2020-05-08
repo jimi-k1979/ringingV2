@@ -15,6 +15,20 @@ use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 class EventSql extends MysqlRepository implements EventRepositoryInterface
 {
 
+    // fields
+    const SELECT_DRL_EVENT_ID = 'de.id';
+    const SELECT_DRL_EVENT_YEAR = 'de.year';
+
+    // aliases
+    const FIELD_NAME_ID = ' AS id';
+    const FIELD_NAME_YEAR = ' AS year';
+
+    // tables and join
+    const TABLE_DRL_EVENT = 'DRL_event de';
+
+    // where clauses
+    const WHERE_DRL_COMPETITION_ID_IS = 'de.competitionID = :competitionId';
+
     public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
     {
         // TODO: Implement insertDrlEvent() method.
@@ -31,8 +45,8 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_ID,
-                self::SELECT_DRL_EVENT_YEAR . self::FIELD_YEAR,
+                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_ID,
+                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
             ]
         );
         $query->setTablesAndJoins(
@@ -78,12 +92,12 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     {
         $entity = new DrlEventEntity();
 
-        if (isset($row['id'])) {
-            $entity->setId((int)$row['id']);
+        if (isset($row[substr(self::FIELD_NAME_ID, 4)])) {
+            $entity->setId((int)$row[substr(self::FIELD_NAME_ID, 4)]);
         }
 
-        if (isset($row['year'])) {
-            $entity->setYear($row['year']);
+        if (isset($row[substr(self::FIELD_NAME_YEAR, 4)])) {
+            $entity->setYear($row[substr(self::FIELD_NAME_YEAR, 4)]);
         }
 
         if (isset($row['competitionID'])) {

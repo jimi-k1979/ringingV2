@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
+use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
+use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
+use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
+use DrlArchive\implementation\presenters\ResultsSearchDropdownPresenter;
 
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
@@ -55,18 +59,31 @@ switch ($_POST['action']) {
         break;
 
     case 'getCompetitionYears':
-        echo json_encode(
-            [
+        try {
+            $request = new FetchEventsByCompetitionRequest(
                 [
-                    'id' => 1,
-                    'text' => '1980',
-                ],
+                    FetchEventsByCompetitionRequest::COMPETITION_ID =>
+                        $_POST['competitionId'],
+                    FetchEventsByCompetitionRequest::COMPETITION_TYPE =>
+                        AbstractCompetitionEntity::COMPETITION_TYPE_DRL,
+                ]
+            );
+            $useCase = (new FetchEventsByCompetitionFactory())->create(
+                new ResultsSearchDropdownPresenter(),
+                $request
+            );
+            $useCase->execute();
+        } catch (Exception $e) {
+            echo json_encode(
                 [
-                    'id' => 2,
-                    'text' => '1982',
-                ],
-            ]
-        );
+                    [
+                        'name' => 'Nothing found',
+                        'id' => 0,
+                        'text' => 'Not found'
+                    ],
+                ]
+            );
+        }
         break;
 
     case 'getLocationEvents':
