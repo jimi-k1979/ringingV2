@@ -84,11 +84,45 @@ function yearChangeAction(value) {
     }
 }
 
+function getEventResults(eventId) {
+    // do ajax and display results
+    $.ajax({
+        url: '/assets/ajax/fuzzySearches.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            eventId: eventId,
+            action: 'getResults',
+        },
+        success: function (output) {
+            if (output.message) {
+            } else {
+                $('#results-section').html(output.data)
+            }
+        }
+    });
+}
+
 $(document).ready(function () {
     $('#competition-text-search').autocomplete({
-        minLength: 3,
+        minLength: 0,
         source: function (request, response) {
-            getFuzzySearchData(request, response, 'fuzzySearchCompetitions');
+            let length = request.term.length;
+            if (length > 2) {
+                getFuzzySearchData(
+                    request,
+                    response,
+                    'fuzzySearchCompetitions'
+                );
+            } else {
+                if (length === 0) {
+                    $('#event-year').empty().append(
+                        $("<option />").val('0').text('Select an event')
+                    ).attr('disabled', true);
+                    $('#event-get-results').text('Waiting...')
+                        .attr('disabled', true)
+                }
+            }
         },
         select: function (e, data) {
             $.ajax({
@@ -118,9 +152,23 @@ $(document).ready(function () {
     });
 
     $('#location-text-search').autocomplete({
-        minLength: 3,
+        minLength: 0,
         source: function (request, response) {
-            getFuzzySearchData(request, response, 'fuzzySearchLocations');
+            let length = request.term.length;
+            if (length > 2) {
+                getFuzzySearchData(request, response, 'fuzzySearchLocations');
+            } else {
+                if (length === 0) {
+                    $('#location-event').empty().append(
+                        $("<option />").val('0').text('Select a location')
+                    ).attr('disabled', true);
+                    $('#location-year').empty().append(
+                        $("<option />").val('0').text('Select a location and event')
+                    ).attr('disabled', true);
+                    $('#location-get-results').text('Waiting...')
+                        .attr('disabled', true)
+                }
+            }
         },
         select: function (e, data) {
             $.ajax({
@@ -193,4 +241,9 @@ $(document).ready(function () {
         .on('change', function () {
             yearChangeAction($(this).val());
         });
+
+    $('#event-get-results').on('click', function () {
+        let eventId = $('#event-year').val();
+        getEventResults(eventId);
+    });
 });

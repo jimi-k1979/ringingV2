@@ -131,6 +131,54 @@ switch ($_POST['action']) {
         );
         break;
 
+    case 'getResults':
+        echo json_encode(
+            [
+                'data' => [
+                    'event' => [
+                        'id' => 1,
+                        'year' => '1989',
+                        'competition' => 'Test Competition',
+                        'singleTower' => 0,
+                        'location' => [
+                            'id' => 1234,
+                            'location' => 'test church',
+                            'dedication' => 'St Test',
+                            'tenor weight' => '10 cwt',
+                        ],
+                    ],
+                    'results' => [
+                        [
+                            'id' => 1,
+                            'position' => 1,
+                            'pealNumber' => 1,
+                            'faults' => 10.25,
+                            'team' => 'Test team 1',
+                            'points' => 2,
+                        ],
+                        [
+                            'id' => 2,
+                            'position' => 2,
+                            'pealNumber' => null,
+                            'faults' => 15.5,
+                            'team' => 'Test team 2',
+                            'points' => 0,
+                        ],
+                    ],
+                    'judges' => [
+                        [
+                            'id' => 1,
+                            'name' => 'test judge',
+                        ],
+                        [
+                            'id' => 2,
+                            'name' => 'test judge 2',
+                        ],
+                    ],
+                ],
+            ]
+        );
+        break;
     default:
         echo json_encode(
             [
