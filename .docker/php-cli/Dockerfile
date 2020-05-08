@@ -22,7 +22,8 @@ RUN echo "xdebug.remote_enable = 1" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.idekey = \"PHPSTORM\"" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.remote_host = docker.for.win.localhost" \
+#    && echo "xdebug.remote_host = docker.for.win.localhost" \
+    && echo "xdebug.remote_host = host.docker.internal" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.remote_port = 9000" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
