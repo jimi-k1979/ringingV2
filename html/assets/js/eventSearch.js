@@ -97,10 +97,46 @@ function getEventResults(eventId) {
         success: function (output) {
             if (output.message) {
             } else {
-                $('#results-section').html(output.data)
+                $('#result-table').html('');
+                buildTable(output.data.results);
+                buildResultTitleSection(output.data.event);
+                buildResultJudgesSection(output.data.judges);
+                $('#results-section').removeClass('hidden');
             }
         }
     });
+}
+
+function buildResultTitleSection(eventData) {
+    $('#result-year').text(eventData.year);
+    $('#result-competition-name').text(eventData.competition);
+    if (
+        eventData.singleTower === 0 ||
+        eventData.unusualTower === 1
+    ) {
+        $('#held-at').show();
+        $('#result-location').text(eventData.location);
+    } else {
+        $('#held-at').hide();
+    }
+}
+
+function buildResultJudgesSection(judgesData) {
+    let $judgesSection = $('#judges-section');
+
+    if (judgesData.length > 0) {
+        let $judgesList = $('#result-judges-list');
+
+        $judgesSection.show();
+        $judgesList.html('');
+        $.each(judgesData, function () {
+            $judgesList.append(
+                $("<li />").text(this.name)
+            );
+        });
+    } else {
+        $judgesSection.hide();
+    }
 }
 
 $(document).ready(function () {

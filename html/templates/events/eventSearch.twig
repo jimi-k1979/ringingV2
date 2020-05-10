@@ -213,8 +213,26 @@
 
         </div>
 
-        <div class="blog-post" id="results-section">
-            results appear here
+        <div class="blog-post hidden" id="results-section">
+            <h2>
+                <span id="result-year">Year</span>
+                <span id="result-competition-name">Competition Name</span>
+            </h2>
+            <!-- if isSingleTower = 0 OR location !== competition name: -->
+            <h3 id="held-at">Held at <span id="result-location">Location</span></h3>
+            <!-- end if -->
+
+            <table id="result-table">
+
+            </table>
+
+            <!-- if judges known -->
+            <div id="judges-section">
+                <h5>Judges:</h5>
+                <ul id="result-judges-list" style="list-style: none">
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -222,6 +240,9 @@
 
 {% block scripts %}
     {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/tableBuilder.js"
+    ></script>
     <script type="application/javascript"
             src="/assets/js/eventSearch.js"
     ></script>

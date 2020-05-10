@@ -136,42 +136,31 @@ switch ($_POST['action']) {
             [
                 'data' => [
                     'event' => [
-                        'id' => 1,
                         'year' => '1989',
                         'competition' => 'Test Competition',
-                        'singleTower' => 0,
-                        'location' => [
-                            'id' => 1234,
-                            'location' => 'test church',
-                            'dedication' => 'St Test',
-                            'tenor weight' => '10 cwt',
-                        ],
+                        'singleTower' => 1,
+                        'location' => 'test church',
+                        'unusualTower' => 0,
                     ],
                     'results' => [
                         [
-                            'id' => 1,
                             'position' => 1,
-                            'pealNumber' => 1,
-                            'faults' => 10.25,
+                            'peal number' => 1,
                             'team' => 'Test team 1',
-                            'points' => 2,
+                            'faults' => 10.25,
                         ],
                         [
-                            'id' => 2,
                             'position' => 2,
-                            'pealNumber' => null,
-                            'faults' => 15.5,
+                            'peal number' => null,
                             'team' => 'Test team 2',
-                            'points' => 0,
+                            'faults' => 15.5,
                         ],
                     ],
                     'judges' => [
                         [
-                            'id' => 1,
                             'name' => 'test judge',
                         ],
                         [
-                            'id' => 2,
                             'name' => 'test judge 2',
                         ],
                     ],
