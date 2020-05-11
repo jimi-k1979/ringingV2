@@ -67,4 +67,8 @@ class JudgeEntity extends Entity
         $this->ringer = $ringer;
     }
 
+    public function getFullName(): string
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
 }

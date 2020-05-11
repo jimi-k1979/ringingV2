@@ -91,7 +91,8 @@ class LocationSpy implements LocationRepositoryInterface
         $this->selectLocationCalled = true;
         if ($this->repositoryThrowsException) {
             throw new RepositoryNoResults(
-                'No location found'
+                'No location found',
+                LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
 

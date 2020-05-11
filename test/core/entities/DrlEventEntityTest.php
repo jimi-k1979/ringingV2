@@ -71,16 +71,27 @@ class DrlEventEntityTest extends TestCase
     public function testJudgesProperty(): void
     {
         $event = new DrlEventEntity();
-        $event->setJudges([
-            new JudgeEntity(),
-            new JudgeEntity(),
-        ]);
+        $event->setJudges(
+            [
+                new JudgeEntity(),
+                new JudgeEntity(),
+            ]
+        );
         $this->assertIsArray(
             $event->getJudges()
         );
         $this->assertInstanceOf(
             JudgeEntity::class,
             $event->getJudges()[0]
+        );
+    }
+
+    public function testUnusualTowerProperty(): void
+    {
+        $event = new DrlEventEntity();
+        $event->setUnusualTower(true);
+        $this->assertTrue(
+            $event->isUnusualTower()
         );
     }
 }

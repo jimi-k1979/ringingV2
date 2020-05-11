@@ -57,4 +57,15 @@ class JudgeEntityTest extends TestCase
             $judge->getRinger()
         );
     }
+
+    public function testGetFullName(): void
+    {
+        $judge = new JudgeEntity();
+        $judge->setFirstName('Test');
+        $judge->setLastName('Judge');
+        $this->assertEquals(
+            'Test Judge',
+            $judge->getFirstName() . ' ' . $judge->getLastName()
+        );
+    }
 }

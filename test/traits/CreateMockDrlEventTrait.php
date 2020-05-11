@@ -16,7 +16,7 @@ trait CreateMockDrlEventTrait
     {
         $entity = new DrlEventEntity();
         $entity->setId(1234);
-        $entity->setLocation($this->CreateMockLocation());
+        $entity->setLocation($this->createMockLocation());
         $entity->setCompetition($this->createMockDrlCompetition());
         $entity->setYear('1970');
 

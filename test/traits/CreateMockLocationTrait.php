@@ -11,7 +11,7 @@ trait CreateMockLocationTrait
 
     use CreateMockDeaneryTrait;
 
-    private function CreateMockLocation(): LocationEntity
+    private function createMockLocation(): LocationEntity
     {
         $entity = new LocationEntity();
         $entity->setId(999);

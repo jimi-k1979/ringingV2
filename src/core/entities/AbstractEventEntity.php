@@ -26,6 +26,10 @@ abstract class AbstractEventEntity extends Entity
      * @var null|JudgeEntity[]
      */
     private $judges;
+    /**
+     * @var bool
+     */
+    private $unusualTower = false;
 
     /**
      * @return string
@@ -89,6 +93,22 @@ abstract class AbstractEventEntity extends Entity
     public function setJudges(?array $judges): void
     {
         $this->judges = $judges;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isUnusualTower(): bool
+    {
+        return $this->unusualTower;
+    }
+
+    /**
+     * @param bool $unusualTower
+     */
+    public function setUnusualTower(bool $unusualTower): void
+    {
+        $this->unusualTower = $unusualTower;
     }
 
 }
