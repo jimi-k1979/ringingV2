@@ -16,9 +16,9 @@ interface JudgeRepositoryInterface
     public const NO_RECORDS_DELETED_EXCEPTION = 2904;
 
     /**
-     * @param DrlEventEntity $id
+     * @param DrlEventEntity $entity
      * @return JudgeEntity[]
      */
-    public function fetchJudgesByDrlEvent(DrlEventEntity $id): array;
+    public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array;
 
 }

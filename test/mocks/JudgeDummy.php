@@ -14,7 +14,7 @@ class JudgeDummy implements JudgeRepositoryInterface
 
     use CreateMockJudgeTrait;
 
-    public function fetchJudgesByDrlEvent(DrlEventEntity $id): array
+    public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
     {
         return [$this->createMockJudge()];
     }

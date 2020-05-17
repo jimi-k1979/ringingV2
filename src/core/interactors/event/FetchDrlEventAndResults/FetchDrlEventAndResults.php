@@ -134,16 +134,32 @@ class FetchDrlEventAndResults extends Interactor
                 'location' => $this->event->getLocation()->getLocation(),
                 'unusualTower' => $this->event->isUnusualTower(),
             ],
-            'results' => []
+            'results' => [],
+            'judges' => [],
         ];
 
-        foreach ($this->results as $result) {
-            $dataArray['results'][] = [
-                'position' => $result->getPosition(),
-                'peal number' => $result->getPealNumber(),
-                'team' => $result->getTeam()->getName(),
-                'faults' => $result->getFaults(),
-            ];
+        foreach ($this->results as $index => $result) {
+            if ($index === 0) {
+                if (empty($result->getPealNumber())) {
+                    $pealNumbers = false;
+                } else {
+                    $pealNumbers = true;
+                }
+            }
+            if ($pealNumbers) {
+                $dataArray['results'][] = [
+                    'position' => $result->getPosition(),
+                    'pealNumbers' => $result->getPealNumber(),
+                    'team' => $result->getTeam()->getName(),
+                    'faults' => $result->getFaults(),
+                ];
+            } else {
+                $dataArray['results'][] = [
+                    'position' => $result->getPosition(),
+                    'team' => $result->getTeam()->getName(),
+                    'faults' => $result->getFaults(),
+                ];
+            }
         }
 
         if ($this->judges !== null) {

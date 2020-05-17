@@ -35,11 +35,11 @@ class JudgeSpy implements JudgeRepositoryInterface
     }
 
     /**
-     * @param DrlEventEntity $id
+     * @param DrlEventEntity $entity
      * @return JudgeEntity[]
      * @throws RepositoryNoResults
      */
-    public function fetchJudgesByDrlEvent(DrlEventEntity $id): array
+    public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
     {
         $this->fetchJudgesByDrlEventCalled = true;
         if ($this->repositoryThrowsException) {

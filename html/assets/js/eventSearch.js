@@ -96,11 +96,18 @@ function getEventResults(eventId) {
         },
         success: function (output) {
             if (output.message) {
+                if (output.code === 2302) { // no results for event
+                    buildResultTitleSection(output.event);
+                    $('#result-table').hide();
+                    $('#judges-section').hide();
+                    $('#results-section').removeClass('hidden');
+
+                }
             } else {
-                $('#result-table').html('');
-                buildTable(output.data.results);
-                buildResultTitleSection(output.data.event);
-                buildResultJudgesSection(output.data.judges);
+                $('#result-table').html('').show();
+                buildTable(output.results);
+                buildResultTitleSection(output.event);
+                buildResultJudgesSection(output.judges);
                 $('#results-section').removeClass('hidden');
             }
         }
@@ -111,8 +118,8 @@ function buildResultTitleSection(eventData) {
     $('#result-year').text(eventData.year);
     $('#result-competition-name').text(eventData.competition);
     if (
-        eventData.singleTower === 0 ||
-        eventData.unusualTower === 1
+        eventData.singleTower === false ||
+        eventData.unusualTower === true
     ) {
         $('#held-at').show();
         $('#result-location').text(eventData.location);
