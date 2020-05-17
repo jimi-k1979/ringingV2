@@ -118,11 +118,11 @@ class LocationFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 999,
-                'location' => 'Test tower',
+                'name' => 'Test tower',
             ],
             [
                 'id' => 333,
-                'location' => 'Test Location',
+                'name' => 'Test Location',
             ]
         ];
 
@@ -152,7 +152,7 @@ class LocationFuzzySearchTest extends TestCase
             [
                 [
                     'id' => 999,
-                    'location' => 'Test tower',
+                    'name' => 'Test tower',
                 ],
             ],
             $response->getData()

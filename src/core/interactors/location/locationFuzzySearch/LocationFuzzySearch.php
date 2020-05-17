@@ -50,7 +50,7 @@ class LocationFuzzySearch extends Interactor
         foreach ($this->locationList as $locationEntity) {
             $responseData[] = [
                 'id' => $locationEntity->getId(),
-                'location' => $locationEntity->getLocation()
+                'name' => $locationEntity->getLocation()
             ];
         }
 

@@ -7,11 +7,13 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
+use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventAndResultsFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
+use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
 use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
 use DrlArchive\implementation\presenters\ResultsSearchDropdownPresenter;
 
@@ -24,7 +26,8 @@ try {
         case 'fuzzySearchCompetitions':
             $request = new DrlCompetitionFuzzySearchRequest(
                 [
-                    DrlCompetitionFuzzySearchRequest::SEARCH_TERM => $_POST['term'],
+                    DrlCompetitionFuzzySearchRequest::SEARCH_TERM =>
+                        $_POST['term'],
                 ]
             );
 
@@ -38,18 +41,30 @@ try {
             break;
 
         case 'fuzzySearchLocations':
-            echo json_encode(
+            $request = new LocationFuzzySearchRequest(
                 [
-                    [
-                        'name' => 'exeter',
-                        'id' => 5,
-                    ],
-                    [
-                        'name' => 'great torrington',
-                        'id' => 6,
-                    ],
+                    LocationFuzzySearchRequest::SEARCH_TERM => $_POST['term'],
                 ]
             );
+
+            $useCase = (new LocationFuzzySearchFactory())->create(
+                new FuzzySearchPresenterJson(),
+                $request
+            );
+            $useCase->execute();
+
+            /*  echo json_encode(
+                  [
+                      [
+                          'name' => 'exeter',
+                          'id' => 5,
+                      ],
+                      [
+                          'name' => 'great torrington',
+                          'id' => 6,
+                      ],
+                  ]
+              );*/
             break;
 
         case 'getCompetitionYears':

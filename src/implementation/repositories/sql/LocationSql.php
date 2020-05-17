@@ -34,6 +34,9 @@ class LocationSql
 
     // where clauses
     public const WHERE_ID_IS = 'l.id = :locationId';
+    public const WHERE_LOCATION_LIKE = 'l.location LIKE (:search)';
+
+    // order by
 
     public function insertLocation(LocationEntity $locationEntity): LocationEntity
     {
@@ -85,7 +88,56 @@ class LocationSql
 
     public function fuzzySearchLocation(string $search): array
     {
-        // TODO: Implement fuzzySearchLocation() method.
+        $query = new DatabaseQueryBuilder();
+
+        $query->setFields(
+            [
+                self::SELECT_ID . self::FIELD_NAME_ID,
+                self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
+            ]
+        );
+
+        $query->setTablesAndJoins(
+            [
+                self::TABLE_LOCATION,
+            ]
+        );
+
+        $query->setWhereClauses(
+            [
+                self::WHERE_LOCATION_LIKE,
+            ]
+        );
+
+        $query->setOrderBy(
+            [
+                self::SELECT_LOCATION,
+            ]
+        );
+
+        $params = [
+            'search' => "%{$search}%",
+        ];
+
+        $results = $this->database->query(
+            $this->database->buildSelectQuery($query),
+            $params,
+            Database::MULTI_ROW
+        );
+
+        if (empty($results)) {
+            throw new RepositoryNoResults(
+                'No locations found',
+                LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        $competitionsArray = [];
+        foreach ($results as $result) {
+            $competitionsArray[] = $this->createLocationEntity($result);
+        }
+
+        return $competitionsArray;
     }
 
     private function createLocationEntity(array $row): LocationEntity
