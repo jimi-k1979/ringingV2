@@ -170,7 +170,7 @@ join;
 
         $returnArray = [];
         foreach ($results as $result) {
-            $this->createDrlCompetitionEntity($result);
+            $returnArray[] = $this->createDrlCompetitionEntity($result);
         }
         return $returnArray;
     }

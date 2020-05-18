@@ -9,7 +9,7 @@ function getFuzzySearchData(request, response, action) {
         },
         success: function (output) {
             if (output.message) {
-                response($.map(output, function (item) {
+                response($.map(output, function () {
                     return {
                         value: 'Database error, try again later',
                         label: 'Database error, try again later',
@@ -219,7 +219,7 @@ $(document).ready(function () {
                 type: 'POST',
                 dataType: 'json',
                 data: {
-                    competitionId: data.item.id,
+                    locationId: data.item.id,
                     action: 'getLocationEvents',
                 },
                 success: function (output) {

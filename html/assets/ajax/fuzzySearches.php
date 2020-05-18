@@ -5,12 +5,14 @@ declare(strict_types=1);
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
+use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
+use DrlArchive\implementation\factories\interactors\competition\FetchDrlCompetitionByLocationFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventAndResultsFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
@@ -37,7 +39,6 @@ try {
             );
             $useCase->execute();
 
-
             break;
 
         case 'fuzzySearchLocations':
@@ -53,18 +54,6 @@ try {
             );
             $useCase->execute();
 
-            /*  echo json_encode(
-                  [
-                      [
-                          'name' => 'exeter',
-                          'id' => 5,
-                      ],
-                      [
-                          'name' => 'great torrington',
-                          'id' => 6,
-                      ],
-                  ]
-              );*/
             break;
 
         case 'getCompetitionYears':
@@ -85,18 +74,18 @@ try {
             break;
 
         case 'getLocationEvents':
-            echo json_encode(
+            $request = new FetchDrlCompetitionByLocationRequest(
                 [
-                    [
-                        'text' => 'major final',
-                        'id' => 1,
-                    ],
-                    [
-                        'text' => 'minor final',
-                        'id' => 2,
-                    ]
+                    FetchDrlCompetitionByLocationRequest::LOCATION_ID =>
+                        $_POST['locationId'],
                 ]
             );
+            $useCase = (new FetchDrlCompetitionByLocationFactory())->create(
+                new ResultsSearchDropdownPresenter(),
+                $request
+            );
+            $useCase->execute();
+
             break;
 
         case 'getLocationEventYears':
@@ -167,6 +156,7 @@ try {
             $useCase->execute();
 
             break;
+
         default:
             echo json_encode(
                 [
