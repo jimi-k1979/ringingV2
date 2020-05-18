@@ -29,6 +29,6 @@ interface CompetitionRepositoryInterface
      * @param int $locationId
      * @return DrlCompetitionEntity[]
      */
-    public function fetchDrlCompetitionByLocation(int $locationId): array;
+    public function fetchDrlCompetitionByLocationId(int $locationId): array;
 
 }

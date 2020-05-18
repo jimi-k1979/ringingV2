@@ -128,7 +128,7 @@ join;
      * @throws GeneralRepositoryErrorException
      * @throws RepositoryNoResults
      */
-    public function fetchDrlCompetitionByLocation(int $locationId): array
+    public function fetchDrlCompetitionByLocationId(int $locationId): array
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(

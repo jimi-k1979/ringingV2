@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace mocks;
 
 
-use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
@@ -172,7 +171,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fetchDrlCompetitionByLocation(int $locationId): array
+    public function fetchDrlCompetitionByLocationId(int $locationId): array
     {
         $this->fetchDrlCompetitionByLocationCalled = true;
         if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
