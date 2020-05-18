@@ -31,6 +31,10 @@ class CompetitionSql extends MysqlRepository
     // where clauses
     public const WHERE_DRL_COMPETITION_NAME_LIKE =
         'dc.competitionName LIKE :search';
+    public const INNER_JOIN_DRL_EVENT_ON_COMPETITION_ID_AND_LOCATION_ID = <<<join
+INNER JOIN DRL_event de on dc.id = de.competitionID
+AND de.locationID = :locationId
+join;
 
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
@@ -117,5 +121,57 @@ class CompetitionSql extends MysqlRepository
         );
 
         return $entity;
+    }
+
+    /**
+     * @inheritDoc
+     * @throws GeneralRepositoryErrorException
+     * @throws RepositoryNoResults
+     */
+    public function fetchDrlCompetitionByLocation(int $locationId): array
+    {
+        $query = new DatabaseQueryBuilder();
+        $query->setFields(
+            [
+                self::SELECT_DRL_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
+                self::SELECT_DRL_COMPETITION_NAME . self::FIELD_NAME_COMPETITION_NAME,
+                self::SELECT_DRL_COMPETITION_SINGLE_TOWER . self::FIELD_NAME_IS_SINGLE_TOWER,
+            ]
+        );
+        $query->setTablesAndJoins(
+            [
+                self::TABLE_DRL_COMPETITION,
+                self::INNER_JOIN_DRL_EVENT_ON_COMPETITION_ID_AND_LOCATION_ID,
+            ]
+        );
+        $query->setOrderBy(
+            [
+                self::SELECT_DRL_COMPETITION_NAME,
+            ]
+        );
+        $query->isDistinctQuery();
+
+        $params = [
+            'locationId' => $locationId
+        ];
+
+        $results = $this->database->query(
+            $this->database->buildSelectQuery($query),
+            $params,
+            Database::MULTI_ROW
+        );
+
+        if (empty($results)) {
+            throw new RepositoryNoResults(
+                'No competitions found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        $returnArray = [];
+        foreach ($results as $result) {
+            $this->createDrlCompetitionEntity($result);
+        }
+        return $returnArray;
     }
 }

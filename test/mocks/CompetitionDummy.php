@@ -30,4 +30,12 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     {
         return [$this->createMockDrlCompetition()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByLocation(int $locationId): array
+    {
+        return [$this->createMockDrlCompetition()];
+    }
 }
