@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;

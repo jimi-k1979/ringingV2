@@ -9,13 +9,13 @@ use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\
 use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use mocks\EventDummy;
-use mocks\EventSpy;
-use mocks\GuestUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use test\mocks\EventDummy;
+use test\mocks\EventSpy;
+use test\mocks\GuestUserDummy;
+use test\mocks\PreseenterDummy;
+use test\mocks\PresenterSpy;
+use test\mocks\SecurityRepositoryDummy;
+use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockDrlEventTrait;
 

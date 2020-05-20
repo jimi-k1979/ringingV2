@@ -9,13 +9,13 @@ use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchD
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
-use mocks\GuestUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use test\mocks\CompetitionDummy;
+use test\mocks\CompetitionSpy;
+use test\mocks\GuestUserDummy;
+use test\mocks\PreseenterDummy;
+use test\mocks\PresenterSpy;
+use test\mocks\SecurityRepositoryDummy;
+use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockDrlCompetitionTrait;
 
