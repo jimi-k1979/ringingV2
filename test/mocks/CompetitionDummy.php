@@ -6,7 +6,7 @@ namespace test\mocks;
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use test\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionDummy implements CompetitionRepositoryInterface
 {

@@ -7,7 +7,7 @@ namespace test\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use traits\CreateMockDrlEventTrait;
+use test\traits\CreateMockDrlEventTrait;
 
 class EventDummy implements EventRepositoryInterface
 {

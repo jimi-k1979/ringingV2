@@ -7,7 +7,7 @@ namespace test\mocks;
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
-use traits\CreateMockDeaneryTrait;
+use test\traits\CreateMockDeaneryTrait;
 
 class DeanerySpy implements DeaneryRepositoryInterface
 {

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace test\core\interactors\event\CreateDrlEventTest;
+
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
@@ -20,8 +22,8 @@ use test\mocks\SecurityRepositorySpy;
 use test\mocks\TransactionManagerDummy;
 use test\mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
-use traits\CreateMockLocationTrait;
+use test\traits\CreateMockDrlCompetitionTrait;
+use test\traits\CreateMockLocationTrait;
 
 class CreateDrlEventTest extends TestCase
 {

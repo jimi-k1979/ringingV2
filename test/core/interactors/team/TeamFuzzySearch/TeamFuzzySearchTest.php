@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\team\TeamFuzzySearch;
+namespace test\core\interactors\team\TeamFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
@@ -18,7 +18,7 @@ use test\mocks\SecurityRepositorySpy;
 use test\mocks\TeamDummy;
 use test\mocks\TeamSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockTeamTrait;
+use test\traits\CreateMockTeamTrait;
 
 class TeamFuzzySearchTest extends TestCase
 {

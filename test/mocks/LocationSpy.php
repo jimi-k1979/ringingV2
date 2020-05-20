@@ -8,7 +8,7 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
-use traits\CreateMockLocationTrait;
+use test\traits\CreateMockLocationTrait;
 
 class LocationSpy implements LocationRepositoryInterface
 {

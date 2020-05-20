@@ -1,10 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace traits;
+namespace test\traits;
 
 
-use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
 
 trait CreateMockTeamTrait

@@ -1,11 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace core\interactors\team\CreateTeam;
+namespace test\core\interactors\team\CreateTeam;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\DeaneryEntity;
-use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
@@ -24,7 +22,7 @@ use test\mocks\TeamSpy;
 use test\mocks\TransactionManagerDummy;
 use test\mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockTeamTrait;
+use test\traits\CreateMockTeamTrait;
 
 class CreateTeamTest extends TestCase
 {

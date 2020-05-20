@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
+namespace test\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIds;
@@ -17,7 +17,7 @@ use test\mocks\PresenterSpy;
 use test\mocks\SecurityRepositoryDummy;
 use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlEventTrait;
+use test\traits\CreateMockDrlEventTrait;
 
 class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
 {

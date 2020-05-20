@@ -18,7 +18,7 @@ use test\mocks\PresenterSpy;
 use test\mocks\SecurityRepositoryDummy;
 use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
+use test\traits\CreateMockDrlCompetitionTrait;
 
 class DrlCompetitionFuzzySearchTest extends TestCase
 {

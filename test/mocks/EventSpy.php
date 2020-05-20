@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use traits\CreateMockDrlEventTrait;
+use test\traits\CreateMockDrlEventTrait;
 
 class EventSpy implements EventRepositoryInterface
 {

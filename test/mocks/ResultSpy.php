@@ -10,7 +10,7 @@ use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
-use traits\CreateMockDrlResultTrait;
+use test\traits\CreateMockDrlResultTrait;
 
 class ResultSpy implements ResultRepositoryInterface
 {

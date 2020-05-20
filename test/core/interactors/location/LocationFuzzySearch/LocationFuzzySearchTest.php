@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace test\core\interactors\location\LocationFuzzySearch;
+
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
@@ -16,7 +18,7 @@ use test\mocks\PresenterSpy;
 use test\mocks\SecurityRepositoryDummy;
 use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockLocationTrait;
+use test\traits\CreateMockLocationTrait;
 
 class LocationFuzzySearchTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\ringer\RingerFuzzySearch;
+namespace test\core\interactors\ringer\RingerFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\RingerEntity;
@@ -18,7 +18,7 @@ use test\mocks\RingerSpy;
 use test\mocks\SecurityRepositoryDummy;
 use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockRingerTrait;
+use test\traits\CreateMockRingerTrait;
 
 class RingerFuzzySearchTest extends TestCase
 {

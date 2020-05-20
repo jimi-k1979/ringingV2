@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use test\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionSpy implements CompetitionRepositoryInterface
 {
