@@ -7,6 +7,7 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
+use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
@@ -14,6 +15,7 @@ use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
 use DrlArchive\implementation\factories\interactors\competition\FetchDrlCompetitionByLocationFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventAndResultsFactory;
+use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByLocationAndCompetitionIdsFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
 use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
@@ -89,18 +91,16 @@ try {
             break;
 
         case 'getLocationEventYears':
-            echo json_encode(
-                [
-                    [
-                        'text' => '1979',
-                        'id' => 1,
-                    ],
-                    [
-                        'text' => '1980',
-                        'id' => 2,
-                    ],
-                ]
-            );
+            $request = new FetchDrlEventsByLocationAndCompetitionIdsRequest();
+            $request->setCompetitionId((int)$_POST['competitionId']);
+            $request->setLocationId((int)$_POST['locationId']);
+
+            $useCase = (new FetchDrlEventsByLocationAndCompetitionIdsFactory())
+                ->create(
+                    new ResultsSearchDropdownPresenter(),
+                    $request
+                );
+            $useCase->execute();
             break;
 
         case 'getYearEvents':

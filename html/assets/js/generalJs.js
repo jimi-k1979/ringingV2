@@ -20,6 +20,8 @@ function renderFaults(faultInt) {
         faultInt = faultInt.slice(0, -3) + '⅓'
     } else if (faultInt.slice(-3) === '.67') {
         faultInt = faultInt.slice(0, -3) + '⅔'
+    } else if (faultInt === '0') {
+        faultInt = 'NR';
     }
     return faultInt;
 }

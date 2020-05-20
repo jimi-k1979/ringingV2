@@ -19,6 +19,10 @@ interface EventRepositoryInterface
         DrlEventEntity $entity
     ): DrlEventEntity;
 
+    /**
+     * @param int $id
+     * @return DrlEventEntity
+     */
     public function fetchDrlEvent(int $id): DrlEventEntity;
 
     /**
@@ -26,5 +30,15 @@ interface EventRepositoryInterface
      * @return DrlEventEntity[]
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array;
+
+    /**
+     * @param int $competitionId
+     * @param int $locationId
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventsByCompetitionAndLocationIds(
+        int $competitionId,
+        int $locationId
+    ): array;
 
 }

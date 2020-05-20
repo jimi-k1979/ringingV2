@@ -214,6 +214,7 @@ $(document).ready(function () {
             }
         },
         select: function (e, data) {
+            $('#hidden-location-id').val(data.item.id);
             $.ajax({
                 url: '/assets/ajax/fuzzySearches.php',
                 type: 'POST',
@@ -255,6 +256,7 @@ $(document).ready(function () {
                 type: 'POST',
                 dataType: 'json',
                 data: {
+                    locationId: $('#hidden-location-id').val(),
                     competitionId: competitionId,
                     action: 'getLocationEventYears',
                 },
@@ -286,7 +288,14 @@ $(document).ready(function () {
         });
 
     $('#event-get-results').on('click', function () {
-        let eventId = $('#event-year').val();
-        getEventResults(eventId);
+        getEventResults($('#event-year').val());
+    });
+
+    $('#location-get-results').on('click', function () {
+        getEventResults($('#location-year').val());
+    });
+
+    $('#year-get-results').on('click', function () {
+        getEventResults($('#year-event').val());
     });
 });

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace mocks;
@@ -28,6 +29,16 @@ class EventDummy implements EventRepositoryInterface
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {
+        return [$this->createMockDrlEvent()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionAndLocationIds(
+        int $competitionId,
+        int $locationId
+    ): array {
         return [$this->createMockDrlEvent()];
     }
 }

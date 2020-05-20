@@ -40,7 +40,6 @@ function generateTable(table, data) {
 }
 
 function buildTable(tableData) {
-    console.log(tableData);
     let table = document.querySelector('#result-table');
     generateTableHead(table, Object.keys(tableData[0]));
     generateTable(table, tableData);
