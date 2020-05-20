@@ -41,4 +41,12 @@ class EventDummy implements EventRepositoryInterface
     ): array {
         return [$this->createMockDrlEvent()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByYear(string $year): array
+    {
+        return [$this->createMockDrlEvent()];
+    }
 }

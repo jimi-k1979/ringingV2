@@ -40,6 +40,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     public const WHERE_DRL_COMPETITION_ID_IS = 'de.competitionID = :competitionId';
     public const WHERE_DRL_EVENT_ID_IS = 'de.id = :eventId';
     public const WHERE_LOCATION_ID_IS = 'de.locationID = :locationId';
+    public const WHERE_YEAR_IS = 'de.year = :year';
 
     public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
     {
@@ -256,6 +257,58 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         foreach ($results as $result) {
             $returnArray[] = $this->createDrlEventEntity($result);
         }
+        return $returnArray;
+    }
+
+    /**
+     * @inheritDoc
+     * @throws GeneralRepositoryErrorException
+     * @throws RepositoryNoResults
+     */
+    public function fetchDrlEventsByYear(string $year): array
+    {
+        $query = new DatabaseQueryBuilder();
+        $query->setFields(
+            [
+                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_ID,
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
+            ]
+        );
+        $query->setTablesAndJoins(
+            [
+                self::TABLE_DRL_EVENT,
+                self::INNER_JOIN_DRL_COMPETITION,
+            ]
+        );
+        $query->setWhereClauses(
+            [
+                self::WHERE_YEAR_IS,
+            ]
+        );
+        $query->setOrderBy(
+            [
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME,
+            ]
+        );
+
+        $results = $this->database->query(
+            $this->database->buildSelectQuery($query),
+            ['year' => $year],
+            Database::MULTI_ROW
+        );
+
+        if (empty($results)) {
+            throw new RepositoryNoResults(
+                'No events found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        $returnArray = [];
+        foreach ($results as $result) {
+            $returnArray[] = $this->createDrlEventEntity($result);
+        }
+
         return $returnArray;
     }
 }

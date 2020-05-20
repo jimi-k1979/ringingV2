@@ -59,6 +59,19 @@ class EventSpy implements EventRepositoryInterface
      * @var array
      */
     private $fetchDrlEventsByCompetitionAndLocationIdsValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByYearCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByYearThrowsException = false;
+    /**
+     * @var
+     */
+    private $fetchDrlEventsByYearValue = [];
+
 
     public function setThrowException(): void
     {
@@ -196,6 +209,37 @@ class EventSpy implements EventRepositoryInterface
     public function setFetchDrlEventsByCompetitionAndLocationIdsValue(array $value): void
     {
         $this->fetchDrlEventsByCompetitionAndLocationIdsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByYear(string $year): array
+    {
+        $this->fetchDrlEventsByYearCalled;
+        if ($this->fetchDrlEventsByYearThrowsException) {
+            throw new RepositoryNoResults(
+                'No events found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventsByYearValue;
+    }
+
+    public function hasFetchDrlEventsByYearBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByYearCalled;
+    }
+
+    public function setFetchDrlEventsByYearThrowsException(): void
+    {
+        $this->fetchDrlEventsByYearThrowsException = true;
+    }
+
+    public function setFetchDrlEventsByYearValue(array $value): void
+    {
+        $this->fetchDrlEventsByYearValue = $value;
     }
 
 }

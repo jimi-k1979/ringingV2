@@ -41,4 +41,10 @@ interface EventRepositoryInterface
         int $locationId
     ): array;
 
+    /**
+     * @param string $year
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventsByYear(string $year): array;
+
 }
