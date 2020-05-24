@@ -98,7 +98,7 @@ class FetchDrlEventsByYearTest extends TestCase
         $expectedData = [
             [
                 'id' => 1234,
-                'name' => 'Test competition',
+                'text' => 'Test competition',
             ],
         ];
         $this->assertEquals(

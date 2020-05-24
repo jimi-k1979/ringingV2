@@ -60,7 +60,7 @@ class FetchDrlEventsByYear extends Interactor
         foreach ($this->data as $datum) {
             $dataArray[] = [
                 'id' => $datum->getId(),
-                'name' => $datum->getCompetition()->getName()
+                'text' => $datum->getCompetition()->getName()
             ];
         }
         $this->response = new FetchDrlEventsByYearResponse(

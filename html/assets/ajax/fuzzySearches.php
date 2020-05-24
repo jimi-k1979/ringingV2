@@ -8,6 +8,7 @@ use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompeti
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
+use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
@@ -16,6 +17,7 @@ use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFu
 use DrlArchive\implementation\factories\interactors\competition\FetchDrlCompetitionByLocationFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventAndResultsFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByLocationAndCompetitionIdsFactory;
+use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByYearFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
 use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
@@ -104,18 +106,14 @@ try {
             break;
 
         case 'getYearEvents':
-            echo json_encode(
-                [
-                    [
-                        'text' => '8 bell',
-                        'id' => 1,
-                    ],
-                    [
-                        'text' => 'south devon 8',
-                        'id' => 2,
-                    ],
-                ]
+            $request = new FetchDrlEventsByYearRequest();
+            $request->setYear($_POST['eventYear']);
+
+            $useCase = (new FetchDrlEventsByYearFactory())->create(
+                new ResultsSearchDropdownPresenter(),
+                $request
             );
+            $useCase->execute();
             break;
 
         case 'getResults':
