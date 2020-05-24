@@ -216,7 +216,7 @@ class EventSpy implements EventRepositoryInterface
      */
     public function fetchDrlEventsByYear(string $year): array
     {
-        $this->fetchDrlEventsByYearCalled;
+        $this->fetchDrlEventsByYearCalled = true;
         if ($this->fetchDrlEventsByYearThrowsException) {
             throw new RepositoryNoResults(
                 'No events found',
