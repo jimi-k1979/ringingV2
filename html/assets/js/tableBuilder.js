@@ -1,12 +1,12 @@
 function generateTableHead(table, data) {
     let thead = table.createTHead();
     let row = thead.insertRow();
+    thead.className = 'thead-light';
 
     for (let key of data) {
         let th = document.createElement('th');
         let text = document.createTextNode(ucwords(key));
         th.appendChild(text);
-        th.className = 'bold green';
         row.appendChild(th);
     }
 }
