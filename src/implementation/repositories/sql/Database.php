@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\implementation\repositories\sql;
@@ -8,6 +9,7 @@ use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryAlreadyExistsException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
+use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 use DrlArchive\implementation\interfaces\SqlDatabaseInterface;
 use DrlArchive\Settings;
 use Exception;
@@ -23,9 +25,17 @@ class Database implements SqlDatabaseInterface
     public const ERROR_NO_TABLE_FOUND = '42S02';
     public const ERROR_NO_CODE = 0;
 
+    public const EXCEPTION_NO_FIELDS_IN_SELECT_QUERY = 1210;
+    public const EXCEPTION_NO_TABLES_IN_SELECT_QUERY = 1210;
+
     public const DB_SUPPORTED_MYSQL = 'mysql';
     public const DB_SUPPORTED_PGSQL = 'pgsql';
     public const DB_SUPPORTED_SQLITE = 'sqlite';
+
+    public const SINGLE_VALUE = 'singleValue';
+    public const SINGLE_ROW = 'singleRow';
+    public const MULTI_ROW = 'multiRow';
+
 
     /**
      * @var Database|null
@@ -78,14 +88,24 @@ class Database implements SqlDatabaseInterface
     /**
      * @param string $sql
      * @param array $params
+     * @param string $queryType
      * @return array
      */
-    public function query(string $sql, array $params = []): array
-    {
+    public function query(
+        string $sql,
+        array $params = [],
+        string $queryType = self::MULTI_ROW
+    ): array {
         $stmt = $this->connection->prepare($sql);
         $stmt->execute($params);
 
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($queryType === self::SINGLE_VALUE) {
+            return $stmt->fetchColumn();
+        } elseif ($queryType === self::SINGLE_ROW) {
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        } else {
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
     }
 
     /**
@@ -244,13 +264,66 @@ class Database implements SqlDatabaseInterface
                 'would lead to a duplicate entry'
             ) !== false ||
             strpos(
-                $e->getMessage(), 'is not unique'
+                $e->getMessage(),
+                'is not unique'
             ) !== false ||
             strpos(
-                $e->getMessage(), 'Duplicate entry'
+                $e->getMessage(),
+                'Duplicate entry'
             ) !== false ||
             strpos(
-                $e->getMessage(), 'UNIQUE constraint failed:'
+                $e->getMessage(),
+                'UNIQUE constraint failed:'
             ) !== false;
+    }
+
+    public function buildSelectQuery(
+        DatabaseQueryBuilder $query
+    ): string {
+        if (empty($query->getFields())) {
+            throw new GeneralRepositoryErrorException(
+                'No fields given in the select query',
+                self::EXCEPTION_NO_FIELDS_IN_SELECT_QUERY
+            );
+        } elseif (empty($query->getTablesAndJoins())) {
+            throw new GeneralRepositoryErrorException(
+                'No tables given in the select query',
+                self::EXCEPTION_NO_TABLES_IN_SELECT_QUERY
+            );
+        }
+
+        if ($query->isDistinctQuery()) {
+            $sql = [
+                'SELECT DISTINCT',
+                implode(', ', $query->getFields()),
+                'FROM',
+                implode("\n", $query->getTablesAndJoins()),
+            ];
+        } else {
+            $sql = [
+                'SELECT',
+                implode(', ', $query->getFields()),
+                'FROM',
+                implode("\n", $query->getTablesAndJoins()),
+            ];
+        }
+
+        if (!empty($query->getWhereClauses())) {
+            $sql[] = 'WHERE ' . implode(' AND ', $query->getWhereClauses());
+        }
+
+        if (!empty($query->getGroupBy())) {
+            $sql[] = 'GROUP BY ' . implode(', ', $query->getGroupBy());
+        }
+
+        if (!empty($query->getOrderBy())) {
+            $sql[] = 'ORDER BY ' . implode(', ', $query->getOrderBy());
+        }
+
+        if (!empty($query->getLimit())) {
+            $sql[] = 'LIMIT ' . $query->getLimit();
+        }
+
+        return implode("\n", $sql);
     }
 }

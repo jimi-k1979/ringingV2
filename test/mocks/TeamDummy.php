@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
-use traits\CreateMockTeamTrait;
+use test\traits\CreateMockTeamTrait;
 
 class TeamDummy implements TeamRepositoryInterface
 {

@@ -6,11 +6,16 @@ namespace DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch;
 
 
 use DrlArchive\core\classes\Response;
-use  DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use Exception;
 
+/**
+ * Class DrlCompetitionFuzzySearch
+ * @package DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch
+ * @property DrlCompetitionFuzzySearchRequest $request
+ */
 class DrlCompetitionFuzzySearch extends Interactor
 {
 
@@ -76,6 +81,9 @@ class DrlCompetitionFuzzySearch extends Interactor
             [
                 Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
                 Response::RESPONSE_MESSAGE => 'No competitions found',
+                Response::RESPONSE_DATA => [
+                    'code' => $e->getCode()
+                ]
             ]
         );
     }

@@ -9,14 +9,17 @@
     }
   ],
   "require": {
-    "ext-pdo": "*"
+    "twig/twig": "^3.0",
+    "ext-pdo": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.1.5"
   },
   "autoload": {
     "psr-4": {
-      "DrlArchive\\": "src/"
+      "DrlArchive\\": "src/",
+      "test\\": "test/"
     }
   }
 }

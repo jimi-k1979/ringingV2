@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
-use traits\CreateMockRingerTrait;
+use test\traits\CreateMockRingerTrait;
 
 class RingerSpy implements RingerRepositoryInterface
 {

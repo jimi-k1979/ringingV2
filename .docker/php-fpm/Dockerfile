@@ -1,14 +1,14 @@
 # Docker file for php-fpm
 # 2019-07-10 - v1 - James Kerslake
 
-FROM php:7.3-fpm
+FROM php:7.4-fpm
 
-# install required modules
+# install required modules, removed --with-libzip from zip line
 RUN apt-get update -yq \
     && apt-get install -y zip libzip-dev libpng-dev libxml2-dev \
     && pecl -q install xdebug \
     && docker-php-ext-enable xdebug \
-    && docker-php-ext-configure zip --with-libzip \
+    && docker-php-ext-configure zip \
     && docker-php-ext-install pdo pdo_mysql bcmath gd zip soap
 
 # install composer globally

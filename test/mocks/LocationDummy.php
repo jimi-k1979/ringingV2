@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
-use traits\CreateMockLocationTrait;
+use test\traits\CreateMockLocationTrait;
 
 class LocationDummy implements LocationRepositoryInterface
 {

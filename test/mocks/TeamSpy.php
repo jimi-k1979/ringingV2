@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
-use traits\CreateMockTeamTrait;
+use test\traits\CreateMockTeamTrait;
 
 class TeamSpy implements TeamRepositoryInterface
 {

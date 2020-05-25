@@ -1,40 +1,74 @@
 -- deanery
-INSERT INTO deanery VALUES (1, 'Aylesbeare');
-INSERT INTO deanery VALUES (2, 'Barnstaple');
-INSERT INTO deanery VALUES (3, 'Cadbury');
-INSERT INTO deanery VALUES (4, 'Christianity');
-INSERT INTO deanery VALUES (5, 'Cullompton');
-INSERT INTO deanery VALUES (6, 'Hartland');
-INSERT INTO deanery VALUES (7, 'Holsworthy');
-INSERT INTO deanery VALUES (8, 'Honiton');
-INSERT INTO deanery VALUES (9, 'Ivybridge');
-INSERT INTO deanery VALUES (10, 'Kenn');
-INSERT INTO deanery VALUES (11, 'Moreton');
-INSERT INTO deanery VALUES (12, 'Newton Abbot and Ipplepen');
-INSERT INTO deanery VALUES (13, 'None');
-INSERT INTO deanery VALUES (14, 'Not Applicable');
-INSERT INTO deanery VALUES (15, 'Okehampton');
-INSERT INTO deanery VALUES (16, 'Ottery');
-INSERT INTO deanery VALUES (17, 'Out of County');
-INSERT INTO deanery VALUES (18, 'Plymouth (Devonport, Moorside, Sutton)');
-INSERT INTO deanery VALUES (19, 'Shirwell');
-INSERT INTO deanery VALUES (20, 'South Molton');
-INSERT INTO deanery VALUES (21, 'Tavistock');
-INSERT INTO deanery VALUES (22, 'Tiverton');
-INSERT INTO deanery VALUES (23, 'Torbay');
-INSERT INTO deanery VALUES (24, 'Torrington');
-INSERT INTO deanery VALUES (25, 'Totnes');
-INSERT INTO deanery VALUES (26, 'Woodleigh');
+INSERT INTO deanery
+VALUES (1, 'Aylesbeare', 'south');
+INSERT INTO deanery
+VALUES (2, 'Barnstaple', 'north');
+INSERT INTO deanery
+VALUES (3, 'Cadbury', 'north');
+INSERT INTO deanery
+VALUES (4, 'Christianity', 'south');
+INSERT INTO deanery
+VALUES (5, 'Cullompton', 'north');
+INSERT INTO deanery
+VALUES (6, 'Hartland', 'north');
+INSERT INTO deanery
+VALUES (7, 'Holsworthy', 'north');
+INSERT INTO deanery
+VALUES (8, 'Honiton', 'south');
+INSERT INTO deanery
+VALUES (9, 'Ivybridge', 'south');
+INSERT INTO deanery
+VALUES (10, 'Kenn', 'south');
+INSERT INTO deanery
+VALUES (11, 'Moreton', 'south');
+INSERT INTO deanery
+VALUES (12, 'Newton Abbot and Ipplepen', 'south');
+INSERT INTO deanery
+VALUES (13, 'None', 'n/a');
+INSERT INTO deanery
+VALUES (14, 'Not Applicable', 'n/a');
+INSERT INTO deanery
+VALUES (15, 'Okehampton', 'north');
+INSERT INTO deanery
+VALUES (16, 'Ottery', 'south');
+INSERT INTO deanery
+VALUES (17, 'Out of County', 'outOfCounty');
+INSERT INTO deanery
+VALUES (18, 'Plymouth (Devonport, Moorside, Sutton)', 'south');
+INSERT INTO deanery
+VALUES (19, 'Shirwell', 'north');
+INSERT INTO deanery
+VALUES (20, 'South Molton', 'north');
+INSERT INTO deanery
+VALUES (21, 'Tavistock', 'south');
+INSERT INTO deanery
+VALUES (22, 'Tiverton', 'north');
+INSERT INTO deanery
+VALUES (23, 'Torbay', 'south');
+INSERT INTO deanery
+VALUES (24, 'Torrington', 'north');
+INSERT INTO deanery
+VALUES (25, 'Totnes', 'south');
+INSERT INTO deanery
+VALUES (26, 'Woodleigh', 'south');
 
 -- ringer
-INSERT INTO ringer VALUES (1, 'Fred', 'Axworthy', NULL);
-INSERT INTO ringer VALUES (2, 'Philip', 'Stoneman', NULL);
-INSERT INTO ringer VALUES (3, 'William', 'Ford', NULL);
-INSERT INTO ringer VALUES (4, 'James', 'Pope', NULL);
-INSERT INTO ringer VALUES (5, 'Frederick', 'Pope', NULL);
-INSERT INTO ringer VALUES (6, 'William Oliver', 'Priest', NULL);
-INSERT INTO ringer VALUES (7, 'Wallace', 'Mortimore', NULL);
-INSERT INTO ringer VALUES (8, 'Alfred', 'Lias', NULL);
+INSERT INTO ringer
+VALUES (1, 'Fred', 'Axworthy', NULL);
+INSERT INTO ringer
+VALUES (2, 'Philip', 'Stoneman', NULL);
+INSERT INTO ringer
+VALUES (3, 'William', 'Ford', NULL);
+INSERT INTO ringer
+VALUES (4, 'James', 'Pope', NULL);
+INSERT INTO ringer
+VALUES (5, 'Frederick', 'Pope', NULL);
+INSERT INTO ringer
+VALUES (6, 'William Oliver', 'Priest', NULL);
+INSERT INTO ringer
+VALUES (7, 'Wallace', 'Mortimore', NULL);
+INSERT INTO ringer
+VALUES (8, 'Alfred', 'Lias', NULL);
 INSERT INTO ringer VALUES (9, 'Walter', 'Martin', NULL);
 INSERT INTO ringer VALUES (10, 'Robert James', 'Bennett', NULL);
 INSERT INTO ringer VALUES (11, 'Hilary', 'Trout', NULL);

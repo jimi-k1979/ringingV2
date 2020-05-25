@@ -1,96 +1,186 @@
 -- competitions
-INSERT INTO other_competition VALUES (1, '90th Anniversary 8 Bell');
-INSERT INTO other_competition VALUES (2, 'Ben Isaac Shield (Handicap)');
-INSERT INTO other_competition VALUES (3, 'Beric Bartlett - intermediate section');
-INSERT INTO other_competition VALUES (4, 'Beric Bartlett - novice section');
-INSERT INTO other_competition VALUES (5, 'Bow Intermediate');
-INSERT INTO other_competition VALUES (6, 'Burrington 3 Tower - overall handicap');
-INSERT INTO other_competition VALUES (7, 'Cadbury Deanery - intermediate section');
-INSERT INTO other_competition VALUES (8, 'Cadbury Deanery Winter League - overall');
-INSERT INTO other_competition VALUES (9, 'Cadbury Deanery Winter League - round 1');
-INSERT INTO other_competition VALUES (10, 'Cadbury Deanery Winter League - round 2');
-INSERT INTO other_competition VALUES (11, 'Cadbury Deanery Winter League - round 3');
-INSERT INTO other_competition VALUES (12, 'Cadbury Deanery Winter League - round 4');
-INSERT INTO other_competition VALUES (13, 'Cadbury Deanery Winter League - round 5');
-INSERT INTO other_competition VALUES (14, 'Cadbury Deanery Winter League - round 6');
-INSERT INTO other_competition VALUES (15, 'Dartmouth, St Petrox - half peal from the stay');
-INSERT INTO other_competition VALUES (16, 'Dartmouth, St Petrox - round ringing');
-INSERT INTO other_competition VALUES (17, 'Devon Association Intermediate - lower');
-INSERT INTO other_competition VALUES (18, 'Devon Association Intermediate - overall');
-INSERT INTO other_competition VALUES (19, 'Devon Association Intermediate - rise');
-INSERT INTO other_competition VALUES (20, 'Devon Association Intermediate - top ringing');
-INSERT INTO other_competition VALUES (21, 'Devon Association Novice - call changes section');
-INSERT INTO other_competition VALUES (22, 'Devon Association Novice - rounds section');
-INSERT INTO other_competition VALUES (23, 'Devon Ringers Council 10 Bell');
-INSERT INTO other_competition VALUES (24, 'Hartland Deanery - novice section');
-INSERT INTO other_competition VALUES (25, 'Kenn Deanery - intermediate section');
-INSERT INTO other_competition VALUES (26, 'Kenn Deanery - novice section');
-INSERT INTO other_competition VALUES (27, 'Kilkhampton - John Cornish Shield');
-INSERT INTO other_competition VALUES (28, 'Littleham - novice section');
-INSERT INTO other_competition VALUES (29, 'Longborough Challenge');
-INSERT INTO other_competition VALUES (30, 'Mid Devon Winter League - overall');
-INSERT INTO other_competition VALUES (31, 'Mid Devon Winter League - round 1');
-INSERT INTO other_competition VALUES (32, 'Mid Devon Winter League - round 2');
-INSERT INTO other_competition VALUES (33, 'Mid Devon Winter League - round 3');
-INSERT INTO other_competition VALUES (34, 'Mid Devon Winter League - round 4');
-INSERT INTO other_competition VALUES (35, 'Mid Devon Winter League - round 5');
-INSERT INTO other_competition VALUES (36, 'Mid Devon Winter League - round 6');
-INSERT INTO other_competition VALUES (37, 'Minor Final - top ringing');
-INSERT INTO other_competition VALUES (38, 'Monkleigh - novice section');
-INSERT INTO other_competition VALUES (39, 'NAIT Deaneries Gilbert Shield - overall');
-INSERT INTO other_competition VALUES (40, 'NAIT Deaneries Gilbert Shield - round 1');
-INSERT INTO other_competition VALUES (41, 'NAIT Deaneries Gilbert Shield - round 2');
-INSERT INTO other_competition VALUES (42, 'NAIT Deaneries Gilbert Shield - round 3');
-INSERT INTO other_competition VALUES (43, 'National - overall');
-INSERT INTO other_competition VALUES (44, 'Newton Abbot 3 Tower - overall');
-INSERT INTO other_competition VALUES (45, 'Okehampton Deanery - intermediate section');
-INSERT INTO other_competition VALUES (46, 'Okehampton Deanery - novice section');
-INSERT INTO other_competition VALUES (47, 'Pascoe Family Memorial Trophy');
-INSERT INTO other_competition VALUES (48, 'Plymouth and Ivybridge Deaneries - B section');
-INSERT INTO other_competition VALUES (49, 'Plymouth and Ivybridge Deaneries - novice section');
-INSERT INTO other_competition VALUES (50, 'Shebbear - junior section');
-INSERT INTO other_competition VALUES (51, 'St Giles in the Wood - novice section');
-INSERT INTO other_competition VALUES (52, 'Stoke Gabriel - development section');
-INSERT INTO other_competition VALUES (53, 'Tamar Valley Guild - junior novice section');
-INSERT INTO other_competition VALUES (54, 'Tamar Valley Guild - novice section');
-INSERT INTO other_competition VALUES (55, 'Tamar Valley Guild Knockout Final - novice section');
-INSERT INTO other_competition VALUES (56, 'Tamar Valley Guild Winter Knockout - round 1');
-INSERT INTO other_competition VALUES (57, 'Tamar Valley Guild Winter Knockout - round 2');
-INSERT INTO other_competition VALUES (58, 'Tamar Valley Guild Winter Knockout - round 3');
-INSERT INTO other_competition VALUES (59, 'Tamar Valley Guild Winter Knockout - round 4');
-INSERT INTO other_competition VALUES (60, 'Torridge Valley Guild - junior novice section');
-INSERT INTO other_competition VALUES (61, 'Torridge Valley Guild - novice section');
-INSERT INTO other_competition VALUES (62, 'Totnes Deanery - novice section');
-INSERT INTO other_competition VALUES (63, 'Totnes Deanery Winter League - overall');
-INSERT INTO other_competition VALUES (64, 'Totnes Deanery Winter League - round 1');
-INSERT INTO other_competition VALUES (65, 'Totnes Deanery Winter League - round 2');
-INSERT INTO other_competition VALUES (66, 'Totnes Deanery Winter League - round 3');
-INSERT INTO other_competition VALUES (67, 'Totnes Deanery Winter League - round 4');
-INSERT INTO other_competition VALUES (68, 'Totnes Deanery Winter League - round 5');
-INSERT INTO other_competition VALUES (69, 'Totnes Deanery Winter League - round 6');
-INSERT INTO other_competition VALUES (70, 'Totnes Deanery Winter League - round 7');
-INSERT INTO other_competition VALUES (71, 'Totnes Deanery Winter League - round 8');
-INSERT INTO other_competition VALUES (72, 'Totnes Deanery Winter League - top ringing, overall');
-INSERT INTO other_competition VALUES (73, 'Totnes Deanery Winter League - top ringing, round 1');
-INSERT INTO other_competition VALUES (74, 'Totnes Deanery Winter League - top ringing, round 2');
-INSERT INTO other_competition VALUES (75, 'Totnes Deanery Winter League - top ringing, round 3');
-INSERT INTO other_competition VALUES (76, 'Totnes Deanery Winter League - top ringing, round 4');
-INSERT INTO other_competition VALUES (77, 'Totnes Deanery Winter League - top ringing, round 5');
-INSERT INTO other_competition VALUES (78, 'Totnes Deanery Winter League - top ringing, round 6');
-INSERT INTO other_competition VALUES (79, 'Wilf Edworthy - call changes section');
-INSERT INTO other_competition VALUES (80, 'Wilf Edworthy - rounds section');
-INSERT INTO other_competition VALUES (81, 'Winter Cup Final');
-INSERT INTO other_competition VALUES (82, 'Woodleigh Deanery - junior section');
+INSERT INTO other_competition
+VALUES (1, '90th Anniversary 8 Bell', 0);
+INSERT INTO other_competition
+VALUES (2, 'Ben Isaac Shield (Handicap)', 0);
+INSERT INTO other_competition
+VALUES (3, 'Beric Bartlett - intermediate section', 0);
+INSERT INTO other_competition
+VALUES (4, 'Beric Bartlett - novice section', 0);
+INSERT INTO other_competition
+VALUES (5, 'Bow Intermediate', 0);
+INSERT INTO other_competition
+VALUES (6, 'Burrington 3 Tower - overall handicap', 1);
+INSERT INTO other_competition
+VALUES (7, 'Cadbury Deanery - intermediate section', 0);
+INSERT INTO other_competition
+VALUES (8, 'Cadbury Deanery Winter League - overall', 0);
+INSERT INTO other_competition
+VALUES (9, 'Cadbury Deanery Winter League - round 1', 0);
+INSERT INTO other_competition
+VALUES (10, 'Cadbury Deanery Winter League - round 2', 0);
+INSERT INTO other_competition
+VALUES (11, 'Cadbury Deanery Winter League - round 3', 0);
+INSERT INTO other_competition
+VALUES (12, 'Cadbury Deanery Winter League - round 4', 0);
+INSERT INTO other_competition
+VALUES (13, 'Cadbury Deanery Winter League - round 5', 0);
+INSERT INTO other_competition
+VALUES (14, 'Cadbury Deanery Winter League - round 6', 0);
+INSERT INTO other_competition
+VALUES (15, 'Dartmouth, St Petrox - half peal from the stay', 1);
+INSERT INTO other_competition
+VALUES (16, 'Dartmouth, St Petrox - round ringing', 1);
+INSERT INTO other_competition
+VALUES (17, 'Devon Association Intermediate - lower', 0);
+INSERT INTO other_competition
+VALUES (18, 'Devon Association Intermediate - overall', 0);
+INSERT INTO other_competition
+VALUES (19, 'Devon Association Intermediate - rise', 0);
+INSERT INTO other_competition
+VALUES (20, 'Devon Association Intermediate - top ringing', 0);
+INSERT INTO other_competition
+VALUES (21, 'Devon Association Novice - call changes section', 0);
+INSERT INTO other_competition
+VALUES (22, 'Devon Association Novice - rounds section', 0);
+INSERT INTO other_competition
+VALUES (23, 'Devon Ringers Council 10 Bell', 0);
+INSERT INTO other_competition
+VALUES (24, 'Hartland Deanery - novice section', 0);
+INSERT INTO other_competition
+VALUES (25, 'Kenn Deanery - intermediate section', 0);
+INSERT INTO other_competition
+VALUES (26, 'Kenn Deanery - novice section', 0);
+INSERT INTO other_competition
+VALUES (27, 'Kilkhampton - John Cornish Shield', 1);
+INSERT INTO other_competition
+VALUES (28, 'Littleham - novice section', 1);
+INSERT INTO other_competition
+VALUES (29, 'Longborough Challenge', 1);
+INSERT INTO other_competition
+VALUES (30, 'Mid Devon Winter League - overall', 0);
+INSERT INTO other_competition
+VALUES (31, 'Mid Devon Winter League - round 1', 0);
+INSERT INTO other_competition
+VALUES (32, 'Mid Devon Winter League - round 2', 0);
+INSERT INTO other_competition
+VALUES (33, 'Mid Devon Winter League - round 3', 0);
+INSERT INTO other_competition
+VALUES (34, 'Mid Devon Winter League - round 4', 0);
+INSERT INTO other_competition
+VALUES (35, 'Mid Devon Winter League - round 5', 0);
+INSERT INTO other_competition
+VALUES (36, 'Mid Devon Winter League - round 6', 0);
+INSERT INTO other_competition
+VALUES (37, 'Devon Association Minor Final - top ringing', 0);
+INSERT INTO other_competition
+VALUES (38, 'Monkleigh - novice section', 1);
+INSERT INTO other_competition
+VALUES (39, 'NAIT Deaneries Gilbert Shield - overall', 0);
+INSERT INTO other_competition
+VALUES (40, 'NAIT Deaneries Gilbert Shield - round 1', 0);
+INSERT INTO other_competition
+VALUES (41, 'NAIT Deaneries Gilbert Shield - round 2', 0);
+INSERT INTO other_competition
+VALUES (42, 'NAIT Deaneries Gilbert Shield - round 3', 0);
+INSERT INTO other_competition
+VALUES (43, 'National - overall', 0);
+INSERT INTO other_competition
+VALUES (44, 'Newton Abbot 3 Tower - overall', 0);
+INSERT INTO other_competition
+VALUES (45, 'Okehampton Deanery - intermediate section', 0);
+INSERT INTO other_competition
+VALUES (46, 'Okehampton Deanery - novice section', 0);
+INSERT INTO other_competition
+VALUES (47, 'Pascoe Family Memorial Trophy', 0);
+INSERT INTO other_competition
+VALUES (48, 'Plymouth and Ivybridge Deaneries - B section', 0);
+INSERT INTO other_competition
+VALUES (49, 'Plymouth and Ivybridge Deaneries - novice section', 0);
+INSERT INTO other_competition
+VALUES (50, 'Shebbear - junior section', 1);
+INSERT INTO other_competition
+VALUES (51, 'St Giles in the Wood - novice section', 1);
+INSERT INTO other_competition
+VALUES (52, 'Stoke Gabriel - development section', 1);
+INSERT INTO other_competition
+VALUES (53, 'Tamar Valley Guild - junior novice section', 0);
+INSERT INTO other_competition
+VALUES (54, 'Tamar Valley Guild - novice section', 0);
+INSERT INTO other_competition
+VALUES (55, 'Tamar Valley Guild Knockout Final - novice section', 0);
+INSERT INTO other_competition
+VALUES (56, 'Tamar Valley Guild Winter Knockout - round 1', 0);
+INSERT INTO other_competition
+VALUES (57, 'Tamar Valley Guild Winter Knockout - round 2', 0);
+INSERT INTO other_competition
+VALUES (58, 'Tamar Valley Guild Winter Knockout - round 3', 0);
+INSERT INTO other_competition
+VALUES (59, 'Tamar Valley Guild Winter Knockout - round 4', 0);
+INSERT INTO other_competition
+VALUES (60, 'Torridge Valley Guild - junior novice section', 0);
+INSERT INTO other_competition
+VALUES (61, 'Torridge Valley Guild - novice section', 0);
+INSERT INTO other_competition
+VALUES (62, 'Totnes Deanery - novice section', 0);
+INSERT INTO other_competition
+VALUES (63, 'Totnes Deanery Winter League - overall', 0);
+INSERT INTO other_competition
+VALUES (64, 'Totnes Deanery Winter League - round 1', 0);
+INSERT INTO other_competition
+VALUES (65, 'Totnes Deanery Winter League - round 2', 0);
+INSERT INTO other_competition
+VALUES (66, 'Totnes Deanery Winter League - round 3', 0);
+INSERT INTO other_competition
+VALUES (67, 'Totnes Deanery Winter League - round 4', 0);
+INSERT INTO other_competition
+VALUES (68, 'Totnes Deanery Winter League - round 5', 0);
+INSERT INTO other_competition
+VALUES (69, 'Totnes Deanery Winter League - round 6', 0);
+INSERT INTO other_competition
+VALUES (70, 'Totnes Deanery Winter League - round 7', 0);
+INSERT INTO other_competition
+VALUES (71, 'Totnes Deanery Winter League - round 8', 0);
+INSERT INTO other_competition
+VALUES (72, 'Totnes Deanery Winter League - top ringing, overall', 0);
+INSERT INTO other_competition
+VALUES (73, 'Totnes Deanery Winter League - top ringing, round 1', 0);
+INSERT INTO other_competition
+VALUES (74, 'Totnes Deanery Winter League - top ringing, round 2', 0);
+INSERT INTO other_competition
+VALUES (75, 'Totnes Deanery Winter League - top ringing, round 3', 0);
+INSERT INTO other_competition
+VALUES (76, 'Totnes Deanery Winter League - top ringing, round 4', 0);
+INSERT INTO other_competition
+VALUES (77, 'Totnes Deanery Winter League - top ringing, round 5', 0);
+INSERT INTO other_competition
+VALUES (78, 'Totnes Deanery Winter League - top ringing, round 6', 0);
+INSERT INTO other_competition
+VALUES (79, 'Wilf Edworthy - call changes section', 0);
+INSERT INTO other_competition
+VALUES (80, 'Wilf Edworthy - rounds section', 0);
+INSERT INTO other_competition
+VALUES (81, 'Winter Cup Final', 0);
+INSERT INTO other_competition
+VALUES (82, 'Woodleigh Deanery - junior section', 0);
 
 -- events
-INSERT INTO other_event VALUES (1, '2010', 31, 33);
-INSERT INTO other_event VALUES (2, '2010', 33, 212);
-INSERT INTO other_event VALUES (3, '2010', 56, 144);
-INSERT INTO other_event VALUES (4, '2010', 64, 76);
-INSERT INTO other_event VALUES (5, '2011', 27, 137);
-INSERT INTO other_event VALUES (6, '2010', 57, 35);
-INSERT INTO other_event VALUES (7, '2010', 65, 222);
-INSERT INTO other_event VALUES (8, '2010', 66, 234);
+INSERT INTO other_event
+VALUES (1, '2010', 31, 33);
+INSERT INTO other_event
+VALUES (2, '2010', 33, 212);
+INSERT INTO other_event
+VALUES (3, '2010', 56, 144);
+INSERT INTO other_event
+VALUES (4, '2010', 64, 76);
+INSERT INTO other_event
+VALUES (5, '2011', 27, 137);
+INSERT INTO other_event
+VALUES (6, '2010', 57, 35);
+INSERT INTO other_event
+VALUES (7, '2010', 65, 222);
+INSERT INTO other_event
+VALUES (8, '2010', 66, 234);
 INSERT INTO other_event VALUES (9, '2010', 34, 156);
 INSERT INTO other_event VALUES (10, '2011', 40, 1);
 INSERT INTO other_event VALUES (11, '2011', 41, 117);

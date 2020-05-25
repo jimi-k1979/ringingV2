@@ -2,21 +2,23 @@
 
 declare(strict_types=1);
 
+namespace test\core\interactors\location\LocationFuzzySearch;
+
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearch;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
-use mocks\GuestUserDummy;
-use mocks\LocationDummy;
-use mocks\LocationSpy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use test\mocks\GuestUserDummy;
+use test\mocks\LocationDummy;
+use test\mocks\LocationSpy;
+use test\mocks\LoggedInUserDummy;
+use test\mocks\PreseenterDummy;
+use test\mocks\PresenterSpy;
+use test\mocks\SecurityRepositoryDummy;
+use test\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockLocationTrait;
+use test\traits\CreateMockLocationTrait;
 
 class LocationFuzzySearchTest extends TestCase
 {
@@ -118,11 +120,11 @@ class LocationFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 999,
-                'location' => 'Test tower',
+                'name' => 'Test tower',
             ],
             [
                 'id' => 333,
-                'location' => 'Test Location',
+                'name' => 'Test Location',
             ]
         ];
 
@@ -152,7 +154,7 @@ class LocationFuzzySearchTest extends TestCase
             [
                 [
                     'id' => 999,
-                    'location' => 'Test tower',
+                    'name' => 'Test tower',
                 ],
             ],
             $response->getData()

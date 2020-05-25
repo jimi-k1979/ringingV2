@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use traits\CreateMockDrlEventTrait;
+use test\traits\CreateMockDrlEventTrait;
 
 class EventSpy implements EventRepositoryInterface
 {
@@ -39,6 +39,39 @@ class EventSpy implements EventRepositoryInterface
      * @var DrlEventEntity
      */
     private $fetchDrlEventValue;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByCompetitionIdCalled = false;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private $fetchDrlEventsByCompetitionIdValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByCompetitionAndLocationIdsCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByCompetitionAndLocationIdsThrowsException = false;
+    /**
+     * @var array
+     */
+    private $fetchDrlEventsByCompetitionAndLocationIdsValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByYearCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventsByYearThrowsException = false;
+    /**
+     * @var
+     */
+    private $fetchDrlEventsByYearValue = [];
+
 
     public function setThrowException(): void
     {
@@ -121,5 +154,92 @@ class EventSpy implements EventRepositoryInterface
         return $this->fetchDrlEventCalled;
     }
 
+    /**
+     * @param int $competitionId
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventsByCompetitionId(int $competitionId): array
+    {
+        $this->fetchDrlEventsByCompetitionIdCalled = true;
+        if ($this->throwException) {
+            throw new RepositoryNoResults(
+                'No events found for that competition id',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fetchDrlEventsByCompetitionIdValue;
+    }
+
+    public function hasFetchDrlEventsByCompetitionIdBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByCompetitionIdCalled;
+    }
+
+    public function setFetchDrlEventsByCompetitionIdValue(array $value): void
+    {
+        $this->fetchDrlEventsByCompetitionIdValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionAndLocationIds(int $competitionId, int $locationId): array
+    {
+        $this->fetchDrlEventsByCompetitionAndLocationIdsCalled = true;
+        if ($this->fetchDrlEventsByCompetitionAndLocationIdsThrowsException) {
+            throw new RepositoryNoResults(
+                'No events found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventsByCompetitionAndLocationIdsValue;
+    }
+
+    public function hasFetchDrlEventsByCompetitionAndLocationIdsBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByCompetitionAndLocationIdsCalled;
+    }
+
+    public function setFetchDrlEventsByCompetitionAndLocationIdsThrowsException(): void
+    {
+        $this->fetchDrlEventsByCompetitionAndLocationIdsThrowsException = true;
+    }
+
+    public function setFetchDrlEventsByCompetitionAndLocationIdsValue(array $value): void
+    {
+        $this->fetchDrlEventsByCompetitionAndLocationIdsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByYear(string $year): array
+    {
+        $this->fetchDrlEventsByYearCalled = true;
+        if ($this->fetchDrlEventsByYearThrowsException) {
+            throw new RepositoryNoResults(
+                'No events found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventsByYearValue;
+    }
+
+    public function hasFetchDrlEventsByYearBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByYearCalled;
+    }
+
+    public function setFetchDrlEventsByYearThrowsException(): void
+    {
+        $this->fetchDrlEventsByYearThrowsException = true;
+    }
+
+    public function setFetchDrlEventsByYearValue(array $value): void
+    {
+        $this->fetchDrlEventsByYearValue = $value;
+    }
 
 }

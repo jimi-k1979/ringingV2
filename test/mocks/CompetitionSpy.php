@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace test\mocks;
 
 
-use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use test\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionSpy implements CompetitionRepositoryInterface
 {
@@ -44,6 +43,18 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @var DrlCompetitionEntity[]
      */
     private $fuzzySearchDrlCompetitionValue;
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByLocationCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByLocationCalledThrowsException = false;
+    /**
+     * @var array
+     */
+    private $fetchDrlCompetitionByLocationCalledValue = [];
 
     public function setRepositoryThrowsException(): void
     {
@@ -155,6 +166,37 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         array $drlCompetitionEntities
     ): void {
         $this->fuzzySearchDrlCompetitionValue = $drlCompetitionEntities;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByLocationId(int $locationId): array
+    {
+        $this->fetchDrlCompetitionByLocationCalled = true;
+        if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
+            throw new RepositoryNoResults(
+                'No rows found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlCompetitionByLocationCalledValue;
+    }
+
+    public function hasFetchDrlCompetitionByLocationBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByLocationCalled;
+    }
+
+    public function setFetchDrlCompetitionByLocationThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByLocationCalledThrowsException = true;
+    }
+
+    public function setFetchDrlCompetitionByLocationValue(array $value): void
+    {
+        $this->fetchDrlCompetitionByLocationCalledValue = $value;
     }
 
 }

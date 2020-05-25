@@ -1,0 +1,244 @@
+{% extends "allPages/base.twig" %}
+
+{% block title %}Results Archive{% endblock %}
+
+{% block extraStyles %}
+    <link href="/assets/css/fuzzySearchResponse.css"
+          rel="stylesheet"
+          type="text/css"
+    >
+{% endblock %}
+
+{% block mainContent %}
+    <div class="col blog-main">
+        <h3 class="pb-1 my-4 font-italic border-bottom">
+            Results Archive
+        </h3>
+
+        <p>
+            Using the forms below you can search for and view the results for
+            any of the events in the archive..
+        </p>
+
+        <div class="row mx-0">
+
+            <div class="mb-1 col-md border">
+                <h4>Search by Event</h4>
+                <div class="autocomplete-suggestions"
+                     id="competition-suggestions"
+                >
+
+                </div>
+                <div class="event-search-form">
+                    <div class="form-group row">
+                        <label for="competition-text-search"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Name
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <input type="text"
+                                   name="competition-text-search"
+                                   id="competition-text-search"
+                                   class="form-control"
+                                   autocomplete="off"
+                                   placeholder="Type name here"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="event-year"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Year
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <select name="event-year"
+                                    id="event-year"
+                                    class="form-control"
+                                    autocomplete="off"
+                                    disabled
+                            >
+                                <option value="0">
+                                    Select an event
+                                </option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                            id="event-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="mb-1 col-md border">
+                <h4>Search by Location</h4>
+                <div class="event-search-form">
+                    <div class="form-group row">
+                        <label for="location-text-search"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Name
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <input type="text"
+                                   name="location-text-search"
+                                   id="location-text-search"
+                                   class="form-control"
+                                   autocomplete="off"
+                                   placeholder="Type location here"
+                            >
+                            <input type="hidden"
+                                   id="hidden-location-id"
+                                   name="hidden-location-id"
+                                   value="0"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="location-event"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Event
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <select name="location-event"
+                                    id="location-event"
+                                    class="form-control"
+                                    autocomplete="off"
+                                    disabled
+                            >
+                                <option value="0">
+                                    Select a location
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="location-year"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Year
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <select name="location-year"
+                                    id="location-year"
+                                    class="form-control"
+                                    autocomplete="off"
+                                    disabled
+                            >
+                                <option value="0">
+                                    Select a location and event
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                            id="location-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="mb-1 col-md border">
+                <h4>Search by Year</h4>
+                <div class="event-search-form">
+                    <div class="form-group row">
+                        <label for="year-text-search"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Year
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <input type="number"
+                                   name="year-text-search"
+                                   id="year-text-search"
+                                   class="form-control"
+                                   autocomplete="off"
+                                   placeholder="Type year here"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="year-event"
+                               class="col-2 col-md-12 col-lg-2 col-form-label"
+                        >
+                            Event
+                        </label>
+                        <div class="col-10 col-md-12 col-lg-10">
+                            <select name="year-event"
+                                    id="year-event"
+                                    class="form-control"
+                                    autocomplete="off"
+                                    disabled
+                            >
+                                <option value="0">
+                                    Select a location
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                            id="year-get-results"
+                            class="btn btn-outline-secondary btn-block"
+                            disabled
+                    >
+                        Waiting...
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blog-post hidden" id="results-section">
+            <h2>
+                <span id="result-year">Year</span>
+                <span id="result-competition-name">Competition Name</span>
+            </h2>
+            <h3 id="held-at">
+                Held at <span id="result-location">Location</span>
+            </h3>
+
+            <table id="result-table" class="table table-sm">
+
+            </table>
+
+            <!-- if judges known -->
+            <div id="judges-section">
+                <h5>Judges:</h5>
+                <ul id="result-judges-list" style="list-style: none">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/tableBuilder.js"
+    ></script>
+    <script type="application/javascript"
+            src="/assets/js/eventSearch.js"
+    ></script>
+{% endblock %}

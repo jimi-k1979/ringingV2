@@ -2,7 +2,7 @@ CREATE TABLE `deanery`
 (
     `id`          int unsigned                           NOT NULL AUTO_INCREMENT,
     `deaneryName` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `northSouth`  enum ('north', 'south', 'outOfCounty'),
+    `northSouth`  enum ('north', 'south', 'outOfCounty', 'n/a'),
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
@@ -62,18 +62,19 @@ CREATE TABLE `DRL_competition`
 (
     `id`              int unsigned                           NOT NULL AUTO_INCREMENT,
     `competitionName` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `isSingleTower` tinyint default 0 not null
-        PRIMARY KEY (`id`)
+    `isSingleTower`   tinyint default 0                      not null,
+    PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
 
 CREATE TABLE `DRL_event`
 (
-    `id`            int unsigned NOT NULL AUTO_INCREMENT,
-    `year`          year(4)      NOT NULL,
-    `competitionID` int unsigned NOT NULL,
-    `locationID`    int unsigned NOT NULL,
+    `id`             int unsigned      NOT NULL AUTO_INCREMENT,
+    `year`           year(4)           NOT NULL,
+    `competitionID`  int unsigned      NOT NULL,
+    `locationID`     int unsigned      NOT NULL,
+    `isUnusualTower` tinyint default 0 not null,
     PRIMARY KEY (`id`),
     KEY `fk_competition_event_idx` (`competitionID`),
     KEY `fk_location_event_idx` (`locationID`),
@@ -273,18 +274,19 @@ CREATE TABLE `other_competition`
 (
     `id`              int unsigned                            NOT NULL AUTO_INCREMENT,
     `competitionName` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `isSingleTower` tinyint default 0 not null
-        PRIMARY KEY (`id`)
+    `isSingleTower`   tinyint default 0                       not null,
+    PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
 
 CREATE TABLE `other_event`
 (
-    `id`            int unsigned NOT NULL AUTO_INCREMENT,
-    `year`          year         NOT NULL,
-    `competitionID` int unsigned NOT NULL,
-    `locationID`    int unsigned NOT NULL,
+    `id`             int unsigned      NOT NULL AUTO_INCREMENT,
+    `year`           year              NOT NULL,
+    `competitionID`  int unsigned      NOT NULL,
+    `locationID`     int unsigned      NOT NULL,
+    `isUnusualTower` tinyint default 0 not null,
     PRIMARY KEY (`id`),
     KEY `fk_other_event_competition_idx` (`competitionID`),
     KEY `fk_other_event_location_idx` (`locationID`),

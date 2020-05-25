@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace traits;
+namespace test\traits;
 
 
 use DrlArchive\core\entities\LocationEntity;
@@ -11,7 +11,7 @@ trait CreateMockLocationTrait
 
     use CreateMockDeaneryTrait;
 
-    private function CreateMockLocation(): LocationEntity
+    private function createMockLocation(): LocationEntity
     {
         $entity = new LocationEntity();
         $entity->setId(999);

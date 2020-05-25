@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace traits;
+namespace test\traits;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
@@ -16,7 +16,7 @@ trait CreateMockDrlEventTrait
     {
         $entity = new DrlEventEntity();
         $entity->setId(1234);
-        $entity->setLocation($this->CreateMockLocation());
+        $entity->setLocation($this->createMockLocation());
         $entity->setCompetition($this->createMockDrlCompetition());
         $entity->setYear('1970');
 

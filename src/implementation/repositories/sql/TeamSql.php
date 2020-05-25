@@ -10,6 +10,9 @@ use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 class TeamSql extends MysqlRepository implements TeamRepositoryInterface
 {
 
+    public const SELECT_TEAM_NAME = 't.teamName';
+    public const FIELD_NAME_TEAM_NAME = ' AS teamName';
+
     public function insertTeam(TeamEntity $teamEntity): TeamEntity
     {
         // TODO: Implement insertTeam() method.
@@ -28,5 +31,10 @@ class TeamSql extends MysqlRepository implements TeamRepositoryInterface
     public function deleteTeam(TeamEntity $teamEntity): bool
     {
         // TODO: Implement deleteTeam() method.
+    }
+
+    public function fuzzySearchTeam(string $searchTerm): array
+    {
+        // TODO: Implement fuzzySearchTeam() method.
     }
 }

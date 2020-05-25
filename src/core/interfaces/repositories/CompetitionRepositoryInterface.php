@@ -25,5 +25,10 @@ interface CompetitionRepositoryInterface
      */
     public function fuzzySearchDrlCompetition(string $string): array;
 
+    /**
+     * @param int $locationId
+     * @return DrlCompetitionEntity[]
+     */
+    public function fetchDrlCompetitionByLocationId(int $locationId): array;
 
 }

@@ -10,6 +10,10 @@ use DrlArchive\core\entities\TeamEntity;
 
 abstract class AbstractResultEntity extends Entity
 {
+    public const RESULT_TYPE_OTHER = 0;
+    public const RESULT_TYPE_DRL = 1;
+    public const RESULT_TYPE_LADDER = 2;
+
     /**
      * @var int
      */

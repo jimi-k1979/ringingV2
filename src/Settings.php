@@ -7,7 +7,7 @@ namespace DrlArchive;
 class Settings
 {
     public const
-        DB_HOST = 'localhost',
+        DB_HOST = 'database',
         DB_SCHEMA = 'ringingV2',
         DB_USER = 'ringer',
         DB_PASSWORD = 'ringerPassword';

@@ -1,14 +1,18 @@
+SET GLOBAL log_bin_trust_function_creators = 1;
+
 USE `ringingV2`;
 DROP function IF EXISTS `f_event_numberOfTeams`;
 
 DELIMITER $$
 USE `ringingV2`$$
-CREATE FUNCTION `f_event_numberOfTeams` (
+CREATE FUNCTION `f_event_numberOfTeams`(
     p_eventId INT
-    )
+)
     RETURNS INTEGER
+    READS SQL DATA
+    DETERMINISTIC
 BEGIN
-RETURN (SELECT COUNT(*) FROM DRL_result WHERE eventID = p_eventId);
+    RETURN (SELECT COUNT(*) FROM DRL_result WHERE eventID = p_eventId);
 END$$
 DELIMITER ;
 
@@ -17,15 +21,15 @@ DROP function IF EXISTS `f_team_faultDifferenceByEvent`;
 
 DELIMITER $$
 USE `ringingV2`$$
-CREATE FUNCTION `f_team_faultDifferenceByEvent` (
-    p_eventID INT,
-    p_result FLOAT
-    )
+CREATE FUNCTION `f_team_faultDifferenceByEvent`(p_eventID INT,
+                                                p_result FLOAT)
     RETURNS FLOAT
+    READS SQL DATA
+    DETERMINISTIC
 BEGIN
-RETURN (SELECT SUM(faults) - (p_result * f_event_numberOfTeams(p_eventID))
-        FROM DRL_result
-        WHERE eventID = p_eventID);
+    RETURN (SELECT SUM(faults) - (p_result * f_event_numberOfTeams(p_eventID))
+            FROM DRL_result
+            WHERE eventID = p_eventID);
 END$$
 
 DELIMITER ;
@@ -35,17 +39,17 @@ DROP function IF EXISTS `f_team_competitionCountByYear`;
 
 DELIMITER $$
 USE `ringingV2`$$
-CREATE FUNCTION `f_team_competitionCountByYear` (
-    p_teamID INT,
-    p_year YEAR
-    )
+CREATE FUNCTION `f_team_competitionCountByYear`(p_teamID INT,
+                                                p_year YEAR)
     RETURNS INTEGER
+    READS SQL DATA
+    DETERMINISTIC
 BEGIN
 
-RETURN (SELECT COUNT(*) AS competitions
-        FROM DRL_result r
-                 INNER JOIN DRL_event e ON r.eventID = e.ID AND e.year = p_year
-        WHERE teamID = p_teamID);
+    RETURN (SELECT COUNT(*) AS competitions
+            FROM DRL_result r
+                     INNER JOIN DRL_event e ON r.eventID = e.ID AND e.year = p_year
+            WHERE teamID = p_teamID);
 END$$
 
 DELIMITER ;
@@ -130,7 +134,7 @@ FROM
                  WHERE
                          a.competitionID = b.competitionID
                  GROUP BY a.faults
-                 HAVING SUM(CASE WHEN a.faults = b.faults THEN 1 ELSE 0 END)
+                 HAVING SUM(IF(a.faults = b.faults, 1, 0))
                             >= ABS(SUM(SIGN(a.faults - b.faults)))
              ) m
     ) medians
@@ -201,7 +205,7 @@ BEGIN
                      WHERE
                              a.competitionID = b.competitionID
                      GROUP BY a.competitionID, a.faults
-                     HAVING SUM(CASE WHEN a.faults = b.faults THEN 1 ELSE 0 END)
+                     HAVING SUM(IF(a.faults = b.faults, 1, 0))
                                 >= ABS(SUM(SIGN(a.faults - b.faults)))
                  ) m
             GROUP BY competitionID
@@ -271,21 +275,20 @@ CREATE PROCEDURE `sp_competition_winningTeamListById` (
     )
 BEGIN
 SELECT
-    r.faults AS faults,
-    t.teamName AS team,
-    r.eventID AS eventID,
-    e.year AS year,
+    r.faults          AS faults,
+    t.teamName        AS team,
+    r.eventID         AS eventID,
+    e.year            AS year,
     c.competitionName AS competition,
     l.location
-FROM
-    DRL_result r
-        INNER JOIN team t ON r.teamID = t.ID
-        INNER JOIN DRL_event e ON r.eventID = e.ID
-        AND e.competitionID = p_competitionID
-        INNER JOIN DRL_competition c ON e.competitionID = c.ID
-        INNER JOIN location l ON e.locationID = l.ID
+FROM DRL_result r
+         INNER JOIN team t ON r.teamID = t.ID
+         INNER JOIN DRL_event e ON r.eventID = e.ID
+    AND e.competitionID = p_competitionID
+         INNER JOIN DRL_competition c ON e.competitionID = c.ID
+         INNER JOIN location l ON e.locationID = l.ID
 WHERE r.position = 1
-ORDER BY year ASC;
+ORDER BY year;
 END$$
 
 DELIMITER ;
@@ -297,18 +300,15 @@ DELIMITER $$
 USE `ringingV2`$$
 CREATE PROCEDURE `sp_list_teamWinCount` ()
 BEGIN
-SELECT
-    COUNT(r.position) AS wins,
-    t.teamName AS team,
-    e.year AS year
-FROM
-    DRL_result r
-        INNER JOIN DRL_event e ON r.eventID = e.ID
-        INNER JOIN team t ON r.teamID = t.ID
-WHERE
-        r.position = 1
+SELECT COUNT(r.position) AS wins,
+       t.teamName        AS team,
+       e.year            AS year
+FROM DRL_result r
+         INNER JOIN DRL_event e ON r.eventID = e.ID
+         INNER JOIN team t ON r.teamID = t.ID
+WHERE r.position = 1
 GROUP BY t.teamName, e.year
-ORDER BY wins DESC, year ASC;
+ORDER BY wins DESC, e.year;
 END$$
 
 DELIMITER ;
@@ -331,8 +331,8 @@ FROM DRL_result r
          INNER JOIN DRL_competition c ON e.competitionID = c.id
          INNER JOIN location l ON e.locationID = l.id
          INNER JOIN team t ON r.teamID = t.id
-WHERE r.faults=0
-ORDER BY year ASC;
+WHERE r.faults = 0
+ORDER BY year;
 END$$
 
 DELIMITER ;
@@ -437,17 +437,16 @@ CREATE PROCEDURE `sp_team_annualTableRows` (
     IN p_teamID INT
     )
 BEGIN
-SELECT
-    e.year AS year,
-    f_team_competitionCountByYear(t.id, e.year) AS comps,
-    ROUND(SUM(f_team_faultDifferenceByEvent(e.id, r.faults)), 2) AS faultDiff,
-    ROUND(SUM(r.points)/f_team_competitionCountByYear(t.id, e.year), 2) AS ranking
-FROM team t
-         INNER JOIN DRL_result r ON t.id = r.teamID
-         INNER JOIN DRL_event e ON r.eventID = e.id
-WHERE t.id = p_teamID
-GROUP BY comps, t.id, e.year
-ORDER BY year ASC;
+    SELECT e.year                                                                AS year,
+           f_team_competitionCountByYear(t.id, e.year)                           AS comps,
+           ROUND(SUM(f_team_faultDifferenceByEvent(e.id, r.faults)), 2)          AS faultDiff,
+           ROUND(SUM(r.points) / f_team_competitionCountByYear(t.id, e.year), 2) AS ranking
+    FROM team t
+             INNER JOIN DRL_result r ON t.id = r.teamID
+             INNER JOIN DRL_event e ON r.eventID = e.id
+    WHERE t.id = p_teamID
+    GROUP BY comps, t.id, e.year
+    ORDER BY e.year;
 END$$
 
 DELIMITER ;
@@ -512,18 +511,17 @@ FROM
                                   competitionID = p_competitionID
                           ORDER BY competitionID
                       ) b
-                 WHERE
-                         a.competitionID = b.competitionID AND
-                         a.eventId = b.eventId
+                 WHERE a.competitionID = b.competitionID
+                   AND a.eventId = b.eventId
                  GROUP BY a.faults, a.eventId
-                 HAVING SUM(CASE WHEN a.faults = b.faults THEN 1 ELSE 0 END)
+                 HAVING SUM(IF(a.faults = b.faults, 1, 0))
                             >= ABS(SUM(SIGN(a.faults - b.faults)))
              ) m
         GROUP BY eventID
     ) medians ON e.id = medians.eventId
 WHERE c.id = p_competitionID
 GROUP BY location, year, entry, teamName, winningFaults, winningMargin, medianFaults
-ORDER BY year ASC;
+ORDER BY year;
 
 END$$
 
@@ -567,17 +565,16 @@ CREATE PROCEDURE `sp_team_allTimeSummary` (
     IN p_teamId INT
     )
 BEGIN
-SET @@group_concat_max_len = 500;
-SELECT
-    t.teamName,
-    MIN(e.year) AS firstYear,
-    MAX(e.year) AS lastYear,
-    GROUP_CONCAT(DISTINCT e.year ORDER BY year ASC) AS yearsEntered,
-    COUNT(DISTINCT e.year) AS yearsEntered,
-    ROUND(AVG(r.position),2) AS avePosition,
-    SUM(r.faults) AS totFaults,
-    ROUND(AVG(r.faults),2) AS aveFaults,
-    ROUND(SUM(r.faults)/COUNT(DISTINCT e.year),2) AS faultsPerYear,
+    SET @@group_concat_max_len = 5000;
+    SELECT t.teamName,
+           MIN(e.year)                                                                       AS firstYear,
+           MAX(e.year)                                                                       AS lastYear,
+           GROUP_CONCAT(DISTINCT e.year ORDER BY year ASC)                                   AS yearsEntered,
+           COUNT(DISTINCT e.year)                                                            AS yearsEntered,
+           ROUND(AVG(r.position), 2)                                                         AS avePosition,
+           SUM(r.faults)                                                                     AS totFaults,
+           ROUND(AVG(r.faults), 2)                                                           AS aveFaults,
+           ROUND(SUM(r.faults) / COUNT(DISTINCT e.year), 2)                                  AS faultsPerYear,
     COUNT(r.faults) AS competitions,
     ROUND(COUNT(r.faults)/COUNT(DISTINCT e.year),2) AS competitionsPerYear,
     COUNT(winners.faults) AS competitionWins,
@@ -586,9 +583,8 @@ SELECT
     ROUND(SUM(r.points)/COUNT(DISTINCT e.year), 2) AS rankingPointsPerYear,
     ROUND(SUM(f_team_faultDifferenceByEvent(r.eventId, r.faults)), 2) AS faultDifference,
     ROUND(SUM(f_team_faultDifferenceByEvent(r.eventId, r.faults))/COUNT(DISTINCT e.year), 2) AS faultDifferencePerYear
-FROM
-    DRL_event e
-        INNER JOIN DRL_result r ON e.id = r.eventId AND r.teamId = 335
+FROM DRL_event e
+         INNER JOIN DRL_result r ON e.id = r.eventId AND r.teamId = p_teamId
         INNER JOIN team t ON r.teamId = t.id
         LEFT JOIN DRL_result winners ON e.id = winners.eventId AND winners.position = 1 AND winners.teamId = r.teamId
 GROUP BY t.teamName;
