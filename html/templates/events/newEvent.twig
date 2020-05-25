@@ -1,0 +1,88 @@
+{% extends "allPages/base.twig" %}
+
+{% block title %}Results Archive - add new event{% endblock %}
+
+{% block extraStyles %}
+    <link href="/assets/css/fuzzySearchResponse.css"
+          rel="stylesheet"
+          type="text/css"
+    >
+{% endblock %}
+
+{% block mainContent %}
+    <div class="col blog-main">
+        <h3 class="pb-1 my-4 font-italic border-bottom">
+            Add Event to Archive
+        </h3>
+
+        <p>
+            Enter the details for the new event - we'll check the event doesn't
+            already exist in the archive - and then enter the results.
+        </p>
+
+        <div class="border mx-0 row">
+            <h4 class="col-12">Event details</h4>
+
+            <div class="form-group">
+                <div class="col-2 col-md-12 col-lg-2">
+                    <label for="year-text-search"
+                           class="col-form-label"
+                    >
+                        Year
+                    </label>
+                </div>
+                <div class="col-10 col-md-12 col-lg-10">
+                    <input type="number"
+                           name="year-text-search"
+                           id="year-text-search"
+                           class="form-control"
+                           autocomplete="off"
+                           placeholder="Type year here"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-2 col-md-12 col-lg-2">
+                    <label for="competition-fuzzy-search"
+                           class="col-form-label"
+                    >
+                        Competition
+                    </label>
+                </div>
+                <div class="col-10 col-md-12 col-lg-2">
+                    <input type="text"
+                           name="competition-fuzzy-search"
+                           id="competition-fuzzy-search"
+                           class="form-control"
+                           autocomplete="off"
+                           placeholder="Competition name"
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-2 col-md-12 col-lg-2">
+                    <label for="location-fuzzy-search"
+                           class="col-form-label"
+                    >
+                        Venue
+                    </label>
+                </div>
+                <div class="col-10 col-md-12 col-lg-2">
+                    <input type="text"
+                           name="location-fuzzy-search"
+                           id="location-fuzzy-search"
+                           class="form-control"
+                           autocomplete="off"
+                           placeholder="Venue"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-post" id="results-form">
+            <!-- results form here -->
+        </div>
+    </div>
+{% endblock %}
