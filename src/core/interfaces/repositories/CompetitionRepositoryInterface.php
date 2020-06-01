@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace DrlArchive\core\interfaces\repositories;
 
 
+use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 
 interface CompetitionRepositoryInterface
@@ -31,4 +32,9 @@ interface CompetitionRepositoryInterface
      */
     public function fetchDrlCompetitionByLocationId(int $locationId): array;
 
+    /**
+     * @param string $search
+     * @return AbstractCompetitionEntity[]
+     */
+    public function fuzzySearchAllCompetitions(string $search): array;
 }

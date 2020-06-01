@@ -181,6 +181,7 @@ join;
      */
     public function fuzzySearchAllCompetitions(string $search): array
     {
+        // todo create build union query method
         return [];
     }
 }
