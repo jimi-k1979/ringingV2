@@ -123,11 +123,15 @@
                             </label>
                         </div>
                     </div>
+                    <input type="hidden"
+                           name="is-drl-event-type"
+                           value="false"
+                           id="is-drl-event-type"
+                    >
                 </fieldset> <!-- #meta-data -->
 
-                <div class="row">
+                <div class="row"> <!-- results -->
                     {% for i in 1..20 %}
-
                         <fieldset id="result-{{ i }}"
                                 {% if i % 2 == 1 %}
                                     class="form-row col-12 fieldset-light pt-1 mx-0"
@@ -136,8 +140,6 @@
                                 {% endif %}
                                   disabled
                         >
-
-
                             <div class="form-group col-4 col-md-2 col-lg-1">
                                 <label for="position-{{ i }}">
                                     Position
@@ -182,7 +184,7 @@
                             </div>
                         </fieldset>
                     {% endfor %}
-                </div>
+                </div> <!-- results -->
             </div>
         </form>
     </div>
