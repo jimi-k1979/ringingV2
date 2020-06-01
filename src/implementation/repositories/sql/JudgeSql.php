@@ -63,7 +63,7 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
             'eventId' => $entity->getId()
         ];
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );

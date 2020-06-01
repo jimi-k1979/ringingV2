@@ -82,7 +82,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         ];
 
         $result = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::SINGLE_ROW
         );
@@ -131,7 +131,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
             'competitionId' => $competitionId,
         ];
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );
@@ -241,7 +241,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
             'locationId' => $locationId,
         ];
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );
@@ -292,7 +292,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         );
 
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             ['year' => $year],
             Database::MULTI_ROW
         );

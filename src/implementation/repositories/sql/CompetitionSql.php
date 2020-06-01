@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\sql;
 
 
+use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
@@ -87,7 +88,7 @@ join;
         ];
 
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );
@@ -156,7 +157,7 @@ join;
         ];
 
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );
@@ -173,5 +174,13 @@ join;
             $returnArray[] = $this->createDrlCompetitionEntity($result);
         }
         return $returnArray;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchAllCompetitions(string $search): array
+    {
+        return [];
     }
 }

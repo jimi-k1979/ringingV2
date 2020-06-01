@@ -76,7 +76,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
         ];
 
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );
