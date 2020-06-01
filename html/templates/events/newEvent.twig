@@ -19,70 +19,171 @@
             Enter the details for the new event - we'll check the event doesn't
             already exist in the archive - and then enter the results.
         </p>
+        <form method="post"
+              id="add-competition"
+              autocomplete="off"
+        >
+            <div class="border mx-0 my-3 py-1 row"
+                 id="event-details"
+            >
+                <div class="col-12">
+                    <h4>Event details</h4>
 
-        <div class="border mx-0 row">
-            <h4 class="col-12">Event details</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+                            <div class="row form-group">
+                                <label for="year-text-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Year
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="number"
+                                           name="year-text-search"
+                                           id="year-text-search"
+                                           class="form-control"
+                                           autocomplete="off"
+                                           placeholder="Type year here"
+                                    >
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="form-group">
-                <div class="col-2 col-md-12 col-lg-2">
-                    <label for="year-text-search"
-                           class="col-form-label"
-                    >
-                        Year
-                    </label>
+                        <div class="col-12 col-md-8 col-lg-4 col-xl-5">
+                            <div class="row form-group">
+                                <label for="competition-fuzzy-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Event
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="text"
+                                           name="competition-fuzzy-search"
+                                           id="competition-fuzzy-search"
+                                           class="form-control"
+                                           autocomplete="off"
+                                           placeholder="Competition name"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                            <div class="row form-group">
+                                <label for="location-fuzzy-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Venue
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="text"
+                                           name="location-fuzzy-search"
+                                           id="location-fuzzy-search"
+                                           class="form-control"
+                                           autocomplete="off"
+                                           placeholder="Venue"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-10 col-md-12 col-lg-10">
-                    <input type="number"
-                           name="year-text-search"
-                           id="year-text-search"
-                           class="form-control"
-                           autocomplete="off"
-                           placeholder="Type year here"
-                    >
+            </div> <!-- #event-details -->
+
+            <div class="blog-post" id="results-form">
+                <fieldset disabled class="row form-group" id="meta-data">
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <div class="form-group row">
+                            <label for="number-of-teams"
+                                   class="col-sm-3 col-md-4 col-lg-3 col-form-label"
+                            >
+                                Team count
+                            </label>
+                            <div class="col-sm-9 col-md-8 col-lg-9">
+                                <input type="number"
+                                       class="form-control"
+                                       id="number-of-teams"
+                                       placeholder="Include any disqualifications"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input"
+                                   type="checkbox"
+                                   value="1"
+                                   id="peal-numbers"
+                                   name="peal-numbers"
+                            >
+                            <label class="custom-control-label"
+                                   for="peal-numbers"
+                            >
+                                Unknown peal numbers
+                            </label>
+                        </div>
+                    </div>
+                </fieldset> <!-- #meta-data -->
+
+                <div class="row">
+                    {% for i in 1..20 %}
+
+                        <fieldset id="result-{{ i }}"
+                                {% if i % 2 == 1 %}
+                                    class="form-row col-12 fieldset-light pt-1 mx-0"
+                                {% else %}
+                                    class="form-row col-12 pt-1 mx-0"
+                                {% endif %}
+                                  disabled
+                        >
+
+
+                            <div class="form-group col-4 col-md-2 col-lg-1">
+                                <label for="position-{{ i }}">
+                                    Position
+                                </label>
+                                <input type="number"
+                                       class="form-control"
+                                       name="position-{{ i }}"
+                                       id="position-{{ i }}"
+                                       value="{{ i }}"
+                                       required
+                                >
+                            </div>
+                            <div class="form-group col-4 col-md-2 col-lg-1">
+                                <label for="peal-{{ i }}">
+                                    Peal
+                                </label>
+                                <input type="number"
+                                       class="form-control"
+                                       name="peal-{{ i }}"
+                                       id="peal-{{ i }}"
+                                >
+                            </div>
+                            <div class="form-group col-4 col-md-2 col-lg-2">
+                                <label for="faults-{{ i }}">
+                                    Faults
+                                </label>
+                                <input type="number"
+                                       class="form-control"
+                                       name="faults-{{ i }}"
+                                       id="faults-{{ i }}"
+                                >
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-8">
+                                <label for="team-{{ i }}">
+                                    Team
+                                </label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="team-{{ i }}"
+                                       id="team-{{ i }}"
+                                >
+                            </div>
+                        </fieldset>
+                    {% endfor %}
                 </div>
             </div>
-
-            <div class="form-group">
-                <div class="col-2 col-md-12 col-lg-2">
-                    <label for="competition-fuzzy-search"
-                           class="col-form-label"
-                    >
-                        Competition
-                    </label>
-                </div>
-                <div class="col-10 col-md-12 col-lg-2">
-                    <input type="text"
-                           name="competition-fuzzy-search"
-                           id="competition-fuzzy-search"
-                           class="form-control"
-                           autocomplete="off"
-                           placeholder="Competition name"
-                    >
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-2 col-md-12 col-lg-2">
-                    <label for="location-fuzzy-search"
-                           class="col-form-label"
-                    >
-                        Venue
-                    </label>
-                </div>
-                <div class="col-10 col-md-12 col-lg-2">
-                    <input type="text"
-                           name="location-fuzzy-search"
-                           id="location-fuzzy-search"
-                           class="form-control"
-                           autocomplete="off"
-                           placeholder="Venue"
-                    >
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-post" id="results-form">
-            <!-- results form here -->
-        </div>
+        </form>
     </div>
 {% endblock %}

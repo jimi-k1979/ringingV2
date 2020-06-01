@@ -1,3 +1,7 @@
 .hidden {
     display: none;
 }
+
+.fieldset-light {
+    background-color: whitesmoke;
+}
