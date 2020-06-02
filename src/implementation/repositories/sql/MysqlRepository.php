@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\implementation\repositories\sql;
@@ -18,6 +19,8 @@ class MysqlRepository extends Repository
 
     public const EXCEPTION_NO_FIELDS_IN_SELECT_QUERY = 1210;
     public const EXCEPTION_NO_TABLES_IN_SELECT_QUERY = 1210;
+    public const EXCEPTION_FIELD_COUNT_NOT_THE_SAME_IN_UNION = 1211; // TODO - document!
+    public const EXCEPTION_ORDER_BY_IN_SUB_UNION_QUERY = 1212; // TODO - document!
 
     /**
      * @var Database
@@ -81,5 +84,57 @@ class MysqlRepository extends Repository
         }
 
         return implode("\n", $sql);
+    }
+
+    /**
+     * @param DatabaseQueryBuilder[] $queryParts
+     * @param array $orderBy
+     * @param bool $isUnionAll
+     * @return string
+     * @throws GeneralRepositoryErrorException
+     */
+    public function buildUnionSelectQuery(
+        array $queryParts,
+        array $orderBy = [],
+        bool $isUnionAll = false
+    ): string {
+        $fieldCount = count($queryParts[0]->getFields());
+        $subQueries = [];
+
+        foreach ($queryParts as $queryPart) {
+            if (count($queryPart->getFields()) !== $fieldCount) {
+                throw new GeneralRepositoryErrorException(
+                    'Field count is not identical in each sub query',
+                    self::EXCEPTION_FIELD_COUNT_NOT_THE_SAME_IN_UNION
+                );
+            }
+            if (!empty($queryPart->getOrderBy())) {
+                throw new GeneralRepositoryErrorException(
+                    'Order by clauses cannot be in the sub query',
+                    self::EXCEPTION_ORDER_BY_IN_SUB_UNION_QUERY
+                );
+            }
+            $subQueries[] = $this->buildSelectQuery($queryPart);
+        }
+
+        if ($isUnionAll) {
+            $unionQuery = implode(
+                ' UNION ALL ',
+                $subQueries
+            );
+        } else {
+            $unionQuery = implode(
+                ' UNION ',
+                $subQueries
+            );
+        }
+
+        if (!empty($orderBy)) {
+            $orderByClause = 'ORDER BY ' . implode(', ', $orderBy);
+        } else {
+            $orderByClause = '';
+        }
+
+        return $unionQuery . $orderByClause;
     }
 }
