@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
@@ -10,7 +10,7 @@ use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
-use test\traits\CreateMockDrlResultTrait;
+use traits\CreateMockDrlResultTrait;
 
 class ResultSpy implements ResultRepositoryInterface
 {

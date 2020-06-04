@@ -25,9 +25,6 @@ class Database implements SqlDatabaseInterface
     public const ERROR_NO_TABLE_FOUND = '42S02';
     public const ERROR_NO_CODE = 0;
 
-    public const EXCEPTION_NO_FIELDS_IN_SELECT_QUERY = 1210;
-    public const EXCEPTION_NO_TABLES_IN_SELECT_QUERY = 1210;
-
     public const DB_SUPPORTED_MYSQL = 'mysql';
     public const DB_SUPPORTED_PGSQL = 'pgsql';
     public const DB_SUPPORTED_SQLITE = 'sqlite';
@@ -277,53 +274,4 @@ class Database implements SqlDatabaseInterface
             ) !== false;
     }
 
-    public function buildSelectQuery(
-        DatabaseQueryBuilder $query
-    ): string {
-        if (empty($query->getFields())) {
-            throw new GeneralRepositoryErrorException(
-                'No fields given in the select query',
-                self::EXCEPTION_NO_FIELDS_IN_SELECT_QUERY
-            );
-        } elseif (empty($query->getTablesAndJoins())) {
-            throw new GeneralRepositoryErrorException(
-                'No tables given in the select query',
-                self::EXCEPTION_NO_TABLES_IN_SELECT_QUERY
-            );
-        }
-
-        if ($query->isDistinctQuery()) {
-            $sql = [
-                'SELECT DISTINCT',
-                implode(', ', $query->getFields()),
-                'FROM',
-                implode("\n", $query->getTablesAndJoins()),
-            ];
-        } else {
-            $sql = [
-                'SELECT',
-                implode(', ', $query->getFields()),
-                'FROM',
-                implode("\n", $query->getTablesAndJoins()),
-            ];
-        }
-
-        if (!empty($query->getWhereClauses())) {
-            $sql[] = 'WHERE ' . implode(' AND ', $query->getWhereClauses());
-        }
-
-        if (!empty($query->getGroupBy())) {
-            $sql[] = 'GROUP BY ' . implode(', ', $query->getGroupBy());
-        }
-
-        if (!empty($query->getOrderBy())) {
-            $sql[] = 'ORDER BY ' . implode(', ', $query->getOrderBy());
-        }
-
-        if (!empty($query->getLimit())) {
-            $sql[] = 'LIMIT ' . $query->getLimit();
-        }
-
-        return implode("\n", $sql);
-    }
 }

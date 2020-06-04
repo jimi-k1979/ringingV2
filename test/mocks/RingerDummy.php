@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
-use test\traits\CreateMockRingerTrait;
+use traits\CreateMockRingerTrait;
 
 class RingerDummy implements RingerRepositoryInterface
 {

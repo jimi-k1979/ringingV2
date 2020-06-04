@@ -18,8 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DrlArchive\\": "src/",
-      "test\\": "test/"
+      "DrlArchive\\": "src/"
     }
   }
 }

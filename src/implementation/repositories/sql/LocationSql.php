@@ -71,7 +71,7 @@ class LocationSql
         ];
 
         $result = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::SINGLE_ROW
         );
@@ -120,7 +120,7 @@ class LocationSql
         ];
 
         $results = $this->database->query(
-            $this->database->buildSelectQuery($query),
+            $this->buildSelectQuery($query),
             $params,
             Database::MULTI_ROW
         );

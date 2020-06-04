@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
+use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use test\traits\CreateMockDrlCompetitionTrait;
+use traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionSpy implements CompetitionRepositoryInterface
 {
@@ -55,6 +56,19 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @var array
      */
     private $fetchDrlCompetitionByLocationCalledValue = [];
+    /**
+     * @var bool
+     */
+    private $fuzzySearchAllCompetitionsCalled = false;
+    /**
+     * @var bool
+     */
+    private $fuzzySearchAllCompetitionsThrowsException = false;
+    /**
+     * @var AbstractCompetitionEntity[]
+     */
+    private $fuzzySearchAllCompetitionsValue = [];
+
 
     public function setRepositoryThrowsException(): void
     {
@@ -197,6 +211,36 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     public function setFetchDrlCompetitionByLocationValue(array $value): void
     {
         $this->fetchDrlCompetitionByLocationCalledValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchAllCompetitions(string $search): array
+    {
+        $this->fuzzySearchAllCompetitionsCalled = true;
+        if ($this->fuzzySearchAllCompetitionsThrowsException) {
+            throw new RepositoryNoResults(
+                'No competitions found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fuzzySearchAllCompetitionsValue;
+    }
+
+    public function hasFuzzySearchAllCompetitionsBeenCalled(): bool
+    {
+        return $this->fuzzySearchAllCompetitionsCalled;
+    }
+
+    public function setFuzzySearchAllCompetitionsThrowsException(): void
+    {
+        $this->fuzzySearchAllCompetitionsThrowsException = true;
+    }
+
+    public function setFuzzySearchAllCompetitionsValue(array $value): void
+    {
+        $this->fuzzySearchAllCompetitionsValue = $value;
     }
 
 }

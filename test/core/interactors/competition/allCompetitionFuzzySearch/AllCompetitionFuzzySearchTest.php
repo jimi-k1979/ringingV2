@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\fetchDrlCompetitionByLocation;
+namespace core\interactors\competition\allCompetitionFuzzySearch;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocation;
-use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
+use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearch;
+use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use mocks\CompetitionDummy;
@@ -18,20 +18,22 @@ use mocks\SecurityRepositoryDummy;
 use mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockDrlCompetitionTrait;
+use traits\CreateMockOtherCompetitionTrait;
 
-class FetchDrlCompetitionByLocationTest extends TestCase
+class AllCompetitionFuzzySearchTest extends TestCase
 {
     use CreateMockDrlCompetitionTrait;
+    use CreateMockOtherCompetitionTrait;
 
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(
             Interactor::class,
-            new FetchDrlCompetitionByLocation()
+            new AllCompetitionFuzzySearch()
         );
     }
 
-    public function testUserIsAuthorised(): void
+    public function testCheckUserIsAuthorised(): void
     {
         $securitySpy = new SecurityRepositorySpy();
 
@@ -45,17 +47,16 @@ class FetchDrlCompetitionByLocationTest extends TestCase
     }
 
     /**
-     * @return FetchDrlCompetitionByLocation
+     * @return AllCompetitionFuzzySearch
      */
-    private function createUseCase(): FetchDrlCompetitionByLocation
+    private function createUseCase(): AllCompetitionFuzzySearch
     {
-        $request = new FetchDrlCompetitionByLocationRequest(
+        $request = new AllCompetitionFuzzySearchRequest(
             [
-                FetchDrlCompetitionByLocationRequest::LOCATION_ID => 1,
+                AllCompetitionFuzzySearchRequest::SEARCH_TERM => 'Hi',
             ]
         );
-
-        $useCase = new FetchDrlCompetitionByLocation();
+        $useCase = new AllCompetitionFuzzySearch();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PreseenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
@@ -64,7 +65,7 @@ class FetchDrlCompetitionByLocationTest extends TestCase
         return $useCase;
     }
 
-    public function testFetchData(): void
+    public function testFetchCompetitions(): void
     {
         $competitionSpy = new CompetitionSpy();
 
@@ -73,7 +74,7 @@ class FetchDrlCompetitionByLocationTest extends TestCase
         $useCase->execute();
 
         $this->assertTrue(
-            $competitionSpy->hasFetchDrlCompetitionByLocationBeenCalled()
+            $competitionSpy->hasFuzzySearchAllCompetitionsBeenCalled()
         );
     }
 
@@ -93,12 +94,13 @@ class FetchDrlCompetitionByLocationTest extends TestCase
     public function testSuccessfulResponse(): void
     {
         $presenterSpy = new PresenterSpy();
+
+        $competitions = [
+            $this->createMockOtherCompetition(),
+            $this->createMockDrlCompetition(),
+        ];
         $competitionSpy = new CompetitionSpy();
-        $competitionSpy->setFetchDrlCompetitionByLocationValue(
-            [
-                $this->createMockDrlCompetition(),
-            ]
-        );
+        $competitionSpy->setFuzzySearchAllCompetitionsValue($competitions);
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
@@ -108,8 +110,12 @@ class FetchDrlCompetitionByLocationTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedData = [
             [
+                'id' => 888,
+                'name' => 'Other competition',
+            ],
+            [
                 'id' => 999,
-                'text' => 'Test competition',
+                'name' => 'Test competition',
             ],
         ];
 
@@ -118,7 +124,6 @@ class FetchDrlCompetitionByLocationTest extends TestCase
             $response->getStatus(),
             'Incorrect response status'
         );
-
         $this->assertEquals(
             $expectedData,
             $response->getData(),
@@ -130,7 +135,7 @@ class FetchDrlCompetitionByLocationTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $competitionSpy = new CompetitionSpy();
-        $competitionSpy->setFetchDrlCompetitionByLocationThrowsException();
+        $competitionSpy->setFuzzySearchAllCompetitionsThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
@@ -145,7 +150,7 @@ class FetchDrlCompetitionByLocationTest extends TestCase
             'Incorrect response status'
         );
         $this->assertEquals(
-            'No events found',
+            'No competitions found',
             $response->getMessage(),
             'Incorrect response message'
         );

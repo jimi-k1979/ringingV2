@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
-use test\traits\CreateMockDeaneryTrait;
+use traits\CreateMockDeaneryTrait;
 
 class DeanerySpy implements DeaneryRepositoryInterface
 {

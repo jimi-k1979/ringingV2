@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace test\core\interactors\event\FetchEventsByCompetition;
+namespace core\interactors\event\FetchEventsByCompetition;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
@@ -10,15 +10,15 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetition;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
-use test\mocks\EventDummy;
-use test\mocks\EventSpy;
-use test\mocks\GuestUserDummy;
-use test\mocks\PreseenterDummy;
-use test\mocks\PresenterSpy;
-use test\mocks\SecurityRepositoryDummy;
-use test\mocks\SecurityRepositorySpy;
+use mocks\EventDummy;
+use mocks\EventSpy;
+use mocks\GuestUserDummy;
+use mocks\PreseenterDummy;
+use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use test\traits\CreateMockDrlEventTrait;
+use traits\CreateMockDrlEventTrait;
 
 class FetchEventsByCompetitionTest extends TestCase
 {

@@ -9,17 +9,17 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\location\createLocation\CreateLocation;
 use DrlArchive\core\interactors\location\createLocation\CreateLocationRequest;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
-use test\mocks\DeaneryDummy;
-use test\mocks\GuestUserDummy;
-use test\mocks\LocationDummy;
-use test\mocks\LocationSpy;
-use test\mocks\LoggedInUserDummy;
-use test\mocks\PreseenterDummy;
-use test\mocks\PresenterSpy;
-use test\mocks\SecurityRepositoryDummy;
-use test\mocks\SecurityRepositorySpy;
-use test\mocks\TransactionManagerDummy;
-use test\mocks\TransactionManagerSpy;
+use mocks\DeaneryDummy;
+use mocks\GuestUserDummy;
+use mocks\LocationDummy;
+use mocks\LocationSpy;
+use mocks\LoggedInUserDummy;
+use mocks\PreseenterDummy;
+use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
+use mocks\TransactionManagerDummy;
+use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
 
 class CreateLocationTest extends TestCase
