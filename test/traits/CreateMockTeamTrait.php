@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace test\traits;
+namespace traits;
 
 
 use DrlArchive\core\entities\TeamEntity;

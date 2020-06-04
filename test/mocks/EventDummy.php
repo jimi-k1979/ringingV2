@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use test\traits\CreateMockDrlEventTrait;
+use traits\CreateMockDrlEventTrait;
 
 class EventDummy implements EventRepositoryInterface
 {

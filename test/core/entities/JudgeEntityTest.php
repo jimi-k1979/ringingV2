@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace test\core\entities;
+namespace core\entities;
 
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\JudgeEntity;

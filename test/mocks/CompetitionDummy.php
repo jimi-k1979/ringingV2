@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use test\traits\CreateMockDrlCompetitionTrait;
+use traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionDummy implements CompetitionRepositoryInterface
 {

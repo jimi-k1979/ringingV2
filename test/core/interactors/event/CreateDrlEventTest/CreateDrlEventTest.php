@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace test\core\interactors\event\CreateDrlEventTest;
+namespace core\interactors\event\CreateDrlEventTest;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;
@@ -11,19 +11,19 @@ use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use test\mocks\EventDummy;
-use test\mocks\EventSpy;
-use test\mocks\GuestUserDummy;
-use test\mocks\LoggedInUserDummy;
-use test\mocks\PreseenterDummy;
-use test\mocks\PresenterSpy;
-use test\mocks\SecurityRepositoryDummy;
-use test\mocks\SecurityRepositorySpy;
-use test\mocks\TransactionManagerDummy;
-use test\mocks\TransactionManagerSpy;
+use mocks\EventDummy;
+use mocks\EventSpy;
+use mocks\GuestUserDummy;
+use mocks\LoggedInUserDummy;
+use mocks\PreseenterDummy;
+use mocks\PresenterSpy;
+use mocks\SecurityRepositoryDummy;
+use mocks\SecurityRepositorySpy;
+use mocks\TransactionManagerDummy;
+use mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
-use test\traits\CreateMockDrlCompetitionTrait;
-use test\traits\CreateMockLocationTrait;
+use traits\CreateMockDrlCompetitionTrait;
+use traits\CreateMockLocationTrait;
 
 class CreateDrlEventTest extends TestCase
 {

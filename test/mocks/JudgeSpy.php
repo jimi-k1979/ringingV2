@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
-use test\traits\CreateMockJudgeTrait;
+use traits\CreateMockJudgeTrait;
 
 class JudgeSpy implements JudgeRepositoryInterface
 {

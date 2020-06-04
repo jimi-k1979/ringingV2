@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace test\mocks;
+namespace mocks;
 
 
 use DrlArchive\core\entities\UserEntity;
