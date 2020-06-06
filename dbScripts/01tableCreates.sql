@@ -63,7 +63,10 @@ CREATE TABLE `DRL_competition`
     `id`              int unsigned                           NOT NULL AUTO_INCREMENT,
     `competitionName` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
     `isSingleTower`   tinyint default 0                      not null,
-    PRIMARY KEY (`id`)
+    `usualLocationID` int unsigned,
+    PRIMARY KEY (`id`),
+    KEY `fk_DRL_competition_location` (`usualLocationID`),
+    CONSTRAINT `fk_DRL_competition` FOREIGN KEY ('usualLocationID') REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
@@ -275,7 +278,10 @@ CREATE TABLE `other_competition`
     `id`              int unsigned                            NOT NULL AUTO_INCREMENT,
     `competitionName` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
     `isSingleTower`   tinyint default 0                       not null,
-    PRIMARY KEY (`id`)
+    `usualLocationID` int unsigned,
+    PRIMARY KEY (`id`),
+    KEY `fk_DRL_competition_location` (`usualLocationID`),
+    CONSTRAINT `fk_DRL_competition` FOREIGN KEY ('usualLocationID') REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
