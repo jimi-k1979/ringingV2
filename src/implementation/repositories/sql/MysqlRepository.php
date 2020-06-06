@@ -18,9 +18,9 @@ class MysqlRepository extends Repository
     public const ORDER_BY_DESC = ' DESC';
 
     public const EXCEPTION_NO_FIELDS_IN_SELECT_QUERY = 1210;
-    public const EXCEPTION_NO_TABLES_IN_SELECT_QUERY = 1210;
-    public const EXCEPTION_FIELD_COUNT_NOT_THE_SAME_IN_UNION = 1211; // TODO - document!
-    public const EXCEPTION_ORDER_BY_IN_SUB_UNION_QUERY = 1212; // TODO - document!
+    public const EXCEPTION_NO_TABLES_IN_SELECT_QUERY = 1211;
+    public const EXCEPTION_FIELD_COUNT_NOT_THE_SAME_IN_UNION = 1212;
+    public const EXCEPTION_ORDER_BY_IN_SUB_UNION_QUERY = 1213;
 
     /**
      * @var Database
