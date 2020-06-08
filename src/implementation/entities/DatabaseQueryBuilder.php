@@ -143,11 +143,10 @@ class DatabaseQueryBuilder
     }
 
     /**
-     * @param bool $distinctQuery
      */
-    public function setDistinctQuery(bool $distinctQuery): void
+    public function setDistinctQuery(): void
     {
-        $this->distinctQuery = $distinctQuery;
+        $this->distinctQuery = true;
     }
 
 }

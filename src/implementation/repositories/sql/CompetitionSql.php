@@ -37,7 +37,7 @@ class CompetitionSql extends MysqlRepository
     public const TABLE_DRL_COMPETITION = 'DRL_competition dc';
     public const TABLE_OTHER_COMPETITION = 'other_competition oc';
     public const INNER_JOIN_DRL_EVENT_ON_COMPETITION_ID_AND_LOCATION_ID = <<<join
-INNER JOIN DRL_event de on dc.id = de.competitionID
+INNER JOIN DRL_event de ON dc.id = de.competitionID
 AND de.locationID = :locationId
 join;
     public const LEFT_JOIN_DRL_COMPETITION_TO_LOCATION =
@@ -53,10 +53,8 @@ join;
     public const WHERE_DRL_COMPETITION_ID_IS = 'dc.id = :id';
     public const WHERE_OTHER_COMPETITION_ID_IS = 'oc.id = :id';
 
-
     // order bys
     public const ORDER_BY_COMPETITION_NAME = 'competitionName';
-
 
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
@@ -137,7 +135,6 @@ join;
         return $competitionsArray;
     }
 
-
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
@@ -156,11 +153,9 @@ join;
             ]
         );
         $query->setOrderBy(
-            [
-                self::SELECT_DRL_COMPETITION_NAME,
-            ]
+            [self::SELECT_DRL_COMPETITION_NAME]
         );
-        $query->isDistinctQuery();
+        $query->setDistinctQuery();
 
         $params = [
             'locationId' => $locationId
@@ -284,7 +279,7 @@ join;
         return $entity;
     }
 
-    private function createLocation(array $result): LocationEntity
+    private function createLocation(array $result): ?LocationEntity
     {
         if (
         !empty($result[substr(self::FIELD_NAME_USUAL_LOCATION_ID, 4)])

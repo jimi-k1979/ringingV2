@@ -73,11 +73,7 @@ class DatabaseMock implements SqlDatabaseInterface
             );
         }
 
-        if ($queryType === SqlDatabaseInterface::MULTI_ROW) {
-            return $this->queryResults[$this->queryCount++];
-        } else {
-            return $this->queryResults[$this->queryCount++][0];
-        }
+        return $this->queryResults[$this->queryCount++];
     }
 
     public function execute(string $sql, array $placeholders = []): int
@@ -206,7 +202,7 @@ class DatabaseMock implements SqlDatabaseInterface
             );
         }
 
-        $this->queryResults[$count] = [$results];
+        $this->queryResults[$count] = $results;
     }
 
     public function getQueryArgs(): array
