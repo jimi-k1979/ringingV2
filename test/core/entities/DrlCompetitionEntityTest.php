@@ -6,6 +6,7 @@ namespace core\entities;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\Entity;
+use DrlArchive\core\entities\LocationEntity;
 use PHPUnit\Framework\TestCase;
 
 class DrlCompetitionEntityTest extends TestCase
@@ -54,6 +55,16 @@ class DrlCompetitionEntityTest extends TestCase
         $competition->setSingleTowerCompetition(false);
         $this->assertFalse(
             $competition->isSingleTowerCompetition()
+        );
+    }
+
+    public function testUsualLocationProperty(): void
+    {
+        $competition = new DrlCompetitionEntity();
+        $competition->setUsualLocation(new LocationEntity());
+        $this->assertInstanceOf(
+            LocationEntity::class,
+            $competition->getUsualLocation()
         );
     }
 }

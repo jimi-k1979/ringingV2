@@ -130,7 +130,7 @@ class MysqlRepository extends Repository
         }
 
         if (!empty($orderBy)) {
-            $orderByClause = 'ORDER BY ' . implode(', ', $orderBy);
+            $orderByClause = ' ORDER BY ' . implode(', ', $orderBy);
         } else {
             $orderByClause = '';
         }

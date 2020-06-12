@@ -18,6 +18,10 @@ abstract class AbstractCompetitionEntity extends Entity
      * @var bool
      */
     private $singleTowerCompetition;
+    /**
+     * @var null|LocationEntity
+     */
+    private $usualLocation = null;
 
     /**
      * @return string
@@ -49,6 +53,22 @@ abstract class AbstractCompetitionEntity extends Entity
     public function setSingleTowerCompetition(bool $singleTowerCompetition): void
     {
         $this->singleTowerCompetition = $singleTowerCompetition;
+    }
+
+    /**
+     * @return null|LocationEntity
+     */
+    public function getUsualLocation(): ?LocationEntity
+    {
+        return $this->usualLocation;
+    }
+
+    /**
+     * @param null|LocationEntity $usualLocation
+     */
+    public function setUsualLocation(?LocationEntity $usualLocation): void
+    {
+        $this->usualLocation = $usualLocation;
     }
 
 }

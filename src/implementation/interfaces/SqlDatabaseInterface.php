@@ -7,7 +7,14 @@ use \PDOStatement;
 
 interface SqlDatabaseInterface
 {
-    public function query(string $sql, array $params = []): array;
+    public const SINGLE_ROW = 1;
+    public const MULTI_ROW = 0;
+
+    public function query(
+        string $sql,
+        array $params = [],
+        int $queryType = self::MULTI_ROW
+    ): array;
 
     public function execute(string $sql, array $params = []): int;
 

@@ -7,6 +7,7 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
@@ -30,6 +31,12 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
 
     public const WHERE_EVENT_ID_IS = 'dej.eventID = :eventId';
 
+    /**
+     * @param DrlEventEntity $entity
+     * @return JudgeEntity[]
+     * @throws RepositoryNoResults
+     * @throws GeneralRepositoryErrorException
+     */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
     {
         $query = new DatabaseQueryBuilder();
@@ -85,5 +92,6 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
 
     private function createJudgeEntity(array $result): JudgeEntity
     {
+        return new JudgeEntity();
     }
 }

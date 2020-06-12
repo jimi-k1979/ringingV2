@@ -221,6 +221,7 @@ class FetchDrlEventAndResultsTest extends TestCase
                 'location' => 'Test tower',
                 'unusualTower' => false,
             ],
+            'judges' => [],
             'results' => [
                 [
                     'position' => 1,

@@ -9,7 +9,6 @@ use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryAlreadyExistsException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
-use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 use DrlArchive\implementation\interfaces\SqlDatabaseInterface;
 use DrlArchive\Settings;
 use Exception;
@@ -28,11 +27,6 @@ class Database implements SqlDatabaseInterface
     public const DB_SUPPORTED_MYSQL = 'mysql';
     public const DB_SUPPORTED_PGSQL = 'pgsql';
     public const DB_SUPPORTED_SQLITE = 'sqlite';
-
-    public const SINGLE_VALUE = 'singleValue';
-    public const SINGLE_ROW = 'singleRow';
-    public const MULTI_ROW = 'multiRow';
-
 
     /**
      * @var Database|null
@@ -85,20 +79,18 @@ class Database implements SqlDatabaseInterface
     /**
      * @param string $sql
      * @param array $params
-     * @param string $queryType
+     * @param int $queryType
      * @return array
      */
     public function query(
         string $sql,
         array $params = [],
-        string $queryType = self::MULTI_ROW
+        int $queryType = SqlDatabaseInterface::MULTI_ROW
     ): array {
         $stmt = $this->connection->prepare($sql);
         $stmt->execute($params);
 
-        if ($queryType === self::SINGLE_VALUE) {
-            return $stmt->fetchColumn();
-        } elseif ($queryType === self::SINGLE_ROW) {
+        if ($queryType === self::SINGLE_ROW) {
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } else {
             return $stmt->fetchAll(PDO::FETCH_ASSOC);

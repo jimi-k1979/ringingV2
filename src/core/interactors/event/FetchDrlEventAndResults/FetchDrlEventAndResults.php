@@ -149,7 +149,7 @@ class FetchDrlEventAndResults extends Interactor
             if ($pealNumbers) {
                 $dataArray['results'][] = [
                     'position' => $result->getPosition(),
-                    'pealNumbers' => $result->getPealNumber(),
+                    'peal number' => $result->getPealNumber(),
                     'team' => $result->getTeam()->getName(),
                     'faults' => $result->getFaults(),
                 ];
