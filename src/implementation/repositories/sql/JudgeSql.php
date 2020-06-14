@@ -7,6 +7,7 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
@@ -92,6 +93,30 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
 
     private function createJudgeEntity(array $result): JudgeEntity
     {
-        return new JudgeEntity();
+        $judge = new JudgeEntity();
+        $judge->setId(
+            (int)$result[substr(self::FIELD_NAME_ID, 4)]
+        );
+        $judge->setFirstName(
+            $result[substr(self::FIELD_NAME_FIRST_NAME, 4)]
+        );
+        $judge->setLastName(
+            $result[substr(self::FIELD_NAME_LAST_NAME, 4)]
+        );
+        if ($result[substr(self::FIELD_NAME_RINGER_ID, 4)] !== null) {
+            $ringer = new RingerEntity();
+            $ringer->setId(
+                (int)$result[substr(self::FIELD_NAME_ID, 4)]
+            );
+            $ringer->setFirstName(
+                $result[substr(self::FIELD_NAME_FIRST_NAME, 4)]
+            );
+            $ringer->setLastName(
+                $result[substr(self::FIELD_NAME_LAST_NAME, 4)]
+            );
+            $judge->setRinger($ringer);
+        }
+
+        return $judge;
     }
 }
