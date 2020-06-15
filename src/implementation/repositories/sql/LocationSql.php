@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\implementation\repositories\sql;
@@ -21,6 +22,7 @@ class LocationSql
     public const SELECT_DEANERY_ID = 'l.deaneryID';
     public const SELECT_DEDICATION = 'l.dedication';
     public const SELECT_TENOR_WEIGHT = 'l.tenorWeight';
+    public const SELECT_NO_OF_BELLS = 'l.noOfBells';
 
     // aliases
     public const FIELD_NAME_ID = ' AS id';
@@ -28,6 +30,7 @@ class LocationSql
     public const FIELD_NAME_DEANERY_ID = ' AS deaneryId';
     public const FIELD_NAME_DEDICATION = ' AS dedication';
     public const FIELD_NAME_TENOR_WEIGHT = ' AS tenorWeight';
+    public const FIELD_NAME_NO_OF_BELLS = ' AS noOfBells';
 
     // tables and joins
     public const TABLE_LOCATION = 'location l';
@@ -47,13 +50,7 @@ class LocationSql
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(
-            [
-                self::SELECT_ID . self::FIELD_NAME_ID,
-                self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
-                self::SELECT_DEANERY_ID . self::FIELD_NAME_DEANERY_ID,
-                self::SELECT_DEDICATION . self::FIELD_NAME_DEDICATION,
-                self::SELECT_TENOR_WEIGHT . self::FIELD_NAME_TENOR_WEIGHT,
-            ]
+            $this->allLocationFields()
         );
         $query->setTablesAndJoins(
             [
@@ -91,10 +88,7 @@ class LocationSql
         $query = new DatabaseQueryBuilder();
 
         $query->setFields(
-            [
-                self::SELECT_ID . self::FIELD_NAME_ID,
-                self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
-            ]
+            $this->allLocationFields()
         );
 
         $query->setTablesAndJoins(
@@ -160,13 +154,37 @@ class LocationSql
         }
 
         if (isset($row[substr(self::FIELD_NAME_DEDICATION, 4)])) {
-            $entity->setDedication($row[substr(self::FIELD_NAME_DEDICATION, 4)]);
+            $entity->setDedication(
+                $row[substr(self::FIELD_NAME_DEDICATION, 4)]
+            );
         }
 
         if (isset($row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)])) {
-            $entity->setTenorWeight($row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)]);
+            $entity->setTenorWeight(
+                $row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)]
+            );
         }
 
+        if (isset($row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)])) {
+            $entity->setNumberOfBells(
+                $row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)]
+            );
+        }
         return $entity;
+    }
+
+    /**
+     * @return string[]
+     */
+    private function allLocationFields(): array
+    {
+        return [
+            self::SELECT_ID . self::FIELD_NAME_ID,
+            self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
+            self::SELECT_DEANERY_ID . self::FIELD_NAME_DEANERY_ID,
+            self::SELECT_DEDICATION . self::FIELD_NAME_DEDICATION,
+            self::SELECT_TENOR_WEIGHT . self::FIELD_NAME_TENOR_WEIGHT,
+            self::SELECT_NO_OF_BELLS . self::FIELD_NAME_NO_OF_BELLS,
+        ];
     }
 }
