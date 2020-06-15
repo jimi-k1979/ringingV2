@@ -34,11 +34,12 @@ CREATE TABLE `judge`
 
 CREATE TABLE `location`
 (
-    `id`          int unsigned                           NOT NULL AUTO_INCREMENT,
-    `location`    varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `deaneryID`   int unsigned                           NOT NULL,
-    `dedication`  varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-    `tenorWeight` varchar(7) COLLATE utf8mb4_unicode_ci  NOT NULL,
+    `id`          INT UNSIGNED                           NOT NULL AUTO_INCREMENT,
+    `location`    VARCHAR(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `deaneryID`   INT UNSIGNED                           NOT NULL,
+    `dedication`  VARCHAR(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+    `tenorWeight` VARCHAR(7) COLLATE utf8mb4_unicode_ci  NOT NULL,
+    `noOfBells`   INT UNSIGNED,
     PRIMARY KEY (`id`),
     KEY `fk_deanery_location_idx` (`deaneryID`),
     CONSTRAINT `fk_deanery_location` FOREIGN KEY (`deaneryID`) REFERENCES `deanery` (`id`) ON DELETE CASCADE ON UPDATE CASCADE

@@ -237,305 +237,1190 @@ INSERT INTO judge VALUES (10, 'Maurice', 'Sharland', 137);
 INSERT INTO judge VALUES (11, 'Mervyn', 'Langdon', 91);
 INSERT INTO judge VALUES (12, 'Mervyn', 'Way', NULL);
 INSERT INTO judge VALUES (13, 'Michael', 'Poole', NULL);
-INSERT INTO judge VALUES (14, 'Norman', 'Mortimore', 133);
-INSERT INTO judge VALUES (15, 'Percy', 'Pester', NULL);
-INSERT INTO judge VALUES (16, 'Ray', 'Mugridge', NULL);
-INSERT INTO judge VALUES (17, 'Raymond', 'Clements', NULL);
-INSERT INTO judge VALUES (18, 'Scott', 'Adams', 88);
-INSERT INTO judge VALUES (19, 'Graham', 'Pascoe', 62);
-INSERT INTO judge VALUES (20, 'Brian', 'Drake', NULL);
-INSERT INTO judge VALUES (21, 'Alan', 'Brown', 48);
+INSERT INTO
+    judge
+VALUES
+    (14, 'Norman', 'Mortimore', 133);
+INSERT INTO
+    judge
+VALUES
+    (15, 'Percy', 'Pester', NULL);
+INSERT INTO
+    judge
+VALUES
+    (16, 'Ray', 'Mugridge', NULL);
+INSERT INTO
+    judge
+VALUES
+    (17, 'Raymond', 'Clements', NULL);
+INSERT INTO
+    judge
+VALUES
+    (18, 'Scott', 'Adams', 88);
+INSERT INTO
+    judge
+VALUES
+    (19, 'Graham', 'Pascoe', 62);
+INSERT INTO
+    judge
+VALUES
+    (20, 'Brian', 'Drake', NULL);
+INSERT INTO
+    judge
+VALUES
+    (21, 'Alan', 'Brown', 48);
 
 -- locations
-INSERT INTO location VALUES (1, 'Abbotskerswell', 12, 'The Blessed Virgin Mary', '10cwt');
-INSERT INTO location VALUES (2, 'Alwington', 6, 'St Andrew', '11-2-0');
-INSERT INTO location VALUES (3, 'Appledore', 6, 'St Mary', '10-3-26');
-INSERT INTO location VALUES (4, 'Arlington', 19, 'St James', '11cwt');
-INSERT INTO location VALUES (5, 'Ashburton', 25, 'St Andrew', '21-1-6');
-INSERT INTO location VALUES (6, 'Ashreigney', 24, 'St James', '9-0-18');
-INSERT INTO location VALUES (7, 'Ashwater', 7, 'St Peter ad Vincula', '8-3-1');
-INSERT INTO location VALUES (8, 'Atherington', 24, 'St Mary', '11-0-9');
-INSERT INTO location VALUES (9, 'Bampton', 22, 'St Michael and All Angels', '14-0-3');
-INSERT INTO location VALUES (10, 'Barnstaple', 2, 'St Peter and Mary Magdalene', '19-1-0');
-INSERT INTO location VALUES (11, 'Beaford', 24, 'All Saints', '12cwt');
-INSERT INTO location VALUES (12, 'Belstone', 15, 'St Mary', '5-2-25');
-INSERT INTO location VALUES (13, 'Bere Ferrers', 21, 'St Andrew', '7-3-24');
-INSERT INTO location VALUES (14, 'Berry Pomeroy', 25, 'St Mary', '17cwt');
-INSERT INTO location VALUES (15, 'Bickington', 11, 'St Mary the Virgin', '7-1-24');
-INSERT INTO location VALUES (16, 'Bickleigh (nr Plymouth)', 9, 'St Mary the Virgin', '9-3-27');
-INSERT INTO location VALUES (17, 'Bickleigh (nr Tiverton)', 22, 'St Mary', '9-1-14');
-INSERT INTO location VALUES (18, 'Bideford', 6, 'St Mary', '17-1-10');
-INSERT INTO location VALUES (19, 'Bigbury', 26, 'St Lawrence', '7-2-27');
-INSERT INTO location VALUES (20, 'Bishops Nympton', 20, 'St Mary the Virgin', '10-1-10');
-INSERT INTO location VALUES (21, 'Bishops Tawton', 2, 'St John the Baptist', '9-2-20');
-INSERT INTO location VALUES (22, 'Bishopsteignton', 10, 'St John the Baptist', '10-1-24');
-INSERT INTO location VALUES (23, 'Black Torrington', 7, 'St Mary', '8-3-9');
-INSERT INTO location VALUES (24, 'Blackawton', 26, 'St Michael', '11-3-1');
-INSERT INTO location VALUES (25, 'Bovey Tracey', 11, 'SS Peter, Paul and Thomas', '14-2-26');
-INSERT INTO location VALUES (26, 'Bow', 3, 'St Bartholomew', '13-2-23');
-INSERT INTO location VALUES (27, 'Bradford', 7, 'All Saints', '10-2-8');
-INSERT INTO location VALUES (28, 'Bradworthy', 7, 'St John the Baptist', '9-3-8');
-INSERT INTO location VALUES (29, 'Branscombe', 8, 'St Winifred', '14cwt');
-INSERT INTO location VALUES (30, 'Bratton Clovelly', 15, 'St Mary the Virgin', '12cwt');
-INSERT INTO location VALUES (31, 'Bratton Fleming', 19, 'St Peter', '14-2-0');
-INSERT INTO location VALUES (32, 'Braunton', 2, 'St Brannock', '16-0-25');
-INSERT INTO location VALUES (33, 'Bridestowe', 15, 'St Bridget', '13-0-5');
-INSERT INTO location VALUES (34, 'Bridford', 10, 'St Thomas a Becket', '9cwt');
-INSERT INTO location VALUES (35, 'Bridgerule', 7, 'St Bridget', '10-1-21');
-INSERT INTO location VALUES (36, 'Brixham', 23, 'The Blessed Virgin Mary', '17-0-4');
-INSERT INTO location VALUES (37, 'Brixton', 9, 'St Mary', '13cwt');
-INSERT INTO location VALUES (38, 'Broadhempston', 25, 'SS Peter and Paul', '12cwt');
-INSERT INTO location VALUES (39, 'Broadwoodkelly', 24, 'All Saints', '9-3-14');
-INSERT INTO location VALUES (40, 'Buckerell', 16, 'SS Mary and Giles', '8-1-4');
-INSERT INTO location VALUES (41, 'Buckfastleigh', 25, 'Holy Trinity', '15-2-21');
-INSERT INTO location VALUES (42, 'Buckland Brewer', 6, 'SS Mary and Benedict', '12-3-17');
-INSERT INTO location VALUES (43, 'Buckland in the Moor', 11, 'St Peter', '7-0-17');
-INSERT INTO location VALUES (44, 'Buckland Monachorum', 21, 'St Andrew', '15-3-5');
-INSERT INTO location VALUES (45, 'Burrington', 20, 'Holy Trinity', '11-2-11');
-INSERT INTO location VALUES (46, 'Chagford', 15, 'St Michael', '18-0-2');
-INSERT INTO location VALUES (47, 'Chardstock', 8, 'St Andrew', '12-1-27');
-INSERT INTO location VALUES (48, 'Charleton', 26, 'St Mary', '9-2-13');
-INSERT INTO location VALUES (49, 'Chawleigh', 20, 'St James', '15-3-23');
-INSERT INTO location VALUES (50, 'Cheriton Bishop', 10, 'St Mary', '14cwt');
-INSERT INTO location VALUES (51, 'Cheriton Fitzpaine', 3, 'St Matthew', '13-1-10');
-INSERT INTO location VALUES (52, 'Chittlehampton', 20, 'St Hieritha', '13-0-15');
-INSERT INTO location VALUES (53, 'Chivelstone', 26, 'St Sylvester', '12cwt');
-INSERT INTO location VALUES (54, 'Christow', 10, 'St James', '11-2-20');
-INSERT INTO location VALUES (55, 'Chudleigh', 11, 'SS Mary and Martin', '12-2-23');
-INSERT INTO location VALUES (56, 'Chulmleigh', 20, 'St Mary Magdalene', '22-0-26');
-INSERT INTO location VALUES (57, 'Churchstow', 26, 'St Mary', '16cwt');
-INSERT INTO location VALUES (58, 'Churston Ferrers', 23, 'St Mary the Virgin', '12-0-15');
-INSERT INTO location VALUES (59, 'Clawton', 7, 'St Leonard', '8-1-25');
-INSERT INTO location VALUES (60, 'Clovelly', 6, 'All Saints', '10-1-21');
-INSERT INTO location VALUES (61, 'Clyst St George', 1, 'St George', '10-2-21');
-INSERT INTO location VALUES (62, 'Coffinswell', 12, 'St Bartholomew', '11-0-5');
-INSERT INTO location VALUES (63, 'Colaton Raleigh', 16, 'St John the Baptist', '12cwt');
-INSERT INTO location VALUES (64, 'Coldridge', 3, 'St Matthew', '13cwt');
-INSERT INTO location VALUES (65, 'Colebrooke', 3, 'St Andrew', '17-3-21');
-INSERT INTO location VALUES (66, 'Collaton St Mary', 25, 'St Mary', '7-1-25');
-INSERT INTO location VALUES (67, 'Combe Martin', 19, 'St Peter ad Vincula', '10-0-21');
-INSERT INTO location VALUES (68, 'Combe Raleigh', 8, 'St Nicholas', '5-2-19');
-INSERT INTO location VALUES (69, 'Combeinteignhead', 12, 'All Saints', '10cwt');
-INSERT INTO location VALUES (70, 'Cornwood', 9, 'St Michael and All Angels', '9-3-12');
-INSERT INTO location VALUES (71, 'Cornworthy', 25, 'St Peter', '9-3-6');
-INSERT INTO location VALUES (72, 'Cullompton', 5, 'St Andrew', '19-2-4');
-INSERT INTO location VALUES (73, 'Dartington', 25, 'St Mary', '17cwt');
-INSERT INTO location VALUES (74, 'Dartmouth, St Petrox', 25, 'St Petrox', '7-3-9');
-INSERT INTO location VALUES (75, 'Dartmouth, St Saviour', 25, 'St Saviour', '18-2-14');
-INSERT INTO location VALUES (76, 'Dartmouth, Townstal', 25, 'St Clement', '7-2-11');
-INSERT INTO location VALUES (77, 'Dawlish', 10, 'St Gregory', '11-2-21');
-INSERT INTO location VALUES (78, 'Dean Prior', 25, 'St George the Martyr', '11-2-24');
-INSERT INTO location VALUES (79, 'Diptford', 25, 'St Mary the Virgin', '11-3-12');
-INSERT INTO location VALUES (80, 'Dittisham', 25, 'St George', '12-1-8');
-INSERT INTO location VALUES (81, 'Dodbrooke', 26, 'St Thomas a Becket', '7-0-10');
-INSERT INTO location VALUES (82, 'Doddiscombsleigh', 10, 'St Michael', '10-2-14');
-INSERT INTO location VALUES (83, 'Dolton', 24, 'St Edmund King and Martyr', '13-1-21');
-INSERT INTO location VALUES (84, 'Dowland', 24, 'St Peter', '4-3-0');
-INSERT INTO location VALUES (85, 'Down St Mary', 3, 'St Mary the Virgin', '7-3-16');
-INSERT INTO location VALUES (86, 'Drewsteignton', 15, 'Holy Trinity', '13-3-7');
-INSERT INTO location VALUES (87, 'Dunsford', 10, 'St Mary', '12-3-16');
-INSERT INTO location VALUES (88, 'East Allington', 26, 'St Andrew', '14cwt');
-INSERT INTO location VALUES (89, 'East Budleigh', 1, 'All Saints', '9-0-0');
-INSERT INTO location VALUES (90, 'East Portlemouth', 26, 'St Winwaloe Onocaus', '13-3-22');
-INSERT INTO location VALUES (91, 'East Teignmouth (St Michael)', 10, 'St Michael', '22-1-0');
-INSERT INTO location VALUES (92, 'East Worlington', 20, 'St Mary', '5-1-23');
-INSERT INTO location VALUES (93, 'Ermington', 9, 'SS Peter and Paul', '14-1-13');
-INSERT INTO location VALUES (94, 'Exbourne', 15, 'St Mary the Virgin', '8-2-14');
-INSERT INTO location VALUES (95, 'Exeter Cathedral', 4, 'St Peter', '72-2-2');
-INSERT INTO location VALUES (96, 'Exeter, Alphington', 10, 'St Michael and All Angels', '13-1-12');
-INSERT INTO location VALUES (97, 'Exeter, Pinhoe', 1, 'St Michael and All Angels', '10-0-19');
-INSERT INTO location VALUES (98, 'Exeter, St David', 4, 'St David', '11-2-23');
-INSERT INTO location VALUES (99, 'Exeter, St Mark', 4, 'St Mark', '12-1-19');
-INSERT INTO location VALUES (100, 'Exeter, St Petrock', 4, 'St Petrock', '5cwt');
-INSERT INTO location VALUES (101, 'Exminster', 10, 'St Martin of Tours', '17-3-25');
-INSERT INTO location VALUES (102, 'Exmouth, Littleham', 1, 'St Margaret', '7-2-11');
-INSERT INTO location VALUES (103, 'Feniton', 16, 'St Andrew', '9cwt');
-INSERT INTO location VALUES (104, 'Filleigh', 20, 'St Paul', '6-0-12');
-INSERT INTO location VALUES (105, 'Fremington', 2, 'St Peter', '8-3-19');
-INSERT INTO location VALUES (106, 'Frithelstock', 24, 'SS Mary and Gregory', '17cwt');
-INSERT INTO location VALUES (107, 'Georgeham', 2, 'St George', '12-0-22');
-INSERT INTO location VALUES (108, 'Goodleigh', 2, 'St Gregory', '7-1-18');
-INSERT INTO location VALUES (109, 'Great Torrington', 24, 'St Michael', '14-3-4');
-INSERT INTO location VALUES (110, 'Halberton', 5, 'St Andrew', '17-2-6');
-INSERT INTO location VALUES (111, 'Halwell', 25, 'St Leonard', '12cwt');
-INSERT INTO location VALUES (112, 'Harberton', 25, 'St Andrew', '16cwt');
-INSERT INTO location VALUES (113, 'Hartland', 6, 'St Nectan', '17-2-8');
-INSERT INTO location VALUES (114, 'Hatherleigh', 15, 'St John the Baptist', '13-2-6');
-INSERT INTO location VALUES (115, 'Heanton Punchardon', 2, 'St Augustine', '10-2-24');
-INSERT INTO location VALUES (116, 'High Bickington', 24, 'St Mary', '9-1-25');
-INSERT INTO location VALUES (117, 'Highweek', 12, 'All Saints', '11-1-11');
-INSERT INTO location VALUES (118, 'Holbeton', 9, 'All Saints', '13-3-14');
-INSERT INTO location VALUES (119, 'Holcombe Burnell', 10, 'St John the Baptist', '11-0-27');
-INSERT INTO location VALUES (120, 'Holne', 11, 'St Mary the Virgin', '8-2-24');
-INSERT INTO location VALUES (121, 'Holsworthy', 7, 'SS Peter and Paul', '15-0-0');
-INSERT INTO location VALUES (122, 'Huish Episcopi', 17, 'The Blessed Virgin Mary', '15-2-7');
-INSERT INTO location VALUES (123, 'Huntsham', 22, 'All Saints', '8-0-27');
-INSERT INTO location VALUES (124, 'Iddesleigh', 24, 'St James', '9-1-21');
-INSERT INTO location VALUES (125, 'Ide', 10, 'St Ida', '7-0-18');
-INSERT INTO location VALUES (126, 'Ideford', 10, 'St Mary the Virgin', '7-3-9');
-INSERT INTO location VALUES (127, 'Ilfracombe, Holy Trinity', 2, 'Holy Trinity', '12-0-20');
-INSERT INTO location VALUES (128, 'Ilfracombe, Ss Philip and James', 2, 'Ss Philip and James', '11-0-26');
-INSERT INTO location VALUES (129, 'Ilsington', 11, 'St Michael', '10-3-13');
-INSERT INTO location VALUES (130, 'Inwardleigh', 15, 'St Petroc', '6-3-4');
-INSERT INTO location VALUES (131, 'Ipplepen', 12, 'St Andrew', '18-1-0');
-INSERT INTO location VALUES (132, 'Jacobstowe', 15, 'St James', '6-2-2');
-INSERT INTO location VALUES (133, 'Kenn', 10, 'St Andrew', '13-1-25');
-INSERT INTO location VALUES (134, 'Kentisbeare', 5, 'St Mary', '10-1-2');
-INSERT INTO location VALUES (135, 'Kentisbury', 19, 'St Thomas', '8cwt');
-INSERT INTO location VALUES (136, 'Kenton', 10, 'All Saints', '12-1-19');
-INSERT INTO location VALUES (137, 'Kilkhampton', 17, 'St James the Greater', '11-3-23');
-INSERT INTO location VALUES (138, 'Kilmington', 8, 'St Giles', '10-1-4');
-INSERT INTO location VALUES (139, 'Kings Nympton', 20, 'St James the Apostle', '13-1-10');
-INSERT INTO location VALUES (140, 'Kingsbridge', 26, 'St Edmund King and Martyr', '11-2-25');
-INSERT INTO location VALUES (141, 'Kingskerswell', 12, 'St Mary', '7-3-0');
-INSERT INTO location VALUES (142, 'Kingsteignton', 12, 'St Michael', '16-3-11');
-INSERT INTO location VALUES (143, 'Kingston', 26, 'St James', '10-0-26');
-INSERT INTO location VALUES (144, 'Lamerton', 21, 'St Peter', '11-1-26');
-INSERT INTO location VALUES (145, 'Landkey', 19, 'St Paul', '13cwt');
-INSERT INTO location VALUES (146, 'Langtree', 24, 'All Saints', '11cwt');
-INSERT INTO location VALUES (147, 'Lapford', 3, 'St Thomas of Canterbury', '12cwt');
-INSERT INTO location VALUES (148, 'Lifton', 21, 'St Mary', '21-0-16');
-INSERT INTO location VALUES (149, 'Little Torrington', 24, 'St Giles', '12cwt');
-INSERT INTO location VALUES (150, 'Littleham', 6, 'St Swithin', '8-1-17');
-INSERT INTO location VALUES (151, 'Loddiswell', 26, 'St Michael and All Angels', '9-1-18');
-INSERT INTO location VALUES (152, 'Longborough', 17, 'St James', '11-0-2');
-INSERT INTO location VALUES (153, 'Loxhore', 19, 'St Michael and All Angels', '5cwt');
-INSERT INTO location VALUES (154, 'Luppit', 8, 'St Mary', '10-3-21');
-INSERT INTO location VALUES (155, 'Lustleigh', 11, 'St John the Baptist', '12-0-0');
-INSERT INTO location VALUES (156, 'Lydford', 21, 'St Petrock', '8cwt');
-INSERT INTO location VALUES (157, 'Lympstone', 1, 'Nativity of Blessed Virgin Mar', '9-2-2');
-INSERT INTO location VALUES (158, 'Lynton', 19, 'St Mary the Virgin', '9-3-2');
-INSERT INTO location VALUES (159, 'Maker', 17, 'St Mary and St Julian', '13-0-17');
-INSERT INTO location VALUES (160, 'Malborough', 26, 'All Saints', '9-2-7');
-INSERT INTO location VALUES (161, 'Manaton', 11, 'St Winifred', '8-0-14');
-INSERT INTO location VALUES (162, 'Mariansleigh', 20, 'St Mary', '7-2-13');
-INSERT INTO location VALUES (163, 'Marldon', 25, 'St John the Baptist', '15-3-0');
-INSERT INTO location VALUES (164, 'Marwood', 2, 'St Michael and All Angels', '13-2-13');
-INSERT INTO location VALUES (165, 'Meavy', 21, 'St Peter', '7-2-21');
-INSERT INTO location VALUES (166, 'Merton', 24, 'All Saints', '10cwt');
-INSERT INTO location VALUES (167, 'Milton Abbot', 21, 'St Constantine', '13cwt');
-INSERT INTO location VALUES (168, 'Modbury', 26, 'St George', '17-2-7');
-INSERT INTO location VALUES (169, 'Molland', 20, 'St Mary', '14-1-24');
-INSERT INTO location VALUES (170, 'Monkleigh', 6, 'St George', '8-2-15');
-INSERT INTO location VALUES (171, 'Morchard Bishop', 3, 'St Mary', '15cwt');
-INSERT INTO location VALUES (172, 'Morebath', 22, 'St George', '8-3-5');
-INSERT INTO location VALUES (173, 'Moretonhampstead', 11, 'St Andrew', '15-0-7');
-INSERT INTO location VALUES (174, 'Mortehoe', 2, 'St Mary Magdalene', '9-0-26');
-INSERT INTO location VALUES (175, 'Morwenstow', 17, 'St John the Baptist', '8cwt');
-INSERT INTO location VALUES (176, 'Newton Abbot, Wolborough', 12, 'St Mary', '15-3-27');
-INSERT INTO location VALUES (177, 'Newton Ferrers', 9, 'Holy Cross', '10-3-15');
-INSERT INTO location VALUES (178, 'Newton St Cyres', 3, 'St Cyr and St Julitta', '12-3-22');
-INSERT INTO location VALUES (179, 'North Bovey', 11, 'St John the Baptist', '12cwt');
-INSERT INTO location VALUES (180, 'North Tawton', 15, 'St Peter', '18cwt');
-INSERT INTO location VALUES (181, 'Northam', 6, 'St Margaret', '13-2-25');
-INSERT INTO location VALUES (182, 'Northlew', 15, 'St Thomas of Canterbury', '6-3-5');
-INSERT INTO location VALUES (183, 'Not Applicable', 14, 'Not Applicable', 'NA');
-INSERT INTO location VALUES (184, 'Not Held', 14, 'Not Applicable', 'NA');
-INSERT INTO location VALUES (185, 'Offwell', 8, 'St Mary the Virgin', '7-3-9');
-INSERT INTO location VALUES (186, 'Okehampton', 15, 'All Saints', '16-2-13');
-INSERT INTO location VALUES (187, 'Otterton', 1, 'St Michael', '12-0-4');
-INSERT INTO location VALUES (188, 'Paignton', 23, 'St John the Baptist', '21-3-5');
-INSERT INTO location VALUES (189, 'Parkham', 6, 'St James', '7-3-22');
-INSERT INTO location VALUES (190, 'Petersmarland', 24, 'St Peter', '7.5cwt');
-INSERT INTO location VALUES (191, 'Petrockstowe', 24, 'St Petrock', '8-0-14');
-INSERT INTO location VALUES (192, 'Pilton', 2, 'St Mary the Virgin', '23-2-5');
-INSERT INTO location VALUES (193, 'Plymouth, Eggbuckland', 18, 'St Edward', '10-0-0');
-INSERT INTO location VALUES (194, 'Plymouth, Emmanuel', 18, 'Emmanuel', '19-3-14');
-INSERT INTO location VALUES (195, 'Plymouth, Laira', 18, 'St Mary the Virgin', '11-0-14');
-INSERT INTO location VALUES (196, 'Plymouth, Plymstock', 18, 'St Mary and All Saints', '13-1-10');
-INSERT INTO location VALUES (197, 'Plymouth, St Budeaux', 18, 'St Budeaux', '12-0-25');
-INSERT INTO location VALUES (198, 'Plymouth, Stoke Damerel', 18, 'St Andrew', '4-2-12');
-INSERT INTO location VALUES (199, 'Plympton, St Mary', 18, 'The Blessed Virgin Mary', '25-1-11');
-INSERT INTO location VALUES (200, 'Plympton, St Maurice', 18, 'St Maurice', '16-0-2');
-INSERT INTO location VALUES (201, 'Plymtree', 16, 'St John the Baptist', '11-0-8');
-INSERT INTO location VALUES (202, 'Poughill (Cornwall)', 17, 'St Olaf King and Martyr', '12-3-26');
-INSERT INTO location VALUES (203, 'Poughill (Devon)', 3, 'St Michael and All Angels', '11-0-15');
-INSERT INTO location VALUES (204, 'Powderham', 10, 'St Clement', '10cwt');
-INSERT INTO location VALUES (205, 'Pyworthy', 7, 'St Swithun', '8-1-20');
-INSERT INTO location VALUES (206, 'Rackenford', 22, 'All Saints', '14-2-8');
-INSERT INTO location VALUES (207, 'Revelstoke', 9, 'St Peter', '16cwt');
-INSERT INTO location VALUES (208, 'Rewe', 3, 'St Mary the Virgin', '9-1-0');
-INSERT INTO location VALUES (209, 'Roborough', 24, 'St Peter', '12-1-18');
-INSERT INTO location VALUES (210, 'Rose Ash', 20, 'St Peter', '9cwt');
-INSERT INTO location VALUES (211, 'Salcombe', 26, 'Holy Trinity', '8-1-10');
-INSERT INTO location VALUES (212, 'Sampford Courtenay', 15, 'St Andrew', '13-3-2');
-INSERT INTO location VALUES (213, 'Sandford', 3, 'St Swithin', '10-2-22');
-INSERT INTO location VALUES (214, 'Shaugh Prior', 9, 'St Edward', '15-1-3');
-INSERT INTO location VALUES (215, 'Shebbear', 9, 'St Michael', '9-2-6');
-INSERT INTO location VALUES (216, 'Sheepstor', 21, 'St Leonard', '6-2-19');
-INSERT INTO location VALUES (217, 'Sherford', 26, 'St Martin', '12-1-19');
-INSERT INTO location VALUES (218, 'Shirwell', 19, 'St Peter', '11-2-20');
-INSERT INTO location VALUES (219, 'Shobrooke', 3, 'St Swithin', '12-2-10');
-INSERT INTO location VALUES (220, 'Sidbury', 16, 'SS Peter and Giles', '16-1-23');
-INSERT INTO location VALUES (221, 'Slapton', 26, 'St James the Greater', '5-1-12');
-INSERT INTO location VALUES (222, 'South Brent', 25, 'St Petroc', '13-2-12');
-INSERT INTO location VALUES (223, 'South Milton', 26, 'All Saints', '12cwt');
-INSERT INTO location VALUES (224, 'South Molton', 20, 'St Mary Magdalene', '24-2-12');
-INSERT INTO location VALUES (225, 'South Petherwin', 17, 'St Paternus', '12-2-25');
-INSERT INTO location VALUES (226, 'South Pool', 26, 'St Cyriac', '11-0-4');
-INSERT INTO location VALUES (227, 'South Tawton', 15, 'St Andrew', '11-3-2');
-INSERT INTO location VALUES (228, 'Spreyton', 15, 'St Michael', '12cwt');
-INSERT INTO location VALUES (229, 'St Giles in the Wood', 24, 'St Giles', '10-0-25');
-INSERT INTO location VALUES (230, 'St Olave, City of London', 17, 'St Olave', '11-3-23');
-INSERT INTO location VALUES (231, 'St Vedast, City of London', 17, 'St Vedast', '16-2-12');
-INSERT INTO location VALUES (232, 'Staverton', 25, 'St Paul de Leon', '19-2-14');
-INSERT INTO location VALUES (233, 'Stoke Fleming', 26, 'St Peter', '12-2-17');
-INSERT INTO location VALUES (234, 'Stoke Gabriel', 25, 'St Gabriel', '17cwt');
-INSERT INTO location VALUES (235, 'Stokeinteignhead', 12, 'St Andrew', '10-0-3');
-INSERT INTO location VALUES (236, 'Stokenham', 26, 'St Michael and All Angels', '15-2-6');
-INSERT INTO location VALUES (237, 'Stoodleigh', 22, 'St Margaret', '7-0-3');
-INSERT INTO location VALUES (238, 'Stratton', 17, 'St Andrew', '21-3-16');
-INSERT INTO location VALUES (239, 'Swimbridge', 19, 'St James the Apostle', '11-3-3');
-INSERT INTO location VALUES (240, 'Talaton', 16, 'St James Apostle and Martyr', '12-2-22');
-INSERT INTO location VALUES (241, 'Tavistock', 21, 'St Eustachius', '24-0-5');
-INSERT INTO location VALUES (242, 'Tawstock', 24, 'St Peter', '16-3-20');
-INSERT INTO location VALUES (243, 'Tedburn St Mary', 10, 'St Mary the Virgin', '10-0-6');
-INSERT INTO location VALUES (244, 'Thorverton', 3, 'St Thomas of Canterbury', '15-0-4');
-INSERT INTO location VALUES (245, 'Throwleigh', 15, 'St Mary the Virgin', '8-1-24');
-INSERT INTO location VALUES (246, 'Thurlestone', 26, 'All Saints', '13-0-3');
-INSERT INTO location VALUES (247, 'Tiverton, St Paul', 22, 'St Paul', '8-3-5');
-INSERT INTO location VALUES (248, 'Torquay, Babbacombe', 23, 'All Saints', '13-0-26');
-INSERT INTO location VALUES (249, 'Torquay, Cockington', 23, 'SS Geogre and Mary', '8-3-5');
-INSERT INTO location VALUES (250, 'Torquay, St Marychurch', 23, 'St Mary the Virgin', '17-1-24');
-INSERT INTO location VALUES (251, 'Torquay, Upton', 23, 'St Mary Magdalene', '14-2-12');
-INSERT INTO location VALUES (252, 'Trusham', 11, 'St Michael and All Angels', '7cwt');
-INSERT INTO location VALUES (253, 'Ugborough', 9, 'St Peter', '19cwt');
-INSERT INTO location VALUES (254, 'Unknown', 14, 'Not Applicable', 'NA');
-INSERT INTO location VALUES (255, 'Upton Pyne', 3, 'Our Lady', '8.5cwt');
-INSERT INTO location VALUES (256, 'Walkhampton', 21, 'St Mary the Virgin', '7-3-12');
-INSERT INTO location VALUES (257, 'Warkleigh', 20, 'St John the Evangelist', '9-1-11');
-INSERT INTO location VALUES (258, 'Washford Pyne', 3, 'St Peter', '7cwt');
-INSERT INTO location VALUES (259, 'Weare Giffard', 6, 'Holy Trinity', '7-1-26');
-INSERT INTO location VALUES (260, 'Week St Mary', 17, 'St Mary the Virgin', '8-2-24');
-INSERT INTO location VALUES (261, 'Welcombe', 6, 'St Nectan', '7-0-17');
-INSERT INTO location VALUES (262, 'Wembury', 9, 'St Werburgh', '6-1-11');
-INSERT INTO location VALUES (263, 'West Alvington', 26, 'All Saints', '16cwt');
-INSERT INTO location VALUES (264, 'West Buckland', 19, 'St Peter', '7-0-22');
-INSERT INTO location VALUES (265, 'West Down', 2, 'St Calixtus', '8-2-3');
-INSERT INTO location VALUES (266, 'West Teignmouth (St James)', 10, 'St James the Less', '12-2-17');
-INSERT INTO location VALUES (267, 'West Worlington', 20, 'St Mary', '7-3-21');
-INSERT INTO location VALUES (268, 'Westleigh', 6, 'St Peter', '11-0-17');
-INSERT INTO location VALUES (269, 'Whimple', 16, 'St Mary', '12-2-15');
-INSERT INTO location VALUES (270, 'Whitchurch', 21, 'St Andrew', '11-1-8');
-INSERT INTO location VALUES (271, 'Whitestone', 10, 'St Catherine', '11.5cwt');
-INSERT INTO location VALUES (272, 'Widecombe in the Moor', 11, 'St Pancras', '12-3-14');
-INSERT INTO location VALUES (273, 'Winford', 17, 'Blessed Virgin Mery and St Peter', '13-3-26');
-INSERT INTO location VALUES (274, 'Winkleigh', 24, 'All Saints', '19-0-27');
-INSERT INTO location VALUES (275, 'Witheridge', 20, 'St John the Baptist', '23-3-6');
-INSERT INTO location VALUES (276, 'Woolfardisworthy (West) [Woolsery]', 6, 'Holy Trinity', '7-2-16');
-INSERT INTO location VALUES (277, 'Yarnscombe', 24, 'St Andrew', '13cwt');
-INSERT INTO location VALUES (278, 'Yealmpton', 9, 'St Bartholomew', '10-2-9');
-INSERT INTO location VALUES (279, 'Zeal Monachorum', 3, 'St Peter', '8-0-26');
+INSERT INTO
+    location
+VALUES
+    (1, 'Abbotskerswell', 12, 'The Blessed Virgin Mary', '10cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (2, 'Alwington', 6, 'St Andrew', '11-2-0', 6);
+INSERT INTO
+    location
+VALUES
+    (3, 'Appledore', 6, 'St Mary', '10-3-26', 8);
+INSERT INTO
+    location
+VALUES
+    (4, 'Arlington', 19, 'St James', '11cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (5, 'Ashburton', 25, 'St Andrew', '21-1-6', 8);
+INSERT INTO
+    location
+VALUES
+    (6, 'Ashreigney', 24, 'St James', '9-0-18', 6);
+INSERT INTO
+    location
+VALUES
+    (7, 'Ashwater', 7, 'St Peter ad Vincula', '8-3-1', 6);
+INSERT INTO
+    location
+VALUES
+    (8, 'Atherington', 24, 'St Mary', '11-0-9', 6);
+INSERT INTO
+    location
+VALUES
+    (9, 'Bampton', 22, 'St Michael and All Angels', '14-0-3', 6);
+INSERT INTO
+    location
+VALUES
+    (10, 'Barnstaple', 2, 'St Peter and Mary Magdalene', '19-1-0', 8);
+INSERT INTO
+    location
+VALUES
+    (11, 'Beaford', 24, 'All Saints', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (12, 'Belstone', 15, 'St Mary', '5-2-25', 6);
+INSERT INTO
+    location
+VALUES
+    (13, 'Bere Ferrers', 21, 'St Andrew', '7-3-24', 6);
+INSERT INTO
+    location
+VALUES
+    (14, 'Berry Pomeroy', 25, 'St Mary', '17cwt', 8);
+INSERT INTO
+    location
+VALUES
+    (15, 'Bickington', 11, 'St Mary the Virgin', '7-1-24', 6);
+INSERT INTO
+    location
+VALUES
+    (16, 'Bickleigh (nr Plymouth)', 9, 'St Mary the Virgin', '9-3-27', 6);
+INSERT INTO
+    location
+VALUES
+    (17, 'Bickleigh (nr Tiverton)', 22, 'St Mary', '9-1-14', 6);
+INSERT INTO
+    location
+VALUES
+    (18, 'Bideford', 6, 'St Mary', '17-1-10', 8);
+INSERT INTO
+    location
+VALUES
+    (19, 'Bigbury', 26, 'St Lawrence', '7-2-27', 6);
+INSERT INTO
+    location
+VALUES
+    (20, 'Bishops Nympton', 20, 'St Mary the Virgin', '10-1-10', 6);
+INSERT INTO
+    location
+VALUES
+    (21, 'Bishops Tawton', 2, 'St John the Baptist', '9-2-20', 6);
+INSERT INTO
+    location
+VALUES
+    (22, 'Bishopsteignton', 10, 'St John the Baptist', '10-1-24', 6);
+INSERT INTO
+    location
+VALUES
+    (23, 'Black Torrington', 7, 'St Mary', '8-3-9', 6);
+INSERT INTO
+    location
+VALUES
+    (24, 'Blackawton', 26, 'St Michael', '11-3-1', 6);
+INSERT INTO
+    location
+VALUES
+    (25, 'Bovey Tracey', 11, 'SS Peter, Paul and Thomas', '14-2-26', 8);
+INSERT INTO
+    location
+VALUES
+    (26, 'Bow', 3, 'St Bartholomew', '13-2-23', 6);
+INSERT INTO
+    location
+VALUES
+    (27, 'Bradford', 7, 'All Saints', '10-2-8', 6);
+INSERT INTO
+    location
+VALUES
+    (28, 'Bradworthy', 7, 'St John the Baptist', '9-3-8', 6);
+INSERT INTO
+    location
+VALUES
+    (29, 'Branscombe', 8, 'St Winifred', '14cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (30, 'Bratton Clovelly', 15, 'St Mary the Virgin', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (31, 'Bratton Fleming', 19, 'St Peter', '14-2-0', 6);
+INSERT INTO
+    location
+VALUES
+    (32, 'Braunton', 2, 'St Brannock', '16-0-25', 8);
+INSERT INTO
+    location
+VALUES
+    (33, 'Bridestowe', 15, 'St Bridget', '13-0-5', 6);
+INSERT INTO
+    location
+VALUES
+    (34, 'Bridford', 10, 'St Thomas a Becket', '9cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (35, 'Bridgerule', 7, 'St Bridget', '10-1-21', 8);
+INSERT INTO
+    location
+VALUES
+    (36, 'Brixham', 23, 'The Blessed Virgin Mary', '17-0-4', 10);
+INSERT INTO
+    location
+VALUES
+    (37, 'Brixton', 9, 'St Mary', '13cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (38, 'Broadhempston', 25, 'SS Peter and Paul', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (39, 'Broadwoodkelly', 24, 'All Saints', '9-3-14', 6);
+INSERT INTO
+    location
+VALUES
+    (40, 'Buckerell', 16, 'SS Mary and Giles', '8-1-4', 6);
+INSERT INTO
+    location
+VALUES
+    (41, 'Buckfastleigh', 25, 'Holy Trinity', '15-2-21', 8);
+INSERT INTO
+    location
+VALUES
+    (42, 'Buckland Brewer', 6, 'SS Mary and Benedict', '12-3-17', 6);
+INSERT INTO
+    location
+VALUES
+    (43, 'Buckland in the Moor', 11, 'St Peter', '7-0-17', 8);
+INSERT INTO
+    location
+VALUES
+    (44, 'Buckland Monachorum', 21, 'St Andrew', '15-3-5', 8);
+INSERT INTO
+    location
+VALUES
+    (45, 'Burrington', 20, 'Holy Trinity', '11-2-11', 6);
+INSERT INTO
+    location
+VALUES
+    (46, 'Chagford', 15, 'St Michael', '18-0-2', 8);
+INSERT INTO
+    location
+VALUES
+    (47, 'Chardstock', 8, 'St Andrew', '12-1-27', 6);
+INSERT INTO
+    location
+VALUES
+    (48, 'Charleton', 26, 'St Mary', '9-2-13', 6);
+INSERT INTO
+    location
+VALUES
+    (49, 'Chawleigh', 20, 'St James', '15-3-23', 6);
+INSERT INTO
+    location
+VALUES
+    (50, 'Cheriton Bishop', 10, 'St Mary', '14cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (51, 'Cheriton Fitzpaine', 3, 'St Matthew', '13-1-10', 6);
+INSERT INTO
+    location
+VALUES
+    (52, 'Chittlehampton', 20, 'St Hieritha', '13-0-15', 8);
+INSERT INTO
+    location
+VALUES
+    (53, 'Chivelstone', 26, 'St Sylvester', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (54, 'Christow', 10, 'St James', '11-2-20', 8);
+INSERT INTO
+    location
+VALUES
+    (55, 'Chudleigh', 11, 'SS Mary and Martin', '12-2-23', 8);
+INSERT INTO
+    location
+VALUES
+    (56, 'Chulmleigh', 20, 'St Mary Magdalene', '22-0-26', 8);
+INSERT INTO
+    location
+VALUES
+    (57, 'Churchstow', 26, 'St Mary', '16cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (58, 'Churston Ferrers', 23, 'St Mary the Virgin', '12-0-15', 6);
+INSERT INTO
+    location
+VALUES
+    (59, 'Clawton', 7, 'St Leonard', '8-1-25', 6);
+INSERT INTO
+    location
+VALUES
+    (60, 'Clovelly', 6, 'All Saints', '10-1-21', 6);
+INSERT INTO
+    location
+VALUES
+    (61, 'Clyst St George', 1, 'St George', '10-2-21', 6);
+INSERT INTO
+    location
+VALUES
+    (62, 'Coffinswell', 12, 'St Bartholomew', '11-0-5', 6);
+INSERT INTO
+    location
+VALUES
+    (63, 'Colaton Raleigh', 16, 'St John the Baptist', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (64, 'Coldridge', 3, 'St Matthew', '13cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (65, 'Colebrooke', 3, 'St Andrew', '17-3-21', 6);
+INSERT INTO
+    location
+VALUES
+    (66, 'Collaton St Mary', 25, 'St Mary', '7-1-25', 6);
+INSERT INTO
+    location
+VALUES
+    (67, 'Combe Martin', 19, 'St Peter ad Vincula', '10-0-21', 8);
+INSERT INTO
+    location
+VALUES
+    (68, 'Combe Raleigh', 8, 'St Nicholas', '5-2-19', 6);
+INSERT INTO
+    location
+VALUES
+    (69, 'Combeinteignhead', 12, 'All Saints', '10cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (70, 'Cornwood', 9, 'St Michael and All Angels', '9-3-12', 6);
+INSERT INTO
+    location
+VALUES
+    (71, 'Cornworthy', 25, 'St Peter', '9-3-6', 6);
+INSERT INTO
+    location
+VALUES
+    (72, 'Cullompton', 5, 'St Andrew', '19-2-4', 10);
+INSERT INTO
+    location
+VALUES
+    (73, 'Dartington', 25, 'St Mary', '17cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (74, 'Dartmouth, St Petrox', 25, 'St Petrox', '7-3-9', 6);
+INSERT INTO
+    location
+VALUES
+    (75, 'Dartmouth, St Saviour', 25, 'St Saviour', '18-2-14', 8);
+INSERT INTO
+    location
+VALUES
+    (76, 'Dartmouth, Townstal', 25, 'St Clement', '7-2-11', 6);
+INSERT INTO
+    location
+VALUES
+    (77, 'Dawlish', 10, 'St Gregory', '11-2-21', 8);
+INSERT INTO
+    location
+VALUES
+    (78, 'Dean Prior', 25, 'St George the Martyr', '11-2-24', 6);
+INSERT INTO
+    location
+VALUES
+    (79, 'Diptford', 25, 'St Mary the Virgin', '11-3-12', 6);
+INSERT INTO
+    location
+VALUES
+    (80, 'Dittisham', 25, 'St George', '12-1-8', 6);
+INSERT INTO
+    location
+VALUES
+    (81, 'Dodbrooke', 26, 'St Thomas a Becket', '7-0-10', 6);
+INSERT INTO
+    location
+VALUES
+    (82, 'Doddiscombsleigh', 10, 'St Michael', '10-2-14', 6);
+INSERT INTO
+    location
+VALUES
+    (83, 'Dolton', 24, 'St Edmund King and Martyr', '13-1-21', 6);
+INSERT INTO
+    location
+VALUES
+    (84, 'Dowland', 24, 'St Peter', '4-3-0', 5);
+INSERT INTO
+    location
+VALUES
+    (85, 'Down St Mary', 3, 'St Mary the Virgin', '7-3-16', 6);
+INSERT INTO
+    location
+VALUES
+    (86, 'Drewsteignton', 15, 'Holy Trinity', '13-3-7', 6);
+INSERT INTO
+    location
+VALUES
+    (87, 'Dunsford', 10, 'St Mary', '12-3-16', 6);
+INSERT INTO
+    location
+VALUES
+    (88, 'East Allington', 26, 'St Andrew', '14cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (89, 'East Budleigh', 1, 'All Saints', '9-0-0', 8);
+INSERT INTO
+    location
+VALUES
+    (90, 'East Portlemouth', 26, 'St Winwaloe Onocaus', '13-3-22', 6);
+INSERT INTO
+    location
+VALUES
+    (91, 'East Teignmouth (St Michael)', 10, 'St Michael', '22-1-0', 8);
+INSERT INTO
+    location
+VALUES
+    (92, 'East Worlington', 20, 'St Mary', '5-1-23', 6);
+INSERT INTO
+    location
+VALUES
+    (93, 'Ermington', 9, 'SS Peter and Paul', '14-1-13', 6);
+INSERT INTO
+    location
+VALUES
+    (94, 'Exbourne', 15, 'St Mary the Virgin', '8-2-14', 6);
+INSERT INTO
+    location
+VALUES
+    (95, 'Exeter Cathedral', 4, 'St Peter', '72-2-2', 12);
+INSERT INTO
+    location
+VALUES
+(96, 'Exeter, Alphington', 10, 'St Michael and All Angels', '13-1-12', 8);
+INSERT INTO
+    location
+VALUES
+    (97, 'Exeter, Pinhoe', 1, 'St Michael and All Angels', '10-0-19', 8);
+INSERT INTO
+    location
+VALUES
+    (98, 'Exeter, St David', 4, 'St David', '11-2-23', 8);
+INSERT INTO
+    location
+VALUES
+    (99, 'Exeter, St Mark', 4, 'St Mark', '12-1-19', 8);
+INSERT INTO
+    location
+VALUES
+    (100, 'Exeter, St Petrock', 4, 'St Petrock', '5cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (101, 'Exminster', 10, 'St Martin of Tours', '17-3-25', 8);
+INSERT INTO
+    location
+VALUES
+    (102, 'Exmouth, Littleham', 1, 'St Margaret', '7-2-11', 8);
+INSERT INTO
+    location
+VALUES
+    (103, 'Feniton', 16, 'St Andrew', '9cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (104, 'Filleigh', 20, 'St Paul', '6-0-12', 6);
+INSERT INTO
+    location
+VALUES
+    (105, 'Fremington', 2, 'St Peter', '8-3-19', 6);
+INSERT INTO
+    location
+VALUES
+    (106, 'Frithelstock', 24, 'SS Mary and Gregory', '17cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (107, 'Georgeham', 2, 'St George', '12-0-22', 8);
+INSERT INTO
+    location
+VALUES
+    (108, 'Goodleigh', 2, 'St Gregory', '7-1-18', 6);
+INSERT INTO
+    location
+VALUES
+    (109, 'Great Torrington', 24, 'St Michael', '14-3-4', 8);
+INSERT INTO
+    location
+VALUES
+    (110, 'Halberton', 5, 'St Andrew', '17-2-6', 6);
+INSERT INTO
+    location
+VALUES
+    (111, 'Halwell', 25, 'St Leonard', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (112, 'Harberton', 25, 'St Andrew', '16cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (113, 'Hartland', 6, 'St Nectan', '17-2-8', 6);
+INSERT INTO
+    location
+VALUES
+    (114, 'Hatherleigh', 15, 'St John the Baptist', '13-2-6', 8);
+INSERT INTO
+    location
+VALUES
+    (115, 'Heanton Punchardon', 2, 'St Augustine', '10-2-24', 6);
+INSERT INTO
+    location
+VALUES
+    (116, 'High Bickington', 24, 'St Mary', '9-1-25', 8);
+INSERT INTO
+    location
+VALUES
+    (117, 'Highweek', 12, 'All Saints', '11-1-11', 8);
+INSERT INTO
+    location
+VALUES
+    (118, 'Holbeton', 9, 'All Saints', '13-3-14', 6);
+INSERT INTO
+    location
+VALUES
+    (119, 'Holcombe Burnell', 10, 'St John the Baptist', '11-0-27', 6);
+INSERT INTO
+    location
+VALUES
+    (120, 'Holne', 11, 'St Mary the Virgin', '8-2-24', 6);
+INSERT INTO
+    location
+VALUES
+    (121, 'Holsworthy', 7, 'SS Peter and Paul', '15-0-0', 6);
+INSERT INTO
+    location
+VALUES
+    (122, 'Huish Episcopi', 17, 'The Blessed Virgin Mary', '15-2-7', 8);
+INSERT INTO
+    location
+VALUES
+    (123, 'Huntsham', 22, 'All Saints', '8-0-27', 8);
+INSERT INTO
+    location
+VALUES
+    (124, 'Iddesleigh', 24, 'St James', '9-1-21', 6);
+INSERT INTO
+    location
+VALUES
+    (125, 'Ide', 10, 'St Ida', '7-0-18', 6);
+INSERT INTO
+    location
+VALUES
+    (126, 'Ideford', 10, 'St Mary the Virgin', '7-3-9', 6);
+INSERT INTO
+    location
+VALUES
+    (127, 'Ilfracombe, Holy Trinity', 2, 'Holy Trinity', '12-0-20', 8);
+INSERT INTO
+    location
+VALUES
+(128, 'Ilfracombe, Ss Philip and James', 2, 'Ss Philip and James', '11-0-26', 8);
+INSERT INTO
+    location
+VALUES
+    (129, 'Ilsington', 11, 'St Michael', '10-3-13', 6);
+INSERT INTO
+    location
+VALUES
+    (130, 'Inwardleigh', 15, 'St Petroc', '6-3-4', 6);
+INSERT INTO
+    location
+VALUES
+    (131, 'Ipplepen', 12, 'St Andrew', '18-1-0', 8);
+INSERT INTO
+    location
+VALUES
+    (132, 'Jacobstowe', 15, 'St James', '6-2-2', 5);
+INSERT INTO
+    location
+VALUES
+    (133, 'Kenn', 10, 'St Andrew', '13-1-25', 6);
+INSERT INTO
+    location
+VALUES
+    (134, 'Kentisbeare', 5, 'St Mary', '10-1-2', 6);
+INSERT INTO
+    location
+VALUES
+    (135, 'Kentisbury', 19, 'St Thomas', '8cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (136, 'Kenton', 10, 'All Saints', '12-1-19', 6);
+INSERT INTO
+    location
+VALUES
+    (137, 'Kilkhampton', 17, 'St James the Greater', '11-3-23', 8);
+INSERT INTO
+    location
+VALUES
+    (138, 'Kilmington', 8, 'St Giles', '10-1-4', 6);
+INSERT INTO
+    location
+VALUES
+    (139, 'Kings Nympton', 20, 'St James the Apostle', '13-1-10', 6);
+INSERT INTO
+    location
+VALUES
+    (140, 'Kingsbridge', 26, 'St Edmund King and Martyr', '11-2-25', 8);
+INSERT INTO
+    location
+VALUES
+    (141, 'Kingskerswell', 12, 'St Mary', '7-3-0', 8);
+INSERT INTO
+    location
+VALUES
+    (142, 'Kingsteignton', 12, 'St Michael', '16-3-11', 8);
+INSERT INTO
+    location
+VALUES
+    (143, 'Kingston', 26, 'St James', '10-0-26', 6);
+INSERT INTO
+    location
+VALUES
+    (144, 'Lamerton', 21, 'St Peter', '11-1-26', 6);
+INSERT INTO
+    location
+VALUES
+    (145, 'Landkey', 19, 'St Paul', '13cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (146, 'Langtree', 24, 'All Saints', '11cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (147, 'Lapford', 3, 'St Thomas of Canterbury', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (148, 'Lifton', 21, 'St Mary', '21-0-16', 8);
+INSERT INTO
+    location
+VALUES
+    (149, 'Little Torrington', 24, 'St Giles', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (150, 'Littleham', 6, 'St Swithin', '8-1-17', 6);
+INSERT INTO
+    location
+VALUES
+    (151, 'Loddiswell', 26, 'St Michael and All Angels', '9-1-18', 6);
+INSERT INTO
+    location
+VALUES
+    (152, 'Longborough', 17, 'St James', '11-0-2', 6);
+INSERT INTO
+    location
+VALUES
+    (153, 'Loxhore', 19, 'St Michael and All Angels', '5cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (154, 'Luppit', 8, 'St Mary', '10-3-21', 8);
+INSERT INTO
+    location
+VALUES
+    (155, 'Lustleigh', 11, 'St John the Baptist', '12-0-0', 6);
+INSERT INTO
+    location
+VALUES
+    (156, 'Lydford', 21, 'St Petrock', '8cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (157, 'Lympstone', 1, 'Nativity of Blessed Virgin Mar', '9-2-2', 6);
+INSERT INTO
+    location
+VALUES
+    (158, 'Lynton', 19, 'St Mary the Virgin', '9-3-2', 6);
+INSERT INTO
+    location
+VALUES
+    (159, 'Maker', 17, 'St Mary and St Julian', '13-0-17', 6);
+INSERT INTO
+    location
+VALUES
+    (160, 'Malborough', 26, 'All Saints', '9-2-7', 6);
+INSERT INTO
+    location
+VALUES
+    (161, 'Manaton', 11, 'St Winifred', '8-0-14', 6);
+INSERT INTO
+    location
+VALUES
+    (162, 'Mariansleigh', 20, 'St Mary', '7-2-13', 6);
+INSERT INTO
+    location
+VALUES
+    (163, 'Marldon', 25, 'St John the Baptist', '15-3-0', 6);
+INSERT INTO
+    location
+VALUES
+    (164, 'Marwood', 2, 'St Michael and All Angels', '13-2-13', 6);
+INSERT INTO
+    location
+VALUES
+    (165, 'Meavy', 21, 'St Peter', '7-2-21', 6);
+INSERT INTO
+    location
+VALUES
+    (166, 'Merton', 24, 'All Saints', '10cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (167, 'Milton Abbot', 21, 'St Constantine', '13cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (168, 'Modbury', 26, 'St George', '17-2-7', 6);
+INSERT INTO
+    location
+VALUES
+    (169, 'Molland', 20, 'St Mary', '14-1-24', 6);
+INSERT INTO
+    location
+VALUES
+    (170, 'Monkleigh', 6, 'St George', '8-2-15', 6);
+INSERT INTO
+    location
+VALUES
+    (171, 'Morchard Bishop', 3, 'St Mary', '15cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (172, 'Morebath', 22, 'St George', '8-3-5', 6);
+INSERT INTO
+    location
+VALUES
+    (173, 'Moretonhampstead', 11, 'St Andrew', '15-0-7', 8);
+INSERT INTO
+    location
+VALUES
+    (174, 'Mortehoe', 2, 'St Mary Magdalene', '9-0-26', 6);
+INSERT INTO
+    location
+VALUES
+    (175, 'Morwenstow', 17, 'St John the Baptist', '8cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (176, 'Newton Abbot, Wolborough', 12, 'St Mary', '15-3-27', 8);
+INSERT INTO
+    location
+VALUES
+    (177, 'Newton Ferrers', 9, 'Holy Cross', '10-3-15', 6);
+INSERT INTO
+    location
+VALUES
+    (178, 'Newton St Cyres', 3, 'St Cyr and St Julitta', '12-3-22', 8);
+INSERT INTO
+    location
+VALUES
+    (179, 'North Bovey', 11, 'St John the Baptist', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (180, 'North Tawton', 15, 'St Peter', '18cwt', 8);
+INSERT INTO
+    location
+VALUES
+    (181, 'Northam', 6, 'St Margaret', '13-2-25', 8);
+INSERT INTO
+    location
+VALUES
+    (182, 'Northlew', 15, 'St Thomas of Canterbury', '6-3-5', 6);
+INSERT INTO
+    location
+VALUES
+    (183, 'Not Applicable', 14, 'Not Applicable', 'NA', NULL);
+INSERT INTO
+    location
+VALUES
+    (184, 'Not Held', 14, 'Not Applicable', 'NA', NULL);
+INSERT INTO
+    location
+VALUES
+    (185, 'Offwell', 8, 'St Mary the Virgin', '7-3-9', 6);
+INSERT INTO
+    location
+VALUES
+    (186, 'Okehampton', 15, 'All Saints', '16-2-13', 8);
+INSERT INTO
+    location
+VALUES
+    (187, 'Otterton', 1, 'St Michael', '12-0-4', 6);
+INSERT INTO
+    location
+VALUES
+    (188, 'Paignton', 23, 'St John the Baptist', '21-3-5', 8);
+INSERT INTO
+    location
+VALUES
+    (189, 'Parkham', 6, 'St James', '7-3-22', 6);
+INSERT INTO
+    location
+VALUES
+    (190, 'Petersmarland', 24, 'St Peter', '7.5cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (191, 'Petrockstowe', 24, 'St Petrock', '8-0-14', 6);
+INSERT INTO
+    location
+VALUES
+    (192, 'Pilton', 2, 'St Mary the Virgin', '23-2-5', 8);
+INSERT INTO
+    location
+VALUES
+    (193, 'Plymouth, Eggbuckland', 18, 'St Edward', '10-0-0', 6);
+INSERT INTO
+    location
+VALUES
+    (194, 'Plymouth, Emmanuel', 18, 'Emmanuel', '19-3-14', 8);
+INSERT INTO
+    location
+VALUES
+    (195, 'Plymouth, Laira', 18, 'St Mary the Virgin', '11-0-14', 8);
+INSERT INTO
+    location
+VALUES
+(196, 'Plymouth, Plymstock', 18, 'St Mary and All Saints', '13-1-10', 8);
+INSERT INTO
+    location
+VALUES
+    (197, 'Plymouth, St Budeaux', 18, 'St Budeaux', '12-0-25', 6);
+INSERT INTO
+    location
+VALUES
+    (198, 'Plymouth, Stoke Damerel', 18, 'St Andrew', '4-2-12', 8);
+INSERT INTO
+    location
+VALUES
+    (199, 'Plympton, St Mary', 18, 'The Blessed Virgin Mary', '25-1-11', 8);
+INSERT INTO
+    location
+VALUES
+    (200, 'Plympton, St Maurice', 18, 'St Maurice', '16-0-2', 8);
+INSERT INTO
+    location
+VALUES
+    (201, 'Plymtree', 16, 'St John the Baptist', '11-0-8', 6);
+INSERT INTO
+    location
+VALUES
+(202, 'Poughill (Cornwall)', 17, 'St Olaf King and Martyr', '12-3-26', 6);
+INSERT INTO
+    location
+VALUES
+    (203, 'Poughill (Devon)', 3, 'St Michael and All Angels', '11-0-15', 6);
+INSERT INTO
+    location
+VALUES
+    (204, 'Powderham', 10, 'St Clement', '10cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (205, 'Pyworthy', 7, 'St Swithun', '8-1-20', 6);
+INSERT INTO
+    location
+VALUES
+    (206, 'Rackenford', 22, 'All Saints', '14-2-8', 6);
+INSERT INTO
+    location
+VALUES
+    (207, 'Revelstoke', 9, 'St Peter', '16cwt', 8);
+INSERT INTO
+    location
+VALUES
+    (208, 'Rewe', 3, 'St Mary the Virgin', '9-1-0', 6);
+INSERT INTO
+    location
+VALUES
+    (209, 'Roborough', 24, 'St Peter', '12-1-18', 6);
+INSERT INTO
+    location
+VALUES
+    (210, 'Rose Ash', 20, 'St Peter', '9cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (211, 'Salcombe', 26, 'Holy Trinity', '8-1-10', 6);
+INSERT INTO
+    location
+VALUES
+    (212, 'Sampford Courtenay', 15, 'St Andrew', '13-3-2', 6);
+INSERT INTO
+    location
+VALUES
+    (213, 'Sandford', 3, 'St Swithin', '10-2-22', 6);
+INSERT INTO
+    location
+VALUES
+    (214, 'Shaugh Prior', 9, 'St Edward', '15-1-3', 6);
+INSERT INTO
+    location
+VALUES
+    (215, 'Shebbear', 9, 'St Michael', '9-2-6', 6);
+INSERT INTO
+    location
+VALUES
+    (216, 'Sheepstor', 21, 'St Leonard', '6-2-19', 6);
+INSERT INTO
+    location
+VALUES
+    (217, 'Sherford', 26, 'St Martin', '12-1-19', 6);
+INSERT INTO
+    location
+VALUES
+    (218, 'Shirwell', 19, 'St Peter', '11-2-20', 6);
+INSERT INTO
+    location
+VALUES
+    (219, 'Shobrooke', 3, 'St Swithin', '12-2-10', 6);
+INSERT INTO
+    location
+VALUES
+    (220, 'Sidbury', 16, 'SS Peter and Giles', '16-1-23', 8);
+INSERT INTO
+    location
+VALUES
+    (221, 'Slapton', 26, 'St James the Greater', '5-1-12', 6);
+INSERT INTO
+    location
+VALUES
+    (222, 'South Brent', 25, 'St Petroc', '13-2-12', 6);
+INSERT INTO
+    location
+VALUES
+    (223, 'South Milton', 26, 'All Saints', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (224, 'South Molton', 20, 'St Mary Magdalene', '24-2-12', 8);
+INSERT INTO
+    location
+VALUES
+    (225, 'South Petherwin', 17, 'St Paternus', '12-2-25', 6);
+INSERT INTO
+    location
+VALUES
+    (226, 'South Pool', 26, 'St Cyriac', '11-0-4', 6);
+INSERT INTO
+    location
+VALUES
+    (227, 'South Tawton', 15, 'St Andrew', '11-3-2', 6);
+INSERT INTO
+    location
+VALUES
+    (228, 'Spreyton', 15, 'St Michael', '12cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (229, 'St Giles in the Wood', 24, 'St Giles', '10-0-25', 6);
+INSERT INTO
+    location
+VALUES
+    (230, 'St Olave, City of London', 17, 'St Olave', '11-3-23', 8);
+INSERT INTO
+    location
+VALUES
+    (231, 'St Vedast, City of London', 17, 'St Vedast', '16-2-12', 6);
+INSERT INTO
+    location
+VALUES
+    (232, 'Staverton', 25, 'St Paul de Leon', '19-2-14', 6);
+INSERT INTO
+    location
+VALUES
+    (233, 'Stoke Fleming', 26, 'St Peter', '12-2-17', 8);
+INSERT INTO
+    location
+VALUES
+    (234, 'Stoke Gabriel', 25, 'St Gabriel', '17cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (235, 'Stokeinteignhead', 12, 'St Andrew', '10-0-3', 6);
+INSERT INTO
+    location
+VALUES
+    (236, 'Stokenham', 26, 'St Michael and All Angels', '15-2-6', 6);
+INSERT INTO
+    location
+VALUES
+    (237, 'Stoodleigh', 22, 'St Margaret', '7-0-3', 6);
+INSERT INTO
+    location
+VALUES
+    (238, 'Stratton', 17, 'St Andrew', '21-3-16', 8);
+INSERT INTO
+    location
+VALUES
+    (239, 'Swimbridge', 19, 'St James the Apostle', '11-3-3', 6);
+INSERT INTO
+    location
+VALUES
+    (240, 'Talaton', 16, 'St James Apostle and Martyr', '12-2-22', 6);
+INSERT INTO
+    location
+VALUES
+    (241, 'Tavistock', 21, 'St Eustachius', '24-0-5', 10);
+INSERT INTO
+    location
+VALUES
+    (242, 'Tawstock', 24, 'St Peter', '16-3-20', 8);
+INSERT INTO
+    location
+VALUES
+    (243, 'Tedburn St Mary', 10, 'St Mary the Virgin', '10-0-6', 6);
+INSERT INTO
+    location
+VALUES
+    (244, 'Thorverton', 3, 'St Thomas of Canterbury', '15-0-4', 10);
+INSERT INTO
+    location
+VALUES
+    (245, 'Throwleigh', 15, 'St Mary the Virgin', '8-1-24', 6);
+INSERT INTO
+    location
+VALUES
+    (246, 'Thurlestone', 26, 'All Saints', '13-0-3', 6);
+INSERT INTO
+    location
+VALUES
+    (247, 'Tiverton, St Paul', 22, 'St Paul', '8-3-5', 6);
+INSERT INTO
+    location
+VALUES
+    (248, 'Torquay, Babbacombe', 23, 'All Saints', '13-0-26', 8);
+INSERT INTO
+    location
+VALUES
+    (249, 'Torquay, Cockington', 23, 'SS Geogre and Mary', '8-3-5', 6);
+INSERT INTO
+    location
+VALUES
+(250, 'Torquay, St Marychurch', 23, 'St Mary the Virgin', '17-1-24', 10);
+INSERT INTO
+    location
+VALUES
+    (251, 'Torquay, Upton', 23, 'St Mary Magdalene', '14-2-12', 8);
+INSERT INTO
+    location
+VALUES
+    (252, 'Trusham', 11, 'St Michael and All Angels', '7cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (253, 'Ugborough', 9, 'St Peter', '19cwt', 8);
+INSERT INTO
+    location
+VALUES
+    (254, 'Unknown', 14, 'Not Applicable', 'NA', NULL);
+INSERT INTO
+    location
+VALUES
+    (255, 'Upton Pyne', 3, 'Our Lady', '8.5cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (256, 'Walkhampton', 21, 'St Mary the Virgin', '7-3-12', 6);
+INSERT INTO
+    location
+VALUES
+    (257, 'Warkleigh', 20, 'St John the Evangelist', '9-1-11', 6);
+INSERT INTO
+    location
+VALUES
+    (258, 'Washford Pyne', 3, 'St Peter', '7cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (259, 'Weare Giffard', 6, 'Holy Trinity', '7-1-26', 6);
+INSERT INTO
+    location
+VALUES
+    (260, 'Week St Mary', 17, 'St Mary the Virgin', '8-2-24', 6);
+INSERT INTO
+    location
+VALUES
+    (261, 'Welcombe', 6, 'St Nectan', '7-0-17', 6);
+INSERT INTO
+    location
+VALUES
+    (262, 'Wembury', 9, 'St Werburgh', '6-1-11', 6);
+INSERT INTO
+    location
+VALUES
+    (263, 'West Alvington', 26, 'All Saints', '16cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (264, 'West Buckland', 19, 'St Peter', '7-0-22', 6);
+INSERT INTO
+    location
+VALUES
+    (265, 'West Down', 2, 'St Calixtus', '8-2-3', 6);
+INSERT INTO
+    location
+VALUES
+(266, 'West Teignmouth (St James)', 10, 'St James the Less', '12-2-17', 8);
+INSERT INTO
+    location
+VALUES
+    (267, 'West Worlington', 20, 'St Mary', '7-3-21', 6);
+INSERT INTO
+    location
+VALUES
+    (268, 'Westleigh', 6, 'St Peter', '11-0-17', 6);
+INSERT INTO
+    location
+VALUES
+    (269, 'Whimple', 16, 'St Mary', '12-2-15', 6);
+INSERT INTO
+    location
+VALUES
+    (270, 'Whitchurch', 21, 'St Andrew', '11-1-8', 6);
+INSERT INTO
+    location
+VALUES
+    (271, 'Whitestone', 10, 'St Catherine', '11.5cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (272, 'Widecombe in the Moor', 11, 'St Pancras', '12-3-14', 8);
+INSERT INTO
+    location
+VALUES
+    (273, 'Winford', 17, 'Blessed Virgin Mery and St Peter', '13-3-26', 8);
+INSERT INTO
+    location
+VALUES
+    (274, 'Winkleigh', 24, 'All Saints', '19-0-27', 8);
+INSERT INTO
+    location
+VALUES
+    (275, 'Witheridge', 20, 'St John the Baptist', '23-3-6', 8);
+INSERT INTO
+    location
+VALUES
+(276, 'Woolfardisworthy (West) [Woolsery]', 6, 'Holy Trinity', '7-2-16', 6);
+INSERT INTO
+    location
+VALUES
+    (277, 'Yarnscombe', 24, 'St Andrew', '13cwt', 6);
+INSERT INTO
+    location
+VALUES
+    (278, 'Yealmpton', 9, 'St Bartholomew', '10-2-9', 6);
+INSERT INTO
+    location
+VALUES
+    (279, 'Zeal Monachorum', 3, 'St Peter', '8-0-26', 6);
 
 -- teams
-INSERT INTO team VALUES (1, 'Abbotsham', 6);
-INSERT INTO team VALUES (2, 'Alwington', 6);
-INSERT INTO team VALUES (3, 'Alwington B', 6);
-INSERT INTO team VALUES (4, 'Appledore', 6);
-INSERT INTO team VALUES (5, 'Appledore B', 6);
-INSERT INTO team VALUES (6, 'Appledore Ladies', 6);
-INSERT INTO team VALUES (7, 'Arlington', 19);
-INSERT INTO team VALUES (8, 'Arthur Froods VI', 13);
+INSERT INTO
+    team
+VALUES
+    (1, 'Abbotsham', 6);
+INSERT INTO
+    team
+VALUES
+    (2, 'Alwington', 6);
+INSERT INTO
+    team
+VALUES
+    (3, 'Alwington B', 6);
+INSERT INTO
+    team
+VALUES
+    (4, 'Appledore', 6);
+INSERT INTO
+    team
+VALUES
+    (5, 'Appledore B', 6);
+INSERT INTO
+    team
+VALUES
+    (6, 'Appledore Ladies', 6);
+INSERT INTO
+    team
+VALUES
+    (7, 'Arlington', 19);
+INSERT INTO
+    team
+VALUES
+    (8, 'Arthur Froods VI', 13);
 INSERT INTO team VALUES (9, 'Ashburton', 11);
 INSERT INTO team VALUES (10, 'Ashreigney', 24);
 INSERT INTO team VALUES (11, 'Atherington', 24);
