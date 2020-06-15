@@ -22,6 +22,10 @@ class LocationEntity extends Entity
      * @var string
      */
     private $tenorWeight;
+    /**
+     * @var null|int
+     */
+    private $numberOfBells;
 
     /**
      * @return string
@@ -85,5 +89,21 @@ class LocationEntity extends Entity
     public function setTenorWeight(string $tenorWeight): void
     {
         $this->tenorWeight = $tenorWeight;
+    }
+
+    /**
+     * @return null|int
+     */
+    public function getNumberOfBells(): ?int
+    {
+        return $this->numberOfBells;
+    }
+
+    /**
+     * @param int|null $numberOfBells
+     */
+    public function setNumberOfBells(?int $numberOfBells): void
+    {
+        $this->numberOfBells = $numberOfBells;
     }
 }

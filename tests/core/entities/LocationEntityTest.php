@@ -69,4 +69,19 @@ class LocationEntityTest extends TestCase
         );
     }
 
+    public function testNumberOfBellsProperty(): void
+    {
+        $location = new LocationEntity();
+        $location->setNumberOfBells(6);
+        $this->assertEquals(
+            6,
+            $location->getNumberOfBells(),
+            'Incorrect number of bells when integer'
+        );
+        $location->setNumberOfBells(null);
+        $this->assertNull(
+            $location->getNumberOfBells(),
+            'Incorrect number of bells when null'
+        );
+    }
 }
