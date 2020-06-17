@@ -22,7 +22,7 @@ class CompetitionDummy implements CompetitionRepositoryInterface
 
     public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
-        return new DrlCompetitionEntity();
+        return $this->createMockDrlCompetition();
     }
 
     /**

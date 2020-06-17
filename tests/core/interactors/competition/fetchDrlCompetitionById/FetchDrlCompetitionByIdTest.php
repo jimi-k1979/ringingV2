@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace core\interactors\competition\fetchDrlCompetitionById;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionById\FetchDrlCompetitionById;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionById\FetchDrlCompetitionByIdRequest;
 use DrlArchive\core\interactors\Interactor;
@@ -12,16 +14,20 @@ use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use mocks\CompetitionDummy;
 use mocks\CompetitionSpy;
 use mocks\GuestUserDummy;
+use mocks\LocationDummy;
+use mocks\LocationSpy;
 use mocks\PreseenterDummy;
 use mocks\PresenterSpy;
 use mocks\SecurityRepositoryDummy;
 use mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 use traits\CreateMockDrlCompetitionTrait;
+use traits\CreateMockLocationTrait;
 
 class FetchDrlCompetitionByIdTest extends TestCase
 {
     use CreateMockDrlCompetitionTrait;
+    use CreateMockLocationTrait;
 
     public function testInstantiation(): void
     {
@@ -60,6 +66,8 @@ class FetchDrlCompetitionByIdTest extends TestCase
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
+        $useCase->setLocationRepository(new LocationDummy());
+
         return $useCase;
     }
 
@@ -93,8 +101,10 @@ class FetchDrlCompetitionByIdTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $competitionSpy = new CompetitionSpy();
+        $competition = $this->createMockDrlCompetition();
+
         $competitionSpy->setSelectDrlCompetitionValue(
-            $this->createMockDrlCompetition()
+            $competition
         );
 
         $useCase = $this->createUseCase();
@@ -111,7 +121,7 @@ class FetchDrlCompetitionByIdTest extends TestCase
         );
         $this->assertEquals(
             [
-                'competition' => $this->createMockDrlCompetition()
+                'competition' => $competition,
             ],
             $response->getData(),
             'Incorrect response data'
@@ -150,4 +160,62 @@ class FetchDrlCompetitionByIdTest extends TestCase
             'Incorrect response data'
         );
     }
+
+    public function testFetchLocationWhenSingleTowerIsTrue(): void
+    {
+        $competition = $this->createMockDrlCompetition();
+        $competition->setSingleTowerCompetition(true);
+        $location = new LocationEntity();
+        $location->setId(444);
+        $competition->setUsualLocation($location);
+
+        $competitionSpy = new CompetitionSpy();
+        $competitionSpy->setSelectDrlCompetitionValue($competition);
+
+        $locationSpy = new LocationSpy();
+        $locationSpy->setSelectLocationValue($location);
+
+        $useCase = $this->createUseCase();
+        $useCase->setLocationRepository($locationSpy);
+        $useCase->setCompetitionRepository($competitionSpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $locationSpy->hasSelectLocationBeenCalled()
+        );
+    }
+
+    public function testSuccessfulResponseWithLocation(): void
+    {
+        $competition = $this->createMockDrlCompetition();
+        $competition->setSingleTowerCompetition(true);
+        $compLocation = new LocationEntity();
+        $compLocation->setId(555);
+        $competition->setUsualLocation($compLocation);
+        $competitionSpy = new CompetitionSpy();
+        $competitionSpy->setSelectDrlCompetitionValue($competition);
+
+        $fetchedLocation = $this->createMockLocation();
+        $locationSpy = new LocationSpy();
+        $locationSpy->setSelectLocationValue($fetchedLocation);
+
+        $expectedCompetition = $this->createMockDrlCompetition();
+        $expectedCompetition->setSingleTowerCompetition(true);
+        $expectedCompetition->setUsualLocation($fetchedLocation);
+
+        $presenterSpy = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenterSpy);
+        $useCase->setCompetitionRepository($competitionSpy);
+        $useCase->setLocationRepository($locationSpy);
+        $useCase->execute();
+
+        $response = $presenterSpy->getResponse();
+        $this->assertEquals(
+            ['competition' => $expectedCompetition],
+            $response->getData()
+        );
+    }
+
 }
