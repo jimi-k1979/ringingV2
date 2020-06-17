@@ -9,6 +9,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use Exception;
 
 /**
@@ -24,6 +25,10 @@ class FetchDrlCompetitionById extends Interactor
      */
     private $competitionRepository;
     /**
+     * @var LocationRepositoryInterface
+     */
+    private $locationRepository;
+    /**
      * @var DrlCompetitionEntity
      */
     private $competition;
@@ -32,6 +37,12 @@ class FetchDrlCompetitionById extends Interactor
         CompetitionRepositoryInterface $repository
     ): void {
         $this->competitionRepository = $repository;
+    }
+
+    public function setLocationRepository(
+        LocationRepositoryInterface $repository
+    ): void {
+        $this->locationRepository = $repository;
     }
 
     public function execute(): void
@@ -50,6 +61,13 @@ class FetchDrlCompetitionById extends Interactor
     {
         $this->competition = $this->competitionRepository
             ->selectDrlCompetition($this->request->getCompetitionId());
+        if ($this->competition->isSingleTowerCompetition()) {
+            $this->competition->setUsualLocation(
+                $this->locationRepository->selectLocation(
+                    $this->competition->getUsualLocation()->getId()
+                )
+            );
+        }
     }
 
     private function createResponse(): void
@@ -76,6 +94,5 @@ class FetchDrlCompetitionById extends Interactor
             ]
         );
     }
-
 
 }
