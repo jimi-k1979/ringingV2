@@ -153,7 +153,7 @@ class FetchDrlEventAndResultsTest extends TestCase
             'event' => [
                 'year' => '1970',
                 'competition' => 'Test competition',
-                'singleTower' => true,
+                'singleTower' => false,
                 'location' => 'Test tower',
                 'unusualTower' => false,
             ],
@@ -217,7 +217,7 @@ class FetchDrlEventAndResultsTest extends TestCase
             'event' => [
                 'year' => '1970',
                 'competition' => 'Test competition',
-                'singleTower' => true,
+                'singleTower' => false,
                 'location' => 'Test tower',
                 'unusualTower' => false,
             ],
@@ -278,7 +278,7 @@ class FetchDrlEventAndResultsTest extends TestCase
             'event' => [
                 'year' => '1970',
                 'competition' => 'Test competition',
-                'singleTower' => true,
+                'singleTower' => false,
                 'location' => 'Test tower',
                 'unusualTower' => false,
             ],

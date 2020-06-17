@@ -14,7 +14,7 @@ trait CreateMockDrlCompetitionTrait
         $entity = new DrlCompetitionEntity();
         $entity->setId(999);
         $entity->setName('Test competition');
-        $entity->setSingleTowerCompetition(true);
+        $entity->setSingleTowerCompetition(false);
 
         return $entity;
     }

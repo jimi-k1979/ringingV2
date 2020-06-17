@@ -42,7 +42,7 @@ class CreateDrlCompetitionTest extends TestCase
         $request = new CreateDrlCompetitionRequest(
             [
                 CreateDrlCompetitionRequest::COMPETITION_NAME => 'Test competition',
-                CreateDrlCompetitionRequest::IS_SINGLE_TOWER => true,
+                CreateDrlCompetitionRequest::IS_SINGLE_TOWER => false,
             ]
         );
 
@@ -165,7 +165,7 @@ class CreateDrlCompetitionTest extends TestCase
             [
                 'id' => 999,
                 'name' => 'Test competition',
-                'singleTower' => true,
+                'singleTower' => false,
             ],
             $response->getData()
         );

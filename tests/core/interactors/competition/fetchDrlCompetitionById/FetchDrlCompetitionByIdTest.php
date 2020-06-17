@@ -164,6 +164,7 @@ class FetchDrlCompetitionByIdTest extends TestCase
     public function testFetchLocationWhenSingleTowerIsTrue(): void
     {
         $competition = $this->createMockDrlCompetition();
+        $competition->setSingleTowerCompetition(true);
         $location = new LocationEntity();
         $location->setId(444);
         $competition->setUsualLocation($location);
@@ -172,6 +173,7 @@ class FetchDrlCompetitionByIdTest extends TestCase
         $competitionSpy->setSelectDrlCompetitionValue($competition);
 
         $locationSpy = new LocationSpy();
+        $locationSpy->setSelectLocationValue($location);
 
         $useCase = $this->createUseCase();
         $useCase->setLocationRepository($locationSpy);
@@ -180,6 +182,39 @@ class FetchDrlCompetitionByIdTest extends TestCase
 
         $this->assertTrue(
             $locationSpy->hasSelectLocationBeenCalled()
+        );
+    }
+
+    public function testSuccessfulResponseWithLocation(): void
+    {
+        $competition = $this->createMockDrlCompetition();
+        $competition->setSingleTowerCompetition(true);
+        $compLocation = new LocationEntity();
+        $compLocation->setId(555);
+        $competition->setUsualLocation($compLocation);
+        $competitionSpy = new CompetitionSpy();
+        $competitionSpy->setSelectDrlCompetitionValue($competition);
+
+        $fetchedLocation = $this->createMockLocation();
+        $locationSpy = new LocationSpy();
+        $locationSpy->setSelectLocationValue($fetchedLocation);
+
+        $expectedCompetition = $this->createMockDrlCompetition();
+        $expectedCompetition->setSingleTowerCompetition(true);
+        $expectedCompetition->setUsualLocation($fetchedLocation);
+
+        $presenterSpy = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenterSpy);
+        $useCase->setCompetitionRepository($competitionSpy);
+        $useCase->setLocationRepository($locationSpy);
+        $useCase->execute();
+
+        $response = $presenterSpy->getResponse();
+        $this->assertEquals(
+            ['competition' => $expectedCompetition],
+            $response->getData()
         );
     }
 
