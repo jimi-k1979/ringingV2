@@ -25,3 +25,5 @@ function renderFaults(faultInt) {
     }
     return faultInt;
 }
+
+const earliestYear = 1920;
