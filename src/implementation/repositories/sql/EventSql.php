@@ -22,6 +22,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     public const SELECT_DRL_EVENT_COMPETITION_ID = 'de.competitionID';
     public const SELECT_DRL_EVENT_LOCATION_ID = 'de.locationID';
     public const SELECT_DRL_EVENT_IS_UNUSUAL_TOWER = 'de.isUnusualTower';
+    public const SELECT_USUAL_LOCATION = 'usualLocation.location';
 
     // aliases
     public const FIELD_NAME_ID = ' AS id';
@@ -30,11 +31,16 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     public const FIELD_NAME_COMPETITION_ID = ' AS competitionId';
     public const FIELD_NAME_LOCATION_ID = ' AS locationId';
     public const FIELD_NAME_IS_UNUSUAL_TOWER = ' AS isUnusualTower';
+    public const FIELD_NAME_USUAL_LOCATION = ' AS usualLocation';
 
     // tables and join
     public const TABLE_DRL_EVENT = 'DRL_event de';
     public const INNER_JOIN_DRL_COMPETITION =
         'INNER JOIN DRL_competition dc ON de.competitionID = dc.id';
+    public const INNER_JOIN_DRL_COMPETITION_ON_ID_AND_NAME = <<<join
+INNER JOIN DRL_competition dc ON de.competitionID = dc.id
+AND dc.competitionName = :competitionName
+join;
 
     // where clauses
     public const WHERE_DRL_COMPETITION_ID_IS = 'de.competitionID = :competitionId';
@@ -167,12 +173,15 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         if (
             isset($row[substr(self::FIELD_NAME_COMPETITION_ID, 4)]) ||
             isset($row[substr(CompetitionSql::FIELD_NAME_COMPETITION_NAME, 4)]) ||
-            isset($row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)])
+            isset($row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)]) ||
+            isset($row[substr(self::FIELD_NAME_USUAL_LOCATION, 4)])
         ) {
             $competition = new DrlCompetitionEntity();
 
             if (isset($row[substr(self::FIELD_NAME_COMPETITION_ID, 4)])) {
-                $competition->setId((int)$row[substr(self::FIELD_NAME_COMPETITION_ID, 4)]);
+                $competition->setId(
+                    (int)$row[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
+                );
             }
 
             if (isset($row[substr(CompetitionSql::FIELD_NAME_COMPETITION_NAME, 4)])) {
@@ -184,6 +193,13 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
                 $competition->setSingleTowerCompetition(
                     (bool)$row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)]
                 );
+            }
+            if (isset($row[substr(self::FIELD_NAME_USUAL_LOCATION, 4)])) {
+                $location = new LocationEntity();
+                $location->setLocation(
+                    $row[substr(self::FIELD_NAME_USUAL_LOCATION, 4)]
+                );
+                $competition->setUsualLocation($location);
             }
 
             $entity->setCompetition($competition);
@@ -310,5 +326,50 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
         }
 
         return $returnArray;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity {
+        $query = new DatabaseQueryBuilder();
+
+        $query->setFields(
+            [
+                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_EVENT_ID,
+                CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
+                self::SELECT_USUAL_LOCATION . self::FIELD_NAME_USUAL_LOCATION,
+            ]
+        );
+        $query->setTablesAndJoins(
+            [
+                self::TABLE_DRL_EVENT,
+                self::INNER_JOIN_DRL_COMPETITION_ON_ID_AND_NAME,
+                CompetitionSql::LEFT_JOIN_DRL_COMPETITION_TO_USUAL_LOCATION,
+            ]
+        );
+        $query->setWhereClauses([self::WHERE_YEAR_IS]);
+
+        $params = [
+            'competitionName' => $competitionName,
+            'year' => $year,
+        ];
+        $result = $this->database->query(
+            $this->buildSelectQuery($query),
+            $params,
+            Database::SINGLE_ROW
+        );
+
+        if (empty($result)) {
+            throw new RepositoryNoResults(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->createDrlEventEntity($result);
     }
 }

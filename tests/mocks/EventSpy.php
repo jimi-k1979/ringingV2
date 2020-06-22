@@ -56,7 +56,7 @@ class EventSpy implements EventRepositoryInterface
      */
     private $fetchDrlEventsByCompetitionAndLocationIdsThrowsException = false;
     /**
-     * @var array
+     * @var DrlEventEntity[]
      */
     private $fetchDrlEventsByCompetitionAndLocationIdsValue = [];
     /**
@@ -68,9 +68,21 @@ class EventSpy implements EventRepositoryInterface
      */
     private $fetchDrlEventsByYearThrowsException = false;
     /**
-     * @var
+     * @var DrlEventEntity[]
      */
     private $fetchDrlEventsByYearValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventByYearAndCompetitionNameCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlEventByYearAndCompetitionNameThrowsException = false;
+    /**
+     * @var DrlEventEntity
+     */
+    private $fetchDrlEventByYearAndCompetitionNameValue;
 
 
     public function setThrowException(): void
@@ -240,6 +252,41 @@ class EventSpy implements EventRepositoryInterface
     public function setFetchDrlEventsByYearValue(array $value): void
     {
         $this->fetchDrlEventsByYearValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity {
+        $this->fetchDrlEventByYearAndCompetitionNameCalled = true;
+        if ($this->fetchDrlEventByYearAndCompetitionNameThrowsException) {
+            throw new RepositoryNoResults(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventByYearAndCompetitionNameValue ??
+            $this->createMockDrlEvent();
+    }
+
+    public function hasFetchDrlEventByYearAndCompetitionNameBeenCalled(): bool
+    {
+        return $this->fetchDrlEventByYearAndCompetitionNameCalled;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionNameThrowsException(): void
+    {
+        $this->fetchDrlEventByYearAndCompetitionNameThrowsException = true;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionNameValue(
+        DrlEventEntity $entity
+    ): void {
+        $this->fetchDrlEventByYearAndCompetitionNameValue = $entity;
     }
 
 }

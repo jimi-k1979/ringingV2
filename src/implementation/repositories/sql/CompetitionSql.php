@@ -44,6 +44,8 @@ join;
         'LEFT JOIN location l ON dc.usualLocationID = l.id';
     public const LEFT_JOIN_OTHER_COMPETITION_TO_LOCATION =
         'LEFT JOIN location l ON oc.usualLocationID = l.id';
+    public const LEFT_JOIN_DRL_COMPETITION_TO_USUAL_LOCATION =
+        'LEFT JOIN location usualLocation ON dc.usualLocationID = usualLocation.id';
 
     // where clauses
     public const WHERE_DRL_COMPETITION_NAME_LIKE =

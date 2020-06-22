@@ -49,4 +49,14 @@ class EventDummy implements EventRepositoryInterface
     {
         return [$this->createMockDrlEvent()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity {
+        return $this->createMockDrlEvent();
+    }
 }

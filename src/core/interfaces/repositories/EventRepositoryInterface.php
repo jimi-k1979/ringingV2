@@ -47,4 +47,14 @@ interface EventRepositoryInterface
      */
     public function fetchDrlEventsByYear(string $year): array;
 
+    /**
+     * @param string $year
+     * @param string $competitionName
+     * @return DrlEventEntity
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity;
+
 }
