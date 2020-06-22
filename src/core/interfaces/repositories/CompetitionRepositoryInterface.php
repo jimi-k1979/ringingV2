@@ -6,6 +6,8 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 
 interface CompetitionRepositoryInterface
 {
@@ -37,4 +39,14 @@ interface CompetitionRepositoryInterface
      * @return AbstractCompetitionEntity[]
      */
     public function fuzzySearchAllCompetitions(string $search): array;
+
+    /**
+     * @param string $competitionName
+     * @return DrlCompetitionEntity
+     * @throws RepositoryNoResults
+     * @throws GeneralRepositoryErrorException
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity;
 }

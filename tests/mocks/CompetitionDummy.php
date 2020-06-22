@@ -7,6 +7,7 @@ namespace mocks;
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use traits\CreateMockDrlCompetitionTrait;
 
@@ -47,5 +48,14 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     public function fuzzySearchAllCompetitions(string $search): array
     {
         return [$this->createMockDrlCompetition()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity {
+        return $this->createMockDrlCompetition();
     }
 }

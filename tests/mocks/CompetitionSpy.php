@@ -68,6 +68,18 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @var AbstractCompetitionEntity[]
      */
     private $fuzzySearchAllCompetitionsValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByNameCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByNameThrowsException = false;
+    /**
+     * @var DrlCompetitionEntity
+     */
+    private $fetchDrlCompetitionByNameValue;
 
 
     public function setRepositoryThrowsException(): void
@@ -241,6 +253,37 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     public function setFuzzySearchAllCompetitionsValue(array $value): void
     {
         $this->fuzzySearchAllCompetitionsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByName(string $competitionName): DrlCompetitionEntity
+    {
+        $this->fetchDrlCompetitionByNameCalled = true;
+        if ($this->fetchDrlCompetitionByNameThrowsException) {
+            throw new RepositoryNoResults(
+                'No competition found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fetchDrlCompetitionByNameValue ??
+            $this->createMockDrlCompetition();
+    }
+
+    public function hasFetchDrlCompetitionByNameBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByNameCalled;
+    }
+
+    public function setFetchDrlCompetitionByNameThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByNameThrowsException = true;
+    }
+
+    public function setFetchDrlCompetitionByNameValue(array $value): void
+    {
+        $this->fetchDrlCompetitionByNameValue = $value;
     }
 
 }

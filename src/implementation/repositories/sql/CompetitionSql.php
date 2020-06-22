@@ -54,6 +54,7 @@ join;
         'oc.competitionName LIKE :search';
     public const WHERE_DRL_COMPETITION_ID_IS = 'dc.id = :id';
     public const WHERE_OTHER_COMPETITION_ID_IS = 'oc.id = :id';
+    public const WHERE_DRL_COMPETITION_NAME_IS = 'dc.competitionName = :name';
 
     // order bys
     public const ORDER_BY_COMPETITION_NAME = 'competitionName';
@@ -327,4 +328,42 @@ join;
         ];
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity {
+        $query = new DatabaseQueryBuilder();
+        $query->setFields(
+            array_merge(
+                $this->allDrlCompetitionFields(),
+                [
+                    LocationSql::SELECT_LOCATION . LocationSql::FIELD_NAME_LOCATION,
+                ]
+            )
+        );
+        $query->setTablesAndJoins(
+            [
+                self::TABLE_DRL_COMPETITION,
+                self::LEFT_JOIN_DRL_COMPETITION_TO_LOCATION,
+            ]
+        );
+        $query->setWhereClauses([self::WHERE_DRL_COMPETITION_NAME_IS]);
+
+        $results = $this->database->query(
+            $this->buildSelectQuery($query),
+            ['name' => $competitionName],
+            Database::SINGLE_ROW
+        );
+
+        if (empty($results)) {
+            throw new RepositoryNoResults(
+                'No competition found for that id',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->createDrlCompetitionEntity($results);
+    }
 }
