@@ -6,10 +6,10 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\implementation\repositories\sql\JudgeSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlEventTrait;
-use traits\StripStringTrait;
+use DrlArchive\traits\CreateMockDrlEventTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class JudgeSqlTest extends TestCase
 {

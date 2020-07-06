@@ -9,16 +9,16 @@ use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearch;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\Interactor;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\CompetitionDummy;
+use DrlArchive\mocks\CompetitionSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class DrlCompetitionFuzzySearchTest extends TestCase
 {

@@ -8,16 +8,16 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\readDrlEvent\ReadDrlEvent;
 use DrlArchive\core\interactors\event\readDrlEvent\ReadDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
-use mocks\EventDummy;
-use mocks\EventSpy;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\ResultDummy;
-use mocks\ResultSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\EventDummy;
+use DrlArchive\mocks\EventSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\ResultDummy;
+use DrlArchive\mocks\ResultSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 
 class ReadDrlEventTest extends TestCase

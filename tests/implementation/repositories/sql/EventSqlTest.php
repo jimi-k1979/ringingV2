@@ -8,9 +8,9 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\implementation\repositories\sql\EventSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\StripStringTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class EventSqlTest extends TestCase
 {

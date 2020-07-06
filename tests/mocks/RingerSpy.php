@@ -8,7 +8,7 @@ namespace DrlArchive\mocks;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
-use traits\CreateMockRingerTrait;
+use DrlArchive\traits\CreateMockRingerTrait;
 
 class RingerSpy implements RingerRepositoryInterface
 {

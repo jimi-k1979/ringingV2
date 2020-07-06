@@ -7,7 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
-use traits\CreateMockTeamTrait;
+use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamDummy implements TeamRepositoryInterface
 {

@@ -9,7 +9,7 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionDummy implements CompetitionRepositoryInterface
 {

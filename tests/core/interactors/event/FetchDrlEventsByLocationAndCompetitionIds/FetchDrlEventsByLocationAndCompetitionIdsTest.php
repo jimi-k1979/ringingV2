@@ -9,15 +9,15 @@ use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\
 use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use mocks\EventDummy;
-use mocks\EventSpy;
-use mocks\GuestUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\EventDummy;
+use DrlArchive\mocks\EventSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlEventTrait;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 
 class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
 {

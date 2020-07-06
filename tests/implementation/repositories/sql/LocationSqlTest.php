@@ -6,9 +6,9 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\implementation\repositories\sql\LocationSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\StripStringTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class LocationSqlTest extends TestCase
 {

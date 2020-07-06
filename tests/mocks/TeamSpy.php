@@ -8,7 +8,7 @@ namespace DrlArchive\mocks;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
-use traits\CreateMockTeamTrait;
+use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamSpy implements TeamRepositoryInterface
 {

@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
-use traits\CreateMockJudgeTrait;
+use DrlArchive\traits\CreateMockJudgeTrait;
 
 class JudgeSpy implements JudgeRepositoryInterface
 {

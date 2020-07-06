@@ -7,9 +7,9 @@ namespace DrlArchive\implementation\repositories\sql;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\OtherCompetitionEntity;
 use DrlArchive\implementation\repositories\sql\CompetitionSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\StripStringTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class CompetitionSqlTest extends TestCase
 {

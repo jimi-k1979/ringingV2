@@ -11,19 +11,19 @@ use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use mocks\EventDummy;
-use mocks\EventSpy;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
-use mocks\TransactionManagerDummy;
-use mocks\TransactionManagerSpy;
+use DrlArchive\mocks\EventDummy;
+use DrlArchive\mocks\EventSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\TransactionManagerDummy;
+use DrlArchive\mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
-use traits\CreateMockLocationTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockLocationTrait;
 
 class CreateDrlEventTest extends TestCase
 {
