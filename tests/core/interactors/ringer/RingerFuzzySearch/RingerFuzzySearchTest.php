@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\ringer\RingerFuzzySearch;
+namespace DrlArchive\core\interactors\ringer\RingerFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\RingerEntity;

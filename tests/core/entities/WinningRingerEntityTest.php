@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\entities;
+namespace DrlArchive\core\entities;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\Entity;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\fetchDrlCompetitionById;
+namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionById;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace implementation\repositories\sql;
+namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
@@ -288,6 +288,9 @@ sql;
         }
     }
 
+    /**
+     * @throws RepositoryNoResults
+     */
     public function testFetchDrlEventByYearAndCompetitionName(): void
     {
         $databaseMock = new DatabaseMock();
@@ -309,8 +312,15 @@ sql;
         $expectedSql = <<<sql
 SELECT
     de.id AS eventId,
+    de.year AS year,
+    de.isUnusualTower AS isUnusualTower,
+    de.competitionID AS competitionId,
+    dc.competitionName AS competitionName,
     dc.isSingleTower AS isSingleTower,
-    usualLocation.location AS usualLocation    
+    dc.usualLocationID AS usualLocationId,
+    usualLocation.location AS usualLocation,
+    de.locationID AS locationId,
+    l.location AS location
 FROM
     DRL_event de
     INNER JOIN DRL_competition dc 
@@ -318,6 +328,8 @@ FROM
         AND dc.competitionName = :competitionName
     LEFT JOIN location usualLocation 
         ON dc.usualLocationID = usualLocation.id
+    LEFT JOIN location l
+        ON de.locationID = l.id
 WHERE
     de.year = :year
 sql;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\allCompetitionFuzzySearch;
+namespace DrlArchive\core\interactors\competition\allCompetitionFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearch;

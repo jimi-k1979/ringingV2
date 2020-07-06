@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace implementation\repositories\sql;
+namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\implementation\repositories\sql\LocationSql;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\location\LocationFuzzySearch;
+namespace DrlArchive\core\interactors\location\LocationFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;

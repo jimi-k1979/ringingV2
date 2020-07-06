@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\createDrlCompetition;
+namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;

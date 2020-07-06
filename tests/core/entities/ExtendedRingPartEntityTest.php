@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\entities;
+namespace DrlArchive\core\entities;
 
 use DateTime;
 use DrlArchive\core\entities\Entity;

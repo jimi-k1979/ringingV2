@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\location\createLocation;
+namespace DrlArchive\core\interactors\location\createLocation;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\FetchDrlEventsByYear;
+namespace DrlArchive\core\interactors\event\FetchDrlEventsByYear;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYear;

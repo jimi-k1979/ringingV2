@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\team\CreateTeam;
+namespace DrlArchive\core\interactors\team\CreateTeam;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;

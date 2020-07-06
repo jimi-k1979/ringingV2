@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\readDrlEvent;
+namespace DrlArchive\core\interactors\event\readDrlEvent;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\readDrlEvent\ReadDrlEvent;

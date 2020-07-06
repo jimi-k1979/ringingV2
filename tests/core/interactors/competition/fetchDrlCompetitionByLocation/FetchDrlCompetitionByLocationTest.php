@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\fetchDrlCompetitionByLocation;
+namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocation;

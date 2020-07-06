@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\CreateDrlEventTest;
+namespace DrlArchive\core\interactors\event\CreateDrlEventTest;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;

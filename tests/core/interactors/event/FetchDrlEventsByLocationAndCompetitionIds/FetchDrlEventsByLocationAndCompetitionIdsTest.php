@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
+namespace DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIds;

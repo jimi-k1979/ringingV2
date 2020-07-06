@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\FetchEventsByCompetition;
+namespace DrlArchive\core\interactors\event\FetchEventsByCompetition;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
