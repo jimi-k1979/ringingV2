@@ -45,8 +45,8 @@ services:
     build:
       context: .docker/mysql
     volumes:
-      - ../dbFiles/:/dbFiles/
-      - ../dbScripts/:/docker-entrypoint-initdb.d/
+      - ../dbFiles:/dbFiles/
+      - ../dbScripts:/docker-entrypoint-initdb.d/
     networks:
       - web-network
     ports:

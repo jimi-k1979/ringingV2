@@ -258,8 +258,9 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fetchDrlCompetitionByName(string $competitionName): DrlCompetitionEntity
-    {
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity {
         $this->fetchDrlCompetitionByNameCalled = true;
         if ($this->fetchDrlCompetitionByNameThrowsException) {
             throw new RepositoryNoResults(
@@ -281,8 +282,9 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         $this->fetchDrlCompetitionByNameThrowsException = true;
     }
 
-    public function setFetchDrlCompetitionByNameValue(array $value): void
-    {
+    public function setFetchDrlCompetitionByNameValue(
+        DrlCompetitionEntity $value
+    ): void {
         $this->fetchDrlCompetitionByNameValue = $value;
     }
 

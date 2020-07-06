@@ -41,6 +41,8 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
 INNER JOIN DRL_competition dc ON de.competitionID = dc.id
 AND dc.competitionName = :competitionName
 join;
+    public const LEFT_JOIN_LOCATION_ON_LOCATION_ID =
+        'LEFT JOIN location l ON de.locationID = l.id';
 
     // where clauses
     public const WHERE_DRL_COMPETITION_ID_IS = 'de.competitionID = :competitionId';
@@ -340,8 +342,15 @@ join;
         $query->setFields(
             [
                 self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_EVENT_ID,
+                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
+                self::SELECT_DRL_EVENT_IS_UNUSUAL_TOWER . self::FIELD_NAME_IS_UNUSUAL_TOWER,
+                self::SELECT_DRL_EVENT_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
                 CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
+                CompetitionSql::SELECT_DRL_COMPETITION_USUAL_LOCATION_ID . CompetitionSql::FIELD_NAME_USUAL_LOCATION_ID,
                 self::SELECT_USUAL_LOCATION . self::FIELD_NAME_USUAL_LOCATION,
+                self::SELECT_DRL_EVENT_LOCATION_ID . self::FIELD_NAME_LOCATION_ID,
+                LocationSql::SELECT_LOCATION . LocationSql::FIELD_NAME_LOCATION,
             ]
         );
         $query->setTablesAndJoins(
@@ -349,6 +358,7 @@ join;
                 self::TABLE_DRL_EVENT,
                 self::INNER_JOIN_DRL_COMPETITION_ON_ID_AND_NAME,
                 CompetitionSql::LEFT_JOIN_DRL_COMPETITION_TO_USUAL_LOCATION,
+                self::LEFT_JOIN_LOCATION_ON_LOCATION_ID,
             ]
         );
         $query->setWhereClauses([self::WHERE_YEAR_IS]);
