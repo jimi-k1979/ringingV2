@@ -3,3 +3,4 @@ docker-compose.yml
 dbFiles
 vendor
 /html/phpinfo.php
+/node_modules/
