@@ -1,6 +1,26 @@
 {
   "name": "ringingv2",
   "version": "1.0.0",
-  "dependencies": {
-  }
+  "description": "ringing db fe",
+  "main": "./html/node/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.10.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimi-k1979/ringingV2.git"
+  },
+  "author": "James Kerslake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimi-k1979/ringingV2/issues"
+  },
+  "homepage": "https://github.com/jimi-k1979/ringingV2#readme"
 }
