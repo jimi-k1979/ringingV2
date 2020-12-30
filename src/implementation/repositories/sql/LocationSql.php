@@ -167,7 +167,7 @@ class LocationSql
 
         if (isset($row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)])) {
             $entity->setNumberOfBells(
-                $row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)]
+                (int)$row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)]
             );
         }
         return $entity;
