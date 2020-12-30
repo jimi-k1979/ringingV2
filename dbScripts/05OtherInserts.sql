@@ -165,312 +165,1192 @@ INSERT INTO other_competition
 VALUES (82, 'Woodleigh Deanery - junior section', 0, NULL);
 
 -- events
-INSERT INTO other_event
-VALUES (1, '2010', 31, 33);
-INSERT INTO other_event
-VALUES (2, '2010', 33, 212);
-INSERT INTO other_event
-VALUES (3, '2010', 56, 144);
-INSERT INTO other_event
-VALUES (4, '2010', 64, 76);
-INSERT INTO other_event
-VALUES (5, '2011', 27, 137);
-INSERT INTO other_event
-VALUES (6, '2010', 57, 35);
-INSERT INTO other_event
-VALUES (7, '2010', 65, 222);
-INSERT INTO other_event
-VALUES (8, '2010', 66, 234);
-INSERT INTO other_event VALUES (9, '2010', 34, 156);
-INSERT INTO other_event VALUES (10, '2011', 40, 1);
-INSERT INTO other_event VALUES (11, '2011', 41, 117);
-INSERT INTO other_event VALUES (12, '2011', 42, 131);
-INSERT INTO other_event VALUES (13, '2011', 39, 183);
-INSERT INTO other_event VALUES (14, '2010', 67, 71);
-INSERT INTO other_event VALUES (15, '2011', 23, 99);
-INSERT INTO other_event VALUES (16, '2010', 58, 170);
-INSERT INTO other_event VALUES (17, '2010', 68, 38);
-INSERT INTO other_event VALUES (18, '2010', 35, 86);
-INSERT INTO other_event VALUES (19, '2011', 22, 120);
-INSERT INTO other_event VALUES (20, '2011', 21, 120);
-INSERT INTO other_event VALUES (21, '2010', 69, 79);
-INSERT INTO other_event VALUES (22, '2010', 63, 183);
-INSERT INTO other_event VALUES (23, '2010', 36, 46);
-INSERT INTO other_event VALUES (24, '2010', 59, 39);
-INSERT INTO other_event VALUES (25, '2011', 55, 42);
-INSERT INTO other_event VALUES (26, '2011', 82, 211);
-INSERT INTO other_event VALUES (27, '2011', 37, 174);
-INSERT INTO other_event VALUES (28, '2011', 45, 156);
-INSERT INTO other_event VALUES (29, '2011', 48, 198);
-INSERT INTO other_event VALUES (30, '2011', 4, 278);
-INSERT INTO other_event VALUES (31, '2011', 3, 278);
-INSERT INTO other_event VALUES (32, '2011', 52, 234);
-INSERT INTO other_event VALUES (33, '2011', 6, 183);
-INSERT INTO other_event VALUES (34, '2011', 61, 190);
-INSERT INTO other_event VALUES (35, '2011', 60, 190);
-INSERT INTO other_event VALUES (36, '2010', 25, 54);
-INSERT INTO other_event VALUES (37, '2010', 26, 54);
-INSERT INTO other_event VALUES (38, '2010', 60, 149);
-INSERT INTO other_event VALUES (39, '2010', 6, 183);
-INSERT INTO other_event VALUES (40, '2010', 52, 234);
-INSERT INTO other_event VALUES (41, '2010', 3, 48);
-INSERT INTO other_event VALUES (42, '2010', 45, 46);
-INSERT INTO other_event VALUES (43, '2010', 46, 46);
-INSERT INTO other_event VALUES (44, '2010', 82, 81);
-INSERT INTO other_event VALUES (45, '2010', 37, 129);
-INSERT INTO other_event VALUES (46, '2009', 68, 79);
-INSERT INTO other_event VALUES (47, '2010', 22, 213);
-INSERT INTO other_event VALUES (48, '2010', 21, 213);
-INSERT INTO other_event VALUES (49, '2009', 58, 170);
-INSERT INTO other_event VALUES (50, '2009', 57, 175);
-INSERT INTO other_event VALUES (51, '2009', 58, 170);
-INSERT INTO other_event VALUES (52, '2009', 67, 234);
-INSERT INTO other_event VALUES (53, '2009', 63, 183);
-INSERT INTO other_event VALUES (54, '2009', 66, 38);
-INSERT INTO other_event VALUES (55, '2010', 23, 250);
-INSERT INTO other_event VALUES (56, '2010', 40, 62);
-INSERT INTO other_event VALUES (57, '2010', 41, 251);
-INSERT INTO other_event VALUES (58, '2010', 42, 248);
-INSERT INTO other_event VALUES (59, '2010', 39, 183);
-INSERT INTO other_event VALUES (60, '2009', 65, 222);
-INSERT INTO other_event VALUES (61, '2010', 27, 137);
-INSERT INTO other_event VALUES (62, '2009', 57, 35);
-INSERT INTO other_event VALUES (63, '2009', 64, 163);
-INSERT INTO other_event VALUES (64, '2009', 56, 205);
-INSERT INTO other_event VALUES (65, '2009', 56, 27);
-INSERT INTO other_event VALUES (66, '2009', 54, 170);
-INSERT INTO other_event VALUES (67, '2009', 53, 170);
-INSERT INTO other_event VALUES (68, '2009', 25, 126);
-INSERT INTO other_event VALUES (69, '2009', 26, 126);
-INSERT INTO other_event VALUES (70, '2009', 43, 183);
-INSERT INTO other_event VALUES (71, '2009', 61, 109);
-INSERT INTO other_event VALUES (72, '2009', 60, 109);
-INSERT INTO other_event VALUES (73, '2009', 48, 193);
-INSERT INTO other_event VALUES (74, '2009', 28, 150);
-INSERT INTO other_event VALUES (75, '2009', 45, 186);
-INSERT INTO other_event VALUES (76, '2009', 46, 186);
-INSERT INTO other_event VALUES (77, '2009', 37, 265);
-INSERT INTO other_event VALUES (78, '2009', 82, 53);
-INSERT INTO other_event VALUES (79, '2008', 69, 79);
-INSERT INTO other_event VALUES (80, '2008', 63, 183);
-INSERT INTO other_event VALUES (81, '2009', 22, 156);
-INSERT INTO other_event VALUES (82, '2009', 21, 156);
-INSERT INTO other_event VALUES (83, '2008', 68, 234);
-INSERT INTO other_event VALUES (84, '2009', 40, 141);
-INSERT INTO other_event VALUES (85, '2009', 41, 176);
-INSERT INTO other_event VALUES (86, '2009', 42, 235);
-INSERT INTO other_event VALUES (87, '2009', 39, 183);
-INSERT INTO other_event VALUES (88, '2008', 67, 38);
-INSERT INTO other_event VALUES (89, '2008', 66, 222);
-INSERT INTO other_event VALUES (90, '2008', 65, 66);
-INSERT INTO other_event VALUES (91, '2008', 12, 26);
-INSERT INTO other_event VALUES (92, '2008', 11, 147);
-INSERT INTO other_event VALUES (93, '2008', 10, 213);
-INSERT INTO other_event VALUES (94, '2008', 64, 78);
-INSERT INTO other_event VALUES (95, '2008', 16, 74);
-INSERT INTO other_event VALUES (96, '2008', 15, 74);
-INSERT INTO other_event VALUES (97, '2008', 51, 229);
-INSERT INTO other_event VALUES (98, '2008', 38, 170);
-INSERT INTO other_event VALUES (99, '2008', 80, 168);
-INSERT INTO other_event VALUES (100, '2008', 79, 168);
-INSERT INTO other_event VALUES (101, '2008', 9, 279);
-INSERT INTO other_event VALUES (102, '2008', 25, 204);
-INSERT INTO other_event VALUES (103, '2008', 26, 204);
-INSERT INTO other_event VALUES (104, '2008', 61, 261);
-INSERT INTO other_event VALUES (105, '2008', 60, 261);
-INSERT INTO other_event VALUES (106, '2008', 45, 114);
-INSERT INTO other_event VALUES (107, '2008', 46, 114);
-INSERT INTO other_event VALUES (108, '2008', 37, 70);
-INSERT INTO other_event VALUES (109, '2008', 82, 217);
-INSERT INTO other_event VALUES (110, '2007', 14, 64);
-INSERT INTO other_event VALUES (111, '2007', 8, 183);
-INSERT INTO other_event VALUES (112, '2008', 22, 86);
-INSERT INTO other_event VALUES (113, '2008', 21, 86);
-INSERT INTO other_event VALUES (114, '2007', 68, 79);
-INSERT INTO other_event VALUES (115, '2007', 63, 183);
-INSERT INTO other_event VALUES (116, '2007', 13, 26);
-INSERT INTO other_event VALUES (117, '2008', 40, 36);
-INSERT INTO other_event VALUES (118, '2008', 41, 58);
-INSERT INTO other_event VALUES (119, '2008', 42, 188);
-INSERT INTO other_event VALUES (120, '2008', 39, 183);
-INSERT INTO other_event VALUES (121, '2007', 67, 38);
-INSERT INTO other_event VALUES (122, '2007', 66, 222);
-INSERT INTO other_event VALUES (123, '2007', 65, 234);
-INSERT INTO other_event VALUES (124, '2007', 12, 85);
-INSERT INTO other_event VALUES (125, '2007', 11, 258);
-INSERT INTO other_event VALUES (126, '2007', 64, 66);
-INSERT INTO other_event VALUES (127, '2007', 15, 74);
-INSERT INTO other_event VALUES (128, '2007', 25, 91);
-INSERT INTO other_event VALUES (129, '2007', 26, 91);
-INSERT INTO other_event VALUES (130, '2007', 7, 279);
-INSERT INTO other_event VALUES (131, '2007', 50, 215);
-INSERT INTO other_event VALUES (132, '2007', 48, 214);
-INSERT INTO other_event VALUES (133, '2007', 45, 182);
-INSERT INTO other_event VALUES (134, '2007', 46, 182);
-INSERT INTO other_event VALUES (135, '2007', 82, 223);
-INSERT INTO other_event VALUES (136, '2006', 11, 147);
-INSERT INTO other_event VALUES (137, '2006', 8, 183);
-INSERT INTO other_event VALUES (138, '2007', 22, 125);
-INSERT INTO other_event VALUES (139, '2007', 21, 125);
-INSERT INTO other_event VALUES (140, '2006', 66, 79);
-INSERT INTO other_event VALUES (141, '2006', 65, 222);
-INSERT INTO other_event VALUES (142, '2006', 64, 234);
-INSERT INTO other_event VALUES (143, '2011', 43, 183);
-INSERT INTO other_event VALUES (144, '2011', 2, 107);
-INSERT INTO other_event VALUES (145, '2011', 25, 34);
-INSERT INTO other_event VALUES (146, '2011', 26, 34);
-INSERT INTO other_event VALUES (147, '2011', 53, 35);
-INSERT INTO other_event VALUES (148, '2011', 54, 35);
-INSERT INTO other_event VALUES (149, '2011', 31, 180);
-INSERT INTO other_event VALUES (150, '2011', 73, 80);
-INSERT INTO other_event VALUES (151, '2011', 64, 80);
-INSERT INTO other_event VALUES (152, '2011', 32, 86);
-INSERT INTO other_event VALUES (153, '2011', 16, 74);
-INSERT INTO other_event VALUES (154, '2011', 15, 74);
-INSERT INTO other_event VALUES (155, '2011', 33, 33);
-INSERT INTO other_event VALUES (156, '2011', 56, 170);
-INSERT INTO other_event VALUES (157, '2011', 57, 27);
-INSERT INTO other_event VALUES (158, '2011', 56, 170);
-INSERT INTO other_event VALUES (159, '2011', 57, 190);
-INSERT INTO other_event VALUES (160, '2011', 34, 46);
-INSERT INTO other_event VALUES (161, '2011', 65, 38);
-INSERT INTO other_event VALUES (162, '2012', 27, 137);
-INSERT INTO other_event VALUES (163, '2011', 66, 222);
-INSERT INTO other_event VALUES (164, '2011', 67, 234);
-INSERT INTO other_event VALUES (165, '2011', 58, 144);
-INSERT INTO other_event VALUES (166, '2011', 35, 212);
-INSERT INTO other_event VALUES (167, '2012', 23, 241);
-INSERT INTO other_event VALUES (168, '2011', 58, 175);
-INSERT INTO other_event VALUES (169, '2012', 22, 208);
-INSERT INTO other_event VALUES (170, '2012', 21, 208);
-INSERT INTO other_event VALUES (171, '2011', 68, 78);
-INSERT INTO other_event VALUES (172, '2011', 36, 156);
-INSERT INTO other_event VALUES (173, '2012', 55, 23);
-INSERT INTO other_event VALUES (174, '2012', 82, 236);
-INSERT INTO other_event VALUES (175, '2012', 24, 150);
-INSERT INTO other_event VALUES (176, '2012', 37, 38);
-INSERT INTO other_event VALUES (177, '2012', 48, 278);
-INSERT INTO other_event VALUES (178, '2012', 49, 278);
-INSERT INTO other_event VALUES (179, '2012', 3, 165);
-INSERT INTO other_event VALUES (180, '2012', 4, 165);
-INSERT INTO other_event VALUES (181, '2012', 52, 234);
-INSERT INTO other_event VALUES (182, '2012', 26, 266);
-INSERT INTO other_event VALUES (183, '2012', 19, 117);
-INSERT INTO other_event VALUES (184, '2012', 20, 117);
-INSERT INTO other_event VALUES (185, '2012', 17, 117);
-INSERT INTO other_event VALUES (186, '2012', 18, 117);
-INSERT INTO other_event VALUES (187, '2012', 56, 144);
-INSERT INTO other_event VALUES (188, '2012', 56, 190);
-INSERT INTO other_event VALUES (189, '2012', 57, 170);
-INSERT INTO other_event VALUES (190, '2012', 57, 170);
-INSERT INTO other_event VALUES (191, '1962', 49, 193);
-INSERT INTO other_event VALUES (192, '1963', 49, 177);
-INSERT INTO other_event VALUES (193, '1963', 81, 254);
-INSERT INTO other_event VALUES (194, '1964', 49, 70);
-INSERT INTO other_event VALUES (195, '1965', 49, 93);
-INSERT INTO other_event VALUES (196, '1966', 49, 262);
-INSERT INTO other_event VALUES (197, '1967', 49, 200);
-INSERT INTO other_event VALUES (198, '1968', 62, 71);
-INSERT INTO other_event VALUES (199, '2012', 64, 222);
-INSERT INTO other_event VALUES (200, '2012', 73, 222);
-INSERT INTO other_event VALUES (201, '2012', 65, 78);
-INSERT INTO other_event VALUES (202, '2012', 74, 78);
-INSERT INTO other_event VALUES (203, '2012', 66, 234);
-INSERT INTO other_event VALUES (204, '2012', 75, 234);
-INSERT INTO other_event VALUES (205, '2013', 23, 72);
-INSERT INTO other_event VALUES (206, '2012', 67, 38);
-INSERT INTO other_event VALUES (207, '2012', 76, 38);
-INSERT INTO other_event VALUES (208, '2012', 68, 71);
-INSERT INTO other_event VALUES (209, '2012', 77, 71);
-INSERT INTO other_event VALUES (210, '2013', 22, 179);
-INSERT INTO other_event VALUES (211, '2013', 21, 179);
-INSERT INTO other_event VALUES (212, '2012', 69, 79);
-INSERT INTO other_event VALUES (213, '2012', 78, 79);
-INSERT INTO other_event VALUES (214, '2012', 63, 183);
-INSERT INTO other_event VALUES (215, '2012', 72, 183);
-INSERT INTO other_event VALUES (216, '2013', 7, 213);
-INSERT INTO other_event VALUES (217, '2013', 62, 112);
-INSERT INTO other_event VALUES (218, '2013', 82, 143);
-INSERT INTO other_event VALUES (219, '2013', 46, 180);
-INSERT INTO other_event VALUES (220, '2013', 45, 180);
-INSERT INTO other_event VALUES (221, '2013', 48, 194);
-INSERT INTO other_event VALUES (222, '2013', 4, 211);
-INSERT INTO other_event VALUES (223, '2013', 3, 211);
-INSERT INTO other_event VALUES (224, '2013', 61, 191);
-INSERT INTO other_event VALUES (225, '2013', 60, 191);
-INSERT INTO other_event VALUES (226, '2013', 26, 243);
-INSERT INTO other_event VALUES (227, '2000', 64, 111);
-INSERT INTO other_event VALUES (228, '2000', 65, 73);
-INSERT INTO other_event VALUES (229, '2000', 66, 234);
-INSERT INTO other_event VALUES (230, '2000', 67, 76);
-INSERT INTO other_event VALUES (231, '2000', 68, 38);
-INSERT INTO other_event VALUES (232, '2000', 69, 222);
-INSERT INTO other_event VALUES (233, '2000', 70, 14);
-INSERT INTO other_event VALUES (234, '2000', 71, 79);
-INSERT INTO other_event VALUES (235, '2000', 63, 183);
-INSERT INTO other_event VALUES (236, '2001', 64, 222);
-INSERT INTO other_event VALUES (237, '2001', 65, 76);
-INSERT INTO other_event VALUES (238, '2001', 66, 66);
-INSERT INTO other_event VALUES (239, '2001', 67, 38);
-INSERT INTO other_event VALUES (240, '2001', 68, 234);
-INSERT INTO other_event VALUES (241, '2001', 63, 183);
-INSERT INTO other_event VALUES (242, '2001', 73, 222);
-INSERT INTO other_event VALUES (243, '2001', 74, 76);
-INSERT INTO other_event VALUES (244, '2001', 75, 66);
-INSERT INTO other_event VALUES (245, '2001', 76, 38);
-INSERT INTO other_event VALUES (246, '2001', 77, 234);
-INSERT INTO other_event VALUES (247, '2001', 72, 183);
-INSERT INTO other_event VALUES (248, '1976', 44, 183);
-INSERT INTO other_event VALUES (249, '2013', 64, 163);
-INSERT INTO other_event VALUES (250, '2013', 73, 163);
-INSERT INTO other_event VALUES (251, '2013', 65, 222);
-INSERT INTO other_event VALUES (252, '2013', 74, 222);
-INSERT INTO other_event VALUES (253, '2013', 66, 38);
-INSERT INTO other_event VALUES (254, '2013', 75, 38);
-INSERT INTO other_event VALUES (255, '2013', 67, 234);
-INSERT INTO other_event VALUES (256, '2013', 76, 234);
-INSERT INTO other_event VALUES (257, '2013', 68, 78);
-INSERT INTO other_event VALUES (258, '2013', 77, 78);
-INSERT INTO other_event VALUES (259, '2013', 31, 156);
-INSERT INTO other_event VALUES (260, '2013', 32, 212);
-INSERT INTO other_event VALUES (261, '2013', 33, 86);
-INSERT INTO other_event VALUES (262, '2013', 34, 33);
-INSERT INTO other_event VALUES (263, '2013', 35, 180);
-INSERT INTO other_event VALUES (264, '2013', 36, 46);
-INSERT INTO other_event VALUES (265, '2013', 30, 183);
-INSERT INTO other_event VALUES (266, '2014', 5, 26);
-INSERT INTO other_event VALUES (267, '2014', 22, 279);
-INSERT INTO other_event VALUES (268, '2014', 21, 279);
-INSERT INTO other_event VALUES (269, '2013', 69, 79);
-INSERT INTO other_event VALUES (270, '2013', 78, 79);
-INSERT INTO other_event VALUES (271, '2013', 63, 183);
-INSERT INTO other_event VALUES (272, '2014', 47, 183);
-INSERT INTO other_event VALUES (273, '2014', 45, 30);
-INSERT INTO other_event VALUES (274, '2014', 46, 30);
-INSERT INTO other_event VALUES (275, '2014', 48, 200);
-INSERT INTO other_event VALUES (276, '2014', 49, 200);
-INSERT INTO other_event VALUES (277, '2014', 3, 197);
-INSERT INTO other_event VALUES (278, '2015', 23, 95);
-INSERT INTO other_event VALUES (279, '2015', 1, 95);
-INSERT INTO other_event VALUES (280, '2015', 62, 38);
-INSERT INTO other_event VALUES (281, '2015', 47, 183);
-INSERT INTO other_event VALUES (282, '2015', 22, 222);
-INSERT INTO other_event VALUES (283, '2015', 21, 222);
-INSERT INTO other_event VALUES (284, '2015', 29, 152);
-INSERT INTO other_event VALUES (285, '2015', 45, 212);
-INSERT INTO other_event VALUES (286, '2015', 46, 212);
-INSERT INTO other_event VALUES (287, '2015', 60, 229);
-INSERT INTO other_event VALUES (288, '2015', 52, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (1, '2010', 31, 33);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (2, '2010', 33, 212);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (3, '2010', 56, 144);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (4, '2010', 64, 76);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (5, '2011', 27, 137);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (6, '2010', 57, 35);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (7, '2010', 65, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (8, '2010', 66, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (9, '2010', 34, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (10, '2011', 40, 1);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (11, '2011', 41, 117);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (12, '2011', 42, 131);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (13, '2011', 39, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (14, '2010', 67, 71);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (15, '2011', 23, 99);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (16, '2010', 58, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (17, '2010', 68, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (18, '2010', 35, 86);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (19, '2011', 22, 120);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (20, '2011', 21, 120);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (21, '2010', 69, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (22, '2010', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (23, '2010', 36, 46);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (24, '2010', 59, 39);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (25, '2011', 55, 42);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (26, '2011', 82, 211);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (27, '2011', 37, 174);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (28, '2011', 45, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (29, '2011', 48, 198);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (30, '2011', 4, 278);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (31, '2011', 3, 278);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (32, '2011', 52, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (33, '2011', 6, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (34, '2011', 61, 190);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (35, '2011', 60, 190);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (36, '2010', 25, 54);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (37, '2010', 26, 54);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (38, '2010', 60, 149);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (39, '2010', 6, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (40, '2010', 52, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (41, '2010', 3, 48);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (42, '2010', 45, 46);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (43, '2010', 46, 46);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (44, '2010', 82, 81);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (45, '2010', 37, 129);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (46, '2009', 68, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (47, '2010', 22, 213);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (48, '2010', 21, 213);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (49, '2009', 58, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (50, '2009', 57, 175);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (51, '2009', 58, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (52, '2009', 67, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (53, '2009', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (54, '2009', 66, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (55, '2010', 23, 250);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (56, '2010', 40, 62);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (57, '2010', 41, 251);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (58, '2010', 42, 248);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (59, '2010', 39, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (60, '2009', 65, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (61, '2010', 27, 137);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (62, '2009', 57, 35);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (63, '2009', 64, 163);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (64, '2009', 56, 205);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (65, '2009', 56, 27);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (66, '2009', 54, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (67, '2009', 53, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (68, '2009', 25, 126);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (69, '2009', 26, 126);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (70, '2009', 43, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (71, '2009', 61, 109);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (72, '2009', 60, 109);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (73, '2009', 48, 193);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (74, '2009', 28, 150);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (75, '2009', 45, 186);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (76, '2009', 46, 186);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (77, '2009', 37, 265);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (78, '2009', 82, 53);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (79, '2008', 69, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (80, '2008', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (81, '2009', 22, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (82, '2009', 21, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (83, '2008', 68, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (84, '2009', 40, 141);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (85, '2009', 41, 176);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (86, '2009', 42, 235);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (87, '2009', 39, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (88, '2008', 67, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (89, '2008', 66, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (90, '2008', 65, 66);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (91, '2008', 12, 26);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (92, '2008', 11, 147);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (93, '2008', 10, 213);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (94, '2008', 64, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (95, '2008', 16, 74);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (96, '2008', 15, 74);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (97, '2008', 51, 229);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (98, '2008', 38, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (99, '2008', 80, 168);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (100, '2008', 79, 168);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (101, '2008', 9, 279);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (102, '2008', 25, 204);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (103, '2008', 26, 204);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (104, '2008', 61, 261);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (105, '2008', 60, 261);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (106, '2008', 45, 114);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (107, '2008', 46, 114);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (108, '2008', 37, 70);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (109, '2008', 82, 217);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (110, '2007', 14, 64);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (111, '2007', 8, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (112, '2008', 22, 86);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (113, '2008', 21, 86);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (114, '2007', 68, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (115, '2007', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (116, '2007', 13, 26);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (117, '2008', 40, 36);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (118, '2008', 41, 58);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (119, '2008', 42, 188);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (120, '2008', 39, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (121, '2007', 67, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (122, '2007', 66, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (123, '2007', 65, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (124, '2007', 12, 85);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (125, '2007', 11, 258);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (126, '2007', 64, 66);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (127, '2007', 15, 74);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (128, '2007', 25, 91);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (129, '2007', 26, 91);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (130, '2007', 7, 279);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (131, '2007', 50, 215);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (132, '2007', 48, 214);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (133, '2007', 45, 182);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (134, '2007', 46, 182);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (135, '2007', 82, 223);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (136, '2006', 11, 147);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (137, '2006', 8, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (138, '2007', 22, 125);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (139, '2007', 21, 125);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (140, '2006', 66, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (141, '2006', 65, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (142, '2006', 64, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (143, '2011', 43, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (144, '2011', 2, 107);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (145, '2011', 25, 34);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (146, '2011', 26, 34);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (147, '2011', 53, 35);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (148, '2011', 54, 35);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (149, '2011', 31, 180);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (150, '2011', 73, 80);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (151, '2011', 64, 80);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (152, '2011', 32, 86);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (153, '2011', 16, 74);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (154, '2011', 15, 74);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (155, '2011', 33, 33);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (156, '2011', 56, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (157, '2011', 57, 27);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (158, '2011', 56, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (159, '2011', 57, 190);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (160, '2011', 34, 46);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (161, '2011', 65, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (162, '2012', 27, 137);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (163, '2011', 66, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (164, '2011', 67, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (165, '2011', 58, 144);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (166, '2011', 35, 212);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (167, '2012', 23, 241);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (168, '2011', 58, 175);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (169, '2012', 22, 208);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (170, '2012', 21, 208);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (171, '2011', 68, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (172, '2011', 36, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (173, '2012', 55, 23);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (174, '2012', 82, 236);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (175, '2012', 24, 150);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (176, '2012', 37, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (177, '2012', 48, 278);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (178, '2012', 49, 278);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (179, '2012', 3, 165);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (180, '2012', 4, 165);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (181, '2012', 52, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (182, '2012', 26, 266);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (183, '2012', 19, 117);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (184, '2012', 20, 117);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (185, '2012', 17, 117);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (186, '2012', 18, 117);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (187, '2012', 56, 144);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (188, '2012', 56, 190);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (189, '2012', 57, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (190, '2012', 57, 170);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (191, '1962', 49, 193);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (192, '1963', 49, 177);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (193, '1963', 81, 254);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (194, '1964', 49, 70);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (195, '1965', 49, 93);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (196, '1966', 49, 262);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (197, '1967', 49, 200);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (198, '1968', 62, 71);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (199, '2012', 64, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (200, '2012', 73, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (201, '2012', 65, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (202, '2012', 74, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (203, '2012', 66, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (204, '2012', 75, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (205, '2013', 23, 72);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (206, '2012', 67, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (207, '2012', 76, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (208, '2012', 68, 71);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (209, '2012', 77, 71);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (210, '2013', 22, 179);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (211, '2013', 21, 179);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (212, '2012', 69, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (213, '2012', 78, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (214, '2012', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (215, '2012', 72, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (216, '2013', 7, 213);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (217, '2013', 62, 112);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (218, '2013', 82, 143);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (219, '2013', 46, 180);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (220, '2013', 45, 180);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (221, '2013', 48, 194);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (222, '2013', 4, 211);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (223, '2013', 3, 211);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (224, '2013', 61, 191);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (225, '2013', 60, 191);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (226, '2013', 26, 243);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (227, '2000', 64, 111);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (228, '2000', 65, 73);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (229, '2000', 66, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (230, '2000', 67, 76);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (231, '2000', 68, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (232, '2000', 69, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (233, '2000', 70, 14);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (234, '2000', 71, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (235, '2000', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (236, '2001', 64, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (237, '2001', 65, 76);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (238, '2001', 66, 66);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (239, '2001', 67, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (240, '2001', 68, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (241, '2001', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (242, '2001', 73, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (243, '2001', 74, 76);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (244, '2001', 75, 66);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (245, '2001', 76, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (246, '2001', 77, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (247, '2001', 72, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (248, '1976', 44, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (249, '2013', 64, 163);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (250, '2013', 73, 163);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (251, '2013', 65, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (252, '2013', 74, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (253, '2013', 66, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (254, '2013', 75, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (255, '2013', 67, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (256, '2013', 76, 234);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (257, '2013', 68, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (258, '2013', 77, 78);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (259, '2013', 31, 156);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (260, '2013', 32, 212);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (261, '2013', 33, 86);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (262, '2013', 34, 33);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (263, '2013', 35, 180);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (264, '2013', 36, 46);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (265, '2013', 30, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (266, '2014', 5, 26);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (267, '2014', 22, 279);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (268, '2014', 21, 279);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (269, '2013', 69, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (270, '2013', 78, 79);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (271, '2013', 63, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (272, '2014', 47, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (273, '2014', 45, 30);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (274, '2014', 46, 30);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (275, '2014', 48, 200);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (276, '2014', 49, 200);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (277, '2014', 3, 197);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (278, '2015', 23, 95);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (279, '2015', 1, 95);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (280, '2015', 62, 38);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (281, '2015', 47, 183);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (282, '2015', 22, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (283, '2015', 21, 222);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (284, '2015', 29, 152);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (285, '2015', 45, 212);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (286, '2015', 46, 212);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (287, '2015', 60, 229);
+INSERT INTO
+    other_event (id, year, competitionID, locationID)
+VALUES
+    (288, '2015', 52, 234);
 
 -- results
-INSERT INTO other_result VALUES (1, 1, NULL, 4, 369, 1);
-INSERT INTO other_result VALUES (2, 2, NULL, 7, 79, 1);
-INSERT INTO other_result VALUES (3, 3, NULL, 20, 371, 1);
-INSERT INTO other_result VALUES (4, 4, NULL, 24, 81, 1);
-INSERT INTO other_result VALUES (5, 5, NULL, 27, 372, 1);
-INSERT INTO other_result VALUES (6, 6, NULL, 29, 54, 1);
-INSERT INTO other_result VALUES (7, 7, NULL, 0, 80, 1);
-INSERT INTO other_result VALUES (8, 7, NULL, 0, 55, 1);
+INSERT INTO
+    other_result
+VALUES
+    (1, 1, NULL, 4, 369, 1);
+INSERT INTO
+    other_result
+VALUES
+    (2, 2, NULL, 7, 79, 1);
+INSERT INTO
+    other_result
+VALUES
+    (3, 3, NULL, 20, 371, 1);
+INSERT INTO
+    other_result
+VALUES
+    (4, 4, NULL, 24, 81, 1);
+INSERT INTO
+    other_result
+VALUES
+    (5, 5, NULL, 27, 372, 1);
+INSERT INTO
+    other_result
+VALUES
+    (6, 6, NULL, 29, 54, 1);
+INSERT INTO
+    other_result
+VALUES
+    (7, 7, NULL, 0, 80, 1);
+INSERT INTO
+    other_result
+VALUES
+    (8, 7, NULL, 0, 55, 1);
 INSERT INTO other_result VALUES (9, 1, NULL, 4, 369, 2);
 INSERT INTO other_result VALUES (10, 2, NULL, 9, 79, 2);
 INSERT INTO other_result VALUES (11, 3, NULL, 11, 80, 2);

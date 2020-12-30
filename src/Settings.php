@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive;
@@ -6,10 +7,9 @@ namespace DrlArchive;
 
 class Settings
 {
-    public const
-        DB_HOST = 'database',
-        DB_SCHEMA = 'ringingV2',
-        DB_USER = 'ringer',
-        DB_PASSWORD = 'ringerPassword';
+    public const DB_HOST = 'database';
+    public const DB_SCHEMA = 'ringingV2';
+    public const DB_USER = 'ringer';
+    public const DB_PASSWORD = 'ringerPassword';
 
 }

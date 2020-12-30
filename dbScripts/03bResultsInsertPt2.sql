@@ -1,0 +1,34104 @@
+INSERT INTO
+    DRL_result
+VALUES
+    (9001, 3, NULL, 59, 194, 861, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9005, 7, NULL, 70.5, 84, 861, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9006, 8, NULL, 82.5, 197, 861, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9007, 9, NULL, 82.75, 147, 861, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9008, 10, NULL, 117, 472, 861, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9009, 1, NULL, 54.25, 155, 862, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9010, 2, NULL, 73.75, 169, 862, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9011, 3, NULL, 76.5, 194, 862, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9012, 4, NULL, 95.5, 327, 862, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9013, 5, NULL, 100, 385, 862, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9014, 6, NULL, 112, 84, 862, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9015, 7, NULL, 138.5, 147, 862, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9016, 8, NULL, 148.5, 472, 862, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9017, 9, NULL, 0, 197, 862, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9018, 1, NULL, 0, 84, 863, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9019, 1, NULL, 44.5, 84, 864, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9020, 1, NULL, 14.5, 75, 865, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9021, 2, NULL, 32, 147, 865, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9022, 3, NULL, 43, 399, 865, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9023, 4, NULL, 48, 311, 865, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9024, 5, NULL, 54, 137, 865, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9025, 6, NULL, 55, 491, 865, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9026, 7, NULL, 97, 210, 865, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9027, 8, NULL, 102, 43, 865, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9028, 1, NULL, 40.5, 404, 866, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9029, 2, NULL, 46.5, 405, 866, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9030, 3, NULL, 64, 376, 866, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9031, 4, NULL, 69.5, 84, 866, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9032, 5, NULL, 86, 394, 866, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9033, 1, NULL, 24.5, 376, 867, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9034, 2, NULL, 42, 394, 867, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9035, 3, NULL, 43.5, 194, 867, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9036, 4, NULL, 47, 84, 867, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9037, 5, NULL, 65.5, 327, 867, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9038, 6, NULL, 51.5, 57, 867, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9039, 7, NULL, 56, 288, 867, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9040, 1, NULL, 36, 404, 868, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9041, 2, NULL, 59, 405, 868, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9042, 3, NULL, 75.5, 394, 868, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9043, 4, NULL, 88.5, 84, 868, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9044, 1, NULL, 37.5, 376, 869, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9045, 2, NULL, 45.5, 84, 869, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9046, 3, NULL, 46.5, 394, 869, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9047, 4, NULL, 53.3, 194, 869, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9048, 5, NULL, 72.5, 242, 869, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9049, 6, NULL, 78.5, 327, 869, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9050, 7, NULL, 48, 57, 869, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9051, 8, NULL, 68.5, 288, 869, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9052, 9, NULL, 116, 302, 869, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9053, 1, NULL, 13.33, 464, 870, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9054, 2, NULL, 16, 339, 870, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9055, 3, NULL, 58, 345, 870, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9056, 4, NULL, 61.33, 488, 870, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9057, 5, NULL, 101, 30, 870, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9058, 6, NULL, 103.33, 462, 870, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9059, 7, NULL, 136, 200, 870, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9060, 1, NULL, 24, 488, 871, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9061, 2, NULL, 25, 339, 871, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9062, 3, NULL, 60.33, 489, 871, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9063, 4, NULL, 65, 108, 871, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9064, 5, NULL, 75, 340, 871, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9065, 6, NULL, 93, 376, 871, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9066, 7, NULL, 94.33, 307, 871, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9067, 8, NULL, 95.67, 109, 871, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9068, 9, NULL, 118.33, 345, 871, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9069, 1, NULL, 13, 472, 872, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9070, 2, NULL, 15, 339, 872, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9071, 3, NULL, 15.67, 464, 872, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9072, 4, NULL, 17, 488, 872, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9073, 5, NULL, 18, 442, 872, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9074, 6, NULL, 21, 234, 872, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9075, 7, NULL, 22.33, 465, 872, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9076, 8, NULL, 30.33, 235, 872, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9077, 9, NULL, 55.67, 24, 872, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9078, 10, NULL, 56.33, 108, 872, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9079, 11, NULL, 60, 128, 872, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9080, 12, NULL, 72.33, 41, 872, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9081, 13, NULL, 87, 414, 872, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9082, 14, NULL, 120, 63, 872, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9083, 15, NULL, 0, 446, 872, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9084, 1, NULL, 16, 464, 873, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9085, 2, NULL, 30, 488, 873, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9086, 3, NULL, 33, 472, 873, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9087, 4, NULL, 33.33, 150, 873, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9088, 5, NULL, 33.67, 465, 873, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9089, 6, NULL, 37.67, 339, 873, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9090, 7, NULL, 38, 221, 873, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9091, 8, NULL, 46.67, 101, 873, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9092, 9, NULL, 53, 107, 873, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9093, 10, NULL, 56.33, 30, 873, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9094, 11, NULL, 59.67, 216, 873, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9095, 12, NULL, 60.67, 235, 873, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9096, 13, NULL, 85.33, 128, 873, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9097, 14, NULL, 104.33, 141, 873, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9098, 15, NULL, 121.33, 324, 873, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9099, 1, NULL, 34.67, 442, 874, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9100, 2, NULL, 36.33, 339, 874, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9101, 3, NULL, 39, 150, 874, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9102, 4, NULL, 39.33, 464, 874, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9103, 5, NULL, 55.67, 221, 874, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9104, 6, NULL, 57, 24, 874, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9105, 7, NULL, 59.67, 488, 874, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9106, 8, NULL, 63.33, 465, 874, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9107, 9, NULL, 68, 216, 874, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9108, 10, NULL, 72.67, 63, 874, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9109, 11, NULL, 74.33, 107, 874, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9110, 12, NULL, 81.67, 128, 874, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9111, 13, NULL, 94.67, 411, 874, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9112, 14, NULL, 97, 235, 874, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9113, 15, NULL, 109, 108, 874, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9114, 16, NULL, 180, 440, 874, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9115, 17, NULL, 0, 117, 874, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9116, 18, NULL, 0, 299, 874, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9117, 19, NULL, 0, 178, 874, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9118, 1, NULL, 20.67, 464, 875, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9119, 2, NULL, 20.67, 472, 875, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9120, 3, NULL, 31.33, 150, 875, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9121, 4, NULL, 36, 235, 875, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9122, 5, NULL, 38, 339, 875, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9123, 6, NULL, 51.33, 234, 875, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9124, 7, NULL, 52.67, 488, 875, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9125, 8, NULL, 63.67, 128, 875, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9126, 9, NULL, 66, 489, 875, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9127, 10, NULL, 66.67, 442, 875, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9128, 11, NULL, 88.67, 63, 875, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9129, 12, NULL, 132.67, 112, 875, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9130, 13, NULL, 135.67, 473, 875, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9131, 14, NULL, 0, 107, 875, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9132, 1, NULL, 18, 464, 876, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (9133, 2, NULL, 20.25, 339, 876, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (9134, 3, NULL, 28.75, 221, 876, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9135, 4, NULL, 48.75, 150, 876, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9136, 5, NULL, 53, 421, 876, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9137, 6, NULL, 54.25, 107, 876, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9138, 7, NULL, 59, 488, 876, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9139, 8, NULL, 64.25, 465, 876, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9140, 9, NULL, 64.75, 24, 876, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9141, 10, NULL, 65.5, 30, 876, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9142, 11, NULL, 71, 350, 876, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9143, 12, NULL, 82.5, 235, 876, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9144, 13, NULL, 88.75, 411, 876, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9145, 14, NULL, 104.25, 472, 876, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9146, 15, NULL, 111.25, 63, 876, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9147, 16, NULL, 179.25, 185, 876, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9148, 17, NULL, 182, 146, 876, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9149, 18, NULL, 0, 141, 876, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9150, 19, NULL, 0, 101, 876, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9151, 20, NULL, 0, 128, 876, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9152, 21, NULL, 0, 473, 876, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9153, 1, NULL, 38, 137, 877, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9154, 2, NULL, 64.25, 467, 877, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9155, 3, NULL, 68.5, 221, 877, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9156, 4, NULL, 73.75, 339, 877, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9157, 5, NULL, 74.5, 150, 877, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9158, 6, NULL, 80, 363, 877, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9159, 7, NULL, 95.5, 464, 877, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9160, 8, NULL, 121.75, 421, 877, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9161, 9, NULL, 123.5, 418, 877, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9162, 10, NULL, 169, 32, 877, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9163, 1, NULL, 55.5, 339, 878, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9164, 2, NULL, 61.5, 488, 878, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9165, 3, NULL, 67.5, 489, 878, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9166, 4, NULL, 105, 307, 878, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9167, 5, NULL, 115, 340, 878, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9168, 6, NULL, 120, 345, 878, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9169, 7, NULL, 130, 359, 878, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9170, 1, NULL, 19, 464, 879, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9171, 2, NULL, 26, 221, 879, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9172, 3, NULL, 33, 472, 879, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9173, 4, NULL, 36, 107, 879, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9174, 5, NULL, 44, 339, 879, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9175, 6, NULL, 47, 465, 879, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9176, 7, NULL, 53.67, 63, 879, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9177, 8, NULL, 56.67, 442, 879, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9178, 9, NULL, 62, 24, 879, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9179, 10, NULL, 74.67, 218, 879, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9180, 11, NULL, 75, 236, 879, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9181, 1, NULL, 28, 137, 880, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9182, 2, NULL, 40.25, 339, 880, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9183, 3, NULL, 57.25, 442, 880, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9184, 4, NULL, 62.75, 340, 880, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9185, 5, NULL, 72.25, 411, 880, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9186, 6, NULL, 75, 464, 880, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9187, 7, NULL, 75.75, 465, 880, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9188, 8, NULL, 96.75, 117, 880, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9189, 9, NULL, 99, 218, 880, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9190, 10, NULL, 108.25, 9, 880, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9191, 11, NULL, 110.75, 63, 880, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9192, 12, NULL, 122.5, 141, 880, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9193, 13, NULL, 124.5, 86, 880, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9194, 14, NULL, 172.25, 265, 880, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9195, 15, NULL, 0, 39, 880, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9196, 1, NULL, 23, 339, 881, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9197, 2, NULL, 24.67, 221, 881, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9198, 3, NULL, 26, 464, 881, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9199, 4, NULL, 34, 472, 881, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9200, 5, NULL, 36.33, 488, 881, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9201, 6, NULL, 39.33, 150, 881, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9202, 7, NULL, 44.67, 24, 881, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9203, 8, NULL, 49, 107, 881, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9204, 9, NULL, 49.67, 235, 881, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9205, 10, NULL, 50, 30, 881, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9206, 11, NULL, 54.67, 465, 881, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9207, 12, NULL, 64, 63, 881, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9208, 13, NULL, 74, 117, 881, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9209, 14, NULL, 110, 440, 881, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9210, 15, NULL, 140.5, 411, 881, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9211, 1, NULL, 15.67, 464, 882, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9212, 2, NULL, 31, 465, 882, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9213, 3, NULL, 41.67, 339, 882, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9214, 4, NULL, 46.67, 128, 882, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9215, 5, NULL, 60.33, 488, 882, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9216, 6, NULL, 60.67, 235, 882, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9217, 7, NULL, 62.33, 107, 882, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9218, 8, NULL, 63, 234, 882, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9219, 9, NULL, 70.67, 63, 882, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9220, 10, NULL, 79.67, 442, 882, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9221, 11, NULL, 84.33, 24, 882, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9222, 12, NULL, 97.67, 473, 882, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9223, 13, NULL, 109, 411, 882, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9224, 14, NULL, 0, 64, 882, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9225, 1, NULL, 21.5, 221, 883, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9226, 2, NULL, 22, 137, 883, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9227, 3, NULL, 23, 465, 883, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9228, 4, NULL, 32.75, 464, 883, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9229, 5, NULL, 40.5, 107, 883, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9230, 6, NULL, 49, 30, 883, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9231, 7, NULL, 53.25, 339, 883, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9232, 8, NULL, 59.5, 350, 883, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9233, 9, NULL, 60.75, 472, 883, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9234, 10, NULL, 62.75, 63, 883, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9235, 11, NULL, 65.75, 128, 883, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9236, 12, NULL, 74, 421, 883, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9237, 13, NULL, 88.75, 150, 883, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9238, 14, NULL, 98, 112, 883, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9239, 15, NULL, 111, 146, 883, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9240, 16, NULL, 161, 265, 883, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9241, 17, NULL, 0, 185, 883, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9242, 1, NULL, 24.67, 339, 884, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9243, 2, NULL, 48, 340, 884, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9244, 3, NULL, 55.33, 488, 884, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9245, 4, NULL, 95.67, 307, 884, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9246, 5, NULL, 97, 488, 884, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9247, 6, NULL, 66, 201, 884, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9248, 7, NULL, 67.67, 200, 884, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9249, 8, NULL, 102.67, 345, 884, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9250, 9, NULL, 150, 335, 884, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9251, 1, NULL, 58.5, 221, 885, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9252, 2, NULL, 59.5, 137, 885, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9253, 3, NULL, 87, 465, 885, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9254, 4, NULL, 104, 464, 885, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9255, 5, NULL, 151, 339, 885, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9256, 6, NULL, 153, 63, 885, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9257, 7, NULL, 159, 30, 885, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9258, 8, NULL, 165, 442, 885, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9259, 9, NULL, 177, 24, 885, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9260, 10, NULL, 193, 112, 885, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9261, 11, NULL, 215, 141, 885, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9262, 12, NULL, 217, 472, 885, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9263, 13, NULL, 232, 117, 885, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9264, 14, NULL, 244, 327, 885, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9265, 15, NULL, 276, 440, 885, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9266, 16, NULL, 291, 185, 885, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9267, 17, NULL, 349, 9, 885, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9268, 1, NULL, 16.25, 464, 886, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9269, 2, NULL, 20.75, 465, 886, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9270, 3, NULL, 21, 107, 886, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9271, 4, NULL, 32, 63, 886, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9272, 5, NULL, 35.25, 30, 886, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9273, 6, NULL, 38.75, 178, 886, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9274, 7, NULL, 44.25, 150, 886, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9275, 8, NULL, 60.25, 128, 886, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9276, 9, NULL, 70, 60, 886, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9277, 10, NULL, 110.5, 345, 886, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9278, 11, NULL, 139, 200, 886, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9279, 12, NULL, 176.5, 146, 886, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9280, 1, NULL, 66.67, 236, 887, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9281, 2, NULL, 91.33, 117, 887, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9282, 3, NULL, 102, 60, 887, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9283, 4, NULL, 118.33, 234, 887, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9284, 5, NULL, 121.33, 442, 887, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9285, 6, NULL, 144, 339, 887, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9286, 7, NULL, 205, 327, 887, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9287, 1, NULL, 20.67, 467, 888, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9288, 2, NULL, 38, 137, 888, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9289, 3, NULL, 52.67, 101, 888, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9290, 4, NULL, 57.33, 363, 888, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9291, 5, NULL, 64.33, 427, 888, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9292, 6, NULL, 64.67, 357, 888, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9293, 7, NULL, 71, 392, 888, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9294, 8, NULL, 72, 221, 888, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9295, 9, NULL, 75, 84, 888, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9296, 10, NULL, 91.33, 421, 888, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9297, 11, NULL, 100, 32, 888, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9298, 12, NULL, 113, 339, 888, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9299, 1, NULL, 19.33, 339, 889, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9300, 7, NULL, 71.67, 128, 889, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9301, 9, NULL, 96, 438, 889, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9302, 2, NULL, 21, 464, 889, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9303, 8, NULL, 78.67, 488, 889, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9304, 3, NULL, 29.67, 465, 889, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9305, 4, NULL, 33.33, 24, 889, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9306, 10, NULL, 102, 200, 889, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9307, 11, NULL, 133.33, 112, 889, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9308, 5, NULL, 36, 150, 889, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9309, 6, NULL, 39.33, 63, 889, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9310, 12, NULL, 140, 146, 889, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9311, 13, NULL, 95.33, 112, 890, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9312, 14, NULL, 95.67, 488, 890, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9313, 7, NULL, 35.33, 442, 890, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9314, 6, NULL, 27.67, 63, 890, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9315, 15, NULL, 142.33, 327, 890, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9316, 9, NULL, 42.67, 235, 890, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9317, 2, NULL, 17.67, 339, 890, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9318, 10, NULL, 46, 128, 890, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9319, 11, NULL, 51, 24, 890, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9320, 3, NULL, 21.67, 340, 890, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9321, 12, NULL, 59.67, 218, 890, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9322, 1, NULL, 12, 464, 890, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9323, 4, NULL, 22.33, 150, 890, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9324, 5, NULL, 25.67, 465, 890, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9325, 8, NULL, 37.67, 107, 890, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9326, 15, NULL, 120.75, 112, 891, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9327, 11, NULL, 88.25, 141, 891, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9328, 1, NULL, 17.75, 464, 891, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9329, 2, NULL, 19.25, 339, 891, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9330, 8, NULL, 60.75, 24, 891, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9331, 4, NULL, 28.5, 150, 891, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9332, 12, NULL, 116, 200, 891, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9333, 5, NULL, 30, 465, 891, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9334, 10, NULL, 83.75, 128, 891, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9335, 16, NULL, 144, 146, 891, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9336, 9, NULL, 78.25, 235, 891, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9337, 3, NULL, 20.75, 221, 891, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9338, 7, NULL, 55.25, 30, 891, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9339, 17, NULL, 152, 265, 891, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9340, 14, NULL, 55.25, 185, 891, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9341, 13, NULL, 117, 411, 891, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9342, 6, NULL, 43.5, 107, 891, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9343, 8, NULL, 69.75, 339, 892, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9344, 3, NULL, 52.5, 43, 892, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9345, 5, NULL, 55.5, 137, 892, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9346, 2, NULL, 46.75, 467, 892, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9347, 9, NULL, 72.5, 418, 892, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9348, 7, NULL, 68, 221, 892, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9349, 10, NULL, 108, 465, 892, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9350, 6, NULL, 64.75, 150, 892, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9351, 4, NULL, 55.25, 101, 892, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9352, 1, NULL, 40.25, 464, 892, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9353, 1, NULL, 15, 339, 893, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9354, 2, NULL, 32, 488, 893, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9355, 6, NULL, 73.33, 489, 893, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9356, 5, NULL, 160, 201, 893, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9357, 3, NULL, 39, 340, 893, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9358, 9, NULL, 110, 335, 893, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9359, 4, NULL, 98, 307, 893, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9360, 10, NULL, 125, 462, 893, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9361, 8, NULL, 90, 200, 893, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9362, 7, NULL, 81, 345, 893, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9363, 5, NULL, 60.5, 339, 894, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9364, 16, NULL, 182, 185, 894, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9365, 4, NULL, 58, 465, 894, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9366, 11, NULL, 101, 488, 894, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9367, 7, NULL, 64.5, 146, 894, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9368, 15, NULL, 134.75, 112, 894, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9369, 8, NULL, 85, 30, 894, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9370, 17, NULL, 185.5, 200, 894, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9371, 12, NULL, 110.5, 128, 894, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9372, 19, NULL, 0, 260, 894, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9373, 3, NULL, 45.75, 464, 894, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9374, 13, NULL, 119.25, 63, 894, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9375, 1, NULL, 30.25, 221, 894, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (9376, 19, NULL, 0, 327, 894, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9377, 18, NULL, 191.5, 440, 894, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9378, 6, NULL, 62.25, 236, 894, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9379, 9, NULL, 95.25, 442, 894, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9380, 19, NULL, 0, 107, 894, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9381, 2, NULL, 41.5, 137, 894, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (9382, 10, NULL, 99.25, 24, 894, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9383, 14, NULL, 120, 60, 894, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9384, 1, NULL, 15.5, 137, 895, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9385, 2, NULL, 16.25, 467, 895, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9386, 3, NULL, 23, 464, 895, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9387, 4, NULL, 26, 465, 895, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9388, 5, NULL, 39.5, 101, 895, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9389, 6, NULL, 42.5, 418, 895, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9390, 7, NULL, 48.5, 339, 895, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9391, 8, NULL, 51.5, 479, 895, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9392, 9, NULL, 70, 63, 895, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9393, 10, NULL, 91, 128, 895, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9394, 11, NULL, 100.5, 340, 895, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9395, 1, NULL, 25, 472, 896, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9396, 2, NULL, 26, 339, 896, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9397, 3, NULL, 38, 464, 896, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9398, 4, NULL, 39.33, 63, 896, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9399, 5, NULL, 41, 221, 896, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9400, 6, NULL, 43.33, 236, 896, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9401, 7, NULL, 51.67, 465, 896, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9402, 8, NULL, 52.67, 340, 896, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9403, 9, NULL, 59.33, 107, 896, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9404, 10, NULL, 68.5, 9, 896, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9405, 11, NULL, 68.67, 197, 896, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9406, 12, NULL, 108.33, 216, 896, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9407, 13, NULL, 122, 265, 896, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9408, 14, NULL, 145, 440, 896, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9409, 14, NULL, 217, 335, 897, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9410, 8, NULL, 84, 40, 897, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9411, 11, NULL, 141, 220, 897, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9412, 5, NULL, 66, 39, 897, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9413, 13, NULL, 184, 345, 897, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9414, 12, NULL, 178, 200, 897, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9415, 7, NULL, 81, 424, 897, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9416, 9, NULL, 95, 465, 897, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9417, 4, NULL, 62, 340, 897, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9418, 6, NULL, 74.5, 488, 897, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9419, 10, NULL, 122, 307, 897, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9420, 3, NULL, 31, 342, 897, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9421, 1, NULL, 15, 339, 897, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9422, 2, NULL, 26, 464, 897, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9423, 7, NULL, 55, 442, 898, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9424, 9, NULL, 84.5, 112, 898, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9425, 6, NULL, 48.5, 24, 898, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9426, 5, NULL, 37, 221, 898, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9427, 8, NULL, 67, 141, 898, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9428, 2, NULL, 26.5, 339, 898, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9429, 12, NULL, 0, 39, 898, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9430, 3, NULL, 27.5, 236, 898, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9431, 1, NULL, 26, 63, 898, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9432, 4, NULL, 36, 216, 898, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9433, 10, NULL, 86.5, 9, 898, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9434, 11, NULL, 128, 340, 898, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9435, 7, NULL, 74.75, 102, 899, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9436, 4, NULL, 52.5, 363, 899, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9437, 14, NULL, 0, 141, 899, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9438, 8, NULL, 86.5, 63, 899, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9439, 1, NULL, 22, 137, 899, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9440, 15, NULL, 0, 357, 899, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9441, 5, NULL, 65.75, 339, 899, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9442, 16, NULL, 0, 472, 899, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9443, 6, NULL, 71.25, 221, 899, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9444, 3, NULL, 41.5, 418, 899, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9445, 17, NULL, 0, 467, 899, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9446, 2, NULL, 40.75, 43, 899, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9447, 9, NULL, 99, 44, 899, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9448, 1, NULL, 16.33, 221, 900, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9449, 2, NULL, 18, 150, 900, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9450, 3, NULL, 20.33, 339, 900, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9451, 4, NULL, 21, 30, 900, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9452, 5, NULL, 28.67, 128, 900, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9453, 6, NULL, 32.33, 472, 900, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9454, 7, NULL, 36, 63, 900, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9455, 8, NULL, 39.33, 442, 900, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9456, 9, NULL, 40.67, 24, 900, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9457, 10, NULL, 75.33, 178, 900, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9458, 11, NULL, 79, 146, 900, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9459, 12, NULL, 80, 438, 900, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9460, 13, NULL, 86, 185, 900, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9461, 14, NULL, 91.33, 200, 900, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9462, 10, NULL, 42.33, 128, 901, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9463, 8, NULL, 38.67, 339, 901, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9464, 5, NULL, 28.33, 340, 901, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9465, 4, NULL, 21, 63, 901, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9466, 7, NULL, 37, 235, 901, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9467, 2, NULL, 16.67, 236, 901, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9468, 11, NULL, 59.33, 218, 901, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9469, 6, NULL, 32, 131, 901, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9470, 9, NULL, 41.33, 442, 901, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9471, 3, NULL, 17, 150, 901, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9472, 1, NULL, 16, 464, 901, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9473, 12, NULL, 81.33, 112, 901, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9474, 6, NULL, 100, 350, 902, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9475, 14, NULL, 0, 450, 902, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9476, 12, NULL, 205, 157, 902, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9477, 10, NULL, 136, 210, 902, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9478, 13, NULL, 253, 233, 902, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9479, 9, NULL, 105, 480, 902, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9480, 2, NULL, 61.5, 101, 902, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9481, 11, NULL, 186, 275, 902, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9482, 8, NULL, 99, 141, 902, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9483, 5, NULL, 97, 225, 902, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9484, 3, NULL, 82, 479, 902, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9485, 1, NULL, 37, 137, 902, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9486, 4, NULL, 93, 339, 902, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9487, 7, NULL, 104, 340, 902, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9488, 7, NULL, 187, 242, 903, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9489, 8, NULL, 207.67, 282, 903, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9490, 9, NULL, 244, 437, 903, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9491, 6, NULL, 172.67, 266, 903, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9492, 1, NULL, 39.67, 137, 903, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9493, 5, NULL, 135.33, 133, 903, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9494, 3, NULL, 79, 339, 903, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9495, 2, NULL, 57.33, 418, 903, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9496, 4, NULL, 110, 424, 903, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9497, 12, NULL, 74, 411, 904, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9498, 16, NULL, 160, 146, 904, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9499, 15, NULL, 147, 185, 904, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9500, 1, NULL, 16.25, 221, 904, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9501, 13, NULL, 86.75, 210, 904, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9502, 3, NULL, 25, 465, 904, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9503, 2, NULL, 24.25, 30, 904, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9504, 14, NULL, 140, 200, 904, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9505, 5, NULL, 26.25, 464, 904, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9506, 8, NULL, 43.75, 150, 904, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9507, 9, NULL, 49, 141, 904, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9508, 7, NULL, 40.25, 472, 904, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9509, 4, NULL, 26, 418, 904, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9510, 17, NULL, 0, 24, 904, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9511, 6, NULL, 28.75, 339, 904, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9512, 11, NULL, 69.75, 112, 904, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9513, 10, NULL, 64.5, 63, 904, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9514, 11, NULL, 150, 283, 905, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9515, 8, NULL, 79, 337, 905, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9516, 10, NULL, 113, 335, 905, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9517, 6, NULL, 53.67, 200, 905, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9518, 9, NULL, 100, 462, 905, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9519, 7, NULL, 64, 346, 905, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9520, 5, NULL, 36.67, 345, 905, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9521, 3, NULL, 48.67, 488, 905, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9522, 4, NULL, 79.33, 307, 905, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9523, 2, NULL, 22.67, 340, 905, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9524, 1, NULL, 13.33, 339, 905, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9525, 12, NULL, 142.25, 24, 906, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9526, 7, NULL, 92.25, 472, 906, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9527, 3, NULL, 49.75, 221, 906, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9528, 14, NULL, 196.75, 60, 906, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9529, 15, NULL, 232, 265, 906, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9530, 16, NULL, 245, 327, 906, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9531, 5, NULL, 56.5, 464, 906, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9532, 11, NULL, 111.5, 63, 906, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9533, 17, NULL, 260, 185, 906, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9534, 6, NULL, 63, 442, 906, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9535, 9, NULL, 101.25, 465, 906, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9536, 8, NULL, 99, 30, 906, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9537, 1, NULL, 27.25, 137, 906, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9538, 10, NULL, 104.25, 128, 906, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9539, 2, NULL, 38.5, 339, 906, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9540, 18, NULL, 290, 200, 906, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9541, 13, NULL, 149.25, 141, 906, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9542, 4, NULL, 52.5, 236, 906, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9543, 14, NULL, 0, 185, 907, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9544, 11, NULL, 55.67, 60, 907, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9545, 6, NULL, 33, 150, 907, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9546, 12, NULL, 76, 146, 907, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9547, 4, NULL, 28, 464, 907, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9548, 5, NULL, 32.33, 63, 907, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9549, 2, NULL, 16, 339, 907, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9550, 13, NULL, 123, 335, 907, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9551, 9, NULL, 42, 465, 907, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9552, 1, NULL, 13, 221, 907, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9553, 3, NULL, 19, 340, 907, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9554, 7, NULL, 34, 30, 907, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9555, 8, NULL, 42, 442, 907, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9556, 10, NULL, 48.67, 488, 907, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9557, 11, NULL, 105, 480, 908, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9558, 6, NULL, 61.67, 317, 908, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9559, 4, NULL, 39, 293, 908, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9560, 10, NULL, 87, 318, 908, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9561, 9, NULL, 83, 427, 908, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9562, 3, NULL, 36.67, 418, 908, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9563, 2, NULL, 35.67, 479, 908, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9564, 15, NULL, 138.67, 133, 908, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9565, 7, NULL, 62, 43, 908, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9566, 12, NULL, 116, 225, 908, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9567, 13, NULL, 123, 44, 908, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9568, 14, NULL, 129.33, 75, 908, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9569, 5, NULL, 61, 339, 908, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9570, 10, NULL, 30.67, 480, 909, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9571, 11, NULL, 55, 402, 909, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9572, 12, NULL, 64.33, 133, 909, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9573, 13, NULL, 72, 44, 909, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9574, 14, NULL, 175, 454, 909, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9575, 1, NULL, 12, 467, 909, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9576, 2, NULL, 15.33, 137, 909, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9577, 3, NULL, 19.67, 418, 909, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9578, 4, NULL, 28.67, 339, 909, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9579, 5, NULL, 31, 317, 909, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9580, 6, NULL, 31.33, 43, 909, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9581, 7, NULL, 32.67, 221, 909, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9582, 8, NULL, 48.67, 401, 909, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9583, 9, NULL, 96.33, 440, 909, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9584, 9, NULL, 49.67, 24, 910, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9585, 12, NULL, 121.67, 200, 910, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9586, 8, NULL, 49.33, 63, 910, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9587, 5, NULL, 26, 340, 910, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9588, 4, NULL, 21.67, 339, 910, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9589, 1, NULL, 14.67, 464, 910, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9590, 10, NULL, 53.67, 30, 910, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9591, 3, NULL, 19, 465, 910, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9592, 7, NULL, 35, 128, 910, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9593, 11, NULL, 115.67, 146, 910, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9594, 2, NULL, 17, 150, 910, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9595, 15, NULL, 93, 112, 911, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9596, 10, NULL, 49, 345, 911, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9597, 4, NULL, 34, 442, 911, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9598, 9, NULL, 42, 236, 911, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9599, 12, NULL, 54.5, 218, 911, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9600, 1, NULL, 23.33, 339, 911, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9601, 13, NULL, 56.67, 24, 911, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9602, 8, NULL, 41, 464, 911, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9603, 3, NULL, 33.67, 465, 911, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9604, 2, NULL, 33, 340, 911, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9605, 5, NULL, 35, 235, 911, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9606, 11, NULL, 53, 472, 911, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9607, 6, NULL, 35.67, 30, 911, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9608, 14, NULL, 59, 128, 911, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9609, 7, NULL, 40, 63, 911, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9610, 2, NULL, 35.75, 464, 912, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9611, 11, NULL, 74, 150, 912, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9612, 15, NULL, 0, 265, 912, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9613, 9, NULL, 63.75, 210, 912, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9614, 13, NULL, 103, 63, 912, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9615, 8, NULL, 55, 141, 912, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9616, 6, NULL, 47, 339, 912, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9617, 1, NULL, 34.75, 30, 912, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9618, 10, NULL, 72, 225, 912, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9619, 14, NULL, 124.75, 54, 912, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9620, 12, NULL, 88.25, 128, 912, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9621, 5, NULL, 43.75, 340, 912, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9622, 4, NULL, 39.5, 472, 912, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9623, 7, NULL, 47.25, 465, 912, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9624, 3, NULL, 37.25, 221, 912, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9625, 8, NULL, 90.75, 421, 913, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9626, 4, NULL, 50.5, 101, 913, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9627, 9, NULL, 91.5, 464, 913, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9628, 6, NULL, 76, 340, 913, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9629, 1, NULL, 29.75, 467, 913, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9630, 2, NULL, 43.75, 137, 913, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9631, 5, NULL, 60.75, 221, 913, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9632, 3, NULL, 47.75, 418, 913, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9633, 10, NULL, 95, 472, 913, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9634, 7, NULL, 76.5, 30, 913, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9635, 5, NULL, 90, 345, 914, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9636, 6, NULL, 107, 307, 914, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9637, 7, NULL, 118, 283, 914, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9638, 8, NULL, 160, 448, 914, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9639, 1, NULL, 13.5, 339, 914, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9640, 2, NULL, 27, 340, 914, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9641, 3, NULL, 57.5, 489, 914, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9642, 4, NULL, 63, 488, 914, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9643, 10, NULL, 44, 340, 915, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9644, 11, NULL, 61.33, 150, 915, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9645, 12, NULL, 80.33, 200, 915, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9646, 6, NULL, 33, 63, 915, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9647, 7, NULL, 33.67, 235, 915, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9648, 1, NULL, 13.67, 339, 915, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9649, 3, NULL, 18.33, 464, 915, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9650, 13, NULL, 101, 307, 915, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9651, 14, NULL, 105, 283, 915, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9652, 9, NULL, 43, 479, 915, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9653, 4, NULL, 24, 30, 915, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9654, 2, NULL, 17.67, 137, 915, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9655, 5, NULL, 31, 465, 915, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9656, 8, NULL, 38.33, 418, 915, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9657, 14, NULL, 0, 472, 916, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9658, 8, NULL, 73.67, 438, 916, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9659, 14, NULL, 0, 235, 916, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9660, 6, NULL, 50.33, 63, 916, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9661, 3, NULL, 28.33, 150, 916, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9662, 12, NULL, 110, 146, 916, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9663, 2, NULL, 23.67, 339, 916, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9664, 10, NULL, 98, 283, 916, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9665, 11, NULL, 102, 260, 916, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9666, 5, NULL, 45, 442, 916, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9667, 7, NULL, 56.33, 112, 916, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9668, 1, NULL, 17.33, 221, 916, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9669, 9, NULL, 92, 30, 916, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9670, 4, NULL, 41.33, 128, 916, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9671, 1, NULL, 21.67, 467, 917, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9672, 2, NULL, 22.67, 137, 917, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9673, 3, NULL, 24.67, 418, 917, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9674, 4, NULL, 29.67, 479, 917, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9675, 5, NULL, 35, 43, 917, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9676, 6, NULL, 37, 339, 917, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9677, 7, NULL, 37.67, 363, 917, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9678, 8, NULL, 57, 240, 917, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9679, 9, NULL, 61.67, 421, 917, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9680, 10, NULL, 63.67, 101, 917, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9681, 11, NULL, 70.67, 350, 917, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9682, 12, NULL, 105, 210, 917, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9683, 1, NULL, 26.33, 137, 918, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9684, 2, NULL, 29, 418, 918, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9685, 3, NULL, 31.67, 467, 918, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9686, 4, NULL, 37.33, 221, 918, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9687, 5, NULL, 38.67, 339, 918, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9688, 6, NULL, 50.33, 464, 918, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9689, 7, NULL, 80.67, 340, 918, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9690, 8, NULL, 102, 39, 918, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9691, 9, NULL, 104.67, 40, 918, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9692, 10, NULL, 112, 368, 918, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9693, 11, NULL, 130.33, 133, 918, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9694, 12, NULL, 138.33, 266, 918, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9695, 13, NULL, 166.67, 424, 918, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9696, 1, NULL, 23.33, 137, 919, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9697, 2, NULL, 27.33, 339, 919, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9698, 3, NULL, 40.33, 221, 919, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9699, 4, NULL, 46.5, 479, 919, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9700, 5, NULL, 54.67, 43, 919, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9701, 6, NULL, 65.67, 427, 919, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9702, 7, NULL, 67.33, 401, 919, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9703, 8, NULL, 64.33, 210, 919, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9704, 9, NULL, 87.67, 18, 919, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9705, 10, NULL, 140, 222, 919, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9706, 11, NULL, 111, 157, 919, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9707, 1, NULL, 29.25, 137, 920, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9708, 2, NULL, 37.25, 32, 920, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9709, 3, NULL, 40, 43, 920, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9710, 4, NULL, 41.5, 418, 920, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9711, 5, NULL, 49, 467, 920, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9712, 6, NULL, 55.5, 479, 920, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9713, 7, NULL, 57, 339, 920, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9714, 8, NULL, 58, 363, 920, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9715, 9, NULL, 67, 421, 920, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9716, 10, NULL, 67.5, 210, 920, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9717, 11, NULL, 77.5, 240, 920, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9718, 12, NULL, 132.25, 233, 920, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9719, 13, NULL, 156, 133, 920, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9720, 1, NULL, 16, 339, 921, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9721, 2, NULL, 17, 465, 921, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9722, 3, NULL, 17.67, 464, 921, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9723, 4, NULL, 24, 340, 921, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9724, 5, NULL, 33.3, 150, 921, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9725, 6, NULL, 42.67, 24, 921, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9726, 7, NULL, 43.67, 236, 921, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9727, 8, NULL, 46.33, 218, 921, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9728, 9, NULL, 47, 63, 921, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9729, 10, NULL, 48, 128, 921, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9730, 11, NULL, 48.33, 112, 921, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9731, 12, NULL, 57, 442, 921, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9732, 13, NULL, 58.33, 488, 921, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9733, 14, NULL, 65.67, 216, 921, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9734, 15, NULL, 67.33, 117, 921, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9735, 1, NULL, 10, 339, 922, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9736, 2, NULL, 11.67, 340, 922, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9737, 3, NULL, 30.33, 345, 922, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9738, 4, NULL, 32.67, 488, 922, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9739, 5, NULL, 39, 108, 922, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9740, 6, NULL, 62.33, 307, 922, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9741, 7, NULL, 72.67, 109, 922, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9742, 8, NULL, 109, 448, 922, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9743, 9, NULL, 110, 335, 922, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9744, 10, NULL, 136, 449, 922, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9745, 11, NULL, 140, 152, 922, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9746, 12, NULL, 150, 283, 922, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9747, 1, NULL, 24, 339, 923, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9748, 2, NULL, 35.5, 340, 923, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9749, 3, NULL, 41.5, 210, 923, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9750, 4, NULL, 46.5, 464, 923, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9751, 5, NULL, 48.25, 63, 923, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9752, 6, NULL, 50.25, 150, 923, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9753, 7, NULL, 56.25, 465, 923, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9754, 8, NULL, 57, 472, 923, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9755, 9, NULL, 65, 30, 923, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9756, 10, NULL, 66.25, 235, 923, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9757, 11, NULL, 69, 128, 923, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9758, 12, NULL, 85.75, 221, 923, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9759, 13, NULL, 86.5, 112, 923, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9760, 14, NULL, 105.75, 141, 923, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9761, 15, NULL, 133, 283, 923, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9762, 16, NULL, 156, 178, 923, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9763, 1, NULL, 44, 465, 924, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9764, 2, NULL, 87, 24, 924, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9765, 3, NULL, 87.33, 339, 924, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9766, 4, NULL, 89.67, 63, 924, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9767, 5, NULL, 94.33, 446, 924, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9768, 6, NULL, 100.33, 128, 924, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9769, 7, NULL, 102.67, 283, 924, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9770, 8, NULL, 105.33, 30, 924, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9771, 9, NULL, 136, 112, 924, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9772, 10, NULL, 137.33, 216, 924, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9773, 11, NULL, 178, 412, 924, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9774, 12, NULL, 238, 413, 924, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9775, 1, NULL, 22.25, 467, 925, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9776, 2, NULL, 36, 363, 925, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9777, 3, NULL, 40, 43, 925, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9778, 4, NULL, 43, 421, 925, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9779, 5, NULL, 48.25, 464, 925, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9780, 6, NULL, 49, 137, 925, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9781, 7, NULL, 50, 210, 925, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9782, 8, NULL, 50.75, 339, 925, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9783, 9, NULL, 62.25, 63, 925, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9784, 10, NULL, 66.5, 340, 925, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9785, 1, NULL, 26, 137, 926, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (9786, 2, NULL, 27.5, 339, 926, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9787, 3, NULL, 36.25, 465, 926, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9788, 4, NULL, 52, 340, 926, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9789, 5, NULL, 53, 221, 926, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9790, 6, NULL, 54, 472, 926, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9791, 7, NULL, 58, 464, 926, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9792, 8, NULL, 59.5, 30, 926, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9793, 9, NULL, 60, 150, 926, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9794, 10, NULL, 65.75, 236, 926, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9795, 11, NULL, 76, 9, 926, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9796, 12, NULL, 81.25, 117, 926, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9797, 13, NULL, 85.75, 442, 926, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9798, 14, NULL, 86.5, 235, 926, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9799, 15, NULL, 100.5, 24, 926, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9800, 16, NULL, 102.5, 128, 926, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9801, 17, NULL, 122, 283, 926, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9802, 18, NULL, 125.75, 112, 926, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9803, 19, NULL, 127.75, 345, 926, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9804, 20, NULL, 130.25, 327, 926, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9805, 1, NULL, 20.67, 137, 927, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9806, 2, NULL, 24, 467, 927, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9807, 3, NULL, 27.67, 363, 927, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9808, 4, NULL, 31.33, 479, 927, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9809, 5, NULL, 34, 418, 927, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9810, 6, NULL, 35.33, 240, 927, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9811, 7, NULL, 43.33, 210, 927, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9812, 8, NULL, 45.33, 339, 927, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9813, 9, NULL, 47.67, 43, 927, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9814, 10, NULL, 49.67, 194, 927, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9815, 11, NULL, 52.33, 225, 927, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9816, 12, NULL, 55.67, 350, 927, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9817, 13, NULL, 60.33, 401, 927, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9818, 14, NULL, 70, 83, 927, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9819, 15, NULL, 113, 44, 927, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9820, 1, NULL, 15, 339, 928, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9821, 2, NULL, 19, 39, 928, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9822, 3, NULL, 23.33, 464, 928, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9823, 4, NULL, 24.33, 340, 928, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9824, 5, NULL, 29.33, 465, 928, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9825, 6, NULL, 39.33, 277, 928, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9826, 7, NULL, 43.67, 345, 928, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9827, 8, NULL, 62.67, 283, 928, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9828, 9, NULL, 83.33, 108, 928, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9829, 10, NULL, 105, 152, 928, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9830, 11, NULL, 153.33, 449, 928, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9831, 12, NULL, 171.33, 376, 928, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9832, 13, NULL, 186, 448, 928, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9833, 1, NULL, 30.67, 467, 929, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9834, 2, NULL, 34, 137, 929, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9835, 3, NULL, 38.67, 43, 929, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9836, 4, NULL, 65, 210, 929, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9837, 5, NULL, 66.33, 339, 929, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9838, 6, NULL, 92.33, 363, 929, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9839, 7, NULL, 107, 401, 929, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9840, 8, NULL, 52.67, 44, 929, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9841, 9, NULL, 64.33, 83, 929, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9842, 10, NULL, 80.67, 133, 929, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9843, 11, NULL, 97.33, 157, 929, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9844, 12, NULL, 123.67, 18, 929, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9845, 13, NULL, 154, 228, 929, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9846, 14, NULL, 173, 399, 929, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9847, 1, NULL, 13.33, 467, 930, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9848, 2, NULL, 22.33, 479, 930, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9849, 3, NULL, 23.33, 339, 930, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9850, 4, NULL, 25.33, 137, 930, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9851, 5, NULL, 28.67, 363, 930, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9852, 6, NULL, 39.33, 210, 930, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9853, 7, NULL, 40, 221, 930, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9854, 8, NULL, 50.33, 84, 930, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9855, 9, NULL, 50.67, 340, 930, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9856, 10, NULL, 52, 427, 930, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9857, 11, NULL, 58.67, 194, 930, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9858, 12, NULL, 88, 257, 930, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9859, 13, NULL, 91, 333, 930, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9860, 14, NULL, 91.67, 32, 930, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9861, 15, NULL, 95, 240, 930, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9862, 16, NULL, 111, 133, 930, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9863, 1, NULL, 50.67, 236, 931, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9864, 2, NULL, 62, 339, 931, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9865, 3, NULL, 84, 345, 931, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9866, 4, NULL, 103, 424, 931, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9867, 5, NULL, 142, 440, 931, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9868, 6, NULL, 190, 472, 931, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9869, 8, NULL, 0, 479, 931, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9870, 8, NULL, 0, 9, 931, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9871, 14, NULL, 93, 218, 932, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9872, 11, NULL, 48, 117, 932, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9873, 6, NULL, 31.33, 412, 932, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9874, 5, NULL, 30, 472, 932, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9875, 13, NULL, 67, 63, 932, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9876, 4, NULL, 28, 236, 932, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9877, 12, NULL, 55.67, 9, 932, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9878, 8, NULL, 34, 340, 932, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9879, 3, NULL, 17.67, 465, 932, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9880, 10, NULL, 42.33, 438, 932, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9881, 2, NULL, 14.33, 464, 932, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9882, 7, NULL, 32, 345, 932, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9883, 1, NULL, 12.33, 339, 932, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9884, 9, NULL, 40.67, 235, 932, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9885, 15, NULL, 0, 446, 932, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9886, 5, NULL, 58, 465, 933, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9887, 8, NULL, 73.5, 150, 933, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9888, 11, NULL, 86.5, 266, 933, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9889, 10, NULL, 77.5, 221, 933, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9890, 2, NULL, 32.5, 339, 933, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9891, 9, NULL, 75, 63, 933, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9892, 18, NULL, 0, 210, 933, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9893, 18, NULL, 0, 112, 933, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9894, 1, NULL, 31, 464, 933, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9895, 6, NULL, 64.25, 277, 933, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9896, 12, NULL, 121.25, 128, 933, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9897, 18, NULL, 0, 438, 933, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9898, 4, NULL, 39.5, 472, 933, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9899, 7, NULL, 64.75, 141, 933, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9900, 13, NULL, 157.5, 283, 933, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9901, 3, NULL, 35, 30, 933, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9902, 18, NULL, 0, 235, 933, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9903, 18, NULL, 0, 178, 933, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9904, 2, NULL, 36, 340, 934, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9905, 5, NULL, 107, 488, 934, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9906, 1, NULL, 34, 339, 934, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9907, 4, NULL, 87, 108, 934, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9908, 3, NULL, 63, 345, 934, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9909, 9, NULL, 190, 376, 934, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9910, 7, NULL, 174, 335, 934, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9911, 11, NULL, 0, 283, 934, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9912, 8, NULL, 181, 307, 934, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9913, 6, NULL, 150, 152, 934, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9914, 11, NULL, 0, 448, 934, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9915, 6, NULL, 41.75, 418, 935, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9916, 5, NULL, 39.75, 465, 935, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9917, 3, NULL, 26, 137, 935, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9918, 10, NULL, 52.25, 472, 935, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9919, 8, NULL, 48.25, 421, 935, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9920, 2, NULL, 22.75, 467, 935, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9921, 9, NULL, 48.75, 30, 935, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9922, 4, NULL, 35.75, 464, 935, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9923, 1, NULL, 16.75, 339, 935, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9924, 7, NULL, 47.25, 43, 935, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9925, 14, NULL, 65, 440, 936, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9926, 3, NULL, 17, 464, 936, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9927, 10, NULL, 43.33, 24, 936, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9928, 12, NULL, 58.67, 112, 936, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9929, 6, NULL, 26, 412, 936, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9930, 8, NULL, 28.67, 236, 936, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9931, 1, NULL, 12.33, 339, 936, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9932, 4, NULL, 21, 464, 936, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9933, 11, NULL, 56.67, 345, 936, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9934, 2, NULL, 13.67, 30, 936, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9935, 13, NULL, 63.67, 235, 936, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9936, 5, NULL, 22.67, 472, 936, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9937, 7, NULL, 26.33, 340, 936, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9938, 9, NULL, 31.33, 63, 936, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9939, 15, NULL, 75.67, 218, 936, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9940, 8, NULL, 54.75, 277, 937, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9941, 3, NULL, 38, 221, 937, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (9942, 9, NULL, 59, 472, 937, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9943, 14, NULL, 86.75, 260, 937, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9944, 18, NULL, 120.5, 228, 937, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9945, 12, NULL, 77.5, 63, 937, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9946, 5, NULL, 44, 340, 937, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9947, 6, NULL, 45.5, 464, 937, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9948, 15, NULL, 108.75, 266, 937, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9949, 11, NULL, 69.5, 30, 937, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9950, 4, NULL, 39, 412, 937, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (9951, 7, NULL, 50.75, 150, 937, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9952, 17, NULL, 116.5, 283, 937, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9953, 10, NULL, 64, 128, 937, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9954, 16, NULL, 109.25, 146, 937, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9955, 1, NULL, 28.75, 465, 937, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9956, 2, NULL, 32.75, 339, 937, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9957, 19, NULL, 132.25, 152, 937, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9958, 13, NULL, 85, 451, 937, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9959, 12, NULL, 91.67, 336, 938, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9960, 11, NULL, 78.33, 266, 938, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9961, 5, NULL, 35.67, 340, 938, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9962, 14, NULL, 96.67, 75, 938, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9963, 10, NULL, 71, 260, 938, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9964, 4, NULL, 26, 30, 938, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (9965, 7, NULL, 49, 451, 938, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9966, 9, NULL, 65, 335, 938, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9967, 2, NULL, 13, 464, 938, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (9968, 15, NULL, 153, 376, 938, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9969, 3, NULL, 22.33, 465, 938, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (9970, 6, NULL, 41, 412, 938, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9971, 1, NULL, 8, 339, 938, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (9972, 8, NULL, 60, 277, 938, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9973, 13, NULL, 94, 283, 938, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9974, 1, NULL, 11.5, 339, 939, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (9975, 2, NULL, 25.5, 340, 939, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9976, 3, NULL, 67, 108, 939, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9977, 4, NULL, 81, 345, 939, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9978, 5, NULL, 92, 152, 939, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9979, 6, NULL, 53, 488, 939, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9980, 7, NULL, 90, 335, 939, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9981, 8, NULL, 91, 283, 939, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9982, 9, NULL, 98, 359, 939, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9983, 10, NULL, 120, 307, 939, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9984, 11, NULL, 129, 341, 939, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9985, 1, NULL, 21.5, 467, 940, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (9986, 4, NULL, 30.25, 339, 940, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (9987, 6, NULL, 36, 418, 940, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (9988, 7, NULL, 36.5, 221, 940, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (9989, 8, NULL, 45, 465, 940, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (9990, 3, NULL, 29, 137, 940, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (9991, 9, NULL, 49.5, 350, 940, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (9992, 10, NULL, 62.25, 412, 940, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (9993, 5, NULL, 32.5, 340, 940, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (9994, 2, NULL, 25.75, 421, 940, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (9995, 1, NULL, 9.5, 339, 941, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (9996, 2, NULL, 11.5, 464, 941, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (9997, 3, NULL, 12.25, 137, 941, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (9998, 4, NULL, 15, 412, 941, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (9999, 5, NULL, 19.75, 30, 941, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10000, 6, NULL, 22.25, 465, 941, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10001, 7, NULL, 23.5, 63, 941, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10002, 8, NULL, 25, 472, 941, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10003, 9, NULL, 27.25, 277, 941, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10004, 10, NULL, 29, 221, 941, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10005, 11, NULL, 37, 235, 941, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10006, 12, NULL, 38.25, 340, 941, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10007, 13, NULL, 38.75, 117, 941, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10008, 14, NULL, 48, 128, 941, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10009, 15, NULL, 49, 141, 941, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10010, 16, NULL, 57, 60, 941, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10011, 17, NULL, 65.5, 112, 941, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10012, 18, NULL, 74.25, 283, 941, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10013, 19, NULL, 75, 9, 941, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10014, 20, NULL, 84.25, 411, 941, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10015, 21, NULL, 125.5, 146, 941, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10016, 1, NULL, 16.33, 339, 942, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10017, 2, NULL, 19, 221, 942, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10018, 3, NULL, 26.67, 465, 942, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10019, 4, NULL, 31, 464, 942, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10020, 5, NULL, 36.33, 63, 942, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10021, 6, NULL, 37, 412, 942, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10022, 7, NULL, 39.33, 128, 942, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10023, 8, NULL, 43, 277, 942, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10024, 9, NULL, 43.33, 30, 942, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10025, 10, NULL, 47.67, 260, 942, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10026, 11, NULL, 63.33, 438, 942, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10027, 12, NULL, 75.67, 269, 942, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10028, 13, NULL, 91, 283, 942, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10029, 14, NULL, 100.33, 146, 942, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10030, 15, NULL, 144, 178, 942, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10031, 1, NULL, 16.5, 418, 943, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10032, 2, NULL, 17, 339, 943, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10033, 3, NULL, 24.75, 137, 943, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10034, 4, NULL, 38.25, 277, 943, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10035, 5, NULL, 50.75, 451, 943, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10036, 6, NULL, 51, 30, 943, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10037, 7, NULL, 55.5, 412, 943, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10038, 8, NULL, 55.75, 150, 943, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10039, 9, NULL, 56.5, 345, 943, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10040, 10, NULL, 70, 424, 943, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10041, 11, NULL, 74, 266, 943, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10042, 12, NULL, 87, 73, 943, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10043, 13, NULL, 100.75, 63, 943, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10044, 14, NULL, 108.5, 74, 943, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10045, 15, NULL, 109.75, 133, 943, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10046, 16, NULL, 120, 335, 943, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10047, 8, NULL, 36.67, 472, 944, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10048, 6, NULL, 25.33, 236, 944, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10049, 5, NULL, 20, 63, 944, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10050, 11, NULL, 54.67, 112, 944, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10051, 10, NULL, 52.33, 340, 944, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10052, 3, NULL, 17.33, 150, 944, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10053, 12, NULL, 56, 235, 944, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10054, 7, NULL, 33, 30, 944, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10055, 1, NULL, 12, 464, 944, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10056, 9, NULL, 43, 197, 944, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10057, 2, NULL, 13.67, 339, 944, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10058, 13, NULL, 76, 117, 944, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10059, 4, NULL, 19.33, 412, 944, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10060, 14, NULL, 80, 440, 944, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10061, 7, NULL, 48, 451, 945, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10062, 13, NULL, 101.5, 336, 945, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10063, 8, NULL, 54.5, 260, 945, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10064, 9, NULL, 59, 340, 945, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10065, 2, NULL, 10.75, 339, 945, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10066, 3, NULL, 17.5, 465, 945, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10067, 4, NULL, 21, 464, 945, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10068, 6, NULL, 43, 277, 945, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10069, 15, NULL, 148, 152, 945, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10070, 11, NULL, 89.5, 337, 945, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10071, 14, NULL, 102, 283, 945, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10072, 5, NULL, 24, 30, 945, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10073, 1, NULL, 9.75, 412, 945, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10074, 12, NULL, 95, 335, 945, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10075, 10, NULL, 72.5, 108, 945, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10076, 11, NULL, 137, 64, 946, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10077, 12, NULL, 0, 68, 946, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10078, 9, NULL, 76, 60, 946, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10079, 10, NULL, 97, 386, 946, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10080, 4, NULL, 28.5, 340, 946, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10081, 6, NULL, 57.5, 327, 946, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10082, 7, NULL, 62, 112, 946, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10083, 8, NULL, 70, 385, 946, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10084, 2, NULL, 19.5, 412, 946, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10085, 5, NULL, 40, 63, 946, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10086, 1, NULL, 12, 339, 946, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10087, 3, NULL, 24.5, 464, 946, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10088, 15, NULL, 73.25, 210, 947, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10089, 9, NULL, 52.25, 465, 947, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10090, 2, NULL, 21, 339, 947, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10091, 7, NULL, 48.75, 30, 947, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10092, 16, NULL, 87.25, 146, 947, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10093, 11, NULL, 58, 472, 947, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10094, 3, NULL, 33.5, 464, 947, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10095, 10, NULL, 56.25, 438, 947, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10096, 1, NULL, 17.5, 221, 947, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10097, 14, NULL, 72, 260, 947, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10098, 17, NULL, 152.75, 283, 947, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10099, 4, NULL, 33.75, 412, 947, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10100, 5, NULL, 35.5, 150, 947, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10101, 13, NULL, 69.75, 141, 947, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10102, 6, NULL, 46, 63, 947, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10103, 8, NULL, 50.25, 277, 947, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10104, 12, NULL, 58.75, 112, 947, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10105, 6, NULL, 34.25, 221, 948, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10106, 4, NULL, 25, 339, 948, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10107, 10, NULL, 61, 412, 948, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10108, 7, NULL, 47, 150, 948, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10109, 3, NULL, 23.5, 418, 948, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10110, 9, NULL, 49.75, 421, 948, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10111, 1, NULL, 15.75, 467, 948, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10112, 5, NULL, 33.25, 464, 948, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10113, 8, NULL, 47.5, 225, 948, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10114, 2, NULL, 19, 137, 948, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10115, 1, NULL, 11.75, 137, 949, 37);
+INSERT INTO
+    DRL_result
+VALUES
+    (10116, 1, NULL, 11.75, 339, 949, 37);
+INSERT INTO
+    DRL_result
+VALUES
+    (10117, 3, NULL, 24.25, 150, 949, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (10118, 4, NULL, 26.25, 412, 949, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10119, 5, NULL, 30, 472, 949, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10120, 6, NULL, 30.25, 464, 949, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10121, 7, NULL, 32, 63, 949, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10122, 8, NULL, 39.5, 128, 949, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10123, 9, NULL, 45.75, 277, 949, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10124, 10, NULL, 49.25, 222, 949, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10125, 11, NULL, 52, 9, 949, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10126, 12, NULL, 54.5, 30, 949, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10127, 13, NULL, 57, 60, 949, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10128, 14, NULL, 66.75, 112, 949, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10129, 15, NULL, 88.5, 340, 949, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10130, 16, NULL, 89, 411, 949, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10131, 17, NULL, 107, 152, 949, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10132, 18, NULL, 109, 283, 949, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10133, 19, NULL, 110, 146, 949, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10134, 20, NULL, 0, 221, 949, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10135, 11, NULL, 60.5, 152, 950, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10136, 7, NULL, 45.5, 335, 950, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10137, 10, NULL, 58, 376, 950, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10138, 9, NULL, 53, 336, 950, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10139, 8, NULL, 46.5, 283, 950, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10140, 6, NULL, 43.5, 341, 950, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10141, 5, NULL, 35.5, 346, 950, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10142, 3, NULL, 32.5, 488, 950, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10143, 2, NULL, 18.25, 339, 950, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10144, 12, NULL, 0, 108, 950, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10145, 4, NULL, 45.25, 340, 950, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10146, 1, NULL, 15, 345, 950, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10147, 17, NULL, 101, 465, 951, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10148, 18, NULL, 123, 218, 951, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10149, 10, NULL, 60, 150, 951, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10150, 8, NULL, 60.33, 340, 951, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10151, 15, NULL, 90, 385, 951, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10152, 16, NULL, 92, 128, 951, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10153, 4, NULL, 27, 221, 951, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10154, 11, NULL, 67, 197, 951, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10155, 9, NULL, 62, 24, 951, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10156, 19, NULL, 162, 433, 951, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10157, 3, NULL, 24, 472, 951, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10158, 14, NULL, 86, 112, 951, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10159, 12, NULL, 71, 71, 951, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10160, 1, NULL, 16, 339, 951, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (10161, 13, NULL, 78, 146, 951, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10162, 2, NULL, 22, 464, 951, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (10163, 7, NULL, 46, 30, 951, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10164, 6, NULL, 38, 412, 951, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10165, 5, NULL, 28, 236, 951, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10166, 13, NULL, 77.75, 128, 952, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10167, 10, NULL, 67.5, 141, 952, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10168, 16, NULL, 80.75, 63, 952, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10169, 14, NULL, 78.25, 112, 952, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10170, 12, NULL, 72.5, 24, 952, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10171, 17, NULL, 88.75, 411, 952, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10172, 18, NULL, 101.75, 340, 952, 1);
+INSERT INTO
+    DRL_result
+VALUES
+    (10173, 8, NULL, 46, 472, 952, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10174, 5, NULL, 31.5, 465, 952, 27);
+INSERT INTO
+    DRL_result
+VALUES
+    (10175, 5, NULL, 31.5, 277, 952, 27);
+INSERT INTO
+    DRL_result
+VALUES
+    (10176, 2, NULL, 21.5, 412, 952, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (10177, 3, NULL, 24.25, 339, 952, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10178, 15, NULL, 79.5, 260, 952, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10179, 7, NULL, 37.5, 150, 952, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10180, 4, NULL, 31.25, 464, 952, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10181, 18, NULL, 101.75, 146, 952, 1);
+INSERT INTO
+    DRL_result
+VALUES
+    (10182, 9, NULL, 65.25, 438, 952, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10183, 11, NULL, 72, 30, 952, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10184, 1, NULL, 16.5, 221, 952, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (10185, 1, NULL, 20.33, 339, 953, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10186, 2, NULL, 34, 412, 953, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10187, 3, NULL, 41.33, 221, 953, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10188, 4, NULL, 69.33, 128, 953, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10189, 5, NULL, 79.33, 63, 953, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10190, 6, NULL, 82.67, 385, 953, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10191, 7, NULL, 85, 112, 953, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10192, 8, NULL, 85.33, 30, 953, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10193, 9, NULL, 151, 283, 953, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10194, 3, NULL, 28.25, 467, 954, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10195, 8, NULL, 49.25, 465, 954, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10196, 1, NULL, 21.5, 339, 954, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10197, 5, NULL, 41.25, 418, 954, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10198, 4, NULL, 29.25, 137, 954, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10199, 7, NULL, 43.75, 221, 954, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10200, 10, NULL, 60.25, 421, 954, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10201, 9, NULL, 51.75, 412, 954, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10202, 2, NULL, 26.25, 464, 954, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10203, 6, NULL, 44.75, 225, 954, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10204, 13, NULL, 50.67, 278, 955, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10205, 9, NULL, 44, 277, 955, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10206, 19, NULL, 95.33, 112, 955, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10207, 6, NULL, 22, 412, 955, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10208, 17, NULL, 81.33, 283, 955, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10209, 14, NULL, 51.33, 128, 955, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10210, 11, NULL, 45.67, 472, 955, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10211, 20, NULL, 117.33, 327, 955, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10212, 8, NULL, 35, 340, 955, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10213, 21, NULL, 118, 265, 955, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10214, 5, NULL, 20.33, 465, 955, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10215, 7, NULL, 32.67, 150, 955, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10216, 4, NULL, 19.67, 236, 955, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (10217, 12, NULL, 46, 345, 955, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10218, 1, NULL, 12.67, 137, 955, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (10219, 3, NULL, 19, 464, 955, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (10220, 2, NULL, 16.67, 339, 955, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (10221, 16, NULL, 64.33, 411, 955, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10222, 18, NULL, 87.33, 146, 955, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10223, 15, NULL, 60.33, 9, 955, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10224, 10, NULL, 44.67, 63, 955, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10225, 1, NULL, 20.67, 418, 956, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10226, 2, NULL, 40, 137, 956, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10227, 3, NULL, 41, 472, 956, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10228, 4, NULL, 42.67, 277, 956, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10229, 5, NULL, 43, 339, 956, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10230, 6, NULL, 67, 278, 956, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10231, 7, NULL, 76.67, 266, 956, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10232, 8, NULL, 85.33, 2, 956, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10233, 9, NULL, 101, 335, 956, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10234, 10, NULL, 106, 399, 956, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10235, 11, NULL, 110.67, 242, 956, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10236, 8, NULL, 58.67, 63, 957, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10237, 14, NULL, 83, 218, 957, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10238, 7, NULL, 45, 150, 957, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10239, 11, NULL, 62.67, 340, 957, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10240, 5, NULL, 29, 236, 957, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10241, 2, NULL, 19.67, 464, 957, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10242, 6, NULL, 44.33, 472, 957, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10243, 10, NULL, 62, 411, 957, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10244, 15, NULL, 0, 345, 957, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10245, 9, NULL, 61.33, 117, 957, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10246, 13, NULL, 65.67, 237, 957, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10247, 1, NULL, 12.67, 339, 957, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10248, 4, NULL, 24.33, 465, 957, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10249, 12, NULL, 63, 128, 957, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10250, 3, NULL, 23, 412, 957, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10251, 1, NULL, 2.75, 335, 958, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10252, 2, NULL, 6, 376, 958, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10253, 3, NULL, 7.75, 236, 958, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10254, 4, NULL, 9, 63, 958, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10255, 5, NULL, 11, 75, 958, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10256, 6, NULL, 17.75, 79, 958, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10257, 7, NULL, 21.25, 137, 958, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10258, 8, NULL, 26.5, 165, 958, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10259, 9, NULL, 28, 200, 958, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10260, 10, NULL, 33, 385, 958, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10261, 11, NULL, 40.75, 157, 958, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10262, 12, NULL, 49, 401, 958, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10263, 13, NULL, 57, 210, 958, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10264, 14, NULL, 63.25, 169, 958, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10265, 15, NULL, 118, 158, 958, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10266, 1, NULL, 16.5, 335, 959, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10267, 2, NULL, 33.5, 376, 959, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10268, 3, NULL, 40, 137, 959, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10269, 4, NULL, 49, 400, 959, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10270, 5, NULL, 62, 311, 959, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10271, 6, NULL, 75, 399, 959, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10272, 7, NULL, 86, 43, 959, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10273, 8, NULL, 89, 491, 959, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10274, 9, NULL, 97, 373, 959, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10275, 10, NULL, 109, 472, 959, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10276, 1, NULL, 25, 385, 960, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10277, 2, NULL, 29, 412, 960, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10278, 3, NULL, 38, 335, 960, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10279, 4, NULL, 47, 339, 960, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10280, 5, NULL, 56, 169, 960, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10281, 6, NULL, 57.5, 236, 960, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10282, 7, NULL, 72.5, 464, 960, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10283, 8, NULL, 77, 98, 960, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10284, 9, NULL, 85, 283, 960, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10285, 10, NULL, 101, 472, 960, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10286, 1, NULL, 36, 236, 961, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10287, 2, NULL, 44, 194, 961, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10288, 3, NULL, 45.5, 155, 961, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10289, 4, NULL, 58.25, 169, 961, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10290, 5, NULL, 62, 84, 961, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10291, 6, NULL, 72, 424, 961, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10292, 7, NULL, 84, 327, 961, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10293, 8, NULL, 107.5, 79, 961, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10294, 1, NULL, 50.75, 137, 962, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10295, 2, NULL, 64, 491, 962, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10296, 3, NULL, 73, 373, 962, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10297, 4, NULL, 74, 43, 962, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10298, 1, NULL, 64, 385, 963, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10299, 2, NULL, 77, 412, 963, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10300, 3, NULL, 83, 122, 963, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10301, 4, NULL, 95, 63, 963, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10302, 5, NULL, 137, 386, 963, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10303, 6, NULL, 165.25, 64, 963, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10304, 1, NULL, 79, 284, 964, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10305, 2, NULL, 87, 464, 964, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10306, 3, NULL, 145, 390, 964, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10307, 4, NULL, 182, 90, 964, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10308, 5, NULL, 186, 178, 964, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10309, 6, NULL, 202, 283, 964, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10310, 1, NULL, 17, 75, 965, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10311, 2, NULL, 21, 467, 965, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10312, 3, NULL, 23, 399, 965, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10313, 4, NULL, 26, 137, 965, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10314, 5, NULL, 26.25, 257, 965, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10315, 6, NULL, 34.25, 300, 965, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10316, 7, NULL, 34.75, 139, 965, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10317, 8, NULL, 40.75, 288, 965, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10318, 9, NULL, 45.75, 147, 965, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10319, 10, NULL, 72.75, 220, 965, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10320, 1, NULL, 18, 335, 966, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10321, 2, NULL, 24.25, 385, 966, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10322, 3, NULL, 24.5, 376, 966, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10323, 4, NULL, 30, 165, 966, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10324, 5, NULL, 47.25, 122, 966, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10325, 6, NULL, 47.5, 412, 966, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10326, 7, NULL, 54.5, 242, 966, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10327, 8, NULL, 60.5, 200, 966, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10328, 9, NULL, 64.75, 63, 966, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10329, 10, NULL, 109, 365, 966, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10330, 1, NULL, 39.5, 63, 967, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10331, 2, NULL, 40.75, 412, 967, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10332, 3, NULL, 44.75, 200, 967, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10333, 4, NULL, 45.5, 288, 967, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10334, 5, NULL, 47.25, 242, 967, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10335, 6, NULL, 50, 300, 967, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10336, 7, NULL, 51, 139, 967, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10337, 8, NULL, 63.5, 147, 967, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10338, 1, NULL, 11, 399, 968, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10339, 2, NULL, 16, 369, 968, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10340, 3, NULL, 27, 79, 968, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10341, 4, NULL, 39, 400, 968, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10342, 5, NULL, 42, 80, 968, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10343, 6, NULL, 44.5, 371, 968, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10344, 7, NULL, 52, 192, 968, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10345, 8, NULL, 65, 436, 968, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10346, 1, NULL, 63.75, 335, 969, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10347, 2, NULL, 88.25, 376, 969, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10348, 3, NULL, 102.5, 339, 969, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10349, 4, NULL, 121.4, 337, 969, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10350, 1, NULL, 12.75, 335, 970, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10351, 2, NULL, 22.5, 385, 970, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10352, 3, NULL, 27.75, 165, 970, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10353, 4, NULL, 29.75, 75, 970, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10354, 5, NULL, 30.25, 376, 970, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10355, 6, NULL, 33, 467, 970, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10356, 7, NULL, 34, 412, 970, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10357, 8, NULL, 38, 63, 970, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10358, 9, NULL, 41.25, 399, 970, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10359, 10, NULL, 41.5, 137, 970, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10360, 11, NULL, 44.75, 257, 970, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10361, 12, NULL, 50.75, 122, 970, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10362, 1, NULL, 41.5, 491, 971, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10363, 2, NULL, 42.5, 399, 971, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10364, 3, NULL, 44.25, 79, 971, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10365, 4, NULL, 50.5, 236, 971, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10366, 5, NULL, 70, 369, 971, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10367, 6, NULL, 73.25, 157, 971, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10368, 7, NULL, 79.5, 472, 971, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10369, 8, NULL, 95, 311, 971, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10370, 9, NULL, 98.5, 401, 971, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10371, 10, NULL, 117, 402, 971, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10372, 11, NULL, 121, 210, 971, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10373, 12, NULL, 139, 371, 971, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10374, 1, NULL, 41.5, 335, 972, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10375, 2, NULL, 61, 236, 972, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10376, 3, NULL, 62.5, 75, 972, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10377, 4, NULL, 66, 385, 972, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10378, 5, NULL, 68.5, 467, 972, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10379, 6, NULL, 68.75, 412, 972, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10380, 7, NULL, 88.5, 200, 972, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10381, 8, NULL, 92.5, 288, 972, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10382, 9, NULL, 95, 79, 972, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10383, 10, NULL, 105.5, 147, 972, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10384, 11, NULL, 137, 169, 972, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10385, 1, NULL, 11.75, 335, 973, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10386, 2, NULL, 19, 467, 973, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10387, 3, NULL, 20.5, 75, 973, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10388, 4, NULL, 22, 385, 973, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10389, 5, NULL, 26.5, 412, 973, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10390, 6, NULL, 28.5, 200, 973, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10391, 7, NULL, 32, 236, 973, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10392, 8, NULL, 34.5, 79, 973, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10393, 9, NULL, 40, 147, 973, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10394, 10, NULL, 41.5, 288, 973, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10395, 11, NULL, 57, 169, 973, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10396, 1, NULL, 17, 335, 974, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10397, 2, NULL, 31.75, 385, 974, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10398, 3, NULL, 33.75, 467, 974, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10399, 4, NULL, 39, 412, 974, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10400, 5, NULL, 40.5, 75, 974, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10401, 6, NULL, 54.5, 79, 974, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10402, 7, NULL, 63.75, 236, 974, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10403, 8, NULL, 68.25, 200, 974, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10404, 9, NULL, 79.5, 147, 974, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10405, 10, NULL, 95, 169, 974, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10406, 11, NULL, 0, 288, 974, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10407, 1, NULL, 39.67, 412, 975, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10408, 2, NULL, 50.33, 236, 975, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10409, 3, NULL, 73.33, 376, 975, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10410, 4, NULL, 79.67, 200, 975, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10411, 5, NULL, 118.33, 394, 975, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10412, 6, NULL, 163, 327, 975, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10413, 1, NULL, 14.75, 335, 976, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10414, 2, NULL, 19.75, 75, 976, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10415, 3, NULL, 23.5, 376, 976, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10416, 4, NULL, 38.25, 137, 976, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10417, 5, NULL, 39.5, 236, 976, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10418, 6, NULL, 43.75, 200, 976, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10419, 7, NULL, 44.5, 412, 976, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10420, 8, NULL, 47.75, 394, 976, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10421, 9, NULL, 91.75, 242, 976, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10422, 10, NULL, 114.25, 63, 976, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10423, 1, NULL, 29.5, 300, 977, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10424, 2, NULL, 30, 467, 977, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10425, 3, NULL, 39, 157, 977, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10426, 4, NULL, 52.5, 375, 977, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10427, 5, NULL, 55.5, 158, 977, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10428, 1, NULL, 32, 288, 978, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10429, 2, NULL, 48, 256, 978, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10430, 3, NULL, 54.5, 133, 978, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10431, 4, NULL, 67.5, 183, 978, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10432, 5, NULL, 82.5, 330, 978, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10433, 6, NULL, 84.5, 257, 978, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10434, 7, NULL, 96, 134, 978, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10435, 1, NULL, 33.25, 376, 979, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10436, 2, NULL, 36, 75, 979, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10437, 3, NULL, 46, 385, 979, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10438, 4, NULL, 59.75, 137, 979, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10439, 5, NULL, 82, 169, 979, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10440, 6, NULL, 90.5, 157, 979, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10441, 7, NULL, 110.5, 79, 979, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10442, 8, NULL, 128.5, 158, 979, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10443, 9, NULL, 131, 63, 979, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10444, 1, NULL, 50.25, 385, 980, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10445, 2, NULL, 61, 75, 980, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10446, 3, NULL, 61.5, 376, 980, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10447, 4, NULL, 69.25, 137, 980, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10448, 5, NULL, 73, 169, 980, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10449, 6, NULL, 84, 79, 980, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10450, 7, NULL, 118, 63, 980, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10451, 8, NULL, 129.25, 157, 980, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10452, 1, NULL, 11.5, 376, 986, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10453, 2, NULL, 12.5, 335, 986, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10454, 3, NULL, 14.5, 385, 986, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10455, 4, NULL, 22.5, 200, 986, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10456, 5, NULL, 24.5, 412, 986, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10457, 6, NULL, 25, 75, 986, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10458, 7, NULL, 26.5, 169, 986, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10459, 8, NULL, 28, 384, 986, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10460, 9, NULL, 30, 236, 986, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10461, 10, NULL, 34.5, 242, 986, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10462, 11, NULL, 49.5, 311, 986, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10463, 12, NULL, 50, 79, 986, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10464, 13, NULL, 56, 122, 986, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10465, 1, NULL, 22, 335, 983, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10466, 2, NULL, 23.5, 385, 983, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10467, 3, NULL, 43.75, 300, 983, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10468, 4, NULL, 45, 467, 983, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10469, 5, NULL, 47.5, 84, 983, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10470, 6, NULL, 63, 369, 983, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10471, 7, NULL, 70, 147, 983, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10472, 8, NULL, 78, 79, 983, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10473, 9, NULL, 99, 10, 983, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10474, 1, NULL, 19, 335, 984, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10475, 2, NULL, 23, 75, 984, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10476, 3, NULL, 26.5, 385, 984, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10477, 4, NULL, 28.5, 467, 984, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10478, 5, NULL, 30, 300, 984, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10479, 6, NULL, 30.5, 84, 984, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10480, 7, NULL, 37.5, 369, 984, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10481, 8, NULL, 45, 79, 984, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10482, 9, NULL, 53, 147, 984, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10483, 10, NULL, 65, 10, 984, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10484, 1, NULL, 22.75, 335, 985, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10485, 2, NULL, 32, 369, 985, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10486, 3, NULL, 34.5, 385, 985, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10487, 4, NULL, 49, 467, 985, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10488, 5, NULL, 57.5, 300, 985, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10489, 6, NULL, 76.5, 84, 985, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10490, 7, NULL, 89.5, 79, 985, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10491, 8, NULL, 117, 147, 985, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10492, 9, NULL, 121, 10, 985, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10493, 1, NULL, 31.5, 385, 982, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10494, 2, NULL, 34.5, 75, 982, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10495, 3, NULL, 46.25, 63, 982, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (10496, 3, NULL, 46.25, 236, 982, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (10497, 5, NULL, 48, 376, 982, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10498, 6, NULL, 55.25, 394, 982, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10499, 7, NULL, 58.25, 412, 982, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10500, 8, NULL, 68, 137, 982, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10501, 9, NULL, 84.25, 79, 982, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10502, 10, NULL, 89.75, 147, 982, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10503, 1, NULL, 24, 75, 981, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10504, 2, NULL, 33.25, 385, 981, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10505, 3, NULL, 35.25, 236, 981, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10506, 4, NULL, 35.5, 412, 981, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10507, 5, NULL, 41, 394, 981, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10508, 6, NULL, 42, 137, 981, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10509, 7, NULL, 50.5, 376, 981, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10510, 8, NULL, 57, 63, 981, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10511, 9, NULL, 74.75, 147, 981, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10512, 10, NULL, 88.5, 79, 981, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10513, 1, NULL, 12, 335, 987, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10514, 2, NULL, 13, 75, 987, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10515, 3, NULL, 26, 300, 987, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10516, 4, NULL, 35, 137, 987, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10517, 5, NULL, 35.5, 394, 987, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10518, 6, NULL, 52.5, 399, 987, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10519, 7, NULL, 53, 157, 987, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10520, 8, NULL, 56.5, 200, 987, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10521, 9, NULL, 64, 242, 987, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10522, 10, NULL, 76.5, 395, 987, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10523, 11, NULL, 91, 169, 987, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10524, 1, NULL, 19, 394, 988, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10525, 2, NULL, 29, 200, 988, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10526, 3, NULL, 31, 399, 988, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10527, 4, NULL, 41.5, 75, 988, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10528, 5, NULL, 46.5, 335, 988, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10529, 6, NULL, 51, 394, 988, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10530, 7, NULL, 52, 300, 988, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10531, 8, NULL, 71, 242, 988, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10532, 9, NULL, 89.5, 169, 988, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10533, 10, NULL, 108.5, 157, 988, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10534, 1, NULL, 19, 467, 989, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10535, 2, NULL, 23, 385, 989, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10536, 3, NULL, 24.75, 137, 989, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10537, 4, NULL, 30, 412, 989, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10538, 5, NULL, 32.5, 236, 989, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10539, 6, NULL, 41, 257, 989, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10540, 7, NULL, 41.5, 300, 989, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10541, 8, NULL, 45, 399, 989, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10542, 9, NULL, 48, 373, 989, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10543, 10, NULL, 49, 369, 989, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10544, 11, NULL, 53.5, 79, 989, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10545, 12, NULL, 58, 43, 989, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10546, 1, NULL, 48.5, 141, 990, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10547, 2, NULL, 56, 169, 990, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10548, 3, NULL, 82, 157, 990, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10549, 4, NULL, 71, 210, 990, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10550, 5, NULL, 101.5, 158, 990, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10551, 6, NULL, 112.5, 228, 990, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10552, 7, NULL, 175, 120, 990, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10553, 1, NULL, 18.5, 75, 991, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10554, 2, NULL, 21, 467, 991, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10555, 3, NULL, 27, 300, 991, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10556, 4, NULL, 33, 137, 991, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10557, 5, NULL, 35, 399, 991, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10558, 6, NULL, 42, 79, 991, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10559, 7, NULL, 42.5, 147, 991, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10560, 8, NULL, 56, 43, 991, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10561, 9, NULL, 80, 311, 991, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10562, 1, NULL, 35, 169, 992, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10563, 2, NULL, 37.5, 236, 992, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10564, 3, NULL, 40.5, 242, 992, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10565, 4, NULL, 47, 412, 992, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10566, 5, NULL, 57, 385, 992, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10567, 6, NULL, 81, 238, 992, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10568, 7, NULL, 111, 472, 992, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10569, 8, NULL, 113, 162, 992, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10570, 1, NULL, 12.5, 376, 993, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10571, 2, NULL, 21.5, 467, 993, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10572, 3, NULL, 22.25, 335, 993, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10573, 4, NULL, 44.5, 300, 993, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10574, 5, NULL, 69, 375, 993, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10575, 6, NULL, 97.75, 242, 993, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10576, 7, NULL, 119, 200, 993, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10577, 1, NULL, 33.5, 237, 994, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10578, 2, NULL, 34.5, 236, 994, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10579, 3, NULL, 42.25, 197, 994, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10580, 4, NULL, 62.25, 98, 994, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10581, 5, NULL, 67, 327, 994, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10582, 1, NULL, 17.5, 236, 995, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10583, 2, NULL, 24.5, 412, 995, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10584, 3, NULL, 31, 237, 995, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10585, 4, NULL, 34, 399, 995, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10586, 5, NULL, 42, 137, 995, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10587, 6, NULL, 44, 169, 995, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10588, 7, NULL, 56.5, 147, 995, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10589, 8, NULL, 66, 43, 995, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10590, 9, NULL, 67.5, 311, 995, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10591, 10, NULL, 71.5, 472, 995, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10592, 11, NULL, 83.5, 157, 995, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10593, 12, NULL, 125, 221, 995, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10594, 13, NULL, 150, 158, 995, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10595, 1, NULL, 16, 335, 996, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10596, 2, NULL, 27, 75, 996, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10597, 3, NULL, 30, 467, 996, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10598, 4, NULL, 34, 137, 996, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10599, 5, NULL, 29.75, 369, 996, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10600, 6, NULL, 39, 288, 996, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10601, 7, NULL, 43, 133, 996, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10602, 8, NULL, 46, 192, 996, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10603, 9, NULL, 55, 147, 996, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10604, 10, NULL, 95, 134, 996, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10605, 1, NULL, 5.25, 335, 997, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10606, 2, NULL, 11, 75, 997, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10607, 3, NULL, 21.5, 467, 997, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10608, 4, NULL, 41, 137, 997, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10609, 5, NULL, 29.5, 369, 997, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10610, 6, NULL, 33, 288, 997, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10611, 7, NULL, 36, 147, 997, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10612, 8, NULL, 49.5, 133, 997, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10613, 9, NULL, 61.25, 192, 997, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10614, 10, NULL, 91.5, 134, 997, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10615, 2, NULL, 44.75, 317, 864, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10616, 3, NULL, 45, 71, 864, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10617, 1, NULL, 21.5, 194, 998, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10618, 2, NULL, 32, 236, 998, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10619, 3, NULL, 38, 385, 998, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10620, 4, NULL, 40, 467, 998, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10621, 5, NULL, 47, 84, 998, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10622, 6, NULL, 48, 327, 998, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10623, 7, NULL, 66.5, 63, 998, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10624, 1, NULL, 5.5, 335, 999, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10625, 2, NULL, 9, 75, 999, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10626, 3, NULL, 14, 467, 999, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10627, 4, NULL, 18, 300, 999, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10628, 5, NULL, 21, 137, 999, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10629, 6, NULL, 28.5, 207, 999, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10630, 7, NULL, 30.5, 399, 999, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10631, 8, NULL, 32, 147, 999, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10632, 9, NULL, 42.5, 369, 999, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10633, 10, NULL, 50.5, 157, 999, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10634, 11, NULL, 63.5, 133, 999, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10635, 1, NULL, 13.5, 339, 1000, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10636, 2, NULL, 14, 464, 1000, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10637, 3, NULL, 16.75, 412, 1000, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10638, 4, NULL, 31, 71, 1000, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10639, 5, NULL, 37.25, 242, 1000, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10640, 6, NULL, 40, 335, 1000, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10641, 7, NULL, 46.25, 210, 1000, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10642, 8, NULL, 48.75, 269, 1000, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10643, 9, NULL, 50.75, 260, 1000, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10644, 10, NULL, 67, 340, 1000, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10645, 11, NULL, 78.5, 68, 1000, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10646, 12, NULL, 80.75, 386, 1000, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10647, 13, NULL, 87.75, 273, 1000, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10648, 14, NULL, 109.75, 112, 1000, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10649, 15, NULL, 0, 185, 1000, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10650, 1, NULL, 40, 317, 1001, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10651, 2, NULL, 42.5, 179, 1001, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10652, 3, NULL, 59.66, 84, 1001, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10653, 4, NULL, 62, 50, 1001, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10654, 5, NULL, 71, 71, 1001, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10655, 6, NULL, 72.67, 345, 1001, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10656, 7, NULL, 86, 404, 1001, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10657, 8, NULL, 93, 339, 1001, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10658, 9, NULL, 101, 305, 1001, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10659, 10, NULL, 106, 57, 1001, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10660, 11, NULL, 114.67, 424, 1001, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10661, 1, NULL, 25.33, 71, 1002, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10662, 2, NULL, 30, 36, 1002, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10663, 3, NULL, 42, 317, 1002, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10664, 4, NULL, 42.67, 345, 1002, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10665, 5, NULL, 50, 84, 1002, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10666, 6, NULL, 50.33, 242, 1002, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10667, 7, NULL, 70.67, 399, 1002, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10668, 8, NULL, 76.33, 98, 1002, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10669, 9, NULL, 78.33, 339, 1002, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10670, 10, NULL, 78.67, 427, 1002, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10671, 1, NULL, 21.67, 317, 1003, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10672, 2, NULL, 27.67, 71, 1003, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10673, 3, NULL, 38, 50, 1003, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10674, 4, NULL, 41, 84, 1003, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10675, 5, NULL, 50.33, 179, 1003, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10676, 6, NULL, 69.33, 333, 1003, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10677, 7, NULL, 102.33, 424, 1003, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10678, 1, NULL, 23.75, 339, 1004, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10679, 2, NULL, 25.5, 71, 1004, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10680, 3, NULL, 31, 412, 1004, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10681, 4, NULL, 32, 464, 1004, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10682, 5, NULL, 33.5, 385, 1004, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10683, 6, NULL, 41.5, 137, 1004, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10684, 7, NULL, 46, 273, 1004, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10685, 8, NULL, 50.5, 260, 1004, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10686, 9, NULL, 52.5, 242, 1004, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10687, 10, NULL, 57.5, 108, 1004, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10688, 11, NULL, 61, 340, 1004, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10689, 12, NULL, 71, 345, 1004, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10690, 13, NULL, 75.5, 424, 1004, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10691, 1, NULL, 25.25, 317, 1005, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10692, 2, NULL, 35.25, 179, 1005, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10693, 3, NULL, 36.5, 50, 1005, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10694, 4, NULL, 45.25, 236, 1005, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10695, 5, NULL, 53.75, 84, 1005, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10696, 6, NULL, 54, 71, 1005, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10697, 7, NULL, 58.5, 333, 1005, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10698, 8, NULL, 67, 345, 1005, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10699, 9, NULL, 93.25, 424, 1005, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10700, 10, NULL, 95.75, 172, 1005, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10701, 11, NULL, 109.5, 4, 1005, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10702, 1, NULL, 27.5, 71, 1006, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10703, 2, NULL, 31, 50, 1006, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10704, 3, NULL, 31.5, 339, 1006, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10705, 4, NULL, 35.5, 84, 1006, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10706, 5, NULL, 45, 197, 1006, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10707, 6, NULL, 50.5, 345, 1006, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10708, 7, NULL, 60.5, 236, 1006, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10709, 8, NULL, 66, 305, 1006, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10710, 1, NULL, 25.5, 71, 1007, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10711, 2, NULL, 29.5, 236, 1007, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10712, 3, NULL, 32.5, 197, 1007, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10713, 4, NULL, 38, 84, 1007, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10714, 5, NULL, 43.5, 50, 1007, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10715, 6, NULL, 46.5, 339, 1007, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10716, 7, NULL, 50, 345, 1007, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10717, 8, NULL, 84, 305, 1007, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10718, 1, NULL, 31.5, 339, 1008, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10719, 2, NULL, 34.5, 345, 1008, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10720, 3, NULL, 37, 197, 1008, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10721, 4, NULL, 38, 84, 1008, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10722, 5, NULL, 42, 71, 1008, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10723, 6, NULL, 57, 305, 1008, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10724, 7, NULL, 57, 50, 1008, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10725, 8, NULL, 57.5, 236, 1008, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10726, 1, NULL, 38, 399, 1009, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10727, 2, NULL, 42.67, 317, 1009, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10728, 3, NULL, 48.67, 401, 1009, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10729, 4, NULL, 52.33, 79, 1009, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10730, 5, NULL, 67.67, 400, 1009, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10731, 6, NULL, 74, 369, 1009, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10732, 7, NULL, 84.67, 321, 1009, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10733, 8, NULL, 138, 322, 1009, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10734, 1, NULL, 41, 339, 1010, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10735, 2, NULL, 55.33, 273, 1010, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10736, 3, NULL, 57.67, 108, 1010, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10737, 4, NULL, 59.67, 345, 1010, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10738, 5, NULL, 60, 335, 1010, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10739, 6, NULL, 66, 71, 1010, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10740, 7, NULL, 80.33, 385, 1010, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10741, 8, NULL, 82.67, 336, 1010, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10742, 9, NULL, 103.33, 242, 1010, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10743, 10, NULL, 105.33, 243, 1010, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10744, 11, NULL, 108.33, 340, 1010, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10745, 12, NULL, 129.33, 386, 1010, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10746, 1, NULL, 16, 71, 1011, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10747, 2, NULL, 17, 137, 1011, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10748, 2, NULL, 17, 138, 1011, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10749, 4, NULL, 19, 157, 1011, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10750, 5, NULL, 26, 158, 1011, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10751, 6, NULL, 29, 399, 1011, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10752, 7, NULL, 29.5, 72, 1011, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10753, 8, NULL, 33.5, 385, 1011, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10754, 9, NULL, 43.5, 293, 1011, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10755, 10, NULL, 62, 210, 1011, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10756, 11, NULL, 70.5, 400, 1011, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10757, 1, NULL, 22, 464, 1012, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10758, 2, NULL, 30.67, 71, 1012, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10759, 3, NULL, 33.67, 335, 1012, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10760, 4, NULL, 35.33, 412, 1012, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10761, 5, NULL, 37.67, 128, 1012, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10762, 6, NULL, 41.67, 385, 1012, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10763, 7, NULL, 50.33, 108, 1012, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10764, 8, NULL, 56, 260, 1012, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10765, 9, NULL, 61.33, 242, 1012, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10766, 10, NULL, 67.33, 185, 1012, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10767, 11, NULL, 71.33, 242, 1012, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10768, 12, NULL, 78.33, 221, 1012, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10769, 13, NULL, 80.67, 273, 1012, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10770, 14, NULL, 92.67, 63, 1012, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10771, 15, NULL, 98.67, 348, 1012, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10772, 1, NULL, 17.5, 339, 1013, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10773, 2, NULL, 23.5, 335, 1013, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10774, 3, NULL, 23.5, 137, 1013, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10775, 4, NULL, 28, 286, 1013, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10776, 5, NULL, 32.25, 412, 1013, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10777, 6, NULL, 34.75, 467, 1013, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10778, 7, NULL, 35, 350, 1013, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10779, 8, NULL, 35.25, 464, 1013, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10780, 9, NULL, 40.25, 108, 1013, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10781, 10, NULL, 49.5, 399, 1013, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10782, 1, NULL, 30, 317, 1014, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10783, 2, NULL, 36, 399, 1014, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10784, 3, NULL, 37, 318, 1014, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10785, 4, NULL, 56, 401, 1014, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10786, 5, NULL, 67.5, 400, 1014, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10787, 6, NULL, 68, 79, 1014, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10788, 7, NULL, 91.5, 321, 1014, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10789, 8, NULL, 117, 369, 1014, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10790, 1, NULL, 19.67, 71, 1015, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10791, 2, NULL, 21.67, 137, 1015, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10792, 3, NULL, 27.33, 399, 1015, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10793, 4, NULL, 38.33, 221, 1015, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10794, 5, NULL, 44.67, 286, 1015, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10795, 6, NULL, 47.67, 82, 1015, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10796, 7, NULL, 47.67, 43, 1015, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10797, 8, NULL, 40, 321, 1015, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10798, 9, NULL, 45.67, 400, 1015, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10799, 10, NULL, 48.33, 45, 1015, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10800, 11, NULL, 51.33, 401, 1015, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10801, 12, NULL, 57.33, 271, 1015, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10802, 13, NULL, 77, 322, 1015, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10803, 1, NULL, 28, 71, 1016, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10804, 2, NULL, 30.5, 84, 1016, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10805, 3, NULL, 31.5, 179, 1016, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10806, 4, NULL, 66, 50, 1016, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10807, 5, NULL, 72, 424, 1016, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10808, 6, NULL, 98.5, 72, 1016, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10809, 1, NULL, 34, 71, 1017, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10810, 2, NULL, 55, 339, 1017, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10811, 3, NULL, 72.67, 197, 1017, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10812, 4, NULL, 89.33, 88, 1017, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10813, 5, NULL, 98.33, 242, 1017, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10814, 6, NULL, 102, 345, 1017, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10815, 7, NULL, 114.33, 79, 1017, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10816, 8, NULL, 117.33, 424, 1017, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10817, 9, NULL, 135.33, 79, 1017, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10818, 1, NULL, 38, 317, 1018, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10819, 2, NULL, 44.25, 179, 1018, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10820, 3, NULL, 46.75, 84, 1018, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10821, 4, NULL, 54.25, 71, 1018, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10822, 5, NULL, 56, 339, 1018, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10823, 6, NULL, 58.5, 50, 1018, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10824, 7, NULL, 84.5, 333, 1018, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10825, 8, NULL, 89, 4, 1018, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10826, 9, NULL, 95, 424, 1018, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10827, 10, NULL, 98, 345, 1018, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10828, 11, NULL, 150, 479, 1018, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10829, 1, NULL, 29, 317, 1019, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10830, 2, NULL, 62.5, 399, 1019, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10831, 3, NULL, 72, 79, 1019, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10832, 4, NULL, 78, 321, 1019, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10833, 5, NULL, 86, 401, 1019, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10834, 6, NULL, 93, 192, 1019, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10835, 7, NULL, 110, 369, 1019, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10836, 8, NULL, 121, 400, 1019, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10837, 1, NULL, 17.5, 75, 1020, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10838, 2, NULL, 35, 321, 1020, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10839, 3, NULL, 37.33, 401, 1020, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10840, 4, NULL, 38.5, 293, 1020, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (10841, 4, NULL, 38.5, 82, 1020, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (10842, 6, NULL, 39, 287, 1020, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10843, 7, NULL, 45.67, 400, 1020, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10844, 8, NULL, 50, 369, 1020, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10845, 9, NULL, 54.33, 43, 1020, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10846, 10, NULL, 56.33, 250, 1020, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10847, 11, NULL, 63.33, 101, 1020, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10848, 12, NULL, 75, 79, 1020, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10849, 13, NULL, 80.67, 271, 1020, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10850, 14, NULL, 101, 429, 1020, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10851, 15, NULL, 106, 44, 1020, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10852, 1, NULL, 13, 335, 1021, 48);
+INSERT INTO
+    DRL_result
+VALUES
+    (10853, 2, NULL, 14.25, 286, 1021, 46);
+INSERT INTO
+    DRL_result
+VALUES
+    (10854, 3, NULL, 15, 385, 1021, 44);
+INSERT INTO
+    DRL_result
+VALUES
+    (10855, 4, NULL, 17.75, 418, 1021, 42);
+INSERT INTO
+    DRL_result
+VALUES
+    (10856, 5, NULL, 20.75, 71, 1021, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (10857, 6, NULL, 26.75, 357, 1021, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (10858, 7, NULL, 26.25, 82, 1021, 35);
+INSERT INTO
+    DRL_result
+VALUES
+    (10859, 7, NULL, 26.25, 75, 1021, 35);
+INSERT INTO
+    DRL_result
+VALUES
+    (10860, 9, NULL, 28.5, 321, 1021, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (10861, 10, NULL, 33.5, 399, 1021, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (10862, 11, NULL, 38.75, 271, 1021, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (10863, 12, NULL, 39.5, 467, 1021, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10864, 13, NULL, 40.25, 43, 1021, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10865, 14, NULL, 43.5, 45, 1021, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10866, 15, NULL, 44.5, 287, 1021, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10867, 16, NULL, 46.5, 400, 1021, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10868, 17, NULL, 47, 272, 1021, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10869, 18, NULL, 49.25, 293, 1021, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10870, 19, NULL, 50, 4, 1021, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10871, 20, NULL, 55, 250, 1021, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10872, 21, NULL, 68, 369, 1021, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10873, 22, NULL, 72.5, 452, 1021, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10874, 23, NULL, 74.5, 336, 1021, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10875, 24, NULL, 86, 101, 1021, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10876, 25, NULL, 153.5, 6, 1021, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10877, 1, NULL, 27, 317, 1022, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10878, 2, NULL, 36, 399, 1022, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10879, 3, NULL, 37.66, 401, 1022, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10880, 4, NULL, 51, 400, 1022, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10881, 5, NULL, 52.66, 321, 1022, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10882, 6, NULL, 55.33, 79, 1022, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10883, 7, NULL, 71, 369, 1022, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10884, 8, NULL, 79.66, 192, 1022, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10885, 9, NULL, 105.33, 80, 1022, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10886, 1, NULL, 36.67, 317, 1023, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10887, 2, NULL, 46.33, 399, 1023, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10888, 3, NULL, 75.33, 192, 1023, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10889, 4, NULL, 76.33, 321, 1023, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10890, 5, NULL, 84.67, 400, 1023, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10891, 6, NULL, 99.33, 79, 1023, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10892, 7, NULL, 99.67, 322, 1023, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10893, 8, NULL, 109.67, 401, 1023, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10894, 9, NULL, 143.33, 48, 1023, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10895, 1, NULL, 42.67, 339, 1024, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10896, 2, NULL, 61.67, 317, 1024, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10897, 3, NULL, 64.67, 71, 1024, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10898, 4, NULL, 66.67, 236, 1024, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10899, 5, NULL, 86.67, 60, 1024, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10900, 6, NULL, 89.67, 385, 1024, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10901, 7, NULL, 96, 242, 1024, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10902, 8, NULL, 129, 234, 1024, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10903, 9, NULL, 153, 424, 1024, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10904, 1, NULL, 27.67, 317, 1025, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10905, 2, NULL, 28.67, 399, 1025, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10906, 3, NULL, 63, 401, 1025, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10907, 4, NULL, 64.33, 192, 1025, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10908, 5, NULL, 67, 400, 1025, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10909, 6, NULL, 89.33, 79, 1025, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10910, 1, NULL, 14.67, 236, 1026, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10911, 2, NULL, 21, 88, 1026, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10912, 3, NULL, 29.33, 71, 1026, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10913, 4, NULL, 39, 197, 1026, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10914, 5, NULL, 43.67, 72, 1026, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10915, 6, NULL, 44.33, 24, 1026, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10916, 7, NULL, 45, 89, 1026, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10917, 8, NULL, 64.67, 216, 1026, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10918, 9, NULL, 68, 472, 1026, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10919, 10, NULL, 85, 41, 1026, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10920, 11, NULL, 107.67, 9, 1026, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10921, 12, NULL, 120.33, 270, 1026, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10922, 13, NULL, 161, 265, 1026, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10923, 1, NULL, 35.33, 317, 1027, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10924, 2, NULL, 36.67, 340, 1027, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10925, 3, NULL, 37.67, 71, 1027, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10926, 4, NULL, 42.33, 242, 1027, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10927, 5, NULL, 56, 339, 1027, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10928, 6, NULL, 62.67, 236, 1027, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10929, 7, NULL, 81.33, 385, 1027, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10930, 8, NULL, 84, 424, 1027, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10931, 9, NULL, 101.33, 169, 1027, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10932, 10, NULL, 155, 60, 1027, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10933, 1, NULL, 22.67, 317, 1028, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10934, 2, NULL, 32.33, 399, 1028, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10935, 3, NULL, 39.67, 369, 1028, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10936, 4, NULL, 52, 400, 1028, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10937, 5, NULL, 55.33, 401, 1028, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10938, 6, NULL, 76, 371, 1028, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10939, 7, NULL, 129, 79, 1028, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10940, 1, NULL, 29, 71, 1029, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10941, 2, NULL, 32, 339, 1029, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10942, 3, NULL, 49.5, 242, 1029, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10943, 4, NULL, 54.5, 236, 1029, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10944, 5, NULL, 68, 88, 1029, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10945, 6, NULL, 70.5, 412, 1029, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10946, 7, NULL, 82.5, 197, 1029, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10947, 8, NULL, 89, 424, 1029, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10948, 9, NULL, 89.5, 385, 1029, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10949, 10, NULL, 92, 234, 1029, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10950, 11, NULL, 116, 126, 1029, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10951, 1, NULL, 37.5, 71, 1030, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10952, 2, NULL, 45.5, 335, 1030, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10953, 3, NULL, 57.5, 412, 1030, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10954, 4, NULL, 63.5, 340, 1030, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10955, 5, NULL, 74, 339, 1030, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10956, 6, NULL, 97, 260, 1030, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10957, 7, NULL, 102, 335, 1030, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10958, 8, NULL, 112, 424, 1030, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10959, 9, NULL, 120.5, 385, 1030, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10960, 10, NULL, 129, 216, 1030, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10961, 11, NULL, 154, 344, 1030, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10962, 1, NULL, 8.5, 335, 1031, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10963, 2, NULL, 13.5, 412, 1031, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10964, 3, NULL, 23.5, 137, 1031, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10965, 4, NULL, 38.5, 339, 1031, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10966, 5, NULL, 39.5, 340, 1031, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10967, 6, NULL, 50.5, 71, 1031, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10968, 7, NULL, 54.5, 260, 1031, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10969, 8, NULL, 60, 385, 1031, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10970, 9, NULL, 76, 336, 1031, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10971, 1, NULL, 33, 317, 1032, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10972, 2, NULL, 33.5, 242, 1032, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10973, 3, NULL, 38, 179, 1032, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10974, 4, NULL, 43, 404, 1032, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10975, 5, NULL, 52, 84, 1032, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10976, 6, NULL, 54.5, 57, 1032, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10977, 7, NULL, 56.5, 335, 1032, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10978, 8, NULL, 59, 71, 1032, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10979, 9, NULL, 66, 345, 1032, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10980, 10, NULL, 78, 424, 1032, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10981, 1, NULL, 11, 335, 1033, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10982, 2, NULL, 20, 242, 1033, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10983, 3, NULL, 25, 286, 1033, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10984, 4, NULL, 25.5, 71, 1033, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10985, 5, NULL, 26, 84, 1033, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (10986, 6, NULL, 32, 137, 1033, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (10987, 7, NULL, 41, 404, 1033, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (10988, 8, NULL, 42, 354, 1033, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (10989, 9, NULL, 51, 252, 1033, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (10990, 10, NULL, 56, 245, 1033, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (10991, 11, NULL, 59.5, 424, 1033, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (10992, 12, NULL, 78, 394, 1033, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (10993, 1, NULL, 13, 137, 1034, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (10994, 2, NULL, 25, 399, 1034, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (10995, 3, NULL, 25.25, 350, 1034, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (10996, 4, NULL, 25.5, 418, 1034, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (10997, 5, NULL, 27.75, 467, 1034, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (10998, 6, NULL, 30.75, 286, 1034, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (10999, 7, NULL, 32.25, 245, 1034, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11000, 8, NULL, 36, 250, 1034, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11001, 9, NULL, 48.75, 75, 1034, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11002, 10, NULL, 49.25, 452, 1034, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11003, 11, NULL, 53.75, 96, 1034, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11004, 12, NULL, 69.5, 271, 1034, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11005, 13, NULL, 69.75, 379, 1034, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11006, 14, NULL, 98.75, 43, 1034, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11007, 1, NULL, 21, 335, 1035, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11008, 2, NULL, 26.5, 412, 1035, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11009, 3, NULL, 29.25, 221, 1035, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11010, 4, NULL, 32.25, 242, 1035, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11011, 5, NULL, 36.5, 464, 1035, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11012, 6, NULL, 43.25, 385, 1035, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11013, 7, NULL, 50.25, 141, 1035, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11014, 8, NULL, 51.75, 260, 1035, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11015, 9, NULL, 53.25, 185, 1035, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11016, 10, NULL, 54.5, 63, 1035, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11017, 11, NULL, 83.75, 210, 1035, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11018, 12, NULL, 114.75, 386, 1035, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11019, 13, NULL, 132.5, 128, 1035, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11020, 1, NULL, 8.5, 335, 735, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11021, 2, NULL, 17, 137, 735, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11022, 3, NULL, 17.75, 418, 735, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11023, 4, NULL, 19, 242, 735, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11024, 5, NULL, 23.75, 412, 735, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11025, 6, NULL, 33.5, 350, 735, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11026, 7, NULL, 33.75, 467, 735, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11027, 8, NULL, 48, 464, 735, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11028, 9, NULL, 54.5, 399, 735, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11029, 10, NULL, 73.75, 221, 735, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11030, 1, NULL, 18, 317, 1037, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11031, 2, NULL, 28, 399, 1037, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11032, 3, NULL, 44, 369, 1037, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11033, 4, NULL, 87.5, 79, 1037, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11034, 5, NULL, 110, 371, 1037, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11035, 6, NULL, 117, 321, 1037, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11036, 7, NULL, 153, 400, 1037, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11037, 1, NULL, 14, 317, 1038, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11038, 2, NULL, 22, 399, 1038, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11039, 3, NULL, 27.5, 369, 1038, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11040, 4, NULL, 29.5, 401, 1038, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11041, 5, NULL, 46.5, 321, 1038, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11042, 6, NULL, 57.5, 79, 1038, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11043, 7, NULL, 61.5, 80, 1038, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11044, 8, NULL, 97, 371, 1038, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11045, 9, NULL, 137.5, 400, 1038, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11046, 1, NULL, 30.5, 317, 1039, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11047, 2, NULL, 32, 399, 1039, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11048, 3, NULL, 46, 79, 1039, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11049, 4, NULL, 52, 321, 1039, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11050, 5, NULL, 60, 80, 1039, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11051, 6, NULL, 64, 400, 1039, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11052, 7, NULL, 66.5, 369, 1039, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11053, 8, NULL, 68.5, 322, 1039, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11054, 9, NULL, 76, 401, 1039, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11055, 1, NULL, 13.5, 317, 1040, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11056, 2, NULL, 17, 399, 1040, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11057, 3, NULL, 38, 79, 1040, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11058, 4, NULL, 42.5, 401, 1040, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11059, 5, NULL, 44, 322, 1040, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11060, 6, NULL, 47.5, 400, 1040, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11061, 7, NULL, 52, 321, 1040, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11062, 8, NULL, 73, 139, 1040, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11063, 9, NULL, 108.5, 369, 1040, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11064, 10, NULL, 121.5, 371, 1040, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11065, 11, NULL, 122, 80, 1040, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11066, 1, NULL, 30.5, 399, 1041, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11067, 2, NULL, 40.5, 317, 1041, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11068, 3, NULL, 41, 79, 1041, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11069, 4, NULL, 47, 321, 1041, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11070, 5, NULL, 59, 401, 1041, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11071, 6, NULL, 62.5, 369, 1041, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11072, 7, NULL, 74.5, 80, 1041, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11073, 8, NULL, 87, 318, 1041, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11074, 9, NULL, 114.5, 139, 1041, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11075, 10, NULL, 131, 400, 1041, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11076, 11, NULL, 175, 371, 1041, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11077, 1, NULL, 12, 317, 1042, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11078, 2, NULL, 16.5, 399, 1042, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11079, 3, NULL, 32, 79, 1042, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11080, 4, NULL, 43.5, 369, 1042, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11081, 5, NULL, 44, 400, 1042, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11082, 6, NULL, 49, 318, 1042, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11083, 7, NULL, 57.5, 401, 1042, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11084, 8, NULL, 81, 80, 1042, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11085, 9, NULL, 145, 139, 1042, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11086, 10, NULL, 180, 220, 1042, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11087, 1, NULL, 22.5, 317, 1043, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11088, 2, NULL, 32, 79, 1043, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11089, 3, NULL, 40, 369, 1043, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11090, 4, NULL, 53, 371, 1043, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11091, 5, NULL, 53.5, 318, 1043, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11092, 6, NULL, 55.5, 80, 1043, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11093, 7, NULL, 57, 48, 1043, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11094, 8, NULL, 63, 399, 1043, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11095, 9, NULL, 80, 401, 1043, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11096, 10, NULL, 126.5, 140, 1043, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11097, 11, NULL, 155, 139, 1043, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11098, 1, NULL, 9.67, 101, 1044, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11099, 2, NULL, 13, 286, 1044, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11100, 3, NULL, 17.66, 84, 1044, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11101, 4, NULL, 21, 399, 1044, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11102, 5, NULL, 34, 242, 1044, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11103, 6, NULL, 34.67, 79, 1044, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11104, 7, NULL, 62.67, 169, 1044, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11105, 8, NULL, 68, 423, 1044, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11106, 1, NULL, 26.67, 84, 1045, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11107, 2, NULL, 45.33, 242, 1045, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11108, 3, NULL, 49.67, 206, 1045, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11109, 1, NULL, 11.5, 335, 1046, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11110, 2, NULL, 16, 286, 1046, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11111, 3, NULL, 27, 300, 1046, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11112, 4, NULL, 29, 271, 1046, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11113, 5, NULL, 32, 75, 1046, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11114, 6, NULL, 33.5, 242, 1046, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11115, 7, NULL, 36, 452, 1046, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11116, 8, NULL, 37.5, 147, 1046, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11117, 9, NULL, 47, 79, 1046, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11118, 1, NULL, 9.5, 335, 1047, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11119, 2, NULL, 16.5, 286, 1047, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11120, 3, NULL, 23, 300, 1047, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11121, 4, NULL, 27, 242, 1047, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11122, 5, NULL, 27.5, 75, 1047, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11123, 6, NULL, 52.5, 147, 1047, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11124, 7, NULL, 63.5, 271, 1047, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11125, 8, NULL, 64.5, 79, 1047, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11126, 9, NULL, 87, 452, 1047, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11127, 1, NULL, 11.5, 286, 1048, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11128, 2, NULL, 15, 335, 1048, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11129, 3, NULL, 21, 300, 1048, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11130, 4, NULL, 22.5, 242, 1048, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11131, 5, NULL, 46, 79, 1048, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11132, 6, NULL, 48, 75, 1048, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11133, 7, NULL, 58.5, 147, 1048, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11134, 8, NULL, 61, 452, 1048, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11135, 9, NULL, 70, 271, 1048, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11136, 1, NULL, 23, 335, 1049, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11137, 2, NULL, 23.5, 286, 1049, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11138, 3, NULL, 37.5, 79, 1049, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11139, 4, NULL, 50, 179, 1049, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11140, 5, NULL, 56, 242, 1049, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11141, 6, NULL, 76, 194, 1049, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11142, 1, NULL, 26, 317, 1050, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11143, 2, NULL, 28, 400, 1050, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11144, 3, NULL, 33.5, 79, 1050, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11145, 4, NULL, 34, 399, 1050, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11146, 5, NULL, 38.5, 80, 1050, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11147, 6, NULL, 45.5, 318, 1050, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11148, 7, NULL, 72, 321, 1050, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11149, 8, NULL, 78.5, 369, 1050, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11150, 9, NULL, 86, 139, 1050, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11151, 11, NULL, 22.5, 352, 485, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11152, 12, NULL, 29.5, 271, 485, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11153, 13, NULL, 31.5, 79, 485, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11154, 14, NULL, 35.5, 257, 485, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11155, 15, NULL, 44.5, 302, 485, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11156, 16, NULL, 46, 231, 485, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11157, 17, NULL, 46.5, 288, 485, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11158, 18, NULL, 51, 10, 485, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11159, 19, NULL, 58.5, 183, 485, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11160, 20, NULL, 122.5, 28, 485, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11161, 1, NULL, 11.5, 317, 1051, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11162, 2, NULL, 15.5, 399, 1051, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11163, 3, NULL, 20, 401, 1051, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11164, 4, NULL, 20.5, 321, 1051, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11165, 5, NULL, 29.5, 80, 1051, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11166, 6, NULL, 30, 192, 1051, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11167, 7, NULL, 40, 79, 1051, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11168, 8, NULL, 42, 280, 1051, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11169, 9, NULL, 54, 139, 1051, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11170, 1, NULL, 25, 317, 1053, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11171, 2, NULL, 31.5, 79, 1053, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11172, 3, NULL, 48, 399, 1053, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11173, 4, NULL, 53, 401, 1053, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11174, 5, NULL, 55, 80, 1053, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11175, 6, NULL, 65, 318, 1053, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11176, 7, NULL, 82, 369, 1053, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11177, 8, NULL, 122, 371, 1053, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11178, 6, NULL, 34.5, 429, 404, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11179, 7, NULL, 51.5, 399, 404, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11180, 8, NULL, 49.5, 210, 404, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11181, 9, NULL, 50, 165, 404, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11182, 10, NULL, 55, 79, 404, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11183, 11, NULL, 57, 431, 404, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11184, 12, NULL, 59.5, 373, 404, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11185, 1, NULL, 27, 317, 1054, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11186, 2, NULL, 33, 79, 1054, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11187, 3, NULL, 36, 399, 1054, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11188, 4, NULL, 41, 369, 1054, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11189, 5, NULL, 50, 139, 1054, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11190, 6, NULL, 64, 80, 1054, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11191, 7, NULL, 66, 371, 1054, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11192, 8, NULL, 71, 318, 1054, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11193, 9, NULL, 91, 401, 1054, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11194, 1, NULL, 28.33, 185, 1055, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11195, 2, NULL, 34, 399, 1055, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11196, 3, NULL, 49, 79, 1055, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11197, 4, NULL, 54, 250, 1055, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11198, 5, NULL, 57.33, 169, 1055, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11199, 6, NULL, 59.33, 491, 1055, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11200, 7, NULL, 62.33, 186, 1055, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11201, 8, NULL, 63.67, 128, 1055, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11202, 9, NULL, 76, 369, 1055, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11203, 10, NULL, 78, 371, 1055, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11204, 11, NULL, 84.33, 210, 1055, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11205, 12, NULL, 94.67, 431, 1055, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11206, 13, NULL, 96.67, 429, 1055, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11207, 14, NULL, 111.33, 471, 1055, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11208, 13, NULL, 55.5, 231, 393, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11209, 14, NULL, 93, 407, 393, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11210, 15, NULL, 142.5, 445, 393, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11211, 1, NULL, 12, 467, 1057, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11212, 2, NULL, 13, 286, 1057, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11213, 3, NULL, 31, 300, 1057, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11214, 4, NULL, 31, 257, 1057, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11215, 5, NULL, 33.75, 207, 1057, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11216, 6, NULL, 43.75, 452, 1057, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11217, 7, NULL, 45.75, 75, 1057, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11218, 8, NULL, 50.25, 193, 1057, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11219, 9, NULL, 56, 377, 1057, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11220, 1, NULL, 23.5, 317, 1058, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11221, 2, NULL, 28, 399, 1058, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11222, 3, NULL, 33.5, 79, 1058, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11223, 4, NULL, 50.5, 80, 1058, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11224, 5, NULL, 60.5, 318, 1058, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11225, 6, NULL, 80, 401, 1058, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11226, 7, NULL, 86.5, 369, 1058, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11227, 8, NULL, 119, 371, 1058, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11228, 1, NULL, 24.5, 385, 1060, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11229, 2, NULL, 32.5, 386, 1060, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11230, 3, NULL, 33.5, 71, 1060, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11231, 4, NULL, 34.5, 181, 1060, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11232, 5, NULL, 37, 467, 1060, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11233, 6, NULL, 42.5, 124, 1060, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11234, 7, NULL, 43.5, 300, 1060, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11235, 8, NULL, 61.5, 165, 1060, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11236, 9, NULL, 63, 266, 1060, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11237, 10, NULL, 69.5, 207, 1060, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11238, 1, NULL, 17, 300, 1061, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11239, 2, NULL, 19, 75, 1061, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11240, 3, NULL, 24, 286, 1061, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11241, 4, NULL, 26, 257, 1061, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11242, 5, NULL, 29, 467, 1061, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11243, 6, NULL, 40, 147, 1061, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11244, 7, NULL, 41, 139, 1061, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11245, 8, NULL, 54, 271, 1061, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11246, 9, NULL, 34, 183, 1061, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11247, 10, NULL, 43, 165, 1061, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11248, 11, NULL, 50, 452, 1061, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11249, 12, NULL, 60, 288, 1061, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11250, 1, NULL, 56.5, 79, 1062, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11251, 2, NULL, 57, 80, 1062, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11252, 3, NULL, 62, 399, 1062, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11253, 4, NULL, 65, 317, 1062, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11254, 5, NULL, 65.5, 369, 1062, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11255, 6, NULL, 93, 318, 1062, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11256, 7, NULL, 150, 371, 1062, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11257, 1, NULL, 14, 141, 1063, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11258, 2, NULL, 18.67, 300, 1063, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11259, 3, NULL, 22.33, 335, 1063, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11260, 4, NULL, 28.67, 79, 1063, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11261, 5, NULL, 29, 71, 1063, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11262, 6, NULL, 35.33, 165, 1063, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11263, 7, NULL, 36.33, 155, 1063, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11264, 8, NULL, 52.67, 380, 1063, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11265, 9, NULL, 59.33, 31, 1063, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11266, 1, NULL, 19, 401, 1064, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11267, 2, NULL, 21, 79, 1064, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11268, 3, NULL, 27, 165, 1064, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11269, 4, NULL, 46, 99, 1064, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11270, 5, NULL, 49, 43, 1064, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11271, 6, NULL, 52, 210, 1064, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11272, 7, NULL, 66, 402, 1064, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11273, 8, NULL, 67, 80, 1064, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11274, 9, NULL, 73, 166, 1064, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11275, 10, NULL, 75, 38, 1064, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11276, 1, NULL, 22, 236, 1065, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11277, 2, NULL, 34.5, 155, 1065, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11278, 3, NULL, 38, 71, 1065, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11279, 4, NULL, 53.5, 385, 1065, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11280, 5, NULL, 66, 79, 1065, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11281, 6, NULL, 71, 242, 1065, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11282, 7, NULL, 80.5, 234, 1065, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11283, 8, NULL, 94, 412, 1065, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11284, 13, NULL, 70, 133, 294, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11285, 14, NULL, 77.5, 369, 294, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11286, 1, NULL, 52.5, 317, 1066, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11287, 2, NULL, 53.5, 79, 1066, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11288, 3, NULL, 58.5, 400, 1066, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11289, 4, NULL, 59.5, 399, 1066, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11290, 5, NULL, 74, 80, 1066, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11291, 6, NULL, 94.5, 321, 1066, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11292, 7, NULL, 100, 369, 1066, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11293, 8, NULL, 110, 54, 1066, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11294, 15, NULL, 120, 186, 292, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11295, 1, NULL, 4, 335, 1067, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11296, 2, NULL, 12, 160, 1067, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11297, 3, NULL, 20, 257, 1067, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11298, 4, NULL, 21, 165, 1067, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11299, 5, NULL, 22, 300, 1067, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11300, 6, NULL, 43, 467, 1067, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11301, 7, NULL, 16, 36, 1067, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11302, 8, NULL, 36, 352, 1067, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11303, 9, NULL, 42, 207, 1067, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11304, 10, NULL, 45, 79, 1067, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11305, 11, NULL, 47, 460, 1067, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11306, 12, NULL, 49, 101, 1067, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11307, 13, NULL, 50, 321, 1067, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11308, 14, NULL, 52, 145, 1067, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11309, 15, NULL, 55, 231, 1067, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11310, 16, NULL, 63, 221, 1067, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11311, 17, NULL, 65, 144, 1067, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11312, 18, NULL, 80, 288, 1067, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11313, 1, NULL, 23.5, 165, 1068, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11314, 2, NULL, 27.5, 137, 1068, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11315, 3, NULL, 49, 79, 1068, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11316, 4, NULL, 52, 101, 1068, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11317, 5, NULL, 58, 491, 1068, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11318, 6, NULL, 63, 399, 1068, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11319, 7, NULL, 76, 271, 1068, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11320, 8, NULL, 79, 401, 1068, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11321, 9, NULL, 96, 210, 1068, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11322, 10, NULL, 101, 369, 1068, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11323, 13, NULL, 96, 399, 288, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11324, 14, NULL, 98.5, 210, 288, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11325, 15, NULL, 152.5, 356, 288, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11326, 16, NULL, 217.5, 400, 288, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11327, 1, NULL, 4, 335, 1069, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11328, 2, NULL, 16.5, 147, 1069, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11329, 3, NULL, 21, 207, 1069, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11330, 4, NULL, 23.5, 165, 1069, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11331, 5, NULL, 19, 257, 1069, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11332, 6, NULL, 29, 330, 1069, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11333, 7, NULL, 30.5, 271, 1069, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11334, 8, NULL, 35, 231, 1069, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11335, 9, NULL, 38.5, 79, 1069, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11336, 10, NULL, 45, 288, 1069, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11337, 11, NULL, 50, 369, 1069, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11338, 12, NULL, 57.5, 356, 1069, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11339, 1, NULL, 30, 472, 1070, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11340, 2, NULL, 30.75, 236, 1070, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11341, 3, NULL, 38.5, 71, 1070, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11342, 4, NULL, 40, 24, 1070, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11343, 5, NULL, 48.75, 41, 1070, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11344, 6, NULL, 49.25, 197, 1070, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11345, 7, NULL, 55, 473, 1070, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11346, 8, NULL, 56.5, 9, 1070, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11347, 9, NULL, 69.5, 237, 1070, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11348, 10, NULL, 100.25, 79, 1070, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11349, 1, NULL, 33, 412, 1072, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11350, 2, NULL, 41, 335, 1072, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11351, 3, NULL, 42.5, 194, 1072, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11352, 4, NULL, 69, 385, 1072, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11353, 5, NULL, 125.5, 157, 1072, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11354, 6, NULL, 161.5, 68, 1072, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11355, 1, NULL, 31, 335, 1073, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11356, 2, NULL, 34.5, 194, 1073, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11357, 3, NULL, 45, 385, 1073, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11358, 4, NULL, 69, 412, 1073, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11359, 5, NULL, 94.5, 68, 1073, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11360, 6, NULL, 136, 157, 1073, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11361, 1, NULL, 1.5, 376, 1074, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (11362, 2, NULL, 3.25, 335, 1074, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11363, 3, NULL, 5.25, 412, 1074, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11364, 4, NULL, 7, 236, 1074, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11365, 5, NULL, 7.75, 137, 1074, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11366, 6, NULL, 8.25, 63, 1074, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11367, 7, NULL, 11.5, 385, 1074, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11368, 8, NULL, 13.25, 311, 1074, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11369, 9, NULL, 14.5, 200, 1074, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11370, 10, NULL, 15.5, 165, 1074, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11371, 11, NULL, 19.75, 399, 1074, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11372, 12, NULL, 32, 157, 1074, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11373, 13, NULL, 34.75, 472, 1074, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11374, 14, NULL, 35, 169, 1074, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11375, 15, NULL, 48.5, 79, 1074, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11376, 16, NULL, 49, 162, 1074, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11377, 17, NULL, 52.75, 210, 1074, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11378, 18, NULL, 72, 158, 1074, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11379, 19, NULL, 72.75, 141, 1074, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11380, 1, NULL, 12, 236, 1075, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11381, 2, NULL, 17.25, 376, 1075, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11382, 3, NULL, 25.25, 385, 1075, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11383, 4, NULL, 29, 412, 1075, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11384, 5, NULL, 29.5, 237, 1075, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11385, 6, NULL, 32.75, 283, 1075, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11386, 7, NULL, 35, 335, 1075, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11387, 8, NULL, 48.25, 169, 1075, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11388, 9, NULL, 52, 141, 1075, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11389, 10, NULL, 65, 311, 1075, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11390, 11, NULL, 73.5, 472, 1075, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11391, 12, NULL, 107.5, 390, 1075, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11392, 1, NULL, 35.5, 236, 1076, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11393, 2, NULL, 47.5, 194, 1076, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11394, 3, NULL, 51, 179, 1076, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11395, 4, NULL, 69.75, 424, 1076, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11396, 5, NULL, 105.5, 214, 1076, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11397, 6, NULL, 105.75, 162, 1076, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11398, 1, NULL, 33, 385, 1077, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11399, 2, NULL, 53, 63, 1077, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11400, 3, NULL, 61.75, 412, 1077, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11401, 4, NULL, 64, 386, 1077, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11402, 5, NULL, 83.5, 122, 1077, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11403, 6, NULL, 131, 103, 1077, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11404, 7, NULL, 163.5, 64, 1077, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11405, 1, NULL, 16, 335, 1078, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11406, 2, NULL, 21.5, 376, 1078, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11407, 3, NULL, 31, 385, 1078, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11408, 4, NULL, 40.25, 412, 1078, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11409, 5, NULL, 41.5, 63, 1078, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11410, 6, NULL, 53, 200, 1078, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11411, 7, NULL, 78, 242, 1078, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11412, 8, NULL, 91.25, 228, 1078, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11413, 9, NULL, 100.25, 210, 1078, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11414, 1, NULL, 16.75, 467, 1079, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11415, 2, NULL, 17.5, 75, 1079, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11416, 3, NULL, 21.25, 399, 1079, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11417, 4, NULL, 24.75, 139, 1079, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11418, 5, NULL, 27.75, 137, 1079, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11419, 6, NULL, 30, 300, 1079, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11420, 7, NULL, 35, 257, 1079, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11421, 8, NULL, 46.5, 133, 1079, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11422, 9, NULL, 53.5, 147, 1079, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11423, 1, NULL, 40.25, 300, 1080, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11424, 2, NULL, 64.25, 200, 1080, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11425, 3, NULL, 76, 257, 1080, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11426, 4, NULL, 84.5, 228, 1080, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11427, 5, NULL, 96.25, 147, 1080, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11428, 6, NULL, 136.25, 210, 1080, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11429, 7, NULL, 0, 133, 1080, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11430, 1, NULL, 38.5, 79, 1081, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11431, 2, NULL, 40, 399, 1081, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11432, 3, NULL, 43, 192, 1081, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11433, 4, NULL, 48.5, 369, 1081, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11434, 5, NULL, 70, 266, 1081, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11435, 6, NULL, 99, 371, 1081, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11436, 1, NULL, 21, 335, 1082, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11437, 2, NULL, 44, 339, 1082, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11438, 3, NULL, 45.5, 376, 1082, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11439, 4, NULL, 50.75, 200, 1082, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11440, 5, NULL, 102.5, 348, 1082, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11441, 1, NULL, 19.75, 335, 1083, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11442, 2, NULL, 25.75, 75, 1083, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11443, 3, NULL, 29, 467, 1083, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11444, 4, NULL, 30.25, 376, 1083, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11445, 5, NULL, 34, 63, 1083, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11446, 6, NULL, 38.5, 385, 1083, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11447, 7, NULL, 49.5, 137, 1083, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11448, 8, NULL, 51.5, 399, 1083, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11449, 9, NULL, 54.5, 139, 1083, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11450, 10, NULL, 54.75, 200, 1083, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11451, 11, NULL, 58.25, 300, 1083, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11452, 12, NULL, 66.75, 412, 1083, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11453, 1, NULL, 14, 385, 1091, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11454, 2, NULL, 15, 335, 1091, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11455, 3, NULL, 20, 75, 1091, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11456, 4, NULL, 25.5, 376, 1091, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11457, 5, NULL, 50.5, 43, 1091, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11458, 6, NULL, 60, 399, 1091, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (11459, 6, NULL, 60, 122, 1091, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (11460, 8, NULL, 66, 200, 1091, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11461, 9, NULL, 81, 157, 1091, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11462, 10, NULL, 106, 158, 1091, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11463, 1, NULL, 19.5, 385, 1090, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11464, 2, NULL, 29.75, 335, 1090, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11465, 3, NULL, 37.25, 376, 1090, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11466, 4, NULL, 40.25, 75, 1090, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11467, 5, NULL, 68.25, 200, 1090, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11468, 6, NULL, 84.5, 399, 1090, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11469, 7, NULL, 93.5, 122, 1090, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11470, 8, NULL, 96, 43, 1090, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11471, 9, NULL, 99.25, 157, 1090, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11472, 1, NULL, 16.5, 335, 1089, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11473, 2, NULL, 18, 376, 1089, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11474, 3, NULL, 29.75, 236, 1089, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11475, 4, NULL, 34, 412, 1089, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11476, 5, NULL, 35, 75, 1089, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11477, 6, NULL, 38.5, 63, 1089, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11478, 7, NULL, 41, 137, 1089, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11479, 8, NULL, 49, 200, 1089, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11480, 9, NULL, 51.5, 386, 1089, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11481, 10, NULL, 62, 472, 1089, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11482, 1, NULL, 20, 399, 1088, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11483, 2, NULL, 26, 236, 1088, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11484, 3, NULL, 38, 137, 1088, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11485, 4, NULL, 39, 157, 1088, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11486, 5, NULL, 40, 122, 1088, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11487, 6, NULL, 41.5, 472, 1088, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11488, 7, NULL, 42, 133, 1088, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11489, 8, NULL, 52, 88, 1088, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11490, 9, NULL, 53, 311, 1088, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11491, 10, NULL, 58, 43, 1088, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11492, 11, NULL, 75, 158, 1088, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11493, 12, NULL, 77, 210, 1088, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11494, 13, NULL, 120, 369, 1088, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11495, 1, NULL, 45.5, 293, 1087, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11496, 2, NULL, 46.5, 137, 1087, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11497, 3, NULL, 75, 373, 1087, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11498, 4, NULL, 90, 43, 1087, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11499, 5, NULL, 97, 491, 1087, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11500, 1, NULL, 18, 385, 1086, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11501, 2, NULL, 20, 75, 1086, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11502, 3, NULL, 24, 412, 1086, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11503, 4, NULL, 30, 467, 1086, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11504, 5, NULL, 31, 399, 1086, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11505, 6, NULL, 37, 300, 1086, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11506, 7, NULL, 46, 236, 1086, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11507, 8, NULL, 54, 472, 1086, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11508, 9, NULL, 62, 200, 1086, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11509, 10, NULL, 72, 157, 1086, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11510, 11, NULL, 74, 147, 1086, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11511, 12, NULL, 79, 162, 1086, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11512, 13, NULL, 86, 210, 1086, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11513, 1, NULL, 20.5, 467, 1085, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11514, 2, NULL, 27.75, 75, 1085, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11515, 3, NULL, 30, 412, 1085, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11516, 4, NULL, 34.75, 300, 1085, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11517, 5, NULL, 46, 385, 1085, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11518, 6, NULL, 48.5, 236, 1085, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11519, 7, NULL, 62, 399, 1085, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11520, 8, NULL, 64.75, 472, 1085, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11521, 9, NULL, 82, 157, 1085, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11522, 10, NULL, 97, 147, 1085, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11523, 11, NULL, 97.5, 210, 1085, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11524, 12, NULL, 114.75, 200, 1085, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11525, 13, NULL, 128, 162, 1085, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11526, 1, NULL, 15.5, 467, 1084, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11527, 2, NULL, 17.75, 385, 1084, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (11528, 2, NULL, 17.75, 412, 1084, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (11529, 4, NULL, 18.25, 75, 1084, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11530, 5, NULL, 25, 300, 1084, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11531, 6, NULL, 27.5, 236, 1084, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11532, 7, NULL, 30, 200, 1084, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11533, 8, NULL, 38, 399, 1084, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11534, 9, NULL, 49, 147, 1084, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11535, 10, NULL, 50, 210, 1084, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11536, 11, NULL, 51, 472, 1084, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11537, 12, NULL, 56.75, 157, 1084, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11538, 13, NULL, 68, 162, 1084, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11539, 1, NULL, 8, 335, 1092, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11540, 2, NULL, 13.5, 376, 1092, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11541, 3, NULL, 17.5, 385, 1092, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11542, 4, NULL, 19.5, 122, 1092, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11543, 5, NULL, 19.75, 236, 1092, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11544, 6, NULL, 29.5, 169, 1092, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11545, 7, NULL, 30, 311, 1092, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11546, 8, NULL, 36.5, 412, 1092, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11547, 9, NULL, 37.5, 200, 1092, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11548, 10, NULL, 38.25, 63, 1092, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11549, 11, NULL, 40, 137, 1092, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11550, 12, NULL, 41, 79, 1092, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11551, 13, NULL, 41.5, 399, 1092, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11552, 14, NULL, 47, 473, 1092, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11553, 1, NULL, 18, 335, 1093, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11554, 2, NULL, 23.33, 412, 1093, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11555, 3, NULL, 35.33, 236, 1093, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11556, 4, NULL, 56, 385, 1093, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11557, 5, NULL, 60.33, 339, 1093, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11558, 6, NULL, 87, 242, 1093, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11559, 7, NULL, 90.67, 210, 1093, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11560, 8, NULL, 128.67, 472, 1093, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11561, 9, NULL, 0, 200, 1093, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11562, 1, NULL, 9, 385, 1094, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11563, 2, NULL, 18, 75, 1094, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11564, 3, NULL, 36, 147, 1094, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11565, 4, NULL, 37, 169, 1094, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11566, 5, NULL, 39.5, 394, 1094, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (11567, 5, NULL, 39.5, 137, 1094, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (11568, 7, NULL, 49.5, 157, 1094, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11569, 8, NULL, 62, 242, 1094, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11570, 9, NULL, 69, 395, 1094, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11571, 1, NULL, 12.75, 385, 1095, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11572, 2, NULL, 18, 75, 1095, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11573, 3, NULL, 29, 147, 1095, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11574, 4, NULL, 33, 169, 1095, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11575, 5, NULL, 34, 210, 1095, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11576, 6, NULL, 35, 395, 1095, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11577, 7, NULL, 35.5, 137, 1095, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11578, 8, NULL, 36, 394, 1095, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11579, 9, NULL, 58, 242, 1095, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11580, 10, NULL, 74, 157, 1095, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11581, 1, NULL, 36, 137, 1096, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11582, 2, NULL, 47, 467, 1096, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11583, 3, NULL, 53, 200, 1096, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11584, 4, NULL, 55, 79, 1096, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11585, 5, NULL, 68, 300, 1096, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11586, 6, NULL, 89, 311, 1096, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11587, 7, NULL, 98, 412, 1096, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11588, 8, NULL, 102, 147, 1096, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11589, 9, NULL, 110, 472, 1096, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11590, 10, NULL, 125, 210, 996, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11591, 11, NULL, 132, 133, 1096, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11592, 12, NULL, 147, 43, 1096, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11593, 1, NULL, 6.5, 335, 1097, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11594, 2, NULL, 10, 467, 1097, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11595, 3, NULL, 17.5, 385, 1097, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11596, 4, NULL, 20, 137, 1097, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11597, 5, NULL, 30, 399, 1097, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11598, 6, NULL, 29.5, 147, 1097, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11599, 7, NULL, 38, 79, 1097, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11600, 8, NULL, 49, 43, 1097, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11601, 9, NULL, 60, 210, 1097, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11602, 1, NULL, 24.75, 385, 1098, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11603, 2, NULL, 26.5, 75, 1098, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11604, 3, NULL, 30.25, 236, 1098, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11605, 4, NULL, 39.5, 412, 1098, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11606, 5, NULL, 54.5, 137, 1098, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11607, 6, NULL, 75, 169, 1098, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11608, 7, NULL, 82, 472, 1098, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11609, 8, NULL, 85.25, 147, 1098, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11610, 9, NULL, 99.75, 162, 1098, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11611, 10, NULL, 104.5, 210, 1098, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11612, 1, NULL, 24.5, 75, 1099, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11613, 2, NULL, 32.75, 385, 1099, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11614, 3, NULL, 36.25, 236, 1099, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11615, 4, NULL, 55, 412, 1099, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11616, 5, NULL, 58, 169, 1099, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11617, 6, NULL, 71.25, 137, 1099, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11618, 7, NULL, 71.5, 162, 1099, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11619, 8, NULL, 80.25, 147, 1099, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11620, 9, NULL, 116, 472, 1099, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11621, 10, NULL, 125.75, 210, 1099, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11622, 1, NULL, 17, 385, 1100, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11623, 2, NULL, 29, 75, 1100, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11624, 3, NULL, 33, 399, 1100, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11625, 4, NULL, 41, 467, 1100, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11626, 5, NULL, 51, 63, 1100, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11627, 6, NULL, 54, 369, 1100, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11628, 7, NULL, 58, 137, 1100, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11629, 8, NULL, 38, 79, 1100, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11630, 9, NULL, 62, 288, 1100, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11631, 10, NULL, 71, 147, 1100, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11632, 11, NULL, 73, 43, 1100, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11633, 12, NULL, 92, 192, 1100, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11634, 13, NULL, 97, 133, 1100, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11635, 1, NULL, 22, 385, 1101, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11636, 2, NULL, 28, 79, 1101, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11637, 3, NULL, 29.5, 467, 1101, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11638, 4, NULL, 32, 137, 1101, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11639, 5, NULL, 34.5, 75, 1101, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11640, 6, NULL, 36, 399, 1101, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11641, 7, NULL, 45, 369, 1101, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11642, 8, NULL, 45.5, 63, 1101, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11643, 9, NULL, 53, 133, 1101, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11644, 10, NULL, 37.5, 43, 1101, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11645, 11, NULL, 38, 147, 1101, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11646, 12, NULL, 59.5, 288, 1101, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11647, 13, NULL, 68, 192, 1101, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11648, 1, NULL, 45.33, 385, 1102, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11649, 2, NULL, 60.67, 339, 1102, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11650, 3, NULL, 77.67, 169, 1102, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11651, 4, NULL, 80.67, 424, 1102, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11652, 5, NULL, 87, 412, 1102, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11653, 6, NULL, 151.67, 162, 1102, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11654, 1, NULL, 25, 399, 1103, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11655, 2, NULL, 28, 79, 1103, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11656, 3, NULL, 28.75, 137, 1103, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11657, 4, NULL, 36, 467, 1103, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11658, 5, NULL, 47, 300, 1103, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11659, 6, NULL, 53.75, 311, 1103, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11660, 7, NULL, 72, 210, 1103, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11661, 8, NULL, 73, 43, 1103, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11662, 9, NULL, 84, 147, 1103, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11663, 10, NULL, 89, 491, 1103, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11664, 1, NULL, 27.25, 376, 1104, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11665, 2, NULL, 49, 200, 1104, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11666, 3, NULL, 51.25, 288, 1104, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11667, 4, NULL, 58, 57, 1104, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11668, 5, NULL, 66, 242, 1104, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11669, 6, NULL, 88, 133, 1104, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11670, 7, NULL, 91.25, 302, 1104, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11671, 8, NULL, 114, 356, 1104, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11672, 9, NULL, 124.5, 330, 1104, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11673, 1, NULL, 17.33, 236, 1105, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11674, 2, NULL, 18.33, 412, 1105, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11675, 3, NULL, 20.33, 399, 1105, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11676, 4, NULL, 24.67, 385, 1105, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11677, 5, NULL, 29, 63, 1105, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11678, 6, NULL, 30, 137, 1105, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11679, 7, NULL, 31.67, 169, 1105, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11680, 8, NULL, 41.67, 311, 1105, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11681, 9, NULL, 61.33, 147, 1105, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11682, 10, NULL, 64.67, 210, 1105, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11683, 11, NULL, 66.33, 43, 1105, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11684, 12, NULL, 70.33, 157, 1105, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11685, 13, NULL, 86, 158, 1105, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11686, 14, NULL, 95, 221, 1105, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11687, 1, NULL, 29.5, 236, 1106, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11688, 2, NULL, 31, 327, 1106, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11689, 3, NULL, 44.25, 218, 1106, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11690, 4, NULL, 49, 98, 1106, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11691, 5, NULL, 56, 327, 1106, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11692, 1, NULL, 44.5, 194, 1107, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11693, 2, NULL, 47.75, 155, 1107, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11694, 3, NULL, 53.75, 84, 1107, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11695, 4, NULL, 59, 385, 1107, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11696, 5, NULL, 63, 412, 1107, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11697, 6, NULL, 72.25, 236, 1107, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11698, 7, NULL, 75.75, 63, 1107, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11699, 8, NULL, 101.25, 197, 1107, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11700, 9, NULL, 104, 472, 1107, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11701, 10, NULL, 197.25, 137, 1107, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11702, 1, NULL, 29.5, 385, 1108, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11703, 2, NULL, 31, 194, 1108, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11704, 3, NULL, 38, 155, 1108, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11705, 4, NULL, 39.25, 63, 1108, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11706, 5, NULL, 41, 84, 1108, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11707, 6, NULL, 45.5, 412, 1108, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11708, 7, NULL, 61, 197, 1108, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11709, 8, NULL, 77.5, 137, 1108, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11710, 9, NULL, 82, 472, 1108, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11711, 13, NULL, 63.5, 399, 527, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11712, 17, NULL, 76.5, 183, 527, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11713, 18, NULL, 91.5, 36, 527, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11714, 14, NULL, 47.33, 399, 507, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11715, 15, NULL, 49.33, 271, 507, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11716, 16, NULL, 51.33, 232, 507, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11717, 17, NULL, 59.67, 231, 507, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11718, 18, NULL, 60.67, 257, 507, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11719, 19, NULL, 83.67, 288, 507, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11720, 20, NULL, 97.33, 445, 507, 3);
+INSERT INTO
+    DRL_result
+VALUES
+    (11721, 20, NULL, 97.33, 183, 507, 3);
+INSERT INTO
+    DRL_result
+VALUES
+    (11722, 22, NULL, 132, 69, 507, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11723, 14, NULL, 52.67, 302, 459, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11724, 15, NULL, 54.33, 461, 459, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11725, 16, NULL, 56.33, 271, 459, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11726, 17, NULL, 58.33, 288, 459, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11727, 18, NULL, 60, 183, 459, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11728, 19, NULL, 60.67, 231, 459, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11729, 20, NULL, 69.33, 10, 459, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11730, 21, NULL, 89.67, 445, 459, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11731, 14, NULL, 41.67, 302, 435, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11732, 15, NULL, 54, 461, 435, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11733, 16, NULL, 54.33, 183, 435, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11734, 17, NULL, 64.33, 288, 435, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11735, 18, NULL, 75.33, 445, 435, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11736, 19, NULL, 83.33, 231, 435, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11737, 12, NULL, 56, 4, 408, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11738, 13, NULL, 58.67, 231, 408, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11739, 14, NULL, 67, 183, 408, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11740, 15, NULL, 76, 407, 408, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11741, 14, NULL, 40, 231, 366, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11742, 15, NULL, 40.33, 4, 366, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11743, 16, NULL, 47.67, 207, 366, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11744, 17, NULL, 54.67, 302, 366, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11745, 13, NULL, 44, 207, 332, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11746, 14, NULL, 61, 75, 300, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11747, 15, NULL, 63.5, 133, 300, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11748, 16, NULL, 64, 271, 300, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11749, 17, NULL, 72, 183, 300, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11750, 18, NULL, 85, 356, 300, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11751, 19, NULL, 90.5, 91, 300, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11752, 1, NULL, 25, 57, 1109, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11753, 2, NULL, 40, 394, 1109, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11754, 3, NULL, 66, 231, 1109, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11755, 4, NULL, 119, 47, 1109, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11756, 5, NULL, 56.5, 352, 1109, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11757, 6, NULL, 59, 205, 1109, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11758, 7, NULL, 91, 377, 1109, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11759, 8, NULL, 111, 93, 1109, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11760, 1, NULL, 8.67, 286, 1110, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11761, 2, NULL, 20, 137, 1110, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11762, 3, NULL, 21, 394, 1110, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11763, 4, NULL, 26, 467, 1110, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11764, 5, NULL, 42, 242, 1110, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11765, 6, NULL, 76, 399, 1110, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11766, 1, NULL, 46.33, 317, 1111, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11767, 2, NULL, 46.67, 242, 1111, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11768, 3, NULL, 56, 84, 1111, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11769, 4, NULL, 81.67, 179, 1111, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11770, 5, NULL, 104.67, 205, 1111, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11771, 1, NULL, 18.5, 467, 1112, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11772, 2, NULL, 26.5, 193, 1112, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11773, 3, NULL, 27.5, 213, 1112, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11774, 4, NULL, 46, 179, 1112, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11775, 5, NULL, 49, 427, 1112, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11776, 6, NULL, 50.5, 214, 1112, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11777, 7, NULL, 69.5, 333, 1112, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11778, 8, NULL, 99.5, 33, 1112, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11779, 1, NULL, 17.75, 467, 1113, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11780, 2, NULL, 18, 286, 1113, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11781, 3, NULL, 34, 418, 1113, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11782, 4, NULL, 37.75, 213, 1113, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11783, 5, NULL, 39, 257, 1113, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11784, 6, NULL, 44.25, 193, 1113, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11785, 7, NULL, 45.5, 75, 1113, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11786, 8, NULL, 48, 84, 1113, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11787, 9, NULL, 56, 271, 1113, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11788, 10, NULL, 57, 179, 1113, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11789, 11, NULL, 65, 288, 1113, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11790, 12, NULL, 87.25, 4, 1113, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11791, 1, NULL, 10.5, 286, 1114, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11792, 2, NULL, 13, 467, 1114, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11793, 3, NULL, 17, 418, 1114, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11794, 1, NULL, 32.5, 286, 1115, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11795, 2, NULL, 45.5, 418, 1115, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11796, 3, NULL, 54.5, 467, 1115, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11797, 1, NULL, 21.25, 193, 1116, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11798, 2, NULL, 21.75, 467, 1116, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11799, 3, NULL, 23.5, 286, 1116, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11800, 1, NULL, 23.5, 394, 1117, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11801, 2, NULL, 28, 137, 1117, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11802, 3, NULL, 61.5, 207, 1117, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11803, 4, NULL, 33, 395, 1117, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11804, 5, NULL, 49, 183, 1117, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11805, 6, NULL, 50, 288, 1117, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11806, 7, NULL, 70, 455, 1117, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11807, 8, NULL, 85, 302, 1117, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11808, 9, NULL, 0, 208, 1117, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11809, 1, NULL, 17, 82, 1118, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (11810, 2, NULL, 17.5, 335, 1118, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (11811, 3, NULL, 18.5, 286, 1118, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11812, 4, NULL, 24, 101, 1118, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11813, 5, NULL, 24.25, 385, 1118, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11814, 6, NULL, 27.75, 71, 1118, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11815, 7, NULL, 38.75, 242, 1118, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11816, 8, NULL, 44.25, 467, 1118, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11817, 9, NULL, 38.25, 336, 1118, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11818, 10, NULL, 42.5, 210, 1118, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11819, 11, NULL, 44.75, 75, 1118, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11820, 12, NULL, 47.5, 401, 1118, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11821, 13, NULL, 50, 271, 1118, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11822, 14, NULL, 52.5, 10, 1118, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11823, 15, NULL, 60.5, 386, 1118, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11824, 16, NULL, 61, 452, 1118, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11825, 17, NULL, 65.25, 147, 1118, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11826, 18, NULL, 66.75, 183, 1118, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11827, 19, NULL, 78.5, 288, 1118, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11828, 20, NULL, 78.75, 207, 1118, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11829, 1, NULL, 11.67, 300, 1119, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (11830, 2, NULL, 13.33, 394, 1119, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (11831, 3, NULL, 17, 286, 1119, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (11832, 4, NULL, 19, 335, 1119, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11833, 5, NULL, 21.33, 467, 1119, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11834, 6, NULL, 24, 242, 1119, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11835, 7, NULL, 47.67, 336, 1119, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11836, 8, NULL, 35.33, 257, 1119, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11837, 9, NULL, 36.33, 75, 1119, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11838, 10, NULL, 39.67, 271, 1119, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11839, 11, NULL, 41, 10, 1119, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11840, 12, NULL, 47.33, 231, 1119, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11841, 13, NULL, 48.33, 399, 1119, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11842, 14, NULL, 53, 377, 1119, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11843, 15, NULL, 58.67, 288, 1119, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11844, 16, NULL, 63.33, 455, 1119, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11845, 17, NULL, 68.33, 183, 1119, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11846, 18, NULL, 70.67, 302, 1119, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11847, 19, NULL, 78, 69, 1119, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11848, 20, NULL, 84.67, 28, 1119, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11849, 21, NULL, 110, 445, 1119, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11850, 1, NULL, 16.5, 467, 1120, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11851, 2, NULL, 17.5, 286, 1120, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11852, 3, NULL, 21.5, 300, 1120, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11853, 4, NULL, 22, 301, 1120, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11854, 5, NULL, 31, 101, 1120, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11855, 6, NULL, 37, 32, 1120, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11856, 7, NULL, 43.5, 401, 1120, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11857, 8, NULL, 46, 271, 1120, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11858, 9, NULL, 52.5, 75, 1120, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11859, 10, NULL, 60.5, 147, 1120, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11860, 12, NULL, 61, 452, 1120, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11861, 13, NULL, 63.5, 399, 1120, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11862, 14, NULL, 73.5, 10, 1120, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11863, 1, NULL, 8, 286, 1121, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11864, 2, NULL, 15, 467, 1121, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11865, 3, NULL, 16.5, 84, 1121, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11866, 4, NULL, 17.5, 300, 1121, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11867, 5, NULL, 20, 101, 1121, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11868, 6, NULL, 32, 301, 1121, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11869, 7, NULL, 35, 271, 1121, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11870, 8, NULL, 37, 10, 1121, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11871, 9, NULL, 38.5, 399, 1121, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11872, 10, NULL, 43, 147, 1121, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11873, 11, NULL, 55, 75, 1121, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11874, 1, NULL, 41, 467, 1122, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11875, 2, NULL, 48, 213, 1122, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11876, 3, NULL, 55, 193, 1122, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11877, 4, NULL, 64.5, 179, 1122, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11878, 5, NULL, 76, 427, 1122, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11879, 6, NULL, 111, 300, 1122, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11880, 1, NULL, 22, 394, 1123, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11881, 2, NULL, 30, 395, 1123, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11882, 3, NULL, 96.5, 207, 1123, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11883, 4, NULL, 45, 302, 1123, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11884, 5, NULL, 56, 288, 1123, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11885, 6, NULL, 59, 289, 1123, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11886, 7, NULL, 109, 208, 1123, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11887, 8, NULL, 150, 220, 1123, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11888, 1, NULL, 13, 335, 1124, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (11889, 2, NULL, 24.33, 101, 1124, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11890, 3, NULL, 25.33, 286, 1124, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11891, 4, NULL, 25.67, 467, 1124, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11892, 5, NULL, 31, 385, 1124, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11893, 6, NULL, 34.33, 82, 1124, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11894, 7, NULL, 38.33, 336, 1124, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11895, 8, NULL, 43.67, 300, 1124, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11896, 9, NULL, 44, 242, 1124, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11897, 10, NULL, 46.33, 71, 1124, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11898, 11, NULL, 40, 75, 1124, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11899, 12, NULL, 46.67, 271, 1124, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11900, 13, NULL, 47.67, 147, 1124, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11901, 14, NULL, 50, 210, 1124, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11902, 15, NULL, 56.67, 67, 1124, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11903, 16, NULL, 63.67, 401, 1124, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11904, 17, NULL, 74.33, 452, 1124, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11905, 18, NULL, 81.33, 10, 1124, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11906, 19, NULL, 88.67, 288, 1124, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11907, 1, NULL, 11, 335, 1125, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11908, 2, NULL, 22.5, 286, 1125, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11909, 3, NULL, 32.5, 375, 1125, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11910, 4, NULL, 42, 82, 1125, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11911, 5, NULL, 42.5, 467, 1125, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11912, 6, NULL, 50, 336, 1125, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11913, 7, NULL, 51.5, 271, 1125, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11914, 8, NULL, 64.5, 242, 1125, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11915, 9, NULL, 44.5, 10, 1125, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11916, 10, NULL, 57, 75, 1125, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11917, 11, NULL, 58.5, 401, 1125, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11918, 12, NULL, 75, 183, 1125, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11919, 13, NULL, 85.5, 491, 1125, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11920, 14, NULL, 98.5, 288, 1125, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11921, 1, NULL, 11, 286, 1126, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11922, 2, NULL, 22.5, 394, 1126, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11923, 3, NULL, 24, 418, 1126, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11924, 4, NULL, 25.5, 467, 1126, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11925, 5, NULL, 29.5, 300, 1126, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11926, 6, NULL, 35.5, 84, 1126, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11927, 7, NULL, 50.5, 147, 1126, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11928, 8, NULL, 53, 399, 1126, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11929, 9, NULL, 55.5, 257, 1126, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11930, 10, NULL, 59.5, 271, 1126, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11931, 11, NULL, 64.5, 75, 1126, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11932, 1, NULL, 9.25, 286, 1127, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (11933, 2, NULL, 10, 335, 1127, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (11934, 3, NULL, 17.25, 467, 1127, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (11935, 4, NULL, 19.75, 300, 1127, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (11936, 5, NULL, 20.25, 63, 1127, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11937, 6, NULL, 21.75, 75, 1127, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11938, 7, NULL, 22.75, 101, 1127, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11939, 8, NULL, 27.75, 71, 1127, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11940, 9, NULL, 31.5, 385, 1127, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11941, 10, NULL, 38.25, 82, 1127, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11942, 11, NULL, 26.25, 147, 1127, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11943, 12, NULL, 30.5, 67, 1127, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11944, 13, NULL, 38, 271, 1127, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11945, 14, NULL, 44.25, 242, 1127, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11946, 15, NULL, 57, 452, 1127, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11947, 16, NULL, 59, 10, 1127, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11948, 17, NULL, 65.5, 210, 1127, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11949, 18, NULL, 73, 401, 1127, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11950, 19, NULL, 81.25, 491, 1127, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11951, 20, NULL, 86, 288, 1127, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11952, 1, NULL, 8.5, 335, 1128, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (11953, 2, NULL, 18.5, 286, 1128, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (11954, 3, NULL, 20.5, 467, 1128, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11955, 4, NULL, 26.5, 336, 1128, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11956, 5, NULL, 28.5, 300, 1128, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (11957, 6, NULL, 37, 399, 1128, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (11958, 7, NULL, 39.5, 82, 1128, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11959, 8, NULL, 47.5, 10, 1128, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11960, 9, NULL, 43, 75, 1128, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11961, 10, NULL, 46, 4, 1128, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11962, 11, NULL, 47.5, 242, 1128, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11963, 12, NULL, 53, 369, 1128, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11964, 13, NULL, 54, 147, 1128, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11965, 14, NULL, 67, 288, 1128, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11966, 15, NULL, 90, 183, 1128, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11967, 16, NULL, 99, 491, 1128, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11968, 1, NULL, 14.5, 467, 1129, 19);
+INSERT INTO
+    DRL_result
+VALUES
+    (11969, 1, NULL, 14.5, 300, 1129, 19);
+INSERT INTO
+    DRL_result
+VALUES
+    (11970, 3, NULL, 18.5, 286, 1129, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11971, 4, NULL, 34, 257, 1129, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11972, 5, NULL, 39, 399, 1129, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11973, 6, NULL, 44, 75, 1129, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11974, 7, NULL, 46.5, 147, 1129, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11975, 8, NULL, 53.5, 271, 1129, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11976, 9, NULL, 54, 4, 1129, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11977, 10, NULL, 57.5, 288, 1129, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11978, 11, NULL, 87, 10, 1129, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11979, 1, NULL, 8.5, 467, 1130, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (11980, 2, NULL, 10.5, 335, 1130, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (11981, 3, NULL, 11.5, 286, 1130, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (11982, 3, NULL, 11.5, 336, 1130, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (11983, 5, NULL, 12.5, 147, 1130, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (11984, 6, NULL, 14.5, 300, 1130, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11985, 7, NULL, 19, 10, 1130, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11986, 8, NULL, 32.5, 4, 1130, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11987, 9, NULL, 47, 271, 1130, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11988, 10, NULL, 53.5, 232, 1130, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11989, 11, NULL, 67, 231, 1130, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11990, 12, NULL, 71, 5, 1130, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (11991, 13, NULL, 76, 302, 1130, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (11992, 14, NULL, 81, 28, 1130, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (11993, 1, NULL, 49, 300, 1131, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (11994, 2, NULL, 51, 467, 1131, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (11995, 3, NULL, 63, 75, 1131, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (11996, 4, NULL, 64, 257, 1131, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (11997, 5, NULL, 70, 461, 1131, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (11998, 6, NULL, 72, 399, 1131, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (11999, 7, NULL, 83, 147, 1131, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12000, 8, NULL, 84, 271, 1131, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12001, 9, NULL, 128, 4, 1131, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12002, 1, NULL, 16, 286, 1132, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12003, 2, NULL, 21, 467, 1132, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12004, 3, NULL, 26, 147, 1132, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12005, 4, NULL, 26.5, 300, 1132, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12006, 1, NULL, 13.5, 286, 1133, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12007, 2, NULL, 16.5, 467, 1133, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12008, 3, NULL, 18, 300, 1133, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12009, 4, NULL, 30, 257, 1133, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12010, 1, NULL, 11, 300, 1134, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12011, 2, NULL, 14, 467, 1134, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12012, 3, NULL, 16, 286, 1134, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12013, 4, NULL, 19, 147, 1134, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12014, 1, NULL, 16, 300, 1135, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12015, 2, NULL, 18.5, 286, 1135, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12016, 3, NULL, 25.5, 257, 1135, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12017, 4, NULL, 26, 75, 1135, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12018, 5, NULL, 32, 147, 1135, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12019, 6, NULL, 46, 271, 1135, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12020, 7, NULL, 38, 399, 1135, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12021, 8, NULL, 39, 461, 1135, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12022, 9, NULL, 47.5, 258, 1135, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12023, 10, NULL, 58, 4, 1135, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12024, 11, NULL, 65, 452, 1135, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12025, 12, NULL, 66.5, 32, 1135, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12026, 13, NULL, 79.5, 231, 1135, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12027, 14, NULL, 84, 10, 1135, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12028, 15, NULL, 0, 272, 1135, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12029, 1, NULL, 17, 467, 1136, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12030, 2, NULL, 22, 300, 1136, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12031, 3, NULL, 27, 286, 1136, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12032, 4, NULL, 40, 75, 1136, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12033, 5, NULL, 48, 375, 1136, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12034, 6, NULL, 57, 4, 1136, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12035, 7, NULL, 63, 271, 1136, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12036, 8, NULL, 80, 5, 1136, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12037, 1, NULL, 13.5, 147, 1137, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (12038, 2, NULL, 14.5, 50, 1137, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12039, 3, NULL, 16, 286, 1137, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12040, 4, NULL, 16.5, 257, 1137, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12041, 5, NULL, 17, 467, 1137, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12042, 6, NULL, 17.5, 300, 1137, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12043, 7, NULL, 18.5, 478, 1137, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12044, 8, NULL, 28, 194, 1137, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12045, 9, NULL, 37, 461, 1137, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12046, 10, NULL, 38.5, 399, 1137, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12047, 11, NULL, 49, 352, 1137, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12048, 12, NULL, 57.5, 75, 1137, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12049, 13, NULL, 62.5, 191, 1137, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12050, 14, NULL, 64, 271, 1137, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12051, 15, NULL, 67.5, 231, 1137, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12052, 16, NULL, 72.5, 4, 1137, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12053, 17, NULL, 0, 193, 1137, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12054, 1, NULL, 16, 286, 1138, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12055, 2, NULL, 17, 467, 1138, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12056, 3, NULL, 27, 300, 1138, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12057, 4, NULL, 28, 257, 1138, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12058, 5, NULL, 37, 84, 1138, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12059, 6, NULL, 38, 478, 1138, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12060, 7, NULL, 45, 461, 1138, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12061, 8, NULL, 47, 271, 1138, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12062, 9, NULL, 54, 75, 1138, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12063, 10, NULL, 58, 147, 1138, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12064, 11, NULL, 66, 4, 1138, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12065, 1, NULL, 24.75, 286, 1139, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12066, 2, NULL, 26.75, 467, 1139, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12067, 3, NULL, 42.75, 300, 1139, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12068, 4, NULL, 43.5, 147, 1139, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12069, 5, NULL, 49, 4, 1139, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12070, 1, NULL, 12, 300, 1140, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12071, 2, NULL, 12.5, 467, 1140, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12072, 3, NULL, 19.5, 286, 1140, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12073, 4, NULL, 32.5, 461, 1140, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12074, 5, NULL, 43, 257, 1140, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12075, 1, NULL, 11.5, 286, 1141, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12076, 2, NULL, 12, 467, 1141, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12077, 3, NULL, 17, 257, 1141, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12078, 4, NULL, 19, 75, 1141, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12079, 5, NULL, 20, 478, 1141, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12080, 1, NULL, 17.5, 286, 1142, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12081, 2, NULL, 23.5, 300, 1142, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12082, 3, NULL, 25.5, 467, 1142, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12083, 4, NULL, 31.5, 75, 1142, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12084, 5, NULL, 39, 50, 1142, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12085, 6, NULL, 42.5, 257, 1142, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12086, 7, NULL, 43, 147, 1142, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12087, 8, NULL, 46.5, 10, 1142, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12088, 9, NULL, 59, 461, 1142, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12089, 10, NULL, 61, 32, 1142, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12090, 11, NULL, 62.5, 452, 1142, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12091, 12, NULL, 76.5, 271, 1142, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12092, 13, NULL, 81.5, 4, 1142, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12093, 14, NULL, 120, 210, 1142, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12094, 1, NULL, 19, 418, 1143, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12095, 2, NULL, 22.5, 300, 1143, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12096, 3, NULL, 23.5, 394, 1143, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12097, 4, NULL, 24.5, 286, 1143, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12098, 5, NULL, 25.5, 467, 1143, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12099, 6, NULL, 34, 50, 1143, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12100, 7, NULL, 34.5, 75, 1143, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12101, 8, NULL, 39.5, 10, 1143, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12102, 9, NULL, 52.5, 257, 1143, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12103, 10, NULL, 57.5, 4, 1143, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12104, 11, NULL, 58.5, 5, 1143, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12105, 12, NULL, 60, 271, 1143, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12106, 13, NULL, 63.5, 147, 1143, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12107, 1, NULL, 16, 467, 1144, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12108, 2, NULL, 18, 286, 1144, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12109, 3, NULL, 24, 300, 1144, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12110, 4, NULL, 35, 257, 1144, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12111, 5, NULL, 38, 75, 1144, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12112, 6, NULL, 46, 147, 1144, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12113, 7, NULL, 48, 213, 1144, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12114, 8, NULL, 50, 271, 1144, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12115, 9, NULL, 54, 4, 1144, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12116, 10, NULL, 61, 179, 1144, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12117, 11, NULL, 74, 461, 1144, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12118, 12, NULL, 75, 193, 1144, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12119, 1, NULL, 8, 300, 1145, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12120, 2, NULL, 11, 286, 1145, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12121, 3, NULL, 16.5, 467, 1145, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12122, 4, NULL, 20, 257, 1145, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12123, 5, NULL, 22.5, 4, 1145, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12124, 1, NULL, 13.75, 467, 1146, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12125, 2, NULL, 14.75, 257, 1146, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12126, 3, NULL, 16.5, 300, 1146, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12127, 4, NULL, 17.75, 286, 1146, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12128, 5, NULL, 25.25, 213, 1146, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12129, 1, NULL, 18, 300, 1147, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12130, 2, NULL, 22, 286, 1147, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12131, 3, NULL, 24.5, 394, 1147, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12132, 4, NULL, 25.5, 467, 1147, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12133, 5, NULL, 29, 418, 1147, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12134, 6, NULL, 34.5, 257, 1147, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12135, 7, NULL, 45, 10, 1147, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12136, 8, NULL, 55, 271, 1147, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12137, 9, NULL, 74.5, 258, 1147, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12138, 10, NULL, 90, 147, 1147, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12139, 1, NULL, 12.5, 467, 1148, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12140, 2, NULL, 16.5, 335, 1148, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12141, 3, NULL, 18, 286, 1148, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12142, 4, NULL, 18.5, 300, 1148, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12143, 5, NULL, 30, 148, 1148, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12144, 6, NULL, 34, 84, 1148, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12145, 7, NULL, 36.5, 399, 1148, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12146, 8, NULL, 55.5, 271, 1148, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12147, 9, NULL, 57, 147, 1148, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12148, 10, NULL, 69.5, 461, 1148, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12149, 1, NULL, 13, 467, 1149, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12150, 2, NULL, 15, 286, 1149, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12151, 3, NULL, 26, 300, 1149, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12152, 4, NULL, 41, 75, 1149, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12153, 5, NULL, 43, 147, 1149, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12154, 6, NULL, 45, 257, 1149, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12155, 7, NULL, 57, 271, 1149, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12156, 8, NULL, 59, 461, 1149, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12157, 9, NULL, 67, 4, 1149, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12158, 10, NULL, 73, 179, 1149, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12159, 1, NULL, 14.5, 300, 1150, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12160, 2, NULL, 15.5, 286, 1150, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12161, 3, NULL, 16, 467, 1150, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12162, 4, NULL, 24.5, 257, 1150, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12163, 1, NULL, 6, 300, 1151, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12164, 2, NULL, 17.5, 467, 1151, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12165, 3, NULL, 17.75, 286, 1151, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12166, 4, NULL, 41.5, 147, 1151, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12167, 1, NULL, 15, 286, 1152, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12168, 2, NULL, 19, 467, 1152, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12169, 3, NULL, 22, 300, 1152, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12170, 4, NULL, 24, 75, 1152, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12171, 1, NULL, 14, 286, 1153, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12172, 2, NULL, 17, 467, 1153, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12173, 3, NULL, 18, 300, 1153, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12174, 4, NULL, 24, 375, 1153, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12175, 5, NULL, 32, 418, 1153, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12176, 6, NULL, 35, 257, 1153, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12177, 7, NULL, 55, 147, 1153, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12178, 8, NULL, 60, 271, 1153, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12179, 9, NULL, 71, 4, 1153, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12180, 1, NULL, 13.5, 300, 1154, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12181, 2, NULL, 15, 286, 1154, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12182, 3, NULL, 24.5, 467, 1154, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12183, 4, NULL, 31.5, 82, 1154, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12184, 5, NULL, 33, 194, 1154, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12185, 6, NULL, 38, 75, 1154, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12186, 7, NULL, 39, 257, 1154, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12187, 8, NULL, 51.5, 207, 1154, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12188, 9, NULL, 52.5, 271, 1154, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12189, 10, NULL, 61.5, 452, 1154, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12190, 1, NULL, 13.5, 335, 1155, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12191, 2, NULL, 18.5, 467, 1155, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12192, 3, NULL, 22.5, 286, 1155, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12193, 4, NULL, 23.5, 147, 1155, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12194, 5, NULL, 26.5, 75, 1155, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12195, 6, NULL, 30.5, 300, 1155, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12196, 7, NULL, 44.5, 375, 1155, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12197, 8, NULL, 84, 461, 1155, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12198, 9, NULL, 39.5, 271, 1155, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12199, 10, NULL, 40, 207, 1155, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12200, 11, NULL, 62.5, 82, 1155, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12201, 12, NULL, 63.5, 369, 1155, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12202, 13, NULL, 84.5, 407, 1155, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12203, 14, NULL, 95, 183, 1155, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12204, 1, NULL, 10, 300, 1156, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12205, 2, NULL, 12, 467, 1156, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12206, 3, NULL, 28.5, 214, 1156, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12207, 4, NULL, 30.5, 179, 1156, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12208, 5, NULL, 70.5, 182, 1156, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12209, 6, NULL, 74.5, 193, 1156, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12210, 1, NULL, 16.5, 335, 1157, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12211, 2, NULL, 18, 467, 1157, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (12212, 2, NULL, 18, 300, 1157, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (12213, 4, NULL, 20.5, 394, 1157, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12214, 5, NULL, 22.5, 147, 1157, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12215, 6, NULL, 26, 82, 1157, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12216, 7, NULL, 27.5, 287, 1157, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12217, 8, NULL, 42, 75, 1157, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12218, 9, NULL, 44.5, 84, 1157, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12219, 10, NULL, 47, 399, 1157, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12220, 11, NULL, 48.5, 271, 1157, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12221, 12, NULL, 59, 257, 1157, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12222, 13, NULL, 60.5, 326, 1157, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12223, 1, NULL, 16.5, 286, 1158, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12224, 2, NULL, 21.5, 300, 1158, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12225, 3, NULL, 26, 467, 1158, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12226, 4, NULL, 28, 75, 1158, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12227, 5, NULL, 32, 257, 1158, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12228, 6, NULL, 34.5, 147, 1158, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12229, 7, NULL, 52.5, 301, 1158, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12230, 8, NULL, 57, 271, 1158, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12231, 9, NULL, 75.5, 4, 1158, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12232, 1, NULL, 15.5, 394, 1159, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12233, 2, NULL, 16.5, 300, 1159, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12234, 3, NULL, 18, 286, 1159, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12235, 4, NULL, 23, 10, 1159, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12236, 5, NULL, 24, 147, 1159, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12237, 6, NULL, 26.5, 82, 1159, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12238, 7, NULL, 30.5, 271, 1159, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12239, 8, NULL, 31.5, 467, 1159, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12240, 9, NULL, 34, 257, 1159, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12241, 10, NULL, 35.5, 193, 1159, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12242, 11, NULL, 36.5, 207, 1159, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12243, 12, NULL, 42, 4, 1159, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12244, 13, NULL, 49, 84, 1159, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12245, 14, NULL, 60, 452, 1159, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12246, 1, NULL, 4.5, 394, 1160, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (12247, 1, NULL, 4.5, 300, 1160, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (12248, 3, NULL, 13.5, 286, 1160, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12249, 4, NULL, 19.5, 147, 1160, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12250, 5, NULL, 22.5, 148, 1160, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12251, 6, NULL, 25.5, 467, 1160, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12252, 7, NULL, 44, 271, 1160, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12253, 8, NULL, 58, 275, 1160, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12254, 9, NULL, 63.5, 75, 1160, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12255, 1, NULL, 11.25, 464, 1161, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12256, 2, NULL, 22.75, 335, 1161, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12257, 3, NULL, 23.5, 300, 1161, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12258, 4, NULL, 45.75, 385, 1161, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12259, 5, NULL, 50.5, 257, 1161, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12260, 6, NULL, 51, 248, 1161, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12261, 7, NULL, 58.25, 404, 1161, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12262, 8, NULL, 72, 481, 1161, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12263, 9, NULL, 99, 367, 1161, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12264, 10, NULL, 151, 262, 1161, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12265, 1, NULL, 17.5, 335, 1162, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12266, 2, NULL, 18, 300, 1162, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12267, 3, NULL, 24, 84, 1162, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12268, 4, NULL, 30, 82, 1162, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12269, 5, NULL, 30.5, 147, 1162, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12270, 6, NULL, 34.5, 467, 1162, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12271, 7, NULL, 43, 257, 1162, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12272, 8, NULL, 52, 326, 1162, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12273, 9, NULL, 58, 271, 1162, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12274, 10, NULL, 60.5, 207, 1162, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12275, 1, NULL, 26.5, 394, 1163, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12276, 2, NULL, 29, 286, 1163, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12277, 3, NULL, 30.5, 236, 1163, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12278, 4, NULL, 45, 147, 1163, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12279, 5, NULL, 47.5, 84, 1163, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12280, 6, NULL, 51.5, 179, 1163, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12281, 7, NULL, 53.5, 467, 1163, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12282, 1, NULL, 6, 335, 1164, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12283, 2, NULL, 8.5, 300, 1164, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12284, 3, NULL, 13.5, 286, 1164, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12285, 4, NULL, 17.5, 467, 1164, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12286, 5, NULL, 26, 221, 1164, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12287, 6, NULL, 28.5, 375, 1164, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12288, 7, NULL, 45.5, 147, 1164, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12289, 8, NULL, 90, 75, 1164, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12290, 9, NULL, 20.5, 271, 1164, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12291, 10, NULL, 23, 207, 1164, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12292, 11, NULL, 49, 461, 1164, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12293, 12, NULL, 49.5, 183, 1164, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12294, 13, NULL, 58.5, 369, 1164, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12295, 14, NULL, 65, 452, 1164, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12296, 15, NULL, 69.5, 4, 1164, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12297, 16, NULL, 82.5, 491, 1164, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12298, 1, NULL, 27.25, 286, 1165, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12299, 2, NULL, 32.75, 300, 1165, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12300, 3, NULL, 36.25, 467, 1165, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12301, 4, NULL, 41.25, 257, 1165, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12302, 5, NULL, 43.25, 75, 1165, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12303, 6, NULL, 44.5, 207, 1165, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12304, 7, NULL, 77.25, 250, 1165, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12305, 8, NULL, 84.5, 193, 1165, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12306, 9, NULL, 97.75, 377, 1165, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12307, 10, NULL, 127.75, 271, 1165, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12308, 11, NULL, 132.25, 491, 1165, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12309, 12, NULL, 0, 288, 1165, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12310, 1, NULL, 17, 467, 1166, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12311, 2, NULL, 21, 286, 1166, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12312, 3, NULL, 26, 300, 1166, 11);
+INSERT INTO
+    DRL_result
+VALUES
+    (12313, 3, NULL, 26, 257, 1166, 11);
+INSERT INTO
+    DRL_result
+VALUES
+    (12314, 5, NULL, 27, 75, 1166, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12315, 6, NULL, 46, 271, 1166, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12316, 7, NULL, 89, 288, 1166, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12317, 8, NULL, 90, 183, 1166, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12318, 9, NULL, 99, 22, 1166, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12319, 1, NULL, 8, 286, 1167, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12320, 2, NULL, 10, 467, 1167, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12321, 3, NULL, 16, 257, 1167, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12322, 4, NULL, 22, 300, 1167, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12323, 1, NULL, 48.75, 300, 1168, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12324, 2, NULL, 51, 286, 1168, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12325, 3, NULL, 66.25, 75, 1168, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12326, 4, NULL, 67.75, 467, 1168, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12327, 1, NULL, 19, 286, 1169, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12328, 2, NULL, 20, 300, 1169, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12329, 3, NULL, 21, 75, 1169, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12330, 4, NULL, 27, 467, 1169, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12331, 1, NULL, 10, 286, 1170, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12332, 2, NULL, 14.5, 300, 1170, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12333, 3, NULL, 17, 467, 1170, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12334, 4, NULL, 20, 418, 1170, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12335, 5, NULL, 29.5, 147, 1170, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12336, 6, NULL, 35.5, 75, 1170, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12337, 7, NULL, 46.5, 288, 1170, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12338, 8, NULL, 48, 257, 1170, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12339, 9, NULL, 49, 271, 1170, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12340, 10, NULL, 99, 22, 1170, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12341, 1, NULL, 15, 467, 1171, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12342, 2, NULL, 17, 286, 1171, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12343, 3, NULL, 24, 221, 1171, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12344, 4, NULL, 25, 300, 1171, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12345, 5, NULL, 29, 257, 1171, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12346, 6, NULL, 31, 147, 1171, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12347, 7, NULL, 36.5, 207, 1171, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12348, 8, NULL, 47, 194, 1171, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12349, 9, NULL, 59, 271, 1171, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12350, 1, NULL, 8.33, 335, 1172, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (12351, 2, NULL, 13.67, 124, 1172, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12352, 3, NULL, 15, 467, 1172, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12353, 4, NULL, 17.67, 286, 1172, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12354, 5, NULL, 19, 75, 1172, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12355, 6, NULL, 19.33, 242, 1172, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12356, 7, NULL, 29, 300, 1172, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12357, 8, NULL, 57.67, 165, 1172, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12358, 9, NULL, 32, 231, 1172, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12359, 10, NULL, 40.33, 271, 1172, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12360, 11, NULL, 40.67, 207, 1172, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12361, 12, NULL, 42, 257, 1172, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12362, 13, NULL, 43, 147, 1172, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12363, 14, NULL, 46.33, 461, 1172, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12364, 15, NULL, 70, 288, 1172, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12365, 16, NULL, 88, 91, 1172, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12366, 17, NULL, 95.33, 183, 1172, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12367, 1, NULL, 4.5, 335, 1173, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (12368, 2, NULL, 8.5, 336, 1173, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12369, 3, NULL, 10.5, 300, 1173, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12370, 4, NULL, 15.5, 286, 1173, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12371, 5, NULL, 22.5, 124, 1173, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12372, 6, NULL, 27.5, 467, 1173, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12373, 7, NULL, 43, 271, 1173, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12374, 8, NULL, 44.5, 224, 1173, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12375, 9, NULL, 53.5, 165, 1173, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12376, 10, NULL, 74, 167, 1173, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12377, 11, NULL, 39, 257, 1173, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12378, 12, NULL, 45, 75, 1173, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12379, 13, NULL, 71.5, 183, 1173, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12380, 14, NULL, 77.5, 369, 1173, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12381, 15, NULL, 85.5, 288, 1173, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12382, 16, NULL, 87, 289, 1173, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12383, 17, NULL, 93, 133, 1173, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12384, 1, NULL, 12, 335, 1174, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12385, 2, NULL, 19.5, 84, 1174, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12386, 3, NULL, 24, 300, 1174, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12387, 4, NULL, 27, 75, 1174, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12388, 5, NULL, 27.5, 467, 1174, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12389, 6, NULL, 28, 147, 1174, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12390, 7, NULL, 32, 141, 1174, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12391, 8, NULL, 34, 207, 1174, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12392, 9, NULL, 38, 82, 1174, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12393, 10, NULL, 39, 257, 1174, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12394, 11, NULL, 40, 271, 1174, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12395, 12, NULL, 50, 326, 1174, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12396, 13, NULL, 54, 183, 1174, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12397, 14, NULL, 99, 288, 1174, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12398, 1, NULL, 14, 300, 1175, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12399, 2, NULL, 18, 141, 1175, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12400, 3, NULL, 21.5, 286, 1175, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12401, 4, NULL, 22, 467, 1175, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12402, 5, NULL, 28, 75, 1175, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12403, 6, NULL, 40.5, 271, 1175, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12404, 7, NULL, 45.5, 147, 1175, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12405, 8, NULL, 35, 207, 1175, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12406, 9, NULL, 50, 257, 1175, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12407, 10, NULL, 64.5, 165, 1175, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12408, 11, NULL, 71, 4, 1175, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12409, 12, NULL, 73.5, 183, 1175, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12410, 13, NULL, 75, 288, 1175, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12411, 1, NULL, 8.5, 335, 1176, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12412, 2, NULL, 17, 336, 1176, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12413, 3, NULL, 18.5, 300, 1176, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12414, 4, NULL, 19.5, 242, 1176, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12415, 5, NULL, 30, 141, 1176, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12416, 6, NULL, 46, 467, 1176, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12417, 7, NULL, 58.5, 165, 1176, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12418, 8, NULL, 24.5, 75, 1176, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12419, 9, NULL, 75, 271, 1176, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12420, 10, NULL, 77.5, 183, 1176, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12421, 11, NULL, 99, 167, 1176, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12422, 12, NULL, 151, 133, 1176, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12423, 13, NULL, 155, 369, 1176, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12424, 14, NULL, 160, 288, 1176, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12425, 1, NULL, 8.5, 141, 1177, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12426, 2, NULL, 15, 300, 1177, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12427, 3, NULL, 19, 165, 1177, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12428, 4, NULL, 25, 467, 1177, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12429, 5, NULL, 34.5, 491, 1177, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12430, 6, NULL, 62.5, 75, 1177, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12431, 7, NULL, 66, 221, 1177, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12432, 8, NULL, 69.5, 222, 1177, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12433, 9, NULL, 76, 369, 1177, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12434, 10, NULL, 95, 271, 1177, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12435, 11, NULL, 31.5, 257, 1177, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12436, 12, NULL, 33, 207, 1177, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12437, 13, NULL, 41, 183, 1177, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12438, 14, NULL, 80, 288, 1177, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12439, 1, NULL, 25.75, 300, 1178, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12440, 2, NULL, 33, 257, 1178, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12441, 3, NULL, 33.75, 75, 1178, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12442, 4, NULL, 34.75, 286, 1178, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12443, 5, NULL, 38, 377, 1178, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12444, 6, NULL, 38.25, 467, 1178, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12445, 7, NULL, 51, 207, 1178, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12446, 8, NULL, 55.25, 165, 1178, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12447, 9, NULL, 64.5, 271, 1178, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12448, 10, NULL, 157.5, 356, 1178, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12449, 1, NULL, 10, 300, 1179, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12450, 2, NULL, 13, 286, 1179, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12451, 3, NULL, 20, 467, 1179, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12452, 4, NULL, 22, 257, 1179, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12453, 5, NULL, 36, 75, 1179, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12454, 6, NULL, 58, 165, 1179, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12455, 7, NULL, 80, 271, 1179, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12456, 8, NULL, 83, 288, 1179, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12457, 9, NULL, 89, 32, 1179, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12458, 10, NULL, 92, 82, 1179, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12459, 1, NULL, 12.5, 335, 1180, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12460, 2, NULL, 19.5, 160, 1180, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12461, 3, NULL, 28.5, 467, 1180, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12462, 4, NULL, 30, 375, 1180, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12463, 5, NULL, 34, 300, 1180, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12464, 6, NULL, 36, 257, 1180, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12465, 7, NULL, 37, 124, 1180, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12466, 8, NULL, 65.5, 75, 1180, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12467, 9, NULL, 60, 79, 1180, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12468, 10, NULL, 67, 369, 1180, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12469, 11, NULL, 74, 207, 1180, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12470, 12, NULL, 76, 271, 1180, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12471, 13, NULL, 89.5, 288, 1180, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12472, 14, NULL, 108, 133, 1180, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12473, 15, NULL, 121, 356, 1180, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12474, 16, NULL, 170, 407, 1180, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12475, 1, NULL, 18.5, 286, 1181, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12476, 2, NULL, 19, 467, 1181, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12477, 3, NULL, 22, 257, 1181, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12478, 4, NULL, 27.5, 207, 1181, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12479, 5, NULL, 31.5, 75, 1181, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12480, 6, NULL, 41, 375, 1181, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12481, 7, NULL, 61, 399, 1181, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12482, 8, NULL, 71.5, 4, 1181, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12483, 9, NULL, 48.5, 271, 1181, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12484, 10, NULL, 56.5, 221, 1181, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12485, 11, NULL, 73, 101, 1181, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12486, 1, NULL, 16, 375, 1182, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12487, 2, NULL, 19.5, 241, 1182, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12488, 3, NULL, 20.5, 300, 1182, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12489, 4, NULL, 22.5, 214, 1182, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12490, 5, NULL, 23, 257, 1182, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12491, 6, NULL, 29, 286, 1182, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12492, 7, NULL, 33, 36, 1182, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12493, 8, NULL, 34.5, 467, 1182, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12494, 9, NULL, 46, 4, 1182, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12495, 10, NULL, 54, 271, 1182, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12496, 11, NULL, 67.5, 75, 1182, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12497, 1, NULL, 4.5, 335, 1183, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12498, 2, NULL, 8, 286, 1183, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12499, 3, NULL, 12.5, 300, 1183, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12500, 4, NULL, 14.5, 36, 1183, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12501, 5, NULL, 15, 165, 1183, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12502, 6, NULL, 17, 467, 1183, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12503, 7, NULL, 25.5, 207, 1183, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12504, 8, NULL, 36.5, 75, 1183, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12505, 9, NULL, 28.5, 157, 1183, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12506, 10, NULL, 35, 183, 1183, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12507, 11, NULL, 48.5, 288, 1183, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12508, 12, NULL, 51.5, 369, 1183, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12509, 13, NULL, 53.5, 221, 1183, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12510, 14, NULL, 54, 101, 1183, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12511, 15, NULL, 66.5, 133, 1183, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12512, 1, NULL, 8, 300, 1184, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12513, 2, NULL, 11.5, 75, 1184, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12514, 3, NULL, 16.5, 147, 1184, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12515, 4, NULL, 21, 207, 1184, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12516, 5, NULL, 22.5, 165, 1184, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12517, 6, NULL, 53, 137, 1184, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12518, 7, NULL, 47.5, 467, 1184, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12519, 8, NULL, 28, 369, 1184, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12520, 9, NULL, 60, 288, 1184, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12521, 10, NULL, 66, 271, 1184, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12522, 11, NULL, 70.5, 157, 1184, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12523, 12, NULL, 84, 76, 1184, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12524, 13, NULL, 98.5, 133, 1184, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12525, 1, NULL, 5, 300, 1185, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12526, 2, NULL, 6.5, 75, 1185, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12527, 3, NULL, 10, 147, 1185, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12528, 4, NULL, 13, 141, 1185, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12529, 5, NULL, 16.5, 467, 1185, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12530, 6, NULL, 29, 369, 1185, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12531, 7, NULL, 32.5, 207, 1185, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12532, 8, NULL, 36, 356, 1185, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12533, 9, NULL, 37, 257, 1185, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12534, 10, NULL, 37.5, 271, 1185, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12535, 11, NULL, 38.5, 288, 1185, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12536, 12, NULL, 58, 371, 1185, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12537, 1, NULL, 12.5, 300, 1186, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12538, 2, NULL, 17.5, 75, 1186, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12539, 3, NULL, 19.5, 467, 1186, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12540, 4, NULL, 21.5, 214, 1186, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12541, 5, NULL, 24, 147, 1186, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12542, 6, NULL, 24.5, 257, 1186, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12543, 7, NULL, 29, 271, 1186, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12544, 8, NULL, 36, 84, 1186, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12545, 9, NULL, 41, 375, 1186, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12546, 10, NULL, 79, 22, 1186, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12547, 1, NULL, 12, 300, 1187, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12548, 2, NULL, 31, 147, 1187, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12549, 3, NULL, 37.5, 467, 1187, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12550, 4, NULL, 39, 75, 1187, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12551, 5, NULL, 48, 32, 1187, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12552, 6, NULL, 50.5, 491, 1187, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12553, 7, NULL, 58, 207, 1187, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12554, 8, NULL, 65, 288, 1187, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12555, 1, NULL, 23, 147, 1188, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12556, 2, NULL, 27.5, 241, 1188, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12557, 3, NULL, 30.5, 75, 1188, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12558, 4, NULL, 31.5, 76, 1188, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12559, 5, NULL, 33.5, 300, 1188, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12560, 6, NULL, 37, 217, 1188, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12561, 7, NULL, 41.5, 36, 1188, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12562, 8, NULL, 43, 257, 1188, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12563, 9, NULL, 43.5, 467, 1188, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12564, 10, NULL, 0, 271, 1188, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12565, 1, NULL, 13.5, 300, 1189, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12566, 2, NULL, 21, 75, 1189, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12567, 3, NULL, 23.5, 257, 1189, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12568, 4, NULL, 26.5, 467, 1189, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12569, 5, NULL, 56.5, 147, 1189, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12570, 6, NULL, 57.5, 207, 1189, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12571, 7, NULL, 44, 491, 1189, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12572, 8, NULL, 46.5, 369, 1189, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12573, 9, NULL, 60.5, 375, 1189, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12574, 10, NULL, 61.5, 256, 1189, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12575, 11, NULL, 77.5, 133, 1189, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12576, 12, NULL, 82.5, 356, 1189, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12577, 1, NULL, 1.5, 335, 1190, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (12578, 2, NULL, 6, 376, 1190, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (12579, 3, NULL, 8, 236, 1190, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12580, 4, NULL, 10.5, 169, 1190, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12581, 5, NULL, 13, 200, 1190, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12582, 6, NULL, 17.75, 399, 1190, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12583, 7, NULL, 18, 79, 1190, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12584, 8, NULL, 22.25, 137, 1190, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12585, 9, NULL, 24, 409, 1190, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12586, 10, NULL, 25, 472, 1190, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12587, 11, NULL, 37, 162, 1190, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12588, 12, NULL, 37.25, 157, 1190, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12589, 13, NULL, 52, 210, 1190, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12590, 14, NULL, 70, 369, 1190, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12591, 15, NULL, 75, 141, 1190, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12592, 16, NULL, 92.5, 168, 1190, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12593, 17, NULL, 100, 158, 1190, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12594, 1, NULL, 7.5, 335, 1191, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12595, 2, NULL, 13, 385, 1191, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12596, 3, NULL, 14.5, 236, 1191, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12597, 4, NULL, 16.25, 63, 1191, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12598, 5, NULL, 17, 339, 1191, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12599, 6, NULL, 30, 327, 1191, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12600, 7, NULL, 33, 472, 1191, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12601, 8, NULL, 34.5, 283, 1191, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12602, 9, NULL, 35.5, 311, 1191, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12603, 10, NULL, 44, 169, 1191, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12604, 1, NULL, 26.67, 413, 1192, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12605, 2, NULL, 27.5, 296, 1192, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12606, 3, NULL, 30, 412, 1192, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12607, 4, NULL, 31.33, 75, 1192, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12608, 5, NULL, 35.33, 228, 1192, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12609, 6, NULL, 36.5, 79, 1192, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12610, 7, NULL, 49.75, 137, 1192, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12611, 8, NULL, 54, 147, 1192, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12612, 9, NULL, 55, 155, 1192, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12613, 10, NULL, 58, 157, 1192, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12614, 11, NULL, 64, 157, 1192, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12615, 12, NULL, 66.5, 297, 1192, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12616, 1, NULL, 28.75, 385, 1193, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12617, 2, NULL, 34.75, 412, 1193, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12618, 3, NULL, 44.38, 63, 1193, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12619, 4, NULL, 51.13, 122, 1193, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12620, 5, NULL, 51.38, 413, 1193, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12621, 6, NULL, 57.5, 386, 1193, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12622, 7, NULL, 68.5, 409, 1193, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12623, 8, NULL, 91, 64, 1193, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12624, 1, NULL, 17.5, 335, 1194, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12625, 2, NULL, 18.25, 376, 1194, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12626, 3, NULL, 29.5, 385, 1194, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12627, 4, NULL, 36, 63, 1194, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12628, 5, NULL, 38.25, 412, 1194, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12629, 6, NULL, 44.25, 200, 1194, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12630, 7, NULL, 88, 242, 1194, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12631, 8, NULL, 96, 141, 1194, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12632, 1, NULL, 20.5, 75, 1195, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12633, 2, NULL, 30.25, 467, 1195, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12634, 3, NULL, 31.75, 137, 1195, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12635, 4, NULL, 33.25, 139, 1195, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12636, 5, NULL, 35.5, 300, 1195, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12637, 6, NULL, 49.5, 147, 1195, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12638, 7, NULL, 61.25, 133, 1195, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12639, 8, NULL, 64.25, 288, 1195, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12640, 1, NULL, 5, 376, 1196, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12641, 2, NULL, 7, 467, 1196, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12642, 3, NULL, 10, 399, 1196, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12643, 4, NULL, 12, 137, 1196, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12644, 5, NULL, 20, 79, 1196, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12645, 6, NULL, 21, 311, 1196, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12646, 7, NULL, 22, 147, 1196, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12647, 8, NULL, 27, 210, 1196, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12648, 9, NULL, 31, 412, 1196, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12649, 10, NULL, 36, 43, 1196, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12650, 2, NULL, 49.75, 194, 1197, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12651, 1, NULL, 45.75, 84, 1197, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12652, 3, NULL, 67.75, 169, 1197, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12653, 4, NULL, 80, 412, 1197, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12654, 5, NULL, 117.25, 68, 1197, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12655, 6, NULL, 130.25, 472, 1197, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12656, 1, NULL, 43, 194, 1198, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12657, 2, NULL, 48, 84, 1198, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12658, 3, NULL, 50, 169, 1198, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12659, 4, NULL, 65, 412, 1198, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12660, 5, NULL, 71, 68, 1198, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12661, 6, NULL, 118, 472, 1198, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12662, 1, NULL, 43.25, 147, 1199, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12663, 2, NULL, 46.5, 242, 1199, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12664, 3, NULL, 53.75, 200, 1199, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12665, 4, NULL, 65.75, 141, 1199, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12666, 5, NULL, 74.5, 133, 1199, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12667, 1, NULL, 19.5, 472, 1200, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12668, 2, NULL, 34.5, 311, 1200, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12669, 3, NULL, 42.5, 473, 1200, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12670, 4, NULL, 50, 24, 1200, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12671, 5, NULL, 65.5, 9, 1200, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12672, 6, NULL, 67.5, 474, 1200, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12673, 7, NULL, 80.5, 203, 1200, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12674, 8, NULL, 86, 88, 1200, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12675, 9, NULL, 115, 270, 1200, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (12676, 9, NULL, 115, 71, 1200, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (12677, 11, NULL, 131, 41, 1200, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12678, 12, NULL, 171.5, 42, 1200, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12679, 13, NULL, 214.5, 216, 1200, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12680, 1, NULL, 31, 399, 1201, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12681, 2, NULL, 35, 79, 1201, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12682, 3, NULL, 61, 192, 1201, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12683, 4, NULL, 64, 369, 1201, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12684, 5, NULL, 67, 80, 1201, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12685, 6, NULL, 77, 266, 1201, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12686, 1, NULL, 20, 335, 1202, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12687, 2, NULL, 25, 385, 1202, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12688, 3, NULL, 26, 376, 1202, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12689, 4, NULL, 27, 75, 1202, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12690, 5, NULL, 37, 63, 1202, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (12691, 5, NULL, 37, 139, 1202, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (12692, 7, NULL, 37.25, 300, 1202, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12693, 8, NULL, 39.5, 412, 1202, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12694, 9, NULL, 42.25, 467, 1202, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12695, 10, NULL, 54.75, 137, 1202, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12696, 11, NULL, 62, 147, 1202, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12697, 12, NULL, 66.5, 242, 1202, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12698, 1, NULL, 21.5, 385, 1203, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12699, 2, NULL, 31.5, 137, 1203, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12700, 3, NULL, 36.5, 412, 1203, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12701, 4, NULL, 37.5, 79, 1203, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12702, 5, NULL, 39, 339, 1203, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12703, 6, NULL, 47, 162, 1203, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12704, 7, NULL, 65.5, 157, 1203, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12705, 8, NULL, 70, 26, 1203, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12706, 9, NULL, 70.5, 169, 1203, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12707, 10, NULL, 74.5, 242, 1203, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12708, 11, NULL, 108, 210, 1203, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12709, 12, NULL, 240, 75, 1203, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12710, 1, NULL, 7.25, 335, 1204, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12711, 2, NULL, 17, 236, 1204, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12712, 3, NULL, 20, 399, 1204, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12713, 4, NULL, 27, 137, 1204, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12714, 5, NULL, 27.5, 79, 1204, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12715, 6, NULL, 28, 311, 1204, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12716, 7, NULL, 42, 369, 1204, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12717, 8, NULL, 44.5, 43, 1204, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12718, 9, NULL, 46.5, 472, 1204, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12719, 10, NULL, 63, 133, 1204, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12720, 11, NULL, 71, 210, 1204, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12721, 12, NULL, 75, 157, 1204, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12722, 1, NULL, 16, 385, 1205, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12723, 2, NULL, 23, 412, 1205, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12724, 3, NULL, 26, 75, 1205, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12725, 4, NULL, 28, 236, 1205, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12726, 5, NULL, 33, 300, 1205, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12727, 6, NULL, 36, 467, 1205, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12728, 7, NULL, 40, 472, 1205, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12729, 8, NULL, 43, 200, 1205, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12730, 9, NULL, 70, 311, 1205, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12731, 10, NULL, 97, 147, 1205, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12732, 1, NULL, 22.5, 236, 1206, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12733, 2, NULL, 24.5, 385, 1206, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12734, 3, NULL, 26, 467, 1206, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12735, 4, NULL, 27, 412, 1206, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12736, 5, NULL, 35, 147, 1206, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12737, 6, NULL, 37.75, 75, 1206, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12738, 7, NULL, 39, 200, 1206, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12739, 8, NULL, 41, 300, 1206, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12740, 9, NULL, 50, 472, 1206, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12741, 10, NULL, 56, 200, 1206, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12742, 1, NULL, 29, 467, 1207, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12743, 2, NULL, 28.75, 236, 1207, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12744, 3, NULL, 31.5, 412, 1207, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12745, 4, NULL, 49, 385, 1207, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12746, 5, NULL, 61, 300, 1207, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12747, 6, NULL, 62, 75, 1207, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12748, 7, NULL, 70.5, 472, 1207, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12749, 8, NULL, 108, 311, 1207, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12750, 9, NULL, 109.5, 200, 1207, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12751, 10, NULL, 118, 147, 1207, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12752, 1, NULL, 10.5, 335, 1208, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12753, 2, NULL, 12, 376, 1208, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12754, 3, NULL, 14, 236, 1208, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12755, 4, NULL, 16, 75, 1208, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12756, 5, NULL, 24, 412, 1208, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12757, 6, NULL, 33.5, 63, 1208, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12758, 7, NULL, 37, 339, 1208, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12759, 8, NULL, 43, 242, 1208, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12760, 9, NULL, 44, 169, 1208, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12761, 10, NULL, 47, 137, 1208, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12762, 11, NULL, 56.5, 472, 1208, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12763, 12, NULL, 58, 200, 1208, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12764, 13, NULL, 74.5, 147, 1208, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12765, 1, NULL, 34, 288, 1209, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12766, 2, NULL, 49.5, 133, 1209, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12767, 3, NULL, 76, 28, 1209, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12768, 4, NULL, 77, 330, 1209, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12769, 5, NULL, 109, 134, 1209, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12770, 1, NULL, 19.75, 399, 1210, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12771, 2, NULL, 28.5, 467, 1210, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12772, 3, NULL, 41, 157, 1210, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12773, 4, NULL, 45, 147, 1210, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12774, 1, NULL, 23, 376, 1211, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12775, 2, NULL, 26.75, 75, 1211, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12776, 3, NULL, 27.5, 385, 1211, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12777, 4, NULL, 37.25, 169, 1211, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12778, 5, NULL, 45, 137, 1211, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12779, 6, NULL, 58.75, 472, 1211, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12780, 7, NULL, 75, 386, 1211, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12781, 8, NULL, 106.5, 157, 1211, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12782, 1, NULL, 35, 376, 1212, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12783, 2, NULL, 41, 75, 1212, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12784, 3, NULL, 47, 169, 1212, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12785, 4, NULL, 48, 385, 1212, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12786, 5, NULL, 56, 137, 1212, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12787, 6, NULL, 72, 472, 1212, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12788, 7, NULL, 83, 157, 1212, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12789, 1, NULL, 14.25, 335, 1213, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12790, 2, NULL, 23.5, 385, 1213, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12791, 3, NULL, 35.75, 137, 1213, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12792, 4, NULL, 40.75, 412, 1213, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12793, 5, NULL, 51.25, 75, 1213, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12794, 6, NULL, 57, 472, 1213, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12795, 7, NULL, 58.5, 147, 1213, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12796, 8, NULL, 68.5, 200, 1213, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12797, 9, NULL, 72.75, 162, 1213, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12798, 10, NULL, 0, 242, 1213, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12799, 1, NULL, 19.5, 335, 1214, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12800, 2, NULL, 35, 385, 1214, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12801, 3, NULL, 46, 137, 1214, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12802, 4, NULL, 58.25, 472, 1214, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12803, 5, NULL, 62.25, 200, 1214, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12804, 6, NULL, 71, 412, 1214, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12805, 7, NULL, 82, 75, 1214, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12806, 8, NULL, 104, 162, 1214, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12807, 9, NULL, 113, 147, 1214, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12808, 10, NULL, 0, 242, 1214, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12809, 1, NULL, 14.5, 335, 1215, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12810, 2, NULL, 30.5, 43, 1215, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12811, 3, NULL, 31, 467, 1215, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12812, 4, NULL, 41, 300, 1215, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12813, 5, NULL, 41.5, 79, 1215, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12814, 6, NULL, 54, 84, 1215, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12815, 7, NULL, 55, 147, 1215, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12816, 8, NULL, 96.5, 194, 1215, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12817, 1, NULL, 52, 236, 1216, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12818, 2, NULL, 79, 335, 1216, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12819, 3, NULL, 98, 147, 1216, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12820, 4, NULL, 143, 79, 1216, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12821, 5, NULL, 145, 43, 1216, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12822, 6, NULL, 175, 84, 1216, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12823, 1, NULL, 19, 335, 1217, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12824, 2, NULL, 23.5, 236, 1217, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12825, 3, NULL, 28, 467, 1217, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12826, 4, NULL, 33.5, 147, 1217, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12827, 5, NULL, 35, 300, 1217, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12828, 6, NULL, 36.5, 79, 1217, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12829, 7, NULL, 38.5, 43, 1217, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12830, 8, NULL, 54, 84, 1217, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12831, 1, NULL, 7.25, 335, 1218, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12832, 2, NULL, 14.25, 376, 1218, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12833, 3, NULL, 16, 236, 1218, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12834, 4, NULL, 17.5, 75, 1218, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12835, 5, NULL, 19.5, 399, 1218, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12836, 6, NULL, 26, 385, 1218, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12837, 7, NULL, 27, 412, 1218, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12838, 8, NULL, 29, 63, 1218, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12839, 9, NULL, 39.5, 169, 1218, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12840, 10, NULL, 43, 311, 1218, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12841, 11, NULL, 47.5, 122, 1218, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12842, 12, NULL, 48.5, 137, 1218, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12843, 1, NULL, 35.33, 467, 908, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12844, 1, NULL, 13.75, 335, 1219, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12845, 2, NULL, 17.5, 75, 1219, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12846, 3, NULL, 21.75, 385, 1219, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12847, 4, NULL, 29.5, 412, 1219, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12848, 5, NULL, 31, 252, 1219, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12849, 6, NULL, 38, 399, 1219, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12850, 7, NULL, 40.5, 137, 1219, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12851, 8, NULL, 41, 68, 1219, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12852, 9, NULL, 47, 169, 1219, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12853, 10, NULL, 59, 200, 1219, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12854, 11, NULL, 72.5, 147, 1219, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12855, 12, NULL, 80, 242, 1219, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12856, 1, NULL, 8, 335, 1220, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12857, 2, NULL, 16, 385, 1220, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12858, 3, NULL, 19, 75, 1220, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12859, 4, NULL, 27, 137, 1220, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12860, 5, NULL, 28, 399, 1220, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12861, 7, NULL, 33, 252, 1220, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12862, 6, NULL, 29, 412, 1220, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12863, 8, NULL, 38, 169, 1220, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12864, 9, NULL, 40, 200, 1220, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12865, 10, NULL, 43, 147, 1220, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12866, 11, NULL, 51, 242, 1220, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12867, 12, NULL, 55, 68, 1220, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12868, 1, NULL, 42.75, 385, 1221, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12869, 2, NULL, 50.25, 63, 1221, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12870, 3, NULL, 53.5, 472, 1221, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12871, 4, NULL, 56.5, 137, 1221, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12872, 5, NULL, 61, 311, 1221, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12873, 6, NULL, 63, 412, 1221, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12874, 7, NULL, 65.5, 122, 1221, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12875, 8, NULL, 74, 169, 1221, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12876, 9, NULL, 80.5, 165, 1221, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12877, 10, NULL, 82.5, 162, 1221, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12878, 11, NULL, 108, 147, 1221, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12879, 12, NULL, 155.5, 133, 1221, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12880, 1, NULL, 11.5, 236, 1222, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12881, 2, NULL, 13.5, 385, 1222, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12882, 3, NULL, 37.5, 369, 1222, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12883, 4, NULL, 38, 79, 1222, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12884, 5, NULL, 39, 412, 1222, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12885, 6, NULL, 41.5, 43, 1222, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12886, 7, NULL, 50.5, 122, 1222, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12887, 8, NULL, 61.5, 162, 1222, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12888, 9, NULL, 66.5, 137, 1222, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12889, 10, NULL, 69.5, 296, 1222, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12890, 1, NULL, 27, 236, 1223, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12891, 2, NULL, 46, 155, 1223, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12892, 3, NULL, 48.5, 194, 1223, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12893, 4, NULL, 59.25, 79, 1223, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12894, 5, NULL, 65.75, 169, 1223, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12895, 6, NULL, 72, 424, 1223, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12896, 7, NULL, 73, 179, 1223, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12897, 8, NULL, 103.75, 472, 1223, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12898, 1, NULL, 19.5, 137, 1224, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12899, 2, NULL, 20, 236, 1224, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12900, 3, NULL, 21.5, 412, 1224, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12901, 4, NULL, 30, 467, 1224, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12902, 5, NULL, 34, 399, 1224, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12903, 6, NULL, 40, 122, 1224, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12904, 7, NULL, 42, 43, 1224, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12905, 8, NULL, 52.5, 147, 1224, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12906, 9, NULL, 60, 157, 1224, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12907, 1, NULL, 50, 236, 1225, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12908, 2, NULL, 62.75, 385, 1225, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12909, 3, NULL, 81.5, 412, 1225, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12910, 4, NULL, 82.25, 169, 1225, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12911, 5, NULL, 117, 242, 1225, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12912, 6, NULL, 146, 162, 1225, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12913, 7, NULL, 183, 472, 1225, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12914, 1, NULL, 25.5, 75, 1226, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12915, 2, NULL, 26.5, 147, 1226, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12916, 3, NULL, 27, 412, 1226, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12917, 4, NULL, 36, 137, 1226, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12918, 5, NULL, 38.5, 472, 1226, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12919, 6, NULL, 43, 467, 1226, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12920, 7, NULL, 45, 311, 1226, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12921, 8, NULL, 63, 43, 1226, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12922, 9, NULL, 82, 399, 1226, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12923, 10, NULL, 202, 316, 1226, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12924, 1, NULL, 16.5, 236, 1227, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12925, 2, NULL, 18.5, 63, 1227, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12926, 3, NULL, 19.5, 412, 1227, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12927, 4, NULL, 21, 75, 1227, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12928, 5, NULL, 30, 169, 1227, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12929, 6, NULL, 34, 165, 1227, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12930, 7, NULL, 38, 122, 1227, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12931, 8, NULL, 39, 311, 1227, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12932, 9, NULL, 41, 157, 1227, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12933, 10, NULL, 42.5, 472, 1227, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12934, 11, NULL, 43, 399, 1227, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12935, 12, NULL, 46, 210, 1227, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12936, 13, NULL, 62, 147, 1227, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12937, 14, NULL, 67, 221, 1227, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12938, 15, NULL, 198, 158, 1227, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12939, 1, NULL, 20, 194, 1228, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12940, 2, NULL, 27, 236, 1228, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12941, 3, NULL, 39, 79, 1228, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12942, 4, NULL, 40, 155, 1228, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12943, 5, NULL, 43, 63, 1228, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12944, 6, NULL, 53, 412, 1228, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12945, 7, NULL, 57, 84, 1228, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12946, 8, NULL, 59.75, 467, 1228, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12947, 9, NULL, 63, 300, 1228, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12948, 10, NULL, 99, 122, 1228, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12949, 1, NULL, 10.5, 75, 1229, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (12950, 2, NULL, 15, 412, 1229, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12951, 3, NULL, 15.25, 300, 1229, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12952, 4, NULL, 18, 155, 1229, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12953, 5, NULL, 18.25, 63, 1229, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12954, 6, NULL, 20, 467, 1229, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12955, 7, NULL, 21.25, 236, 1229, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12956, 8, NULL, 30, 399, 1229, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12957, 9, NULL, 40.5, 79, 1229, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12958, 10, NULL, 54.5, 122, 1229, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12959, 11, NULL, 57, 147, 1229, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12960, 12, NULL, 57.5, 84, 1229, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12961, 13, NULL, 60.5, 313, 1229, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12962, 14, NULL, 71, 264, 1229, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12963, 15, NULL, 119, 182, 1229, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12964, 1, NULL, 13.25, 193, 1230, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12965, 2, NULL, 28.25, 150, 1230, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12966, 3, NULL, 29.5, 464, 1230, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12967, 4, NULL, 30, 467, 1230, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12968, 5, NULL, 39.75, 418, 1230, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12969, 6, NULL, 42.75, 300, 1230, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12970, 7, NULL, 45.5, 310, 1230, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12971, 8, NULL, 49.5, 56, 1230, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12972, 1, NULL, 4.25, 464, 1231, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12973, 2, NULL, 8.5, 472, 1231, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12974, 3, NULL, 9.75, 407, 1231, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12975, 4, NULL, 14.25, 107, 1231, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12976, 5, NULL, 17.25, 467, 1231, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12977, 6, NULL, 30, 193, 1231, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12978, 7, NULL, 31.25, 488, 1231, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12979, 8, NULL, 39.75, 30, 1231, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12980, 1, NULL, 17, 28, 1232, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (12981, 2, NULL, 22, 137, 1232, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12982, 3, NULL, 30.33, 82, 1232, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12983, 4, NULL, 30.67, 193, 1232, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12984, 5, NULL, 36, 13, 1232, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12985, 6, NULL, 45, 407, 1232, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12986, 7, NULL, 49, 467, 1232, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (12987, 8, NULL, 59, 300, 1232, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (12988, 9, NULL, 61, 33, 1232, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (12989, 10, NULL, 88, 179, 1232, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (12990, 11, NULL, 107, 427, 1232, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (12991, 12, NULL, 117, 182, 1232, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (12992, 13, NULL, 123.33, 275, 1232, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (12993, 14, NULL, 133.33, 467, 1232, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (12994, 1, NULL, 10, 467, 1233, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (12995, 2, NULL, 16.33, 82, 1233, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (12996, 3, NULL, 16.67, 300, 1233, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (12997, 4, NULL, 17, 363, 1233, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (12998, 5, NULL, 20.67, 418, 1233, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (12999, 6, NULL, 25, 137, 1233, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13000, 7, NULL, 33, 13, 1233, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13001, 8, NULL, 36.67, 407, 1233, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13002, 9, NULL, 48, 33, 1233, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13003, 10, NULL, 57.67, 466, 1233, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13004, 11, NULL, 60, 427, 1233, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13005, 12, NULL, 96, 22, 1233, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13006, 13, NULL, 119.33, 382, 1233, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13007, 1, NULL, 8, 137, 1234, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13008, 2, NULL, 12.25, 464, 1234, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13009, 3, NULL, 15.25, 82, 1234, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13010, 4, NULL, 17.5, 467, 1234, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13011, 5, NULL, 23, 150, 1234, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13012, 6, NULL, 24, 407, 1234, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13013, 7, NULL, 31, 418, 1234, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13014, 8, NULL, 45, 339, 1234, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13015, 1, NULL, 12.25, 467, 1235, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (13016, 2, NULL, 15.5, 137, 1235, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (13017, 3, NULL, 27.25, 82, 1235, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13018, 4, NULL, 28.5, 407, 1235, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13019, 5, NULL, 36.25, 464, 1235, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13020, 6, NULL, 39.25, 317, 1235, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13021, 7, NULL, 44.67, 363, 1235, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13022, 8, NULL, 50.5, 150, 1235, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13023, 9, NULL, 53, 357, 1235, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13024, 10, NULL, 75, 293, 1235, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13025, 11, NULL, 75.25, 250, 1235, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13026, 12, NULL, 82.75, 435, 1235, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13027, 13, NULL, 127, 491, 1235, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13028, 14, NULL, 137.5, 401, 1235, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13029, 15, NULL, 143.75, 43, 1235, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13030, 16, NULL, 151.5, 332, 1235, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13031, 17, NULL, 153, 466, 1235, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13032, 18, NULL, 0, 101, 1235, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13033, 1, NULL, 14.67, 137, 1236, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13034, 2, NULL, 16.33, 467, 1236, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13035, 3, NULL, 20.33, 82, 1236, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13036, 4, NULL, 26, 194, 1236, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13037, 5, NULL, 45, 300, 1236, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13038, 6, NULL, 63, 33, 1236, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13039, 7, NULL, 70.33, 472, 1236, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13040, 8, NULL, 75.67, 491, 1236, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13041, 9, NULL, 79, 427, 1236, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13042, 10, NULL, 143, 245, 1236, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13043, 11, NULL, 144, 281, 1236, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13044, 1, NULL, 17, 137, 1237, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13045, 2, NULL, 25.25, 407, 1237, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13046, 3, NULL, 41, 467, 1237, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13047, 4, NULL, 46, 363, 1237, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13048, 5, NULL, 50.5, 300, 1237, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13049, 6, NULL, 56, 82, 1237, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13050, 7, NULL, 74, 194, 1237, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13051, 8, NULL, 75, 101, 1237, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13052, 9, NULL, 96, 472, 1237, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13053, 10, NULL, 104, 281, 1237, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13054, 1, NULL, 10, 467, 1238, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (13055, 2, NULL, 11, 82, 1238, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13056, 3, NULL, 14, 407, 1238, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13057, 4, NULL, 23, 137, 1238, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13058, 5, NULL, 29, 300, 1238, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13059, 6, NULL, 32.5, 363, 1238, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13060, 7, NULL, 34, 233, 1238, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13061, 8, NULL, 38, 33, 1238, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13062, 9, NULL, 46.5, 149, 1238, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13063, 10, NULL, 47.5, 293, 1238, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13064, 11, NULL, 51.5, 2, 1238, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13065, 12, NULL, 60, 357, 1238, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13066, 13, NULL, 91, 466, 1238, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13067, 14, NULL, 95, 245, 1238, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13068, 15, NULL, 120, 43, 1238, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13069, 16, NULL, 135, 32, 1238, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13070, 17, NULL, 147, 491, 1238, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13071, 1, NULL, 13.33, 467, 1239, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (13072, 2, NULL, 14.67, 137, 1239, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13073, 3, NULL, 20.67, 407, 1239, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13074, 4, NULL, 26.67, 418, 1239, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13075, 5, NULL, 32.33, 363, 1239, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13076, 6, NULL, 41, 33, 1239, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13077, 7, NULL, 44.33, 149, 1239, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13078, 8, NULL, 46, 357, 1239, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13079, 9, NULL, 47.67, 293, 1239, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13080, 10, NULL, 57.33, 435, 1239, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13081, 11, NULL, 60, 233, 1239, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13082, 12, NULL, 72, 43, 1239, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13083, 13, NULL, 76, 421, 1239, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13084, 14, NULL, 78, 193, 1239, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13085, 15, NULL, 78.33, 491, 1239, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13086, 16, NULL, 85, 466, 1239, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13087, 17, NULL, 95, 250, 1239, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13088, 1, NULL, 13, 407, 1240, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13089, 2, NULL, 17, 467, 1240, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13090, 3, NULL, 18, 137, 1240, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13091, 4, NULL, 31, 363, 1240, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13092, 5, NULL, 64, 466, 1240, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13093, 6, NULL, 66, 33, 1240, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13094, 7, NULL, 74, 194, 1240, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13095, 8, NULL, 76, 149, 1240, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13096, 9, NULL, 92, 427, 1240, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13097, 10, NULL, 103, 179, 1240, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13098, 11, NULL, 117, 245, 1240, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13099, 12, NULL, 165, 382, 1240, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13100, 13, NULL, 248, 428, 1240, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13101, 1, NULL, 14.5, 137, 1241, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13102, 2, NULL, 16.5, 467, 1241, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13103, 3, NULL, 26, 418, 1241, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13104, 4, NULL, 29, 407, 1241, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13105, 5, NULL, 44, 357, 1241, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13106, 6, NULL, 50.5, 392, 1241, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13107, 7, NULL, 62, 32, 1241, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13108, 8, NULL, 72, 233, 1241, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13109, 9, NULL, 78, 149, 1241, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13110, 10, NULL, 92, 466, 1241, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13111, 1, NULL, 15.5, 407, 1242, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13112, 2, NULL, 28, 137, 1242, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13113, 3, NULL, 31, 363, 1242, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13114, 4, NULL, 33, 467, 1242, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13115, 5, NULL, 46, 472, 1242, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13116, 6, NULL, 48.5, 464, 1242, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13117, 7, NULL, 50, 101, 1242, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13118, 8, NULL, 56, 350, 1242, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13119, 1, NULL, 11, 137, 1243, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13120, 2, NULL, 13.67, 467, 1243, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13121, 3, NULL, 15, 407, 1243, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13122, 4, NULL, 16, 317, 1243, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13123, 5, NULL, 30, 293, 1243, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13124, 6, NULL, 31, 363, 1243, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13125, 7, NULL, 33.33, 82, 1243, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13126, 8, NULL, 37.67, 101, 1243, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13127, 9, NULL, 50, 491, 1243, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13128, 10, NULL, 57.33, 43, 1243, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13129, 11, NULL, 61.67, 472, 1243, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13130, 12, NULL, 65.67, 250, 1243, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13131, 13, NULL, 71.33, 435, 1243, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13132, 14, NULL, 76, 83, 1243, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13133, 1, NULL, 28.75, 363, 1244, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13134, 2, NULL, 45.5, 407, 1244, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13135, 3, NULL, 50, 467, 1244, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13136, 4, NULL, 77.25, 464, 1244, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13137, 5, NULL, 83.5, 472, 1244, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13138, 6, NULL, 85, 411, 1244, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13139, 7, NULL, 85.25, 150, 1244, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13140, 8, NULL, 86, 317, 1244, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13141, 9, NULL, 91.5, 293, 1244, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13142, 10, NULL, 170.75, 435, 1244, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13143, 11, NULL, 108.25, 43, 1244, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13144, 12, NULL, 111, 491, 1244, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13145, 13, NULL, 121.5, 83, 1244, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13146, 14, NULL, 160, 82, 1244, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13147, 15, NULL, 175.5, 246, 1244, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13148, 1, NULL, 6, 407, 1245, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13149, 2, NULL, 7, 137, 1245, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13150, 3, NULL, 12, 467, 1245, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13151, 4, NULL, 30, 363, 1245, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13152, 5, NULL, 51, 194, 1245, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13153, 6, NULL, 63, 82, 1245, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13154, 7, NULL, 67, 149, 1245, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13155, 8, NULL, 79, 101, 1245, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13156, 9, NULL, 90, 472, 1245, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13157, 10, NULL, 91, 246, 1245, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13158, 11, NULL, 105, 32, 1245, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13159, 12, NULL, 135, 281, 1245, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13160, 13, NULL, 137, 33, 1245, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13161, 14, NULL, 150, 491, 1245, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13162, 1, NULL, 8.5, 407, 1246, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13163, 2, NULL, 24.75, 137, 1246, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13164, 3, NULL, 34.75, 82, 1246, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13165, 4, NULL, 42.5, 418, 1246, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13166, 5, NULL, 53, 467, 1246, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13167, 6, NULL, 63, 13, 1246, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13168, 7, NULL, 72.5, 149, 1246, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13169, 8, NULL, 97, 7, 1246, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13170, 9, NULL, 107.25, 333, 1246, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13171, 10, NULL, 110.75, 179, 1246, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13172, 11, NULL, 117, 427, 1246, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13173, 12, NULL, 131.25, 382, 1246, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13174, 13, NULL, 147, 50, 1246, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13175, 14, NULL, 200, 22, 1246, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13176, 15, NULL, 0, 245, 1246, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13177, 1, NULL, 16, 407, 1247, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13178, 2, NULL, 18, 467, 1247, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13179, 3, NULL, 23.33, 137, 1247, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13180, 4, NULL, 26, 82, 1247, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13181, 5, NULL, 34, 300, 1247, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13182, 6, NULL, 37.33, 418, 1247, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13183, 7, NULL, 40, 363, 1247, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13184, 8, NULL, 40.33, 357, 1247, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13185, 9, NULL, 87, 32, 1247, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13186, 10, NULL, 110, 360, 1247, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13187, 1, NULL, 13, 467, 1248, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13188, 2, NULL, 25, 407, 1248, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13189, 3, NULL, 28, 82, 1248, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13190, 4, NULL, 29, 137, 1248, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13191, 5, NULL, 41, 464, 1248, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13192, 6, NULL, 45, 472, 1248, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13193, 7, NULL, 47, 488, 1248, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13194, 8, NULL, 55, 56, 1248, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13195, 9, NULL, 68, 101, 1248, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13196, 10, NULL, 0, 300, 1248, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13197, 1, NULL, 17.5, 467, 1249, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13198, 2, NULL, 26, 137, 1249, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13199, 3, NULL, 28.25, 82, 1249, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13200, 4, NULL, 34.75, 317, 1249, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13201, 5, NULL, 41.5, 363, 1249, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13202, 6, NULL, 41.75, 56, 1249, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13203, 7, NULL, 54, 194, 1249, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13204, 8, NULL, 57, 357, 1249, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13205, 9, NULL, 65.5, 101, 1249, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13206, 10, NULL, 72.25, 250, 1249, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13207, 11, NULL, 98, 43, 1249, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13208, 12, NULL, 99.75, 491, 1249, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13209, 1, NULL, 18.33, 137, 1250, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13210, 2, NULL, 20, 407, 1250, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13211, 3, NULL, 20.33, 467, 1250, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13212, 4, NULL, 26, 363, 1250, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13213, 5, NULL, 34.33, 418, 1250, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13214, 6, NULL, 37.67, 300, 1250, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13215, 7, NULL, 47.33, 7, 1250, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13216, 8, NULL, 57.33, 32, 1250, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13217, 9, NULL, 71.33, 22, 1250, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13218, 10, NULL, 77.67, 149, 1250, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13219, 11, NULL, 82.67, 33, 1250, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13220, 12, NULL, 84, 193, 1250, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13221, 13, NULL, 145, 382, 1250, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13222, 1, NULL, 23, 407, 1251, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13223, 2, NULL, 35, 467, 1251, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13224, 3, NULL, 40, 137, 1251, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13225, 4, NULL, 44, 82, 1251, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13226, 5, NULL, 93, 491, 1251, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13227, 6, NULL, 110, 363, 1251, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13228, 7, NULL, 116, 36, 1251, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13229, 8, NULL, 117, 194, 1251, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13230, 9, NULL, 150, 472, 1251, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13231, 10, NULL, 138, 427, 1251, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13232, 11, NULL, 148, 281, 1251, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13233, 1, NULL, 22.5, 467, 1252, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13234, 2, NULL, 23.5, 137, 1252, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13235, 3, NULL, 37, 407, 1252, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13236, 4, NULL, 45, 418, 1252, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13237, 5, NULL, 71, 82, 1252, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13238, 6, NULL, 76, 7, 1252, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13239, 7, NULL, 103, 193, 1252, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13240, 8, NULL, 109, 333, 1252, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13241, 9, NULL, 112, 427, 1252, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13242, 10, NULL, 114, 33, 1252, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13243, 11, NULL, 154, 179, 1252, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13244, 13, NULL, 0, 227, 1252, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13245, 13, NULL, 0, 382, 1252, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13246, 1, NULL, 15.5, 467, 1253, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13247, 2, NULL, 17.75, 137, 1253, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13248, 3, NULL, 18, 363, 1253, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13249, 4, NULL, 18.25, 407, 1253, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13250, 5, NULL, 25, 418, 1253, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13251, 6, NULL, 30, 300, 1253, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13252, 7, NULL, 39.25, 82, 1253, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13253, 8, NULL, 48.75, 193, 1253, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13254, 9, NULL, 54, 32, 1253, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13255, 10, NULL, 73, 33, 1253, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13256, 11, NULL, 79, 7, 1253, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13257, 1, NULL, 18.25, 467, 1254, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13258, 2, NULL, 19.5, 407, 1254, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13259, 3, NULL, 23.25, 150, 1254, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13260, 4, NULL, 31.75, 137, 1254, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13261, 5, NULL, 32.5, 418, 1254, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13262, 6, NULL, 41.25, 488, 1254, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13263, 7, NULL, 55.5, 56, 1254, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13264, 8, NULL, 56.75, 30, 1254, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13265, 9, NULL, 62.25, 363, 1254, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13266, 10, NULL, 74, 464, 1254, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13267, 1, NULL, 18, 467, 1255, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13268, 2, NULL, 21.75, 82, 1255, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13269, 3, NULL, 25, 137, 1255, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13270, 4, NULL, 34, 407, 1255, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13271, 5, NULL, 35.25, 363, 1255, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13272, 6, NULL, 42.5, 43, 1255, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13273, 7, NULL, 43.25, 491, 1255, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13274, 8, NULL, 46, 357, 1255, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13275, 9, NULL, 46.75, 317, 1255, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13276, 10, NULL, 51.5, 33, 1255, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13277, 11, NULL, 62.25, 221, 1255, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13278, 12, NULL, 92, 250, 1255, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13279, 1, NULL, 37, 82, 1256, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13280, 2, NULL, 39, 467, 1256, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13281, 3, NULL, 43, 137, 1256, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13282, 4, NULL, 43.67, 300, 1256, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13283, 5, NULL, 50.67, 491, 1256, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13284, 6, NULL, 53, 407, 1256, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13285, 7, NULL, 58.33, 13, 1256, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13286, 8, NULL, 75, 427, 1256, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13287, 9, NULL, 75.67, 33, 1256, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13288, 10, NULL, 89, 32, 1256, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13289, 11, NULL, 112.67, 275, 1256, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13290, 12, NULL, 143, 22, 1256, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13291, 1, NULL, 24, 467, 1257, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13292, 2, NULL, 30.25, 407, 1257, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13293, 3, NULL, 58, 82, 1257, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13294, 4, NULL, 70, 194, 1257, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13295, 5, NULL, 74.5, 300, 1257, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13296, 6, NULL, 88.75, 363, 1257, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13297, 7, NULL, 108, 491, 1257, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13298, 8, NULL, 160, 100, 1257, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13299, 9, NULL, 180, 205, 1257, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13300, 1, NULL, 14, 467, 1258, 31);
+INSERT INTO
+    DRL_result
+VALUES
+    (13301, 1, NULL, 14, 137, 1258, 31);
+INSERT INTO
+    DRL_result
+VALUES
+    (13302, 3, NULL, 25, 407, 1258, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13303, 4, NULL, 26.33, 300, 1258, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13304, 5, NULL, 33.33, 418, 1258, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13305, 6, NULL, 44, 363, 1258, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13306, 7, NULL, 46, 82, 1258, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13307, 8, NULL, 51.67, 101, 1258, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13308, 9, NULL, 58, 194, 1258, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13309, 10, NULL, 59, 193, 1258, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13310, 11, NULL, 69, 13, 1258, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13311, 12, NULL, 70, 491, 1258, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13312, 13, NULL, 73, 427, 1258, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13313, 14, NULL, 80, 173, 1258, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13314, 15, NULL, 97, 33, 1258, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13315, 16, NULL, 99, 43, 1258, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13316, 17, NULL, 120, 179, 1258, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13317, 1, NULL, 32, 467, 1259, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13318, 2, NULL, 42.67, 82, 1259, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13319, 3, NULL, 43.67, 137, 1259, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13320, 4, NULL, 48, 418, 1259, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13321, 5, NULL, 50.67, 300, 1259, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13322, 6, NULL, 52, 173, 1259, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13323, 7, NULL, 74.67, 193, 1259, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13324, 8, NULL, 90, 7, 1259, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13325, 9, NULL, 96.67, 382, 1259, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13326, 10, NULL, 110.67, 32, 1259, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13327, 1, NULL, 21.67, 407, 1260, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13328, 2, NULL, 23.33, 137, 1260, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13329, 3, NULL, 38.67, 467, 1260, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13330, 4, NULL, 45, 173, 1260, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13331, 5, NULL, 47, 13, 1260, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13332, 6, NULL, 64.67, 7, 1260, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13333, 7, NULL, 74.33, 333, 1260, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13334, 8, NULL, 84, 427, 1260, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13335, 9, NULL, 96, 33, 1260, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13336, 10, NULL, 134.33, 179, 1260, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13337, 11, NULL, 138, 264, 1260, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13338, 12, NULL, 150, 466, 1260, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13339, 14, NULL, 0, 300, 1260, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13340, 14, NULL, 0, 382, 1260, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13341, 1, NULL, 12.5, 407, 1261, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13342, 2, NULL, 31.75, 137, 1261, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13343, 3, NULL, 33, 467, 1261, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13344, 4, NULL, 43.5, 363, 1261, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13345, 5, NULL, 56.5, 7, 1261, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13346, 6, NULL, 60.5, 193, 1261, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13347, 7, NULL, 63, 418, 1261, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13348, 8, NULL, 72.75, 179, 1261, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13349, 9, NULL, 101.75, 382, 1261, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13350, 10, NULL, 200, 227, 1261, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13351, 11, NULL, 0, 50, 1261, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13352, 1, NULL, 15, 137, 1262, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13353, 2, NULL, 16.75, 467, 1262, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13354, 3, NULL, 30.75, 300, 1262, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13355, 4, NULL, 36.5, 418, 1262, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13356, 5, NULL, 40.5, 193, 1262, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13357, 6, NULL, 45.75, 357, 1262, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13358, 7, NULL, 47, 363, 1262, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13359, 8, NULL, 52.5, 407, 1262, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13360, 9, NULL, 66.75, 221, 1262, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13361, 10, NULL, 70, 33, 1262, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13362, 11, NULL, 79, 75, 1262, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13363, 1, NULL, 10.75, 137, 1263, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13364, 2, NULL, 15.25, 467, 1263, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13365, 3, NULL, 22.25, 418, 1263, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13366, 4, NULL, 26.25, 101, 1263, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13367, 5, NULL, 27, 472, 1263, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13368, 6, NULL, 36.25, 300, 1263, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13369, 7, NULL, 42, 465, 1263, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13370, 8, NULL, 49, 193, 1263, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13371, 9, NULL, 56.75, 339, 1263, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13372, 10, NULL, 63.75, 107, 1263, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13373, 1, NULL, 45, 137, 1264, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13374, 2, NULL, 52, 467, 1264, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13375, 3, NULL, 62, 407, 1264, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13376, 4, NULL, 87, 363, 1264, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13377, 5, NULL, 112.33, 281, 1264, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13378, 6, NULL, 121.33, 288, 1264, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13379, 7, NULL, 0, 332, 1264, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13380, 1, NULL, 23.75, 137, 1265, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13381, 2, NULL, 32.25, 418, 1265, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13382, 3, NULL, 47.25, 300, 1265, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13383, 4, NULL, 48, 467, 1265, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13384, 5, NULL, 50, 407, 1265, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13385, 6, NULL, 68.75, 7, 1265, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13386, 7, NULL, 71.25, 357, 1265, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13387, 8, NULL, 82.25, 363, 1265, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13388, 9, NULL, 92, 316, 1265, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13389, 10, NULL, 95.75, 43, 1265, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13390, 1, NULL, 30.25, 137, 1266, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13391, 2, NULL, 37.75, 467, 1266, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13392, 3, NULL, 58.25, 472, 1266, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13393, 4, NULL, 62.5, 465, 1266, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13394, 5, NULL, 68.25, 464, 1266, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13395, 6, NULL, 81.5, 300, 1266, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13396, 7, NULL, 84, 101, 1266, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13397, 8, NULL, 90.5, 7, 1266, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13398, 9, NULL, 95.5, 418, 1266, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13399, 10, NULL, 107, 421, 1266, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13400, 1, NULL, 43, 137, 1267, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13401, 2, NULL, 64, 194, 1267, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13402, 3, NULL, 69, 467, 1267, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13403, 4, NULL, 81, 317, 1267, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13404, 5, NULL, 112, 281, 1267, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13405, 6, NULL, 120, 32, 1267, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13406, 7, NULL, 151, 491, 1267, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13407, 8, NULL, 157, 36, 1267, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13408, 9, NULL, 180, 288, 1267, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13409, 10, NULL, 205, 100, 1267, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13410, 1, NULL, 21.5, 137, 1268, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13411, 2, NULL, 29.25, 418, 1268, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13412, 3, NULL, 34.25, 467, 1268, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13413, 4, NULL, 36, 357, 1268, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13414, 5, NULL, 38.75, 316, 1268, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13415, 6, NULL, 73, 32, 1268, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13416, 7, NULL, 74.75, 300, 1268, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13417, 8, NULL, 76.25, 75, 1268, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13418, 9, NULL, 80.5, 382, 1268, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13419, 10, NULL, 80.75, 363, 1268, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13420, 11, NULL, 102.25, 193, 1268, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13421, 1, NULL, 20.25, 467, 1269, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13422, 2, NULL, 34, 137, 1269, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13423, 3, NULL, 34.25, 464, 1269, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13424, 4, NULL, 43, 150, 1269, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13425, 5, NULL, 51.25, 316, 1269, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13426, 6, NULL, 52.75, 418, 1269, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13427, 7, NULL, 64, 357, 1269, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13428, 8, NULL, 103.75, 30, 1269, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13429, 9, NULL, 0, 488, 1269, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13430, 1, NULL, 14, 137, 1270, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13431, 2, NULL, 22, 464, 1270, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13432, 3, NULL, 25, 467, 1270, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13433, 4, NULL, 34.33, 472, 1270, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13434, 5, NULL, 48.33, 339, 1270, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13435, 6, NULL, 51, 157, 1270, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13436, 7, NULL, 84.33, 178, 1270, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13437, 8, NULL, 102.33, 43, 1270, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13438, 9, NULL, 112, 169, 1270, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13439, 10, NULL, 150, 161, 1270, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13440, 11, NULL, 155, 216, 1270, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13441, 12, NULL, 159, 414, 1270, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13442, 1, NULL, 13, 137, 1271, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13443, 2, NULL, 23.33, 363, 1271, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13444, 3, NULL, 24.33, 467, 1271, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13445, 4, NULL, 32, 221, 1271, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13446, 5, NULL, 60, 317, 1271, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13447, 6, NULL, 64.67, 13, 1271, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13448, 7, NULL, 84, 392, 1271, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13449, 8, NULL, 117.67, 350, 1271, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13450, 9, NULL, 126, 421, 1271, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13451, 10, NULL, 150, 35, 1271, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13452, 11, NULL, 157, 161, 1271, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13453, 12, NULL, 0, 157, 1271, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13454, 1, NULL, 41.33, 467, 1272, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13455, 2, NULL, 51, 194, 1272, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13456, 3, NULL, 67, 317, 1272, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13457, 4, NULL, 68, 485, 1272, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13458, 5, NULL, 71.33, 363, 1272, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13459, 6, NULL, 74.67, 101, 1272, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13460, 7, NULL, 83.67, 43, 1272, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13461, 8, NULL, 102.33, 221, 1272, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13462, 9, NULL, 140, 86, 1272, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13463, 10, NULL, 151, 324, 1272, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13464, 11, NULL, 175, 293, 1272, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13465, 12, NULL, 182, 87, 1272, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13466, 13, NULL, 190, 325, 1272, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13467, 16, NULL, 0, 484, 1272, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13468, 16, NULL, 0, 407, 1272, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13469, 16, NULL, 0, 13, 1272, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13470, 1, NULL, 20.75, 467, 1273, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13471, 2, NULL, 31, 183, 1273, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13472, 3, NULL, 41.75, 194, 1273, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13473, 4, NULL, 58.25, 288, 1273, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13474, 5, NULL, 66.25, 316, 1273, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13475, 6, NULL, 67.25, 2, 1273, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13476, 7, NULL, 113.25, 190, 1273, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13477, 1, NULL, 27, 137, 1274, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13478, 2, NULL, 32.33, 467, 1274, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13479, 3, NULL, 42, 281, 1274, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13480, 4, NULL, 45, 194, 1274, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13481, 5, NULL, 56, 317, 1274, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13482, 6, NULL, 93, 427, 1274, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13483, 7, NULL, 49, 221, 1274, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13484, 8, NULL, 120, 485, 1274, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13485, 9, NULL, 123, 2, 1274, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13486, 10, NULL, 155, 484, 1274, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13487, 11, NULL, 160, 100, 1274, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13488, 12, NULL, 180, 205, 1274, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13489, 13, NULL, 260, 17, 1274, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13490, 14, NULL, 0, 333, 1274, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13491, 1, NULL, 32.5, 137, 1275, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13492, 2, NULL, 33.5, 467, 1275, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13493, 3, NULL, 53.5, 418, 1275, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13494, 4, NULL, 70.5, 13, 1275, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13495, 5, NULL, 76.5, 382, 1275, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13496, 6, NULL, 77.5, 392, 1275, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13497, 7, NULL, 90.5, 427, 1275, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13498, 8, NULL, 91, 7, 1275, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13499, 9, NULL, 97.5, 316, 1275, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13500, 10, NULL, 140, 300, 1275, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13501, 11, NULL, 154, 466, 1275, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13502, 1, NULL, 30, 137, 1276, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13503, 2, NULL, 37.33, 467, 1276, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13504, 3, NULL, 45.67, 221, 1276, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13505, 4, NULL, 48.33, 407, 1276, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13506, 5, NULL, 67.67, 418, 1276, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13507, 6, NULL, 76.67, 357, 1276, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13508, 7, NULL, 85.33, 75, 1276, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13509, 8, NULL, 92, 484, 1276, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13510, 9, NULL, 96.67, 194, 1276, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13511, 10, NULL, 117, 293, 1276, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13512, 11, NULL, 118, 479, 1276, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13513, 12, NULL, 120, 281, 1276, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13514, 13, NULL, 153, 100, 1276, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13515, 14, NULL, 0, 240, 1276, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13516, 1, NULL, 28, 467, 1277, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13517, 2, NULL, 30.67, 137, 1277, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13518, 3, NULL, 46.33, 317, 1277, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13519, 4, NULL, 67.33, 194, 1277, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13520, 5, NULL, 68.67, 43, 1277, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13521, 6, NULL, 75.33, 101, 1277, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13522, 7, NULL, 80.67, 392, 1277, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13523, 8, NULL, 94, 288, 1277, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13524, 9, NULL, 94.33, 427, 1277, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13525, 10, NULL, 134, 484, 1277, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13526, 1, NULL, 19.75, 467, 1278, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13527, 2, NULL, 42, 137, 1278, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13528, 3, NULL, 70, 193, 1278, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13529, 4, NULL, 74, 288, 1278, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13530, 5, NULL, 77, 194, 1278, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13531, 6, NULL, 93, 183, 1278, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13532, 7, NULL, 94, 427, 1278, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13533, 8, NULL, 96, 2, 1278, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13534, 1, NULL, 22.33, 467, 1279, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13535, 2, NULL, 25.67, 137, 1279, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13536, 3, NULL, 40, 491, 1279, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13537, 4, NULL, 48, 357, 1279, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13538, 5, NULL, 48.33, 363, 1279, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13539, 6, NULL, 54, 316, 1279, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13540, 7, NULL, 61.33, 43, 1279, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13541, 8, NULL, 78, 193, 1279, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13542, 9, NULL, 84.67, 421, 1279, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13543, 10, NULL, 93.67, 484, 1279, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13544, 11, NULL, 102, 288, 1279, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13545, 12, NULL, 105, 2, 1279, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13546, 13, NULL, 147, 240, 1279, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13547, 14, NULL, 150, 293, 1279, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13548, 1, NULL, 29, 137, 1280, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13549, 2, NULL, 36, 194, 1280, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13550, 3, NULL, 38, 467, 1280, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13551, 4, NULL, 52, 221, 1280, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13552, 5, NULL, 83, 472, 1280, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13553, 6, NULL, 122, 324, 1280, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13554, 7, NULL, 137, 484, 1280, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13555, 8, NULL, 145, 35, 1280, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13556, 9, NULL, 162, 86, 1280, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13557, 1, NULL, 17.25, 137, 1281, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13558, 2, NULL, 20, 467, 1281, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13559, 3, NULL, 38.25, 464, 1281, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13560, 4, NULL, 63.75, 465, 1281, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13561, 5, NULL, 70, 317, 1281, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13562, 6, NULL, 75.75, 293, 1281, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13563, 7, NULL, 98, 491, 1281, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13564, 8, NULL, 111.75, 484, 1281, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13565, 9, NULL, 114, 141, 1281, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13566, 10, NULL, 121, 43, 1281, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13567, 11, NULL, 181, 324, 1281, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13568, 1, NULL, 38.5, 467, 1282, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13569, 2, NULL, 39.5, 13, 1282, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13570, 3, NULL, 47, 194, 1282, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13571, 4, NULL, 55, 472, 1282, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13572, 5, NULL, 59.5, 317, 1282, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13573, 6, NULL, 62, 221, 1282, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13574, 7, NULL, 86, 427, 1282, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13575, 8, NULL, 96, 293, 1282, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13576, 9, NULL, 99, 101, 1282, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13577, 10, NULL, 101.5, 491, 1282, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13578, 11, NULL, 109, 235, 1282, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13579, 12, NULL, 121, 484, 1282, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13580, 13, NULL, 164, 141, 1282, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13581, 14, NULL, 174, 294, 1282, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13582, 1, NULL, 36, 467, 1283, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13583, 2, NULL, 42.25, 137, 1283, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13584, 3, NULL, 49, 464, 1283, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13585, 4, NULL, 53.25, 465, 1283, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13586, 5, NULL, 55.5, 363, 1283, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13587, 6, NULL, 58.75, 472, 1283, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13588, 7, NULL, 59.25, 150, 1283, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13589, 8, NULL, 60.75, 491, 1283, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13590, 9, NULL, 61.5, 357, 1283, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13591, 10, NULL, 68.25, 488, 1283, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13592, 1, NULL, 30, 467, 1284, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13593, 2, NULL, 34.5, 13, 1284, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13594, 3, NULL, 36.25, 427, 1284, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13595, 4, NULL, 43.5, 418, 1284, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13596, 5, NULL, 53.25, 7, 1284, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13597, 6, NULL, 70.25, 382, 1284, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13598, 7, NULL, 91, 179, 1284, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13599, 1, NULL, 24, 137, 1285, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13600, 2, NULL, 24.5, 467, 1285, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13601, 3, NULL, 45.25, 43, 1285, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13602, 4, NULL, 49.5, 418, 1285, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13603, 5, NULL, 55, 13, 1285, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13604, 6, NULL, 59.5, 427, 1285, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13605, 7, NULL, 64.25, 221, 1285, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13606, 8, NULL, 67.25, 363, 1285, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13607, 9, NULL, 71.5, 484, 1285, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13608, 10, NULL, 89.25, 84, 1285, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13609, 11, NULL, 110, 141, 1285, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13610, 12, NULL, 112, 325, 1285, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13611, 13, NULL, 119, 324, 1285, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13612, 1, NULL, 32.25, 467, 1286, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13613, 2, NULL, 42, 137, 1286, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13614, 3, NULL, 56.75, 221, 1286, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13615, 4, NULL, 74.75, 484, 1286, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13616, 5, NULL, 77.5, 491, 1286, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13617, 6, NULL, 92, 2, 1286, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13618, 7, NULL, 137.5, 133, 1286, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13619, 8, NULL, 170, 362, 1286, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13620, 1, NULL, 20, 467, 1287, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13621, 2, NULL, 28, 137, 1287, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13622, 3, NULL, 35, 281, 1287, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13623, 4, NULL, 36, 221, 1287, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13624, 5, NULL, 39, 194, 1287, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13625, 6, NULL, 133, 93, 1287, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13626, 7, NULL, 61, 141, 1287, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13627, 8, NULL, 68, 491, 1287, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13628, 9, NULL, 88, 484, 1287, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13629, 10, NULL, 105, 2, 1287, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13630, 11, NULL, 135, 190, 1287, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13631, 12, NULL, 138, 17, 1287, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13632, 13, NULL, 151, 94, 1287, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13633, 14, NULL, 189, 95, 1287, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13634, 15, NULL, 0, 362, 1287, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13635, 1, NULL, 28, 137, 1288, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13636, 2, NULL, 35, 467, 1288, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13637, 3, NULL, 42, 13, 1288, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13638, 4, NULL, 54, 316, 1288, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13639, 5, NULL, 58, 392, 1288, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13640, 6, NULL, 60, 363, 1288, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13641, 7, NULL, 61.33, 14, 1288, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13642, 8, NULL, 62, 101, 1288, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13643, 9, NULL, 78, 427, 1288, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13644, 10, NULL, 98, 7, 1288, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13645, 1, NULL, 24.75, 467, 1289, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13646, 2, NULL, 29.25, 137, 1289, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13647, 3, NULL, 44.75, 418, 1289, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13648, 4, NULL, 49.75, 363, 1289, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13649, 5, NULL, 53.75, 32, 1289, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13650, 6, NULL, 65, 43, 1289, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13651, 7, NULL, 78, 193, 1289, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13652, 8, NULL, 119, 2, 1289, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13653, 9, NULL, 141, 233, 1289, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13654, 10, NULL, 153, 17, 1289, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13655, 11, NULL, 156, 100, 1289, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13656, 12, NULL, 165, 75, 1289, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13657, 1, NULL, 26.5, 467, 1290, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13658, 2, NULL, 43, 288, 1290, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13659, 3, NULL, 45.5, 427, 1290, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13660, 4, NULL, 53.5, 2, 1290, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13661, 5, NULL, 54, 194, 1290, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13662, 6, NULL, 85, 455, 1290, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13663, 1, NULL, 19.67, 194, 1291, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13664, 2, NULL, 20.33, 137, 1291, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13665, 3, NULL, 34, 467, 1291, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13666, 4, NULL, 51.33, 183, 1291, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13667, 5, NULL, 53.33, 350, 1291, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13668, 6, NULL, 57.33, 221, 1291, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13669, 7, NULL, 84.33, 141, 1291, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13670, 8, NULL, 122.67, 469, 1291, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13671, 9, NULL, 128.33, 324, 1291, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13672, 10, NULL, 180, 293, 1291, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13673, 11, NULL, 200, 17, 1291, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13674, 1, NULL, 23.25, 467, 1292, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13675, 2, NULL, 45.5, 382, 1292, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13676, 3, NULL, 51.5, 316, 1292, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13677, 4, NULL, 55.5, 13, 1292, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13678, 5, NULL, 59.25, 427, 1292, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13679, 6, NULL, 68, 14, 1292, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13680, 7, NULL, 88, 333, 1292, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13681, 8, NULL, 113, 334, 1292, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13682, 1, NULL, 23.33, 467, 1293, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13683, 2, NULL, 50.67, 183, 1293, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13684, 3, NULL, 55, 472, 1293, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13685, 4, NULL, 55.67, 479, 1293, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13686, 5, NULL, 56, 363, 1293, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13687, 6, NULL, 58.67, 317, 1293, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13688, 7, NULL, 61, 427, 1293, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13689, 8, NULL, 64.67, 221, 1293, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13690, 9, NULL, 66.33, 101, 1293, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13691, 10, NULL, 70, 43, 1293, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13692, 11, NULL, 97.67, 324, 1293, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13693, 12, NULL, 100.33, 484, 1293, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13694, 13, NULL, 108.67, 141, 1293, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13695, 14, NULL, 122.33, 293, 1293, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13696, 15, NULL, 158.67, 469, 1293, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13697, 1, NULL, 26.5, 137, 1294, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13698, 2, NULL, 32, 467, 1294, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13699, 3, NULL, 36.5, 194, 1294, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13700, 4, NULL, 47, 221, 1294, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13701, 5, NULL, 59.5, 357, 1294, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13702, 6, NULL, 60, 43, 1294, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13703, 7, NULL, 73.5, 317, 1294, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13704, 8, NULL, 124.5, 324, 1294, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13705, 9, NULL, 150, 141, 1294, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13706, 1, NULL, 29, 467, 1295, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13707, 2, NULL, 34, 137, 1295, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13708, 3, NULL, 54, 221, 1295, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13709, 4, NULL, 59, 281, 1295, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13710, 5, NULL, 90, 141, 1295, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13711, 6, NULL, 95, 2, 1295, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13712, 1, NULL, 30, 467, 1296, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13713, 2, NULL, 35, 137, 1296, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13714, 3, NULL, 49, 194, 1296, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13715, 4, NULL, 52, 221, 1296, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13716, 5, NULL, 52.67, 281, 1296, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13717, 6, NULL, 153, 141, 1296, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13718, 7, NULL, 76, 421, 1296, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13719, 8, NULL, 102, 427, 1296, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13720, 9, NULL, 107.33, 350, 1296, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13721, 10, NULL, 108, 32, 1296, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13722, 1, NULL, 17, 137, 1297, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13723, 2, NULL, 24, 467, 1297, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13724, 3, NULL, 54.33, 221, 1297, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13725, 4, NULL, 56, 183, 1297, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13726, 5, NULL, 60, 316, 1297, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13727, 6, NULL, 61, 392, 1297, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13728, 7, NULL, 65, 13, 1297, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13729, 8, NULL, 67, 157, 1297, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13730, 9, NULL, 73, 479, 1297, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13731, 10, NULL, 74, 363, 1297, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13732, 11, NULL, 75, 427, 1297, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13733, 12, NULL, 78, 43, 1297, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13734, 13, NULL, 82, 357, 1297, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13735, 14, NULL, 105, 141, 1297, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13736, 15, NULL, 141, 469, 1297, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13737, 16, NULL, 150, 324, 1297, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13738, 1, NULL, 27, 407, 1298, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13739, 2, NULL, 35, 137, 1298, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13740, 3, NULL, 38.5, 363, 1298, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13741, 4, NULL, 41.5, 2, 1298, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13742, 5, NULL, 45, 382, 1298, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13743, 6, NULL, 47.5, 392, 1298, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13744, 7, NULL, 49, 194, 1298, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13745, 8, NULL, 52, 221, 1298, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13746, 9, NULL, 61.5, 324, 1298, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13747, 10, NULL, 63, 427, 1298, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13748, 1, NULL, 22.34, 467, 1299, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13749, 2, NULL, 41.5, 418, 1299, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13750, 3, NULL, 53.25, 363, 1299, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13751, 4, NULL, 57.25, 32, 1299, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13752, 5, NULL, 66.5, 43, 1299, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13753, 6, NULL, 72, 7, 1299, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13754, 7, NULL, 78.5, 316, 1299, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13755, 8, NULL, 80.5, 293, 1299, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13756, 9, NULL, 107.5, 141, 1299, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13757, 10, NULL, 160, 100, 1299, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13758, 1, NULL, 13.5, 137, 1300, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13759, 2, NULL, 28, 467, 1300, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13760, 3, NULL, 31.75, 464, 1300, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13761, 4, NULL, 56.75, 363, 1300, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13762, 5, NULL, 68, 43, 1300, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13763, 6, NULL, 71, 418, 1300, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13764, 7, NULL, 73, 221, 1300, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13765, 8, NULL, 80, 107, 1300, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13766, 9, NULL, 94.25, 32, 1300, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13767, 10, NULL, 94.75, 465, 1300, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13768, 1, NULL, 17.75, 137, 1301, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13769, 2, NULL, 22.5, 467, 1301, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13770, 3, NULL, 28, 194, 1301, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13771, 4, NULL, 44.75, 491, 1301, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13772, 5, NULL, 63.75, 350, 1301, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13773, 6, NULL, 116.5, 17, 1301, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13774, 7, NULL, 121, 250, 1301, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13775, 8, NULL, 0, 469, 1301, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13776, 1, NULL, 36.33, 137, 1302, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13777, 2, NULL, 47.67, 467, 1302, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13778, 3, NULL, 52, 221, 1302, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13779, 4, NULL, 111, 427, 1302, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13780, 5, NULL, 126, 17, 1302, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13781, 1, NULL, 27, 418, 1303, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13782, 2, NULL, 37.5, 467, 1303, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13783, 3, NULL, 50.5, 137, 1303, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13784, 4, NULL, 54, 13, 1303, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13785, 5, NULL, 57.5, 194, 1303, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13786, 6, NULL, 70.5, 300, 1303, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13787, 7, NULL, 77.5, 427, 1303, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13788, 8, NULL, 85, 382, 1303, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13789, 9, NULL, 147.5, 22, 1303, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13790, 10, NULL, 166, 275, 1303, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13791, 1, NULL, 29, 467, 1304, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13792, 2, NULL, 34, 137, 1304, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13793, 3, NULL, 34.5, 418, 1304, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13794, 4, NULL, 52.5, 428, 1304, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13795, 5, NULL, 62, 427, 1304, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13796, 6, NULL, 105, 22, 1304, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13797, 7, NULL, 123, 17, 1304, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13798, 8, NULL, 129, 275, 1304, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13799, 1, NULL, 36.5, 467, 1305, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13800, 2, NULL, 50, 418, 1305, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13801, 3, NULL, 50.67, 339, 1305, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13802, 4, NULL, 60.67, 101, 1305, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13803, 5, NULL, 68.33, 40, 1305, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13804, 6, NULL, 85, 39, 1305, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13805, 7, NULL, 129.33, 254, 1305, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13806, 8, NULL, 151.67, 424, 1305, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13807, 9, NULL, 153.67, 266, 1305, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13808, 10, NULL, 165, 437, 1305, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13809, 1, NULL, 31.67, 467, 1306, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13810, 2, NULL, 55.67, 418, 1306, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13811, 3, NULL, 63, 137, 1306, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13812, 4, NULL, 72, 43, 1306, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13813, 5, NULL, 72.67, 101, 1306, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13814, 6, NULL, 91, 363, 1306, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13815, 7, NULL, 104.33, 63, 1306, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13816, 8, NULL, 153, 2, 1306, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13817, 9, NULL, 157, 17, 1306, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13818, 10, NULL, 208, 93, 1306, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13819, 11, NULL, 240, 382, 1306, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13820, 12, NULL, 269, 275, 1306, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13821, 13, NULL, 0, 350, 1306, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13822, 1, NULL, 20.33, 467, 1307, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13823, 2, NULL, 29.33, 418, 1307, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13824, 3, NULL, 38.33, 194, 1307, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13825, 4, NULL, 45, 28, 1307, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13826, 5, NULL, 52.67, 2, 1307, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13827, 6, NULL, 79.67, 3, 1307, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13828, 7, NULL, 109, 329, 1307, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13829, 8, NULL, 112, 93, 1307, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13830, 9, NULL, 113.67, 190, 1307, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13831, 1, NULL, 16.75, 467, 1308, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (13832, 2, NULL, 32.5, 479, 1308, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (13833, 3, NULL, 46.75, 101, 1308, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13834, 4, NULL, 49.25, 43, 1308, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13835, 5, NULL, 56.25, 194, 1308, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13836, 6, NULL, 66.5, 363, 1308, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13837, 7, NULL, 76.25, 44, 1308, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13838, 8, NULL, 79.25, 32, 1308, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13839, 9, NULL, 80.25, 339, 1308, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13840, 10, NULL, 100, 157, 1308, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13841, 11, NULL, 110.25, 225, 1308, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13842, 12, NULL, 122.25, 480, 1308, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13843, 13, NULL, 141.75, 233, 1308, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13844, 14, NULL, 192, 141, 1308, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13845, 15, NULL, 220, 146, 1308, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13846, 16, NULL, 230, 17, 1308, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13847, 17, NULL, 0, 418, 1308, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13848, 1, NULL, 18, 137, 1309, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13849, 2, NULL, 18.33, 418, 1309, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13850, 3, NULL, 19.67, 467, 1309, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13851, 4, NULL, 21, 479, 1309, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13852, 5, NULL, 32.33, 194, 1309, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13853, 6, NULL, 34.33, 357, 1309, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13854, 7, NULL, 49.33, 221, 1309, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13855, 8, NULL, 55.33, 363, 1309, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13856, 9, NULL, 60, 421, 1309, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13857, 10, NULL, 70, 101, 1309, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13858, 11, NULL, 70.67, 240, 1309, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13859, 12, NULL, 95.33, 32, 1309, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13860, 13, NULL, 107, 141, 1309, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13861, 14, NULL, 138.67, 480, 1309, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13862, 1, NULL, 23.33, 137, 1310, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13863, 2, NULL, 30, 467, 1310, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13864, 3, NULL, 58.33, 479, 1310, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13865, 4, NULL, 62.33, 418, 1310, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13866, 5, NULL, 88, 225, 1310, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13867, 6, NULL, 170, 233, 1310, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13868, 7, NULL, 91.67, 350, 1310, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13869, 8, NULL, 112, 17, 1310, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13870, 9, NULL, 113.33, 226, 1310, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13871, 10, NULL, 183, 93, 1310, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13872, 1, NULL, 29.5, 137, 1311, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13873, 2, NULL, 32.25, 467, 1311, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13874, 3, NULL, 40.25, 479, 1311, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13875, 4, NULL, 53, 418, 1311, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13876, 5, NULL, 57.5, 363, 1311, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13877, 6, NULL, 65, 32, 1311, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13878, 7, NULL, 70.5, 350, 1311, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13879, 8, NULL, 74.34, 240, 1311, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13880, 9, NULL, 82.75, 225, 1311, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13881, 10, NULL, 89.25, 84, 1311, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13882, 11, NULL, 95.5, 480, 1311, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13883, 1, NULL, 42, 194, 1312, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13884, 2, NULL, 42.33, 137, 1312, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13885, 3, NULL, 43.67, 467, 1312, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13886, 4, NULL, 56.67, 418, 1312, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13887, 5, NULL, 64.33, 183, 1312, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13888, 6, NULL, 68, 43, 1312, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13889, 7, NULL, 76, 427, 1312, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13890, 8, NULL, 84, 236, 1312, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13891, 9, NULL, 85.33, 428, 1312, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13892, 10, NULL, 170, 329, 1312, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13893, 11, NULL, 173.67, 17, 1312, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13894, 12, NULL, 0, 375, 1312, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13895, 1, NULL, 19, 467, 1313, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13896, 2, NULL, 27.5, 418, 1313, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13897, 3, NULL, 45.5, 427, 1313, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13898, 4, NULL, 52.5, 179, 1313, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13899, 5, NULL, 64.5, 13, 1313, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13900, 6, NULL, 100, 22, 1313, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13901, 1, NULL, 43, 467, 1314, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13902, 2, NULL, 47.75, 421, 1314, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13903, 3, NULL, 50.25, 101, 1314, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13904, 4, NULL, 53, 137, 1314, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13905, 5, NULL, 55.75, 43, 1314, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13906, 6, NULL, 65.5, 357, 1314, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13907, 7, NULL, 76.75, 240, 1314, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13908, 8, NULL, 81, 350, 1314, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13909, 9, NULL, 83.25, 193, 1314, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13910, 10, NULL, 100, 2, 1314, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13911, 11, NULL, 119.25, 75, 1314, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13912, 12, NULL, 157, 275, 1314, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13913, 1, NULL, 19.67, 467, 1315, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13914, 2, NULL, 22.67, 137, 1315, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13915, 3, NULL, 31.33, 418, 1315, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13916, 4, NULL, 45.67, 427, 1315, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13917, 5, NULL, 55.33, 179, 1315, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13918, 1, NULL, 34.5, 467, 1316, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13919, 2, NULL, 43.5, 30, 1316, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13920, 3, NULL, 57.5, 464, 1316, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13921, 4, NULL, 59.25, 418, 1316, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13922, 5, NULL, 67.25, 421, 1316, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13923, 6, NULL, 78.25, 43, 1316, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13924, 7, NULL, 78.5, 221, 1316, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13925, 8, NULL, 80.75, 465, 1316, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13926, 9, NULL, 95, 137, 1316, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13927, 10, NULL, 101.75, 101, 1316, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13928, 1, NULL, 22.33, 137, 1317, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13929, 2, NULL, 30, 467, 1317, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13930, 3, NULL, 52.67, 421, 1317, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13931, 4, NULL, 69.33, 293, 1317, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13932, 5, NULL, 77.67, 350, 1317, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13933, 6, NULL, 89.67, 75, 1317, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13934, 7, NULL, 94, 479, 1317, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13935, 8, NULL, 98.67, 225, 1317, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13936, 9, NULL, 114.67, 141, 1317, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13937, 10, NULL, 203.67, 190, 1317, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13938, 1, NULL, 16.33, 467, 1318, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13939, 2, NULL, 27, 418, 1318, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13940, 3, NULL, 41, 427, 1318, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13941, 4, NULL, 44.33, 317, 1318, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13942, 5, NULL, 51.33, 2, 1318, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13943, 6, NULL, 59.33, 28, 1318, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13944, 7, NULL, 74.67, 75, 1318, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13945, 8, NULL, 95.33, 93, 1318, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13946, 1, NULL, 35.33, 467, 1319, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13947, 2, NULL, 35.67, 479, 1319, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13948, 3, NULL, 36.67, 418, 1319, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13949, 4, NULL, 39, 293, 1319, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13950, 5, NULL, 61, 339, 1319, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13951, 6, NULL, 61.67, 317, 1319, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13952, 7, NULL, 62, 43, 1319, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13953, 8, NULL, 81.33, 363, 1319, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13954, 9, NULL, 83, 427, 1319, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13955, 10, NULL, 87, 318, 1319, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13956, 11, NULL, 105, 480, 1319, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13957, 12, NULL, 116, 225, 1319, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13958, 13, NULL, 123, 44, 1319, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13959, 14, NULL, 129.33, 75, 1319, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13960, 15, NULL, 138.67, 133, 1319, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13961, 1, NULL, 28, 418, 1320, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (13962, 2, NULL, 29.5, 467, 1320, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13963, 3, NULL, 31.5, 137, 1320, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13964, 4, NULL, 34.5, 194, 1320, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13965, 5, NULL, 38.5, 43, 1320, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13966, 6, NULL, 52.5, 357, 1320, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13967, 7, NULL, 54, 240, 1320, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13968, 8, NULL, 60, 363, 1320, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13969, 9, NULL, 83, 421, 1320, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13970, 10, NULL, 84, 293, 1320, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13971, 11, NULL, 92.5, 157, 1320, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13972, 12, NULL, 140, 210, 1320, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13973, 13, NULL, 155, 350, 1320, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13974, 14, NULL, 160, 225, 1320, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13975, 15, NULL, 0, 83, 1320, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13976, 1, NULL, 12, 467, 1321, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (13977, 2, NULL, 15.33, 137, 1321, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (13978, 3, NULL, 19.67, 418, 1321, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (13979, 4, NULL, 28.67, 339, 1321, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (13980, 5, NULL, 31, 317, 1321, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (13981, 6, NULL, 31.33, 43, 1321, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13982, 7, NULL, 32.67, 221, 1321, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13983, 8, NULL, 48.67, 401, 1321, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13984, 9, NULL, 96.33, 440, 1321, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13985, 10, NULL, 30.67, 480, 1321, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13986, 11, NULL, 55, 402, 1321, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13987, 12, NULL, 64.33, 133, 1321, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13988, 13, NULL, 71, 44, 1321, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13989, 14, NULL, 175, 454, 1321, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13990, 1, NULL, 25, 418, 1322, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (13991, 2, NULL, 30.5, 467, 1322, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (13992, 3, NULL, 45, 7, 1322, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (13993, 4, NULL, 56, 382, 1322, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (13994, 5, NULL, 60, 427, 1322, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (13995, 6, NULL, 110, 22, 1322, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (13996, 1, NULL, 36.75, 467, 1323, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (13997, 2, NULL, 38.75, 137, 1323, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (13998, 3, NULL, 52, 418, 1323, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (13999, 4, NULL, 70.25, 363, 1323, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14000, 5, NULL, 70.5, 133, 1323, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14001, 6, NULL, 77.75, 236, 1323, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14002, 7, NULL, 90.5, 43, 1323, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14003, 8, NULL, 97.25, 75, 1323, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14004, 9, NULL, 118.75, 275, 1323, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14005, 1, NULL, 23.33, 137, 1324, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14006, 2, NULL, 44.33, 194, 1324, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14007, 3, NULL, 46.33, 467, 1324, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14008, 4, NULL, 51.67, 479, 1324, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14009, 5, NULL, 52, 101, 1324, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14010, 6, NULL, 82.67, 357, 1324, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14011, 7, NULL, 86, 418, 1324, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14012, 8, NULL, 88.33, 225, 1324, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14013, 9, NULL, 94.33, 421, 1324, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14014, 10, NULL, 99.33, 43, 1324, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14015, 12, NULL, 0, 240, 1324, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14016, 12, NULL, 0, 32, 1324, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14017, 1, NULL, 27.5, 467, 1325, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14018, 2, NULL, 32.5, 418, 1325, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14019, 3, NULL, 65, 427, 1325, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14020, 4, NULL, 74, 179, 1325, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14021, 5, NULL, 126, 275, 1325, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14022, 6, NULL, 129, 50, 1325, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14023, 7, NULL, 178.5, 17, 1325, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14024, 8, NULL, 210, 22, 1325, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14025, 1, NULL, 21.25, 418, 1326, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14026, 2, NULL, 23, 467, 1326, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14027, 3, NULL, 27.25, 137, 1326, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14028, 4, NULL, 29, 467, 1326, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14029, 5, NULL, 30.25, 137, 1326, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14030, 6, NULL, 37.5, 464, 1326, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14031, 7, NULL, 37.75, 339, 1326, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14032, 8, NULL, 38.5, 418, 1326, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14033, 9, NULL, 40.25, 339, 1326, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14034, 10, NULL, 42.75, 221, 1326, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14035, 11, NULL, 44.25, 464, 1326, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14036, 12, NULL, 50.75, 221, 1326, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14037, 1, NULL, 29.25, 418, 1327, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14038, 2, NULL, 30.75, 137, 1327, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14039, 3, NULL, 38.5, 467, 1327, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14040, 4, NULL, 56.5, 421, 1327, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14041, 5, NULL, 60, 101, 1327, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14042, 6, NULL, 83.25, 240, 1327, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14043, 7, NULL, 86.25, 350, 1327, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14044, 8, NULL, 89, 363, 1327, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14045, 9, NULL, 92.25, 43, 1327, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14046, 10, NULL, 100.25, 357, 1327, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14047, 1, NULL, 29.67, 137, 1328, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14048, 2, NULL, 30.67, 467, 1328, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14049, 3, NULL, 49, 418, 1328, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14050, 4, NULL, 54, 421, 1328, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14051, 5, NULL, 58.33, 43, 1328, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14052, 6, NULL, 62, 101, 1328, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14053, 7, NULL, 62.67, 479, 1328, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14054, 8, NULL, 68.33, 422, 1328, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14055, 9, NULL, 70.67, 225, 1328, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14056, 10, NULL, 91, 293, 1328, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14057, 11, NULL, 150, 83, 1328, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14058, 1, NULL, 15.5, 467, 1329, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14059, 2, NULL, 20.5, 418, 1329, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14060, 3, NULL, 44.5, 2, 1329, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14061, 4, NULL, 45, 288, 1329, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14062, 5, NULL, 53, 3, 1329, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14063, 6, NULL, 74.5, 4, 1329, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14064, 7, NULL, 85.5, 257, 1329, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14065, 8, NULL, 97.5, 455, 1329, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14066, 9, NULL, 102.5, 319, 1329, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14067, 1, NULL, 23.67, 467, 1330, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14068, 2, NULL, 28.33, 418, 1330, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14069, 3, NULL, 36, 194, 1330, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14070, 4, NULL, 37, 363, 1330, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14071, 5, NULL, 44.67, 240, 1330, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14072, 6, NULL, 50.33, 479, 1330, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14073, 7, NULL, 50.67, 339, 1330, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14074, 8, NULL, 51, 43, 1330, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14075, 9, NULL, 65, 101, 1330, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14076, 10, NULL, 69, 210, 1330, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14077, 11, NULL, 73.67, 340, 1330, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14078, 12, NULL, 80.67, 133, 1330, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14079, 13, NULL, 106.33, 293, 1330, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14080, 1, NULL, 27.5, 467, 1331, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14081, 2, NULL, 28.5, 418, 1331, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14082, 3, NULL, 35, 137, 1331, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14083, 4, NULL, 47, 479, 1331, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14084, 5, NULL, 53, 84, 1331, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14085, 1, NULL, 66.5, 479, 1332, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14086, 2, NULL, 77.5, 236, 1332, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14087, 3, NULL, 78.5, 333, 1332, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14088, 4, NULL, 81, 183, 1332, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14089, 5, NULL, 89.5, 84, 1332, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14090, 1, NULL, 25.67, 137, 1333, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14091, 2, NULL, 29, 467, 1333, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14092, 3, NULL, 35, 418, 1333, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14093, 4, NULL, 46.33, 288, 1333, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14094, 5, NULL, 67, 427, 1333, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14095, 6, NULL, 91.33, 2, 1333, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14096, 7, NULL, 91.67, 28, 1333, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14097, 8, NULL, 101.33, 3, 1333, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14098, 9, NULL, 119, 93, 1333, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14099, 10, NULL, 129, 133, 1333, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14100, 11, NULL, 135, 257, 1333, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14101, 12, NULL, 162.67, 258, 1333, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14102, 13, NULL, 179, 17, 1333, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14103, 14, NULL, 206, 190, 1333, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14104, 15, NULL, 0, 94, 1333, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14105, 1, NULL, 35, 137, 1334, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14106, 2, NULL, 54, 467, 1334, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14107, 3, NULL, 57, 418, 1334, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14108, 4, NULL, 58, 240, 1334, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14109, 5, NULL, 60, 357, 1334, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14110, 6, NULL, 74.33, 101, 1334, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14111, 7, NULL, 75, 421, 1334, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14112, 8, NULL, 87, 363, 1334, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14113, 1, NULL, 27.75, 137, 1335, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14114, 2, NULL, 29, 467, 1335, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14115, 3, NULL, 38, 157, 1335, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14116, 4, NULL, 47, 225, 1335, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14117, 5, NULL, 49.5, 421, 1335, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14118, 6, NULL, 59, 210, 1335, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14119, 7, NULL, 63, 479, 1335, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14120, 8, NULL, 66, 472, 1335, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14121, 9, NULL, 73.5, 30, 1335, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14122, 10, NULL, 84.5, 225, 1335, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14123, 1, NULL, 43.5, 467, 1336, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14124, 2, NULL, 44, 427, 1336, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14125, 3, NULL, 69, 418, 1336, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14126, 4, NULL, 81, 179, 1336, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14127, 5, NULL, 81.5, 2, 1336, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14128, 6, NULL, 90, 257, 1336, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14129, 7, NULL, 91, 468, 1336, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14130, 8, NULL, 108.5, 50, 1336, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14131, 9, NULL, 121.5, 275, 1336, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14132, 1, NULL, 22.5, 137, 1337, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14133, 2, NULL, 28, 467, 1337, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14134, 3, NULL, 37.5, 43, 1337, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14135, 4, NULL, 51, 363, 1337, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14136, 5, NULL, 56.5, 421, 1337, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14137, 6, NULL, 56.75, 350, 1337, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14138, 7, NULL, 68.5, 225, 1337, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14139, 8, NULL, 74.25, 418, 1337, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14140, 9, NULL, 96.25, 2, 1337, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14141, 10, NULL, 99, 257, 1337, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14142, 11, NULL, 180, 133, 1337, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14143, 12, NULL, 0, 17, 1337, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14144, 1, NULL, 22.33, 467, 1338, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14145, 2, NULL, 35.33, 194, 1338, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14146, 3, NULL, 44.33, 479, 1338, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14147, 4, NULL, 54, 43, 1338, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14148, 5, NULL, 54.67, 363, 1338, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14149, 6, NULL, 59, 210, 1338, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14150, 7, NULL, 59.33, 418, 1338, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14151, 8, NULL, 59.67, 427, 1338, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14152, 9, NULL, 74.33, 357, 1338, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14153, 10, NULL, 81.67, 293, 1338, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14154, 11, NULL, 88.67, 480, 1338, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14155, 12, NULL, 115, 133, 1338, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14156, 13, NULL, 131, 18, 1338, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14157, 1, NULL, 19.33, 137, 1339, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14158, 2, NULL, 22.67, 363, 1339, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14159, 3, NULL, 23.67, 467, 1339, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14160, 4, NULL, 28, 479, 1339, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14161, 5, NULL, 30.33, 43, 1339, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14162, 6, NULL, 35.67, 240, 1339, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14163, 7, NULL, 40, 421, 1339, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14164, 8, NULL, 43, 418, 1339, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14165, 9, NULL, 47.33, 210, 1339, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14166, 10, NULL, 54, 157, 1339, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14167, 11, NULL, 56, 194, 1339, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14168, 12, NULL, 73, 401, 1339, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14169, 13, NULL, 74.33, 44, 1339, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14170, 14, NULL, 90, 83, 1339, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14171, 15, NULL, 90.33, 480, 1339, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14172, 16, NULL, 140.67, 141, 1339, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14173, 1, NULL, 26.33, 467, 1340, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14174, 2, NULL, 30, 137, 1340, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14175, 3, NULL, 51.67, 43, 1340, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14176, 4, NULL, 53.33, 210, 1340, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14177, 5, NULL, 53.67, 418, 1340, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14178, 6, NULL, 58.33, 363, 1340, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14179, 7, NULL, 36.67, 419, 1340, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14180, 8, NULL, 59.67, 240, 1340, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14181, 9, NULL, 75, 157, 1340, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14182, 10, NULL, 75.33, 44, 1340, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14183, 11, NULL, 108.33, 83, 1340, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14184, 1, NULL, 15.5, 467, 1341, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14185, 2, NULL, 19, 137, 1341, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14186, 3, NULL, 31.5, 418, 1341, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14187, 4, NULL, 40.5, 194, 1341, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14188, 5, NULL, 47, 183, 1341, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14189, 6, NULL, 57.5, 427, 1341, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14190, 7, NULL, 86.5, 257, 1341, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14191, 8, NULL, 92.5, 288, 1341, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14192, 9, NULL, 103, 133, 1341, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14193, 1, NULL, 17.75, 467, 1342, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14194, 2, NULL, 22, 418, 1342, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14195, 3, NULL, 24.25, 137, 1342, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14196, 4, NULL, 26.5, 363, 1342, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14197, 5, NULL, 31.5, 427, 1342, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14198, 6, NULL, 31.75, 479, 1342, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14199, 7, NULL, 36.5, 194, 1342, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14200, 8, NULL, 49.5, 210, 1342, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14201, 9, NULL, 49.75, 225, 1342, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14202, 10, NULL, 66.5, 83, 1342, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14203, 11, NULL, 81, 18, 1342, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14204, 12, NULL, 81.5, 133, 1342, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14205, 13, NULL, 170.75, 184, 1342, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14206, 1, NULL, 30.5, 137, 1343, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14207, 2, NULL, 35.25, 467, 1343, 23);
+INSERT INTO
+    DRL_result
+VALUES
+    (14208, 2, NULL, 35.25, 363, 1343, 23);
+INSERT INTO
+    DRL_result
+VALUES
+    (14209, 4, NULL, 37.25, 43, 1343, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14210, 5, NULL, 43.75, 479, 1343, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14211, 6, NULL, 48.5, 421, 1343, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14212, 7, NULL, 48.75, 418, 1343, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14213, 8, NULL, 50.5, 350, 1343, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14214, 9, NULL, 62.75, 225, 1343, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14215, 10, NULL, 66.25, 83, 1343, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14216, 11, NULL, 79, 210, 1343, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14217, 12, NULL, 91.75, 43, 1343, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14218, 13, NULL, 104, 32, 1343, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14219, 14, NULL, 167.25, 184, 1343, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14220, 1, NULL, 37, 137, 1344, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14221, 2, NULL, 39.5, 467, 1344, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14222, 3, NULL, 48, 350, 1344, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14223, 4, NULL, 63, 236, 1344, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14224, 5, NULL, 64.5, 357, 1344, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14225, 6, NULL, 65, 363, 1344, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14226, 7, NULL, 79.33, 421, 1344, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14227, 8, NULL, 88.33, 418, 1344, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14228, 1, NULL, 17, 467, 1345, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14229, 2, NULL, 21, 418, 1345, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14230, 3, NULL, 61.5, 427, 1345, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14231, 4, NULL, 63, 468, 1345, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14232, 5, NULL, 75, 333, 1345, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14233, 6, NULL, 79, 179, 1345, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14234, 7, NULL, 93.5, 214, 1345, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14235, 8, NULL, 143, 22, 1345, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14236, 1, NULL, 24.5, 467, 1346, 17);
+INSERT INTO
+    DRL_result
+VALUES
+    (14237, 1, NULL, 24.5, 137, 1346, 17);
+INSERT INTO
+    DRL_result
+VALUES
+    (14238, 3, NULL, 35.75, 43, 1346, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14239, 4, NULL, 37, 418, 1346, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14240, 5, NULL, 46.25, 421, 1346, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14241, 6, NULL, 56.5, 363, 1346, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14242, 7, NULL, 58.75, 225, 1346, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14243, 8, NULL, 64, 240, 1346, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14244, 9, NULL, 87.25, 2, 1346, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14245, 10, NULL, 96.75, 350, 1346, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14246, 1, NULL, 27, 137, 1347, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14247, 2, NULL, 28, 467, 1347, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14248, 3, NULL, 31.5, 479, 1347, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14249, 4, NULL, 44.5, 418, 1347, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14250, 5, NULL, 47, 225, 1347, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14251, 6, NULL, 61, 468, 1347, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14252, 7, NULL, 80.5, 424, 1347, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14253, 8, NULL, 145.5, 133, 1347, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14254, 1, NULL, 29.33, 137, 1348, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14255, 2, NULL, 35, 467, 1348, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14256, 3, NULL, 49.67, 418, 1348, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14257, 4, NULL, 55.33, 257, 1348, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14258, 5, NULL, 56.67, 288, 1348, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14259, 6, NULL, 61.33, 194, 1348, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14260, 7, NULL, 65.33, 427, 1348, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14261, 8, NULL, 66.33, 468, 1348, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14262, 9, NULL, 90.33, 133, 1348, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14263, 10, NULL, 111.67, 94, 1348, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14264, 11, NULL, 119.33, 258, 1348, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14265, 12, NULL, 134.33, 455, 1348, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14266, 13, NULL, 142.33, 3, 1348, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14267, 14, NULL, 145, 2, 1348, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14268, 15, NULL, 165, 93, 1348, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14269, 1, NULL, 18, 467, 1349, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14270, 2, NULL, 22.5, 137, 1349, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14271, 3, NULL, 24.5, 363, 1349, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14272, 4, NULL, 27, 479, 1349, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14273, 5, NULL, 27.5, 339, 1349, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14274, 6, NULL, 31, 418, 1349, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14275, 7, NULL, 49.5, 210, 1349, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14276, 8, NULL, 50, 225, 1349, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14277, 9, NULL, 50.5, 43, 1349, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14278, 10, NULL, 45, 427, 1349, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14279, 11, NULL, 47.5, 451, 1349, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14280, 12, NULL, 48, 211, 1349, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14281, 13, NULL, 52.5, 83, 1349, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14282, 14, NULL, 58.5, 133, 1349, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14283, 15, NULL, 77, 44, 1349, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14284, 1, NULL, 30.67, 467, 1350, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14285, 2, NULL, 32.33, 418, 1350, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14286, 3, NULL, 35.33, 137, 1350, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14287, 4, NULL, 48.33, 277, 1350, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14288, 5, NULL, 56.33, 363, 1350, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14289, 6, NULL, 64.33, 225, 1350, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14290, 7, NULL, 51, 468, 1350, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14291, 8, NULL, 71, 401, 1350, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14292, 9, NULL, 72.67, 277, 1350, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14293, 10, NULL, 89.67, 451, 1350, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14294, 11, NULL, 94.33, 427, 1350, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14295, 12, NULL, 117.33, 210, 1350, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14296, 13, NULL, 142, 225, 1350, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14297, 1, NULL, 35.5, 137, 1351, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14298, 2, NULL, 43.75, 418, 1351, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14299, 3, NULL, 45.5, 479, 1351, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14300, 4, NULL, 47.5, 467, 1351, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14301, 5, NULL, 47.75, 363, 1351, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14302, 6, NULL, 58.75, 350, 1351, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14303, 7, NULL, 71.75, 83, 1351, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14304, 8, NULL, 75.5, 32, 1351, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14305, 9, NULL, 75.75, 225, 1351, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14306, 10, NULL, 76.75, 210, 1351, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14307, 11, NULL, 163.5, 271, 1351, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14308, 1, NULL, 28.33, 467, 1352, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14309, 2, NULL, 30.33, 418, 1352, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14310, 3, NULL, 34, 339, 1352, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14311, 4, NULL, 34.67, 479, 1352, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14312, 5, NULL, 36, 137, 1352, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14313, 6, NULL, 45, 225, 1352, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14314, 7, NULL, 49.33, 363, 1352, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14315, 8, NULL, 53, 421, 1352, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14316, 9, NULL, 54.33, 401, 1352, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14317, 10, NULL, 55.33, 350, 1352, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14318, 11, NULL, 55.67, 472, 1352, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14319, 12, NULL, 72.67, 141, 1352, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14320, 13, NULL, 80, 83, 1352, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14321, 14, NULL, 81.33, 157, 1352, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14322, 15, NULL, 99, 221, 1352, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14323, 1, NULL, 17.67, 339, 1353, 17);
+INSERT INTO
+    DRL_result
+VALUES
+    (14324, 1, NULL, 17.67, 137, 1353, 17);
+INSERT INTO
+    DRL_result
+VALUES
+    (14325, 3, NULL, 18, 467, 1353, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14326, 4, NULL, 29.33, 479, 1353, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14327, 5, NULL, 38.67, 84, 1353, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14328, 6, NULL, 46.67, 83, 1353, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14329, 7, NULL, 51.67, 427, 1353, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14330, 8, NULL, 82.67, 133, 1353, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14331, 9, NULL, 108, 266, 1353, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14332, 10, NULL, 130, 22, 1353, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14333, 1, NULL, 24, 467, 1354, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14334, 2, NULL, 25, 137, 1354, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14335, 3, NULL, 27.5, 221, 1354, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14336, 4, NULL, 28, 225, 1354, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14337, 5, NULL, 37.5, 418, 1354, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14338, 6, NULL, 39, 421, 1354, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14339, 7, NULL, 41.5, 157, 1354, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14340, 8, NULL, 52.5, 141, 1354, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14341, 9, NULL, 52.75, 226, 1354, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14342, 10, NULL, 65.5, 210, 1354, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14343, 11, NULL, 120, 271, 1354, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14344, 12, NULL, 125, 161, 1354, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14345, 13, NULL, 140, 96, 1354, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14346, 1, NULL, 11.5, 467, 1355, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14347, 2, NULL, 21, 418, 1355, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14348, 3, NULL, 51.5, 427, 1355, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14349, 4, NULL, 61.5, 468, 1355, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14350, 5, NULL, 64, 179, 1355, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14351, 6, NULL, 69.5, 428, 1355, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14352, 7, NULL, 78.5, 50, 1355, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14353, 8, NULL, 80, 214, 1355, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14354, 1, NULL, 22.75, 418, 1356, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14355, 2, NULL, 23.75, 137, 1356, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14356, 3, NULL, 24.5, 467, 1356, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14357, 4, NULL, 37.25, 421, 1356, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14358, 5, NULL, 38.5, 240, 1356, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14359, 6, NULL, 55, 350, 1356, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14360, 7, NULL, 68.5, 357, 1356, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14361, 8, NULL, 95.5, 225, 1356, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14362, 9, NULL, 124.5, 83, 1356, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14363, 1, NULL, 16.67, 467, 1357, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14364, 2, NULL, 22.33, 479, 1357, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14365, 3, NULL, 36.67, 418, 1357, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14366, 4, NULL, 44.67, 133, 1357, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14367, 5, NULL, 50.67, 197, 1357, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14368, 6, NULL, 51, 198, 1357, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14369, 7, NULL, 59.33, 75, 1357, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14370, 8, NULL, 66, 83, 1357, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14371, 9, NULL, 74.33, 468, 1357, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14372, 10, NULL, 79, 451, 1357, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14373, 11, NULL, 95.67, 293, 1357, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14374, 1, NULL, 19, 418, 1358, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14375, 2, NULL, 21.67, 137, 1358, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14376, 3, NULL, 27.33, 467, 1358, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14377, 4, NULL, 51, 468, 1358, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14378, 5, NULL, 57, 2, 1358, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14379, 6, NULL, 91.67, 257, 1358, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14380, 7, NULL, 93.67, 133, 1358, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14381, 8, NULL, 129.67, 3, 1358, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14382, 9, NULL, 187, 4, 1358, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14383, 10, NULL, 213, 319, 1358, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14384, 1, NULL, 19, 137, 1359, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (14385, 2, NULL, 20.67, 339, 1359, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14386, 3, NULL, 27, 221, 1359, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14387, 4, NULL, 27.33, 467, 1359, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14388, 5, NULL, 39.33, 418, 1359, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14389, 6, NULL, 43, 157, 1359, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14390, 7, NULL, 43.33, 225, 1359, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14391, 8, NULL, 53.33, 472, 1359, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14392, 9, NULL, 66, 83, 1359, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14393, 10, NULL, 77.67, 340, 1359, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14394, 11, NULL, 97, 79, 1359, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14395, 12, NULL, 74.67, 222, 1359, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14396, 13, NULL, 79.67, 226, 1359, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14397, 14, NULL, 84.33, 96, 1359, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14398, 15, NULL, 88, 158, 1359, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14399, 16, NULL, 116, 473, 1359, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14400, 1, NULL, 34, 467, 1360, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14401, 2, NULL, 43.67, 277, 1360, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14402, 3, NULL, 49, 137, 1360, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14403, 4, NULL, 52.5, 418, 1360, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14404, 5, NULL, 79, 225, 1360, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14405, 6, NULL, 88.33, 226, 1360, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14406, 7, NULL, 91.33, 133, 1360, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14407, 8, NULL, 100, 451, 1360, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14408, 9, NULL, 101.5, 278, 1360, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14409, 10, NULL, 120, 401, 1360, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14410, 1, NULL, 24, 467, 1361, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14411, 2, NULL, 32, 418, 1361, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14412, 3, NULL, 46, 7, 1361, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14413, 4, NULL, 49, 382, 1361, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14414, 5, NULL, 58, 333, 1361, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14415, 6, NULL, 61, 334, 1361, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14416, 7, NULL, 84, 105, 1361, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14417, 8, NULL, 85.5, 182, 1361, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14418, 9, NULL, 93.5, 106, 1361, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14419, 10, NULL, 124.5, 49, 1361, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14420, 1, NULL, 27.25, 137, 1362, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14421, 2, NULL, 39, 467, 1362, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14422, 3, NULL, 44.75, 339, 1362, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14423, 4, NULL, 46.25, 421, 1362, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14424, 5, NULL, 48.5, 316, 1362, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14425, 6, NULL, 52.25, 363, 1362, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14426, 7, NULL, 63, 418, 1362, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14427, 8, NULL, 84.25, 221, 1362, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14428, 1, NULL, 19, 467, 1363, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14429, 2, NULL, 24.5, 137, 1363, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14430, 3, NULL, 37.5, 418, 1363, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14431, 4, NULL, 47, 316, 1363, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14432, 5, NULL, 66, 333, 1363, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14433, 6, NULL, 76, 105, 1363, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14434, 7, NULL, 117, 300, 1363, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14435, 1, NULL, 21, 467, 1364, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14436, 2, NULL, 58.33, 468, 1364, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14437, 3, NULL, 68, 179, 1364, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14438, 4, NULL, 70, 300, 1364, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14439, 5, NULL, 86, 428, 1364, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14440, 6, NULL, 93, 333, 1364, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14441, 7, NULL, 94, 275, 1364, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14442, 8, NULL, 155, 427, 1364, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14443, 1, NULL, 20, 137, 1365, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14444, 2, NULL, 30.25, 467, 1365, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14445, 3, NULL, 31.5, 225, 1365, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14446, 4, NULL, 34.25, 418, 1365, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14447, 5, NULL, 37.5, 421, 1365, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14448, 6, NULL, 58.25, 300, 1365, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14449, 7, NULL, 58.5, 350, 1365, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14450, 8, NULL, 58.75, 316, 1365, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14451, 9, NULL, 81.75, 2, 1365, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14452, 1, NULL, 16, 467, 1366, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14453, 2, NULL, 19, 137, 1366, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14454, 3, NULL, 31.25, 300, 1366, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14455, 4, NULL, 35.25, 479, 1366, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14456, 5, NULL, 51, 182, 1366, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14457, 6, NULL, 59.25, 83, 1366, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14458, 7, NULL, 88, 427, 1366, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14459, 1, NULL, 19.67, 43, 1367, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14460, 2, NULL, 23, 467, 1367, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14461, 3, NULL, 35.33, 418, 1367, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14462, 4, NULL, 38, 225, 1367, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14463, 5, NULL, 39.33, 300, 1367, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14464, 6, NULL, 43, 479, 1367, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14465, 7, NULL, 49, 350, 1367, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14466, 8, NULL, 57, 401, 1367, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14467, 9, NULL, 67.33, 288, 1367, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14468, 10, NULL, 70.33, 293, 1367, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14469, 11, NULL, 72.33, 197, 1367, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14470, 12, NULL, 74.33, 18, 1367, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14471, 13, NULL, 80.33, 2, 1367, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14472, 14, NULL, 127, 96, 1367, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14473, 15, NULL, 143, 133, 1367, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14474, 1, NULL, 15, 467, 1368, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14475, 2, NULL, 21, 137, 1368, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14476, 3, NULL, 28, 418, 1368, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14477, 4, NULL, 39.67, 317, 1368, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14478, 5, NULL, 47, 401, 1368, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14479, 6, NULL, 55.33, 316, 1368, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14480, 7, NULL, 56, 194, 1368, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14481, 8, NULL, 89.33, 427, 1368, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14482, 9, NULL, 99, 2, 1368, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14483, 10, NULL, 100, 3, 1368, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14484, 11, NULL, 157, 133, 1368, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14485, 12, NULL, 180, 455, 1368, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14486, 1, NULL, 24, 137, 1369, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14487, 2, NULL, 30.5, 467, 1369, 11);
+INSERT INTO
+    DRL_result
+VALUES
+    (14488, 3, NULL, 30.5, 418, 1369, 11);
+INSERT INTO
+    DRL_result
+VALUES
+    (14489, 4, NULL, 70.5, 179, 1369, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14490, 5, NULL, 76.25, 50, 1369, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14491, 6, NULL, 97, 468, 1369, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14492, 7, NULL, 98.5, 33, 1369, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14493, 8, NULL, 114, 275, 1369, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14494, 1, NULL, 14, 467, 1370, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14495, 2, NULL, 48, 300, 1370, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14496, 3, NULL, 50.67, 427, 1370, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14497, 4, NULL, 61.67, 468, 1370, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14498, 5, NULL, 67, 179, 1370, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14499, 6, NULL, 92, 275, 1370, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14500, 7, NULL, 92.67, 33, 1370, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14501, 1, NULL, 29.5, 467, 1371, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14502, 2, NULL, 37.25, 418, 1371, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14503, 3, NULL, 39.5, 137, 1371, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14504, 4, NULL, 41.25, 421, 1371, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14505, 5, NULL, 63.25, 225, 1371, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14506, 6, NULL, 79.5, 350, 1371, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14507, 7, NULL, 87.75, 300, 1371, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14508, 8, NULL, 88, 2, 1371, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14509, 9, NULL, 114.75, 275, 1371, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14510, 10, NULL, 147.5, 293, 1371, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14511, 1, NULL, 12, 418, 1372, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14512, 2, NULL, 16.67, 467, 1372, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14513, 3, NULL, 26.33, 317, 1372, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14514, 4, NULL, 30, 137, 1372, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14515, 5, NULL, 30.33, 318, 1372, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14516, 6, NULL, 31.67, 427, 1372, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14517, 7, NULL, 46, 221, 1372, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14518, 8, NULL, 56, 2, 1372, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14519, 9, NULL, 56.33, 401, 1372, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14520, 10, NULL, 56.67, 222, 1372, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14521, 11, NULL, 60, 399, 1372, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14522, 12, NULL, 86, 332, 1372, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14523, 13, NULL, 101, 183, 1372, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14524, 14, NULL, 121, 257, 1372, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14525, 15, NULL, 130, 330, 1372, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14526, 16, NULL, 146, 331, 1372, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14527, 1, NULL, 38, 467, 1373, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14528, 2, NULL, 42, 179, 1373, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14529, 3, NULL, 59.33, 33, 1373, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14530, 4, NULL, 59.67, 427, 1373, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14531, 5, NULL, 67, 50, 1373, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14532, 6, NULL, 72, 51, 1373, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14533, 7, NULL, 90.67, 333, 1373, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14534, 8, NULL, 77, 428, 1373, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14535, 9, NULL, 108.67, 275, 1373, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14536, 1, NULL, 17.5, 467, 1374, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14537, 2, NULL, 22.25, 418, 1374, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14538, 3, NULL, 24.75, 137, 1374, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14539, 4, NULL, 45, 225, 1374, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14540, 5, NULL, 49, 350, 1374, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14541, 6, NULL, 52.75, 363, 1374, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14542, 7, NULL, 57.75, 83, 1374, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14543, 8, NULL, 63, 75, 1374, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14544, 9, NULL, 70.75, 2, 1374, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14545, 10, NULL, 71.25, 399, 1374, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14546, 1, NULL, 20.75, 464, 1375, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14547, 2, NULL, 21.5, 339, 1375, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14548, 3, NULL, 22, 467, 1375, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14549, 4, NULL, 32, 137, 1375, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14550, 5, NULL, 33.25, 412, 1375, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14551, 6, NULL, 39.75, 418, 1375, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14552, 7, NULL, 41, 465, 1375, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14553, 8, NULL, 50.5, 472, 1375, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14554, 9, NULL, 69, 225, 1375, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14555, 10, NULL, 72.75, 350, 1375, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14556, 1, NULL, 30.33, 317, 1376, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (14557, 2, NULL, 32.67, 71, 1376, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (14558, 3, NULL, 33, 467, 1376, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14559, 4, NULL, 36, 418, 1376, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14560, 5, NULL, 49, 210, 1376, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14561, 6, NULL, 51.33, 225, 1376, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14562, 7, NULL, 51.67, 36, 1376, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14563, 8, NULL, 54.33, 293, 1376, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14564, 9, NULL, 55.67, 363, 1376, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14565, 10, NULL, 57, 350, 1376, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14566, 11, NULL, 59.33, 479, 1376, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14567, 12, NULL, 59.67, 399, 1376, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14568, 13, NULL, 66, 197, 1376, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14569, 14, NULL, 76.33, 83, 1376, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14570, 15, NULL, 83.67, 486, 1376, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14571, 16, NULL, 97.33, 133, 1376, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14572, 17, NULL, 107.33, 82, 1376, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14573, 18, NULL, 188, 75, 1376, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14574, 1, NULL, 10.5, 137, 1377, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14575, 2, NULL, 19.5, 467, 1377, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14576, 3, NULL, 25.5, 105, 1377, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14577, 4, NULL, 26, 225, 1377, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14578, 5, NULL, 27, 71, 1377, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14579, 6, NULL, 29, 240, 1377, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14580, 7, NULL, 38, 72, 1377, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14581, 8, NULL, 38.5, 84, 1377, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14582, 9, NULL, 39, 350, 1377, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14583, 10, NULL, 61, 427, 1377, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14584, 11, NULL, 68.5, 487, 1377, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14585, 12, NULL, 85, 428, 1377, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14586, 13, NULL, 104, 275, 1377, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14587, 1, NULL, 15.33, 467, 1378, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14588, 2, NULL, 20, 137, 1378, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14589, 3, NULL, 29.67, 418, 1378, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14590, 4, NULL, 45.67, 317, 1378, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14591, 5, NULL, 51.67, 36, 1378, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14592, 6, NULL, 69.33, 399, 1378, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14593, 7, NULL, 70.33, 2, 1378, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14594, 8, NULL, 72.33, 487, 1378, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14595, 9, NULL, 91, 427, 1378, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14596, 10, NULL, 96.67, 401, 1378, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14597, 11, NULL, 116.67, 47, 1378, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14598, 12, NULL, 144, 455, 1378, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14599, 1, NULL, 55.67, 179, 1379, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14600, 2, NULL, 60, 214, 1379, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14601, 3, NULL, 59.33, 33, 1379, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14602, 4, NULL, 77.67, 51, 1379, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14603, 5, NULL, 84.33, 427, 1379, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14604, 6, NULL, 101.67, 50, 1379, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14605, 7, NULL, 115.33, 428, 1379, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14606, 8, NULL, 130, 34, 1379, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14607, 1, NULL, 21.25, 467, 1380, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14608, 2, NULL, 29.5, 418, 1380, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14609, 3, NULL, 30, 137, 1380, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14610, 4, NULL, 43, 225, 1380, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (14611, 4, NULL, 43, 399, 1380, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (14612, 6, NULL, 46.75, 210, 1380, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14613, 7, NULL, 51.25, 350, 1380, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14614, 8, NULL, 64.25, 487, 1380, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14615, 9, NULL, 71.5, 401, 1380, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14616, 10, NULL, 72, 75, 1380, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14617, 11, NULL, 79.5, 33, 1380, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14618, 12, NULL, 91, 2, 1380, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14619, 1, NULL, 13, 467, 1381, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14620, 2, NULL, 15, 464, 1381, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14621, 3, NULL, 18.75, 339, 1381, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14622, 4, NULL, 23.75, 137, 1381, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14623, 5, NULL, 24.5, 418, 1381, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14624, 6, NULL, 30, 225, 1381, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14625, 7, NULL, 32, 221, 1381, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14626, 8, NULL, 37.25, 399, 1381, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14627, 9, NULL, 38.75, 412, 1381, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14628, 10, NULL, 40, 141, 1381, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14629, 1, NULL, 14, 467, 1382, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14630, 2, NULL, 46.5, 50, 1382, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14631, 3, NULL, 47, 51, 1382, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14632, 4, NULL, 58, 427, 1382, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14633, 5, NULL, 64, 487, 1382, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14634, 6, NULL, 87.5, 275, 1382, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14635, 1, NULL, 16.75, 467, 1383, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14636, 2, NULL, 20.5, 418, 1383, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14637, 3, NULL, 33.5, 157, 1383, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14638, 4, NULL, 33.75, 317, 1383, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14639, 5, NULL, 37.5, 363, 1383, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14640, 6, NULL, 41, 293, 1383, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14641, 7, NULL, 41.5, 141, 1383, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14642, 8, NULL, 41.75, 71, 1383, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14643, 9, NULL, 45, 487, 1383, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14644, 10, NULL, 46.5, 479, 1383, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14645, 11, NULL, 48, 399, 1383, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14646, 12, NULL, 61, 401, 1383, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14647, 13, NULL, 79.75, 350, 1383, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14648, 14, NULL, 81.25, 411, 1383, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14649, 15, NULL, 84.75, 75, 1383, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14650, 16, NULL, 95.25, 82, 1383, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14651, 1, NULL, 17, 467, 1384, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14652, 2, NULL, 20.5, 137, 1384, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14653, 3, NULL, 21.5, 418, 1384, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14654, 4, NULL, 53, 50, 1384, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14655, 5, NULL, 75.5, 427, 1384, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14656, 6, NULL, 108, 57, 1384, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14657, 1, NULL, 20.5, 137, 1385, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14658, 2, NULL, 21, 467, 1385, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14659, 3, NULL, 29, 418, 1385, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14660, 4, NULL, 39, 221, 1385, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14661, 5, NULL, 51, 357, 1385, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14662, 6, NULL, 51.5, 399, 1385, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14663, 7, NULL, 53, 487, 1385, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14664, 8, NULL, 53.5, 271, 1385, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (14665, 8, NULL, 53.5, 75, 1385, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (14666, 10, NULL, 54.5, 141, 1385, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14667, 11, NULL, 61.5, 225, 1385, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14668, 12, NULL, 109, 82, 1385, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14669, 13, NULL, 136, 454, 1385, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14670, 1, NULL, 14.33, 137, 1386, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14671, 2, NULL, 15.33, 467, 1386, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14672, 3, NULL, 25, 418, 1386, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14673, 4, NULL, 40.67, 399, 1386, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14674, 5, NULL, 60.33, 427, 1386, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14675, 6, NULL, 64.67, 317, 1386, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14676, 7, NULL, 27, 51, 1386, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14677, 8, NULL, 46, 50, 1386, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14678, 9, NULL, 51, 428, 1386, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14679, 10, NULL, 59.33, 286, 1386, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14680, 11, NULL, 67.33, 75, 1386, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14681, 12, NULL, 68.33, 82, 1386, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14682, 13, NULL, 74.67, 5, 1386, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14683, 14, NULL, 92.33, 257, 1386, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14684, 15, NULL, 111.67, 4, 1386, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14685, 1, NULL, 18, 467, 1387, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14686, 2, NULL, 21.67, 137, 1387, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14687, 3, NULL, 30, 399, 1387, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14688, 4, NULL, 37, 240, 1387, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14689, 5, NULL, 42, 105, 1387, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14690, 6, NULL, 56.67, 487, 1387, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14691, 7, NULL, 58.67, 75, 1387, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14692, 8, NULL, 42.33, 84, 1387, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14693, 9, NULL, 45.33, 179, 1387, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14694, 10, NULL, 67.67, 32, 1387, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14695, 11, NULL, 73.33, 82, 1387, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14696, 12, NULL, 76.67, 427, 1387, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14697, 1, NULL, 25.33, 137, 1388, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14698, 2, NULL, 26.67, 467, 1388, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14699, 3, NULL, 38.67, 317, 1388, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14700, 4, NULL, 41, 399, 1388, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14701, 5, NULL, 47.33, 479, 1388, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14702, 6, NULL, 58, 71, 1388, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14703, 7, NULL, 58.33, 240, 1388, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14704, 8, NULL, 58.67, 75, 1388, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14705, 9, NULL, 63.33, 487, 1388, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14706, 10, NULL, 73, 271, 1388, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14707, 11, NULL, 77.67, 82, 1388, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14708, 1, NULL, 33, 467, 1389, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14709, 2, NULL, 33.33, 137, 1389, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14710, 3, NULL, 52, 75, 1389, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14711, 4, NULL, 59.33, 50, 1389, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14712, 5, NULL, 65, 242, 1389, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14713, 6, NULL, 67.67, 487, 1389, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14714, 7, NULL, 40.67, 399, 1389, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14715, 8, NULL, 55.33, 75, 1389, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14716, 9, NULL, 64.67, 82, 1389, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14717, 10, NULL, 82.67, 50, 1389, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14718, 11, NULL, 114, 243, 1389, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14719, 12, NULL, 146, 217, 1389, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14720, 13, NULL, 159, 330, 1389, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14721, 1, NULL, 25, 137, 1390, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14722, 2, NULL, 26.5, 467, 1390, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14723, 3, NULL, 36.5, 33, 1390, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14724, 4, NULL, 54, 427, 1390, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14725, 5, NULL, 58, 275, 1390, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14726, 6, NULL, 60, 487, 1390, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14727, 1, NULL, 24, 467, 1391, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14728, 2, NULL, 41.33, 179, 1391, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14729, 3, NULL, 47, 50, 1391, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14730, 4, NULL, 50.67, 33, 1391, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14731, 5, NULL, 53.67, 427, 1391, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14732, 6, NULL, 70, 333, 1391, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14733, 7, NULL, 71.67, 275, 1391, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14734, 8, NULL, 78.33, 428, 1391, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14735, 1, NULL, 13.75, 467, 1392, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14736, 2, NULL, 20.5, 137, 1392, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14737, 3, NULL, 23.5, 418, 1392, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14738, 4, NULL, 35, 225, 1392, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14739, 5, NULL, 36.75, 357, 1392, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (14740, 5, NULL, 36.75, 363, 1392, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (14741, 7, NULL, 39, 399, 1392, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14742, 8, NULL, 42, 75, 1392, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14743, 9, NULL, 44.25, 350, 1392, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14744, 10, NULL, 45.25, 275, 1392, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14745, 11, NULL, 50.25, 33, 1392, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14746, 12, NULL, 55.5, 487, 1392, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14747, 13, NULL, 65.75, 271, 1392, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14748, 14, NULL, 67, 2, 1392, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14749, 15, NULL, 68, 286, 1392, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14750, 16, NULL, 88.5, 43, 1392, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14751, 1, NULL, 24, 137, 1393, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14752, 2, NULL, 24.5, 418, 1393, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14753, 3, NULL, 27.5, 467, 1393, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14754, 4, NULL, 37, 210, 1393, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14755, 5, NULL, 39, 75, 1393, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14756, 6, NULL, 55, 33, 1393, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14757, 7, NULL, 48, 487, 1393, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14758, 8, NULL, 53, 350, 1393, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14759, 9, NULL, 53.5, 399, 1393, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14760, 10, NULL, 55.5, 401, 1393, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14761, 11, NULL, 63, 76, 1393, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14762, 12, NULL, 75.5, 427, 1393, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14763, 1, NULL, 21.5, 467, 1394, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14764, 2, NULL, 25.5, 137, 1394, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14765, 3, NULL, 33, 418, 1394, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14766, 4, NULL, 47.5, 4, 1394, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14767, 5, NULL, 54.5, 363, 1394, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14768, 6, NULL, 61, 317, 1394, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14769, 7, NULL, 82, 487, 1394, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14770, 8, NULL, 48.5, 399, 1394, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14771, 9, NULL, 57, 275, 1394, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14772, 10, NULL, 59.5, 50, 1394, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14773, 11, NULL, 88.5, 2, 1394, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14774, 12, NULL, 101.5, 29, 1394, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14775, 13, NULL, 107, 82, 1394, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14776, 14, NULL, 110, 28, 1394, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14777, 15, NULL, 118.5, 364, 1394, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14778, 1, NULL, 25.67, 467, 1395, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (14779, 2, NULL, 32.33, 418, 1395, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (14780, 3, NULL, 41, 317, 1395, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (14781, 4, NULL, 42, 363, 1395, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14782, 5, NULL, 44.67, 71, 1395, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14783, 6, NULL, 45, 487, 1395, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14784, 7, NULL, 60, 210, 1395, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14785, 8, NULL, 72, 221, 1395, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14786, 9, NULL, 47.33, 101, 1395, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14787, 10, NULL, 49, 399, 1395, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14788, 11, NULL, 58, 350, 1395, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14789, 12, NULL, 65.67, 293, 1395, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14790, 13, NULL, 68.33, 43, 1395, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14791, 14, NULL, 69.67, 75, 1395, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14792, 15, NULL, 70.67, 411, 1395, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14793, 16, NULL, 71.33, 401, 1395, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14794, 17, NULL, 92, 76, 1395, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14795, 18, NULL, 95, 82, 1395, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14796, 19, NULL, 129, 402, 1395, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14797, 1, NULL, 17, 137, 1396, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14798, 2, NULL, 19.33, 467, 1396, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14799, 3, NULL, 44, 399, 1396, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14800, 4, NULL, 48.67, 418, 1396, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14801, 5, NULL, 60, 50, 1396, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14802, 6, NULL, 96.33, 75, 1396, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14803, 1, NULL, 23, 467, 1397, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14804, 2, NULL, 23.67, 137, 1397, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14805, 3, NULL, 52, 399, 1397, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14806, 4, NULL, 58, 487, 1397, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14807, 5, NULL, 72, 418, 1397, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14808, 6, NULL, 85, 242, 1397, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14809, 7, NULL, 58, 75, 1397, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14810, 8, NULL, 59, 82, 1397, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14811, 9, NULL, 73, 243, 1397, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14812, 10, NULL, 83.5, 76, 1397, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14813, 11, NULL, 111, 281, 1397, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14814, 12, NULL, 125, 4, 1397, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14815, 14, NULL, 0, 244, 1397, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14816, 14, NULL, 0, 332, 1397, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14817, 1, NULL, 11.67, 467, 1398, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14818, 2, NULL, 16.67, 418, 1398, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14819, 3, NULL, 23.67, 137, 1398, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14820, 4, NULL, 26, 105, 1398, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14821, 5, NULL, 44.33, 487, 1398, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14822, 6, NULL, 50.67, 275, 1398, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14823, 7, NULL, 60.67, 382, 1398, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14824, 8, NULL, 84, 23, 1398, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14825, 9, NULL, 87.33, 22, 1398, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14826, 10, NULL, 111, 227, 1398, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14827, 1, NULL, 11.33, 467, 1399, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (14828, 2, NULL, 13.67, 418, 1399, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14829, 3, NULL, 18, 137, 1399, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14830, 4, NULL, 30, 317, 1399, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14831, 5, NULL, 40, 399, 1399, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14832, 6, NULL, 40.67, 84, 1399, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14833, 7, NULL, 44.67, 50, 1399, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14834, 8, NULL, 46.33, 221, 1399, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14835, 9, NULL, 48.67, 487, 1399, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14836, 10, NULL, 51.33, 275, 1399, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14837, 11, NULL, 59.67, 75, 1399, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14838, 12, NULL, 64, 2, 1399, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14839, 13, NULL, 70, 427, 1399, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14840, 14, NULL, 89.33, 281, 1399, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14841, 15, NULL, 96.33, 332, 1399, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14842, 16, NULL, 97, 4, 1399, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14843, 17, NULL, 132.67, 47, 1399, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14844, 1, NULL, 18.33, 137, 1400, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14845, 2, NULL, 35.67, 418, 1400, 25);
+INSERT INTO
+    DRL_result
+VALUES
+    (14846, 2, NULL, 35.67, 399, 1400, 25);
+INSERT INTO
+    DRL_result
+VALUES
+    (14847, 4, NULL, 38.33, 240, 1400, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14848, 5, NULL, 49.33, 82, 1400, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14849, 6, NULL, 50, 467, 1400, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14850, 7, NULL, 51.67, 357, 1400, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14851, 8, NULL, 52, 32, 1400, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14852, 9, NULL, 55.67, 84, 1400, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14853, 10, NULL, 63.33, 210, 1400, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14854, 11, NULL, 66.33, 271, 1400, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14855, 12, NULL, 79.67, 487, 1400, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14856, 13, NULL, 82, 75, 1400, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14857, 14, NULL, 89.67, 479, 1400, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14858, 15, NULL, 121, 452, 1400, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14859, 1, NULL, 17.67, 467, 1401, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14860, 2, NULL, 36.67, 50, 1401, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14861, 3, NULL, 49, 179, 1401, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14862, 4, NULL, 52, 51, 1401, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14863, 5, NULL, 57, 275, 1401, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14864, 6, NULL, 59, 427, 1401, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14865, 7, NULL, 69, 180, 1401, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14866, 8, NULL, 89, 468, 1401, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14867, 9, NULL, 120, 333, 1401, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14868, 1, NULL, 25, 418, 1402, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14869, 2, NULL, 28.75, 467, 1402, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14870, 3, NULL, 41.75, 399, 1402, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14871, 4, NULL, 43, 137, 1402, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14872, 5, NULL, 49.5, 350, 1402, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14873, 6, NULL, 57.5, 225, 1402, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14874, 7, NULL, 71, 275, 1402, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14875, 8, NULL, 71.5, 43, 1402, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14876, 9, NULL, 76.75, 487, 1402, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14877, 10, NULL, 101, 75, 1402, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14878, 11, NULL, 111.5, 286, 1402, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14879, 1, NULL, 17.67, 137, 1403, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14880, 2, NULL, 27, 467, 1403, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14881, 3, NULL, 39, 399, 1403, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14882, 4, NULL, 56.33, 4, 1403, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14883, 5, NULL, 27.67, 50, 1403, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14884, 6, NULL, 37, 487, 1403, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14885, 7, NULL, 44.67, 51, 1403, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14886, 8, NULL, 52, 75, 1403, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14887, 9, NULL, 63, 82, 1403, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14888, 10, NULL, 74.33, 427, 1403, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14889, 11, NULL, 91.67, 28, 1403, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14890, 12, NULL, 101.67, 93, 1403, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14891, 13, NULL, 0, 275, 1403, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14892, 1, NULL, 20.33, 137, 1404, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14893, 2, NULL, 23.67, 467, 1404, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14894, 3, NULL, 26, 418, 1404, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14895, 4, NULL, 38.33, 399, 1404, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14896, 5, NULL, 43.33, 350, 1404, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14897, 6, NULL, 51.33, 50, 1404, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14898, 7, NULL, 53.33, 51, 1404, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14899, 8, NULL, 59.33, 32, 1404, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14900, 9, NULL, 61.33, 240, 1404, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14901, 10, NULL, 65, 427, 1404, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14902, 11, NULL, 67.33, 75, 1404, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14903, 12, NULL, 82, 332, 1404, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14904, 13, NULL, 88, 82, 1404, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14905, 14, NULL, 94, 275, 1404, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14906, 15, NULL, 101, 4, 1404, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14907, 1, NULL, 17.33, 137, 1405, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14908, 2, NULL, 32.33, 467, 1405, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14909, 3, NULL, 42, 84, 1405, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14910, 4, NULL, 44.33, 418, 1405, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14911, 5, NULL, 55, 50, 1405, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14912, 6, NULL, 67.67, 487, 1405, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14913, 7, NULL, 72, 51, 1405, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14914, 8, NULL, 80, 4, 1405, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14915, 9, NULL, 83, 427, 1405, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14916, 10, NULL, 87.33, 271, 1405, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14917, 11, NULL, 92.67, 382, 1405, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14918, 12, NULL, 123.33, 333, 1405, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14919, 1, NULL, 36.33, 137, 1406, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14920, 2, NULL, 50, 399, 1406, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14921, 3, NULL, 65.33, 467, 1406, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14922, 4, NULL, 71, 75, 1406, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14923, 5, NULL, 84.5, 262, 1406, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14924, 6, NULL, 68.67, 263, 1406, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14925, 7, NULL, 73, 332, 1406, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14926, 8, NULL, 86, 281, 1406, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14927, 9, NULL, 92, 76, 1406, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14928, 10, NULL, 130, 4, 1406, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14929, 11, NULL, 137, 321, 1406, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14930, 12, NULL, 0, 82, 1406, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14931, 1, NULL, 20, 418, 1407, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14932, 2, NULL, 24.5, 137, 1407, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14933, 3, NULL, 28.5, 467, 1407, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14934, 4, NULL, 44.5, 487, 1407, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14935, 5, NULL, 55, 427, 1407, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14936, 6, NULL, 75.5, 22, 1407, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14937, 7, NULL, 78.5, 275, 1407, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14938, 8, NULL, 81, 182, 1407, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14939, 9, NULL, 82.5, 382, 1407, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14940, 10, NULL, 93, 227, 1407, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14941, 1, NULL, 34, 467, 1408, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14942, 2, NULL, 58, 427, 1408, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14943, 3, NULL, 63, 275, 1408, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14944, 4, NULL, 66, 50, 1408, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14945, 5, NULL, 78, 179, 1408, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14946, 6, NULL, 81, 333, 1408, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14947, 1, NULL, 22, 137, 1409, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14948, 2, NULL, 25.25, 467, 1409, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14949, 3, NULL, 32, 399, 1409, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14950, 4, NULL, 36.25, 418, 1409, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14951, 5, NULL, 38, 357, 1409, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14952, 6, NULL, 41.25, 43, 1409, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14953, 7, NULL, 47.75, 225, 1409, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14954, 8, NULL, 57.25, 275, 1409, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14955, 9, NULL, 65.25, 487, 1409, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14956, 10, NULL, 71.75, 350, 1409, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14957, 11, NULL, 100, 286, 1409, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14958, 12, NULL, 110.25, 401, 1409, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14959, 13, NULL, 120.5, 2, 1409, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14960, 14, NULL, 0, 75, 1409, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14961, 1, NULL, 57.67, 71, 1410, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14962, 2, NULL, 62.33, 4, 1410, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14963, 3, NULL, 101.33, 50, 1410, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14964, 1, NULL, 27.67, 418, 1411, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14965, 2, NULL, 32.33, 137, 1411, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (14966, 3, NULL, 37.33, 399, 1411, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (14967, 4, NULL, 50.33, 467, 1411, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (14968, 5, NULL, 95.44, 427, 1411, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (14969, 6, NULL, 43, 487, 1411, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (14970, 7, NULL, 67.33, 36, 1411, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (14971, 8, NULL, 91.67, 75, 1411, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (14972, 9, NULL, 105, 275, 1411, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (14973, 10, NULL, 115, 28, 1411, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14974, 11, NULL, 158, 319, 1411, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14975, 12, NULL, 160, 455, 1411, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14976, 13, NULL, 0, 69, 1411, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14977, 1, NULL, 41.5, 179, 1412, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14978, 2, NULL, 57, 71, 1412, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14979, 3, NULL, 69, 333, 1412, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14980, 1, NULL, 22.5, 467, 1413, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (14981, 1, NULL, 22.5, 418, 1413, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (14982, 3, NULL, 26, 137, 1413, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (14983, 3, NULL, 26, 275, 1413, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (14984, 5, NULL, 46, 427, 1413, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (14985, 6, NULL, 54, 4, 1413, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (14986, 7, NULL, 61.5, 487, 1413, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (14987, 8, NULL, 73.5, 75, 1413, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (14988, 1, NULL, 17.75, 418, 1414, 42);
+INSERT INTO
+    DRL_result
+VALUES
+    (14989, 2, NULL, 23.25, 467, 1414, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (14990, 3, NULL, 23.5, 71, 1414, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (14991, 4, NULL, 28.5, 412, 1414, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (14992, 5, NULL, 39.5, 210, 1414, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (14993, 6, NULL, 40.75, 399, 1414, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (14994, 7, NULL, 49.5, 411, 1414, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (14995, 8, NULL, 33.5, 357, 1414, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (14996, 9, NULL, 34.25, 32, 1414, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (14997, 10, NULL, 36.5, 487, 1414, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (14998, 1, NULL, 23.33, 467, 1415, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (14999, 2, NULL, 26, 137, 1415, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (15000, 3, NULL, 33.33, 418, 1415, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (15001, 4, NULL, 43.33, 399, 1415, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15002, 5, NULL, 63.67, 50, 1415, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15003, 6, NULL, 86.67, 275, 1415, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15004, 7, NULL, 104, 251, 1415, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15005, 8, NULL, 58.3, 36, 1415, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15006, 1, NULL, 20, 137, 1416, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15007, 2, NULL, 28.67, 467, 1416, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15008, 3, NULL, 29, 418, 1416, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15009, 4, NULL, 49.5, 84, 1416, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15010, 5, NULL, 59, 210, 1416, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15011, 6, NULL, 61.33, 179, 1416, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15012, 7, NULL, 73.67, 399, 1416, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15013, 8, NULL, 49, 479, 1416, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15014, 9, NULL, 56, 271, 1416, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15015, 10, NULL, 71, 275, 1416, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15016, 11, NULL, 86.67, 4, 1416, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15017, 12, NULL, 90.5, 75, 1416, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15018, 13, NULL, 97.33, 452, 1416, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15019, 1, NULL, 21, 137, 1417, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15020, 2, NULL, 28.5, 467, 1417, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15021, 3, NULL, 91, 418, 1417, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15022, 4, NULL, 42.5, 275, 1417, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15023, 5, NULL, 54.5, 487, 1417, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15024, 6, NULL, 68.5, 50, 1417, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15025, 7, NULL, 49, 36, 1417, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15026, 8, NULL, 55, 75, 1417, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15027, 9, NULL, 61, 427, 1417, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15028, 10, NULL, 62.5, 4, 1417, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15029, 11, NULL, 78.5, 227, 1417, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15030, 12, NULL, 88, 333, 1417, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15031, 1, NULL, 18, 467, 1418, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15032, 2, NULL, 21.5, 137, 1418, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15033, 3, NULL, 22, 418, 1418, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15034, 4, NULL, 32, 357, 1418, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15035, 5, NULL, 46, 75, 1418, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15036, 6, NULL, 47.5, 487, 1418, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15037, 7, NULL, 48, 275, 1418, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15038, 8, NULL, 51, 427, 1418, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15039, 9, NULL, 52, 36, 1418, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15040, 10, NULL, 58, 271, 1418, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15041, 11, NULL, 59, 82, 1418, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15042, 12, NULL, 60, 286, 1418, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15043, 13, NULL, 62, 227, 1418, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15044, 14, NULL, 70, 4, 1418, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15045, 15, NULL, 71.5, 76, 1418, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15046, 1, NULL, 20.5, 418, 1419, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15047, 2, NULL, 46, 137, 1419, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15048, 3, NULL, 60, 487, 1419, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15049, 4, NULL, 62, 227, 1419, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15050, 5, NULL, 62.5, 467, 1419, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15051, 6, NULL, 89.5, 382, 1419, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15052, 7, NULL, 92, 22, 1419, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15053, 8, NULL, 107, 427, 1419, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15054, 9, NULL, 109, 264, 1419, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15055, 1, NULL, 18, 137, 1420, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15056, 2, NULL, 21, 418, 1420, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15057, 3, NULL, 33.33, 50, 1420, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15058, 4, NULL, 34, 467, 1420, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15059, 5, NULL, 35.33, 399, 1420, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15060, 6, NULL, 49.33, 36, 1420, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15061, 7, NULL, 54, 487, 1420, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15062, 8, NULL, 65, 82, 1420, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15063, 9, NULL, 65.33, 4, 1420, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15064, 10, NULL, 66, 281, 1420, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15065, 11, NULL, 67.67, 183, 1420, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15066, 12, NULL, 70.33, 43, 1420, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15067, 13, NULL, 74.67, 427, 1420, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15068, 14, NULL, 79.33, 275, 1420, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15069, 15, NULL, 83.33, 332, 1420, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15070, 16, NULL, 88, 75, 1420, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15071, 1, NULL, 48.67, 467, 1421, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15072, 2, NULL, 58, 50, 1421, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15073, 3, NULL, 69.67, 179, 1421, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15074, 4, NULL, 84.33, 427, 1421, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15075, 5, NULL, 95, 275, 1421, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15076, 6, NULL, 99.67, 333, 1421, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15077, 7, NULL, 109.67, 13, 1421, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15078, 1, NULL, 21.5, 467, 1422, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15079, 2, NULL, 22.25, 36, 1422, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15080, 3, NULL, 24.25, 137, 1422, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15081, 4, NULL, 27.25, 418, 1422, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15082, 5, NULL, 32.75, 350, 1422, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15083, 6, NULL, 44.5, 227, 1422, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15084, 7, NULL, 45.5, 399, 1422, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15085, 8, NULL, 48, 32, 1422, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15086, 9, NULL, 52, 227, 1422, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15087, 10, NULL, 53.5, 487, 1422, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15088, 11, NULL, 53.75, 271, 1422, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15089, 12, NULL, 57.25, 43, 1422, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15090, 13, NULL, 60.75, 75, 1422, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15091, 14, NULL, 65.5, 286, 1422, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15092, 15, NULL, 70.75, 357, 1422, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15093, 16, NULL, 78, 242, 1422, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15094, 1, NULL, 15.33, 467, 1423, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15095, 2, NULL, 15.67, 418, 1423, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15096, 3, NULL, 21, 137, 1423, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15097, 4, NULL, 36.33, 50, 1423, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15098, 5, NULL, 54, 487, 1423, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15099, 6, NULL, 29, 36, 1423, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15100, 7, NULL, 73, 28, 1423, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15101, 8, NULL, 87, 275, 1423, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15102, 1, NULL, 52, 179, 1424, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15103, 2, NULL, 56, 333, 1424, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15104, 3, NULL, 69, 84, 1424, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15105, 4, NULL, 78.33, 50, 1424, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15106, 1, NULL, 16, 412, 1425, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15107, 2, NULL, 20, 418, 1425, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15108, 3, NULL, 24.33, 467, 1425, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15109, 4, NULL, 26.33, 71, 1425, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15110, 5, NULL, 26.67, 317, 1425, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15111, 6, NULL, 50.67, 399, 1425, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15112, 7, NULL, 26.33, 43, 1425, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15113, 8, NULL, 37.33, 82, 1425, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15114, 9, NULL, 42.33, 487, 1425, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15115, 10, NULL, 44, 32, 1425, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15116, 11, NULL, 49.33, 4, 1425, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15117, 12, NULL, 51, 293, 1425, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15118, 13, NULL, 52.67, 75, 1425, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15119, 14, NULL, 54.67, 101, 1425, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15120, 15, NULL, 70.67, 271, 1425, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15121, 16, NULL, 71, 452, 1425, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15122, 17, NULL, 71.33, 369, 1425, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15123, 1, NULL, 17, 418, 1426, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15124, 2, NULL, 17.33, 467, 1426, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15125, 3, NULL, 18.33, 137, 1426, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15126, 4, NULL, 43.67, 75, 1426, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15127, 5, NULL, 54, 487, 1426, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15128, 6, NULL, 55, 242, 1426, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15129, 7, NULL, 42.67, 286, 1426, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15130, 8, NULL, 45.33, 271, 1426, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15131, 9, NULL, 50, 4, 1426, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15132, 10, NULL, 51.33, 32, 1426, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15133, 11, NULL, 53.67, 399, 1426, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15134, 12, NULL, 60.33, 82, 1426, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15135, 13, NULL, 67.67, 43, 1426, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15136, 14, NULL, 104, 427, 1426, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15137, 1, NULL, 13.33, 467, 1427, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15138, 2, NULL, 21.33, 137, 1427, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15139, 3, NULL, 29.67, 399, 1427, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15140, 4, NULL, 38.67, 50, 1427, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15141, 9, NULL, 25, 4, 1427, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15142, 10, NULL, 27, 36, 1427, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15143, 11, NULL, 40, 332, 1427, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15144, 12, NULL, 46.33, 281, 1427, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15145, 13, NULL, 58.67, 47, 1427, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15146, 1, NULL, 19.5, 137, 1428, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15147, 2, NULL, 26, 467, 1428, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15148, 3, NULL, 33, 418, 1428, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15149, 4, NULL, 42, 50, 1428, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15150, 5, NULL, 49, 36, 1428, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15151, 6, NULL, 59.5, 487, 1428, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15152, 7, NULL, 58.5, 227, 1428, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15153, 8, NULL, 64, 333, 1428, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15154, 9, NULL, 66, 32, 1428, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15155, 10, NULL, 70, 51, 1428, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15156, 11, NULL, 71.5, 271, 1428, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15157, 12, NULL, 73, 84, 1428, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15158, 13, NULL, 87, 4, 1428, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15159, 14, NULL, 93, 75, 1428, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15160, 15, NULL, 104.5, 13, 1428, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15161, 1, NULL, 13, 467, 1429, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15162, 2, NULL, 15.75, 137, 1429, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15163, 3, NULL, 17.5, 418, 1429, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15164, 4, NULL, 30.5, 487, 1429, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15165, 5, NULL, 36, 357, 1429, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15166, 6, NULL, 36.5, 275, 1429, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15167, 7, NULL, 31, 286, 1429, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15168, 8, NULL, 32.5, 32, 1429, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15169, 9, NULL, 34.5, 36, 1429, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15170, 10, NULL, 36.5, 271, 1429, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15171, 11, NULL, 37, 75, 1429, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15172, 12, NULL, 40, 227, 1429, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15173, 13, NULL, 45.5, 84, 1429, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15174, 1, NULL, 16.5, 467, 1430, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15175, 2, NULL, 20, 418, 1430, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15176, 3, NULL, 27, 286, 1430, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15177, 4, NULL, 29.5, 487, 1430, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15178, 5, NULL, 34.5, 50, 1430, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (15179, 5, NULL, 34.5, 227, 1430, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (15180, 7, NULL, 38.5, 275, 1430, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15181, 8, NULL, 45, 7, 1430, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15182, 9, NULL, 58.5, 333, 1430, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15183, 1, NULL, 31, 137, 1431, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15184, 2, NULL, 58, 467, 1431, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15185, 3, NULL, 79, 75, 1431, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15186, 4, NULL, 95, 399, 1431, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15187, 5, NULL, 58.33, 36, 1431, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15188, 6, NULL, 67, 82, 1431, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15189, 7, NULL, 79, 281, 1431, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15190, 8, NULL, 89, 332, 1431, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15191, 9, NULL, 99, 76, 1431, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15192, 1, NULL, 16.33, 137, 1432, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15193, 2, NULL, 16.67, 418, 1432, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15194, 3, NULL, 17.67, 467, 1432, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15195, 4, NULL, 35.67, 286, 1432, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15196, 5, NULL, 36, 84, 1432, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15197, 6, NULL, 41.67, 36, 1432, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15198, 7, NULL, 45, 82, 1432, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15199, 8, NULL, 48.33, 227, 1432, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15200, 9, NULL, 49, 487, 1432, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15201, 10, NULL, 57.67, 75, 1432, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15202, 11, NULL, 60.33, 32, 1432, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15203, 12, NULL, 61.33, 275, 1432, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15204, 13, NULL, 65.67, 43, 1432, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15205, 14, NULL, 71, 427, 1432, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15206, 15, NULL, 79, 332, 1432, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15207, 16, NULL, 88.33, 281, 1432, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15208, 17, NULL, 91, 257, 1432, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15209, 18, NULL, 111, 2, 1432, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15210, 1, NULL, 26.33, 467, 1433, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15211, 2, NULL, 29, 179, 1433, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15212, 3, NULL, 30.75, 50, 1433, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15213, 4, NULL, 60.67, 227, 1433, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15214, 5, NULL, 44.67, 333, 1433, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15215, 6, NULL, 64.33, 427, 1433, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15216, 7, NULL, 67.67, 13, 1433, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15217, 8, NULL, 82.67, 275, 1433, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15218, 1, NULL, 30.25, 467, 1434, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15219, 2, NULL, 35.25, 43, 1434, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15220, 3, NULL, 43, 418, 1434, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15221, 4, NULL, 46.5, 271, 1434, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15222, 5, NULL, 58.25, 350, 1434, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15223, 6, NULL, 62.25, 36, 1434, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15224, 7, NULL, 63.75, 487, 1434, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15225, 8, NULL, 63.75, 399, 1434, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15226, 9, NULL, 64.25, 275, 1434, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15227, 10, NULL, 65, 286, 1434, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15228, 11, NULL, 73.25, 225, 1434, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15229, 12, NULL, 77.75, 75, 1434, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15230, 1, NULL, 12.5, 467, 1435, 46);
+INSERT INTO
+    DRL_result
+VALUES
+    (15231, 2, NULL, 14, 418, 1435, 44);
+INSERT INTO
+    DRL_result
+VALUES
+    (15232, 3, NULL, 19.25, 71, 1435, 42);
+INSERT INTO
+    DRL_result
+VALUES
+    (15233, 4, NULL, 24, 357, 1435, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (15234, 5, NULL, 25.25, 412, 1435, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (15235, 6, NULL, 26, 32, 1435, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (15236, 7, NULL, 21.25, 286, 1435, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15237, 8, NULL, 26, 36, 1435, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15238, 9, NULL, 28, 243, 1435, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15239, 10, NULL, 30.5, 385, 1435, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15240, 11, NULL, 36, 487, 1435, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15241, 24, NULL, 0, 479, 1435, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15242, 1, NULL, 16, 467, 1436, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15243, 2, NULL, 17, 418, 1436, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15244, 3, NULL, 20.67, 137, 1436, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15245, 4, NULL, 32.33, 399, 1436, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15246, 5, NULL, 32.67, 50, 1436, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15247, 6, NULL, 46, 251, 1436, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15248, 7, NULL, 50.67, 45, 1436, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15249, 8, NULL, 55.33, 332, 1436, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15250, 1, NULL, 15, 467, 1437, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15251, 2, NULL, 19.75, 339, 1437, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15252, 3, NULL, 29.75, 418, 1437, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15253, 4, NULL, 33.5, 412, 1437, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15254, 5, NULL, 38, 350, 1437, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15255, 6, NULL, 46, 385, 1437, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15256, 7, NULL, 46.75, 464, 1437, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15257, 8, NULL, 50.25, 242, 1437, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15258, 9, NULL, 50.5, 43, 1437, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15259, 10, NULL, 50.75, 271, 1437, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15260, 1, NULL, 13, 467, 1438, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15261, 2, NULL, 15.67, 418, 1438, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15262, 3, NULL, 22.67, 137, 1438, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15263, 4, NULL, 35.67, 4, 1438, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15264, 5, NULL, 39.33, 50, 1438, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15265, 6, NULL, 44, 36, 1438, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15266, 7, NULL, 46.67, 487, 1438, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15267, 8, NULL, 37.67, 275, 1438, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15268, 9, NULL, 39.67, 399, 1438, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15269, 10, NULL, 46, 427, 1438, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15270, 1, NULL, 13.67, 467, 1439, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15271, 2, NULL, 14.33, 418, 1439, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15272, 3, NULL, 19, 137, 1439, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15273, 4, NULL, 29, 487, 1439, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15274, 5, NULL, 34.33, 43, 1439, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15275, 6, NULL, 39.67, 399, 1439, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15276, 7, NULL, 40, 271, 1439, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15277, 8, NULL, 41.33, 76, 1439, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15278, 9, NULL, 46.33, 84, 1439, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15279, 10, NULL, 54.33, 357, 1439, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15280, 11, NULL, 54.67, 32, 1439, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15281, 12, NULL, 68, 4, 1439, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15282, 13, NULL, 71.33, 286, 1439, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15283, 14, NULL, 72, 82, 1439, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15284, 15, NULL, 73, 227, 1439, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15285, 16, NULL, 79, 427, 1439, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15286, 1, NULL, 13, 467, 1440, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15287, 2, NULL, 16, 137, 1440, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15288, 3, NULL, 37.5, 50, 1440, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15289, 4, NULL, 47.5, 487, 1440, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15290, 5, NULL, 50, 227, 1440, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15291, 6, NULL, 37, 333, 1440, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15292, 7, NULL, 43, 4, 1440, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (15293, 7, NULL, 43, 84, 1440, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (15294, 9, NULL, 54.5, 51, 1440, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15295, 10, NULL, 60, 271, 1440, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15296, 11, NULL, 142, 75, 1440, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15297, 12, NULL, 145, 5, 1440, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15298, 1, NULL, 36.33, 467, 1441, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15299, 2, NULL, 40.67, 357, 1441, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15300, 3, NULL, 42.67, 418, 1441, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15301, 4, NULL, 49, 32, 1441, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15302, 5, NULL, 51.33, 36, 1441, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15303, 6, NULL, 53.67, 84, 1441, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15304, 7, NULL, 57.67, 286, 1441, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15305, 8, NULL, 66.67, 227, 1441, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15306, 9, NULL, 87.67, 271, 1441, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15307, 10, NULL, 88.33, 173, 1441, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15308, 11, NULL, 89.33, 452, 1441, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15309, 12, NULL, 90.67, 75, 1441, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15310, 1, NULL, 25.5, 467, 1442, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15311, 2, NULL, 28.5, 50, 1442, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15312, 3, NULL, 32.5, 418, 1442, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15313, 4, NULL, 51.5, 227, 1442, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15314, 5, NULL, 58.5, 286, 1442, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15315, 6, NULL, 70.5, 51, 1442, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15316, 7, NULL, 73.5, 7, 1442, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15317, 8, NULL, 83, 264, 1442, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15318, 1, NULL, 19.33, 467, 1443, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15319, 2, NULL, 22, 418, 1443, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15320, 3, NULL, 22.33, 137, 1443, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15321, 4, NULL, 32.33, 487, 1443, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15322, 5, NULL, 45, 50, 1443, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15323, 6, NULL, 46, 51, 1443, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15324, 7, NULL, 48.67, 468, 1443, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15325, 8, NULL, 51.67, 179, 1443, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15326, 9, NULL, 55.67, 427, 1443, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15327, 10, NULL, 76.33, 333, 1443, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15328, 11, NULL, 78, 227, 1443, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15329, 1, NULL, 17, 467, 1444, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15330, 2, NULL, 25.5, 418, 1444, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15331, 3, NULL, 27.5, 137, 1444, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15332, 4, NULL, 48, 4, 1444, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15333, 5, NULL, 52.5, 275, 1444, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15334, 6, NULL, 36, 286, 1444, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15335, 7, NULL, 39.5, 377, 1444, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15336, 8, NULL, 50, 399, 1444, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15337, 9, NULL, 67, 45, 1444, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15338, 10, NULL, 62, 251, 1444, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15339, 11, NULL, 65, 84, 1444, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15340, 12, NULL, 87, 28, 1444, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15341, 13, NULL, 122.5, 29, 1444, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15342, 14, NULL, 132.5, 257, 1444, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15343, 15, NULL, 0, 75, 1444, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15344, 1, NULL, 19.75, 317, 1445, 40);
+INSERT INTO
+    DRL_result
+VALUES
+    (15345, 2, NULL, 20.25, 418, 1445, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (15346, 3, NULL, 22.75, 467, 1445, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (15347, 4, NULL, 26.25, 71, 1445, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15348, 5, NULL, 32, 286, 1445, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15349, 6, NULL, 42, 82, 1445, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15350, 7, NULL, 42.5, 271, 1445, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15351, 8, NULL, 42.75, 32, 1445, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15352, 9, NULL, 43.5, 242, 1445, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15353, 10, NULL, 46, 43, 1445, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15354, 11, NULL, 49.25, 399, 1445, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15355, 12, NULL, 50.25, 293, 1445, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15356, 13, NULL, 53.25, 385, 1445, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15357, 14, NULL, 55.75, 75, 1445, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15358, 15, NULL, 56, 401, 1445, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15359, 16, NULL, 57.5, 4, 1445, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15360, 17, NULL, 60.25, 76, 1445, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15361, 18, NULL, 64.5, 479, 1445, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15362, 19, NULL, 77.75, 251, 1445, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15363, 20, NULL, 83, 452, 1445, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15364, 21, NULL, 102.5, 101, 1445, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15365, 1, NULL, 16, 467, 1446, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15366, 2, NULL, 17.33, 137, 1446, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15367, 3, NULL, 18.33, 418, 1446, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15368, 4, NULL, 37.33, 82, 1446, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15369, 5, NULL, 38, 286, 1446, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15370, 6, NULL, 38.33, 399, 1446, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15371, 7, NULL, 39, 75, 1446, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15372, 8, NULL, 49, 32, 1446, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15373, 9, NULL, 55.33, 271, 1446, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15374, 10, NULL, 62.33, 479, 1446, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15375, 11, NULL, 75.33, 43, 1446, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15376, 12, NULL, 94.33, 452, 1446, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15377, 13, NULL, 102, 84, 1446, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15378, 1, NULL, 17, 467, 1447, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15379, 2, NULL, 18.5, 418, 1447, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15380, 3, NULL, 20.5, 137, 1447, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15381, 4, NULL, 35.5, 399, 1447, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15382, 5, NULL, 71.5, 43, 1447, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15383, 6, NULL, 40.5, 4, 1447, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15384, 7, NULL, 55, 257, 1447, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15385, 8, NULL, 63.5, 332, 1447, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15386, 9, NULL, 72, 377, 1447, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15387, 10, NULL, 76, 45, 1447, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15388, 1, NULL, 14, 418, 1448, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15389, 2, NULL, 16.5, 467, 1448, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15390, 3, NULL, 32.5, 84, 1448, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15391, 4, NULL, 34.5, 179, 1448, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15392, 5, NULL, 76.5, 333, 1448, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15393, 6, NULL, 86.5, 427, 1448, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15394, 1, NULL, 18, 467, 1449, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15395, 2, NULL, 37.5, 418, 1449, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15396, 3, NULL, 46.5, 227, 1449, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15397, 4, NULL, 62.25, 50, 1449, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15398, 5, NULL, 79.25, 479, 1449, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15399, 6, NULL, 82.5, 333, 1449, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15400, 7, NULL, 38.5, 84, 1449, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15401, 8, NULL, 51, 468, 1449, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15402, 9, NULL, 72, 275, 1449, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15403, 10, NULL, 77.5, 427, 1449, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15404, 11, NULL, 79.5, 487, 1449, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15405, 1, NULL, 12.67, 418, 1450, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15406, 2, NULL, 17.67, 137, 1450, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15407, 3, NULL, 24, 467, 1450, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15408, 4, NULL, 29, 50, 1450, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15409, 5, NULL, 37.33, 84, 1450, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15410, 6, NULL, 43.67, 82, 1450, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15411, 7, NULL, 20.67, 286, 1450, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15412, 8, NULL, 36.67, 227, 1450, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15413, 9, NULL, 39.33, 399, 1450, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15414, 10, NULL, 40, 32, 1450, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15415, 11, NULL, 49, 75, 1450, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15416, 1, NULL, 12.33, 418, 1451, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15417, 2, NULL, 15.67, 137, 1451, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15418, 3, NULL, 16.67, 467, 1451, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15419, 4, NULL, 21, 179, 1451, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15420, 5, NULL, 22.67, 51, 1451, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15421, 6, NULL, 31.5, 50, 1451, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15422, 7, NULL, 40, 468, 1451, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15423, 8, NULL, 42.67, 4, 1451, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15424, 9, NULL, 44, 214, 1451, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15425, 10, NULL, 45, 215, 1451, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15426, 11, NULL, 57, 427, 1451, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15427, 12, NULL, 78.67, 333, 1451, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15428, 1, NULL, 16.67, 137, 1452, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15429, 2, NULL, 19, 418, 1452, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15430, 3, NULL, 20.33, 335, 1452, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15431, 4, NULL, 21.67, 467, 1452, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15432, 5, NULL, 29, 286, 1452, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15433, 6, NULL, 33, 84, 1452, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15434, 7, NULL, 34.33, 350, 1452, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15435, 8, NULL, 35.33, 399, 1452, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15436, 9, NULL, 40.67, 82, 1452, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15437, 10, NULL, 44, 4, 1452, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15438, 11, NULL, 48.33, 271, 1452, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15439, 12, NULL, 59.67, 427, 1452, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15440, 13, NULL, 61, 321, 1452, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15441, 14, NULL, 66.33, 452, 1452, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15442, 15, NULL, 76.33, 272, 1452, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15443, 1, NULL, 20.5, 467, 1453, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15444, 2, NULL, 26, 50, 1453, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15445, 3, NULL, 32.5, 227, 1453, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15446, 4, NULL, 33.5, 84, 1453, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15447, 5, NULL, 35, 271, 1453, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15448, 6, NULL, 61.5, 427, 1453, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15449, 1, NULL, 24, 418, 1454, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15450, 2, NULL, 24.5, 467, 1454, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15451, 3, NULL, 35, 286, 1454, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15452, 4, NULL, 38, 84, 1454, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15453, 5, NULL, 46, 427, 1454, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15454, 6, NULL, 54, 271, 1454, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15455, 7, NULL, 55.5, 227, 1454, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15456, 1, NULL, 19.33, 418, 1455, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15457, 2, NULL, 23.67, 137, 1455, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15458, 3, NULL, 24.67, 467, 1455, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15459, 4, NULL, 27, 179, 1455, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15460, 5, NULL, 29.33, 50, 1455, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15461, 6, NULL, 39.67, 84, 1455, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15462, 7, NULL, 45.33, 275, 1455, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15463, 8, NULL, 53.67, 427, 1455, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15464, 9, NULL, 87, 333, 1455, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15465, 1, NULL, 13, 137, 1456, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15466, 2, NULL, 13.5, 286, 1456, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15467, 3, NULL, 14, 335, 1456, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15468, 4, NULL, 19, 467, 1456, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15469, 5, NULL, 23.5, 418, 1456, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15470, 6, NULL, 32.5, 350, 1456, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15471, 7, NULL, 33, 84, 1456, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15472, 8, NULL, 45, 399, 1456, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15473, 9, NULL, 48, 82, 1456, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15474, 10, NULL, 30, 271, 1456, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15475, 11, NULL, 47, 452, 1456, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15476, 12, NULL, 54, 272, 1456, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15477, 13, NULL, 54.5, 4, 1456, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15478, 1, NULL, 8, 376, 1457, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15479, 2, NULL, 13.5, 236, 1457, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15480, 3, NULL, 15.25, 137, 1457, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15481, 4, NULL, 19.75, 412, 1457, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15482, 5, NULL, 26, 311, 1457, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15483, 6, NULL, 33.25, 63, 1457, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15484, 7, NULL, 35.5, 399, 1457, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15485, 8, NULL, 50, 472, 1457, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15486, 9, NULL, 63.25, 210, 1457, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15487, 10, NULL, 64.25, 169, 1457, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15488, 11, NULL, 71.5, 157, 1457, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15489, 12, NULL, 80.5, 400, 1457, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15490, 13, NULL, 112, 211, 1457, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15491, 14, NULL, 114.5, 141, 1457, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15492, 15, NULL, 207, 158, 1457, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15493, 1, NULL, 25, 376, 1458, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15494, 2, NULL, 27.75, 385, 1458, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15495, 3, NULL, 31, 236, 1458, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15496, 4, NULL, 35.5, 335, 1458, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15497, 5, NULL, 46.5, 412, 1458, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15498, 6, NULL, 52.5, 169, 1458, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15499, 7, NULL, 55, 311, 1458, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15500, 8, NULL, 69.5, 472, 1458, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15501, 9, NULL, 78, 283, 1458, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15502, 1, NULL, 27.25, 385, 1459, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15503, 2, NULL, 44.5, 412, 1459, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15504, 3, NULL, 61.5, 123, 1459, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15505, 4, NULL, 72.25, 63, 1459, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15506, 5, NULL, 77.5, 386, 1459, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15507, 6, NULL, 99.75, 64, 1459, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15508, 7, NULL, 134, 123, 1459, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15509, 1, NULL, 21, 335, 1460, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15510, 2, NULL, 21.5, 376, 1460, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15511, 3, NULL, 30.5, 385, 1460, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15512, 4, NULL, 47.75, 242, 1460, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15513, 5, NULL, 51.5, 63, 1460, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15514, 6, NULL, 58, 200, 1460, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15515, 7, NULL, 59, 412, 1460, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15516, 8, NULL, 64.5, 311, 1460, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15517, 9, NULL, 82.75, 386, 1460, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15518, 10, NULL, 94.5, 228, 1460, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15519, 11, NULL, 0, 415, 1460, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15520, 1, NULL, 30.5, 137, 1461, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15521, 2, NULL, 32.75, 75, 1461, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15522, 3, NULL, 36.25, 300, 1461, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15523, 4, NULL, 38.25, 139, 1461, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15524, 5, NULL, 44.25, 467, 1461, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15525, 6, NULL, 48, 399, 1461, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15526, 7, NULL, 56.75, 369, 1461, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15527, 8, NULL, 69.25, 452, 1461, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15528, 9, NULL, 73.5, 147, 1461, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15529, 1, NULL, 20, 75, 1462, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15530, 2, NULL, 23, 194, 1462, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15531, 3, NULL, 26, 59, 1462, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15532, 4, NULL, 35, 476, 1462, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15533, 5, NULL, 36, 147, 1462, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15534, 6, NULL, 54, 389, 1462, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15535, 1, NULL, 27, 75, 1463, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15536, 2, NULL, 31, 292, 1463, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15537, 3, NULL, 37.5, 385, 1463, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15538, 4, NULL, 47, 412, 1463, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15539, 5, NULL, 54.5, 137, 1463, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15540, 6, NULL, 70.5, 79, 1463, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15541, 7, NULL, 84.5, 179, 1463, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15542, 8, NULL, 92, 84, 1463, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15543, 9, NULL, 122.5, 147, 1463, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15544, 1, NULL, 25.5, 236, 1464, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15545, 2, NULL, 41.5, 194, 1464, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15546, 3, NULL, 45.5, 412, 1464, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15547, 4, NULL, 49.5, 137, 1464, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15548, 5, NULL, 50.5, 84, 1464, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15549, 6, NULL, 56.5, 79, 1464, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15550, 7, NULL, 58.25, 296, 1464, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15551, 8, NULL, 90, 147, 1464, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15552, 1, NULL, 38.5, 412, 1465, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15553, 2, NULL, 47, 399, 1465, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15554, 3, NULL, 59, 147, 1465, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15555, 4, NULL, 71.5, 228, 1465, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15556, 5, NULL, 75, 369, 1465, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15557, 6, NULL, 76.5, 386, 1465, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15558, 7, NULL, 86, 452, 1465, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15559, 1, NULL, 19, 399, 1466, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15560, 2, NULL, 21, 79, 1466, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15561, 3, NULL, 24, 369, 1466, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15562, 4, NULL, 27, 321, 1466, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15563, 5, NULL, 46, 436, 1466, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15564, 6, NULL, 53, 371, 1466, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15565, 7, NULL, 58, 80, 1466, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15566, 1, NULL, 14, 376, 1467, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15567, 2, NULL, 19, 335, 1467, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15568, 3, NULL, 34.5, 339, 1467, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15569, 4, NULL, 54, 200, 1467, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15570, 1, NULL, 28, 472, 1468, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15571, 2, NULL, 38.5, 311, 1468, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15572, 3, NULL, 44, 473, 1468, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15573, 4, NULL, 89, 203, 1468, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15574, 5, NULL, 89.5, 88, 1468, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15575, 6, NULL, 93.5, 71, 1468, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15576, 7, NULL, 106, 216, 1468, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15577, 8, NULL, 113.5, 9, 1468, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15578, 1, NULL, 8, 75, 1469, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15579, 2, NULL, 14, 399, 1469, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15580, 3, NULL, 16, 467, 1469, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15581, 4, NULL, 25, 137, 1469, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15582, 5, NULL, 43, 200, 1469, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15583, 6, NULL, 17, 369, 1469, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15584, 7, NULL, 31, 43, 1469, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15585, 8, NULL, 45, 133, 1469, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15586, 9, NULL, 62, 288, 1469, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15587, 10, NULL, 72, 192, 1469, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15588, 1, NULL, 17, 75, 1470, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15589, 2, NULL, 21, 399, 1470, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15590, 3, NULL, 25, 137, 1470, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15591, 4, NULL, 37, 467, 1470, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15592, 5, NULL, 37.5, 200, 1470, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15593, 6, NULL, 51, 133, 1470, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15594, 7, NULL, 41, 369, 1470, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15595, 8, NULL, 49.5, 288, 1470, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15596, 9, NULL, 59, 43, 1470, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15597, 10, NULL, 84, 147, 1470, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15598, 11, NULL, 85, 192, 1470, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15599, 1, NULL, 48, 13, 1471, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15600, 2, NULL, 48.5, 317, 1471, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15601, 3, NULL, 61.5, 424, 1471, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15602, 4, NULL, 62.75, 183, 1471, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15603, 5, NULL, 68, 236, 1471, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15604, 6, NULL, 114.75, 84, 1471, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15605, 7, NULL, 119.75, 479, 1471, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15606, 8, NULL, 172.75, 440, 1471, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15607, 9, NULL, 200, 333, 1471, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15608, 1, NULL, 30, 464, 1472, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15609, 2, NULL, 46.33, 150, 1472, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15610, 3, NULL, 56.67, 128, 1472, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15611, 4, NULL, 60.67, 339, 1472, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15612, 5, NULL, 62.33, 24, 1472, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15613, 6, NULL, 63.67, 63, 1472, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15614, 7, NULL, 92.33, 30, 1472, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (15615, 7, NULL, 92.33, 446, 1472, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (15616, 9, NULL, 111.33, 112, 1472, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15617, 10, NULL, 122, 185, 1472, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15618, 11, NULL, 152, 130, 1472, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15619, 1, NULL, 51, 472, 1473, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15620, 2, NULL, 53, 236, 1473, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15621, 3, NULL, 54.5, 24, 1473, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15622, 4, NULL, 78, 216, 1473, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15623, 5, NULL, 97.5, 375, 1473, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15624, 6, NULL, 119.5, 265, 1473, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15625, 7, NULL, 105.5, 197, 1473, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15626, 8, NULL, 132, 71, 1473, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15627, 9, NULL, 145, 299, 1473, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15628, 1, NULL, 48, 317, 1474, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15629, 2, NULL, 72.33, 236, 1474, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15630, 3, NULL, 111.33, 339, 1474, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15631, 4, NULL, 127.33, 442, 1474, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15632, 5, NULL, 130, 221, 1474, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15633, 6, NULL, 150, 472, 1474, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15634, 7, NULL, 235, 60, 1474, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15635, 1, NULL, 43.67, 236, 1475, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15636, 2, NULL, 68.67, 216, 1475, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15637, 3, NULL, 71, 24, 1475, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15638, 4, NULL, 71.67, 107, 1475, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15639, 5, NULL, 110, 79, 1475, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15640, 6, NULL, 111, 472, 1475, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15641, 7, NULL, 121, 9, 1475, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15642, 8, NULL, 124, 197, 1475, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15643, 9, NULL, 128, 265, 1475, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15644, 10, NULL, 198, 71, 1475, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15645, 1, NULL, 162.75, 479, 1476, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15646, 2, NULL, 181.5, 236, 1476, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15647, 3, NULL, 222.25, 333, 1476, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15648, 4, NULL, 252.25, 424, 1476, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15649, 5, NULL, 266.25, 345, 1476, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15650, 6, NULL, 329, 79, 1476, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15651, 7, NULL, 369, 440, 1476, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15652, 8, NULL, 383.5, 218, 1476, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15653, 1, NULL, 58, 137, 1477, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15654, 2, NULL, 60, 339, 1477, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15655, 3, NULL, 68, 408, 1477, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15656, 4, NULL, 87, 30, 1477, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15657, 5, NULL, 93, 39, 1477, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15658, 1, NULL, 44, 465, 1478, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15659, 2, NULL, 87, 24, 1478, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15660, 3, NULL, 87.33, 339, 1478, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15661, 4, NULL, 89.67, 63, 1478, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15662, 5, NULL, 94.33, 446, 1478, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15663, 6, NULL, 100.33, 128, 1478, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15664, 7, NULL, 102.67, 283, 1478, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15665, 8, NULL, 105.33, 30, 1478, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15666, 9, NULL, 136, 112, 1478, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15667, 10, NULL, 137.33, 216, 1478, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15668, 11, NULL, 178, 412, 1478, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15669, 12, NULL, 238, 413, 1478, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15670, 1, NULL, 17, 472, 1071, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15671, 2, NULL, 23, 236, 1071, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15672, 3, NULL, 38, 9, 1071, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15673, 4, NULL, 42, 107, 1071, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15674, 5, NULL, 46, 216, 1071, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15675, 6, NULL, 61, 71, 1071, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15676, 7, NULL, 63.67, 24, 1071, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15677, 8, NULL, 80, 79, 1071, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15678, 9, NULL, 103.33, 41, 1071, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15679, 10, NULL, 125, 88, 1071, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15680, 11, NULL, 143.33, 197, 1071, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15681, 12, NULL, 225, 299, 1071, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15682, 1, NULL, 32.33, 401, 1479, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15683, 2, NULL, 40.33, 43, 1479, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15684, 3, NULL, 49, 427, 1479, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15685, 4, NULL, 52.67, 293, 1479, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15686, 5, NULL, 63.33, 44, 1479, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15687, 6, NULL, 113.33, 133, 1479, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15688, 7, NULL, 121.33, 18, 1479, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15689, 8, NULL, 124.67, 79, 1479, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15690, 9, NULL, 145, 54, 1479, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15691, 10, NULL, 171.33, 399, 1479, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15692, 1, NULL, 25.33, 465, 1480, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15693, 2, NULL, 26, 464, 1480, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15694, 3, NULL, 29.33, 339, 1480, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15695, 4, NULL, 30.33, 150, 1480, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15696, 5, NULL, 37, 472, 1480, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15697, 6, NULL, 40.33, 128, 1480, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15698, 7, NULL, 45, 210, 1480, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15699, 8, NULL, 48, 63, 1480, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15700, 9, NULL, 73.67, 442, 1480, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15701, 10, NULL, 99.33, 283, 1480, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15702, 11, NULL, 123.67, 30, 1480, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15703, 12, NULL, 197.33, 146, 1480, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15704, 1, NULL, 37.67, 277, 1481, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15705, 2, NULL, 39.67, 472, 1481, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15706, 3, NULL, 48.33, 266, 1481, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15707, 4, NULL, 59.33, 424, 1481, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15708, 5, NULL, 70, 108, 1481, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15709, 6, NULL, 77.33, 54, 1481, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15710, 7, NULL, 109, 470, 1481, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15711, 8, NULL, 186, 242, 1481, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15712, 9, NULL, 232.33, 376, 1481, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15713, 1, NULL, 50.5, 479, 1482, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15714, 2, NULL, 85.75, 236, 1482, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15715, 3, NULL, 91.25, 84, 1482, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15716, 4, NULL, 103.75, 424, 1482, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15717, 5, NULL, 106.75, 333, 1482, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15718, 6, NULL, 161.25, 79, 1482, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15719, 1, NULL, 11.33, 339, 1483, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15720, 2, NULL, 17, 464, 1483, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15721, 3, NULL, 18, 277, 1483, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15722, 4, NULL, 24, 141, 1483, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15723, 5, NULL, 33.33, 63, 1483, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15724, 6, NULL, 41, 438, 1483, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15725, 7, NULL, 42, 412, 1483, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15726, 8, NULL, 45.67, 112, 1483, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15727, 9, NULL, 47.33, 446, 1483, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15728, 10, NULL, 49, 413, 1483, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15729, 11, NULL, 113, 385, 1483, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15730, 1, NULL, 19, 339, 1484, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15731, 2, NULL, 29.67, 277, 1484, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15732, 3, NULL, 36.33, 30, 1484, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15733, 4, NULL, 42.33, 340, 1484, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15734, 5, NULL, 55.33, 266, 1484, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15735, 6, NULL, 66, 39, 1484, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15736, 7, NULL, 74.33, 79, 1484, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15737, 8, NULL, 81.33, 401, 1484, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15738, 9, NULL, 89.67, 470, 1484, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15739, 10, NULL, 93.33, 54, 1484, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15740, 11, NULL, 97, 236, 1484, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15741, 12, NULL, 102, 424, 1484, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15742, 13, NULL, 109, 151, 1484, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15743, 14, NULL, 119, 242, 1484, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15744, 15, NULL, 125, 451, 1484, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15745, 1, NULL, 16, 236, 1485, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15746, 2, NULL, 17.67, 472, 1485, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15747, 3, NULL, 23.33, 24, 1485, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15748, 4, NULL, 36.33, 9, 1485, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15749, 5, NULL, 47, 197, 1485, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15750, 6, NULL, 49, 71, 1485, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15751, 7, NULL, 50.33, 216, 1485, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15752, 8, NULL, 51.67, 79, 1485, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15753, 9, NULL, 58, 237, 1485, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15754, 10, NULL, 66.33, 41, 1485, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15755, 11, NULL, 71, 305, 1485, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15756, 12, NULL, 80, 473, 1485, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15757, 13, NULL, 119.33, 299, 1485, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15758, 14, NULL, 136, 265, 1485, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15759, 1, NULL, 48.67, 43, 1486, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15760, 2, NULL, 93.33, 266, 1486, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15761, 3, NULL, 103.67, 293, 1486, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15762, 4, NULL, 119.33, 83, 1486, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15763, 5, NULL, 123, 18, 1486, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15764, 6, NULL, 127, 133, 1486, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15765, 7, NULL, 133, 79, 1486, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15766, 8, NULL, 138, 451, 1486, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15767, 9, NULL, 141.67, 265, 1486, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15768, 10, NULL, 154, 54, 1486, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15769, 11, NULL, 205.33, 399, 1486, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15770, 1, NULL, 19, 464, 1487, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (15771, 2, NULL, 21, 137, 1487, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15772, 3, NULL, 22, 339, 1487, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15773, 4, NULL, 47.5, 472, 1487, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15774, 5, NULL, 53.25, 340, 1487, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15775, 6, NULL, 57.5, 277, 1487, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15776, 7, NULL, 59.5, 465, 1487, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15777, 8, NULL, 61, 30, 1487, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15778, 9, NULL, 61.75, 117, 1487, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15779, 10, NULL, 62.25, 235, 1487, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15780, 11, NULL, 66.5, 236, 1487, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15781, 12, NULL, 77.5, 128, 1487, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15782, 13, NULL, 89, 112, 1487, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15783, 14, NULL, 91.75, 9, 1487, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15784, 15, NULL, 93.5, 141, 1487, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15785, 16, NULL, 95, 63, 1487, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15786, 17, NULL, 103.5, 283, 1487, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15787, 18, NULL, 138.5, 440, 1487, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15788, 19, NULL, 186, 327, 1487, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15789, 1, NULL, 12.33, 339, 1488, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15790, 2, NULL, 26.33, 277, 1488, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15791, 3, NULL, 26.67, 39, 1488, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15792, 4, NULL, 27.33, 464, 1488, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15793, 5, NULL, 29, 340, 1488, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15794, 6, NULL, 37.67, 465, 1488, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15795, 7, NULL, 45.33, 345, 1488, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15796, 8, NULL, 86, 283, 1488, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15797, 9, NULL, 89.33, 108, 1488, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15798, 10, NULL, 91.33, 451, 1488, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15799, 11, NULL, 97, 470, 1488, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15800, 12, NULL, 123.33, 152, 1488, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15801, 13, NULL, 123.67, 335, 1488, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15802, 14, NULL, 134.67, 376, 1488, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15803, 15, NULL, 146.67, 449, 1488, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15804, 16, NULL, 186.67, 448, 1488, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15805, 1, NULL, 8.5, 339, 1489, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15806, 2, NULL, 20, 340, 1489, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15807, 3, NULL, 24.5, 472, 1489, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15808, 4, NULL, 27.5, 277, 1489, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15809, 5, NULL, 30.25, 464, 1489, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15810, 6, NULL, 32, 71, 1489, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15811, 7, NULL, 41.5, 345, 1489, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15812, 8, NULL, 43, 465, 1489, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15813, 9, NULL, 47, 283, 1489, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15814, 10, NULL, 55, 108, 1489, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15815, 11, NULL, 55.5, 451, 1489, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15816, 12, NULL, 57, 278, 1489, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15817, 13, NULL, 58.75, 424, 1489, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15818, 14, NULL, 64, 63, 1489, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15819, 15, NULL, 155, 376, 1489, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15820, 1, NULL, 29.67, 236, 1490, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15821, 2, NULL, 46, 479, 1490, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15822, 3, NULL, 84.33, 339, 1490, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15823, 4, NULL, 85.33, 345, 1490, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15824, 5, NULL, 106, 237, 1490, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15825, 6, NULL, 132.33, 9, 1490, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15826, 7, NULL, 172.67, 197, 1490, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15827, 8, NULL, 196, 472, 1490, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15828, 9, NULL, 220, 128, 1490, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15829, 10, NULL, 245, 79, 1490, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15830, 1, NULL, 28.5, 317, 1491, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15831, 2, NULL, 31.25, 479, 1491, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15832, 3, NULL, 39, 236, 1491, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15833, 4, NULL, 78.5, 424, 1491, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15834, 5, NULL, 79.75, 84, 1491, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15835, 6, NULL, 95.25, 197, 1491, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15836, 7, NULL, 98, 333, 1491, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15837, 8, NULL, 116.75, 79, 1491, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15838, 9, NULL, 134.25, 9, 1491, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15839, 1, NULL, 25.67, 137, 1492, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15840, 2, NULL, 27.67, 418, 1492, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15841, 3, NULL, 43, 339, 1492, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15842, 4, NULL, 46, 472, 1492, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15843, 5, NULL, 49.33, 277, 1492, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15844, 6, NULL, 50.67, 401, 1492, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15845, 7, NULL, 77.67, 451, 1492, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15846, 8, NULL, 82.67, 133, 1492, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15847, 9, NULL, 83.67, 39, 1492, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15848, 10, NULL, 86, 266, 1492, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15849, 11, NULL, 93.33, 424, 1492, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15850, 12, NULL, 114.33, 228, 1492, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15851, 13, NULL, 132.33, 79, 1492, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15852, 1, NULL, 19, 464, 1493, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15853, 2, NULL, 26, 465, 1493, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15854, 3, NULL, 27.3, 63, 1493, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15855, 4, NULL, 31.67, 339, 1493, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15856, 5, NULL, 36, 412, 1493, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15857, 6, NULL, 39.33, 30, 1493, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15858, 7, NULL, 53, 112, 1493, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15859, 8, NULL, 60, 277, 1493, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15860, 9, NULL, 61, 340, 1493, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15861, 10, NULL, 70, 128, 1493, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15862, 11, NULL, 92.33, 413, 1493, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15863, 12, NULL, 105, 64, 1493, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15864, 1, NULL, 28.67, 472, 1494, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15865, 2, NULL, 30, 236, 1494, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15866, 3, NULL, 38, 197, 1494, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15867, 4, NULL, 48, 24, 1494, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15868, 5, NULL, 52.33, 9, 1494, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15869, 6, NULL, 58.33, 41, 1494, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15870, 7, NULL, 60, 79, 1494, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15871, 8, NULL, 63, 71, 1494, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15872, 9, NULL, 69.33, 25, 1494, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15873, 10, NULL, 80, 237, 1494, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15874, 11, NULL, 105, 265, 1494, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15875, 12, NULL, 131, 212, 1494, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15876, 1, NULL, 45.33, 472, 1495, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15877, 2, NULL, 51.67, 83, 1495, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15878, 3, NULL, 57.33, 18, 1495, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15879, 4, NULL, 58.33, 79, 1495, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15880, 5, NULL, 61.67, 451, 1495, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15881, 6, NULL, 69, 293, 1495, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15882, 7, NULL, 70, 402, 1495, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15883, 8, NULL, 72, 424, 1495, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15884, 9, NULL, 92.33, 399, 1495, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15885, 10, NULL, 95.67, 266, 1495, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15886, 11, NULL, 123, 133, 1495, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15887, 12, NULL, 143, 228, 1495, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15888, 13, NULL, 182, 96, 1495, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15889, 1, NULL, 10, 339, 1496, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15890, 2, NULL, 14.5, 464, 1496, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15891, 3, NULL, 15.5, 340, 1496, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15892, 4, NULL, 15.67, 277, 1496, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15893, 5, NULL, 16.67, 40, 1496, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15894, 6, NULL, 19.67, 465, 1496, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15895, 7, NULL, 21.33, 248, 1496, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15896, 8, NULL, 22.67, 39, 1496, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15897, 9, NULL, 23, 424, 1496, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15898, 10, NULL, 33, 451, 1496, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15899, 11, NULL, 41.5, 412, 1496, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15900, 12, NULL, 46.33, 112, 1496, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (15901, 12, NULL, 46.33, 249, 1496, 9);
+INSERT INTO
+    DRL_result
+VALUES
+    (15902, 14, NULL, 53.5, 260, 1496, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15903, 15, NULL, 65.67, 283, 1496, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15904, 16, NULL, 67.33, 278, 1496, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15905, 17, NULL, 71.33, 413, 1496, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15906, 1, NULL, 16.33, 137, 1497, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (15907, 2, NULL, 23, 221, 1497, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (15908, 3, NULL, 24, 339, 1497, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15909, 4, NULL, 26.33, 236, 1497, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15910, 5, NULL, 34.33, 128, 1497, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15911, 6, NULL, 37.33, 401, 1497, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15912, 7, NULL, 37.67, 464, 1497, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15913, 8, NULL, 38.67, 277, 1497, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15914, 9, NULL, 46, 472, 1497, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15915, 10, NULL, 46.67, 412, 1497, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15916, 11, NULL, 51.33, 345, 1497, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15917, 12, NULL, 56.33, 79, 1497, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15918, 13, NULL, 67, 24, 1497, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15919, 14, NULL, 73.67, 63, 1497, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15920, 15, NULL, 74.67, 71, 1497, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15921, 16, NULL, 78.33, 197, 1497, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15922, 17, NULL, 81.67, 283, 1497, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15923, 18, NULL, 86, 141, 1497, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15924, 17, NULL, 227.67, 97, 1359, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15925, 1, NULL, 27.5, 479, 1498, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15926, 2, NULL, 49.25, 339, 1498, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15927, 3, NULL, 61, 9, 1498, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15928, 4, NULL, 61.5, 197, 1498, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15929, 5, NULL, 63.25, 236, 1498, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15930, 6, NULL, 83, 472, 1498, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15931, 7, NULL, 113.25, 117, 1498, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15932, 8, NULL, 132, 71, 1498, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15933, 9, NULL, 140, 128, 1498, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15934, 1, NULL, 42.5, 236, 324, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15935, 2, NULL, 50.75, 317, 324, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15936, 3, NULL, 54, 333, 324, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15937, 4, NULL, 64.75, 194, 324, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15938, 5, NULL, 72, 479, 324, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15939, 6, NULL, 80.5, 197, 324, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15940, 7, NULL, 86.75, 172, 324, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15941, 8, NULL, 94.75, 84, 324, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15942, 9, NULL, 111, 424, 324, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15943, 10, NULL, 139.75, 79, 324, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15944, 1, NULL, 22.67, 236, 1500, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15945, 2, NULL, 44, 298, 1500, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15946, 3, NULL, 48.67, 472, 1500, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15947, 4, NULL, 49.67, 237, 1500, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15948, 5, NULL, 50, 197, 1500, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15949, 6, NULL, 51, 9, 1500, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15950, 7, NULL, 52.67, 79, 1500, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15951, 8, NULL, 53.67, 24, 1500, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15952, 9, NULL, 80.33, 71, 1500, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15953, 10, NULL, 114, 473, 1500, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15954, 1, NULL, 51.67, 221, 1501, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15955, 2, NULL, 54.33, 401, 1501, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15956, 3, NULL, 60.33, 472, 1501, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15957, 4, NULL, 76.33, 79, 1501, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15958, 5, NULL, 78.67, 399, 1501, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15959, 6, NULL, 79.67, 225, 1501, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15960, 7, NULL, 92.33, 266, 1501, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15961, 8, NULL, 98, 402, 1501, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15962, 9, NULL, 101.67, 400, 1501, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15963, 10, NULL, 125.33, 141, 1501, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15964, 11, NULL, 125.67, 242, 1501, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15965, 12, NULL, 126.67, 54, 1501, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15966, 13, NULL, 155, 424, 1501, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15967, 1, NULL, 33.5, 137, 1502, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (15968, 2, NULL, 34.75, 399, 1502, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (15969, 3, NULL, 36, 221, 1502, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15970, 4, NULL, 36.5, 317, 1502, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15971, 5, NULL, 63.25, 418, 1502, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15972, 6, NULL, 56, 242, 1502, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15973, 7, NULL, 59.75, 79, 1502, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15974, 8, NULL, 64.5, 350, 1502, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15975, 9, NULL, 70.25, 487, 1502, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15976, 10, NULL, 74.25, 401, 1502, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15977, 11, NULL, 78, 210, 1502, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15978, 12, NULL, 85, 335, 1502, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15979, 13, NULL, 89.75, 369, 1502, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15980, 14, NULL, 93.5, 271, 1502, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15981, 15, NULL, 96, 75, 1502, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15982, 16, NULL, 104.75, 82, 1502, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15983, 1, NULL, 24.67, 464, 1503, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (15984, 2, NULL, 30.33, 412, 1503, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15985, 3, NULL, 36.67, 71, 1503, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15986, 4, NULL, 38, 339, 1503, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (15987, 5, NULL, 46, 465, 1503, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (15988, 6, NULL, 48, 472, 1503, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (15989, 7, NULL, 54, 236, 1503, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (15990, 8, NULL, 64, 411, 1503, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (15991, 9, NULL, 78.33, 108, 1503, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (15992, 10, NULL, 80.33, 112, 1503, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (15993, 11, NULL, 83.33, 269, 1503, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (15994, 12, NULL, 85.67, 440, 1503, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (15995, 13, NULL, 86, 128, 1503, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (15996, 14, NULL, 104, 218, 1503, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (15997, 1, NULL, 38.5, 79, 1504, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (15998, 2, NULL, 43, 71, 1504, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (15999, 3, NULL, 44, 236, 1504, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16000, 4, NULL, 45, 472, 1504, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16001, 5, NULL, 49, 237, 1504, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16002, 6, NULL, 59.5, 305, 1504, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16003, 7, NULL, 61, 197, 1504, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16004, 8, NULL, 62, 473, 1504, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16005, 9, NULL, 70.5, 24, 1504, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16006, 10, NULL, 93, 41, 1504, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16007, 11, NULL, 111, 265, 1504, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16008, 12, NULL, 130, 299, 1504, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16009, 13, NULL, 162, 306, 1504, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16010, 1, NULL, 26.67, 317, 1505, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16011, 2, NULL, 27.33, 137, 1505, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16012, 3, NULL, 31.67, 221, 1505, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16013, 4, NULL, 35, 210, 1505, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16014, 5, NULL, 35.67, 266, 1505, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16015, 6, NULL, 36, 350, 1505, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16016, 7, NULL, 74, 242, 1505, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16017, 8, NULL, 47, 487, 1505, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16018, 9, NULL, 55.67, 75, 1505, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16019, 10, NULL, 60.33, 79, 1505, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16020, 11, NULL, 69.33, 369, 1505, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16021, 12, NULL, 72, 225, 1505, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16022, 13, NULL, 72.67, 82, 1505, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16023, 14, NULL, 81.67, 401, 1505, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16024, 15, NULL, 101, 242, 1505, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16025, 16, NULL, 111.67, 43, 1505, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16026, 1, NULL, 41, 401, 1506, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16027, 2, NULL, 43, 43, 1506, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16028, 3, NULL, 43.33, 75, 1506, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16029, 4, NULL, 44, 487, 1506, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16030, 5, NULL, 45.33, 79, 1506, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16031, 6, NULL, 48.33, 293, 1506, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16032, 7, NULL, 50.33, 240, 1506, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16033, 8, NULL, 50.67, 266, 1506, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16034, 9, NULL, 51.67, 101, 1506, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16035, 10, NULL, 57.33, 242, 1506, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16036, 11, NULL, 62.33, 369, 1506, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16037, 12, NULL, 65, 82, 1506, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16038, 13, NULL, 85.33, 267, 1506, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16039, 14, NULL, 86, 44, 1506, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16040, 15, NULL, 103.67, 402, 1506, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16041, 16, NULL, 0, 357, 1506, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16042, 1, NULL, 9, 137, 1507, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16043, 2, NULL, 9.67, 412, 1507, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16044, 3, NULL, 11, 465, 1507, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16045, 4, NULL, 16, 71, 1507, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16046, 5, NULL, 20.67, 340, 1507, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16047, 6, NULL, 21, 464, 1507, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16048, 7, NULL, 24.33, 30, 1507, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16049, 8, NULL, 26, 339, 1507, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16050, 9, NULL, 41.67, 242, 1507, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16051, 10, NULL, 56.67, 277, 1507, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16052, 11, NULL, 58.33, 260, 1507, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16053, 12, NULL, 50.67, 266, 1507, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16054, 13, NULL, 60.33, 335, 1507, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16055, 14, NULL, 62, 128, 1507, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16056, 15, NULL, 93, 348, 1507, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16057, 1, NULL, 14.33, 137, 1508, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16058, 2, NULL, 20, 221, 1508, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16059, 3, NULL, 28.33, 71, 1508, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16060, 4, NULL, 32.67, 43, 1508, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16061, 5, NULL, 46.33, 401, 1508, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16062, 6, NULL, 50.67, 157, 1508, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16063, 8, NULL, 41.67, 487, 1508, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16064, 9, NULL, 53, 79, 1508, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16065, 10, NULL, 54.67, 75, 1508, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16066, 11, NULL, 55, 242, 1508, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16067, 12, NULL, 60.67, 82, 1508, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16068, 13, NULL, 72.67, 243, 1508, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16069, 14, NULL, 81.33, 44, 1508, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16070, 15, NULL, 98.33, 369, 1508, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16071, 1, NULL, 23.33, 339, 1509, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16072, 2, NULL, 23.67, 399, 1509, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16073, 3, NULL, 25.33, 137, 1509, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16074, 4, NULL, 31.67, 266, 1509, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16075, 5, NULL, 36, 340, 1509, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16076, 6, NULL, 39.67, 487, 1509, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16077, 7, NULL, 43.67, 79, 1509, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16078, 8, NULL, 48, 75, 1509, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16079, 9, NULL, 55.33, 242, 1509, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16080, 10, NULL, 83.33, 76, 1509, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16081, 11, NULL, 85, 369, 1509, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16082, 12, NULL, 118.33, 267, 1509, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16083, 13, NULL, 125.33, 243, 1509, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16084, 1, NULL, 10.67, 339, 1510, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16085, 2, NULL, 23.67, 71, 1510, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16086, 3, NULL, 26.33, 345, 1510, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16087, 4, NULL, 27.67, 340, 1510, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16088, 5, NULL, 28.67, 197, 1510, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16089, 6, NULL, 31, 464, 1510, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16090, 7, NULL, 39, 412, 1510, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16091, 8, NULL, 40.67, 79, 1510, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16092, 9, NULL, 50, 411, 1510, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16093, 10, NULL, 54.67, 112, 1510, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16094, 11, NULL, 58, 30, 1510, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16095, 12, NULL, 63, 440, 1510, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16096, 13, NULL, 90.67, 385, 1510, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16097, 14, NULL, 153, 218, 1510, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16098, 1, NULL, 20.67, 71, 1511, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16099, 2, NULL, 25.67, 197, 1511, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16100, 3, NULL, 29.33, 237, 1511, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16101, 4, NULL, 37.67, 236, 1511, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16102, 5, NULL, 55, 79, 1511, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16103, 6, NULL, 56.67, 472, 1511, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16104, 7, NULL, 60, 24, 1511, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16105, 8, NULL, 76, 305, 1511, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16106, 9, NULL, 80.33, 265, 1511, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16107, 10, NULL, 85.67, 299, 1511, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16108, 11, NULL, 91.33, 41, 1511, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16109, 12, NULL, 103.33, 306, 1511, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16110, 13, NULL, 160, 88, 1511, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16111, 14, NULL, 180, 107, 1511, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16112, 1, NULL, 26.33, 179, 1512, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16113, 2, NULL, 27.67, 71, 1512, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16114, 3, NULL, 35.33, 50, 1512, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16115, 4, NULL, 51.33, 333, 1512, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16116, 5, NULL, 57.33, 479, 1512, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16117, 6, NULL, 57.67, 392, 1512, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16118, 7, NULL, 64.67, 424, 1512, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16119, 8, NULL, 65.33, 4, 1512, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16120, 1, NULL, 16, 236, 1513, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16121, 2, NULL, 20, 197, 1513, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16122, 3, NULL, 21, 71, 1513, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16123, 4, NULL, 27, 472, 1513, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16124, 5, NULL, 32, 24, 1513, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16125, 6, NULL, 48.67, 305, 1513, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16126, 7, NULL, 74.33, 473, 1513, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16127, 8, NULL, 77.33, 212, 1513, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16128, 9, NULL, 87.67, 88, 1513, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16129, 10, NULL, 94.67, 41, 1513, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16130, 11, NULL, 100.67, 299, 1513, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16131, 12, NULL, 105, 265, 1513, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16132, 13, NULL, 113, 42, 1513, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16133, 1, NULL, 15, 339, 1514, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16134, 2, NULL, 16, 137, 1514, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16135, 3, NULL, 22.25, 464, 1514, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16136, 4, NULL, 28, 71, 1514, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16137, 5, NULL, 35.5, 345, 1514, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16138, 6, NULL, 35.75, 108, 1514, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16139, 7, NULL, 37.25, 385, 1514, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16140, 8, NULL, 42, 141, 1514, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16141, 9, NULL, 49.5, 210, 1514, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16142, 10, NULL, 58.75, 472, 1514, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16143, 11, NULL, 86.75, 273, 1514, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16144, 12, NULL, 102.5, 41, 1514, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16145, 13, NULL, 114.75, 112, 1514, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16146, 14, NULL, 0, 340, 1514, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16147, 1, NULL, 23.67, 150, 1515, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16148, 2, NULL, 26, 339, 1515, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16149, 3, NULL, 27, 277, 1515, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16150, 4, NULL, 29.67, 63, 1515, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16151, 5, NULL, 31.67, 221, 1515, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16152, 6, NULL, 34, 128, 1515, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16153, 7, NULL, 34.33, 472, 1515, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16154, 8, NULL, 39, 412, 1515, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16155, 9, NULL, 50.67, 9, 1515, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16156, 10, NULL, 66.33, 112, 1515, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16157, 11, NULL, 67.33, 283, 1515, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16158, 12, NULL, 70.67, 260, 1515, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16159, 13, NULL, 72, 269, 1515, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16160, 1, NULL, 13.5, 335, 1516, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16161, 2, NULL, 16.75, 376, 1516, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16162, 3, NULL, 18.25, 385, 1516, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16163, 4, NULL, 23, 137, 1516, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16164, 5, NULL, 26.75, 300, 1516, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16165, 6, NULL, 27.25, 139, 1516, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16166, 7, NULL, 27.5, 75, 1516, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16167, 8, NULL, 33.75, 412, 1516, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16168, 9, NULL, 34.25, 467, 1516, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16169, 10, NULL, 38.75, 63, 1516, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16170, 11, NULL, 51.5, 399, 1516, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16171, 12, NULL, 52, 242, 1516, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16172, 1, NULL, 23.5, 75, 1517, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16173, 2, NULL, 39, 412, 1517, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16174, 3, NULL, 40, 385, 1517, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16175, 4, NULL, 44.5, 137, 1517, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16176, 5, NULL, 45, 26, 1517, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16177, 6, NULL, 48, 242, 1517, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16178, 7, NULL, 54.5, 200, 1517, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16179, 8, NULL, 55, 288, 1517, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16180, 9, NULL, 61, 339, 1517, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16181, 10, NULL, 90, 210, 1517, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16182, 11, NULL, 127.5, 255, 1517, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16183, 1, NULL, 18.5, 236, 1518, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16184, 2, NULL, 20.5, 137, 1518, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16185, 3, NULL, 31, 399, 1518, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16186, 4, NULL, 33, 311, 1518, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16187, 5, NULL, 35.5, 472, 1518, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16188, 6, NULL, 38, 288, 1518, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16189, 7, NULL, 41, 43, 1518, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16190, 8, NULL, 42.5, 373, 1518, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16191, 9, NULL, 47, 210, 1518, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16192, 1, NULL, 31.25, 385, 1519, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16193, 2, NULL, 31.5, 236, 1519, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16194, 3, NULL, 35, 467, 1519, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16195, 4, NULL, 37.75, 300, 1519, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16196, 5, NULL, 53.75, 242, 1519, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16197, 6, NULL, 55.5, 412, 1519, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16198, 7, NULL, 59.75, 75, 1519, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16199, 8, NULL, 60.75, 472, 1519, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16200, 9, NULL, 81.5, 147, 1519, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16201, 10, NULL, 94.25, 210, 1519, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16202, 11, NULL, 102, 157, 1519, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16203, 1, NULL, 25.5, 236, 1520, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16204, 2, NULL, 32, 75, 1520, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16205, 3, NULL, 36.25, 385, 1520, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16206, 4, NULL, 37, 412, 1520, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (16207, 4, NULL, 37, 467, 1520, 13);
+INSERT INTO
+    DRL_result
+VALUES
+    (16208, 6, NULL, 41.75, 472, 1520, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16209, 7, NULL, 43, 300, 1520, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16210, 8, NULL, 48, 147, 1520, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16211, 9, NULL, 48.25, 242, 1520, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16212, 10, NULL, 80.75, 157, 1520, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16213, 11, NULL, 106.75, 210, 1520, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16214, 1, NULL, 11.5, 300, 1521, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16215, 2, NULL, 13.75, 242, 1521, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16216, 3, NULL, 22.5, 385, 1521, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16217, 4, NULL, 24.5, 412, 1521, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16218, 5, NULL, 25.75, 236, 1521, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16219, 6, NULL, 26.5, 467, 1521, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16220, 7, NULL, 39, 472, 1521, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16221, 8, NULL, 43, 75, 1521, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16222, 9, NULL, 51.5, 147, 1521, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16223, 10, NULL, 55, 210, 1521, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16224, 11, NULL, 64, 157, 1521, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16225, 1, NULL, 13.75, 237, 1522, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16226, 1, NULL, 13.75, 376, 1522, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16227, 3, NULL, 16, 75, 1522, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16228, 4, NULL, 20.25, 236, 1522, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16229, 5, NULL, 23.25, 412, 1522, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16230, 5, NULL, 23.25, 137, 1522, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16231, 7, NULL, 38, 63, 1522, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16232, 8, NULL, 43.5, 200, 1522, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16233, 9, NULL, 47, 242, 1522, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16234, 10, NULL, 47.25, 472, 1522, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16235, 11, NULL, 52, 252, 1522, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16236, 12, NULL, 59, 210, 1522, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16237, 13, NULL, 60, 122, 1522, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16238, 14, NULL, 64.75, 147, 1522, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16239, 1, NULL, 24, 289, 1523, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16240, 2, NULL, 29.5, 288, 1523, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16241, 3, NULL, 37.5, 183, 1523, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16242, 4, NULL, 52, 4, 1523, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16243, 5, NULL, 62, 133, 1523, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16244, 6, NULL, 81, 407, 1523, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16245, 7, NULL, 88, 28, 1523, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16246, 1, NULL, 16.25, 467, 1524, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16247, 2, NULL, 32, 452, 1524, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16248, 3, NULL, 35, 399, 1524, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16249, 4, NULL, 40, 147, 1524, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16250, 5, NULL, 76, 182, 1524, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16251, 1, NULL, 20.25, 376, 1525, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16252, 2, NULL, 22.25, 385, 1525, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16253, 3, NULL, 25, 75, 1525, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16254, 4, NULL, 34.25, 137, 1525, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16255, 5, NULL, 44, 472, 1525, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16256, 6, NULL, 46.75, 63, 1525, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16257, 7, NULL, 57.5, 147, 1525, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16258, 8, NULL, 72, 122, 1525, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16259, 9, NULL, 87, 210, 1525, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16260, 10, NULL, 104.5, 157, 1525, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16261, 1, NULL, 10.75, 376, 1526, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16262, 2, NULL, 11.5, 385, 1526, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16263, 3, NULL, 15, 75, 1526, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16264, 4, NULL, 17.5, 63, 1526, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16265, 5, NULL, 18.25, 137, 1526, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16266, 6, NULL, 22, 472, 1526, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16267, 7, NULL, 35, 147, 1526, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16268, 8, NULL, 40, 210, 1526, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16269, 9, NULL, 50, 122, 1526, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16270, 10, NULL, 53, 117, 1526, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16271, 11, NULL, 57, 157, 1526, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16272, 1, NULL, 29, 79, 1527, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16273, 2, NULL, 34, 386, 1527, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16274, 3, NULL, 40, 385, 1527, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16275, 4, NULL, 52.5, 137, 1527, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16276, 5, NULL, 53, 200, 1527, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16277, 6, NULL, 58, 412, 1527, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16278, 7, NULL, 60, 472, 1527, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16279, 8, NULL, 69, 63, 1527, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16280, 9, NULL, 74, 147, 1527, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16281, 10, NULL, 80.5, 122, 1527, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16282, 11, NULL, 108, 210, 1527, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16283, 1, NULL, 28.75, 79, 1528, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16284, 2, NULL, 29.25, 137, 1528, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16285, 3, NULL, 31.25, 386, 1528, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16286, 4, NULL, 40, 200, 1528, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16287, 5, NULL, 40.25, 385, 1528, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16288, 6, NULL, 44.5, 412, 1528, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16289, 7, NULL, 49.75, 147, 1528, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16290, 8, NULL, 51.5, 122, 1528, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16291, 9, NULL, 52.25, 472, 1528, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16292, 10, NULL, 64.25, 63, 1528, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16293, 11, NULL, 82.5, 210, 1528, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16294, 1, NULL, 22, 137, 1529, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16295, 2, NULL, 28.5, 412, 1529, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16296, 3, NULL, 31.25, 385, 1529, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16297, 4, NULL, 33.25, 236, 1529, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16298, 5, NULL, 40.5, 79, 1529, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16299, 6, NULL, 56, 147, 1529, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16300, 7, NULL, 59.5, 75, 1529, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16301, 8, NULL, 63.25, 452, 1529, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16302, 9, NULL, 68, 467, 1529, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16303, 1, NULL, 22, 236, 1530, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16304, 2, NULL, 28, 385, 1530, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16305, 3, NULL, 45.25, 79, 1530, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16306, 4, NULL, 47.5, 137, 1530, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16307, 5, NULL, 64.25, 412, 1530, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16308, 6, NULL, 80.5, 147, 1530, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16309, 7, NULL, 90.75, 467, 1530, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16310, 8, NULL, 100.75, 452, 1530, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16311, 9, NULL, 140, 75, 1530, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16312, 1, NULL, 27.25, 236, 1531, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16313, 2, NULL, 54.5, 385, 1531, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16314, 3, NULL, 113.75, 79, 1531, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16315, 4, NULL, 117.5, 137, 1531, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16316, 5, NULL, 158, 84, 1531, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16317, 6, NULL, 238.5, 147, 1531, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16318, 1, NULL, 15.33, 376, 1532, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16319, 2, NULL, 20.67, 236, 1532, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16320, 3, NULL, 25, 63, 1532, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16321, 4, NULL, 25.33, 75, 1532, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16322, 5, NULL, 27.33, 385, 1532, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16323, 6, NULL, 33.33, 399, 1532, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16324, 7, NULL, 48, 137, 1532, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16325, 8, NULL, 49.33, 412, 1532, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16326, 9, NULL, 54.67, 311, 1532, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16327, 10, NULL, 56.67, 147, 1532, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16328, 11, NULL, 62, 122, 1532, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16329, 12, NULL, 63.67, 200, 1532, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16330, 13, NULL, 92.67, 88, 1532, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16331, 14, NULL, 101.33, 169, 1532, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16332, 1, NULL, 12, 236, 1533, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16333, 2, NULL, 13.5, 385, 1533, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16334, 3, NULL, 20.5, 399, 1533, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16335, 4, NULL, 21.5, 376, 1533, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16336, 5, NULL, 22.5, 137, 1533, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16337, 6, NULL, 45, 147, 1533, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16338, 7, NULL, 14.25, 472, 1533, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16339, 8, NULL, 31, 63, 1533, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16340, 9, NULL, 33, 311, 1533, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16341, 10, NULL, 38, 386, 1533, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16342, 11, NULL, 44, 122, 1533, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16343, 1, NULL, 16, 137, 1534, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16344, 2, NULL, 27.25, 385, 1534, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16345, 3, NULL, 27.75, 412, 1534, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16346, 4, NULL, 34.5, 311, 1534, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16347, 5, NULL, 47.5, 200, 1534, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16348, 6, NULL, 48.5, 122, 1534, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16349, 7, NULL, 49.25, 472, 1534, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16350, 8, NULL, 53, 63, 1534, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16351, 9, NULL, 54, 252, 1534, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16352, 10, NULL, 60.5, 169, 1534, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16353, 11, NULL, 62.5, 147, 1534, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16354, 12, NULL, 75.75, 157, 1534, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16355, 13, NULL, 83.5, 436, 1534, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16356, 14, NULL, 95.5, 43, 1534, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16357, 1, NULL, 25, 75, 1535, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16358, 2, NULL, 32.5, 399, 1535, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16359, 3, NULL, 40.5, 412, 1535, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16360, 4, NULL, 41, 122, 1535, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16361, 5, NULL, 44.5, 169, 1535, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16362, 6, NULL, 48, 147, 1535, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16363, 7, NULL, 48.5, 252, 1535, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16364, 8, NULL, 63, 210, 1535, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16365, 9, NULL, 64, 157, 1535, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16366, 1, NULL, 26, 412, 1536, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16367, 2, NULL, 27.5, 252, 1536, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16368, 3, NULL, 32, 75, 1536, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16369, 4, NULL, 36.5, 122, 1536, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16370, 5, NULL, 41, 169, 1536, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16371, 6, NULL, 42.5, 399, 1536, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16372, 7, NULL, 47.5, 147, 1536, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16373, 8, NULL, 48, 157, 1536, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16374, 9, NULL, 72, 210, 1536, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16375, 1, NULL, 38.25, 155, 1537, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16376, 2, NULL, 42.75, 236, 1537, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16377, 3, NULL, 45.75, 194, 1537, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16378, 4, NULL, 70, 79, 1537, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16379, 5, NULL, 79.75, 169, 1537, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16380, 6, NULL, 0, 179, 1537, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16381, 1, NULL, 32.5, 210, 1538, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16382, 2, NULL, 41, 228, 1538, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16383, 3, NULL, 58.5, 229, 1538, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16384, 4, NULL, 60.5, 141, 1538, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16385, 5, NULL, 65, 157, 1538, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16386, 1, NULL, 29.5, 137, 1539, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16387, 2, NULL, 32.75, 472, 1539, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16388, 3, NULL, 38, 68, 1539, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16389, 4, NULL, 39, 122, 1539, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16390, 5, NULL, 42, 75, 1539, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16391, 6, NULL, 90, 147, 1539, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16392, 7, NULL, 52, 43, 1539, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16393, 8, NULL, 55, 288, 1539, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16394, 9, NULL, 60, 84, 1539, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16395, 10, NULL, 120, 289, 1539, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16396, 1, NULL, 14, 75, 1540, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16397, 2, NULL, 21, 137, 1540, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16398, 3, NULL, 25, 68, 1540, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16399, 4, NULL, 35, 472, 1540, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16400, 5, NULL, 48, 147, 1540, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16401, 6, NULL, 19, 122, 1540, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16402, 7, NULL, 24, 43, 1540, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16403, 8, NULL, 37, 288, 1540, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16404, 9, NULL, 45, 289, 1540, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16405, 10, NULL, 55, 84, 1540, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16406, 1, NULL, 30, 472, 1541, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16407, 2, NULL, 30.25, 137, 1541, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16408, 3, NULL, 35.5, 311, 1541, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16409, 4, NULL, 42.5, 68, 1541, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16410, 5, NULL, 43.5, 412, 1541, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16411, 6, NULL, 46, 399, 1541, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16412, 7, NULL, 47, 210, 1541, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16413, 8, NULL, 52, 75, 1541, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16414, 9, NULL, 53, 43, 1541, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16415, 10, NULL, 67, 157, 1541, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16416, 11, NULL, 94, 122, 1541, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16417, 12, NULL, 96, 147, 1541, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16418, 1, NULL, 36, 399, 1542, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16419, 2, NULL, 37, 137, 1542, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16420, 3, NULL, 42, 311, 1542, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16421, 4, NULL, 48.67, 210, 1542, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16422, 5, NULL, 49.33, 63, 1542, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16423, 6, NULL, 63.67, 472, 1542, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16424, 7, NULL, 71.5, 412, 1542, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16425, 8, NULL, 72, 43, 1542, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16426, 9, NULL, 81, 68, 1542, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16427, 10, NULL, 89.5, 147, 1542, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16428, 11, NULL, 92.67, 157, 1542, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16429, 12, NULL, 108, 168, 1542, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16430, 13, NULL, 138, 221, 1542, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16431, 14, NULL, 172.5, 222, 1542, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16432, 15, NULL, 176, 158, 1542, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16433, 1, NULL, 13, 137, 1543, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16434, 2, NULL, 18, 467, 1543, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16435, 3, NULL, 24.5, 412, 1543, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16436, 4, NULL, 18, 472, 1543, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16437, 5, NULL, 33.5, 288, 1543, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16438, 6, NULL, 35, 369, 1543, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16439, 7, NULL, 36, 399, 1543, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16440, 8, NULL, 25, 289, 1543, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16441, 9, NULL, 30.5, 68, 1543, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16442, 10, NULL, 35.5, 147, 1543, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16443, 11, NULL, 54, 264, 1543, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16444, 12, NULL, 56.5, 157, 1543, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16445, 13, NULL, 61.5, 84, 1543, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16446, 14, NULL, 63.5, 133, 1543, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16447, 1, NULL, 16, 137, 1544, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16448, 2, NULL, 33.5, 472, 1544, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16449, 3, NULL, 36, 200, 1544, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16450, 4, NULL, 37.5, 68, 1544, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16451, 5, NULL, 44.5, 122, 1544, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16452, 6, NULL, 82, 157, 1544, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16453, 7, NULL, 106, 429, 1544, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16454, 1, NULL, 58.75, 255, 1545, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16455, 2, NULL, 76.75, 147, 1545, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16456, 3, NULL, 92.5, 137, 1545, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16457, 4, NULL, 94, 68, 1545, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16458, 5, NULL, 98, 84, 1545, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16459, 6, NULL, 102, 169, 1545, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16460, 7, NULL, 104, 63, 1545, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16461, 8, NULL, 112, 412, 1545, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16462, 9, NULL, 123, 194, 1545, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16463, 10, NULL, 151.75, 472, 1545, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16464, 1, NULL, 28.5, 255, 1546, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16465, 2, NULL, 38.75, 194, 1546, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16466, 3, NULL, 44.75, 412, 1546, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16467, 4, NULL, 63.5, 84, 1546, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16468, 5, NULL, 64.5, 169, 1546, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16469, 6, NULL, 72, 137, 1546, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16470, 7, NULL, 72.5, 147, 1546, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16471, 8, NULL, 73.5, 68, 1546, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16472, 9, NULL, 95.75, 63, 1546, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16473, 10, NULL, 126.5, 472, 1546, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16474, 1, NULL, 19.75, 236, 1547, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16475, 2, NULL, 58, 98, 1547, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16476, 3, NULL, 94.5, 327, 1547, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16477, 4, NULL, 113, 328, 1547, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16478, 1, NULL, 35.25, 68, 1548, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16479, 2, NULL, 37.75, 137, 1548, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16480, 3, NULL, 43.5, 399, 1548, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16481, 4, NULL, 50.75, 210, 1548, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16482, 5, NULL, 59, 472, 1548, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16483, 6, NULL, 60, 63, 1548, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16484, 7, NULL, 64.5, 43, 1548, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16485, 8, NULL, 69.75, 147, 1548, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16486, 1, NULL, 22, 137, 1549, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16487, 2, NULL, 27.5, 200, 1549, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16488, 3, NULL, 28, 472, 1549, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16489, 4, NULL, 28.5, 252, 1549, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16490, 5, NULL, 29, 412, 1549, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16491, 6, NULL, 36, 68, 1549, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16492, 7, NULL, 47.5, 288, 1549, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16493, 8, NULL, 52, 63, 1549, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16494, 9, NULL, 56, 57, 1549, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16495, 10, NULL, 64, 43, 1549, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16496, 11, NULL, 41, 210, 1549, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16497, 12, NULL, 43.5, 255, 1549, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16498, 13, NULL, 47.5, 369, 1549, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16499, 14, NULL, 59.5, 162, 1549, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16500, 15, NULL, 60, 141, 1549, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16501, 16, NULL, 74, 242, 1549, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16502, 1, NULL, 3.5, 236, 1550, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (16503, 2, NULL, 3.75, 412, 1550, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (16504, 3, NULL, 6, 385, 1550, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (16505, 4, NULL, 8.5, 137, 1550, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (16506, 5, NULL, 9, 63, 1550, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16507, 6, NULL, 10, 200, 1550, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16508, 7, NULL, 12.75, 79, 1550, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16509, 8, NULL, 14, 467, 1550, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16510, 9, NULL, 16, 472, 1550, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16511, 10, NULL, 17, 399, 1550, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16512, 11, NULL, 18, 68, 1550, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16513, 12, NULL, 19, 369, 1550, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16514, 13, NULL, 32, 452, 1550, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16515, 14, NULL, 32.25, 210, 1550, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16516, 15, NULL, 32.5, 211, 1550, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16517, 16, NULL, 35, 157, 1550, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16518, 17, NULL, 46, 264, 1550, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16519, 18, NULL, 55.5, 373, 1550, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16520, 19, NULL, 72.75, 168, 1550, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16521, 20, NULL, 118, 158, 1550, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16522, 1, NULL, 14.5, 376, 1551, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16523, 2, NULL, 18.75, 236, 1551, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16524, 3, NULL, 19.25, 385, 1551, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16525, 4, NULL, 35, 412, 1551, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16526, 5, NULL, 38.25, 339, 1551, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16527, 6, NULL, 39.5, 98, 1551, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16528, 7, NULL, 43.5, 473, 1551, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16529, 8, NULL, 50.5, 210, 1551, 5);
+INSERT INTO
+    DRL_result
+VALUES
+    (16530, 8, NULL, 50.5, 472, 1551, 5);
+INSERT INTO
+    DRL_result
+VALUES
+    (16531, 10, NULL, 50.75, 228, 1551, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16532, 11, NULL, 57.75, 283, 1551, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16533, 1, NULL, 39.25, 155, 1552, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16534, 2, NULL, 40.5, 236, 1552, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16535, 3, NULL, 49, 385, 1552, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16536, 4, NULL, 61.5, 79, 1552, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16537, 5, NULL, 72, 84, 1552, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16538, 6, NULL, 78.5, 194, 1552, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16539, 7, NULL, 95.5, 68, 1552, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16540, 8, NULL, 100.5, 137, 1552, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16541, 1, NULL, 16, 236, 1553, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16542, 2, NULL, 22, 137, 1553, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16543, 3, NULL, 22.5, 385, 1553, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16544, 4, NULL, 30.5, 75, 1553, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16545, 5, NULL, 31, 155, 1553, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16546, 6, NULL, 33.5, 412, 1553, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16547, 7, NULL, 43, 79, 1553, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16548, 8, NULL, 50.5, 68, 1553, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16549, 9, NULL, 55, 179, 1553, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16550, 10, NULL, 61.5, 147, 1553, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16551, 11, NULL, 67, 452, 1553, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16552, 12, NULL, 79, 386, 1553, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16553, 1, NULL, 14.5, 385, 1554, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16554, 2, NULL, 24.5, 412, 1554, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16555, 3, NULL, 36, 68, 1554, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16556, 4, NULL, 39.5, 63, 1554, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16557, 5, NULL, 45, 122, 1554, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16558, 6, NULL, 47, 386, 1554, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16559, 7, NULL, 54.5, 387, 1554, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16560, 8, NULL, 75, 68, 1554, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16561, 1, NULL, 19.5, 376, 1555, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16562, 2, NULL, 22.5, 385, 1555, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16563, 3, NULL, 26, 412, 1555, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16564, 4, NULL, 34.75, 122, 1555, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16565, 5, NULL, 35, 63, 1555, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16566, 6, NULL, 35.25, 242, 1555, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16567, 7, NULL, 46.5, 386, 1555, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16568, 8, NULL, 47.75, 210, 1555, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16569, 9, NULL, 57, 141, 1555, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16570, 10, NULL, 58.75, 200, 1555, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16571, 11, NULL, 60.5, 228, 1555, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16572, 1, NULL, 23.75, 137, 1556, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16573, 2, NULL, 25, 75, 1556, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16574, 3, NULL, 25.75, 300, 1556, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16575, 4, NULL, 32.5, 139, 1556, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16576, 5, NULL, 39.5, 467, 1556, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16577, 6, NULL, 40.5, 399, 1556, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16578, 7, NULL, 48, 452, 1556, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16579, 8, NULL, 49.75, 147, 1556, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16580, 9, NULL, 52.5, 288, 1556, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16581, 10, NULL, 66, 369, 1556, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16582, 1, NULL, 37.25, 210, 1557, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16583, 2, NULL, 40.5, 399, 1557, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16584, 3, NULL, 41.5, 242, 1557, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16585, 4, NULL, 48.75, 288, 1557, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16586, 5, NULL, 58.5, 228, 1557, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16587, 6, NULL, 59.5, 147, 1557, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16588, 7, NULL, 64, 386, 1557, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16589, 8, NULL, 68.25, 452, 1557, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16590, 9, NULL, 70.5, 141, 1557, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16591, 10, NULL, 82, 369, 1557, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16592, 1, NULL, 21.75, 376, 1558, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16593, 2, NULL, 62.5, 339, 1558, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16594, 3, NULL, 64.25, 200, 1558, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16595, 5, NULL, 84, 340, 1558, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16596, 4, NULL, 69.5, 26, 1558, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16597, 6, NULL, 130.5, 348, 1558, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16598, 1, NULL, 23, 399, 1559, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16599, 2, NULL, 30, 79, 1559, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16600, 3, NULL, 32, 436, 1559, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16601, 4, NULL, 41, 371, 1559, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16602, 5, NULL, 46, 369, 1559, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16603, 6, NULL, 52, 321, 1559, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16604, 7, NULL, 56, 80, 1559, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16605, 8, NULL, 73, 400, 1559, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16606, 9, NULL, 75, 192, 1559, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16607, 1, NULL, 16.5, 385, 1560, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16608, 2, NULL, 19, 376, 1560, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16609, 3, NULL, 22.5, 412, 1560, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16610, 4, NULL, 23, 75, 1560, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16611, 5, NULL, 23.5, 137, 1560, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16612, 6, NULL, 26, 300, 1560, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16613, 7, NULL, 30.5, 242, 1560, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16614, 8, NULL, 32.5, 399, 1560, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16615, 9, NULL, 33, 467, 1560, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16616, 10, NULL, 34, 63, 1560, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16617, 11, NULL, 38, 139, 1560, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16618, 12, NULL, 41.75, 122, 1560, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16619, 1, NULL, 13, 137, 1561, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16620, 2, NULL, 20.5, 236, 1561, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16621, 3, NULL, 24, 68, 1561, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16622, 4, NULL, 24.5, 399, 1561, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16623, 5, NULL, 38, 369, 1561, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16624, 6, NULL, 38.5, 472, 1561, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16625, 7, NULL, 39, 43, 1561, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16626, 8, NULL, 45, 79, 1561, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16627, 9, NULL, 49, 288, 1561, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16628, 10, NULL, 56, 289, 1561, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16629, 11, NULL, 73, 71, 1561, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16630, 12, NULL, 82, 436, 1561, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16631, 13, NULL, 95, 210, 1561, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16632, 1, NULL, 28.75, 412, 1562, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16633, 2, NULL, 40.75, 79, 1562, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16634, 3, NULL, 42, 242, 1562, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16635, 4, NULL, 45.25, 75, 1562, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16636, 5, NULL, 46.25, 385, 1562, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16637, 6, NULL, 46.75, 399, 1562, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16638, 7, NULL, 60.75, 147, 1562, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16639, 8, NULL, 79, 68, 1562, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16640, 9, NULL, 82, 157, 1562, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16641, 1, NULL, 17.5, 412, 1563, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16642, 2, NULL, 22, 385, 1563, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16643, 3, NULL, 22.5, 79, 1563, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16644, 4, NULL, 30, 147, 1563, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16645, 5, NULL, 32, 68, 1563, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16646, 6, NULL, 34, 399, 1563, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16647, 7, NULL, 47, 157, 1563, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16648, 8, NULL, 48, 242, 1563, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16649, 9, NULL, 50, 75, 1563, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16650, 1, NULL, 27.5, 412, 1564, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16651, 2, NULL, 32, 79, 1564, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16652, 3, NULL, 33.5, 385, 1564, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16653, 4, NULL, 41.5, 399, 1564, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16654, 5, NULL, 44, 147, 1564, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16655, 6, NULL, 45.5, 75, 1564, 5);
+INSERT INTO
+    DRL_result
+VALUES
+    (16656, 6, NULL, 45.5, 242, 1564, 5);
+INSERT INTO
+    DRL_result
+VALUES
+    (16657, 8, NULL, 51, 68, 1564, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16658, 9, NULL, 79, 157, 1564, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16659, 1, NULL, 23, 288, 1565, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16660, 2, NULL, 37, 289, 1565, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16661, 3, NULL, 47, 290, 1565, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16662, 4, NULL, 51, 133, 1565, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16663, 5, NULL, 55, 183, 1565, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16664, 6, NULL, 58, 134, 1565, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16665, 7, NULL, 63, 28, 1565, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16666, 8, NULL, 87, 302, 1565, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16667, 1, NULL, 28, 467, 1566, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16668, 2, NULL, 32, 147, 1566, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16669, 3, NULL, 33, 452, 1566, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16670, 4, NULL, 44, 399, 1566, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16671, 5, NULL, 48, 68, 1566, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16672, 1, NULL, 10.25, 385, 1567, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16673, 2, NULL, 11.5, 75, 1567, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16674, 3, NULL, 12.25, 376, 1567, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16675, 4, NULL, 17.25, 386, 1567, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16676, 5, NULL, 24, 43, 1567, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16677, 6, NULL, 27, 68, 1567, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16678, 7, NULL, 44, 157, 1567, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16679, 8, NULL, 49, 210, 1567, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16680, 1, NULL, 37, 376, 1568, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16681, 2, NULL, 47.5, 385, 1568, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16682, 3, NULL, 62, 75, 1568, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16683, 4, NULL, 69, 68, 1568, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16684, 5, NULL, 69.5, 386, 1568, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16685, 6, NULL, 75, 43, 1568, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16686, 7, NULL, 89, 210, 1568, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16687, 8, NULL, 99, 157, 1568, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16688, 1, NULL, 9.5, 385, 1569, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16689, 2, NULL, 10, 137, 1569, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16690, 3, NULL, 13, 236, 1569, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16691, 5, NULL, 15, 412, 1569, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16692, 4, NULL, 14.74, 300, 1569, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16693, 5, NULL, 15, 412, 1569, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16694, 6, NULL, 19, 467, 1569, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16695, 7, NULL, 20, 79, 1569, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16696, 8, NULL, 21.75, 472, 1569, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16697, 9, NULL, 25, 68, 1569, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16698, 10, NULL, 30, 288, 1569, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16699, 11, NULL, 33, 452, 1569, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16700, 12, NULL, 34, 147, 1569, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16701, 13, NULL, 46, 10, 1569, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16702, 14, NULL, 51, 289, 1569, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16703, 15, NULL, 91, 133, 1569, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16704, 1, NULL, 15.75, 385, 1570, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16705, 2, NULL, 16.75, 137, 1570, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16706, 3, NULL, 19.5, 236, 1570, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16707, 4, NULL, 21, 412, 1570, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16708, 5, NULL, 26, 300, 1570, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16709, 6, NULL, 26.25, 79, 1570, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16710, 7, NULL, 40, 467, 1570, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16711, 8, NULL, 45.25, 68, 1570, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16712, 9, NULL, 46, 472, 1570, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16713, 10, NULL, 51.25, 147, 1570, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16714, 11, NULL, 52, 452, 1570, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16715, 12, NULL, 60.75, 288, 1570, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16716, 13, NULL, 76, 133, 1570, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16717, 14, NULL, 78, 289, 1570, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16718, 1, NULL, 25.5, 236, 1571, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16719, 2, NULL, 54, 385, 1571, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16720, 3, NULL, 59.5, 412, 1571, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16721, 4, NULL, 61, 137, 1571, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16722, 5, NULL, 77.5, 79, 1571, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16723, 6, NULL, 107, 179, 1571, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16724, 7, NULL, 108, 288, 1571, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16725, 8, NULL, 110, 147, 1571, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16726, 1, NULL, 29, 68, 1572, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16727, 2, NULL, 41.5, 467, 1572, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16728, 3, NULL, 47.5, 472, 1572, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16729, 4, NULL, 64, 452, 1572, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16730, 5, NULL, 77.5, 133, 1572, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16731, 1, NULL, 12.25, 236, 1573, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16732, 2, NULL, 13.25, 137, 1573, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16733, 3, NULL, 16.25, 376, 1573, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16734, 4, NULL, 18, 237, 1573, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16735, 5, NULL, 19, 75, 1573, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16736, 6, NULL, 28.5, 412, 1573, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16737, 7, NULL, 34, 399, 1573, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16738, 8, NULL, 34.25, 68, 1573, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16739, 9, NULL, 35, 63, 1573, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16740, 10, NULL, 52, 43, 1573, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16741, 11, NULL, 54, 169, 1573, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16742, 12, NULL, 54.75, 200, 1573, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16743, 13, NULL, 70, 147, 1573, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16744, 1, NULL, 41, 412, 1574, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16745, 2, NULL, 69, 43, 1574, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16746, 3, NULL, 88, 385, 1574, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16747, 4, NULL, 105, 327, 1574, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16748, 1, NULL, 12.5, 385, 1575, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16749, 2, NULL, 21, 242, 1575, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16750, 3, NULL, 22.75, 75, 1575, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16751, 4, NULL, 39.5, 147, 1575, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16752, 5, NULL, 45.25, 68, 1575, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16753, 6, NULL, 53, 472, 1575, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16754, 7, NULL, 55.5, 210, 1575, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16755, 8, NULL, 64.5, 169, 1575, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16756, 9, NULL, 65, 157, 1575, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16757, 10, NULL, 65.5, 252, 1575, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16758, 1, NULL, 19.5, 385, 1576, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16759, 2, NULL, 24, 75, 1576, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16760, 3, NULL, 33.5, 68, 1576, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16761, 4, NULL, 34.5, 147, 1576, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16762, 5, NULL, 37.5, 252, 1576, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16763, 6, NULL, 43, 472, 1576, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16764, 7, NULL, 57, 242, 1576, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16765, 8, NULL, 75.5, 157, 1576, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16766, 9, NULL, 86, 210, 1576, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16767, 10, NULL, 86.5, 169, 1576, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16768, 1, NULL, 14.5, 236, 1577, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16769, 2, NULL, 15, 467, 1577, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16770, 3, NULL, 16, 137, 1577, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16771, 4, NULL, 18.5, 79, 1577, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16772, 5, NULL, 19, 399, 1577, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16773, 6, NULL, 36, 147, 1577, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16774, 7, NULL, 38, 68, 1577, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16775, 8, NULL, 40, 452, 1577, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16776, 9, NULL, 44, 472, 1577, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16777, 10, NULL, 45, 288, 1577, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16778, 11, NULL, 56, 43, 1577, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16779, 1, NULL, 20, 137, 1578, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16780, 2, NULL, 25, 412, 1578, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16781, 3, NULL, 30, 236, 1578, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16782, 4, NULL, 35.5, 79, 1578, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16783, 5, NULL, 38, 385, 1578, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16784, 6, NULL, 45.5, 472, 1578, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16785, 7, NULL, 54, 68, 1578, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16786, 8, NULL, 56.5, 63, 1578, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16787, 9, NULL, 64, 242, 1578, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16788, 10, NULL, 65, 452, 1578, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16789, 11, NULL, 70, 147, 1578, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16790, 12, NULL, 81, 43, 1578, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16791, 1, NULL, 32.5, 236, 1579, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16792, 2, NULL, 39, 155, 1579, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16793, 3, NULL, 41.5, 194, 1579, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16794, 4, NULL, 78.75, 79, 1579, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16795, 5, NULL, 83, 424, 1579, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16796, 6, NULL, 92.5, 179, 1579, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16797, 7, NULL, 0, 327, 1579, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16798, 1, NULL, 14, 236, 1580, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16799, 2, NULL, 22, 137, 1580, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16800, 3, NULL, 27, 147, 1580, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16801, 4, NULL, 29, 369, 1580, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16802, 5, NULL, 34, 43, 1580, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16803, 6, NULL, 48, 399, 1580, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16804, 7, NULL, 32, 288, 1580, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16805, 8, NULL, 41, 289, 1580, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16806, 9, NULL, 54, 358, 1580, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16807, 10, NULL, 62, 133, 1580, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16808, 11, NULL, 74, 182, 1580, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16809, 1, NULL, 31, 236, 1581, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16810, 2, NULL, 56, 79, 1581, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16811, 3, NULL, 67.5, 179, 1581, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16812, 1, NULL, 21, 412, 1582, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16813, 2, NULL, 22.25, 137, 1582, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16814, 3, NULL, 24.25, 79, 1582, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16815, 4, NULL, 33.75, 147, 1582, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16816, 5, NULL, 38.5, 472, 1582, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16817, 6, NULL, 49.5, 68, 1582, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16818, 7, NULL, 49.75, 452, 1582, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16819, 8, NULL, 60, 399, 1582, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16820, 9, NULL, 61.5, 43, 1582, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16821, 10, NULL, 65.5, 289, 1582, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16822, 11, NULL, 76.5, 288, 1582, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16823, 12, NULL, 94, 210, 1582, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16824, 1, NULL, 11, 236, 1583, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16825, 2, NULL, 17, 137, 1583, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16826, 3, NULL, 22.5, 147, 1583, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16827, 4, NULL, 23, 79, 1583, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16828, 5, NULL, 24.5, 399, 1583, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16829, 6, NULL, 31, 68, 1583, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16830, 7, NULL, 32.5, 242, 1583, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16831, 8, NULL, 44, 63, 1583, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16832, 9, NULL, 45, 452, 1583, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16833, 1, NULL, 11, 236, 1584, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16834, 2, NULL, 17, 137, 1584, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16835, 3, NULL, 22.5, 147, 1584, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16836, 4, NULL, 23, 79, 1584, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16837, 5, NULL, 24.5, 399, 1584, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16838, 6, NULL, 31, 68, 1584, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16839, 7, NULL, 32.5, 242, 1584, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16840, 8, NULL, 44, 63, 1584, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16841, 9, NULL, 45, 452, 1584, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16842, 10, NULL, 51.5, 43, 1584, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16843, 11, NULL, 53.5, 71, 1584, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16844, 12, NULL, 68, 210, 1584, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16845, 13, NULL, 98.5, 157, 1584, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16846, 1, NULL, 11, 236, 1585, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16847, 2, NULL, 15, 137, 1585, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16848, 3, NULL, 23.25, 472, 1585, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16849, 4, NULL, 24.5, 68, 1585, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16850, 5, NULL, 29.5, 141, 1585, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16851, 6, NULL, 32.5, 63, 1585, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16852, 7, NULL, 42.5, 210, 1585, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16853, 8, NULL, 49.5, 157, 1585, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16854, 9, NULL, 50.5, 43, 1585, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16855, 10, NULL, 83, 429, 1585, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16856, 1, NULL, 10, 236, 1586, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16857, 2, NULL, 14, 137, 1586, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16858, 3, NULL, 17, 147, 1586, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16859, 4, NULL, 17.75, 75, 1586, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16860, 5, NULL, 27.75, 289, 1586, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16861, 6, NULL, 32, 467, 1586, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16862, 7, NULL, 34.25, 412, 1586, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16863, 8, NULL, 34.5, 399, 1586, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16864, 9, NULL, 31.25, 68, 1586, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16865, 10, NULL, 33.5, 288, 1586, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16866, 11, NULL, 36.25, 452, 1586, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16867, 12, NULL, 36.5, 264, 1586, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16868, 13, NULL, 39, 472, 1586, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16869, 14, NULL, 39.5, 182, 1586, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16870, 15, NULL, 70, 43, 1586, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16871, 16, NULL, 84.5, 133, 1586, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16872, 1, NULL, 15.75, 237, 1587, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16873, 2, NULL, 19.5, 236, 1587, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16874, 3, NULL, 35, 197, 1587, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16875, 4, NULL, 86, 327, 1587, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16876, 5, NULL, 113, 442, 1587, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16877, 1, NULL, 15, 137, 1588, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16878, 2, NULL, 17, 236, 1588, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16879, 3, NULL, 22.5, 412, 1588, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16880, 4, NULL, 28, 467, 1588, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16881, 5, NULL, 29, 68, 1588, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16882, 6, NULL, 29.5, 147, 1588, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16883, 7, NULL, 33.5, 194, 1588, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16884, 8, NULL, 35, 255, 1588, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16885, 9, NULL, 38.5, 63, 1588, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16886, 10, NULL, 40, 264, 1588, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16887, 11, NULL, 42.5, 182, 1588, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16888, 12, NULL, 50.5, 452, 1588, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16889, 1, NULL, 20, 194, 1589, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16890, 2, NULL, 50, 84, 1589, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16891, 3, NULL, 59, 467, 1589, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16892, 4, NULL, 64.75, 236, 1589, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16893, 5, NULL, 66, 147, 1589, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16894, 6, NULL, 67.5, 63, 1589, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16895, 7, NULL, 69, 137, 1589, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16896, 8, NULL, 81.5, 255, 1589, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16897, 9, NULL, 88, 68, 1589, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16898, 1, NULL, 11.5, 137, 1590, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16899, 2, NULL, 13.5, 252, 1590, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16900, 3, NULL, 19, 412, 1590, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16901, 4, NULL, 19.5, 68, 1590, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16902, 5, NULL, 46, 210, 1590, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16903, 6, NULL, 50, 63, 1590, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16904, 7, NULL, 51, 200, 1590, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16905, 8, NULL, 59, 221, 1590, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16906, 9, NULL, 60.5, 472, 1590, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16907, 10, NULL, 62, 289, 1590, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16908, 11, NULL, 63, 288, 1590, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16909, 12, NULL, 91, 133, 1590, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16910, 13, NULL, 52, 141, 1590, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16911, 14, NULL, 61, 369, 1590, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16912, 15, NULL, 63, 243, 1590, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16913, 1, NULL, 5, 236, 1591, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (16914, 2, NULL, 8.25, 412, 1591, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (16915, 3, NULL, 11, 137, 1591, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (16916, 4, NULL, 14, 399, 1591, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (16917, 5, NULL, 16.5, 200, 1591, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (16918, 6, NULL, 19, 452, 1591, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (16919, 7, NULL, 20.5, 400, 1591, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (16920, 8, NULL, 21.5, 68, 1591, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16921, 9, NULL, 22.5, 169, 1591, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16922, 10, NULL, 30, 369, 1591, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16923, 11, NULL, 32, 63, 1591, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16924, 12, NULL, 34, 43, 1591, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16925, 13, NULL, 41, 264, 1591, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16926, 14, NULL, 42, 157, 1591, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16927, 15, NULL, 55.5, 371, 1591, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16928, 16, NULL, 56, 472, 1591, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16929, 17, NULL, 58, 210, 1591, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16930, 18, NULL, 86, 158, 1591, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16931, 1, NULL, 45.5, 290, 1592, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16932, 2, NULL, 51.5, 242, 1592, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16933, 3, NULL, 57, 252, 1592, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16934, 4, NULL, 59, 288, 1592, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16935, 5, NULL, 92, 243, 1592, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16936, 6, NULL, 99, 253, 1592, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16937, 7, NULL, 50.5, 289, 1592, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16938, 8, NULL, 61.5, 57, 1592, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16939, 1, NULL, 12.5, 236, 1593, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16940, 2, NULL, 19, 137, 1593, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16941, 3, NULL, 39, 43, 1593, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16942, 4, NULL, 40, 242, 1593, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16943, 1, NULL, 27.5, 412, 1594, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16944, 2, NULL, 28, 43, 1594, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16945, 3, NULL, 36.5, 236, 1594, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16946, 4, NULL, 59.5, 179, 1594, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16947, 5, NULL, 82.5, 147, 1594, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16948, 6, NULL, 88, 385, 1594, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16949, 1, NULL, 61, 43, 1595, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16950, 2, NULL, 77.5, 412, 1595, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16951, 3, NULL, 86.25, 236, 1595, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16952, 4, NULL, 87, 68, 1595, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16953, 5, NULL, 117, 385, 1595, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16954, 6, NULL, 123, 155, 1595, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16955, 7, NULL, 143, 452, 1595, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16956, 8, NULL, 165.5, 179, 1595, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16957, 9, NULL, 191, 147, 1595, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16958, 1, NULL, 38.5, 385, 1596, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16959, 2, NULL, 38.75, 412, 1596, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16960, 3, NULL, 45.75, 68, 1596, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16961, 4, NULL, 55.75, 386, 1596, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16962, 5, NULL, 58.75, 63, 1596, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16963, 6, NULL, 87, 387, 1596, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16964, 7, NULL, 120, 110, 1596, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16965, 1, NULL, 13.5, 385, 1597, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16966, 2, NULL, 13.75, 412, 1597, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16967, 3, NULL, 14.5, 376, 1597, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16968, 4, NULL, 15.75, 236, 1597, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16969, 5, NULL, 18.5, 197, 1597, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16970, 6, NULL, 23, 339, 1597, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16971, 7, NULL, 27, 472, 1597, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16972, 8, NULL, 29.5, 141, 1597, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16973, 9, NULL, 35.25, 283, 1597, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16974, 10, NULL, 49, 228, 1597, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16975, 11, NULL, 52.5, 88, 1597, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16976, 1, NULL, 20, 75, 1598, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16977, 2, NULL, 28.25, 467, 1598, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16978, 3, NULL, 32, 137, 1598, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16979, 4, NULL, 41.75, 369, 1598, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16980, 5, NULL, 46.25, 91, 1598, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16981, 6, NULL, 54.75, 399, 1598, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16982, 7, NULL, 57, 288, 1598, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16983, 8, NULL, 74.5, 147, 1598, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16984, 9, NULL, 78, 371, 1598, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16985, 10, NULL, 78.75, 452, 1598, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16986, 1, NULL, 23.5, 376, 1599, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (16987, 2, NULL, 27.25, 107, 1599, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (16988, 3, NULL, 31.5, 212, 1599, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16989, 4, NULL, 35.25, 385, 1599, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16990, 5, NULL, 44.25, 412, 1599, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (16991, 6, NULL, 52.25, 63, 1599, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (16992, 7, NULL, 53.75, 200, 1599, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (16993, 8, NULL, 63.25, 386, 1599, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (16994, 9, NULL, 70.75, 242, 1599, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (16995, 10, NULL, 72, 141, 1599, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (16996, 11, NULL, 110.25, 228, 1599, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (16997, 1, NULL, 17.5, 399, 1600, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (16998, 2, NULL, 23.5, 92, 1600, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (16999, 3, NULL, 26.25, 236, 1600, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17000, 4, NULL, 29, 467, 1600, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17001, 5, NULL, 32.5, 91, 1600, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17002, 6, NULL, 45.5, 147, 1600, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17003, 7, NULL, 49, 210, 1600, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17004, 8, NULL, 50, 472, 1600, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17005, 9, NULL, 57, 169, 1600, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17006, 1, NULL, 34.5, 384, 1601, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17007, 2, NULL, 40.25, 75, 1601, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17008, 3, NULL, 52.5, 385, 1601, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17009, 4, NULL, 55.5, 137, 1601, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17010, 5, NULL, 60.5, 386, 1601, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17011, 6, NULL, 75.25, 369, 1601, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17012, 7, NULL, 108.25, 147, 1601, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17013, 8, NULL, 138, 43, 1601, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17014, 1, NULL, 36, 200, 1602, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17015, 2, NULL, 37, 386, 1602, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17016, 3, NULL, 37.5, 63, 1602, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17017, 4, NULL, 42.25, 288, 1602, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17018, 5, NULL, 42.75, 242, 1602, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17019, 6, NULL, 44.25, 371, 1602, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17020, 7, NULL, 44.5, 141, 1602, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17021, 8, NULL, 45.75, 147, 1602, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17022, 9, NULL, 48, 399, 1602, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17023, 10, NULL, 53.75, 452, 1602, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17024, 1, NULL, 23, 399, 1603, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17025, 2, NULL, 27, 369, 1603, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17026, 3, NULL, 35, 192, 1603, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17027, 4, NULL, 60, 80, 1603, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17028, 5, NULL, 73, 79, 1603, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17029, 6, NULL, 78, 371, 1603, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17030, 1, NULL, 27, 376, 1604, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17031, 2, NULL, 61.5, 200, 1604, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17032, 3, NULL, 78, 339, 1604, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17033, 4, NULL, 85.5, 26, 1604, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17034, 1, NULL, 17.5, 212, 1605, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17035, 2, NULL, 18.5, 376, 1605, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17036, 3, NULL, 22, 385, 1605, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17037, 4, NULL, 25.5, 467, 1605, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17038, 5, NULL, 26, 137, 1605, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17039, 6, NULL, 27.75, 107, 1605, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17040, 7, NULL, 33, 369, 1605, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17041, 8, NULL, 34, 75, 1605, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17042, 9, NULL, 36, 412, 1605, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17043, 10, NULL, 52, 200, 1605, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17044, 11, NULL, 52.25, 386, 1605, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17045, 12, NULL, 0, 91, 1605, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17046, 1, NULL, 15, 236, 1606, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17047, 2, NULL, 23.5, 472, 1606, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17048, 3, NULL, 25, 369, 1606, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17049, 4, NULL, 27, 137, 1606, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17050, 5, NULL, 29, 71, 1606, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17051, 6, NULL, 31, 68, 1606, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17052, 7, NULL, 35, 288, 1606, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17053, 8, NULL, 37, 452, 1606, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17054, 9, NULL, 38, 289, 1606, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17055, 10, NULL, 47, 399, 1606, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17056, 11, NULL, 49, 43, 1606, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17057, 12, NULL, 51, 371, 1606, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17058, 1, NULL, 20, 236, 1607, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17059, 2, NULL, 37, 68, 1607, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17060, 3, NULL, 41.5, 412, 1607, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17061, 4, NULL, 43, 242, 1607, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17062, 5, NULL, 49, 472, 1607, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (17063, 5, NULL, 49, 467, 1607, 15);
+INSERT INTO
+    DRL_result
+VALUES
+    (17064, 7, NULL, 52.5, 141, 1607, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17065, 8, NULL, 53.5, 63, 1607, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17066, 9, NULL, 56, 200, 1607, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (17067, 9, NULL, 56, 147, 1607, 7);
+INSERT INTO
+    DRL_result
+VALUES
+    (17068, 11, NULL, 57.5, 91, 1607, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17069, 12, NULL, 62.5, 369, 1607, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17070, 13, NULL, 67, 288, 1607, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17071, 1, NULL, 17.75, 236, 1608, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17072, 2, NULL, 18, 412, 1608, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17073, 3, NULL, 18.75, 467, 1608, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17074, 4, NULL, 25, 63, 1608, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17075, 5, NULL, 28, 242, 1608, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17076, 6, NULL, 29.5, 91, 1608, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17077, 7, NULL, 35.75, 288, 1608, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17078, 8, NULL, 36, 147, 1608, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17079, 9, NULL, 37, 472, 1608, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17080, 10, NULL, 38, 369, 1608, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17081, 11, NULL, 39, 200, 1608, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17082, 12, NULL, 47, 68, 1608, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17083, 13, NULL, 60, 141, 1608, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17084, 1, NULL, 33.25, 236, 1609, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17085, 2, NULL, 35, 467, 1609, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17086, 3, NULL, 40.5, 141, 1609, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17087, 4, NULL, 41.25, 91, 1609, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17088, 5, NULL, 42, 242, 1609, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17089, 6, NULL, 44.5, 412, 1609, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17090, 7, NULL, 47.25, 68, 1609, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17091, 8, NULL, 52, 63, 1609, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17092, 9, NULL, 54.75, 472, 1609, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17093, 10, NULL, 55, 369, 1609, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17094, 11, NULL, 55.5, 147, 1609, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17095, 12, NULL, 75.5, 288, 1609, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17096, 13, NULL, 77.25, 200, 1609, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17097, 1, NULL, 24, 376, 1610, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17098, 2, NULL, 28.75, 212, 1610, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17099, 3, NULL, 29.75, 137, 1610, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17100, 4, NULL, 32.75, 412, 1610, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17101, 5, NULL, 33.75, 236, 1610, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17102, 6, NULL, 55.25, 63, 1610, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17103, 7, NULL, 55.5, 43, 1610, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17104, 8, NULL, 82.75, 141, 1610, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17105, 1, NULL, 10, 385, 1611, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17106, 2, NULL, 19, 68, 1611, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17107, 3, NULL, 21, 63, 1611, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17108, 4, NULL, 22, 386, 1611, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17109, 5, NULL, 23, 43, 1611, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17110, 6, NULL, 30, 200, 1611, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17111, 7, NULL, 38, 369, 1611, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17112, 8, NULL, 45, 71, 1611, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17113, 9, NULL, 51, 472, 1611, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17114, 1, NULL, 63, 385, 1612, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17115, 2, NULL, 77, 63, 1612, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17116, 3, NULL, 79, 200, 1612, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17117, 4, NULL, 81, 369, 1612, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17118, 5, NULL, 84, 68, 1612, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17119, 6, NULL, 93, 386, 1612, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17120, 7, NULL, 97, 472, 1612, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17121, 8, NULL, 99, 43, 1612, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17122, 9, NULL, 126, 71, 1612, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17123, 1, NULL, 35.75, 385, 1613, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17124, 2, NULL, 41.75, 376, 1613, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17125, 3, NULL, 53.5, 75, 1613, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17126, 4, NULL, 80.75, 369, 1613, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17127, 5, NULL, 85.25, 137, 1613, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17128, 6, NULL, 89.5, 68, 1613, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17129, 7, NULL, 98.5, 386, 1613, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17130, 8, NULL, 105.75, 472, 1613, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17131, 9, NULL, 114.5, 147, 1613, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17132, 10, NULL, 136.75, 157, 1613, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17133, 11, NULL, 169, 43, 1613, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17134, 1, NULL, 15.25, 376, 1614, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17135, 2, NULL, 20.25, 137, 1614, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17136, 3, NULL, 21, 385, 1614, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17137, 4, NULL, 35.25, 75, 1614, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17138, 5, NULL, 42.5, 386, 1614, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17139, 6, NULL, 46.5, 68, 1614, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17140, 7, NULL, 50, 369, 1614, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17141, 8, NULL, 54.35, 472, 1614, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17142, 9, NULL, 60.5, 43, 1614, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17143, 10, NULL, 64.5, 147, 1614, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17144, 11, NULL, 100, 157, 1614, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17145, 1, NULL, 16.25, 418, 1615, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17146, 2, NULL, 17.75, 137, 1615, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17147, 3, NULL, 26.5, 412, 1615, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17148, 4, NULL, 31.75, 91, 1615, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17149, 5, NULL, 36.25, 300, 1615, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17150, 6, NULL, 40, 43, 1615, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17151, 7, NULL, 43, 147, 1615, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17152, 8, NULL, 43.5, 79, 1615, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17153, 9, NULL, 63, 452, 1615, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17154, 10, NULL, 70, 206, 1615, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17155, 1, NULL, 11.33, 412, 1616, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17156, 2, NULL, 12.67, 212, 1616, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17157, 3, NULL, 17.33, 369, 1616, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17158, 4, NULL, 18.33, 68, 1616, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17159, 5, NULL, 18.67, 137, 1616, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17160, 6, NULL, 22.67, 399, 1616, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17161, 7, NULL, 24.33, 376, 1616, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17162, 8, NULL, 25, 385, 1616, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17163, 9, NULL, 28, 63, 1616, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17164, 10, NULL, 29, 43, 1616, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17165, 11, NULL, 47, 71, 1616, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17166, 12, NULL, 50, 147, 1616, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17167, 13, NULL, 66, 169, 1616, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17168, 1, NULL, 18.5, 137, 1617, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17169, 2, NULL, 19.5, 369, 1617, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17170, 3, NULL, 23.5, 467, 1617, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17171, 4, NULL, 32, 412, 1617, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17172, 5, NULL, 35, 68, 1617, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17173, 6, NULL, 36, 472, 1617, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17174, 7, NULL, 36.5, 399, 1617, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17175, 8, NULL, 39, 43, 1617, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17176, 9, NULL, 43, 147, 1617, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17177, 1, NULL, 18, 137, 1618, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (17178, 2, NULL, 22.5, 369, 1618, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17179, 3, NULL, 37, 91, 1618, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17180, 4, NULL, 40, 418, 1618, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17181, 5, NULL, 41, 63, 1618, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17182, 6, NULL, 42, 467, 1618, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17183, 7, NULL, 55, 472, 1618, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17184, 8, NULL, 56, 68, 1618, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17185, 9, NULL, 57.5, 452, 1618, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17186, 10, NULL, 61.5, 436, 1618, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17187, 11, NULL, 62, 147, 1618, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17188, 12, NULL, 63.5, 92, 1618, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17189, 13, NULL, 78.5, 10, 1618, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17190, 14, NULL, 92, 43, 1618, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17191, 1, NULL, 16, 385, 1619, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17192, 2, NULL, 18, 137, 1619, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17193, 3, NULL, 19, 369, 1619, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17194, 4, NULL, 23, 412, 1619, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17195, 5, NULL, 37, 147, 1619, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17196, 6, NULL, 77, 43, 1619, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17197, 1, NULL, 18.25, 137, 1620, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17198, 2, NULL, 18.5, 385, 1620, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17199, 3, NULL, 18.75, 43, 1620, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17200, 5, NULL, 28, 412, 1620, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17201, 4, NULL, 26, 369, 1620, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17202, 5, NULL, 28, 412, 1620, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17203, 6, NULL, 56.5, 147, 1620, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17204, 1, NULL, 46, 137, 1621, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17205, 2, NULL, 49.5, 385, 1621, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17206, 3, NULL, 73, 369, 1621, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17207, 4, NULL, 78, 147, 1621, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17208, 5, NULL, 112, 43, 1621, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17209, 6, NULL, 0, 412, 1621, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17210, 1, NULL, 23.25, 236, 1622, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17211, 2, NULL, 36, 155, 1622, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17212, 3, NULL, 59.25, 237, 1622, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17213, 4, NULL, 74.25, 194, 1622, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17214, 5, NULL, 124, 68, 1622, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17215, 6, NULL, 128.75, 179, 1622, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17216, 7, NULL, 134, 327, 1622, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17217, 1, NULL, 5.5, 212, 1623, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17218, 2, NULL, 11.25, 141, 1623, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17219, 3, NULL, 17.5, 142, 1623, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17220, 4, NULL, 25.5, 169, 1623, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17221, 5, NULL, 30.5, 210, 1623, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17222, 6, NULL, 31.5, 157, 1623, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17223, 7, NULL, 31.75, 228, 1623, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17224, 8, NULL, 33.25, 170, 1623, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17225, 9, NULL, 34, 221, 1623, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17226, 1, NULL, 22, 137, 1624, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17227, 2, NULL, 35, 236, 1624, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17228, 3, NULL, 53, 369, 1624, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17229, 4, NULL, 54, 467, 1624, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17230, 5, NULL, 64, 399, 1624, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17231, 6, NULL, 89, 288, 1624, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17232, 7, NULL, 52, 147, 1624, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17233, 8, NULL, 54, 290, 1624, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17234, 9, NULL, 61, 43, 1624, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17235, 10, NULL, 94, 452, 1624, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17236, 1, NULL, 11, 137, 1625, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17237, 2, NULL, 14, 236, 1625, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17238, 3, NULL, 27, 467, 1625, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17239, 4, NULL, 28, 399, 1625, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17240, 5, NULL, 42, 147, 1625, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17241, 6, NULL, 80, 369, 1625, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17242, 7, NULL, 37, 43, 1625, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17243, 8, NULL, 38, 288, 1625, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17244, 9, NULL, 44, 290, 1625, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17245, 10, NULL, 45, 452, 1625, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17246, 11, NULL, 54, 10, 1625, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17247, 1, NULL, 17.5, 137, 1626, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17248, 2, NULL, 29.5, 467, 1626, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17249, 3, NULL, 34, 147, 1626, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17250, 4, NULL, 35.5, 369, 1626, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17251, 5, NULL, 61, 452, 1626, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17252, 6, NULL, 0, 399, 1626, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17253, 7, NULL, 38.5, 182, 1626, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17254, 8, NULL, 49, 43, 1626, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17255, 9, NULL, 57, 264, 1626, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17256, 10, NULL, 91, 371, 1626, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17257, 11, NULL, 107.5, 34, 1626, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17258, 12, NULL, 134, 33, 1626, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17259, 13, NULL, 147, 127, 1626, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17260, 1, NULL, 29, 236, 1627, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17261, 2, NULL, 31, 412, 1627, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17262, 3, NULL, 55, 68, 1627, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17263, 4, NULL, 63, 385, 1627, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17264, 5, NULL, 84, 242, 1627, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17265, 6, NULL, 0, 472, 1627, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17266, 1, NULL, 43.5, 418, 1628, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17267, 2, NULL, 48.5, 137, 1628, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17268, 3, NULL, 68, 179, 1628, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17269, 4, NULL, 100.75, 84, 1628, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17270, 1, NULL, 21, 91, 1629, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17271, 2, NULL, 23, 288, 1629, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17272, 3, NULL, 48, 242, 1629, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17273, 4, NULL, 36, 57, 1629, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17274, 5, NULL, 51.5, 289, 1629, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17275, 1, NULL, 11.5, 376, 1630, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17276, 2, NULL, 27, 91, 1630, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17277, 3, NULL, 31, 404, 1630, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17278, 4, NULL, 34.5, 200, 1630, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17279, 5, NULL, 42.5, 242, 1630, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17280, 6, NULL, 47, 405, 1630, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17281, 1, NULL, 18.5, 412, 1631, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17282, 2, NULL, 23, 399, 1631, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17283, 3, NULL, 25, 68, 1631, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17284, 4, NULL, 32.25, 452, 1631, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17285, 5, NULL, 33.75, 43, 1631, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17286, 6, NULL, 40, 472, 1631, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17287, 7, NULL, 40.25, 147, 1631, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17288, 8, NULL, 42.25, 369, 1631, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17289, 1, NULL, 32, 68, 1632, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17290, 2, NULL, 35, 236, 1632, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17291, 3, NULL, 40.5, 412, 1632, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17292, 4, NULL, 48, 399, 1632, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17293, 5, NULL, 63, 472, 1632, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17294, 6, NULL, 69, 10, 1632, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17295, 7, NULL, 72, 63, 1632, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17296, 8, NULL, 82, 436, 1632, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17297, 9, NULL, 97.5, 43, 1632, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17298, 10, NULL, 104.5, 147, 1632, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17299, 12, NULL, 117, 91, 1632, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17300, 13, NULL, 124, 452, 1632, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17301, 1, NULL, 16.75, 236, 1633, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17302, 2, NULL, 20, 369, 1633, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17303, 3, NULL, 21, 63, 1633, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17304, 4, NULL, 22.25, 68, 1633, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17305, 5, NULL, 23.5, 472, 1633, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17306, 6, NULL, 25, 147, 1633, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17307, 7, NULL, 35.5, 71, 1633, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17308, 8, NULL, 36.75, 141, 1633, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17309, 9, NULL, 40.5, 43, 1633, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17310, 10, NULL, 49.5, 200, 1633, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17311, 11, NULL, 66.75, 210, 1633, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17312, 1, NULL, 26.5, 236, 1634, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17313, 2, NULL, 47, 237, 1634, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17314, 3, NULL, 59.5, 327, 1634, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17315, 4, NULL, 67.25, 328, 1634, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17316, 5, NULL, 93.75, 442, 1634, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17317, 1, NULL, 13.75, 137, 1635, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (17318, 2, NULL, 19.5, 371, 1635, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (17319, 3, NULL, 20.25, 369, 1635, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17320, 4, NULL, 25, 467, 1635, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17321, 5, NULL, 29, 399, 1635, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17322, 6, NULL, 35, 147, 1635, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17323, 7, NULL, 38.75, 290, 1635, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17324, 8, NULL, 30.5, 10, 1635, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17325, 9, NULL, 31.5, 43, 1635, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17326, 10, NULL, 34.5, 288, 1635, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17327, 11, NULL, 36.75, 264, 1635, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17328, 12, NULL, 43.25, 157, 1635, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17329, 13, NULL, 56.5, 289, 1635, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17330, 14, NULL, 56.75, 452, 1635, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17331, 15, NULL, 96.5, 133, 1635, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17332, 1, NULL, 51, 212, 1636, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17333, 2, NULL, 53.5, 412, 1636, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17334, 3, NULL, 60, 155, 1636, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17335, 4, NULL, 61.5, 369, 1636, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17336, 5, NULL, 85, 68, 1636, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17337, 6, NULL, 86.5, 43, 1636, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17338, 7, NULL, 121, 84, 1636, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17339, 8, NULL, 156, 472, 1636, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17340, 1, NULL, 25, 212, 1637, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17341, 2, NULL, 33, 155, 1637, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17342, 3, NULL, 49, 412, 1637, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17343, 4, NULL, 58, 43, 1637, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17344, 5, NULL, 62, 369, 1637, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17345, 6, NULL, 74, 68, 1637, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17346, 7, NULL, 93.5, 84, 1637, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17347, 8, NULL, 140.5, 472, 1637, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17348, 1, NULL, 12, 412, 1638, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (17349, 2, NULL, 15.5, 137, 1638, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17350, 3, NULL, 22, 92, 1638, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17351, 4, NULL, 22.25, 376, 1638, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17352, 5, NULL, 23.24, 210, 1638, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17353, 6, NULL, 28, 91, 1638, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17354, 7, NULL, 29, 141, 1638, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17355, 8, NULL, 34.5, 68, 1638, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17356, 9, NULL, 35, 242, 1638, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17357, 10, NULL, 41, 200, 1638, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17358, 11, NULL, 55, 43, 1638, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17359, 12, NULL, 31, 57, 1638, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17360, 13, NULL, 32, 162, 1638, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17361, 14, NULL, 66, 243, 1638, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17362, 1, NULL, 4, 376, 1639, 38);
+INSERT INTO
+    DRL_result
+VALUES
+    (17363, 2, NULL, 7.5, 137, 1639, 36);
+INSERT INTO
+    DRL_result
+VALUES
+    (17364, 3, NULL, 8, 68, 1639, 34);
+INSERT INTO
+    DRL_result
+VALUES
+    (17365, 4, NULL, 9, 141, 1639, 32);
+INSERT INTO
+    DRL_result
+VALUES
+    (17366, 5, NULL, 12, 399, 1639, 30);
+INSERT INTO
+    DRL_result
+VALUES
+    (17367, 6, NULL, 13, 385, 1639, 28);
+INSERT INTO
+    DRL_result
+VALUES
+    (17368, 7, NULL, 13.75, 369, 1639, 26);
+INSERT INTO
+    DRL_result
+VALUES
+    (17369, 8, NULL, 14, 63, 1639, 24);
+INSERT INTO
+    DRL_result
+VALUES
+    (17370, 9, NULL, 17, 236, 1639, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17371, 10, NULL, 28, 200, 1639, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17372, 11, NULL, 29, 242, 1639, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17373, 12, NULL, 39, 412, 1639, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17374, 13, NULL, 38, 10, 1639, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17375, 14, NULL, 40, 439, 1639, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17376, 15, NULL, 45, 157, 1639, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17377, 16, NULL, 47, 43, 1639, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17378, 17, NULL, 56.5, 158, 1639, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17379, 18, NULL, 64, 472, 1639, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17380, 19, NULL, 72, 386, 1639, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17381, 20, NULL, 94, 371, 1639, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17382, 1, NULL, 31, 376, 1640, 22);
+INSERT INTO
+    DRL_result
+VALUES
+    (17383, 2, NULL, 31.5, 237, 1640, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17384, 3, NULL, 42.75, 385, 1640, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17385, 4, NULL, 46.5, 412, 1640, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17386, 5, NULL, 48.5, 141, 1640, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17387, 6, NULL, 50.25, 472, 1640, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17388, 7, NULL, 50.25, 142, 1640, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17389, 8, NULL, 55.75, 88, 1640, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17390, 9, NULL, 57.25, 242, 1640, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17391, 10, NULL, 76.5, 200, 1640, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17392, 11, NULL, 86.5, 236, 1640, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17393, 12, NULL, 103.75, 283, 1640, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17394, 1, NULL, 35.5, 236, 1641, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17395, 2, NULL, 54.75, 155, 1641, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17396, 3, NULL, 92, 179, 1641, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17397, 4, NULL, 92.5, 412, 1641, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17398, 5, NULL, 96.5, 385, 1641, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17399, 6, NULL, 100.5, 137, 1641, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17400, 7, NULL, 103.5, 237, 1641, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17401, 1, NULL, 20.5, 376, 1642, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17402, 2, NULL, 22.25, 137, 1642, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17403, 3, NULL, 23, 385, 1642, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17404, 4, NULL, 24.75, 236, 1642, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17405, 5, NULL, 34.75, 412, 1642, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17406, 6, NULL, 35, 155, 1642, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17407, 7, NULL, 47.25, 43, 1642, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17408, 8, NULL, 44.75, 179, 1642, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17409, 9, NULL, 54, 242, 1642, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17410, 10, NULL, 62.5, 386, 1642, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17411, 11, NULL, 71, 237, 1642, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17412, 1, NULL, 20.25, 385, 1643, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17413, 2, NULL, 27.75, 412, 1643, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17414, 3, NULL, 43.5, 68, 1643, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17415, 4, NULL, 49.75, 63, 1643, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17416, 5, NULL, 57.25, 386, 1643, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17417, 6, NULL, 64.75, 64, 1643, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17418, 1, NULL, 30, 288, 1647, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17419, 2, NULL, 32, 1, 1647, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17420, 3, NULL, 38, 4, 1647, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17421, 4, NULL, 59, 329, 1647, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17422, 5, NULL, 98, 455, 1647, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17423, 1, NULL, 73.25, 141, 1648, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17424, 2, NULL, 76.75, 242, 1648, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17425, 3, NULL, 77, 228, 1648, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17426, 4, NULL, 82.75, 147, 1648, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17427, 5, NULL, 99, 43, 1648, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17428, 6, NULL, 0, 200, 1648, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17429, 1, NULL, 19, 88, 1649, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17430, 2, NULL, 34, 203, 1649, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17431, 3, NULL, 37, 472, 1649, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17432, 4, NULL, 38, 71, 1649, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17433, 5, NULL, 55.5, 89, 1649, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17434, 6, NULL, 60.5, 473, 1649, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17435, 7, NULL, 64, 72, 1649, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17436, 8, NULL, 85, 447, 1649, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17437, 9, NULL, 86.5, 9, 1649, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17438, 1, NULL, 18, 369, 1650, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17439, 2, NULL, 18.25, 399, 1650, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17440, 3, NULL, 27, 371, 1650, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17441, 4, NULL, 66.5, 321, 1650, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17442, 5, NULL, 105, 79, 1650, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17443, 1, NULL, 30.5, 107, 1651, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (17444, 2, NULL, 30.5, 137, 1651, 21);
+INSERT INTO
+    DRL_result
+VALUES
+    (17445, 3, NULL, 30.75, 376, 1651, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17446, 4, NULL, 31.5, 385, 1651, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17447, 5, NULL, 37.25, 75, 1651, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17448, 6, NULL, 41, 412, 1651, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17449, 7, NULL, 47, 242, 1651, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17450, 8, NULL, 49, 91, 1651, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17451, 9, NULL, 50.25, 141, 1651, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17452, 10, NULL, 51, 467, 1651, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17453, 11, NULL, 57.25, 369, 1651, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17454, 12, NULL, 64.75, 63, 1651, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17455, 1, NULL, 17.5, 236, 1652, 20);
+INSERT INTO
+    DRL_result
+VALUES
+    (17456, 2, NULL, 21, 68, 1652, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17457, 3, NULL, 21.5, 137, 1652, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17458, 4, NULL, 22, 399, 1652, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17459, 5, NULL, 36, 43, 1652, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17460, 6, NULL, 38, 10, 1652, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17461, 7, NULL, 45, 147, 1652, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17462, 8, NULL, 48, 192, 1652, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17463, 9, NULL, 53, 210, 1652, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17464, 10, NULL, 63, 472, 1652, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17465, 11, NULL, 72, 436, 1652, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17466, 1, NULL, 16.25, 236, 1653, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17467, 2, NULL, 18.5, 385, 1653, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17468, 3, NULL, 39, 416, 1653, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17469, 4, NULL, 40.5, 415, 1653, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17470, 5, NULL, 52.25, 157, 1653, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17471, 6, NULL, 56, 412, 1653, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17472, 1, NULL, 17, 236, 1654, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17473, 2, NULL, 30.75, 472, 1654, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17474, 3, NULL, 35.75, 91, 1654, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17475, 4, NULL, 40.75, 63, 1654, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17476, 5, NULL, 41.75, 68, 1654, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17477, 6, NULL, 44.5, 147, 1654, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17478, 7, NULL, 46, 10, 1654, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17479, 8, NULL, 47, 369, 1654, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17480, 9, NULL, 59, 418, 1654, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17481, 10, NULL, 148, 22, 1654, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17482, 1, NULL, 14, 236, 1655, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17483, 2, NULL, 27, 472, 1655, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17484, 3, NULL, 27.5, 91, 1655, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17485, 4, NULL, 28, 63, 1655, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17486, 5, NULL, 37, 68, 1655, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17487, 6, NULL, 38, 10, 1655, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17488, 7, NULL, 45, 147, 1655, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17489, 8, NULL, 48, 418, 1655, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17490, 9, NULL, 52, 369, 1655, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17491, 10, NULL, 83, 22, 1655, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17492, 1, NULL, 32, 236, 1656, 18);
+INSERT INTO
+    DRL_result
+VALUES
+    (17493, 2, NULL, 45, 91, 1656, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17494, 3, NULL, 51.5, 472, 1656, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17495, 4, NULL, 52, 418, 1656, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17496, 5, NULL, 54, 10, 1656, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17497, 6, NULL, 55.5, 63, 1656, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17498, 7, NULL, 56, 68, 1656, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17499, 8, NULL, 60, 369, 1656, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17500, 9, NULL, 66.25, 147, 1656, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17501, 10, NULL, 0, 22, 1656, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17502, 1, NULL, 36, 194, 1657, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17503, 2, NULL, 53, 183, 1657, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17504, 3, NULL, 97, 10, 1657, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17505, 4, NULL, 108, 133, 1657, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17506, 1, NULL, 14.5, 137, 1658, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17507, 2, NULL, 20.5, 399, 1658, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17508, 3, NULL, 24, 7, 1658, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17509, 4, NULL, 28.5, 147, 1658, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17510, 5, NULL, 40, 439, 1658, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17511, 6, NULL, 48, 157, 1658, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17512, 7, NULL, 51, 418, 1658, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17513, 8, NULL, 0, 467, 1658, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17514, 1, NULL, 28.5, 376, 1645, 16);
+INSERT INTO
+    DRL_result
+VALUES
+    (17515, 2, NULL, 34.5, 107, 1645, 14);
+INSERT INTO
+    DRL_result
+VALUES
+    (17516, 3, NULL, 42.5, 385, 1645, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17517, 4, NULL, 45.5, 412, 1645, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17518, 5, NULL, 65.75, 63, 1645, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17519, 6, NULL, 70, 228, 1645, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17520, 7, NULL, 79.25, 141, 1645, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17521, 8, NULL, 80.5, 200, 1645, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17522, 9, NULL, 99.5, 242, 1645, 0);
+INSERT INTO
+    DRL_result
+VALUES
+    (17523, 1, NULL, 19.25, 137, 1646, 12);
+INSERT INTO
+    DRL_result
+VALUES
+    (17524, 2, NULL, 33, 91, 1646, 10);
+INSERT INTO
+    DRL_result
+VALUES
+    (17525, 3, NULL, 38.5, 369, 1646, 8);
+INSERT INTO
+    DRL_result
+VALUES
+    (17526, 4, NULL, 39.25, 467, 1646, 6);
+INSERT INTO
+    DRL_result
+VALUES
+    (17527, 5, NULL, 39.75, 75, 1646, 4);
+INSERT INTO
+    DRL_result
+VALUES
+    (17528, 6, NULL, 52.5, 147, 1646, 2);
+INSERT INTO
+    DRL_result
+VALUES
+    (17529, 7, NULL, 70.75, 43, 1646, 0);
