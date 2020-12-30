@@ -17,11 +17,11 @@ class CompetitionSql extends MysqlRepository
     implements CompetitionRepositoryInterface
 {
     // aliases
-    public const FIELD_NAME_COMPETITION_ID = ' AS competitionId';
-    public const FIELD_NAME_COMPETITION_NAME = ' AS competitionName';
-    public const FIELD_NAME_IS_SINGLE_TOWER = ' AS isSingleTower';
-    public const FIELD_NAME_IS_DRL_COMPETITION = ' AS isDrlCompetition';
-    public const FIELD_NAME_USUAL_LOCATION_ID = ' AS usualLocationId';
+    public const FIELD_NAME_COMPETITION_ID = 'competitionId';
+    public const FIELD_NAME_COMPETITION_NAME = 'competitionName';
+    public const FIELD_NAME_IS_SINGLE_TOWER = 'isSingleTower';
+    public const FIELD_NAME_IS_DRL_COMPETITION = 'isDrlCompetition';
+    public const FIELD_NAME_USUAL_LOCATION_ID = 'usualLocationId';
 
     // fields
     public const SELECT_DRL_COMPETITION_ID = 'dc.id';
@@ -72,7 +72,7 @@ join;
             array_merge(
                 $this->allDrlCompetitionFields(),
                 [
-                    LocationSql::SELECT_LOCATION . LocationSql::FIELD_NAME_LOCATION,
+                    LocationSql::SELECT_LOCATION . ' AS ' . LocationSql::FIELD_NAME_LOCATION,
                 ]
             )
         );
@@ -195,7 +195,7 @@ join;
         $drlQuery->setFields(
             array_merge(
                 $this->allDrlCompetitionFields(),
-                ['1' . self::FIELD_NAME_IS_DRL_COMPETITION]
+                ['1 AS ' . self::FIELD_NAME_IS_DRL_COMPETITION]
             )
         );
         $drlQuery->setTablesAndJoins([self::TABLE_DRL_COMPETITION]);
@@ -206,7 +206,7 @@ join;
             array_merge(
                 $this->allOtherCompetitionFields(),
                 [
-                    '0' . self::FIELD_NAME_IS_DRL_COMPETITION
+                    '0 AS ' . self::FIELD_NAME_IS_DRL_COMPETITION
                 ]
             )
         );
@@ -251,13 +251,13 @@ join;
     ): DrlCompetitionEntity {
         $entity = new DrlCompetitionEntity();
         $entity->setId(
-            (int)$result[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
+            (int)$result[self::FIELD_NAME_COMPETITION_ID]
         );
         $entity->setName(
-            $result[substr(self::FIELD_NAME_COMPETITION_NAME, 4)]
+            $result[self::FIELD_NAME_COMPETITION_NAME]
         );
         $entity->setSingleTowerCompetition(
-            (bool)$result[substr(self::FIELD_NAME_IS_SINGLE_TOWER, 4)]
+            (bool)$result[self::FIELD_NAME_IS_SINGLE_TOWER]
         );
         $entity->setUsualLocation($this->createLocation($result));
 
@@ -269,13 +269,13 @@ join;
     ): OtherCompetitionEntity {
         $entity = new OtherCompetitionEntity();
         $entity->setId(
-            (int)$result[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
+            (int)$result[self::FIELD_NAME_COMPETITION_ID]
         );
         $entity->setName(
-            $result[substr(self::FIELD_NAME_COMPETITION_NAME, 4)]
+            $result[self::FIELD_NAME_COMPETITION_NAME]
         );
         $entity->setSingleTowerCompetition(
-            (bool)$result[substr(self::FIELD_NAME_IS_SINGLE_TOWER, 4)]
+            (bool)$result[self::FIELD_NAME_IS_SINGLE_TOWER]
         );
         $entity->setUsualLocation($this->createLocation($result));
 
@@ -285,17 +285,17 @@ join;
     private function createLocation(array $result): ?LocationEntity
     {
         if (
-        !empty($result[substr(self::FIELD_NAME_USUAL_LOCATION_ID, 4)])
+        !empty($result[self::FIELD_NAME_USUAL_LOCATION_ID])
         ) {
             $location = new LocationEntity();
             $location->setId(
-                (int)$result[substr(self::FIELD_NAME_USUAL_LOCATION_ID, 4)]
+                (int)$result[self::FIELD_NAME_USUAL_LOCATION_ID]
             );
             if (
-            isset($result[substr(LocationSql::FIELD_NAME_LOCATION, 4)])
+            isset($result[LocationSql::FIELD_NAME_LOCATION])
             ) {
                 $location->setLocation(
-                    $result[substr(LocationSql::FIELD_NAME_LOCATION, 4)]
+                    $result[LocationSql::FIELD_NAME_LOCATION]
                 );
             }
         } else {
@@ -311,20 +311,20 @@ join;
     private function allDrlCompetitionFields(): array
     {
         return [
-            self::SELECT_DRL_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
-            self::SELECT_DRL_COMPETITION_NAME . self::FIELD_NAME_COMPETITION_NAME,
-            self::SELECT_DRL_COMPETITION_SINGLE_TOWER . self::FIELD_NAME_IS_SINGLE_TOWER,
-            self::SELECT_DRL_COMPETITION_USUAL_LOCATION_ID . self::FIELD_NAME_USUAL_LOCATION_ID,
+            self::SELECT_DRL_COMPETITION_ID . ' AS ' . self::FIELD_NAME_COMPETITION_ID,
+            self::SELECT_DRL_COMPETITION_NAME . ' AS ' . self::FIELD_NAME_COMPETITION_NAME,
+            self::SELECT_DRL_COMPETITION_SINGLE_TOWER . ' AS ' . self::FIELD_NAME_IS_SINGLE_TOWER,
+            self::SELECT_DRL_COMPETITION_USUAL_LOCATION_ID . ' AS ' . self::FIELD_NAME_USUAL_LOCATION_ID,
         ];
     }
 
     private function allOtherCompetitionFields(): array
     {
         return [
-            self::SELECT_OTHER_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
-            self::SELECT_OTHER_COMPETITION_NAME . self::FIELD_NAME_COMPETITION_NAME,
-            self::SELECT_OTHER_COMPETITION_SINGLE_TOWER . self::FIELD_NAME_IS_SINGLE_TOWER,
-            self::SELECT_OTHER_COMPETITION_USUAL_LOCATION_ID . self::FIELD_NAME_USUAL_LOCATION_ID,
+            self::SELECT_OTHER_COMPETITION_ID . ' AS ' . self::FIELD_NAME_COMPETITION_ID,
+            self::SELECT_OTHER_COMPETITION_NAME . ' AS ' . self::FIELD_NAME_COMPETITION_NAME,
+            self::SELECT_OTHER_COMPETITION_SINGLE_TOWER . ' AS ' . self::FIELD_NAME_IS_SINGLE_TOWER,
+            self::SELECT_OTHER_COMPETITION_USUAL_LOCATION_ID . ' AS ' . self::FIELD_NAME_USUAL_LOCATION_ID,
         ];
     }
 

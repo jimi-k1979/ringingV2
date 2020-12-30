@@ -25,12 +25,12 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     public const SELECT_USUAL_LOCATION = 'usualLocation.location';
 
     // aliases
-    public const FIELD_NAME_ID = ' AS id';
-    public const FIELD_NAME_EVENT_ID = ' AS eventId';
-    public const FIELD_NAME_YEAR = ' AS year';
-    public const FIELD_NAME_COMPETITION_ID = ' AS competitionId';
-    public const FIELD_NAME_LOCATION_ID = ' AS locationId';
-    public const FIELD_NAME_IS_UNUSUAL_TOWER = ' AS isUnusualTower';
+    public const FIELD_NAME_ID = 'id';
+    public const FIELD_NAME_EVENT_ID = 'eventId';
+    public const FIELD_NAME_YEAR = 'year';
+    public const FIELD_NAME_COMPETITION_ID = 'competitionId';
+    public const FIELD_NAME_LOCATION_ID = 'locationId';
+    public const FIELD_NAME_IS_UNUSUAL_TOWER = 'isUnusualTower';
     public const FIELD_NAME_USUAL_LOCATION = ' AS usualLocation';
 
     // tables and join
@@ -65,12 +65,12 @@ join;
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_EVENT_ID,
-                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
-                self::SELECT_DRL_EVENT_LOCATION_ID . self::FIELD_NAME_LOCATION_ID,
-                self::SELECT_DRL_EVENT_IS_UNUSUAL_TOWER . self::FIELD_NAME_IS_UNUSUAL_TOWER,
-                CompetitionSql::SELECT_DRL_COMPETITION_NAME . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
-                CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
+                self::SELECT_DRL_EVENT_ID . ' AS ' . self::FIELD_NAME_EVENT_ID,
+                self::SELECT_DRL_EVENT_YEAR . ' AS ' . self::FIELD_NAME_YEAR,
+                self::SELECT_DRL_EVENT_LOCATION_ID . ' AS ' . self::FIELD_NAME_LOCATION_ID,
+                self::SELECT_DRL_EVENT_IS_UNUSUAL_TOWER . ' AS ' . self::FIELD_NAME_IS_UNUSUAL_TOWER,
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME . ' AS ' . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
+                CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . ' AS ' . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
             ]
         );
         $query->setTablesAndJoins(
@@ -162,38 +162,38 @@ join;
     {
         $entity = new DrlEventEntity();
 
-        if (isset($row[substr(self::FIELD_NAME_ID, 4)])) {
-            $entity->setId((int)$row[substr(self::FIELD_NAME_ID, 4)]);
-        } elseif (isset($row[substr(self::FIELD_NAME_EVENT_ID, 4)])) {
-            $entity->setId((int)$row[substr(self::FIELD_NAME_EVENT_ID, 4)]);
+        if (isset($row[self::FIELD_NAME_ID])) {
+            $entity->setId((int)$row[self::FIELD_NAME_ID]);
+        } elseif (isset($row[self::FIELD_NAME_EVENT_ID])) {
+            $entity->setId((int)$row[self::FIELD_NAME_EVENT_ID]);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_YEAR, 4)])) {
-            $entity->setYear($row[substr(self::FIELD_NAME_YEAR, 4)]);
+        if (isset($row[self::FIELD_NAME_YEAR])) {
+            $entity->setYear($row[self::FIELD_NAME_YEAR]);
         }
 
         if (
-            isset($row[substr(self::FIELD_NAME_COMPETITION_ID, 4)]) ||
-            isset($row[substr(CompetitionSql::FIELD_NAME_COMPETITION_NAME, 4)]) ||
-            isset($row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)]) ||
+            isset($row[self::FIELD_NAME_COMPETITION_ID]) ||
+            isset($row[CompetitionSql::FIELD_NAME_COMPETITION_NAME]) ||
+            isset($row[CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER]) ||
             isset($row[substr(self::FIELD_NAME_USUAL_LOCATION, 4)])
         ) {
             $competition = new DrlCompetitionEntity();
 
-            if (isset($row[substr(self::FIELD_NAME_COMPETITION_ID, 4)])) {
+            if (isset($row[self::FIELD_NAME_COMPETITION_ID])) {
                 $competition->setId(
-                    (int)$row[substr(self::FIELD_NAME_COMPETITION_ID, 4)]
+                    (int)$row[self::FIELD_NAME_COMPETITION_ID]
                 );
             }
 
-            if (isset($row[substr(CompetitionSql::FIELD_NAME_COMPETITION_NAME, 4)])) {
+            if (isset($row[CompetitionSql::FIELD_NAME_COMPETITION_NAME])) {
                 $competition->setName(
-                    $row[substr(CompetitionSql::FIELD_NAME_COMPETITION_NAME, 4)]
+                    $row[CompetitionSql::FIELD_NAME_COMPETITION_NAME]
                 );
             }
-            if (isset($row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)])) {
+            if (isset($row[CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER])) {
                 $competition->setSingleTowerCompetition(
-                    (bool)$row[substr(CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER, 4)]
+                    (bool)$row[CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER]
                 );
             }
             if (isset($row[substr(self::FIELD_NAME_USUAL_LOCATION, 4)])) {
@@ -207,15 +207,15 @@ join;
             $entity->setCompetition($competition);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_LOCATION_ID, 4)])) {
+        if (isset($row[self::FIELD_NAME_LOCATION_ID])) {
             $location = new LocationEntity();
-            $location->setId((int)$row[substr(self::FIELD_NAME_LOCATION_ID, 4)]);
+            $location->setId((int)$row[self::FIELD_NAME_LOCATION_ID]);
             $entity->setLocation($location);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_IS_UNUSUAL_TOWER, 4)])) {
+        if (isset($row[self::FIELD_NAME_IS_UNUSUAL_TOWER])) {
             $entity->setUnusualTower(
-                (bool)$row[substr(self::FIELD_NAME_IS_UNUSUAL_TOWER, 4)]
+                (bool)$row[self::FIELD_NAME_IS_UNUSUAL_TOWER]
             );
         }
         return $entity;
@@ -233,8 +233,8 @@ join;
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_ID,
-                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
+                self::SELECT_DRL_EVENT_ID . ' AS ' . self::FIELD_NAME_ID,
+                self::SELECT_DRL_EVENT_YEAR . ' AS ' . self::FIELD_NAME_YEAR,
             ]
         );
         $query->setTablesAndJoins(
@@ -288,8 +288,8 @@ join;
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_ID,
-                CompetitionSql::SELECT_DRL_COMPETITION_NAME . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
+                self::SELECT_DRL_EVENT_ID . ' AS ' . self::FIELD_NAME_ID,
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME . ' AS ' . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
             ]
         );
         $query->setTablesAndJoins(

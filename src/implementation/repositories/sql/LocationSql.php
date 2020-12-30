@@ -25,12 +25,12 @@ class LocationSql
     public const SELECT_NO_OF_BELLS = 'l.noOfBells';
 
     // aliases
-    public const FIELD_NAME_ID = ' AS id';
-    public const FIELD_NAME_LOCATION = ' AS location';
-    public const FIELD_NAME_DEANERY_ID = ' AS deaneryId';
-    public const FIELD_NAME_DEDICATION = ' AS dedication';
-    public const FIELD_NAME_TENOR_WEIGHT = ' AS tenorWeight';
-    public const FIELD_NAME_NO_OF_BELLS = ' AS noOfBells';
+    public const FIELD_NAME_ID = 'id';
+    public const FIELD_NAME_LOCATION = 'location';
+    public const FIELD_NAME_DEANERY_ID = 'deaneryId';
+    public const FIELD_NAME_DEDICATION = 'dedication';
+    public const FIELD_NAME_TENOR_WEIGHT = 'tenorWeight';
+    public const FIELD_NAME_NO_OF_BELLS = 'noOfBells';
 
     // tables and joins
     public const TABLE_LOCATION = 'location l';
@@ -138,36 +138,36 @@ class LocationSql
     {
         $entity = new LocationEntity();
 
-        if (isset($row[substr(self::FIELD_NAME_ID, 4)])) {
-            $entity->setId((int)$row[substr(self::FIELD_NAME_ID, 4)]);
+        if (isset($row[self::FIELD_NAME_ID])) {
+            $entity->setId((int)$row[self::FIELD_NAME_ID]);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_LOCATION, 4)])) {
-            $entity->setLocation($row[substr(self::FIELD_NAME_LOCATION, 4)]);
+        if (isset($row[self::FIELD_NAME_LOCATION])) {
+            $entity->setLocation($row[self::FIELD_NAME_LOCATION]);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_DEANERY_ID, 4)])) {
+        if (isset($row[self::FIELD_NAME_DEANERY_ID])) {
             $deanery = new DeaneryEntity();
-            $deanery->setId((int)$row[substr(self::FIELD_NAME_DEANERY_ID, 4)]);
+            $deanery->setId((int)$row[self::FIELD_NAME_DEANERY_ID]);
 
             $entity->setDeanery($deanery);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_DEDICATION, 4)])) {
+        if (isset($row[self::FIELD_NAME_DEDICATION])) {
             $entity->setDedication(
-                $row[substr(self::FIELD_NAME_DEDICATION, 4)]
+                $row[self::FIELD_NAME_DEDICATION]
             );
         }
 
-        if (isset($row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)])) {
+        if (isset($row[self::FIELD_NAME_TENOR_WEIGHT])) {
             $entity->setTenorWeight(
-                $row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)]
+                $row[self::FIELD_NAME_TENOR_WEIGHT]
             );
         }
 
-        if (isset($row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)])) {
+        if (isset($row[self::FIELD_NAME_NO_OF_BELLS])) {
             $entity->setNumberOfBells(
-                (int)$row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)]
+                (int)$row[self::FIELD_NAME_NO_OF_BELLS]
             );
         }
         return $entity;
@@ -179,12 +179,12 @@ class LocationSql
     private function allLocationFields(): array
     {
         return [
-            self::SELECT_ID . self::FIELD_NAME_ID,
-            self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
-            self::SELECT_DEANERY_ID . self::FIELD_NAME_DEANERY_ID,
-            self::SELECT_DEDICATION . self::FIELD_NAME_DEDICATION,
-            self::SELECT_TENOR_WEIGHT . self::FIELD_NAME_TENOR_WEIGHT,
-            self::SELECT_NO_OF_BELLS . self::FIELD_NAME_NO_OF_BELLS,
+            self::SELECT_ID . ' AS ' . self::FIELD_NAME_ID,
+            self::SELECT_LOCATION . ' AS ' . self::FIELD_NAME_LOCATION,
+            self::SELECT_DEANERY_ID . ' AS ' . self::FIELD_NAME_DEANERY_ID,
+            self::SELECT_DEDICATION . ' AS ' . self::FIELD_NAME_DEDICATION,
+            self::SELECT_TENOR_WEIGHT . ' AS ' . self::FIELD_NAME_TENOR_WEIGHT,
+            self::SELECT_NO_OF_BELLS . ' AS ' . self::FIELD_NAME_NO_OF_BELLS,
         ];
     }
 }
