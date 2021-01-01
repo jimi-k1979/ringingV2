@@ -10,6 +10,12 @@ try {
     switch ($_POST['action']) {
         case 'getCompetitionDetails':
 
+
+            echo json_encode(
+                [
+                    'text' => 'hi!',
+                ]
+            );
             break;
 
         default:

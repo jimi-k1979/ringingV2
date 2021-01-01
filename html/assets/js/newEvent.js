@@ -36,7 +36,7 @@ function enableCompetitionFieldIfInYearRange(enteredDate) {
     }
 }
 
-$(document).ready(function () {
+$(function () {
     $('#year-text-search')
         .on('change', function () {
             enableCompetitionFieldIfInYearRange(
