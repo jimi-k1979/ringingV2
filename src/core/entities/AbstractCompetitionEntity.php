@@ -13,15 +13,15 @@ abstract class AbstractCompetitionEntity extends Entity
     /**
      * @var string
      */
-    private $name;
+    protected $name;
     /**
      * @var bool
      */
-    private $singleTowerCompetition;
+    protected $singleTowerCompetition;
     /**
      * @var null|LocationEntity
      */
-    private $usualLocation = null;
+    protected $usualLocation = null;
 
     /**
      * @return string
@@ -71,4 +71,5 @@ abstract class AbstractCompetitionEntity extends Entity
         $this->usualLocation = $usualLocation;
     }
 
+    abstract public function toArray(): array;
 }
