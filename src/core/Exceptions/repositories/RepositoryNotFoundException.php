@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace DrlArchive\core\Exceptions\repositories;
 
 
-use Exception;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
-class RepositoryNotFoundException extends Exception
+class RepositoryNotFoundException extends CleanArchitectureException
 {
 
 }

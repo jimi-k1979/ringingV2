@@ -1,12 +1,13 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\core\Exceptions\repositories;
 
 
-use Exception;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
-class GeneralRepositoryErrorException extends Exception
+class GeneralRepositoryErrorException extends CleanArchitectureException
 {
 
 }
