@@ -70,7 +70,7 @@ class LocationSql
         $result = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($result)) {
@@ -116,7 +116,7 @@ class LocationSql
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {

@@ -58,13 +58,13 @@ class DatabaseMock implements SqlDatabaseInterface
 
     public function query(
         string $sql,
-        array $placeholders = [],
-        int $queryType = SqlDatabaseInterface::MULTI_ROW
-    ): array {
+        array $params = [],
+        int $queryType = SqlDatabaseInterface::FETCH_MULTI_ROW
+    ) {
         $this->queryCalled = true;
         $this->queryArgs[$this->queryCount] = [
             'sql' => $sql,
-            'placeholders' => $placeholders
+            'placeholders' => $params
         ];
 
         if (!isset($this->queryResults[$this->queryCount])) {
@@ -217,9 +217,9 @@ class DatabaseMock implements SqlDatabaseInterface
     }
 
 
-    public function getLastInsertId(): int
+    public function getLastInsertId(): string
     {
-        return (int)rand(1, 1000);
+        return (string)rand(1, 1000);
     }
 
 

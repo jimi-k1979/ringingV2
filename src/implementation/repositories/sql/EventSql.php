@@ -92,7 +92,7 @@ join;
         $result = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($result)) {
@@ -141,7 +141,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
@@ -261,7 +261,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
@@ -312,7 +312,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             ['year' => $year],
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
@@ -370,7 +370,7 @@ join;
         $result = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($result)) {

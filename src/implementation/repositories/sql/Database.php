@@ -9,13 +9,13 @@ use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryAlreadyExistsException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
-use DrlArchive\implementation\interfaces\SqlDatabaseInterface;
+use DrlArchive\implementation\interfaces\RawPdoDatabaseInterface;
 use DrlArchive\Settings;
 use Exception;
 use PDO;
 use PDOStatement;
 
-class Database implements SqlDatabaseInterface
+class Database implements RawPdoDatabaseInterface
 {
     public const ERROR_CONSTRAINT = 23000;
     public const ERROR_CONNECTION = 2002;
@@ -80,20 +80,22 @@ class Database implements SqlDatabaseInterface
      * @param string $sql
      * @param array $params
      * @param int $queryType
-     * @return array
+     * @return array|mixed
      */
     public function query(
         string $sql,
         array $params = [],
-        int $queryType = SqlDatabaseInterface::MULTI_ROW
-    ): array {
+        int $queryType = self::FETCH_MULTI_ROW
+    ) {
         $stmt = $this->connection->prepare($sql);
         $stmt->execute($params);
 
-        if ($queryType === self::SINGLE_ROW) {
+        if ($queryType === self::FETCH_SINGLE_ROW) {
             return $stmt->fetch(PDO::FETCH_ASSOC);
-        } else {
+        } elseif ($queryType === self::FETCH_MULTI_ROW) {
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            return $stmt->fetchColumn();
         }
     }
 
@@ -162,11 +164,11 @@ class Database implements SqlDatabaseInterface
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getLastInsertId(): int
+    public function getLastInsertId(): string
     {
-        return (int)$this->connection->lastInsertId();
+        return $this->connection->lastInsertId();
     }
 
     /**
@@ -210,11 +212,9 @@ class Database implements SqlDatabaseInterface
                     );
                 }
                 throw new GeneralRepositoryErrorException($e->getMessage());
-                break;
 
             case self::ERROR_NO_TABLE_FOUND:
                 throw new GeneralRepositoryErrorException($e->getMessage());
-                break;
 
             case self::ERROR_CONNECTION:
             case self::ERROR_DATABASE_NAME:
@@ -222,14 +222,12 @@ class Database implements SqlDatabaseInterface
                     'Error connection to storage',
                     Repository::REPOSITORY_ERROR_CONNECTION
                 );
-                break;
 
             case self::ERROR_ACCESS_DENIED:
                 throw new RepositoryConnectionErrorException(
                     'Access denied when connecting to storage',
                     Repository::REPOSITORY_ERROR_ACCESS_DENIED
                 );
-                break;
 
             case self::ERROR_NO_CODE:
                 throw new GeneralRepositoryErrorException(

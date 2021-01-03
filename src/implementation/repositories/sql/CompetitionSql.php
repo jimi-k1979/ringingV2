@@ -87,7 +87,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             ['id' => $id],
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($results)) {
@@ -120,7 +120,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
@@ -167,7 +167,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
@@ -225,7 +225,7 @@ join;
         $results = $this->database->query(
             $sql,
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
         if (empty($results)) {
             throw new RepositoryNoResults(
@@ -354,7 +354,7 @@ join;
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             ['name' => $competitionName],
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($results)) {

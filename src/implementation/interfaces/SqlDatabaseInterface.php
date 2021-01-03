@@ -3,18 +3,17 @@ declare(strict_types=1);
 
 namespace DrlArchive\implementation\interfaces;
 
-use \PDOStatement;
-
 interface SqlDatabaseInterface
 {
-    public const SINGLE_ROW = 1;
-    public const MULTI_ROW = 0;
+    public const FETCH_SINGLE_ROW = 1;
+    public const FETCH_MULTI_ROW = 0;
+    public const FETCH_SINGLE_VALUE = 2;
 
     public function query(
         string $sql,
         array $params = [],
-        int $queryType = self::MULTI_ROW
-    ): array;
+        int $queryType = self::FETCH_MULTI_ROW
+    );
 
     public function execute(string $sql, array $params = []): int;
 
@@ -29,12 +28,6 @@ interface SqlDatabaseInterface
 
     public function rollbackTransaction(): void;
 
-    public function getLastInsertId(): int;
+    public function getLastInsertId(): string;
 
-    public function fetchReadOnlyStatement(
-        string $query,
-        array $params = []
-    ): PDOStatement;
-
-    public function closeStatementCursor(PDOStatement $statement): void;
 }
