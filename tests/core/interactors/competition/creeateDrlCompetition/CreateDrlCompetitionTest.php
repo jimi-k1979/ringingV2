@@ -6,8 +6,6 @@ namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
-use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetition;
-use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\mocks\CompetitionDummy;
@@ -192,7 +190,7 @@ class CreateDrlCompetitionTest extends TestCase
         $this->assertEquals(
             [
                 'code' =>
-                    CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+                    CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION,
                 'message' => 'Unable to add a competition',
             ],
             $response->getData()

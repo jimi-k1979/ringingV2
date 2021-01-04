@@ -99,7 +99,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to add a competition',
-                CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
         return $this->insertDrlCompetitionValue ??
@@ -162,7 +162,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @inheritDoc
      * @throws RepositoryNoResults
      */
-    public function fuzzySearchDrlCompetition(string $string): array
+    public function fuzzySearchDrlCompetitions(string $string): array
     {
         $this->fuzzySearchDrlCompetitionCalled = true;
         if ($this->throwException) {
@@ -288,4 +288,11 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         $this->fetchDrlCompetitionByNameValue = $value;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchOtherCompetitions(string $search): array
+    {
+        return [];
+    }
 }

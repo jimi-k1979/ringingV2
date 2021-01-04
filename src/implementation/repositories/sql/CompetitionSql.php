@@ -8,9 +8,12 @@ namespace DrlArchive\implementation\repositories\sql;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\entities\OtherCompetitionEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
+use DrlArchive\core\Exceptions\NotImplementedException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
 class CompetitionSql extends MysqlRepository
@@ -105,7 +108,7 @@ join;
      * @throws GeneralRepositoryErrorException
      * @throws RepositoryNoResults
      */
-    public function fuzzySearchDrlCompetition(string $string): array
+    public function fuzzySearchDrlCompetitions(string $string): array
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(
@@ -365,5 +368,17 @@ join;
         }
 
         return $this->createDrlCompetitionEntity($results);
+    }
+
+    /**
+     * @inheritDoc
+     * @throws CleanArchitectureException
+     */
+    public function fuzzySearchOtherCompetitions(string $search): array
+    {
+        throw new NotImplementedException(
+            'Not implemented in this repository, use CompetitionDoctrine',
+            Repository::METHOD_NOT_IMPLEMENTED_EXCEPTION
+        );
     }
 }

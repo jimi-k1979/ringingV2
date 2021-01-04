@@ -6,7 +6,6 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\OtherCompetitionEntity;
-use DrlArchive\implementation\repositories\sql\CompetitionSql;
 use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\StripStringTrait;
@@ -251,7 +250,7 @@ sql;
         ];
         $databaseMock->addQueryResult(DatabaseMock::FIRST_CALL, $resultArray);
         $entities = (new CompetitionSql($databaseMock))
-            ->fuzzySearchDrlCompetition('competition');
+            ->fuzzySearchDrlCompetitions('competition');
 
         $queryArgs = $databaseMock->getQueryArgs();
 
