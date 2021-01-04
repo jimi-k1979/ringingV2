@@ -14,7 +14,7 @@ trait CreateMockDeaneryTrait
         $entity = new DeaneryEntity();
         $entity->setId(123);
         $entity->setName('Test deanery');
-        $entity->setLocationInCounty('south');
+        $entity->setRegion('south');
 
         return $entity;
     }

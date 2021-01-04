@@ -25,7 +25,7 @@ class DrlCompetitionEntity extends AbstractCompetitionEntity
                     'name' => $this->usualLocation->getDeanery()->getName(),
                     'locationInCounty' => $this->usualLocation
                         ->getDeanery()
-                        ->getLocationInCounty(),
+                        ->getRegion(),
                 ],
                 'dedication' => $this->usualLocation->getDedication(),
                 'numberOfBells' => $this->usualLocation->getNumberOfBells(),

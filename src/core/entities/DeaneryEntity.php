@@ -12,6 +12,7 @@ class DeaneryEntity extends Entity
         'north',
         'south',
         'outofcounty',
+        'n/a',
     ];
 
     /**
@@ -21,7 +22,7 @@ class DeaneryEntity extends Entity
     /**
      * @var string
      */
-    private $locationInCounty;
+    private $region;
 
     /**
      * @return string
@@ -42,24 +43,24 @@ class DeaneryEntity extends Entity
     /**
      * @return string
      */
-    public function getLocationInCounty(): string
+    public function getRegion(): string
     {
-        return $this->locationInCounty;
+        return $this->region;
     }
 
     /**
-     * @param string $locationInCounty
+     * @param string $region
      * @throws InvalidEntityPropertyException
      */
-    public function setLocationInCounty(string $locationInCounty): void
+    public function setRegion(string $region): void
     {
         $inArray = array_search(
-            strtolower($locationInCounty),
+            strtolower($region),
             self::LOCATIONS_IN_COUNTY
         );
 
         if (is_numeric($inArray)) {
-            $this->locationInCounty = strtolower($locationInCounty);
+            $this->region = strtolower($region);
         } else {
             throw new InvalidEntityPropertyException(
                 'Location in county must be North, South or OutOfCounty'
