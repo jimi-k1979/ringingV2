@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByName;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
@@ -14,11 +15,13 @@ use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockLocationTrait;
 use PHPUnit\Framework\TestCase;
 
 class FetchDrlCompetitionByNameTest extends TestCase
 {
     use CreateMockDrlCompetitionTrait;
+    use CreateMockLocationTrait;
 
     public function testInstantiation(): void
     {
@@ -144,4 +147,53 @@ class FetchDrlCompetitionByNameTest extends TestCase
             'Incorrect response data'
         );
     }
+
+    public function testSuccessfulFullResponse(): void
+    {
+        $compEntity = $this->createMockDrlCompetition();
+        $compEntity->setSingleTowerCompetition(true);
+        $compEntity->setUsualLocation($this->createMockLocation());
+
+        $competitionSpy = new CompetitionSpy();
+        $competitionSpy->setFetchDrlCompetitionByNameValue($compEntity);
+
+        $presenterSpy = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setCompetitionRepository($competitionSpy);
+        $useCase->setPresenter($presenterSpy);
+        $useCase->execute();
+
+        $response = $presenterSpy->getResponse();
+
+        $expectedData = [
+            'id' => 999,
+            'name' => 'Test competition',
+            'isSingleTowerCompetition' => true,
+            'usualLocation' => [
+                'id' => 999,
+                'location' => 'Test tower',
+                'deanery' => [
+                    'id' => 123,
+                    'name' => 'Test deanery',
+                    'locationInCounty' => 'south',
+                ],
+                'dedication' => 'S Test',
+                'numberOfBells' => null,
+                'tenorWeight' => 'test cwt',
+            ],
+        ];
+
+        $this->assertEquals(
+            Response::STATUS_SUCCESS,
+            $response->getStatus(),
+            'Incorrect response status'
+        );
+        $this->assertEquals(
+            $expectedData,
+            $response->getData(),
+            'Incorrect response data'
+        );
+    }
+
 }

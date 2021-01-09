@@ -32,7 +32,7 @@ class DoctrineDatabase implements DoctrineDatabaseInterface
     public const ERROR_NO_TABLE_FOUND = '42S02';
     public const ERROR_NO_CODE = 0;
 
-    private static DoctrineDatabase $database;
+    private static ?DoctrineDatabase $database = null;
     private Connection $connection;
     private int $transactionCount = 0;
 

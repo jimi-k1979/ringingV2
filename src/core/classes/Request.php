@@ -37,7 +37,7 @@ class Request
     /**
      * @var array
      */
-    protected $data = [];
+    protected array $data = [];
     /**
      * @var array
      */
