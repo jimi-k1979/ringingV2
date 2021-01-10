@@ -50,7 +50,7 @@ join;
     public const WHERE_LOCATION_ID_IS = 'de.locationID = :locationId';
     public const WHERE_YEAR_IS = 'de.year = :year';
 
-    public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
+    public function insertDrlEvent(DrlEventEntity $entity): void
     {
         // TODO: Implement insertDrlEvent() method.
     }
@@ -341,16 +341,16 @@ join;
 
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_EVENT_ID,
-                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
-                self::SELECT_DRL_EVENT_IS_UNUSUAL_TOWER . self::FIELD_NAME_IS_UNUSUAL_TOWER,
-                self::SELECT_DRL_EVENT_COMPETITION_ID . self::FIELD_NAME_COMPETITION_ID,
-                CompetitionSql::SELECT_DRL_COMPETITION_NAME . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
-                CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
-                CompetitionSql::SELECT_DRL_COMPETITION_USUAL_LOCATION_ID . CompetitionSql::FIELD_NAME_USUAL_LOCATION_ID,
-                self::SELECT_USUAL_LOCATION . self::FIELD_NAME_USUAL_LOCATION,
-                self::SELECT_DRL_EVENT_LOCATION_ID . self::FIELD_NAME_LOCATION_ID,
-                LocationSql::SELECT_LOCATION . LocationSql::FIELD_NAME_LOCATION,
+                self::SELECT_DRL_EVENT_ID . ' AS ' . self::FIELD_NAME_EVENT_ID,
+                self::SELECT_DRL_EVENT_YEAR . ' AS ' . self::FIELD_NAME_YEAR,
+                self::SELECT_DRL_EVENT_IS_UNUSUAL_TOWER . ' AS ' . self::FIELD_NAME_IS_UNUSUAL_TOWER,
+                self::SELECT_DRL_EVENT_COMPETITION_ID . ' AS ' . self::FIELD_NAME_COMPETITION_ID,
+                CompetitionSql::SELECT_DRL_COMPETITION_NAME . ' AS ' . CompetitionSql::FIELD_NAME_COMPETITION_NAME,
+                CompetitionSql::SELECT_DRL_COMPETITION_SINGLE_TOWER . ' AS ' . CompetitionSql::FIELD_NAME_IS_SINGLE_TOWER,
+                CompetitionSql::SELECT_DRL_COMPETITION_USUAL_LOCATION_ID . ' AS ' . CompetitionSql::FIELD_NAME_USUAL_LOCATION_ID,
+                self::SELECT_USUAL_LOCATION . ' AS ' . self::FIELD_NAME_USUAL_LOCATION,
+                self::SELECT_DRL_EVENT_LOCATION_ID . ' AS ' . self::FIELD_NAME_LOCATION_ID,
+                LocationSql::SELECT_LOCATION . ' AS ' . LocationSql::FIELD_NAME_LOCATION,
             ]
         );
         $query->setTablesAndJoins(

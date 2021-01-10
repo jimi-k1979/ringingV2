@@ -9,7 +9,7 @@ use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 
 interface EventRepositoryInterface
 {
-    public const UNABLE_TO_INSERT_EXCEPTION = 2501;
+    public const NO_ROWS_CREATED_EXCEPTION = 2501;
     public const NO_ROWS_FOUND_EXCEPTION = 2502;
     public const NO_ROWS_UPDATED_EXCEPTION = 2503;
     public const NO_ROWS_DELETED_EXCEPTION = 2504;
@@ -18,7 +18,7 @@ interface EventRepositoryInterface
 
     public function insertDrlEvent(
         DrlEventEntity $entity
-    ): DrlEventEntity;
+    ): void;
 
     /**
      * @param int $id

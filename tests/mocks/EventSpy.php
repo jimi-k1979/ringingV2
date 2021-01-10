@@ -92,20 +92,18 @@ class EventSpy implements EventRepositoryInterface
 
     /**
      * @param DrlEventEntity $entity
-     * @return DrlEventEntity
+     * @return void
      * @throws GeneralRepositoryErrorException
      */
-    public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
+    public function insertDrlEvent(DrlEventEntity $entity): void
     {
         $this->insertEventCalled = true;
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 "Can't insert event",
-                EventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                EventRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
-
-        return $this->drlEventValue ?? $this->createMockDrlEvent();
     }
 
     /**
