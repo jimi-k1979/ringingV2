@@ -73,7 +73,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
         if ($rows === 0) {
             throw new RepositoryInsertFailedException(
                 'No competition inserted',
-                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+                CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
 

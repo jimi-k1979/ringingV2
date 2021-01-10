@@ -3,11 +3,9 @@
 declare(strict_types=1);
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\Exceptions\BadDataException;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\interactors\competition\fetchDrlCompetitionByName\FetchDrlCompetitionByNameRequest;
+use DrlArchive\core\interactors\event\checkDrlEventExists\CheckDrlEventExistsRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
-use DrlArchive\implementation\factories\interactors\competition\FetchDrlCompetitionByNameFactory;
+use DrlArchive\implementation\factories\interactors\event\CheckDrlEventExistsFactory;
 
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
@@ -17,9 +15,9 @@ try {
     switch ($_POST['action']) {
         case 'getCompetitionDetails':
             try {
-                $request = new FetchDrlCompetitionByNameRequest();
+                $request = new CheckDrlEventExistsRequest();
                 $request->setCompetitionName($_POST['competition']);
-                $request->setYear((int)$_POST['year']);
+                $request->setEventYear($_POST['year']);
 
                 $presenter = new class implements PresenterInterface {
                     private array $data;
@@ -32,48 +30,55 @@ try {
                     public function send(?Response $response = null)
                     {
                         if ($response->getStatus() === Response::STATUS_SUCCESS) {
-                            $this->data = $response->getData();
+                            $data = $response->getData();
+                            if (isset($data['eventId'])) {
+                                echo json_encode(
+                                    [
+                                        'message' => 'Event already exists in database',
+                                        'status' => 400,
+                                    ]
+                                );
+                            } else {
+                                $competition = [
+                                    'status' => 200,
+                                    'competitionId' => $data['competitionId'],
+                                ];
+                                if ($data['singleTower']) {
+                                    $competition = array_merge(
+                                        $competition,
+                                        [
+                                            'usualLocationId' => $data['usualLocationId'],
+                                            'usualLocation' => $data['usualLocation'],
+                                        ]
+                                    );
+                                }
+                                echo json_encode(
+                                    $competition
+                                );
+                            }
                         } else {
-                            throw new BadDataException(
-                                $response->getMessage(),
-                                $response->getStatus()
+                            echo json_encode(
+                                [
+                                    'message' => $response->getMessage(),
+                                    'status' => 500,
+                                ]
                             );
                         }
                     }
                 };
 
-                $useCase = (new FetchDrlCompetitionByNameFactory())->create(
+                $useCase = (new CheckDrlEventExistsFactory())->create(
                     $presenter,
                     $request
+                // todo - add logged in user ID
                 );
+
                 $useCase->execute();
-
-                $data = $presenter->getData();
-
-                if ($data['isSingleTowerCompetition']) {
-                    $locationData = [
-                        'usualLocationId' => $data['usualLocation']['id'],
-                        'usualLocationName' => $data['usualLocation']['location'],
-                    ];
-                } else {
-                    $locationData = [];
-                }
-                echo json_encode(
-                    array_merge(
-                        [
-                            'id' => $data['id'],
-                            'name' => $data['name'],
-                            'isSingleTower' => $data['isSingleTowerCompetition'],
-                        ],
-                        $locationData
-                    )
-                );
-            } catch (CleanArchitectureException $e) {
+            } catch (Throwable $e) {
                 echo json_encode(
                     [
-                        'name' => 'Not found',
-                        'id' => 0,
-                        'text' => $e->getMessage()
+                        'status' => 500,
+                        'message' => 'unknown error',
                     ]
                 );
             }

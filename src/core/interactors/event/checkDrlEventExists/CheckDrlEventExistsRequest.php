@@ -12,7 +12,7 @@ class CheckDrlEventExistsRequest extends Request
     public const EVENT_YEAR = 'eventYear';
     public const COMPETITION_NAME = 'competitionName';
 
-    protected $schema = [
+    protected array $schema = [
         self::EVENT_YEAR => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

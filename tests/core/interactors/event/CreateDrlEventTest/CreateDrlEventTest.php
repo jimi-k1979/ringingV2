@@ -210,7 +210,7 @@ class CreateDrlEventTest extends TestCase
 
         $expectedResponse = [
             'message' => "Can't insert event",
-            'code' => EventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+            'code' => EventRepositoryInterface::NO_ROWS_CREATED_EXCEPTION,
         ];
 
         $this->assertEquals(

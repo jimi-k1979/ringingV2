@@ -9,13 +9,12 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
-use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
-use Exception;
+use Throwable;
 
 /**
  * Class CheckDrlEventExists
@@ -25,22 +24,10 @@ use Exception;
 class CheckDrlEventExists extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
-    /**
-     * @var CompetitionRepositoryInterface
-     */
-    private $competitionRepository;
-    /**
-     * @var DrlEventEntity
-     */
-    private $event;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $competition;
+    private EventRepositoryInterface $eventRepository;
+    private CompetitionRepositoryInterface $competitionRepository;
+    private DrlEventEntity $event;
+    private DrlCompetitionEntity $competition;
 
     public function setEventRepository(
         EventRepositoryInterface $repository
@@ -59,9 +46,9 @@ class CheckDrlEventExists extends Interactor
      */
     public function execute(): void
     {
-        $this->checkUserIsAuthorised(
-            SecurityRepositoryInterface::ADD_NEW_PERMISSION
-        );
+//        $this->checkUserIsAuthorised(
+//            SecurityRepositoryInterface::ADD_NEW_PERMISSION
+//        );
         try {
             $this->checkEventExists();
             $this->createEventExistsResponse();
@@ -69,16 +56,17 @@ class CheckDrlEventExists extends Interactor
             try {
                 $this->fetchCompetitionDetails();
                 $this->createCompetitionExistsResponse();
-            } catch (Exception $e) {
+            } catch (Throwable $e) {
                 $this->createFailingResponse($e);
             }
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
+            $this->createFailingResponse($e);
         }
         $this->sendResponse();
     }
 
     /**
-     * @throws RepositoryNoResults
+     * @throws CleanArchitectureException
      */
     private function checkEventExists(): void
     {
@@ -105,8 +93,7 @@ class CheckDrlEventExists extends Interactor
     }
 
     /**
-     * @throws RepositoryNoResults
-     * @throws GeneralRepositoryErrorException
+     * @throws CleanArchitectureException
      */
     private function fetchCompetitionDetails(): void
     {
@@ -124,7 +111,7 @@ class CheckDrlEventExists extends Interactor
                 'competitionName' => $this->competition->getName(),
                 'singleTower' => $this->competition->isSingleTowerCompetition(),
                 'usualLocation' => $this->competition->getUsualLocation()->getLocation(),
-                'locationId' => $this->competition->getUsualLocation()->getId(),
+                'usualLocationId' => $this->competition->getUsualLocation()->getId(),
             ];
         } else {
             $data = [
@@ -132,7 +119,7 @@ class CheckDrlEventExists extends Interactor
                 'competitionName' => $this->competition->getName(),
                 'singleTower' => $this->competition->isSingleTowerCompetition(),
                 'usualLocation' => null,
-                'locationId' => null,
+                'usualLocationId' => null,
             ];
         }
 
@@ -144,7 +131,7 @@ class CheckDrlEventExists extends Interactor
         );
     }
 
-    private function createFailingResponse(Exception $e): void
+    private function createFailingResponse(Throwable $e): void
     {
         if ($e->getCode() === CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION) {
             $status = Response::STATUS_NOT_FOUND;

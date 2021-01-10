@@ -7,8 +7,6 @@ namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByName;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
-use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use Throwable;
@@ -41,7 +39,6 @@ class FetchDrlCompetitionByName extends Interactor
     ): void {
         $this->competitionRepository = $repository;
     }
-
 
     private function fetchData(): void
     {
