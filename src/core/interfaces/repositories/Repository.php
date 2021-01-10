@@ -26,5 +26,9 @@ class Repository
     public const ALIAS_DEANERY_ID = 'deaneryId';
     public const ALIAS_DEANERY_NAME = 'deaneryName';
     public const ALIAS_DEANERY_REGION = 'deaneryRegion';
-    public const ALIAS_IS_DRL_COMPETITION = 'isDrlCompetition';
+    public const ALIAS_EVENT_ID = 'eventId';
+    public const ALIAS_YEAR = 'year';
+    public const ALIAS_IS_UNUSUAL_TOWER = 'isUnusualTower';
+    public const ALIAS_LOCATION_ID = 'locationId';
+    public const ALIAS_LOCATION_NAME = 'locationName';
 }
