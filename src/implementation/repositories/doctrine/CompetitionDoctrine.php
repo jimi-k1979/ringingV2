@@ -123,13 +123,13 @@ class CompetitionDoctrine extends DoctrineRepository implements
             )
         )
             ->from('DRL_competition', 'dc')
-            ->innerJoin(
+            ->leftJoin(
                 'dc',
                 'location',
                 'l',
                 'dc.usualLocationID = l.id'
             )
-            ->innerJoin(
+            ->leftJoin(
                 'dc',
                 'deanery',
                 'd',

@@ -6,13 +6,13 @@ namespace DrlArchive\core\classes;
 
 class Response
 {
-    public const STATUS_SUCCESS = '0';
-    public const STATUS_DUPLICATE = '1';
-    public const STATUS_NOT_FOUND = '2';
-    public const STATUS_NOT_CREATED = '3';
-    public const STATUS_NOT_UPDATED = '4';
-    public const STATUS_NOT_DELETED = '5';
-    public const STATUS_UNKNOWN_ERROR = '500';
+    public const STATUS_SUCCESS = 0;
+    public const STATUS_DUPLICATE = 1;
+    public const STATUS_NOT_FOUND = 404;
+    public const STATUS_NOT_CREATED = 3;
+    public const STATUS_NOT_UPDATED = 4;
+    public const STATUS_NOT_DELETED = 5;
+    public const STATUS_UNKNOWN_ERROR = 500;
 
     public const RESPONSE_STATUS = 'status';
     public const RESPONSE_MESSAGE = 'message';
@@ -33,7 +33,7 @@ class Response
     }
 
 
-    public function getStatus(): string
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -59,7 +59,7 @@ class Response
     }
 
 
-    public function setStatus(string $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }

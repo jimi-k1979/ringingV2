@@ -195,5 +195,4 @@ class FetchDrlCompetitionByNameTest extends TestCase
             'Incorrect response data'
         );
     }
-
 }

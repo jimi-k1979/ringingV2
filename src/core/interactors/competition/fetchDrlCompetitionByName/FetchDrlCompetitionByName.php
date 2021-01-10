@@ -42,10 +42,7 @@ class FetchDrlCompetitionByName extends Interactor
         $this->competitionRepository = $repository;
     }
 
-    /**
-     * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
-     */
+
     private function fetchData(): void
     {
         $this->competition = $this->competitionRepository
