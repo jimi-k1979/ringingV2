@@ -77,6 +77,31 @@ $(function () {
                     competition: competition,
                     year: $('#year-text-search').val(),
                 },
+                success: function (output) {
+                    if (output.status === 200) {
+                        $('#competition-id').val(output.competitionId);
+                        let venueText = $('#location-fuzzy-search');
+                        venueText.attr('disabled', false);
+
+                        $('#usual-location-id').val(
+                            output.usualLocationId
+                        );
+                        $('#location-id').val(
+                            output.usualLocationId
+                        );
+
+                        if (output.usualLocation) {
+                            venueText.val(output.usualLocation);
+                        } else {
+                            venueText.val('');
+                        }
+
+                        $('#meta-data').attr('disabled', false);
+
+                    } else {
+
+                    }
+                }
             });
         }
     });

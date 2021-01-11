@@ -17,7 +17,9 @@
 
         <p>
             Enter the details for the new event - we'll check the event doesn't
-            already exist in the archive - and then enter the results.
+            already exist in the archive - and then enter the results. If the
+            competition has a regular tower we'll add that too, but feel free to
+            change it if it is incorrect
         </p>
         <form method="post"
               id="add-competition"
@@ -67,6 +69,11 @@
                                            placeholder="Competition name"
                                            disabled
                                     >
+                                    <input type="hidden"
+                                           name="competition-id"
+                                           id="competition-id"
+                                           value="null"
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -86,6 +93,16 @@
                                            autocomplete="off"
                                            placeholder="Venue"
                                            disabled
+                                    >
+                                    <input type="hidden"
+                                           name="location-id"
+                                           id="location-id"
+                                           value="null"
+                                    >
+                                    <input type="hidden"
+                                           name="usual-location-id"
+                                           id="usual-location-id"
+                                           value="null"
                                     >
                                 </div>
                             </div>
