@@ -115,6 +115,66 @@ $(function () {
                 term,
                 response
             );
+        },
+        onSelect: function (e, competition, item) {
+            $('#location-id').val(competition);
         }
-    })
+    });
+
+    $('#number-of-teams')
+        .on('change', function () {
+            let numberOfTeams = parseInt($(this).val());
+
+            $('[id^=result-]').attr('disabled', true)
+                .prop('required', false)
+                .addClass('hidden');
+            for (let i = 1; i <= numberOfTeams; i++) {
+                $('#result-' + i).attr('disabled', false).removeClass('hidden');
+                if ($('#peal-numbers').prop('checked') === true) {
+                    $('#peal-' + i).attr('disabled', true);
+                }
+                $('#faults-' + i).prop('required', true);
+                $('#team-' + i).prop('required', true);
+            }
+        });
+
+    $('#peal-numbers')
+        .on('click', function () {
+            let pealNumber = $('.peal-input');
+            if ($(this).prop('checked')) {
+                pealNumber.attr('disabled', true);
+            } else {
+                pealNumber.attr('disabled', false);
+            }
+        });
+
+    $('#clear-form-button')
+        .on('click', function () {
+            $('.clearable-field').val('');
+            $('.nullable-field').val('null');
+            $('.blockable-field').attr('disabled', true);
+            $('#peal-numbers').prop('checked', false);
+            $('[id^=result-]').addClass('hidden');
+
+            for (let i = 1; i <= 20; i++) {
+                $('#position-' + i).val(i)
+            }
+        });
+
+    for (let j = 1; j <= 20; j++) {
+        new autoComplete({
+            selector: '#team-' + j,
+            minChars: 3,
+            source: function (term, response) {
+                fuzzySearchResponse(
+                    'fuzzySearchTeams',
+                    term,
+                    response
+                );
+            },
+            onSelect: function (e, team, item) {
+                $('#team-' + j).val(team);
+            }
+        });
+    }
 });

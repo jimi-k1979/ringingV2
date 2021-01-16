@@ -19,7 +19,7 @@
             Enter the details for the new event - we'll check the event doesn't
             already exist in the archive - and then enter the results. If the
             competition has a regular tower we'll add that too, but feel free to
-            change it if it is incorrect
+            change it if it is incorrect.
         </p>
         <form method="post"
               id="add-competition"
@@ -43,11 +43,12 @@
                                     <input type="number"
                                            name="year-text-search"
                                            id="year-text-search"
-                                           class="form-control"
+                                           class="form-control clearable-field"
                                            autocomplete="off"
                                            placeholder="Type year here"
                                            min="1920"
                                            max="{{ maxYear.format('Y') }}"
+                                           required
                                     >
                                 </div>
                             </div>
@@ -64,10 +65,11 @@
                                     <input type="text"
                                            name="competition-fuzzy-search"
                                            id="competition-fuzzy-search"
-                                           class="form-control"
+                                           class="form-control clearable-field blockable-field"
                                            autocomplete="off"
                                            placeholder="Competition name"
                                            disabled
+                                           required
                                     >
                                     <input type="hidden"
                                            name="competition-id"
@@ -89,17 +91,20 @@
                                     <input type="text"
                                            name="location-fuzzy-search"
                                            id="location-fuzzy-search"
-                                           class="form-control"
+                                           class="form-control clearable-field blockable-field"
                                            autocomplete="off"
                                            placeholder="Venue"
                                            disabled
+                                           required
                                     >
                                     <input type="hidden"
+                                           class="nullable-field"
                                            name="location-id"
                                            id="location-id"
                                            value="null"
                                     >
                                     <input type="hidden"
+                                           class="nullable-field"
                                            name="usual-location-id"
                                            id="usual-location-id"
                                            value="null"
@@ -112,7 +117,10 @@
             </div> <!-- #event-details -->
 
             <div class="blog-post" id="results-form">
-                <fieldset disabled class="row form-group" id="meta-data">
+                <fieldset class="row form-group blockable-field"
+                          disabled
+                          id="meta-data"
+                >
                     <div class="col-12 col-md-7 col-lg-6">
                         <div class="form-group row">
                             <label for="number-of-teams"
@@ -122,9 +130,12 @@
                             </label>
                             <div class="col-sm-9 col-md-8 col-lg-9">
                                 <input type="number"
-                                       class="form-control"
+                                       class="form-control clearable-field"
                                        id="number-of-teams"
                                        placeholder="Include any disqualifications"
+                                       min="0"
+                                       max="20"
+                                       required
                                 >
                             </div>
                         </div>
@@ -155,9 +166,9 @@
                     {% for i in 1..20 %}
                         <fieldset id="result-{{ i }}"
                                 {% if i % 2 == 1 %}
-                                    class="form-row col-12 fieldset-light pt-1 mx-0"
+                                    class="form-row col-12 fieldset-light pt-1 mx-0 hidden blockable-field"
                                 {% else %}
-                                    class="form-row col-12 pt-1 mx-0"
+                                    class="form-row col-12 pt-1 mx-0 hidden blockable-field"
                                 {% endif %}
                                   disabled
                         >
@@ -178,7 +189,7 @@
                                     Peal
                                 </label>
                                 <input type="number"
-                                       class="form-control"
+                                       class="form-control peal-input clearable-field"
                                        name="peal-{{ i }}"
                                        id="peal-{{ i }}"
                                 >
@@ -188,7 +199,7 @@
                                     Faults
                                 </label>
                                 <input type="number"
-                                       class="form-control"
+                                       class="form-control clearable-field"
                                        name="faults-{{ i }}"
                                        id="faults-{{ i }}"
                                 >
@@ -198,14 +209,33 @@
                                     Team
                                 </label>
                                 <input type="text"
-                                       class="form-control"
+                                       class="form-control clearable-field"
                                        name="team-{{ i }}"
+                                       id="team-{{ i }}"
+                                >
+                                <input type="hidden"
+                                       class="clearable-field"
+                                       name="team-id-{{ i }}"
                                        id="team-{{ i }}"
                                 >
                             </div>
                         </fieldset>
                     {% endfor %}
                 </div> <!-- results -->
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <button type="submit"
+                                id="submit-results-button"
+                                class="btn btn-primary"
+                        >Submit results
+                        </button>
+                        <button type="button"
+                                id="clear-form-button"
+                                class="btn btn-danger"
+                        >Clear form
+                        </button>
+                    </div>
+                </div> <!-- buttons -->
             </div>
         </form>
     </div>
