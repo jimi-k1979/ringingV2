@@ -60,6 +60,18 @@ try {
 
             break;
 
+        case 'fuzzySearchTeams':
+            echo json_encode(
+                [
+                    [
+                        'name' => 'team name',
+                        'id' => 0,
+                        'text' => 'testing',
+                    ]
+                ]
+            );
+            break;
+
         case 'getCompetitionYears':
             $request = new FetchEventsByCompetitionRequest(
                 [
