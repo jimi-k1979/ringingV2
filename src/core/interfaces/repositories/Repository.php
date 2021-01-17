@@ -31,4 +31,7 @@ class Repository
     public const ALIAS_IS_UNUSUAL_TOWER = 'isUnusualTower';
     public const ALIAS_LOCATION_ID = 'locationId';
     public const ALIAS_LOCATION_NAME = 'locationName';
+    public const ALIAS_TEAM_ID = 'teamId';
+    public const ALIAS_TEAM_NAME = 'teamName';
+
 }

@@ -140,11 +140,16 @@ $(function () {
 
     $('#peal-numbers')
         .on('click', function () {
-            let pealNumber = $('.peal-input');
+            let pealInput = $('.peal-input');
+            let teams = parseInt($('#number-of-teams').val());
             if ($(this).prop('checked')) {
-                pealNumber.attr('disabled', true);
+                pealInput.attr('disabled', true);
+                pealInput.prop('required', false);
             } else {
-                pealNumber.attr('disabled', false);
+                pealInput.attr('disabled', false);
+                for (let i = 1; i <= teams; i++) {
+                    $('#peal-' + 1).prop('required');
+                }
             }
         });
 

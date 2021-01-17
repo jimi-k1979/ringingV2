@@ -57,7 +57,7 @@ class TeamFuzzySearch extends Interactor
         foreach ($this->teams as $currentTeam) {
             $responseArray[] = [
                 'id' => $currentTeam->getId(),
-                'teamName' => $currentTeam->getName()
+                'name' => $currentTeam->getName()
             ];
         }
         $this->response = new TeamFuzzySearchResponse(

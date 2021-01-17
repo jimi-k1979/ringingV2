@@ -7,8 +7,6 @@ namespace DrlArchive\core\interactors\team\TeamFuzzySearch;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interactors\team\TeamFuzzySearch\TeamFuzzySearch;
-use DrlArchive\core\interactors\team\TeamFuzzySearch\TeamFuzzySearchRequest;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
 use DrlArchive\mocks\PreseenterDummy;
@@ -125,11 +123,11 @@ class TeamFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 123,
-                'teamName' => 'Test team',
+                'name' => 'Test team',
             ],
             [
                 'id' => 9999,
-                'teamName' => 'Test Team B'
+                'name' => 'Test Team B'
             ],
         ];
 
@@ -160,7 +158,7 @@ class TeamFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 123,
-                'teamName' => 'Test team',
+                'name' => 'Test team',
             ],
         ];
 
