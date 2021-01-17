@@ -126,12 +126,16 @@ $(function () {
             let numberOfTeams = parseInt($(this).val());
 
             $('[id^=result-]').attr('disabled', true)
-                .prop('required', false)
                 .addClass('hidden');
+            $('[id^=result-] > div > input.clearable-field')
+                .prop('required', false);
+
             for (let i = 1; i <= numberOfTeams; i++) {
                 $('#result-' + i).attr('disabled', false).removeClass('hidden');
                 if ($('#peal-numbers').prop('checked') === true) {
                     $('#peal-' + i).attr('disabled', true);
+                } else {
+                    $('#peal-' + i).prop('required', true);
                 }
                 $('#faults-' + i).prop('required', true);
                 $('#team-' + i).prop('required', true);
@@ -148,7 +152,7 @@ $(function () {
             } else {
                 pealInput.attr('disabled', false);
                 for (let i = 1; i <= teams; i++) {
-                    $('#peal-' + 1).prop('required');
+                    $('#peal-' + i).prop('required', true);
                 }
             }
         });
