@@ -16,43 +16,32 @@ class ResultSpy implements ResultRepositoryInterface
 {
     use CreateMockDrlResultTrait;
 
-    /**
-     * @var bool
-     */
-    private $insertDrlResultCalled = false;
-    /**
-     * @var bool
-     */
-    private $createThrowsException = false;
-    /**
-     * @var DrlResultEntity
-     */
-    private $insertDrlResultValue;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventResultsCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventResultsThrowsException = false;
+    private bool $insertDrlResultCalled = false;
+    private bool $createThrowsException = false;
+    private int $insertDrlResultCallCount = 0;
+    private int $insertDrlResultIdValue = 0;
+    private bool $fetchDrlEventResultsCalled = false;
+    private bool $fetchDrlEventResultsThrowsException = false;
     /**
      * @var DrlResultEntity[]
      */
-    private $fetchDrlEventResultValue;
+    private array $fetchDrlEventResultValue;
 
 
     public function insertDrlResult(
         DrlResultEntity $resultEntity
-    ): DrlResultEntity {
+    ): void {
         $this->insertDrlResultCalled = true;
+        $this->insertDrlResultCallCount++;
+
         if ($this->createThrowsException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to create result',
                 ResultRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
-        return $this->insertDrlResultValue ?? $this->createMockDrlResult();
+
+        $resultEntity->setId($this->insertDrlResultIdValue);
     }
 
     /**
@@ -63,12 +52,12 @@ class ResultSpy implements ResultRepositoryInterface
     }
 
     /**
-     * @param DrlResultEntity $insertDrlResultValue
+     * @param DrlResultEntity $insertDrlResultIdValue
      */
-    public function setInsertDrlResultValue(
-        DrlResultEntity $insertDrlResultValue
+    public function setInsertDrlResultIdValue(
+        int $insertDrlResultIdValue
     ): void {
-        $this->insertDrlResultValue = $insertDrlResultValue;
+        $this->insertDrlResultIdValue = $insertDrlResultIdValue;
     }
 
     /**

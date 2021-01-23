@@ -14,7 +14,7 @@ interface ResultRepositoryInterface
 
     public function insertDrlResult(
         DrlResultEntity $resultEntity
-    ): DrlResultEntity;
+    ): void;
 
     /**
      * @param DrlEventEntity $eventEntity

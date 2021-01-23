@@ -63,4 +63,8 @@ interface EventRepositoryInterface
         string $competitionName
     ): DrlEventEntity;
 
+    public function fetchDrlEventByYearAndCompetitionId(
+        string $year,
+        int $competitionId
+    ): DrlEventEntity;
 }

@@ -287,4 +287,39 @@ class EventSpy implements EventRepositoryInterface
         $this->fetchDrlEventByYearAndCompetitionNameValue = $entity;
     }
 
+    public function fetchDrlEventByYearAndCompetitionId(
+        string $year,
+        int $competitionId
+    ): DrlEventEntity {
+        $this->fetchDrlEventByYearAndCompetitionIdCalled = true;
+        if ($this->fetchDrlEventByYearAndCompetitionIdThrowsException) {
+            throw new RepositoryNoResults(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventByYearAndCompetitionIdValue ??
+            $this->createMockDrlEvent();
+    }
+
+    public function hasFetchDrlEventByYearAndCompetitionIdBeenCalled(): bool
+    {
+        return $this->fetchDrlEventByYearAndCompetitionIdCalled;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionIdThrowsException(): void
+    {
+        $this->fetchDrlEventByYearAndCompetitionIdThrowsException = true;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionIdValue(
+        DrlEventEntity $value
+    ): void {
+        $this->fetchDrlEventByYearAndCompetitionIdValue = $value;
+    }
+
+    private bool $fetchDrlEventByYearAndCompetitionIdCalled = false;
+    private bool $fetchDrlEventByYearAndCompetitionIdThrowsException = false;
+    private DrlEventEntity $fetchDrlEventByYearAndCompetitionIdValue;
 }

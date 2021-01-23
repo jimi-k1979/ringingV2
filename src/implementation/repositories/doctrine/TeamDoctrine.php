@@ -8,6 +8,7 @@ namespace DrlArchive\implementation\repositories\doctrine;
 use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
@@ -22,7 +23,7 @@ class TeamDoctrine extends DoctrineRepository implements
     private const FIELD_DEANERY_NAME = 'd.deaneryName';
     private const FIELD_DEANERY_REGION = 'd.northSouth';
 
-    public function insertTeam(TeamEntity $teamEntity): TeamEntity
+    public function insertTeam(TeamEntity $teamEntity): void
     {
         // TODO: Implement insertTeam() method.
     }
@@ -121,5 +122,13 @@ class TeamDoctrine extends DoctrineRepository implements
         }
 
         return $entity;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamByName(string $teamName): TeamEntity
+    {
+        // TODO: Implement fetchTeamByName() method.
     }
 }

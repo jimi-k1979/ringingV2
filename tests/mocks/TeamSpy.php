@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\traits\CreateMockTeamTrait;
@@ -14,56 +15,30 @@ class TeamSpy implements TeamRepositoryInterface
 {
     use CreateMockTeamTrait;
 
-    /**
-     * @var TeamEntity
-     */
-    private $insertTeamValue;
-    /**
-     * @var TeamEntity
-     */
-    private $selectTeamValue;
-    /**
-     * @var TeamEntity
-     */
-    private $updateTeamValue;
-    /**
-     * @var bool
-     */
-    private $deleteTeamValue = false;
-    /**
-     * @var bool
-     */
-    private $insertCalled = false;
-    /**
-     * @var bool
-     */
-    private $selectCalled = false;
-    /**
-     * @var bool
-     */
-    private $updateCalled = false;
-    /**
-     * @var bool
-     */
-    private $deletedCalled = false;
+    private TeamEntity $insertTeamValue;
+    private bool $insertCalled = false;
+    private TeamEntity $selectTeamValue;
+    private bool $selectCalled = false;
+    private TeamEntity $updateTeamValue;
+    private bool $updateCalled = false;
+    private bool $deleteTeamValue = false;
+    private bool $deletedCalled = false;
     /**
      * @var TeamEntity[]
      */
-    private $fuzzySearchValue;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchCalled = false;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchThrowsException = false;
+    private array $fuzzySearchValue;
+    private bool $fuzzySearchCalled = false;
+    private bool $fuzzySearchThrowsException = false;
+    private bool $fetchTeamByNameCalled = false;
+    private int $fetchTeamByNameCallCount = 0;
+    private bool $fetchTeamByNameThrowsException = false;
+    private TeamEntity $fetchTeamByNameValue;
 
     /**
      * @param TeamEntity $teamEntity
-     * @return TeamEntity
+     * @return void
      */
-    public function insertTeam(TeamEntity $teamEntity): TeamEntity
+    public function insertTeam(TeamEntity $teamEntity): void
     {
         $this->insertCalled = true;
 
@@ -196,4 +171,42 @@ class TeamSpy implements TeamRepositoryInterface
     {
         $this->fuzzySearchThrowsException = true;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamByName(string $teamName): TeamEntity
+    {
+        $this->fetchTeamByNameCalled = true;
+        $this->fetchTeamByNameCallCount++;
+        if ($this->fetchTeamByNameThrowsException) {
+            throw new RepositoryNoResults(
+                'Team not found',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchTeamByNameValue ?? $this->createMockTeam();
+    }
+
+    public function hasFetchTeamByNameBeenCalled(): bool
+    {
+        return $this->fetchTeamByNameCalled;
+    }
+
+    public function getFetchTeamByNameCallCount(): int
+    {
+        return $this->fetchTeamByNameCallCount;
+    }
+
+    public function setFetchTeamByNameThrowsException(): void
+    {
+        $this->fetchTeamByNameThrowsException = true;
+    }
+
+    public function setFetchTeamByNameValue(TeamEntity $value): void
+    {
+        $this->fetchTeamByNameValue = $value;
+    }
+
 }

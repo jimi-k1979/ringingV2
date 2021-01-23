@@ -342,4 +342,9 @@ class EventDoctrine extends DoctrineRepository implements
 
         return $this->generateDrlEventEntity($result);
     }
+
+    public function fetchDrlEventByYearAndCompetitionId(string $year, int $competitionId): DrlEventEntity
+    {
+        // TODO: Implement fetchDrlEventByYearAndCompetitionId() method.
+    }
 }

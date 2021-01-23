@@ -37,7 +37,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
 
     public function insertDrlResult(
         DrlResultEntity $resultEntity
-    ): DrlResultEntity {
+    ): void {
         // TODO: Implement insertDrlResult() method.
     }
 

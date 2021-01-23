@@ -5,6 +5,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
 interface TeamRepositoryInterface
 {
@@ -13,7 +14,7 @@ interface TeamRepositoryInterface
     public const NO_ROWS_UPDATED = 2203;
     public const NO_ROWS_DELETED = 2204;
 
-    public function insertTeam(TeamEntity $teamEntity): TeamEntity;
+    public function insertTeam(TeamEntity $teamEntity): void;
 
     public function selectTeam(int $teamId): TeamEntity;
 
@@ -26,4 +27,11 @@ interface TeamRepositoryInterface
      * @return TeamEntity[]
      */
     public function fuzzySearchTeam(string $searchTerm): array;
+
+    /**
+     * @param string $teamName
+     * @return TeamEntity
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamByName(string $teamName): TeamEntity;
 }

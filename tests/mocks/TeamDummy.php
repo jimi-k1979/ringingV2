@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\traits\CreateMockTeamTrait;
 
@@ -13,7 +14,7 @@ class TeamDummy implements TeamRepositoryInterface
 {
     use CreateMockTeamTrait;
 
-    public function insertTeam(TeamEntity $teamEntity): TeamEntity
+    public function insertTeam(TeamEntity $teamEntity): void
     {
         return $this->createMockTeam();
     }
@@ -39,5 +40,13 @@ class TeamDummy implements TeamRepositoryInterface
     public function fuzzySearchTeam(string $searchTerm): array
     {
         return [];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamByName(string $teamName): TeamEntity
+    {
+        return $this->createMockTeam();
     }
 }
