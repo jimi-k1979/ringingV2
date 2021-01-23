@@ -6,7 +6,7 @@ namespace DrlArchive\core\classes;
 
 class Response
 {
-    public const STATUS_SUCCESS = 0;
+    public const STATUS_SUCCESS = 200;
     public const STATUS_DUPLICATE = 1;
     public const STATUS_NOT_FOUND = 404;
     public const STATUS_NOT_CREATED = 3;
