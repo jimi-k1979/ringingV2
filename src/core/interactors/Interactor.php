@@ -15,6 +15,7 @@ use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 
 abstract class Interactor implements InteractorInterface
 {
+    public const ACCESS_DENIED_EXCEPTION_CODE = 9901;
     /**
      * @var Request|null
      */
@@ -68,14 +69,20 @@ abstract class Interactor implements InteractorInterface
         $this->loggedInUser = $userRepository->getLoggedInUser();
     }
 
-
+    /**
+     * @param string|null $permission
+     * @throws AccessDeniedException
+     */
     protected function checkUserIsAuthorised(?string $permission = null): void
     {
         if (!$this->securityRepository->isUserAuthorised(
             $this->loggedInUser,
             $permission
         )) {
-            throw new AccessDeniedException('Not authorised to view this page');
+            throw new AccessDeniedException(
+                'Not authorised to view this page',
+                self::ACCESS_DENIED_EXCEPTION_CODE
+            );
         }
     }
 

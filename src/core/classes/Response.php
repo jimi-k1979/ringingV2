@@ -7,12 +7,14 @@ namespace DrlArchive\core\classes;
 class Response
 {
     public const STATUS_SUCCESS = 200;
-    public const STATUS_DUPLICATE = 1;
+    public const STATUS_FORBIDDEN = 403;
     public const STATUS_NOT_FOUND = 404;
+    public const STATUS_UNKNOWN_ERROR = 500;
+
+    public const STATUS_DUPLICATE = 1;
     public const STATUS_NOT_CREATED = 3;
     public const STATUS_NOT_UPDATED = 4;
     public const STATUS_NOT_DELETED = 5;
-    public const STATUS_UNKNOWN_ERROR = 500;
 
     public const RESPONSE_STATUS = 'status';
     public const RESPONSE_MESSAGE = 'message';
