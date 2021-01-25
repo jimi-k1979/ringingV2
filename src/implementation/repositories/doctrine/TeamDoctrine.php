@@ -10,6 +10,7 @@ use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use Throwable;
@@ -28,9 +29,38 @@ class TeamDoctrine extends DoctrineRepository implements
         // TODO: Implement insertTeam() method.
     }
 
+    /**
+     * @param int $teamId
+     * @return TeamEntity
+     * @throws CleanArchitectureException
+     */
     public function selectTeam(int $teamId): TeamEntity
     {
-        // TODO: Implement selectTeam() method.
+        try {
+            $query = $this->baseTeamSelectQueryBuilder();
+            $query->where(
+                $query->expr()->eq(
+                    self::FIELD_TEAM_ID,
+                    ':teamId'
+                )
+            )
+                ->setParameter('teamId', $teamId);
+            $result = $query->execute()->fetchAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No team found - connection error',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        if (empty($result)) {
+            throw new RepositoryNoResults(
+                'No team found',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateTeamEntity($result);
     }
 
     public function updateTeam(TeamEntity $teamEntity): TeamEntity
@@ -129,6 +159,30 @@ class TeamDoctrine extends DoctrineRepository implements
      */
     public function fetchTeamByName(string $teamName): TeamEntity
     {
-        // TODO: Implement fetchTeamByName() method.
+        try {
+            $query = $this->baseTeamSelectQueryBuilder();
+            $query->where(
+                $query->expr()->eq(
+                    self::FIELD_TEAM_NAME,
+                    ':name'
+                )
+            )
+                ->setParameter('team', $teamName);
+            $result = $query->execute()->fetchAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No team found - connection error',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        if (empty($result)) {
+            throw new RepositoryNoResults(
+                'No team found',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateTeamEntity($result);
     }
 }

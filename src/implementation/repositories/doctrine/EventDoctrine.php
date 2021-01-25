@@ -345,6 +345,41 @@ class EventDoctrine extends DoctrineRepository implements
 
     public function fetchDrlEventByYearAndCompetitionId(string $year, int $competitionId): DrlEventEntity
     {
-        // TODO: Implement fetchDrlEventByYearAndCompetitionId() method.
+        try {
+            $query = $this->baseDrlEventSelectQuery();
+            $query->where(
+                $query->expr()->and(
+                    $query->expr()->eq(
+                        self::FIELD_DRL_YEAR,
+                        ':year'
+                    ),
+                    $query->expr()->eq(
+                        self::FIELD_DRL_COMPETITION_ID,
+                        ':competitionId'
+                    )
+                )
+            )
+                ->setParameters(
+                    [
+                        'year' => $query,
+                        'competitionId' => $competitionId
+                    ]
+                );
+            $result = $query->execute()->fetchAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No event found - connection error',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        if (empty($result)) {
+            throw new RepositoryNoResults(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateDrlEventEntity($result);
     }
 }
