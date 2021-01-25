@@ -203,7 +203,7 @@ class ReadDrlEventTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchEventThrowsException();
+        $eventSpy->setFetchDrlEventThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setEventRepository($eventSpy);

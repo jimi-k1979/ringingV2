@@ -15,7 +15,7 @@ class TeamSpy implements TeamRepositoryInterface
 {
     use CreateMockTeamTrait;
 
-    private TeamEntity $insertTeamValue;
+    private int $insertTeamIdValue;
     private bool $insertCalled = false;
     private TeamEntity $selectTeamValue;
     private bool $selectCalled = false;
@@ -42,15 +42,15 @@ class TeamSpy implements TeamRepositoryInterface
     {
         $this->insertCalled = true;
 
-        return $this->insertTeamValue ?? $this->createMockTeam();
+        $teamEntity->setId($this->insertTeamIdValue);
     }
 
     /**
-     * @param TeamEntity $teamEntity
+     * @param int $id
      */
-    public function setInsertTeamValue(TeamEntity $teamEntity): void
+    public function setInsertTeamIdValue(int $id): void
     {
-        $this->insertTeamValue = $teamEntity;
+        $this->insertTeamIdValue = $id;
     }
 
     /**

@@ -17,7 +17,6 @@ class ResultDummy implements ResultRepositoryInterface
 
     public function insertDrlResult(DrlResultEntity $resultEntity): void
     {
-        return $this->createMockDrlResult();
     }
 
     /**

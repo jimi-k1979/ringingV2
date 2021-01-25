@@ -45,6 +45,22 @@ class ResultSpy implements ResultRepositoryInterface
     }
 
     /**
+     * @return bool
+     */
+    public function isInsertDrlResultCalled(): bool
+    {
+        return $this->insertDrlResultCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getInsertDrlResultCallCount(): int
+    {
+        return $this->insertDrlResultCallCount;
+    }
+
+    /**
      */
     public function setCreateThrowsException(): void
     {
@@ -52,7 +68,7 @@ class ResultSpy implements ResultRepositoryInterface
     }
 
     /**
-     * @param DrlResultEntity $insertDrlResultIdValue
+     * @param int $insertDrlResultIdValue
      */
     public function setInsertDrlResultIdValue(
         int $insertDrlResultIdValue

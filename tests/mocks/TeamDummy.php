@@ -16,7 +16,6 @@ class TeamDummy implements TeamRepositoryInterface
 
     public function insertTeam(TeamEntity $teamEntity): void
     {
-        return $this->createMockTeam();
     }
 
     public function selectTeam(int $teamId): TeamEntity
