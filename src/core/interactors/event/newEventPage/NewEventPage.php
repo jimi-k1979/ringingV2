@@ -40,7 +40,7 @@ class NewEventPage extends Interactor
      * @var DrlResultEntity[]
      */
     protected array $results = [];
-    protected ?DrlEventEntity $event = null;
+    protected DrlEventEntity $event;
     private TeamRepositoryInterface $teamRepository;
     private EventRepositoryInterface $eventRepository;
     private ResultRepositoryInterface $resultsRepository;
@@ -159,6 +159,7 @@ class NewEventPage extends Interactor
                 self::EVENT_EXISTS_EXCEPTION_CODE
             );
         } catch (RepositoryNoResults $e) {
+            unset($e);
             $this->eventRepository->insertDrlEvent(
                 $this->event
             );
@@ -196,7 +197,7 @@ class NewEventPage extends Interactor
                             $this->results[$j]->setPoints($pointsForDraw);
                         }
                         $firstDrawingTeam = -1;
-                        $sharedPoints = 0;
+                        $sharedPoints = $pointsForThisPosition;
                     } else {
                         $sharedPoints = $pointsForThisPosition;
                     }
@@ -220,7 +221,7 @@ class NewEventPage extends Interactor
         }
     }
 
-    private function createFailureResponse(Throwable $e)
+    private function createFailureResponse(Throwable $e): void
     {
         $this->response = new NewEventPageResponse();
         if ($e instanceof AccessDeniedException) {

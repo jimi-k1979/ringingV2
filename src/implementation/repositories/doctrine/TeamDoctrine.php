@@ -167,7 +167,7 @@ class TeamDoctrine extends DoctrineRepository implements
                     ':name'
                 )
             )
-                ->setParameter('team', $teamName);
+                ->setParameter('name', $teamName);
             $result = $query->execute()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(

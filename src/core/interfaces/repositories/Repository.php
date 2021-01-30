@@ -33,5 +33,10 @@ class Repository
     public const ALIAS_LOCATION_NAME = 'locationName';
     public const ALIAS_TEAM_ID = 'teamId';
     public const ALIAS_TEAM_NAME = 'teamName';
+    public const ALIAS_RESULT_ID = 'resultId';
+    public const ALIAS_POSITION = 'position';
+    public const ALIAS_PEAL_NUMBER = 'pealNumber';
+    public const ALIAS_FAULTS = 'faults';
+    public const ALIAS_POINTS = 'points';
 
 }

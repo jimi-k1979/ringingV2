@@ -18,7 +18,8 @@ if (!empty($_POST)) {
     $request->setUsualLocation((int)$_POST['usual-location-id'] ?? null);
     for ($i = 1; $i <= $_POST['number-of-teams']; $i++) {
         $request->addResultsRow(
-            (int)$_POST['position-' . $i],
+            isset($_POST['position-' . $i])
+                ? (int)$_POST['position-' . $i] : $i,
             (float)$_POST['faults-' . $i],
             $_POST['team-' . $i],
             (int)$_POST['peal-' . $i] ?? null

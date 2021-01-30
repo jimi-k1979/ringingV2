@@ -15,14 +15,14 @@ class ResultDummy implements ResultRepositoryInterface
 
     use CreateMockDrlResultTrait;
 
-    public function insertDrlResult(DrlResultEntity $resultEntity): void
+    public function insertDrlResult(DrlResultEntity $result): void
     {
     }
 
     /**
      * @inheritDoc
      */
-    public function fetchDrlEventResults(DrlEventEntity $eventEntity): array
+    public function fetchDrlEventResults(DrlEventEntity $event): array
     {
         return $this->createMockEventResults();
     }

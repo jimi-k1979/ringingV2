@@ -54,7 +54,7 @@ class EventDoctrine extends DoctrineRepository implements
                         'year' => $entity->getYear(),
                         'comp' => $entity->getCompetition()->getId(),
                         'location' => $entity->getLocation()->getId(),
-                        'isUnusualTower' => $entity->isUnusualTower(),
+                        'isUnusualTower' => (int)$entity->isUnusualTower(),
                     ]
                 );
             $rows = $query->execute();

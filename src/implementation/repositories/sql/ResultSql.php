@@ -36,7 +36,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
     public const WHERE_DRL_RESULT_EVENT_ID_IS = 'dr.eventID = :eventId';
 
     public function insertDrlResult(
-        DrlResultEntity $resultEntity
+        DrlResultEntity $result
     ): void {
         // TODO: Implement insertDrlResult() method.
     }
@@ -44,7 +44,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fetchDrlEventResults(DrlEventEntity $eventEntity): array
+    public function fetchDrlEventResults(DrlEventEntity $event): array
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(
@@ -75,7 +75,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
         );
 
         $params = [
-            'eventId' => $eventEntity->getId()
+            'eventId' => $event->getId()
         ];
 
         $results = $this->database->query(

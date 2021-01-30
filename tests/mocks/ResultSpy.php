@@ -29,7 +29,7 @@ class ResultSpy implements ResultRepositoryInterface
 
 
     public function insertDrlResult(
-        DrlResultEntity $resultEntity
+        DrlResultEntity $result
     ): void {
         $this->insertDrlResultCalled = true;
         $this->insertDrlResultCallCount++;
@@ -41,7 +41,7 @@ class ResultSpy implements ResultRepositoryInterface
             );
         }
 
-        $resultEntity->setId($this->insertDrlResultIdValue);
+        $result->setId($this->insertDrlResultIdValue);
     }
 
     /**
@@ -89,7 +89,7 @@ class ResultSpy implements ResultRepositoryInterface
      * @inheritDoc
      * @throws RepositoryNoResults
      */
-    public function fetchDrlEventResults(DrlEventEntity $eventEntity): array
+    public function fetchDrlEventResults(DrlEventEntity $event): array
     {
         $this->fetchDrlEventResultsCalled = true;
         if ($this->fetchDrlEventResultsThrowsException) {
