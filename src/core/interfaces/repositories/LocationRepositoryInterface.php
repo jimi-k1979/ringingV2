@@ -5,6 +5,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
 interface LocationRepositoryInterface
 {
@@ -13,14 +14,22 @@ interface LocationRepositoryInterface
 
     public function insertLocation(
         LocationEntity $locationEntity
-    ): LocationEntity;
+    ): void;
 
     public function selectLocation(int $locationId): LocationEntity;
 
     /**
      * @param string $search
      * @return LocationEntity[]
+     * @throws CleanArchitectureException
      */
     public function fuzzySearchLocation(string $search): array;
+
+    /**
+     * @param string $name
+     * @return LocationEntity
+     * @throws CleanArchitectureException
+     */
+    public function fetchLocationByName(string $name): LocationEntity;
 
 }

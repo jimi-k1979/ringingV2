@@ -6,64 +6,46 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockLocationTrait;
 
 class LocationSpy implements LocationRepositoryInterface
 {
-
     use CreateMockLocationTrait;
 
+    private bool $insertThrowsException = false;
+    private bool $insertLocationCalled = false;
+    private int $insertLocationIdValue = TestConstants::TEST_LOCATION_ID;
+    private bool $selectLocationCalled = false;
+    private LocationEntity $selectLocationValue;
+    private bool $fuzzySearchLocationCalled = false;
     /**
-     * @var bool
+     * @var LocationEntity[]
      */
-    private $repositoryThrowsException = false;
-    /**
-     * @var bool
-     */
-    private $insertLocationCalled = false;
-    /**
-     * @var LocationEntity
-     */
-    private $insertLocationValue;
-    /**
-     * @var bool
-     */
-    private $selectLocationCalled = false;
-    /**
-     * @var LocationEntity
-     */
-    private $selectLocationValue;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchLocationCalled;
-    private $fuzzySearchValue = [];
-
-    public function setRepositoryThrowsException(): void
-    {
-        $this->repositoryThrowsException = true;
-    }
+    private array $fuzzySearchValue = [];
+    private bool $selectLocationThrowsException = false;
 
     /**
      * @param LocationEntity $locationEntity
-     * @return LocationEntity
+     * @return void
      * @throws GeneralRepositoryErrorException
      */
     public function insertLocation(
         LocationEntity $locationEntity
-    ): LocationEntity {
+    ): void {
         $this->insertLocationCalled = true;
-        if ($this->repositoryThrowsException) {
+        if ($this->insertThrowsException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to write new location',
                 LocationRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
 
-        return $this->insertLocationValue ?? $this->createMockLocation();
+        $locationEntity->setId($this->insertLocationIdValue);
     }
 
     /**
@@ -74,12 +56,17 @@ class LocationSpy implements LocationRepositoryInterface
         return $this->insertLocationCalled;
     }
 
-    /**
-     * @param LocationEntity $entity
-     */
-    public function setInsertLocationValue(LocationEntity $entity): void
+    public function setInsertThrowsException(): void
     {
-        $this->insertLocationValue = $entity;
+        $this->insertThrowsException = true;
+    }
+
+    /**
+     * @param int $entity
+     */
+    public function setInsertLocationIdValue(int $entity): void
+    {
+        $this->insertLocationIdValue = $entity;
     }
 
     /**
@@ -90,7 +77,7 @@ class LocationSpy implements LocationRepositoryInterface
     public function selectLocation(int $locationId): LocationEntity
     {
         $this->selectLocationCalled = true;
-        if ($this->repositoryThrowsException) {
+        if ($this->selectLocationThrowsException) {
             throw new RepositoryNoResults(
                 'No location found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
@@ -114,6 +101,11 @@ class LocationSpy implements LocationRepositoryInterface
     public function setSelectLocationValue(LocationEntity $entity): void
     {
         $this->selectLocationValue = $entity;
+    }
+
+    public function setSelectLocationThrowsException(): void
+    {
+        $this->selectLocationThrowsException = true;
     }
 
     /**
@@ -143,4 +135,38 @@ class LocationSpy implements LocationRepositoryInterface
     }
 
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchLocationByName(string $name): LocationEntity
+    {
+        $this->fetchLocationByNameCalled = true;
+        if ($this->fetchLocationByNameThrowsException) {
+            throw new CleanArchitectureException(
+                'No location with that name',
+                LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchLocationByNameValue ?? $this->createMockLocation();
+    }
+
+    public function hasFetchLocationByNameBeenCalled(): bool
+    {
+        return $this->fetchLocationByNameCalled;
+    }
+
+    public function setFetchLocationByNameThrowsException(): void
+    {
+        $this->fetchLocationByNameThrowsException = true;
+    }
+
+    public function setFetchLocationByNameValue(LocationEntity $value): void
+    {
+        $this->fetchLocationByNameValue = $value;
+    }
+
+    private bool $fetchLocationByNameCalled = false;
+    private bool $fetchLocationByNameThrowsException = false;
+    private LocationEntity $fetchLocationByNameValue;
 }

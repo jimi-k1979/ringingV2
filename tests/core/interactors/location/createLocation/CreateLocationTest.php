@@ -139,7 +139,7 @@ class CreateLocationTest extends TestCase
     {
         $transactionSpy = new TransactionManagerSpy();
         $locationSpy = new LocationSpy();
-        $locationSpy->setRepositoryThrowsException();
+        $locationSpy->setInsertThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setTransactionManager($transactionSpy);
@@ -184,7 +184,7 @@ class CreateLocationTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $locationSpy = new LocationSpy();
-        $locationSpy->setRepositoryThrowsException();
+        $locationSpy->setInsertThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);

@@ -6,15 +6,16 @@ namespace DrlArchive\traits;
 
 
 use DrlArchive\core\entities\DeaneryEntity;
+use DrlArchive\TestConstants;
 
 trait CreateMockDeaneryTrait
 {
     private function createMockDeanery(): DeaneryEntity
     {
         $entity = new DeaneryEntity();
-        $entity->setId(123);
-        $entity->setName('Test deanery');
-        $entity->setRegion('south');
+        $entity->setId(TestConstants::TEST_DEANERY_ID);
+        $entity->setName(TestConstants::TEST_DEANERY_NAME);
+        $entity->setRegion(TestConstants::TEST_DEANERY_REGION);
 
         return $entity;
     }

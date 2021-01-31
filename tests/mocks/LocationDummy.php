@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\traits\CreateMockLocationTrait;
 
@@ -13,9 +14,8 @@ class LocationDummy implements LocationRepositoryInterface
 {
     use CreateMockLocationTrait;
 
-    public function insertLocation(LocationEntity $locationEntity): LocationEntity
+    public function insertLocation(LocationEntity $locationEntity): void
     {
-        return $this->createMockLocation();
     }
 
     public function selectLocation(int $locationId): LocationEntity
@@ -29,5 +29,13 @@ class LocationDummy implements LocationRepositoryInterface
     public function fuzzySearchLocation(string $search): array
     {
         return [$this->createMockLocation()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchLocationByName(string $name): LocationEntity
+    {
+        return $this->createMockLocation();
     }
 }
