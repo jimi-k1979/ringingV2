@@ -6,7 +6,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 
 interface EventRepositoryInterface
 {
@@ -72,7 +72,7 @@ interface EventRepositoryInterface
      * @param string $year
      * @param int $competitionId
      * @return DrlEventEntity
-     * @throws CleanArchitectureException | RepositoryNoResults
+     * @throws CleanArchitectureException | RepositoryNoResultsException
      */
     public function fetchDrlEventByYearAndCompetitionId(
         string $year,

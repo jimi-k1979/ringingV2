@@ -7,7 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\traits\CreateMockJudgeTrait;
 
@@ -37,13 +37,13 @@ class JudgeSpy implements JudgeRepositoryInterface
     /**
      * @param DrlEventEntity $entity
      * @return JudgeEntity[]
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
     {
         $this->fetchJudgesByDrlEventCalled = true;
         if ($this->repositoryThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No judges found',
                 JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION
             );

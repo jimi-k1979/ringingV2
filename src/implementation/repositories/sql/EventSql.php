@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\sql;
 
 
+use _HumbugBox5d215ba2066e\Nette\NotImplementedException;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
 class EventSql extends MysqlRepository implements EventRepositoryInterface
@@ -58,7 +61,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEvent(int $id): DrlEventEntity
     {
@@ -96,7 +99,7 @@ join;
         );
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -108,7 +111,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {
@@ -145,7 +148,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -224,7 +227,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEventsByCompetitionAndLocationIds(
         int $competitionId,
@@ -265,7 +268,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -281,7 +284,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEventsByYear(string $year): array
     {
@@ -316,7 +319,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -374,12 +377,25 @@ join;
         );
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
 
         return $this->createDrlEventEntity($result);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventByYearAndCompetitionId(
+        string $year,
+        int $competitionId
+    ): DrlEventEntity {
+        throw new NotImplementedException(
+            'Method not implemented - use EventDoctrine',
+            Repository::METHOD_NOT_IMPLEMENTED_EXCEPTION
+        );
     }
 }

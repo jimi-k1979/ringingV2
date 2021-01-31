@@ -9,7 +9,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\entities\JudgeEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
@@ -118,7 +118,7 @@ class FetchDrlEventAndResults extends Interactor
             $this->judges = $this->judgeRepository->fetchJudgesByDrlEvent(
                 $this->event
             );
-        } catch (RepositoryNoResults $e) {
+        } catch (RepositoryNoResultsException $e) {
             $this->judges = null;
         }
     }

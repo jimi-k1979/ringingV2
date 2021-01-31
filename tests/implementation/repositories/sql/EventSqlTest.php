@@ -6,7 +6,7 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\implementation\repositories\sql\EventSql;
 use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
@@ -18,7 +18,7 @@ class EventSqlTest extends TestCase
 
     /**
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      *
      */
     public function testFetchDrlEvent(): void
@@ -150,7 +150,7 @@ sql;
 
     /**
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function testFetchDrlEventsByYear(): void
     {
@@ -197,7 +197,7 @@ sql;
 
     /**
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function testFetchDrlEventsByCompetitionAndLocationIds(): void
     {
@@ -244,7 +244,7 @@ sql;
 
     /**
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function testFetchDrlEventsByCompetitionId(): void
     {
@@ -289,7 +289,7 @@ sql;
     }
 
     /**
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function testFetchDrlEventByYearAndCompetitionName(): void
     {

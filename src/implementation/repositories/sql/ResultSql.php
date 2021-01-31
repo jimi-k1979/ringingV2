@@ -8,7 +8,7 @@ namespace DrlArchive\implementation\repositories\sql;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\entities\TeamEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
@@ -85,7 +85,7 @@ class ResultSql extends MysqlRepository implements ResultRepositoryInterface
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No results found',
                 ResultRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

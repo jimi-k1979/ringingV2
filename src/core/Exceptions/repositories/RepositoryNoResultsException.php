@@ -6,7 +6,7 @@ namespace DrlArchive\core\Exceptions\repositories;
 
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 
-class RepositoryNoResults extends CleanArchitectureException
+class RepositoryNoResultsException extends CleanArchitectureException
 {
 
 }

@@ -7,7 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -96,13 +96,13 @@ class EventSpy implements EventRepositoryInterface
     /**
      * @param int $id
      * @return DrlEventEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEvent(int $id): DrlEventEntity
     {
         $this->fetchDrlEventCalled = true;
         if ($this->fetchDrlEventThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No drl event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -143,7 +143,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchDrlEventsByCompetitionIdCalled = true;
         if ($this->fetchDrlEventsByCompetitionIdThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found for that competition id',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -173,7 +173,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchDrlEventsByCompetitionAndLocationIdsCalled = true;
         if ($this->fetchDrlEventsByCompetitionAndLocationIdsThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -204,7 +204,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchDrlEventsByYearCalled = true;
         if ($this->fetchDrlEventsByYearThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -237,7 +237,7 @@ class EventSpy implements EventRepositoryInterface
     ): DrlEventEntity {
         $this->fetchDrlEventByYearAndCompetitionNameCalled = true;
         if ($this->fetchDrlEventByYearAndCompetitionNameThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -269,7 +269,7 @@ class EventSpy implements EventRepositoryInterface
     ): DrlEventEntity {
         $this->fetchDrlEventByYearAndCompetitionIdCalled = true;
         if ($this->fetchDrlEventByYearAndCompetitionIdThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

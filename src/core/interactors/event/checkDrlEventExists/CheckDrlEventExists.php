@@ -10,7 +10,7 @@ use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
@@ -52,7 +52,7 @@ class CheckDrlEventExists extends Interactor
         try {
             $this->checkEventExists();
             $this->createEventExistsResponse();
-        } catch (RepositoryNoResults $e) {
+        } catch (RepositoryNoResultsException $e) {
             try {
                 $this->fetchCompetitionDetails();
                 $this->createCompetitionExistsResponse();

@@ -10,7 +10,7 @@ use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use Throwable;
@@ -54,7 +54,7 @@ class TeamDoctrine extends DoctrineRepository implements
         }
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No team found',
                 TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -177,7 +177,7 @@ class TeamDoctrine extends DoctrineRepository implements
         }
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No team found',
                 TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

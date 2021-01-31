@@ -7,7 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\traits\CreateMockTeamTrait;
 
@@ -141,14 +141,14 @@ class TeamSpy implements TeamRepositoryInterface
 
     /**
      * @inheritDoc
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fuzzySearchTeam(string $searchTerm): array
     {
         $this->fuzzySearchCalled = true;
 
         if ($this->fuzzySearchThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No teams found',
                 TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -180,7 +180,7 @@ class TeamSpy implements TeamRepositoryInterface
         $this->fetchTeamByNameCalled = true;
         $this->fetchTeamByNameCallCount++;
         if ($this->fetchTeamByNameThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'Team not found',
                 TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

@@ -14,7 +14,7 @@ use DrlArchive\core\entities\OtherCompetitionEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryInsertFailedException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 use Throwable;
@@ -101,7 +101,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             );
         }
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'Competition not found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -441,7 +441,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             );
         }
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'Competition not found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

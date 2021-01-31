@@ -12,7 +12,7 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryInsertFailedException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 use Throwable;
@@ -94,7 +94,7 @@ class EventDoctrine extends DoctrineRepository implements
         }
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -334,7 +334,7 @@ class EventDoctrine extends DoctrineRepository implements
         }
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -374,7 +374,7 @@ class EventDoctrine extends DoctrineRepository implements
         }
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

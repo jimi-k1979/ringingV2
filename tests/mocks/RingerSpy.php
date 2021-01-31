@@ -6,7 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\RingerEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
 use DrlArchive\traits\CreateMockRingerTrait;
 
@@ -29,14 +29,14 @@ class RingerSpy implements RingerRepositoryInterface
 
     /**
      * @inheritDoc
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fuzzySearchRinger(string $searchTerm): array
     {
         $this->fuzzySearchRingerCalled = true;
 
         if ($this->fuzzySearchThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No ringers found',
                 RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

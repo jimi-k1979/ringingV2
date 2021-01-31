@@ -11,7 +11,7 @@ use DrlArchive\core\entities\OtherCompetitionEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\NotImplementedException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
@@ -94,7 +94,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competition found for that id',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -106,7 +106,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fuzzySearchDrlCompetitions(string $string): array
     {
@@ -127,7 +127,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -144,7 +144,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlCompetitionByLocationId(int $locationId): array
     {
@@ -174,7 +174,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -190,7 +190,7 @@ join;
     /**
      * @inheritDoc
      * @throws GeneralRepositoryErrorException
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fuzzySearchAllCompetitions(string $search): array
     {
@@ -231,7 +231,7 @@ join;
             Database::FETCH_MULTI_ROW
         );
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No results found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -361,7 +361,7 @@ join;
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competition found for that id',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

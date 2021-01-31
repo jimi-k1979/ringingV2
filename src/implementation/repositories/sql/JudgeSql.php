@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
@@ -35,7 +35,7 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
     /**
      * @param DrlEventEntity $entity
      * @return JudgeEntity[]
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      * @throws GeneralRepositoryErrorException
      */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
@@ -77,7 +77,7 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No judges found',
                 JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION
             );

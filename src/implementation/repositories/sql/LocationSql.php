@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\NotImplementedException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
@@ -82,7 +82,7 @@ class LocationSql
         );
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No location found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -128,7 +128,7 @@ class LocationSql
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No locations found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

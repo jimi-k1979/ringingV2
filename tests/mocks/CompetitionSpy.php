@@ -8,7 +8,7 @@ namespace DrlArchive\mocks;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
@@ -126,13 +126,13 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     /**
      * @param int $id
      * @return DrlCompetitionEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
         $this->selectDrlCompetitionCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competition found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -160,13 +160,13 @@ class CompetitionSpy implements CompetitionRepositoryInterface
 
     /**
      * @inheritDoc
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fuzzySearchDrlCompetitions(string $string): array
     {
         $this->fuzzySearchDrlCompetitionCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -201,7 +201,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         $this->fetchDrlCompetitionByLocationCalled = true;
         if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No rows found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -232,7 +232,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         $this->fuzzySearchAllCompetitionsCalled = true;
         if ($this->fuzzySearchAllCompetitionsThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -263,7 +263,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     ): DrlCompetitionEntity {
         $this->fetchDrlCompetitionByNameCalled = true;
         if ($this->fetchDrlCompetitionByNameThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competition found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

@@ -8,7 +8,7 @@ namespace DrlArchive\mocks;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockLocationTrait;
@@ -72,13 +72,13 @@ class LocationSpy implements LocationRepositoryInterface
     /**
      * @param int $locationId
      * @return LocationEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function selectLocation(int $locationId): LocationEntity
     {
         $this->selectLocationCalled = true;
         if ($this->selectLocationThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No location found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
