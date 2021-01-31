@@ -7,10 +7,18 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
+use DrlArchive\core\Exceptions\NotImplementedException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
+/**
+ * Class LocationSql
+ * @package DrlArchive\implementation\repositories\sql
+ * @deprecated 2021-01-30 - use LocationDoctrine
+ */
 class LocationSql
     extends MysqlRepository
     implements LocationRepositoryInterface
@@ -41,7 +49,7 @@ class LocationSql
 
     // order by
 
-    public function insertLocation(LocationEntity $locationEntity): LocationEntity
+    public function insertLocation(LocationEntity $locationEntity): void
     {
         // TODO: Implement createLocation() method.
     }
@@ -186,5 +194,16 @@ class LocationSql
             self::SELECT_TENOR_WEIGHT . ' AS ' . self::FIELD_NAME_TENOR_WEIGHT,
             self::SELECT_NO_OF_BELLS . ' AS ' . self::FIELD_NAME_NO_OF_BELLS,
         ];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchLocationByName(string $name): LocationEntity
+    {
+        throw new NotImplementedException(
+            'Method not implemented - use LocationDoctrine',
+            Repository::METHOD_NOT_IMPLEMENTED_EXCEPTION
+        );
     }
 }

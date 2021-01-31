@@ -307,7 +307,7 @@ class FetchDrlEventAndResultsTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $locationSpy = new LocationSpy();
-        $locationSpy->setRepositoryThrowsException();
+        $locationSpy->setSelectLocationThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);

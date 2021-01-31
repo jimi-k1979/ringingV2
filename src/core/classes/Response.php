@@ -8,7 +8,7 @@ class Response
 {
     public const STATUS_SUCCESS = 200;
     public const STATUS_FORBIDDEN = 403;
-    public const STATUS_NOT_FOUND = 404;
+    public const STATUS_NOT_FOUND = 400;
     public const STATUS_UNKNOWN_ERROR = 500;
 
     public const STATUS_DUPLICATE = 1;
@@ -20,11 +20,11 @@ class Response
     public const RESPONSE_MESSAGE = 'message';
     public const RESPONSE_DATA = 'data';
 
-    private $status = self::STATUS_SUCCESS;
+    private int $status = self::STATUS_SUCCESS;
 
-    private $message = '';
+    private string $message = '';
 
-    private $data = [];
+    private array $data = [];
 
 
     public function __construct(array $data = [])
