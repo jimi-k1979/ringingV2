@@ -49,12 +49,12 @@ class LocationSql
 
     // order by
 
-    public function insertLocation(LocationEntity $locationEntity): void
+    public function insertLocation(LocationEntity $location): void
     {
         // TODO: Implement createLocation() method.
     }
 
-    public function selectLocation(int $locationId): LocationEntity
+    public function fetchLocationById(int $locationId): LocationEntity
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(

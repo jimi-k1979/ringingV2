@@ -14,11 +14,11 @@ class LocationDummy implements LocationRepositoryInterface
 {
     use CreateMockLocationTrait;
 
-    public function insertLocation(LocationEntity $locationEntity): void
+    public function insertLocation(LocationEntity $location): void
     {
     }
 
-    public function selectLocation(int $locationId): LocationEntity
+    public function fetchLocationById(int $locationId): LocationEntity
     {
         return $this->createMockLocation();
     }

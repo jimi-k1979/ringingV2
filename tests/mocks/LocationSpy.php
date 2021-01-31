@@ -30,12 +30,12 @@ class LocationSpy implements LocationRepositoryInterface
     private bool $selectLocationThrowsException = false;
 
     /**
-     * @param LocationEntity $locationEntity
+     * @param LocationEntity $location
      * @return void
      * @throws GeneralRepositoryErrorException
      */
     public function insertLocation(
-        LocationEntity $locationEntity
+        LocationEntity $location
     ): void {
         $this->insertLocationCalled = true;
         if ($this->insertThrowsException) {
@@ -45,7 +45,7 @@ class LocationSpy implements LocationRepositoryInterface
             );
         }
 
-        $locationEntity->setId($this->insertLocationIdValue);
+        $location->setId($this->insertLocationIdValue);
     }
 
     /**
@@ -74,7 +74,7 @@ class LocationSpy implements LocationRepositoryInterface
      * @return LocationEntity
      * @throws RepositoryNoResultsException
      */
-    public function selectLocation(int $locationId): LocationEntity
+    public function fetchLocationById(int $locationId): LocationEntity
     {
         $this->selectLocationCalled = true;
         if ($this->selectLocationThrowsException) {

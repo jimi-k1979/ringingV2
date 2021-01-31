@@ -12,11 +12,18 @@ interface LocationRepositoryInterface
     public const UNABLE_TO_INSERT_EXCEPTION = 2101;
     public const NO_ROWS_FOUND_EXCEPTION = 2102;
 
-    public function insertLocation(
-        LocationEntity $locationEntity
-    ): void;
+    /**
+     * @param LocationEntity $location
+     * @throws CleanArchitectureException
+     */
+    public function insertLocation(LocationEntity $location): void;
 
-    public function selectLocation(int $locationId): LocationEntity;
+    /**
+     * @param int $locationId
+     * @return LocationEntity
+     * @throws CleanArchitectureException
+     */
+    public function fetchLocationById(int $locationId): LocationEntity;
 
     /**
      * @param string $search

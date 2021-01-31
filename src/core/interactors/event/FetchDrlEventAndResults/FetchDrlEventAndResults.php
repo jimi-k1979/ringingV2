@@ -99,7 +99,7 @@ class FetchDrlEventAndResults extends Interactor
             $this->request->getEventId()
         );
         $this->event->setLocation(
-            $this->locationRepository->selectLocation(
+            $this->locationRepository->fetchLocationById(
                 $this->event->getLocation()->getId()
             )
         );

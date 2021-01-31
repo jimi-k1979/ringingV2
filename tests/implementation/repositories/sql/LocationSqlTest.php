@@ -27,7 +27,7 @@ class LocationSqlTest extends TestCase
         ];
         $databaseMock->addQueryResult(DatabaseMock::FIRST_CALL, $resultArray);
 
-        $entity = (new LocationSql($databaseMock))->selectLocation(1);
+        $entity = (new LocationSql($databaseMock))->fetchLocationById(1);
 
         $queryArgs = $databaseMock->getQueryArgs();
 
