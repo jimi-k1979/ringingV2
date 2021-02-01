@@ -7,6 +7,7 @@ namespace DrlArchive\core\entities;
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class JudgeEntityTest extends TestCase
@@ -22,9 +23,9 @@ class JudgeEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $judge = new JudgeEntity();
-        $judge->setId(123);
+        $judge->setId(TestConstants::TEST_JUDGE_ID);
         $this->assertEquals(
-            123,
+            TestConstants::TEST_JUDGE_ID,
             $judge->getId()
         );
     }
@@ -32,9 +33,9 @@ class JudgeEntityTest extends TestCase
     public function testFirstNameProperty(): void
     {
         $judge = new JudgeEntity();
-        $judge->setFirstName('Test');
+        $judge->setFirstName(TestConstants::TEST_JUDGE_FIRST_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_JUDGE_FIRST_NAME,
             $judge->getFirstName()
         );
     }
@@ -42,9 +43,9 @@ class JudgeEntityTest extends TestCase
     public function testLastNameProperty(): void
     {
         $judge = new JudgeEntity();
-        $judge->setLastName('Test');
+        $judge->setLastName(TestConstants::TEST_JUDGE_LAST_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_JUDGE_LAST_NAME,
             $judge->getLastName()
         );
     }
@@ -62,11 +63,11 @@ class JudgeEntityTest extends TestCase
     public function testGetFullName(): void
     {
         $judge = new JudgeEntity();
-        $judge->setFirstName('Test');
-        $judge->setLastName('Judge');
+        $judge->setFirstName(TestConstants::TEST_JUDGE_FIRST_NAME);
+        $judge->setLastName(TestConstants::TEST_JUDGE_LAST_NAME);
         $this->assertEquals(
-            'Test Judge',
-            $judge->getFirstName() . ' ' . $judge->getLastName()
+            TestConstants::TEST_JUDGE_FIRST_NAME . ' ' . TestConstants::TEST_JUDGE_LAST_NAME,
+            $judge->getFullName()
         );
     }
 }

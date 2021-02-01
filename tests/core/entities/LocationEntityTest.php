@@ -7,6 +7,7 @@ namespace DrlArchive\core\entities;
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class LocationEntityTest extends TestCase
@@ -22,9 +23,9 @@ class LocationEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $location = new LocationEntity();
-        $location->setId(4);
+        $location->setId(TestConstants::TEST_LOCATION_ID);
         $this->assertEquals(
-            4,
+            TestConstants::TEST_LOCATION_ID,
             $location->getId()
         );
     }
@@ -32,9 +33,9 @@ class LocationEntityTest extends TestCase
     public function testLocationProperty(): void
     {
         $location = new LocationEntity();
-        $location->setLocation('test');
+        $location->setLocation(TestConstants::TEST_LOCATION_NAME);
         $this->assertEquals(
-            'test',
+            TestConstants::TEST_LOCATION_NAME,
             $location->getLocation()
         );
     }
@@ -52,9 +53,9 @@ class LocationEntityTest extends TestCase
     public function testDedicationProperty(): void
     {
         $location = new LocationEntity();
-        $location->setDedication('Test');
+        $location->setDedication(TestConstants::TEST_LOCATION_DEDICATION);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_LOCATION_DEDICATION,
             $location->getDedication()
         );
     }
@@ -62,9 +63,9 @@ class LocationEntityTest extends TestCase
     public function testTenorWeightProperty(): void
     {
         $location = new LocationEntity();
-        $location->setTenorWeight('Test');
+        $location->setTenorWeight(TestConstants::TEST_LOCATION_WEIGHT);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_LOCATION_WEIGHT,
             $location->getTenorWeight()
         );
     }
@@ -72,9 +73,11 @@ class LocationEntityTest extends TestCase
     public function testNumberOfBellsProperty(): void
     {
         $location = new LocationEntity();
-        $location->setNumberOfBells(6);
+        $location->setNumberOfBells(
+            TestConstants::TEST_LOCATION_NUMBER_OF_BELLS
+        );
         $this->assertEquals(
-            6,
+            TestConstants::TEST_LOCATION_NUMBER_OF_BELLS,
             $location->getNumberOfBells(),
             'Incorrect number of bells when integer'
         );

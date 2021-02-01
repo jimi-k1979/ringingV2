@@ -11,6 +11,7 @@ use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class DrlEventEntityTest extends TestCase
@@ -32,9 +33,9 @@ class DrlEventEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $event = new DrlEventEntity();
-        $event->setId(4);
+        $event->setId(TestConstants::TEST_EVENT_ID);
         $this->assertEquals(
-            4,
+            TestConstants::TEST_EVENT_ID,
             $event->getId()
         );
     }
@@ -42,9 +43,9 @@ class DrlEventEntityTest extends TestCase
     public function testYearProperty(): void
     {
         $event = new DrlEventEntity();
-        $event->setYear('2345');
+        $event->setYear(TestConstants::TEST_EVENT_YEAR);
         $this->assertEquals(
-            '2345',
+            TestConstants::TEST_EVENT_YEAR,
             $event->getYear()
         );
     }

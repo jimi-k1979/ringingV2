@@ -7,6 +7,7 @@ namespace DrlArchive\core\entities;
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\Exceptions\InvalidEntityPropertyException;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class DeaneryEntityTest extends TestCase
@@ -22,9 +23,9 @@ class DeaneryEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setId(4);
+        $deanery->setId(TestConstants::TEST_DEANERY_ID);
         $this->assertEquals(
-            4,
+            TestConstants::TEST_DEANERY_ID,
             $deanery->getId()
         );
     }
@@ -32,9 +33,9 @@ class DeaneryEntityTest extends TestCase
     public function testNameProperty(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setName('Test team');
+        $deanery->setName(TestConstants::TEST_DEANERY_NAME);
         $this->assertEquals(
-            'Test team',
+            TestConstants::TEST_DEANERY_NAME,
             $deanery->getName()
         );
     }
@@ -43,6 +44,19 @@ class DeaneryEntityTest extends TestCase
      * @throws InvalidEntityPropertyException
      */
     public function testLocationInCountyProperty(): void
+    {
+        $deanery = new DeaneryEntity();
+        $deanery->setRegion(TestConstants::TEST_DEANERY_REGION);
+        $this->assertEquals(
+            TestConstants::TEST_DEANERY_REGION,
+            $deanery->getRegion()
+        );
+    }
+
+    /**
+     * @throws InvalidEntityPropertyException
+     */
+    public function testNorthLocation(): void
     {
         $deanery = new DeaneryEntity();
         $deanery->setRegion('north');
@@ -55,23 +69,10 @@ class DeaneryEntityTest extends TestCase
     /**
      * @throws InvalidEntityPropertyException
      */
-    public function testSouthLocation(): void
-    {
-        $deanery = new DeaneryEntity();
-        $deanery->setRegion('south');
-        $this->assertEquals(
-            'south',
-            $deanery->getRegion()
-        );
-    }
-
-    /**
-     * @throws InvalidEntityPropertyException
-     */
     public function testOutOfCountyLocation(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setRegion('outofcounty');
+        $deanery->setRegion('outOfCounty');
         $this->assertEquals(
             'outofcounty',
             $deanery->getRegion()

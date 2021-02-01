@@ -7,6 +7,7 @@ namespace DrlArchive\core\entities;
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\Entity;
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class TeamEntityTest extends TestCase
@@ -22,9 +23,9 @@ class TeamEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $team = new TeamEntity();
-        $team->setId(4);
+        $team->setId(TestConstants::TEST_TEAM_ID);
         $this->assertEquals(
-            4,
+            TestConstants::TEST_TEAM_ID,
             $team->getId()
         );
     }
@@ -32,9 +33,9 @@ class TeamEntityTest extends TestCase
     public function testNameProperty(): void
     {
         $team = new TeamEntity();
-        $team->setName('Test');
+        $team->setName(TestConstants::TEST_TEAM_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_TEAM_NAME,
             $team->getName()
         );
     }
