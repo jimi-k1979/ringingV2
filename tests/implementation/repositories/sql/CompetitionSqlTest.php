@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace implementation\repositories\sql;
+namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\OtherCompetitionEntity;
-use DrlArchive\implementation\repositories\sql\CompetitionSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\StripStringTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class CompetitionSqlTest extends TestCase
 {
@@ -251,7 +250,7 @@ sql;
         ];
         $databaseMock->addQueryResult(DatabaseMock::FIRST_CALL, $resultArray);
         $entities = (new CompetitionSql($databaseMock))
-            ->fuzzySearchDrlCompetition('competition');
+            ->fuzzySearchDrlCompetitions('competition');
 
         $queryArgs = $databaseMock->getQueryArgs();
 
@@ -277,5 +276,46 @@ sql;
         foreach ($entities as $i => $entity) {
             $this->verifyDrlCompetitionEntity($entity, $resultArray[$i]);
         }
+    }
+
+    public function testFetchDrlCompetitionByName(): void
+    {
+        $databaseMock = new DatabaseMock();
+        $resultArray = [
+            'competitionId' => 111,
+            'competitionName' => 'Test competition',
+            'isSingleTower' => 1,
+            'usualLocationId' => 222,
+            'location' => 'Testville, St Test',
+        ];
+        $databaseMock->addQueryResult(DatabaseMock::FIRST_CALL, $resultArray);
+
+        $entity = (new CompetitionSql($databaseMock))
+            ->fetchDrlCompetitionByName('Test competition');
+
+        $queryArgs = $databaseMock->getQueryArgs();
+
+        $sql = <<<sql
+SELECT
+    dc.id AS competitionId,
+    dc.competitionName AS competitionName,
+    dc.isSingleTower AS isSingleTower,
+    dc.usualLocationID AS usualLocationId,
+    l.location AS location
+FROM
+     DRL_competition dc
+     LEFT JOIN location l 
+               ON dc.usualLocationID = l.id
+WHERE
+    dc.competitionName = :name
+sql;
+
+        $this->assertEquals(
+            $this->stripString($sql),
+            $this->stripString($queryArgs[DatabaseMock::FIRST_CALL]['sql']),
+            'Incorrect query'
+        );
+
+        $this->verifyDrlCompetitionEntity($entity, $resultArray);
     }
 }

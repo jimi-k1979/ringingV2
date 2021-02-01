@@ -2,57 +2,62 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
-use traits\CreateMockDrlResultTrait;
+use DrlArchive\traits\CreateMockDrlResultTrait;
 
 class ResultSpy implements ResultRepositoryInterface
 {
     use CreateMockDrlResultTrait;
 
-    /**
-     * @var bool
-     */
-    private $insertDrlResultCalled = false;
-    /**
-     * @var bool
-     */
-    private $createThrowsException = false;
-    /**
-     * @var DrlResultEntity
-     */
-    private $insertDrlResultValue;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventResultsCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventResultsThrowsException = false;
+    private bool $insertDrlResultCalled = false;
+    private bool $createThrowsException = false;
+    private int $insertDrlResultCallCount = 0;
+    private int $insertDrlResultIdValue = 0;
+    private bool $fetchDrlEventResultsCalled = false;
+    private bool $fetchDrlEventResultsThrowsException = false;
     /**
      * @var DrlResultEntity[]
      */
-    private $fetchDrlEventResultValue;
+    private array $fetchDrlEventResultValue;
 
 
     public function insertDrlResult(
-        DrlResultEntity $resultEntity
-    ): DrlResultEntity {
+        DrlResultEntity $result
+    ): void {
         $this->insertDrlResultCalled = true;
+        $this->insertDrlResultCallCount++;
+
         if ($this->createThrowsException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to create result',
                 ResultRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
             );
         }
-        return $this->insertDrlResultValue ?? $this->createMockDrlResult();
+
+        $result->setId($this->insertDrlResultIdValue);
+    }
+
+    /**
+     * @return bool
+     */
+    public function isInsertDrlResultCalled(): bool
+    {
+        return $this->insertDrlResultCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getInsertDrlResultCallCount(): int
+    {
+        return $this->insertDrlResultCallCount;
     }
 
     /**
@@ -63,12 +68,12 @@ class ResultSpy implements ResultRepositoryInterface
     }
 
     /**
-     * @param DrlResultEntity $insertDrlResultValue
+     * @param int $insertDrlResultIdValue
      */
-    public function setInsertDrlResultValue(
-        DrlResultEntity $insertDrlResultValue
+    public function setInsertDrlResultIdValue(
+        int $insertDrlResultIdValue
     ): void {
-        $this->insertDrlResultValue = $insertDrlResultValue;
+        $this->insertDrlResultIdValue = $insertDrlResultIdValue;
     }
 
     /**
@@ -82,13 +87,13 @@ class ResultSpy implements ResultRepositoryInterface
 
     /**
      * @inheritDoc
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
-    public function fetchDrlEventResults(DrlEventEntity $eventEntity): array
+    public function fetchDrlEventResults(DrlEventEntity $event): array
     {
         $this->fetchDrlEventResultsCalled = true;
         if ($this->fetchDrlEventResultsThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'Unable to create result',
                 ResultRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

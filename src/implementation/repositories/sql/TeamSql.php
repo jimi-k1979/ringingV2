@@ -11,7 +11,8 @@ class TeamSql extends MysqlRepository implements TeamRepositoryInterface
 {
 
     public const SELECT_TEAM_NAME = 't.teamName';
-    public const FIELD_NAME_TEAM_NAME = ' AS teamName';
+
+    public const FIELD_NAME_TEAM_NAME = 'teamName';
 
     public function insertTeam(TeamEntity $teamEntity): TeamEntity
     {

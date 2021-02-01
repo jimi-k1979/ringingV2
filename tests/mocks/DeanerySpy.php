@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DeaneryEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
-use traits\CreateMockDeaneryTrait;
+use DrlArchive\traits\CreateMockDeaneryTrait;
 
 class DeanerySpy implements DeaneryRepositoryInterface
 {
@@ -41,13 +41,13 @@ class DeanerySpy implements DeaneryRepositoryInterface
     /**
      * @param string $name
      * @return DeaneryEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function getDeaneryByName(string $name): DeaneryEntity
     {
         $this->getDeaneryByNameCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults();
+            throw new RepositoryNoResultsException();
         }
 
         return $this->deaneryValue ?? new DeaneryEntity();
@@ -72,13 +72,13 @@ class DeanerySpy implements DeaneryRepositoryInterface
     /**
      * @param int $id
      * @return DeaneryEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function selectDeanery(int $id): DeaneryEntity
     {
         $this->selectDeaneryCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No deanery found',
                 DeaneryRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );

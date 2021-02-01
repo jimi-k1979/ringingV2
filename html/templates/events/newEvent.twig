@@ -1,0 +1,262 @@
+{% extends "allPages/base.twig" %}
+
+{% block title %}Results Archive - add new event{% endblock %}
+
+{% block extraStyles %}
+    <link href="/assets/css/auto-complete.css"
+          rel="stylesheet"
+          type="text/css"
+    >
+{% endblock %}
+
+{% block mainContent %}
+    <div class="col blog-main">
+        <h3 class="pb-1 my-4 font-italic border-bottom">
+            Add Event to Archive
+        </h3>
+
+        {% if status == 200 and message != '' %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% elseif status != 200 %}
+            <div class="alert alert-danger" role="alert">
+                <span class="bold">New event not added:</span>
+                {{ message }}
+            </div>
+        {% endif %}
+        <p>
+            Enter the details for the new event - we'll check the event doesn't
+            already exist in the archive - and then enter the results. If the
+            competition has a regular tower we'll add that too, but feel free to
+            change it if it is incorrect.
+        </p>
+        <form method="post"
+              id="add-competition"
+              autocomplete="off"
+        >
+            <div class="border mx-0 my-3 py-1 row"
+                 id="event-details"
+            >
+                <div class="col-12">
+                    <h4>Event details</h4>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+                            <div class="row form-group">
+                                <label for="year-text-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Year
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="number"
+                                           name="year-text-search"
+                                           id="year-text-search"
+                                           class="form-control clearable-field"
+                                           autocomplete="off"
+                                           placeholder="Type year here"
+                                           min="1920"
+                                           max="{{ maxYear.format('Y') }}"
+                                           required
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-8 col-lg-4 col-xl-5">
+                            <div class="row form-group">
+                                <label for="competition-fuzzy-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Event
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="text"
+                                           name="competition-fuzzy-search"
+                                           id="competition-fuzzy-search"
+                                           class="form-control clearable-field blockable-field"
+                                           autocomplete="off"
+                                           placeholder="Competition name"
+                                           disabled
+                                           required
+                                    >
+                                    <input type="hidden"
+                                           name="competition-id"
+                                           id="competition-id"
+                                           value="null"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                            <div class="row form-group">
+                                <label for="location-fuzzy-search"
+                                       class="col-form-label col-2 col-md-12 col-lg-2"
+                                >
+                                    Venue
+                                </label>
+                                <div class="col-10 col-md-12 col-lg-10">
+                                    <input type="text"
+                                           name="location-fuzzy-search"
+                                           id="location-fuzzy-search"
+                                           class="form-control clearable-field blockable-field"
+                                           autocomplete="off"
+                                           placeholder="Venue"
+                                           disabled
+                                           required
+                                    >
+                                    <input type="hidden"
+                                           class="nullable-field"
+                                           name="location-id"
+                                           id="location-id"
+                                           value="null"
+                                    >
+                                    <input type="hidden"
+                                           class="nullable-field"
+                                           name="usual-location-id"
+                                           id="usual-location-id"
+                                           value="null"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- #event-details -->
+
+            <div class="blog-post" id="results-form">
+                <fieldset class="row form-group blockable-field"
+                          disabled
+                          id="meta-data"
+                >
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <div class="form-group row">
+                            <label for="number-of-teams"
+                                   class="col-sm-3 col-md-4 col-lg-3 col-form-label"
+                            >
+                                Team count
+                            </label>
+                            <div class="col-sm-9 col-md-8 col-lg-9">
+                                <input type="number"
+                                       class="form-control clearable-field"
+                                       id="number-of-teams"
+                                       name="number-of-teams"
+                                       placeholder="Include any disqualifications"
+                                       min="0"
+                                       max="20"
+                                       required
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input"
+                                   type="checkbox"
+                                   value="1"
+                                   id="peal-numbers"
+                                   name="peal-numbers"
+                            >
+                            <label class="custom-control-label"
+                                   for="peal-numbers"
+                            >
+                                Unknown peal numbers
+                            </label>
+                        </div>
+                    </div>
+                    <input type="hidden"
+                           name="is-drl-event-type"
+                           value="false"
+                           id="is-drl-event-type"
+                    >
+                </fieldset> <!-- #meta-data -->
+
+                <div class="row"> <!-- results -->
+                    {% for i in 1..20 %}
+                        <fieldset id="result-{{ i }}"
+                                {% if i % 2 == 1 %}
+                                    class="form-row col-12 fieldset-light pt-1 mx-0 hidden blockable-field"
+                                {% else %}
+                                    class="form-row col-12 pt-1 mx-0 hidden blockable-field"
+                                {% endif %}
+                                  disabled
+                        >
+                            <div class="form-group col-4 col-md-2 col-lg-1">
+                                <label for="position-{{ i }}">
+                                    Position
+                                </label>
+                                <input type="number"
+                                       class="form-control"
+                                       name="position-{{ i }}"
+                                       id="position-{{ i }}"
+                                       value="{{ i }}"
+                                       required
+                                       disabled
+                                >
+                            </div>
+                            <div class="form-group col-4 col-md-2 col-lg-1">
+                                <label for="peal-{{ i }}">
+                                    Peal
+                                </label>
+                                <input type="number"
+                                       class="form-control peal-input clearable-field"
+                                       name="peal-{{ i }}"
+                                       id="peal-{{ i }}"
+                                       min="0"
+                                       max="20"
+                                >
+                            </div>
+                            <div class="form-group col-4 col-md-2 col-lg-2">
+                                <label for="faults-{{ i }}">
+                                    Faults
+                                </label>
+                                <input type="number"
+                                       step="0.01"
+                                       class="form-control clearable-field"
+                                       name="faults-{{ i }}"
+                                       id="faults-{{ i }}"
+                                >
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-8">
+                                <label for="team-{{ i }}">
+                                    Team
+                                </label>
+                                <input type="text"
+                                       class="form-control clearable-field"
+                                       name="team-{{ i }}"
+                                       id="team-{{ i }}"
+                                >
+                            </div>
+                        </fieldset>
+                    {% endfor %}
+                </div> <!-- results -->
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <button type="submit"
+                                id="submit-results-button"
+                                class="btn btn-primary"
+                        >Submit results
+                        </button>
+                        <button type="button"
+                                id="clear-form-button"
+                                class="btn btn-danger"
+                        >Clear form
+                        </button>
+                    </div>
+                </div> <!-- buttons -->
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/auto-complete.min.js"
+    ></script>
+    <script type="application/javascript"
+            src="/assets/js/newEvent.js"
+    ></script>
+{% endblock %}

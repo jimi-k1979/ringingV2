@@ -2,98 +2,66 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
-use traits\CreateMockDrlEventTrait;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 
 class EventSpy implements EventRepositoryInterface
 {
     use CreateMockDrlEventTrait;
 
-    /**
-     * @var bool
-     */
-    private $insertEventCalled = false;
-    /**
-     * @var bool
-     */
-    private $throwException = false;
-    /**
-     * @var DrlEventEntity|null
-     */
-    private $drlEventValue;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchEventThrowsException = false;
-    /**
-     * @var DrlEventEntity
-     */
-    private $fetchDrlEventValue;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventsByCompetitionIdCalled = false;
+    private bool $insertEventCalled = false;
+    private int $insertDrlEventIdValue = 0;
+    private bool $insertDrlEventThrowsException = false;
+    private ?DrlEventEntity $drlEventValue;
+    private bool $fetchDrlEventCalled = false;
+    private bool $fetchDrlEventThrowsException = false;
+    private DrlEventEntity $fetchDrlEventValue;
+    private bool $fetchDrlEventsByCompetitionIdCalled = false;
+    private bool $fetchDrlEventsByCompetitionIdThrowsException = false;
     /**
      * @var DrlEventEntity[]
      */
-    private $fetchDrlEventsByCompetitionIdValue = [];
+    private array $fetchDrlEventsByCompetitionIdValue = [];
+    private bool $fetchDrlEventsByCompetitionAndLocationIdsCalled = false;
+    private bool $fetchDrlEventsByCompetitionAndLocationIdsThrowsException = false;
     /**
-     * @var bool
+     * @var DrlEventEntity[]
      */
-    private $fetchDrlEventsByCompetitionAndLocationIdsCalled = false;
+    private array $fetchDrlEventsByCompetitionAndLocationIdsValue = [];
+    private bool $fetchDrlEventsByYearCalled = false;
+    private bool $fetchDrlEventsByYearThrowsException = false;
     /**
-     * @var bool
+     * @var DrlEventEntity[]
      */
-    private $fetchDrlEventsByCompetitionAndLocationIdsThrowsException = false;
-    /**
-     * @var array
-     */
-    private $fetchDrlEventsByCompetitionAndLocationIdsValue = [];
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventsByYearCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchDrlEventsByYearThrowsException = false;
-    /**
-     * @var
-     */
-    private $fetchDrlEventsByYearValue = [];
+    private array $fetchDrlEventsByYearValue = [];
+    private bool $fetchDrlEventByYearAndCompetitionNameCalled = false;
+    private bool $fetchDrlEventByYearAndCompetitionNameThrowsException = false;
 
 
-    public function setThrowException(): void
-    {
-        $this->throwException = true;
-    }
+    private DrlEventEntity $fetchDrlEventByYearAndCompetitionNameValue;
+
 
     /**
      * @param DrlEventEntity $entity
-     * @return DrlEventEntity
+     * @return void
      * @throws GeneralRepositoryErrorException
      */
-    public function insertDrlEvent(DrlEventEntity $entity): DrlEventEntity
+    public function insertDrlEvent(DrlEventEntity $entity): void
     {
         $this->insertEventCalled = true;
-        if ($this->throwException) {
+        if ($this->insertDrlEventThrowsException) {
             throw new GeneralRepositoryErrorException(
                 "Can't insert event",
-                EventRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                EventRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
-
-        return $this->drlEventValue ?? $this->createMockDrlEvent();
+        $entity->setId($this->insertDrlEventIdValue);
     }
 
     /**
@@ -105,6 +73,14 @@ class EventSpy implements EventRepositoryInterface
     }
 
     /**
+     * @param int $insertDrlEventIdValue
+     */
+    public function setInsertDrlEventIdValue(int $insertDrlEventIdValue): void
+    {
+        $this->insertDrlEventIdValue = $insertDrlEventIdValue;
+    }
+
+    /**
      * @param DrlEventEntity|null $drlEventValue
      */
     public function setDrlEventValue(?DrlEventEntity $drlEventValue): void
@@ -112,16 +88,21 @@ class EventSpy implements EventRepositoryInterface
         $this->drlEventValue = $drlEventValue;
     }
 
+    public function setInsertDrlEventThrowsException(): void
+    {
+        $this->insertDrlEventThrowsException = true;
+    }
+
     /**
      * @param int $id
      * @return DrlEventEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function fetchDrlEvent(int $id): DrlEventEntity
     {
         $this->fetchDrlEventCalled = true;
-        if ($this->fetchEventThrowsException) {
-            throw new RepositoryNoResults(
+        if ($this->fetchDrlEventThrowsException) {
+            throw new RepositoryNoResultsException(
                 'No drl event found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -132,9 +113,9 @@ class EventSpy implements EventRepositoryInterface
 
     /**
      */
-    public function setFetchEventThrowsException(): void
+    public function setFetchDrlEventThrowsException(): void
     {
-        $this->fetchEventThrowsException = true;
+        $this->fetchDrlEventThrowsException = true;
     }
 
     /**
@@ -161,8 +142,8 @@ class EventSpy implements EventRepositoryInterface
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {
         $this->fetchDrlEventsByCompetitionIdCalled = true;
-        if ($this->throwException) {
-            throw new RepositoryNoResults(
+        if ($this->fetchDrlEventsByCompetitionIdThrowsException) {
+            throw new RepositoryNoResultsException(
                 'No events found for that competition id',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -180,6 +161,11 @@ class EventSpy implements EventRepositoryInterface
         $this->fetchDrlEventsByCompetitionIdValue = $value;
     }
 
+    public function setFetchDrlEventsByCompetitionIdThrowsException(): void
+    {
+        $this->fetchDrlEventsByCompetitionIdThrowsException = true;
+    }
+
     /**
      * @inheritDoc
      */
@@ -187,7 +173,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchDrlEventsByCompetitionAndLocationIdsCalled = true;
         if ($this->fetchDrlEventsByCompetitionAndLocationIdsThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -218,7 +204,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchDrlEventsByYearCalled = true;
         if ($this->fetchDrlEventsByYearThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No events found',
                 EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -242,4 +228,74 @@ class EventSpy implements EventRepositoryInterface
         $this->fetchDrlEventsByYearValue = $value;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity {
+        $this->fetchDrlEventByYearAndCompetitionNameCalled = true;
+        if ($this->fetchDrlEventByYearAndCompetitionNameThrowsException) {
+            throw new RepositoryNoResultsException(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventByYearAndCompetitionNameValue ??
+            $this->createMockDrlEvent();
+    }
+
+    public function hasFetchDrlEventByYearAndCompetitionNameBeenCalled(): bool
+    {
+        return $this->fetchDrlEventByYearAndCompetitionNameCalled;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionNameThrowsException(): void
+    {
+        $this->fetchDrlEventByYearAndCompetitionNameThrowsException = true;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionNameValue(
+        DrlEventEntity $entity
+    ): void {
+        $this->fetchDrlEventByYearAndCompetitionNameValue = $entity;
+    }
+
+    public function fetchDrlEventByYearAndCompetitionId(
+        string $year,
+        int $competitionId
+    ): DrlEventEntity {
+        $this->fetchDrlEventByYearAndCompetitionIdCalled = true;
+        if ($this->fetchDrlEventByYearAndCompetitionIdThrowsException) {
+            throw new RepositoryNoResultsException(
+                'No event found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventByYearAndCompetitionIdValue ??
+            $this->createMockDrlEvent();
+    }
+
+    public function hasFetchDrlEventByYearAndCompetitionIdBeenCalled(): bool
+    {
+        return $this->fetchDrlEventByYearAndCompetitionIdCalled;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionIdThrowsException(): void
+    {
+        $this->fetchDrlEventByYearAndCompetitionIdThrowsException = true;
+    }
+
+    public function setFetchDrlEventByYearAndCompetitionIdValue(
+        DrlEventEntity $value
+    ): void {
+        $this->fetchDrlEventByYearAndCompetitionIdValue = $value;
+    }
+
+    private bool $fetchDrlEventByYearAndCompetitionIdCalled = false;
+    private bool $fetchDrlEventByYearAndCompetitionIdThrowsException = false;
+    private DrlEventEntity $fetchDrlEventByYearAndCompetitionIdValue;
 }

@@ -2,23 +2,21 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\team\TeamFuzzySearch;
+namespace DrlArchive\core\interactors\team\TeamFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interactors\team\TeamFuzzySearch\TeamFuzzySearch;
-use DrlArchive\core\interactors\team\TeamFuzzySearch\TeamFuzzySearchRequest;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
-use mocks\TeamDummy;
-use mocks\TeamSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\TeamDummy;
+use DrlArchive\mocks\TeamSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockTeamTrait;
+use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamFuzzySearchTest extends TestCase
 {
@@ -125,11 +123,11 @@ class TeamFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 123,
-                'teamName' => 'Test team',
+                'name' => 'Test team',
             ],
             [
                 'id' => 9999,
-                'teamName' => 'Test Team B'
+                'name' => 'Test Team B'
             ],
         ];
 
@@ -160,7 +158,7 @@ class TeamFuzzySearchTest extends TestCase
         $expectedResponse = [
             [
                 'id' => 123,
-                'teamName' => 'Test team',
+                'name' => 'Test team',
             ],
         ];
 

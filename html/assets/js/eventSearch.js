@@ -146,7 +146,7 @@ function buildResultJudgesSection(judgesData) {
     }
 }
 
-$(document).ready(function () {
+$(function () {
     $('#competition-text-search').autocomplete({
         minLength: 0,
         source: function (request, response) {

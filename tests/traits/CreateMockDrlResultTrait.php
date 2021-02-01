@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace traits;
+namespace DrlArchive\traits;
 
 
 use DrlArchive\core\entities\DrlResultEntity;

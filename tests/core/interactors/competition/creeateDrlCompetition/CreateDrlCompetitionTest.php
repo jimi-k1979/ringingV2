@@ -2,24 +2,22 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\createDrlCompetition;
+namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
-use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetition;
-use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
-use mocks\TransactionManagerDummy;
-use mocks\TransactionManagerSpy;
+use DrlArchive\mocks\CompetitionDummy;
+use DrlArchive\mocks\CompetitionSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\TransactionManagerDummy;
+use DrlArchive\mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
 
 class CreateDrlCompetitionTest extends TestCase
@@ -192,7 +190,7 @@ class CreateDrlCompetitionTest extends TestCase
         $this->assertEquals(
             [
                 'code' =>
-                    CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION,
+                    CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION,
                 'message' => 'Unable to add a competition',
             ],
             $response->getData()

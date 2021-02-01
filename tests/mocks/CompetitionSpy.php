@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionSpy implements CompetitionRepositoryInterface
 {
@@ -68,6 +68,18 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @var AbstractCompetitionEntity[]
      */
     private $fuzzySearchAllCompetitionsValue = [];
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByNameCalled = false;
+    /**
+     * @var bool
+     */
+    private $fetchDrlCompetitionByNameThrowsException = false;
+    /**
+     * @var DrlCompetitionEntity
+     */
+    private $fetchDrlCompetitionByNameValue;
 
 
     public function setRepositoryThrowsException(): void
@@ -87,7 +99,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
                 'Unable to add a competition',
-                CompetitionRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+                CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
         return $this->insertDrlCompetitionValue ??
@@ -114,13 +126,13 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     /**
      * @param int $id
      * @return DrlCompetitionEntity
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
     public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
         $this->selectDrlCompetitionCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competition found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -148,13 +160,13 @@ class CompetitionSpy implements CompetitionRepositoryInterface
 
     /**
      * @inheritDoc
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      */
-    public function fuzzySearchDrlCompetition(string $string): array
+    public function fuzzySearchDrlCompetitions(string $string): array
     {
         $this->fuzzySearchDrlCompetitionCalled = true;
         if ($this->throwException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -189,7 +201,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         $this->fetchDrlCompetitionByLocationCalled = true;
         if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No rows found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -220,7 +232,7 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         $this->fuzzySearchAllCompetitionsCalled = true;
         if ($this->fuzzySearchAllCompetitionsThrowsException) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No competitions found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -243,4 +255,44 @@ class CompetitionSpy implements CompetitionRepositoryInterface
         $this->fuzzySearchAllCompetitionsValue = $value;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity {
+        $this->fetchDrlCompetitionByNameCalled = true;
+        if ($this->fetchDrlCompetitionByNameThrowsException) {
+            throw new RepositoryNoResultsException(
+                'No competition found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fetchDrlCompetitionByNameValue ??
+            $this->createMockDrlCompetition();
+    }
+
+    public function hasFetchDrlCompetitionByNameBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByNameCalled;
+    }
+
+    public function setFetchDrlCompetitionByNameThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByNameThrowsException = true;
+    }
+
+    public function setFetchDrlCompetitionByNameValue(
+        DrlCompetitionEntity $value
+    ): void {
+        $this->fetchDrlCompetitionByNameValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchOtherCompetitions(string $search): array
+    {
+        return [];
+    }
 }

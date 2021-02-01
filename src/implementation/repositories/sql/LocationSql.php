@@ -7,10 +7,18 @@ namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\LocationEntity;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
+use DrlArchive\core\Exceptions\NotImplementedException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
+/**
+ * Class LocationSql
+ * @package DrlArchive\implementation\repositories\sql
+ * @deprecated 2021-01-30 - use LocationDoctrine
+ */
 class LocationSql
     extends MysqlRepository
     implements LocationRepositoryInterface
@@ -25,12 +33,12 @@ class LocationSql
     public const SELECT_NO_OF_BELLS = 'l.noOfBells';
 
     // aliases
-    public const FIELD_NAME_ID = ' AS id';
-    public const FIELD_NAME_LOCATION = ' AS location';
-    public const FIELD_NAME_DEANERY_ID = ' AS deaneryId';
-    public const FIELD_NAME_DEDICATION = ' AS dedication';
-    public const FIELD_NAME_TENOR_WEIGHT = ' AS tenorWeight';
-    public const FIELD_NAME_NO_OF_BELLS = ' AS noOfBells';
+    public const FIELD_NAME_ID = 'id';
+    public const FIELD_NAME_LOCATION = 'location';
+    public const FIELD_NAME_DEANERY_ID = 'deaneryId';
+    public const FIELD_NAME_DEDICATION = 'dedication';
+    public const FIELD_NAME_TENOR_WEIGHT = 'tenorWeight';
+    public const FIELD_NAME_NO_OF_BELLS = 'noOfBells';
 
     // tables and joins
     public const TABLE_LOCATION = 'location l';
@@ -41,12 +49,12 @@ class LocationSql
 
     // order by
 
-    public function insertLocation(LocationEntity $locationEntity): LocationEntity
+    public function insertLocation(LocationEntity $location): void
     {
         // TODO: Implement createLocation() method.
     }
 
-    public function selectLocation(int $locationId): LocationEntity
+    public function fetchLocationById(int $locationId): LocationEntity
     {
         $query = new DatabaseQueryBuilder();
         $query->setFields(
@@ -70,11 +78,11 @@ class LocationSql
         $result = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::SINGLE_ROW
+            Database::FETCH_SINGLE_ROW
         );
 
         if (empty($result)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No location found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -116,11 +124,11 @@ class LocationSql
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No locations found',
                 LocationRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
@@ -138,36 +146,36 @@ class LocationSql
     {
         $entity = new LocationEntity();
 
-        if (isset($row[substr(self::FIELD_NAME_ID, 4)])) {
-            $entity->setId((int)$row[substr(self::FIELD_NAME_ID, 4)]);
+        if (isset($row[self::FIELD_NAME_ID])) {
+            $entity->setId((int)$row[self::FIELD_NAME_ID]);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_LOCATION, 4)])) {
-            $entity->setLocation($row[substr(self::FIELD_NAME_LOCATION, 4)]);
+        if (isset($row[self::FIELD_NAME_LOCATION])) {
+            $entity->setLocation($row[self::FIELD_NAME_LOCATION]);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_DEANERY_ID, 4)])) {
+        if (isset($row[self::FIELD_NAME_DEANERY_ID])) {
             $deanery = new DeaneryEntity();
-            $deanery->setId((int)$row[substr(self::FIELD_NAME_DEANERY_ID, 4)]);
+            $deanery->setId((int)$row[self::FIELD_NAME_DEANERY_ID]);
 
             $entity->setDeanery($deanery);
         }
 
-        if (isset($row[substr(self::FIELD_NAME_DEDICATION, 4)])) {
+        if (isset($row[self::FIELD_NAME_DEDICATION])) {
             $entity->setDedication(
-                $row[substr(self::FIELD_NAME_DEDICATION, 4)]
+                $row[self::FIELD_NAME_DEDICATION]
             );
         }
 
-        if (isset($row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)])) {
+        if (isset($row[self::FIELD_NAME_TENOR_WEIGHT])) {
             $entity->setTenorWeight(
-                $row[substr(self::FIELD_NAME_TENOR_WEIGHT, 4)]
+                $row[self::FIELD_NAME_TENOR_WEIGHT]
             );
         }
 
-        if (isset($row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)])) {
+        if (isset($row[self::FIELD_NAME_NO_OF_BELLS])) {
             $entity->setNumberOfBells(
-                (int)$row[substr(self::FIELD_NAME_NO_OF_BELLS, 4)]
+                (int)$row[self::FIELD_NAME_NO_OF_BELLS]
             );
         }
         return $entity;
@@ -179,12 +187,23 @@ class LocationSql
     private function allLocationFields(): array
     {
         return [
-            self::SELECT_ID . self::FIELD_NAME_ID,
-            self::SELECT_LOCATION . self::FIELD_NAME_LOCATION,
-            self::SELECT_DEANERY_ID . self::FIELD_NAME_DEANERY_ID,
-            self::SELECT_DEDICATION . self::FIELD_NAME_DEDICATION,
-            self::SELECT_TENOR_WEIGHT . self::FIELD_NAME_TENOR_WEIGHT,
-            self::SELECT_NO_OF_BELLS . self::FIELD_NAME_NO_OF_BELLS,
+            self::SELECT_ID . ' AS ' . self::FIELD_NAME_ID,
+            self::SELECT_LOCATION . ' AS ' . self::FIELD_NAME_LOCATION,
+            self::SELECT_DEANERY_ID . ' AS ' . self::FIELD_NAME_DEANERY_ID,
+            self::SELECT_DEDICATION . ' AS ' . self::FIELD_NAME_DEDICATION,
+            self::SELECT_TENOR_WEIGHT . ' AS ' . self::FIELD_NAME_TENOR_WEIGHT,
+            self::SELECT_NO_OF_BELLS . ' AS ' . self::FIELD_NAME_NO_OF_BELLS,
         ];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchLocationByName(string $name): LocationEntity
+    {
+        throw new NotImplementedException(
+            'Method not implemented - use LocationDoctrine',
+            Repository::METHOD_NOT_IMPLEMENTED_EXCEPTION
+        );
     }
 }

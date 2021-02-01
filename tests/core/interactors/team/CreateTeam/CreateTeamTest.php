@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\team\CreateTeam;
+namespace DrlArchive\core\interactors\team\CreateTeam;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
@@ -10,20 +10,20 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
 use DrlArchive\core\interactors\team\CreateTeam\CreateTeamRequest;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
-use mocks\DeaneryDummy;
-use mocks\DeanerySpy;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
-use mocks\TeamDummy;
-use mocks\TeamSpy;
-use mocks\TransactionManagerDummy;
-use mocks\TransactionManagerSpy;
+use DrlArchive\mocks\DeaneryDummy;
+use DrlArchive\mocks\DeanerySpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\TeamDummy;
+use DrlArchive\mocks\TeamSpy;
+use DrlArchive\mocks\TransactionManagerDummy;
+use DrlArchive\mocks\TransactionManagerSpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockTeamTrait;
+use DrlArchive\traits\CreateMockTeamTrait;
 
 class CreateTeamTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\entities;
+namespace DrlArchive\core\entities;
 
 use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\Entity;
@@ -45,10 +45,10 @@ class DeaneryEntityTest extends TestCase
     public function testLocationInCountyProperty(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setLocationInCounty('north');
+        $deanery->setRegion('north');
         $this->assertEquals(
             'north',
-            $deanery->getLocationInCounty()
+            $deanery->getRegion()
         );
     }
 
@@ -58,10 +58,10 @@ class DeaneryEntityTest extends TestCase
     public function testSouthLocation(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setLocationInCounty('south');
+        $deanery->setRegion('south');
         $this->assertEquals(
             'south',
-            $deanery->getLocationInCounty()
+            $deanery->getRegion()
         );
     }
 
@@ -71,10 +71,10 @@ class DeaneryEntityTest extends TestCase
     public function testOutOfCountyLocation(): void
     {
         $deanery = new DeaneryEntity();
-        $deanery->setLocationInCounty('outofcounty');
+        $deanery->setRegion('outofcounty');
         $this->assertEquals(
             'outofcounty',
-            $deanery->getLocationInCounty()
+            $deanery->getRegion()
         );
     }
 
@@ -85,6 +85,6 @@ class DeaneryEntityTest extends TestCase
     {
         $deanery = new DeaneryEntity();
         $this->expectException(InvalidEntityPropertyException::class);
-        $deanery->setLocationInCounty('east');
+        $deanery->setRegion('east');
     }
 }

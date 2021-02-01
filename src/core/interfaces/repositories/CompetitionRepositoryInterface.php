@@ -6,25 +6,34 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\OtherCompetitionEntity;
 
 interface CompetitionRepositoryInterface
 {
-    public const UNABLE_TO_INSERT_EXCEPTION = 2401;
+    public const NO_ROWS_CREATED_EXCEPTION = 2401;
     public const NO_ROWS_FOUND_EXCEPTION = 2402;
     public const NO_ROWS_UPDATED_EXCEPTION = 2403;
     public const NO_ROWS_DELETED_EXCEPTION = 2404;
 
+    /**
+     * @param DrlCompetitionEntity $entity
+     * @return DrlCompetitionEntity
+     */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
     ): DrlCompetitionEntity;
 
+    /**
+     * @param int $id
+     * @return DrlCompetitionEntity
+     */
     public function selectDrlCompetition(int $id): DrlCompetitionEntity;
 
     /**
      * @param string $string
      * @return DrlCompetitionEntity[]
      */
-    public function fuzzySearchDrlCompetition(string $string): array;
+    public function fuzzySearchDrlCompetitions(string $string): array;
 
     /**
      * @param int $locationId
@@ -37,4 +46,18 @@ interface CompetitionRepositoryInterface
      * @return AbstractCompetitionEntity[]
      */
     public function fuzzySearchAllCompetitions(string $search): array;
+
+    /**
+     * @param string $competitionName
+     * @return DrlCompetitionEntity
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity;
+
+    /**
+     * @param string $search
+     * @return OtherCompetitionEntity[]
+     */
+    public function fuzzySearchOtherCompetitions(string $search): array;
 }

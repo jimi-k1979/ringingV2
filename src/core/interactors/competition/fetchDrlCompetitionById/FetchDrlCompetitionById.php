@@ -63,7 +63,7 @@ class FetchDrlCompetitionById extends Interactor
             ->selectDrlCompetition($this->request->getCompetitionId());
         if ($this->competition->isSingleTowerCompetition()) {
             $this->competition->setUsualLocation(
-                $this->locationRepository->selectLocation(
+                $this->locationRepository->fetchLocationById(
                     $this->competition->getUsualLocation()->getId()
                 )
             );

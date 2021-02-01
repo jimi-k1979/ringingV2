@@ -12,4 +12,6 @@ class Settings
     public const DB_USER = 'ringer';
     public const DB_PASSWORD = 'ringerPassword';
 
+    public const PUBLIC_FOLDER = __DIR__ . '/../html/';
+
 }

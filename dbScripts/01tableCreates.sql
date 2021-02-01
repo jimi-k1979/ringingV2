@@ -281,8 +281,8 @@ CREATE TABLE `other_competition`
     `isSingleTower`   TINYINT DEFAULT 0                       NOT NULL,
     `usualLocationID` INT UNSIGNED,
     PRIMARY KEY (`id`),
-    KEY `fk_other_competition_location` (`usualLocationID`),
-    CONSTRAINT `fk_other_competition` FOREIGN KEY (`usualLocationID`) REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+    KEY `fk_DRL_competition_location` (`usualLocationID`),
+    CONSTRAINT `fk_other_competition_location` FOREIGN KEY (`usualLocationID`) REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;

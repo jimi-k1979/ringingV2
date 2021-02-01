@@ -5,29 +5,37 @@ namespace DrlArchive\core\interfaces\repositories;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 
 interface EventRepositoryInterface
 {
-    public const UNABLE_TO_INSERT_EXCEPTION = 2501;
+    public const NO_ROWS_CREATED_EXCEPTION = 2501;
     public const NO_ROWS_FOUND_EXCEPTION = 2502;
     public const NO_ROWS_UPDATED_EXCEPTION = 2503;
     public const NO_ROWS_DELETED_EXCEPTION = 2504;
 
     public const INVALID_EVENT_TYPE_EXCEPTION = 2505;
 
+    /**
+     * @param DrlEventEntity $entity
+     * @throws CleanArchitectureException
+     */
     public function insertDrlEvent(
         DrlEventEntity $entity
-    ): DrlEventEntity;
+    ): void;
 
     /**
      * @param int $id
      * @return DrlEventEntity
+     * @throws CleanArchitectureException
      */
     public function fetchDrlEvent(int $id): DrlEventEntity;
 
     /**
      * @param int $competitionId
      * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array;
 
@@ -35,6 +43,7 @@ interface EventRepositoryInterface
      * @param int $competitionId
      * @param int $locationId
      * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByCompetitionAndLocationIds(
         int $competitionId,
@@ -44,7 +53,29 @@ interface EventRepositoryInterface
     /**
      * @param string $year
      * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByYear(string $year): array;
 
+    /**
+     * @param string $year
+     * @param string $competitionName
+     * @return DrlEventEntity
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventByYearAndCompetitionName(
+        string $year,
+        string $competitionName
+    ): DrlEventEntity;
+
+    /**
+     * @param string $year
+     * @param int $competitionId
+     * @return DrlEventEntity
+     * @throws CleanArchitectureException | RepositoryNoResultsException
+     */
+    public function fetchDrlEventByYearAndCompetitionId(
+        string $year,
+        int $competitionId
+    ): DrlEventEntity;
 }

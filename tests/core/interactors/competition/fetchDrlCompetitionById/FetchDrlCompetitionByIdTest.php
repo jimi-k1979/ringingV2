@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\fetchDrlCompetitionById;
+namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionById;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
@@ -11,18 +11,18 @@ use DrlArchive\core\interactors\competition\fetchDrlCompetitionById\FetchDrlComp
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionById\FetchDrlCompetitionByIdRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
-use mocks\GuestUserDummy;
-use mocks\LocationDummy;
-use mocks\LocationSpy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\CompetitionDummy;
+use DrlArchive\mocks\CompetitionSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LocationDummy;
+use DrlArchive\mocks\LocationSpy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
-use traits\CreateMockLocationTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockLocationTrait;
 
 class FetchDrlCompetitionByIdTest extends TestCase
 {

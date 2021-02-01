@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace mocks;
+namespace DrlArchive\mocks;
 
 
-use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionDummy implements CompetitionRepositoryInterface
 {
@@ -28,7 +27,7 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fuzzySearchDrlCompetition(string $string): array
+    public function fuzzySearchDrlCompetitions(string $string): array
     {
         return [$this->createMockDrlCompetition()];
     }
@@ -47,5 +46,22 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     public function fuzzySearchAllCompetitions(string $search): array
     {
         return [$this->createMockDrlCompetition()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByName(
+        string $competitionName
+    ): DrlCompetitionEntity {
+        return $this->createMockDrlCompetition();
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fuzzySearchOtherCompetitions(string $search): array
+    {
+        return [];
     }
 }

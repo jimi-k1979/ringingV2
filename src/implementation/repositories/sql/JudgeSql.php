@@ -9,7 +9,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\implementation\entities\DatabaseQueryBuilder;
 
@@ -21,10 +21,10 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
     public const SELECT_LAST_NAME = 'j.lastName';
     public const SELECT_RINGER_ID = 'j.ringerID';
 
-    public const FIELD_NAME_ID = ' AS id';
-    public const FIELD_NAME_FIRST_NAME = ' AS firstName';
-    public const FIELD_NAME_LAST_NAME = ' AS lastName';
-    public const FIELD_NAME_RINGER_ID = ' AS ringerId';
+    public const FIELD_NAME_ID = 'id';
+    public const FIELD_NAME_FIRST_NAME = 'firstName';
+    public const FIELD_NAME_LAST_NAME = 'lastName';
+    public const FIELD_NAME_RINGER_ID = 'ringerId';
 
     public const TABLE_JUDGE = 'judge j';
     public const INNER_JOIN_DRL_EVENT_JUDGE =
@@ -35,7 +35,7 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
     /**
      * @param DrlEventEntity $entity
      * @return JudgeEntity[]
-     * @throws RepositoryNoResults
+     * @throws RepositoryNoResultsException
      * @throws GeneralRepositoryErrorException
      */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
@@ -43,10 +43,10 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_ID . self::FIELD_NAME_ID,
-                self::SELECT_FIRST_NAME . self::FIELD_NAME_FIRST_NAME,
-                self::SELECT_LAST_NAME . self::FIELD_NAME_LAST_NAME,
-                self::SELECT_RINGER_ID . self::FIELD_NAME_RINGER_ID,
+                self::SELECT_ID . ' AS ' . self::FIELD_NAME_ID,
+                self::SELECT_FIRST_NAME . ' AS ' . self::FIELD_NAME_FIRST_NAME,
+                self::SELECT_LAST_NAME . ' AS ' . self::FIELD_NAME_LAST_NAME,
+                self::SELECT_RINGER_ID . ' AS ' . self::FIELD_NAME_RINGER_ID,
             ]
         );
         $query->setTablesAndJoins(
@@ -73,11 +73,11 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
         $results = $this->database->query(
             $this->buildSelectQuery($query),
             $params,
-            Database::MULTI_ROW
+            Database::FETCH_MULTI_ROW
         );
 
         if (empty($results)) {
-            throw new RepositoryNoResults(
+            throw new RepositoryNoResultsException(
                 'No judges found',
                 JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION
             );
@@ -95,24 +95,24 @@ class JudgeSql extends MysqlRepository implements JudgeRepositoryInterface
     {
         $judge = new JudgeEntity();
         $judge->setId(
-            (int)$result[substr(self::FIELD_NAME_ID, 4)]
+            (int)$result[self::FIELD_NAME_ID]
         );
         $judge->setFirstName(
-            $result[substr(self::FIELD_NAME_FIRST_NAME, 4)]
+            $result[self::FIELD_NAME_FIRST_NAME]
         );
         $judge->setLastName(
-            $result[substr(self::FIELD_NAME_LAST_NAME, 4)]
+            $result[self::FIELD_NAME_LAST_NAME]
         );
-        if ($result[substr(self::FIELD_NAME_RINGER_ID, 4)] !== null) {
+        if ($result[self::FIELD_NAME_RINGER_ID] !== null) {
             $ringer = new RingerEntity();
             $ringer->setId(
-                (int)$result[substr(self::FIELD_NAME_ID, 4)]
+                (int)$result[self::FIELD_NAME_ID]
             );
             $ringer->setFirstName(
-                $result[substr(self::FIELD_NAME_FIRST_NAME, 4)]
+                $result[self::FIELD_NAME_FIRST_NAME]
             );
             $ringer->setLastName(
-                $result[substr(self::FIELD_NAME_LAST_NAME, 4)]
+                $result[self::FIELD_NAME_LAST_NAME]
             );
             $judge->setRinger($ringer);
         }

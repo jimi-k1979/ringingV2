@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\ringer\RingerFuzzySearch;
+namespace DrlArchive\core\interactors\ringer\RingerFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interactors\ringer\RingerFuzzySearch\RingerFuzzySearch;
 use DrlArchive\core\interactors\ringer\RingerFuzzySearch\RingerFuzzySearchRequest;
-use mocks\GuestUserDummy;
-use mocks\LoggedInUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\RingerDummy;
-use mocks\RingerSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\LoggedInUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\RingerDummy;
+use DrlArchive\mocks\RingerSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockRingerTrait;
+use DrlArchive\traits\CreateMockRingerTrait;
 
 class RingerFuzzySearchTest extends TestCase
 {

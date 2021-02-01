@@ -12,15 +12,11 @@ use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 
 class LocationFuzzySearch extends Interactor
 {
-
-    /**
-     * @var LocationRepositoryInterface
-     */
-    private $locationRepository;
+    private LocationRepositoryInterface $locationRepository;
     /**
      * @var LocationEntity[]
      */
-    private $locationList;
+    private array $locationList;
 
     public function setLocationRepository(
         LocationRepositoryInterface $repository

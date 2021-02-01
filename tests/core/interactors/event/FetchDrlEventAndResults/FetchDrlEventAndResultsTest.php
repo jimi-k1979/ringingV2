@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\event\FetchDrlEventAndResults;
+namespace DrlArchive\core\interactors\event\FetchDrlEventAndResults;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResults;
@@ -11,19 +11,19 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
-use mocks\EventDummy;
-use mocks\EventSpy;
-use mocks\GuestUserDummy;
-use mocks\JudgeDummy;
-use mocks\JudgeSpy;
-use mocks\LocationDummy;
-use mocks\LocationSpy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\ResultDummy;
-use mocks\ResultSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\EventDummy;
+use DrlArchive\mocks\EventSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\JudgeDummy;
+use DrlArchive\mocks\JudgeSpy;
+use DrlArchive\mocks\LocationDummy;
+use DrlArchive\mocks\LocationSpy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\ResultDummy;
+use DrlArchive\mocks\ResultSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
 
 class FetchDrlEventAndResultsTest extends TestCase
@@ -307,7 +307,7 @@ class FetchDrlEventAndResultsTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $locationSpy = new LocationSpy();
-        $locationSpy->setRepositoryThrowsException();
+        $locationSpy->setSelectLocationThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
@@ -342,7 +342,7 @@ class FetchDrlEventAndResultsTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchEventThrowsException();
+        $eventSpy->setFetchDrlEventThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);

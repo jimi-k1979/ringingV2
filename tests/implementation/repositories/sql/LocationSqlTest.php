@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace implementation\repositories\sql;
+namespace DrlArchive\implementation\repositories\sql;
 
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\implementation\repositories\sql\LocationSql;
-use mocks\DatabaseMock;
+use DrlArchive\mocks\DatabaseMock;
 use PHPUnit\Framework\TestCase;
-use traits\StripStringTrait;
+use DrlArchive\traits\StripStringTrait;
 
 class LocationSqlTest extends TestCase
 {
@@ -27,7 +27,7 @@ class LocationSqlTest extends TestCase
         ];
         $databaseMock->addQueryResult(DatabaseMock::FIRST_CALL, $resultArray);
 
-        $entity = (new LocationSql($databaseMock))->selectLocation(1);
+        $entity = (new LocationSql($databaseMock))->fetchLocationById(1);
 
         $queryArgs = $databaseMock->getQueryArgs();
 

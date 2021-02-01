@@ -53,7 +53,7 @@ class DrlCompetitionFuzzySearch extends Interactor
     private function searchForCompetitions()
     {
         $this->foundCompetitions = $this->competitionRepository
-            ->fuzzySearchDrlCompetition($this->request->getSearchTerm());
+            ->fuzzySearchDrlCompetitions($this->request->getSearchTerm());
     }
 
     private function createSuccessfulResponse()

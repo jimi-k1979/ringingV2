@@ -11,6 +11,7 @@ use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\
 use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
+use DrlArchive\core\interactors\team\TeamFuzzySearch\TeamFuzzySearchRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
@@ -20,6 +21,7 @@ use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByLocati
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByYearFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
+use DrlArchive\implementation\factories\interactors\team\TeamFuzzySearchFactory;
 use DrlArchive\implementation\presenters\FuzzySearchPresenterJson;
 use DrlArchive\implementation\presenters\ResultsSearchDropdownPresenter;
 
@@ -53,6 +55,18 @@ try {
             );
 
             $useCase = (new LocationFuzzySearchFactory())->create(
+                new FuzzySearchPresenterJson(),
+                $request
+            );
+            $useCase->execute();
+
+            break;
+
+        case 'fuzzySearchTeams':
+            $request = new TeamFuzzySearchRequest();
+            $request->setSearchTerm($_POST['term']);
+
+            $useCase = (new TeamFuzzySearchFactory())->create(
                 new FuzzySearchPresenterJson(),
                 $request
             );

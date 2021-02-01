@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace core\interactors\competition\allCompetitionFuzzySearch;
+namespace DrlArchive\core\interactors\competition\allCompetitionFuzzySearch;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearch;
 use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
-use mocks\CompetitionDummy;
-use mocks\CompetitionSpy;
-use mocks\GuestUserDummy;
-use mocks\PreseenterDummy;
-use mocks\PresenterSpy;
-use mocks\SecurityRepositoryDummy;
-use mocks\SecurityRepositorySpy;
+use DrlArchive\mocks\CompetitionDummy;
+use DrlArchive\mocks\CompetitionSpy;
+use DrlArchive\mocks\GuestUserDummy;
+use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\SecurityRepositorySpy;
 use PHPUnit\Framework\TestCase;
-use traits\CreateMockDrlCompetitionTrait;
-use traits\CreateMockOtherCompetitionTrait;
+use DrlArchive\traits\CreateMockDrlCompetitionTrait;
+use DrlArchive\traits\CreateMockOtherCompetitionTrait;
 
 class AllCompetitionFuzzySearchTest extends TestCase
 {

@@ -37,11 +37,11 @@ class Request
     /**
      * @var array
      */
-    protected $data = [];
+    protected array $data = [];
     /**
      * @var array
      */
-    protected $schema = [];
+    protected array $schema = [];
 
 
     public function __construct(array $data = null)

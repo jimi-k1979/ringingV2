@@ -12,8 +12,8 @@ use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
 use DrlArchive\implementation\factories\repositories\DeaneryRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\TeamRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
 class CreateTeamFactory implements InteractorFactoryInterface
@@ -33,7 +33,9 @@ class CreateTeamFactory implements InteractorFactoryInterface
         $useCase->setSecurityRepository(
             (new SecurityRepositoryFactory())->create()
         );
-        $useCase->setTeamRepository((new TeamRepositoryFactory())->create());
+        $useCase->setTeamRepository(
+            (new TeamDoctrineFactory())->create()
+        );
         $useCase->setDeaneryRepository(
             (new DeaneryRepositoryFactory())->create()
         );
