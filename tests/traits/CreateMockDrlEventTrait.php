@@ -6,6 +6,7 @@ namespace DrlArchive\traits;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\TestConstants;
 
 trait CreateMockDrlEventTrait
 {
@@ -15,10 +16,10 @@ trait CreateMockDrlEventTrait
     private function createMockDrlEvent(): DrlEventEntity
     {
         $entity = new DrlEventEntity();
-        $entity->setId(1234);
+        $entity->setId(TestConstants::TEST_EVENT_ID);
         $entity->setLocation($this->createMockLocation());
         $entity->setCompetition($this->createMockDrlCompetition());
-        $entity->setYear('1970');
+        $entity->setYear(TestConstants::TEST_EVENT_YEAR);
 
         return $entity;
     }

@@ -6,6 +6,7 @@ namespace DrlArchive\traits;
 
 
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\TestConstants;
 
 trait CreateMockTeamTrait
 {
@@ -14,8 +15,8 @@ trait CreateMockTeamTrait
     private function createMockTeam(): TeamEntity
     {
         $teamEntity = new TeamEntity();
-        $teamEntity->setId(123);
-        $teamEntity->setName('Test team');
+        $teamEntity->setId(TestConstants::TEST_TEAM_ID);
+        $teamEntity->setName(TestConstants::TEST_TEAM_NAME);
         $teamEntity->setDeanery($this->createMockDeanery());
 
         return $teamEntity;
