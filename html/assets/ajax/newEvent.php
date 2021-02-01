@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\checkDrlEventExists\CheckDrlEventExistsRequest;
+use DrlArchive\core\interactors\location\fetchLocationByName\FetchLocationByNameRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\implementation\factories\interactors\event\CheckDrlEventExistsFactory;
+use DrlArchive\implementation\factories\interactors\location\FetchLocationByNameFactory;
 
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
@@ -73,6 +75,58 @@ try {
                 // todo - add logged in user ID
                 );
 
+                $useCase->execute();
+            } catch (Throwable $e) {
+                echo json_encode(
+                    [
+                        'status' => 500,
+                        'message' => 'unknown error',
+                    ]
+                );
+            }
+            break;
+
+        case 'getLocationId':
+            try {
+                $request = new FetchLocationByNameRequest();
+                $request->setName($_POST['location']);
+
+                $presenter = new class implements PresenterInterface {
+                    private array $data;
+
+                    public function getData(): array
+                    {
+                        return $this->data;
+                    }
+
+                    public function send(?Response $response = null)
+                    {
+                        if ($response->getStatus() === Response::STATUS_SUCCESS) {
+                            $data = $response->getData();
+
+                            $location = [
+                                'status' => 200,
+                                'locationId' => $data['locationId'],
+                            ];
+
+                            echo json_encode(
+                                $location
+                            );
+                        } else {
+                            echo json_encode(
+                                [
+                                    'message' => $response->getMessage(),
+                                    'status' => 500,
+                                ]
+                            );
+                        }
+                    }
+                };
+
+                $useCase = (new FetchLocationByNameFactory())->create(
+                    $presenter,
+                    $request
+                );
                 $useCase->execute();
             } catch (Throwable $e) {
                 echo json_encode(

@@ -22,7 +22,8 @@ if (!empty($_POST)) {
                 ? (int)$_POST['position-' . $i] : $i,
             (float)$_POST['faults-' . $i],
             $_POST['team-' . $i],
-            (int)$_POST['peal-' . $i] ?? null
+            isset($_POST['peal-' . $i])
+                ? (int)$_POST['peal-' . $i] : null
         );
     }
 } else {
@@ -46,21 +47,24 @@ $presenter = new class implements PresenterInterface {
                 exit;
             }
             $message = $_SESSION['message'] ?? '';
+            $status = $_SESSION['status'] ?? 200;
             unset($_SESSION['message']);
+            unset($_SESSION['status']);
             try {
                 echo $twig->render(
                     'events/newEvent.twig',
                     [
                         'maxYear' => new DateTime(),
                         'message' => $message,
+                        'status' => $status,
                     ]
                 );
             } catch (Throwable $e) {
                 include __DIR__ . '/../templates/failed.html';
             }
         } else {
-            $_SESSION['message'] =
-                'There was a problem: ' . $response->getMessage();
+            $_SESSION['message'] = $response->getMessage();
+            $_SESSION['status'] = $response->getStatus();
             header('Location:./newEvent.php');
             exit;
         }

@@ -14,7 +14,7 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\Exceptions\repositories\RepositoryNoResults;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
@@ -158,7 +158,7 @@ class NewEventPage extends Interactor
                 'Event is already in the database',
                 self::EVENT_EXISTS_EXCEPTION_CODE
             );
-        } catch (RepositoryNoResults $e) {
+        } catch (RepositoryNoResultsException $e) {
             unset($e);
             $this->eventRepository->insertDrlEvent(
                 $this->event

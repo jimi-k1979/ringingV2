@@ -25,9 +25,9 @@ class LocationDoctrine extends DoctrineRepository implements
     const FIELD_LOCATION_DEANERY_ID = 'l.deaneryID';
     const FIELD_DEDICATION = 'l.dedication';
     const FIELD_TENOR_WEIGHT = 'l.tenorWeight';
-    const FIELD_NUMBER_OF_BELLS = 'l.numberOfBells';
+    const FIELD_NUMBER_OF_BELLS = 'l.noOfBells';
     const FIELD_DEANERY_NAME = 'd.deaneryName';
-    const FIELD_DEANERY_REGION = 'd.deaneryRegion';
+    const FIELD_DEANERY_REGION = 'd.northSouth';
 
     /**
      * @inheritDoc
@@ -132,9 +132,9 @@ class LocationDoctrine extends DoctrineRepository implements
         try {
             $query = $this->selectLocationBaseQuery();
             $query->where(
-                $query->expr()->eq(self::FIELD_DEANERY_NAME, ':name')
+                $query->expr()->eq(self::FIELD_LOCATION_NAME, ':name')
             )
-                ->setParameter('name', $name);
+                ->setParameter('name', strtolower($name));
             $result = $query->execute()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(

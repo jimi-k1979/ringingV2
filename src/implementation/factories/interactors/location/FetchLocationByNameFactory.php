@@ -35,5 +35,7 @@ class FetchLocationByNameFactory implements InteractorFactoryInterface
         $useCase->setLocationRepository(
             (new LocationDoctrineFactory())->create()
         );
+
+        return $useCase;
     }
 }

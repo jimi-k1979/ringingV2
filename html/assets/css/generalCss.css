@@ -5,3 +5,7 @@
 .fieldset-light {
     background-color: whitesmoke;
 }
+
+.bold {
+    font-weight: bold;
+}

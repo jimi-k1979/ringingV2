@@ -15,6 +15,16 @@
             Add Event to Archive
         </h3>
 
+        {% if status == 200 and message != '' %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% elseif status != 200 %}
+            <div class="alert alert-danger" role="alert">
+                <span class="bold">New event not added:</span>
+                {{ message }}
+            </div>
+        {% endif %}
         <p>
             Enter the details for the new event - we'll check the event doesn't
             already exist in the archive - and then enter the results. If the

@@ -99,7 +99,11 @@ $(function () {
                         $('#meta-data').attr('disabled', false);
 
                     } else {
-
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'No can do...',
+                            text: output.message,
+                        });
                     }
                 }
             });
@@ -116,8 +120,28 @@ $(function () {
                 response
             );
         },
-        onSelect: function (e, competition, item) {
-            $('#location-id').val(competition);
+        onSelect: function (e, location, item) {
+            $.ajax({
+                url: '/assets/ajax/newEvent.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: 'getLocationId',
+                    location: location,
+                    year: $('#location-fuzzy-search').val(),
+                },
+                success: function (output) {
+                    if (output.status === 200) {
+                        $('#location-id').val(output.locationId);
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'No can do...',
+                            text: output.message,
+                        });
+                    }
+                }
+            });
         }
     });
 

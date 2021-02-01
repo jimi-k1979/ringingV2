@@ -60,7 +60,7 @@ class FetchLocationByName extends Interactor
         $this->response->setStatus(Response::STATUS_SUCCESS);
         $this->response->setData(
             [
-                'id' => $this->location->getId(),
+                'locationId' => $this->location->getId(),
                 'name' => $this->location->getLocation(),
                 'dedication' => $this->location->getDedication(),
                 'tenorWeight' => $this->location->getTenorWeight(),
