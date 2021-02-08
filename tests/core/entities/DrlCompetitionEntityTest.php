@@ -29,9 +29,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $competition = new DrlCompetitionEntity();
-        $competition->setId(TestConstants::TEST_COMPETITION_ID);
+        $competition->setId(TestConstants::TEST_DRL_COMPETITION_ID);
         $this->assertEquals(
-            TestConstants::TEST_COMPETITION_ID,
+            TestConstants::TEST_DRL_COMPETITION_ID,
             $competition->getId()
         );
     }
@@ -39,9 +39,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testNameProperty(): void
     {
         $competition = new DrlCompetitionEntity();
-        $competition->setName(TestConstants::TEST_COMPETITION_NAME);
+        $competition->setName(TestConstants::TEST_DRL_COMPETITION_NAME);
         $this->assertEquals(
-            TestConstants::TEST_COMPETITION_NAME,
+            TestConstants::TEST_DRL_COMPETITION_NAME,
             $competition->getName()
         );
     }
@@ -50,7 +50,7 @@ class DrlCompetitionEntityTest extends TestCase
     {
         $competition = new DrlCompetitionEntity();
         $competition->setSingleTowerCompetition(
-            TestConstants::TEST_SINGLE_TOWER_COMPETITION
+            TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION
         );
         $this->assertFalse(
             $competition->isSingleTowerCompetition()

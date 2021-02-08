@@ -11,7 +11,7 @@ class AllCompetitionFuzzySearchRequest extends Request
 {
     public const SEARCH_TERM = 'serachTerm';
 
-    protected $schema = [
+    protected array $schema = [
         self::SEARCH_TERM => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

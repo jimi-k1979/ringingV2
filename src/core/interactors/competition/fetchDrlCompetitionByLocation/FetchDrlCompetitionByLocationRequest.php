@@ -11,7 +11,7 @@ class FetchDrlCompetitionByLocationRequest extends Request
 {
     public const LOCATION_ID = 'locationId';
 
-    protected $schema = [
+    protected array $schema = [
         self::LOCATION_ID => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_REQUIRED => true,

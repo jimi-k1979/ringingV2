@@ -17,9 +17,9 @@ class TestConstants
     public const TEST_DEANERY_NAME = 'Test deanery';
     public const TEST_DEANERY_REGION = 'south';
 
-    public const TEST_COMPETITION_ID = 999;
-    public const TEST_COMPETITION_NAME = 'Test competition';
-    public const TEST_SINGLE_TOWER_COMPETITION = false;
+    public const TEST_DRL_COMPETITION_ID = 999;
+    public const TEST_DRL_COMPETITION_NAME = 'Test competition';
+    public const TEST_DRL_SINGLE_TOWER_COMPETITION = false;
 
     public const TEST_EVENT_ID = 1234;
     public const TEST_EVENT_YEAR = '1970';
@@ -41,5 +41,9 @@ class TestConstants
     public const TEST_RESULT_FAULTS = 10.25;
     public const TEST_RESULT_PEAL_NUMBER = 1;
     public const TEST_RESULT_POINTS = 10;
+
+    public const TEST_OTHER_COMPETITION_ID = 888;
+    public const TEST_OTHER_COMPETITION_NAME = 'Test other competition';
+    public const TEST_OTHER_SINGLE_TOWER_COMPETITION = true;
 
 }

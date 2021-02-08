@@ -16,6 +16,7 @@ use DrlArchive\mocks\PreseenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 use DrlArchive\traits\CreateMockOtherCompetitionTrait;
@@ -110,12 +111,12 @@ class AllCompetitionFuzzySearchTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedData = [
             [
-                'id' => 888,
-                'name' => 'Other competition',
+                'id' => TestConstants::TEST_OTHER_COMPETITION_ID,
+                'name' => TestConstants::TEST_OTHER_COMPETITION_NAME,
             ],
             [
-                'id' => 999,
-                'name' => 'Test competition',
+                'id' => TestConstants::TEST_DRL_COMPETITION_ID,
+                'name' => TestConstants::TEST_DRL_COMPETITION_NAME,
             ],
         ];
 

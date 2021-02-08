@@ -14,6 +14,7 @@ use DrlArchive\mocks\PreseenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 use DrlArchive\traits\CreateMockLocationTrait;
 use PHPUnit\Framework\TestCase;
@@ -167,20 +168,20 @@ class FetchDrlCompetitionByNameTest extends TestCase
         $response = $presenterSpy->getResponse();
 
         $expectedData = [
-            'id' => 999,
-            'name' => 'Test competition',
+            'id' => TestConstants::TEST_DRL_COMPETITION_ID,
+            'name' => TestConstants::TEST_DRL_COMPETITION_NAME,
             'isSingleTowerCompetition' => true,
             'usualLocation' => [
-                'id' => 999,
-                'location' => 'Test tower',
+                'id' => TestConstants::TEST_LOCATION_ID,
+                'location' => TestConstants::TEST_LOCATION_NAME,
                 'deanery' => [
-                    'id' => 123,
-                    'name' => 'Test deanery',
-                    'locationInCounty' => 'south',
+                    'id' => TestConstants::TEST_DEANERY_ID,
+                    'name' => TestConstants::TEST_DEANERY_NAME,
+                    'locationInCounty' => TestConstants::TEST_DEANERY_REGION,
                 ],
-                'dedication' => 'S Test',
-                'numberOfBells' => null,
-                'tenorWeight' => 'test cwt',
+                'dedication' => TestConstants::TEST_LOCATION_DEDICATION,
+                'numberOfBells' => TestConstants::TEST_LOCATION_NUMBER_OF_BELLS,
+                'tenorWeight' => TestConstants::TEST_LOCATION_WEIGHT,
             ],
         ];
 
