@@ -7,13 +7,11 @@ namespace DrlArchive\core\interactors\event\FetchEventsByCompetition;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetition;
-use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -57,7 +55,7 @@ class FetchEventsByCompetitionTest extends TestCase
         $useCase = new FetchEventsByCompetition();
 
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -140,7 +138,7 @@ class FetchEventsByCompetitionTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setThrowException();
+        $eventSpy->setFetchDrlEventByYearAndCompetitionIdThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);

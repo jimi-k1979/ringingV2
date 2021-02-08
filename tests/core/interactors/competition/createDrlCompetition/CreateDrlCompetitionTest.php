@@ -12,7 +12,7 @@ use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -47,7 +47,7 @@ class CreateDrlCompetitionTest extends TestCase
 
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());

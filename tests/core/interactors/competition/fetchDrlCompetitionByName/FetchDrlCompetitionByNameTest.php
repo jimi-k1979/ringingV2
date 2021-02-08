@@ -5,12 +5,11 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByName;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -52,7 +51,7 @@ class FetchDrlCompetitionByNameTest extends TestCase
 
         $entity = new FetchDrlCompetitionByName();
         $entity->setRequest($request);
-        $entity->setPresenter(new PreseenterDummy());
+        $entity->setPresenter(new PresenterDummy());
         $entity->setSecurityRepository(new SecurityRepositoryDummy());
         $entity->setUserRepository(new GuestUserDummy());
         $entity->setCompetitionRepository(new CompetitionDummy());

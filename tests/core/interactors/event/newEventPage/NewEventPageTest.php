@@ -14,7 +14,7 @@ use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
@@ -80,7 +80,7 @@ class NewEventPageTest extends TestCase
     ): NewEventPage {
         $useCase = new NewEventPage();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setTeamRepository(new TeamDummy());
@@ -226,7 +226,7 @@ class NewEventPageTest extends TestCase
         };
 
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositorySpy());
         $useCase->setTeamRepository(new TeamDummy());
@@ -414,7 +414,7 @@ class NewEventPageTest extends TestCase
         };
 
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositorySpy());
         $useCase->setTeamRepository(new TeamDummy());

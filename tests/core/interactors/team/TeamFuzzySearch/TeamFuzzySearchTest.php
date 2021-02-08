@@ -9,7 +9,7 @@ use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -59,7 +59,7 @@ class TeamFuzzySearchTest extends TestCase
 
         $useCase = new TeamFuzzySearch();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setTeamRepository(new TeamDummy());

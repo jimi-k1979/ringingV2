@@ -5,15 +5,13 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventsByYear;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYear;
-use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -53,7 +51,7 @@ class FetchDrlEventsByYearTest extends TestCase
         );
         $useCase = new FetchDrlEventsByYear();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());

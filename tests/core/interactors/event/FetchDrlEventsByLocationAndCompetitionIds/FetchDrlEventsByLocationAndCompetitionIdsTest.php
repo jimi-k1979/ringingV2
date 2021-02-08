@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIds;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -60,7 +58,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
 
         $useCase = new FetchDrlEventsByLocationAndCompetitionIds();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());

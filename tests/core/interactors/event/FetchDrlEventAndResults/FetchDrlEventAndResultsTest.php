@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventAndResults;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResults;
-use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
@@ -18,7 +16,7 @@ use DrlArchive\mocks\JudgeDummy;
 use DrlArchive\mocks\JudgeSpy;
 use DrlArchive\mocks\LocationDummy;
 use DrlArchive\mocks\LocationSpy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
@@ -64,7 +62,7 @@ class FetchDrlEventAndResultsTest extends TestCase
         $useCase = new FetchDrlEventAndResults();
 
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());

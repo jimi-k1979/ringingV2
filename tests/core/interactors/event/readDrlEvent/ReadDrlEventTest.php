@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\readDrlEvent;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\readDrlEvent\ReadDrlEvent;
-use DrlArchive\core\interactors\event\readDrlEvent\ReadDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
@@ -58,7 +56,7 @@ class ReadDrlEventTest extends TestCase
 
         $useCase = new ReadDrlEvent();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());

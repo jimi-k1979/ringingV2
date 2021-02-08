@@ -12,12 +12,10 @@ use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
-use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
-use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 use PHPUnit\Framework\TestCase;
 
@@ -36,22 +34,22 @@ class CheckDrlEventExistsTest extends TestCase
     /**
      * @throws AccessDeniedException
      */
-    public function testUserIsAuthorised(): void
-    {
-        $securitySpy = new SecurityRepositorySpy();
-        $useCase = $this->createUseCase();
+    /*   public function testUserIsAuthorised(): void
+       {
+           $securitySpy = new SecurityRepositorySpy();
+           $useCase = $this->createUseCase();
 
-        $useCase->setSecurityRepository($securitySpy);
-        $useCase->execute();
+           $useCase->setSecurityRepository($securitySpy);
+           $useCase->execute();
 
-        $this->assertTrue(
-            $securitySpy->hasIsUserAuthorisedCalled()
-        );
-    }
+           $this->assertTrue(
+               $securitySpy->hasIsUserAuthorisedCalled()
+           );
+       }
 
-    /**
-     * @return CheckDrlEventExists
-     */
+       /**
+        * @return CheckDrlEventExists
+        */
     private function createUseCase(): CheckDrlEventExists
     {
         $request = new CheckDrlEventExistsRequest(
@@ -64,7 +62,7 @@ class CheckDrlEventExistsTest extends TestCase
 
         $useCase = new CheckDrlEventExists();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -76,7 +74,7 @@ class CheckDrlEventExistsTest extends TestCase
     /**
      * @throws AccessDeniedException
      */
-    public function testGuestUserIsUnauthorised(): void
+    /*public function testGuestUserIsUnauthorised(): void
     {
         $securitySpy = new SecurityRepositorySpy();
         $guestUser = new GuestUserDummy();
@@ -87,7 +85,7 @@ class CheckDrlEventExistsTest extends TestCase
         $useCase->setSecurityRepository($securitySpy);
         $useCase->setUserRepository($guestUser);
         $useCase->execute();
-    }
+    }*/
 
     /**
      * @throws AccessDeniedException

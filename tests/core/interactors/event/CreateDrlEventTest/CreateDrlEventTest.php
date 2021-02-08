@@ -15,7 +15,7 @@ use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -63,7 +63,7 @@ class CreateDrlEventTest extends TestCase
 
         $useCase = new CreateDrlEvent();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setEventRepository(new EventDummy());
         $useCase->setTransactionRepository(new TransactionManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
@@ -115,7 +115,7 @@ class CreateDrlEventTest extends TestCase
     {
         $transactionSpy = new TransactionManagerSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setThrowException();
+        $eventSpy->setInsertDrlEventThrowsException();
 
         $useCase = $this->createNewUseCase();
         $useCase->setTransactionRepository($transactionSpy);
@@ -194,7 +194,7 @@ class CreateDrlEventTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setThrowException();
+        $eventSpy->setInsertDrlEventThrowsException();
 
         $useCase = $this->createNewUseCase();
         $useCase->setPresenter($presenterSpy);
