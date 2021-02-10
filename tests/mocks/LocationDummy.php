@@ -6,8 +6,8 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\LocationEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockLocationTrait;
 
 class LocationDummy implements LocationRepositoryInterface
@@ -16,6 +16,7 @@ class LocationDummy implements LocationRepositoryInterface
 
     public function insertLocation(LocationEntity $location): void
     {
+        $location->setId(TestConstants::TEST_LOCATION_ID);
     }
 
     public function fetchLocationById(int $locationId): LocationEntity

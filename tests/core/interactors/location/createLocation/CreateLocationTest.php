@@ -19,6 +19,7 @@ use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\mocks\TransactionManagerDummy;
 use DrlArchive\mocks\TransactionManagerSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class CreateLocationTest extends TestCase
@@ -36,10 +37,10 @@ class CreateLocationTest extends TestCase
     {
         $request = new CreateLocationRequest(
             [
-                CreateLocationRequest::LOCATION_NAME => 'Test tower',
-                CreateLocationRequest::DEANERY => 1,
-                CreateLocationRequest::DEDICATION => 'S Test',
-                CreateLocationRequest::TENOR_WEIGHT => 'test cwt',
+                CreateLocationRequest::LOCATION_NAME => TestConstants::TEST_LOCATION_NAME,
+                CreateLocationRequest::DEANERY => TestConstants::TEST_DEANERY_ID,
+                CreateLocationRequest::DEDICATION => TestConstants::TEST_LOCATION_DEDICATION,
+                CreateLocationRequest::TENOR_WEIGHT => TestConstants::TEST_LOCATION_WEIGHT,
             ]
         );
         $useCase = new CreateLocation();
@@ -165,11 +166,11 @@ class CreateLocationTest extends TestCase
         );
 
         $expectedResponse = [
-            'id' => 999,
-            'location' => 'Test tower',
-            'deanery' => 'Test deanery',
-            'dedication' => 'S Test',
-            'tenorWeight' => 'test cwt',
+            'id' => TestConstants::TEST_LOCATION_ID,
+            'location' => TestConstants::TEST_LOCATION_NAME,
+            'deanery' => TestConstants::TEST_DEANERY_NAME,
+            'dedication' => TestConstants::TEST_LOCATION_DEDICATION,
+            'tenorWeight' => TestConstants::TEST_LOCATION_WEIGHT,
         ];
 
         $this->assertEquals(

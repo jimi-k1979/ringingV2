@@ -5,7 +5,6 @@ namespace DrlArchive\core\interactors\location\createLocation;
 
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
@@ -99,7 +98,7 @@ class CreateLocation extends Interactor
 
     private function writeToDatabase(): void
     {
-        $this->locationEntity = $this->locationRepository->insertLocation(
+        $this->locationRepository->insertLocation(
             $this->locationEntity
         );
     }

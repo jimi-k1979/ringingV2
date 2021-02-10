@@ -15,6 +15,7 @@ use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockLocationTrait;
 
@@ -117,8 +118,8 @@ class LocationFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 999,
-                'name' => 'Test tower',
+                'id' => TestConstants::TEST_LOCATION_ID,
+                'name' => TestConstants::TEST_LOCATION_NAME,
             ],
             [
                 'id' => 333,
@@ -151,8 +152,8 @@ class LocationFuzzySearchTest extends TestCase
         $this->assertEquals(
             [
                 [
-                    'id' => 999,
-                    'name' => 'Test tower',
+                    'id' => TestConstants::TEST_LOCATION_ID,
+                    'name' => TestConstants::TEST_LOCATION_NAME,
                 ],
             ],
             $response->getData()

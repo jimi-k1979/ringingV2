@@ -96,7 +96,7 @@ class FetchLocationByNameTest extends TestCase
         );
         $this->assertEquals(
             [
-                'id' => TestConstants::TEST_LOCATION_ID,
+                'locationId' => TestConstants::TEST_LOCATION_ID,
                 'name' => TestConstants::TEST_LOCATION_NAME,
                 'dedication' => TestConstants::TEST_LOCATION_DEDICATION,
                 'tenorWeight' => TestConstants::TEST_LOCATION_WEIGHT,
