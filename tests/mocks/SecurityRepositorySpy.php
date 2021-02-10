@@ -10,8 +10,8 @@ use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 
 class SecurityRepositorySpy implements SecurityRepositoryInterface
 {
-    private $hasIsUserAuthorisedCalled = false;
-    private $isAuthorisedResponse = true;
+    private bool $hasIsUserAuthorisedCalled = false;
+    private bool $isAuthorisedResponse = true;
 
     public function isUserAuthorised(
         UserEntity $user,

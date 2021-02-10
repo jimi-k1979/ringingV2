@@ -11,7 +11,7 @@ class FetchDrlEventAndResultsRequest extends Request
 {
     public const EVENT_ID = 'eventId';
 
-    protected $schema = [
+    protected array $schema = [
         self::EVENT_ID => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_REQUIRED => true,
@@ -28,6 +28,5 @@ class FetchDrlEventAndResultsRequest extends Request
     {
         $this->updateModel(self::EVENT_ID, $input);
     }
-
 
 }

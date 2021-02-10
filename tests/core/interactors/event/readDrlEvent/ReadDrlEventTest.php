@@ -16,6 +16,7 @@ use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class ReadDrlEventTest extends TestCase
@@ -50,7 +51,7 @@ class ReadDrlEventTest extends TestCase
     {
         $request = new ReadDrlEventRequest(
             [
-                ReadDrlEventRequest::DRL_EVENT_ID => 123,
+                ReadDrlEventRequest::DRL_EVENT_ID => TestConstants::TEST_EVENT_ID,
             ]
         );
 
@@ -109,10 +110,10 @@ class ReadDrlEventTest extends TestCase
 
         $expectedResponse = [
             'event' => [
-                'id' => 1234,
-                'competition' => 'Test competition',
-                'location' => 'Test tower',
-                'year' => '1970',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'competition' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'location' => TestConstants::TEST_LOCATION_NAME,
+                'year' => TestConstants::TEST_EVENT_YEAR,
                 'results' => [
                     [
                         'position' => 1,
@@ -183,10 +184,10 @@ class ReadDrlEventTest extends TestCase
 
         $expectedResponse = [
             'event' => [
-                'id' => 1234,
-                'competition' => 'Test competition',
-                'location' => 'Test tower',
-                'year' => '1970',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'competition' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'location' => TestConstants::TEST_LOCATION_NAME,
+                'year' => TestConstants::TEST_EVENT_YEAR,
                 'results' => [],
             ],
         ];

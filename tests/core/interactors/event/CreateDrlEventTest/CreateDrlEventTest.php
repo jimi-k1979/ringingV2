@@ -21,6 +21,7 @@ use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\mocks\TransactionManagerDummy;
 use DrlArchive\mocks\TransactionManagerSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 use DrlArchive\traits\CreateMockLocationTrait;
@@ -55,9 +56,9 @@ class CreateDrlEventTest extends TestCase
     {
         $request = new CreateDrlEventRequest(
             [
-                CreateDrlEventRequest::LOCATION_ID => 999,
-                CreateDrlEventRequest::COMPETITION_ID => 999,
-                CreateDrlEventRequest::YEAR => '1900',
+                CreateDrlEventRequest::LOCATION_ID => TestConstants::TEST_LOCATION_ID,
+                CreateDrlEventRequest::COMPETITION_ID => TestConstants::TEST_DRL_COMPETITION_ID,
+                CreateDrlEventRequest::YEAR => TestConstants::TEST_EVENT_YEAR,
             ]
         );
 
@@ -156,8 +157,8 @@ class CreateDrlEventTest extends TestCase
     public function testSuccessfulResponse(): void
     {
         $drlEvent = new DrlEventEntity();
-        $drlEvent->setId(555);
-        $drlEvent->setYear('1900');
+        $drlEvent->setId(TestConstants::TEST_EVENT_ID);
+        $drlEvent->setYear(TestConstants::TEST_EVENT_YEAR);
         $drlEvent->setLocation($this->CreateMockLocation());
         $drlEvent->setCompetition($this->createMockDrlCompetition());
 
@@ -178,10 +179,10 @@ class CreateDrlEventTest extends TestCase
         );
 
         $expectedResponse = [
-            'drlEventId' => 555,
-            'locationId' => 999,
-            'competitionId' => 999,
-            'year' => '1900',
+            'drlEventId' => TestConstants::TEST_EVENT_ID,
+            'locationId' => TestConstants::TEST_LOCATION_ID,
+            'competitionId' => TestConstants::TEST_DRL_COMPETITION_ID,
+            'year' => TestConstants::TEST_EVENT_YEAR,
         ];
 
         $this->assertEquals(

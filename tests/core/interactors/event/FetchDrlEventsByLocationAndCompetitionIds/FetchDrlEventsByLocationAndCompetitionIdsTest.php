@@ -14,6 +14,7 @@ use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -50,9 +51,9 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
         $request = new FetchDrlEventsByLocationAndCompetitionIdsRequest(
             [
                 FetchDrlEventsByLocationAndCompetitionIdsRequest::COMPETITION_ID =>
-                    111,
+                    TestConstants::TEST_DRL_COMPETITION_ID,
                 FetchDrlEventsByLocationAndCompetitionIdsRequest::LOCATION_ID =>
-                    222,
+                    TestConstants::TEST_LOCATION_ID,
             ]
         );
 
@@ -107,8 +108,8 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedResponse = [
             [
-                'id' => 1234,
-                'text' => '1970',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'text' => TestConstants::TEST_EVENT_YEAR,
             ],
         ];
 

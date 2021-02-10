@@ -22,6 +22,7 @@ use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class FetchDrlEventAndResultsTest extends TestCase
@@ -149,11 +150,11 @@ class FetchDrlEventAndResultsTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedResponse = [
             'event' => [
-                'year' => '1970',
-                'competition' => 'Test competition',
-                'singleTower' => false,
-                'location' => 'Test tower',
-                'unusualTower' => false,
+                'year' => TestConstants::TEST_EVENT_YEAR,
+                'competition' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'singleTower' => TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION,
+                'location' => TestConstants::TEST_LOCATION_NAME,
+                'unusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
             ],
             'results' => [
                 [
@@ -183,7 +184,7 @@ class FetchDrlEventAndResultsTest extends TestCase
             ],
             'judges' => [
                 [
-                    'name' => 'Test Judge',
+                    'name' => TestConstants::TEST_JUDGE_FIRST_NAME . ' ' . TestConstants::TEST_JUDGE_LAST_NAME,
                 ],
             ],
         ];

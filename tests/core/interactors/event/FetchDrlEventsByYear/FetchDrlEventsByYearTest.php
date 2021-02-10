@@ -7,6 +7,7 @@ namespace DrlArchive\core\interactors\event\FetchDrlEventsByYear;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
@@ -46,7 +47,7 @@ class FetchDrlEventsByYearTest extends TestCase
     {
         $request = new FetchDrlEventsByYearRequest(
             [
-                FetchDrlEventsByYearRequest::YEAR => '1970',
+                FetchDrlEventsByYearRequest::YEAR => TestConstants::TEST_EVENT_YEAR,
             ]
         );
         $useCase = new FetchDrlEventsByYear();
@@ -95,8 +96,8 @@ class FetchDrlEventsByYearTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedData = [
             [
-                'id' => 1234,
-                'text' => 'Test competition',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'text' => TestConstants::TEST_DRL_COMPETITION_NAME,
             ],
         ];
         $this->assertEquals(

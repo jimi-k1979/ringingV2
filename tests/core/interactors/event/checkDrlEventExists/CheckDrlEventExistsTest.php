@@ -16,6 +16,7 @@ use DrlArchive\mocks\LoggedInUserDummy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 use PHPUnit\Framework\TestCase;
 
@@ -32,6 +33,7 @@ class CheckDrlEventExistsTest extends TestCase
     }
 
     /**
+     * ignore until login process sorted
      * @throws AccessDeniedException
      */
     /*   public function testUserIsAuthorised(): void
@@ -46,7 +48,7 @@ class CheckDrlEventExistsTest extends TestCase
                $securitySpy->hasIsUserAuthorisedCalled()
            );
        }
-
+*/
        /**
         * @return CheckDrlEventExists
         */
@@ -54,8 +56,8 @@ class CheckDrlEventExistsTest extends TestCase
     {
         $request = new CheckDrlEventExistsRequest(
             [
-                CheckDrlEventExistsRequest::EVENT_YEAR => '1970',
-                CheckDrlEventExistsRequest::COMPETITION_NAME => 'Test event',
+                CheckDrlEventExistsRequest::EVENT_YEAR => TestConstants::TEST_EVENT_YEAR,
+                CheckDrlEventExistsRequest::COMPETITION_NAME => TestConstants::TEST_DRL_COMPETITION_NAME,
 
             ]
         );
@@ -72,6 +74,7 @@ class CheckDrlEventExistsTest extends TestCase
     }
 
     /**
+     * ignore until login process sorted
      * @throws AccessDeniedException
      */
     /*public function testGuestUserIsUnauthorised(): void
@@ -157,10 +160,10 @@ class CheckDrlEventExistsTest extends TestCase
 
         $response = $presenterSpy->getResponse();
         $expectedData = [
-            'eventId' => 1234,
-            'year' => 1970,
-            'competition' => 'Test competition',
-            'location' => 'Test tower',
+            'eventId' => TestConstants::TEST_EVENT_ID,
+            'year' => TestConstants::TEST_EVENT_YEAR,
+            'competition' => TestConstants::TEST_DRL_COMPETITION_NAME,
+            'location' => TestConstants::TEST_LOCATION_NAME,
         ];
 
         $this->assertEquals(
@@ -207,11 +210,11 @@ class CheckDrlEventExistsTest extends TestCase
         );
         $this->assertEquals(
             [
-                'competitionName' => 'Test competition',
-                'competitionId' => 999,
+                'competitionName' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'competitionId' => TestConstants::TEST_DRL_COMPETITION_ID,
                 'singleTower' => true,
-                'usualLocation' => 'Test tower',
-                'locationId' => 999,
+                'usualLocation' => TestConstants::TEST_LOCATION_NAME,
+                'usualLocationId' => TestConstants::TEST_LOCATION_ID,
             ],
             $request->getData(),
             'Incorrect response data'

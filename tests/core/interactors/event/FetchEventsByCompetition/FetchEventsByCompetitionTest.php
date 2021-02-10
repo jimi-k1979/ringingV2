@@ -15,6 +15,7 @@ use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -47,7 +48,8 @@ class FetchEventsByCompetitionTest extends TestCase
     {
         $request = new FetchEventsByCompetitionRequest(
             [
-                FetchEventsByCompetitionRequest::COMPETITION_ID => 111,
+                FetchEventsByCompetitionRequest::COMPETITION_ID =>
+                    TestConstants::TEST_DRL_COMPETITION_ID,
                 FetchEventsByCompetitionRequest::COMPETITION_TYPE =>
                     AbstractCompetitionEntity::COMPETITION_TYPE_DRL,
             ]
@@ -113,8 +115,8 @@ class FetchEventsByCompetitionTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 1234,
-                'text' => '1970',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'text' => TestConstants::TEST_EVENT_YEAR,
             ],
             [
                 'id' => 555,
@@ -138,7 +140,7 @@ class FetchEventsByCompetitionTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchDrlEventByYearAndCompetitionIdThrowsException();
+        $eventSpy->setfetchDrlEventsByCompetitionIdThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);

@@ -11,7 +11,7 @@ class ReadDrlEventRequest extends Request
 {
     public const DRL_EVENT_ID = 'eventId';
 
-    protected $schema = [
+    protected array $schema = [
         self::DRL_EVENT_ID => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_ALLOW_NULL => false,
