@@ -44,7 +44,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
      */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity {
+    ): void {
         try {
             $queryBuilder = $this->database->createQueryBuilder();
             $queryBuilder->insert('DRL_competition')
@@ -78,8 +78,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
         }
 
         $entity->setId((int)$this->database->getLastInsertId());
-
-        return $entity;
     }
 
     /**

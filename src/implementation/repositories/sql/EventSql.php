@@ -9,7 +9,6 @@ use _HumbugBox5d215ba2066e\Nette\NotImplementedException;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\LocationEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
@@ -34,7 +33,7 @@ class EventSql extends MysqlRepository implements EventRepositoryInterface
     public const FIELD_NAME_COMPETITION_ID = 'competitionId';
     public const FIELD_NAME_LOCATION_ID = 'locationId';
     public const FIELD_NAME_IS_UNUSUAL_TOWER = 'isUnusualTower';
-    public const FIELD_NAME_USUAL_LOCATION = ' AS usualLocation';
+    public const FIELD_NAME_USUAL_LOCATION = 'usualLocation';
 
     // tables and join
     public const TABLE_DRL_EVENT = 'DRL_event de';
@@ -118,8 +117,8 @@ join;
         $query = new DatabaseQueryBuilder();
         $query->setFields(
             [
-                self::SELECT_DRL_EVENT_ID . self::FIELD_NAME_ID,
-                self::SELECT_DRL_EVENT_YEAR . self::FIELD_NAME_YEAR,
+                self::SELECT_DRL_EVENT_ID . ' AS ' . self::FIELD_NAME_ID,
+                self::SELECT_DRL_EVENT_YEAR . ' AS ' . self::FIELD_NAME_YEAR,
             ]
         );
         $query->setTablesAndJoins(

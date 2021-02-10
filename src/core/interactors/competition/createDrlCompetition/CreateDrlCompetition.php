@@ -12,21 +12,17 @@ use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
+/**
+ * Class CreateDrlCompetition
+ * @package DrlArchive\core\interactors\competition\createDrlCompetition
+ * @property CreateDrlCompetitionRequest $request
+ */
 class CreateDrlCompetition extends Interactor
 {
 
-    /**
-     * @var CompetitionRepositoryInterface
-     */
-    private $competitionRepository;
-    /**
-     * @var TransactionManagerInterface
-     */
-    private $transactionManager;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $competitionEntity;
+    private CompetitionRepositoryInterface $competitionRepository;
+    private TransactionManagerInterface $transactionManager;
+    private DrlCompetitionEntity $competitionEntity;
 
     /**
      * @param CompetitionRepositoryInterface $competitionRepository
@@ -78,8 +74,9 @@ class CreateDrlCompetition extends Interactor
 
     private function writeToDatabase(): void
     {
-        $this->competitionEntity = $this->competitionRepository
-            ->insertDrlCompetition($this->competitionEntity);
+        $this->competitionRepository->insertDrlCompetition(
+            $this->competitionEntity
+        );
     }
 
     private function createResponse(): void

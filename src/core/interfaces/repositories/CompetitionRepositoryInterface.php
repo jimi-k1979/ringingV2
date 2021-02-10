@@ -17,11 +17,11 @@ interface CompetitionRepositoryInterface
 
     /**
      * @param DrlCompetitionEntity $entity
-     * @return DrlCompetitionEntity
+     * @return void
      */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity;
+    ): void;
 
     /**
      * @param int $id

@@ -64,7 +64,7 @@ join;
 
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity {
+    ): void {
         // TODO: Implement insertCompetition() method.
     }
 
@@ -342,7 +342,7 @@ join;
             array_merge(
                 $this->allDrlCompetitionFields(),
                 [
-                    LocationSql::SELECT_LOCATION . LocationSql::FIELD_NAME_LOCATION,
+                    LocationSql::SELECT_LOCATION . ' AS ' . LocationSql::FIELD_NAME_LOCATION,
                 ]
             )
         );
