@@ -6,16 +6,16 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamSpy implements TeamRepositoryInterface
 {
     use CreateMockTeamTrait;
 
-    private int $insertTeamIdValue;
+    private int $insertTeamIdValue = TestConstants::TEST_TEAM_ID;
     private bool $insertCalled = false;
     private TeamEntity $selectTeamValue;
     private bool $selectCalled = false;

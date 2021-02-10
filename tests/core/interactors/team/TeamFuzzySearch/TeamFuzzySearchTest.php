@@ -15,6 +15,7 @@ use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\mocks\TeamDummy;
 use DrlArchive\mocks\TeamSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockTeamTrait;
 
@@ -122,8 +123,8 @@ class TeamFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 123,
-                'name' => 'Test team',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
             ],
             [
                 'id' => 9999,
@@ -157,8 +158,8 @@ class TeamFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 123,
-                'name' => 'Test team',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
             ],
         ];
 

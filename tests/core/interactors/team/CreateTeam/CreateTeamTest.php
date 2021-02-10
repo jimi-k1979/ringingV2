@@ -20,12 +20,12 @@ use DrlArchive\mocks\TeamDummy;
 use DrlArchive\mocks\TeamSpy;
 use DrlArchive\mocks\TransactionManagerDummy;
 use DrlArchive\mocks\TransactionManagerSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockTeamTrait;
 
 class CreateTeamTest extends TestCase
 {
-
     use CreateMockTeamTrait;
 
     public function testInstantiation(): void
@@ -40,8 +40,8 @@ class CreateTeamTest extends TestCase
     {
         $request = new CreateTeamRequest(
             [
-                CreateTeamRequest::NAME => 'Test Team',
-                CreateTeamRequest::DEANERY => 1,
+                CreateTeamRequest::NAME => TestConstants::TEST_TEAM_NAME,
+                CreateTeamRequest::DEANERY => TestConstants::TEST_DEANERY_ID,
             ]
         );
         $useCase = new CreateTeam();
@@ -172,9 +172,9 @@ class CreateTeamTest extends TestCase
 
         $this->assertEquals(
             [
-                'id' => 123,
-                'name' => 'Test team',
-                'deanery' => 'Test deanery',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
+                'deanery' => TestConstants::TEST_DEANERY_NAME,
             ],
             $response->getData()
         );
