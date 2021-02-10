@@ -15,6 +15,7 @@ use DrlArchive\mocks\RingerDummy;
 use DrlArchive\mocks\RingerSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockRingerTrait;
 
@@ -130,10 +131,11 @@ class RingerFuzzySearchTest extends TestCase
                 'fullName' => 'Joest Ritter',
             ],
             [
-                'id' => 4321,
-                'firstName' => 'Test',
-                'lastName' => 'Ringer',
-                'fullName' => 'Test Ringer',
+                'id' => TestConstants::TEST_RINGER_ID,
+                'firstName' => TestConstants::TEST_RINGER_FIRST_NAME,
+                'lastName' => TestConstants::TEST_RINGER_LAST_NAME,
+                'fullName' => TestConstants::TEST_RINGER_FIRST_NAME . ' ' .
+                    TestConstants::TEST_RINGER_LAST_NAME,
             ],
         ];
 
