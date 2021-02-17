@@ -24,9 +24,8 @@ class TeamDummy implements TeamRepositoryInterface
         return $this->createMockTeam();
     }
 
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): void
     {
-        return $this->createMockTeam();
     }
 
     public function deleteTeam(TeamEntity $teamEntity): bool

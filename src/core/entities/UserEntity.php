@@ -7,27 +7,19 @@ namespace DrlArchive\core\entities;
 
 class UserEntity extends Entity
 {
+    public const ADD_NEW_PERMISSION = 'addNew';
+    public const EDIT_EXISTING_PERMISSION = 'editExisting';
+    public const APPROVE_EDIT_PERMISSION = 'approveEdit';
+    public const CONFIRM_DELETE_PERMISSION = 'confirmDelete';
 
+    private string $username;
+    private ?string $emailAddress;
+    private ?string $password;
+    private ?int $loginCount;
     /**
-     * @var string
+     * @var bool[]
      */
-    private $username;
-    /**
-     * @var string|null
-     */
-    private $emailAddress;
-    /**
-     * @var string|null
-     */
-    private $password;
-    /**
-     * @var int|null
-     */
-    private $loginCount;
-    /**
-     * @var array
-     */
-    private $permissions = [
+    private array $permissions = [
         'addNew' => false,
         'editExisting' => false,
         'approveEdit' => false,
@@ -83,9 +75,9 @@ class UserEntity extends Entity
     }
 
     /**
-     * @return int
+     * @return null|int
      */
-    public function getLoginCount(): int
+    public function getLoginCount(): ?int
     {
         return $this->loginCount;
     }

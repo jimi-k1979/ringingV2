@@ -38,5 +38,18 @@ class Repository
     public const ALIAS_PEAL_NUMBER = 'pealNumber';
     public const ALIAS_FAULTS = 'faults';
     public const ALIAS_POINTS = 'points';
+    public const ALIAS_JUDGE_ID = 'judgeId';
+    public const ALIAS_FIRST_NAME = 'firstName';
+    public const ALIAS_LAST_NAME = 'lastName';
+    public const ALIAS_RINGER_ID = 'ringerId';
+    public const ALIAS_USER_ID = 'userId';
+    public const ALIAS_USERNAME = 'username';
+    public const ALIAS_EMAIL_ADDRESS = 'emailAddress';
+    public const ALIAS_PASSWORD = 'password';
+    public const ALIAS_LOGIN_COUNT = 'loginCount';
+    public const ALIAS_ADD_NEW = 'addNew';
+    public const ALIAS_EDIT_EXISTING = 'editExisting';
+    public const ALIAS_APPROVE_EDIT = 'approveEdit';
+    public const ALIAS_CONFIRM_DELETE = 'confirmDelete';
 
 }

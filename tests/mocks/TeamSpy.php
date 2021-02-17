@@ -90,13 +90,15 @@ class TeamSpy implements TeamRepositoryInterface
 
     /**
      * @param TeamEntity $teamEntity
-     * @return TeamEntity
+     * @return void
      */
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): void
     {
         $this->updateCalled = true;
 
-        return $this->updateTeamValue ?? $this->createMockTeam();
+        if (isset($this->updateTeamValue)) {
+            $teamEntity = $this->updateTeamValue;
+        }
     }
 
     /**
