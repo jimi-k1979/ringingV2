@@ -11,8 +11,6 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
-use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
-use DrlArchive\implementation\factories\repositories\DeaneryRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\DeaneryDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;

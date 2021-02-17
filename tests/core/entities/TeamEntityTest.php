@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\DeaneryEntity;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 

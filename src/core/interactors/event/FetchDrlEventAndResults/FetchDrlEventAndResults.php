@@ -25,34 +25,19 @@ use Exception;
 class FetchDrlEventAndResults extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
-    /**
-     * @var ResultRepositoryInterface
-     */
-    private $resultRepository;
-    /**
-     * @var JudgeRepositoryInterface
-     */
-    private $judgeRepository;
-    /**
-     * @var LocationRepositoryInterface
-     */
-    private $locationRepository;
-    /**
-     * @var DrlEventEntity
-     */
-    private $event;
+    private EventRepositoryInterface $eventRepository;
+    private ResultRepositoryInterface $resultRepository;
+    private JudgeRepositoryInterface $judgeRepository;
+    private LocationRepositoryInterface $locationRepository;
+    private DrlEventEntity $event;
     /**
      * @var DrlResultEntity[]
      */
-    private $results;
+    private array $results;
     /**
      * @var null|JudgeEntity[]
      */
-    private $judges;
+    private ?array $judges;
 
     public function setEventRepository(
         EventRepositoryInterface $repository
@@ -138,6 +123,7 @@ class FetchDrlEventAndResults extends Interactor
             'judges' => [],
         ];
 
+        $pealNumbers = false;
         foreach ($this->results as $index => $result) {
             if ($index === 0) {
                 if (empty($result->getPealNumber())) {

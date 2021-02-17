@@ -6,26 +6,11 @@ namespace DrlArchive\core\entities;
 
 class LocationEntity extends Entity
 {
-    /**
-     * @var string
-     */
-    private $location;
-    /**
-     * @var DeaneryEntity
-     */
-    private $deanery;
-    /**
-     * @var string
-     */
-    private $dedication;
-    /**
-     * @var string
-     */
-    private $tenorWeight;
-    /**
-     * @var null|int
-     */
-    private $numberOfBells;
+    private string $location;
+    private DeaneryEntity $deanery;
+    private string $dedication;
+    private string $tenorWeight;
+    private ?int $numberOfBells;
 
     /**
      * @return string

@@ -6,10 +6,7 @@ namespace DrlArchive\core\entities;
 
 abstract class Entity
 {
-    /**
-     * @var int
-     */
-    protected $id;
+    protected int $id;
 
     /**
      * @return int

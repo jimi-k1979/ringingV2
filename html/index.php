@@ -1,6 +1,11 @@
 <?php
 
+/**
+ * @var Environment $twig
+ */
 declare(strict_types=1);
+
+use Twig\Environment;
 
 require_once __DIR__ . '/init.php';
 

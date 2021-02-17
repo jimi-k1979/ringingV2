@@ -6,18 +6,9 @@ namespace DrlArchive\core\entities;
 
 class RingerEntity extends Entity
 {
-    /**
-     * @var string
-     */
-    private $firstName;
-    /**
-     * @var string
-     */
-    private $lastName;
-    /**
-     * @var string
-     */
-    private $notes;
+    private string $firstName;
+    private string $lastName;
+    private string $notes;
 
     /**
      * @return string

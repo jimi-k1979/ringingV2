@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\UserEntity;
 use PHPUnit\Framework\TestCase;
 
 class UserEntityTest extends TestCase

@@ -15,22 +15,10 @@ class DeanerySpy implements DeaneryRepositoryInterface
 
     use CreateMockDeaneryTrait;
 
-    /**
-     * @var DeaneryEntity
-     */
-    private $deaneryValue;
-    /**
-     * @var bool
-     */
-    private $getDeaneryByNameCalled = false;
-    /**
-     * @var bool
-     */
-    private $selectDeaneryCalled = false;
-    /**
-     * @var bool
-     */
-    private $throwException = false;
+    private DeaneryEntity $deaneryValue;
+    private bool $getDeaneryByNameCalled = false;
+    private bool $selectDeaneryCalled = false;
+    private bool $throwException = false;
 
 
     public function setRepositoryThrowsException(): void

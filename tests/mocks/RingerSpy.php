@@ -14,18 +14,12 @@ class RingerSpy implements RingerRepositoryInterface
 {
     use CreateMockRingerTrait;
 
-    /**
-     * @var bool
-     */
-    private $fuzzySearchRingerCalled = false;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchThrowsException = false;
+    private bool $fuzzySearchRingerCalled = false;
+    private bool $fuzzySearchThrowsException = false;
     /**
      * @var null|RingerEntity[]
      */
-    private $fuzzySearchValue;
+    private ?array $fuzzySearchValue;
 
     /**
      * @inheritDoc

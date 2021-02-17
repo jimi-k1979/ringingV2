@@ -10,26 +10,14 @@ abstract class AbstractEventEntity extends Entity
     public const EVENT_TYPE_DRL = 1;
     public const EVENT_TYPE_LADDER = 2;
 
-    /**
-     * @var string
-     */
-    private $year;
-    /**
-     * @var AbstractCompetitionEntity
-     */
-    private $competition;
-    /**
-     * @var LocationEntity
-     */
-    private $location;
+    private string $year;
+    private AbstractCompetitionEntity $competition;
+    private LocationEntity $location;
     /**
      * @var null|JudgeEntity[]
      */
-    private $judges;
-    /**
-     * @var bool
-     */
-    private $unusualTower = false;
+    private ?array $judges;
+    private bool $unusualTower = false;
 
     /**
      * @return string

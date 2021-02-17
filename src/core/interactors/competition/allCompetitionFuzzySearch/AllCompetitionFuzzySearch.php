@@ -21,11 +21,11 @@ class AllCompetitionFuzzySearch extends Interactor
     /**
      * @var CompetitionRepositoryInterface
      */
-    private $competitionRepository;
+    private CompetitionRepositoryInterface $competitionRepository;
     /**
      * @var AbstractCompetitionEntity[]
      */
-    private $data;
+    private array $data;
 
     public function setCompetitionRepository(
         CompetitionRepositoryInterface $repository

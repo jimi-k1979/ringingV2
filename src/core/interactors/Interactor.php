@@ -16,30 +16,13 @@ use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 abstract class Interactor implements InteractorInterface
 {
     public const ACCESS_DENIED_EXCEPTION_CODE = 9901;
-    /**
-     * @var Request|null
-     */
-    protected $request;
-    /**
-     * @var Response|null
-     */
-    protected $response;
-    /**
-     * @var PresenterInterface|null
-     */
-    protected $presenter;
-    /**
-     * @var UserRepositoryInterface
-     */
-    private $userRepository;
-    /**
-     * @var UserEntity
-     */
-    private $loggedInUser;
-    /**
-     * @var SecurityRepositoryInterface
-     */
-    private $securityRepository;
+
+    protected ?Request $request;
+    protected ?Response $response;
+    protected ?PresenterInterface $presenter;
+    private UserRepositoryInterface $userRepository;
+    private UserEntity $loggedInUser;
+    private SecurityRepositoryInterface $securityRepository;
 
     /**
      * @param Request|null $request

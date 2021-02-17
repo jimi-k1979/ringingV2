@@ -128,8 +128,7 @@ class EventSpy implements EventRepositoryInterface
     }
 
     /**
-     * @param int $competitionId
-     * @return DrlEventEntity[]
+     * @inheritDoc
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {

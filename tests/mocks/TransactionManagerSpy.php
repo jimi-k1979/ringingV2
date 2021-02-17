@@ -9,9 +9,9 @@ use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 
 class TransactionManagerSpy implements TransactionManagerInterface
 {
-    protected $commitTransactionCalled = false;
-    protected $rollbackTransactionCalled = false;
-    private $startTransactionCalled = false;
+    protected bool $commitTransactionCalled = false;
+    protected bool $rollbackTransactionCalled = false;
+    private bool $startTransactionCalled = false;
 
     public function startTransaction(): void
     {

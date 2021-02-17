@@ -11,10 +11,7 @@ use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 class LoggedInUserSpy implements UserRepositoryInterface
 {
 
-    /**
-     * @var UserEntity
-     */
-    private $user;
+    private UserEntity $user;
 
     public function getLoggedInUser(): UserEntity
     {

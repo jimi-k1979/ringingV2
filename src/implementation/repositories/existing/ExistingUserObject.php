@@ -10,20 +10,13 @@ use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\repositories\doctrine\UserManagementDoctrineFactory;
-use DrlArchive\implementation\factories\repositories\UserManagementRepositoryFactory;
 
 class ExistingUserObject
     extends Repository
     implements UserRepositoryInterface
 {
-    /**
-     * @var int
-     */
-    private $userId;
-    /**
-     * @var UserEntity
-     */
-    private $user;
+    private int $userId;
+    private UserEntity $user;
 
     public function setUserId(int $userId): void
     {

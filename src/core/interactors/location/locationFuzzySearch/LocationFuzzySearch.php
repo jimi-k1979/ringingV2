@@ -10,6 +10,11 @@ use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 
+/**
+ * Class LocationFuzzySearch
+ * @package DrlArchive\core\interactors\location\locationFuzzySearch
+ * @property LocationFuzzySearchRequest $request
+ */
 class LocationFuzzySearch extends Interactor
 {
     private LocationRepositoryInterface $locationRepository;

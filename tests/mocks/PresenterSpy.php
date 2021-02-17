@@ -11,8 +11,8 @@ use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 class PresenterSpy implements PresenterInterface
 {
 
-    private $response;
-    private $sendCalled = false;
+    private ?Response $response;
+    private bool $sendCalled = false;
 
     public function send(?Response $response = null)
     {

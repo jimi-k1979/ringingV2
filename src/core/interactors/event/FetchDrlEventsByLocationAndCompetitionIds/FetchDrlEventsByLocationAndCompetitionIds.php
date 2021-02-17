@@ -19,14 +19,11 @@ use Exception;
 class FetchDrlEventsByLocationAndCompetitionIds extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
+    private EventRepositoryInterface $eventRepository;
     /**
      * @var DrlEventEntity[]
      */
-    private $queryData;
+    private array $queryData;
 
     public function setEventRepository(
         EventRepositoryInterface $repository

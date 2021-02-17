@@ -8,21 +8,15 @@ use DrlArchive\core\Exceptions\InvalidEntityPropertyException;
 
 class DeaneryEntity extends Entity
 {
-    private const LOCATIONS_IN_COUNTY = [
+    private const REGIONS = [
         'north',
         'south',
         'outofcounty',
         'n/a',
     ];
 
-    /**
-     * @var string
-     */
-    private $name;
-    /**
-     * @var string
-     */
-    private $region;
+    private string $name;
+    private string $region;
 
     /**
      * @return string
@@ -56,7 +50,7 @@ class DeaneryEntity extends Entity
     {
         $inArray = array_search(
             strtolower($region),
-            self::LOCATIONS_IN_COUNTY
+            self::REGIONS
         );
 
         if (is_numeric($inArray)) {

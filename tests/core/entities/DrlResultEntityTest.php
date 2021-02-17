@@ -5,12 +5,6 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 
-use DrlArchive\core\entities\AbstractResultEntity;
-use DrlArchive\core\entities\DrlResultEntity;
-use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
-use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 

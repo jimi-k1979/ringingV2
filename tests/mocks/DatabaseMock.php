@@ -23,24 +23,24 @@ class DatabaseMock implements SqlDatabaseInterface
     public const NINTH_CALL = 8;
     public const TENTH_CALL = 9;
 
-    private $queryCount = 0;
-    private $startTransactionCount = 0;
-    private $commitTransactionCount = 0;
-    private $rollbackTransactionCount = 0;
-    private $executeCount = 0;
-    private $executeAndFetchCount = 0;
+    private int $queryCount = 0;
+    private int $startTransactionCount = 0;
+    private int $commitTransactionCount = 0;
+    private int $rollbackTransactionCount = 0;
+    private int $executeCount = 0;
+    private int $executeAndFetchCount = 0;
 
-    private $queryResults = [];
+    private array $queryResults = [];
 
-    private $startTransactionCalled = false;
-    private $commitTransactionCalled = false;
-    private $rollbackTransactionCalled = false;
-    private $executeCalled = false;
-    private $executeAndFetchCalled = false;
-    private $queryCalled = false;
+    private bool $startTransactionCalled = false;
+    private bool $commitTransactionCalled = false;
+    private bool $rollbackTransactionCalled = false;
+    private bool $executeCalled = false;
+    private bool $executeAndFetchCalled = false;
+    private bool $queryCalled = false;
 
-    private $queryArgs;
-    private $executeArgs;
+    private array $queryArgs;
+    private array $executeArgs;
 
 
     public function __construct()
@@ -76,11 +76,11 @@ class DatabaseMock implements SqlDatabaseInterface
         return $this->queryResults[$this->queryCount++];
     }
 
-    public function execute(string $sql, array $placeholders = []): int
+    public function execute(string $sql, array $params = []): int
     {
         $this->executeArgs[$this->executeCount] = [
             'sql' => $sql,
-            'placeholders' => $placeholders,
+            'placeholders' => $params,
         ];
 
         $this->executeCalled = true;
@@ -91,11 +91,11 @@ class DatabaseMock implements SqlDatabaseInterface
 
     public function executeAndFetch(
         string $sql,
-        array $placeholders = []
+        array $params = []
     ): array {
         $this->executeArgs[$this->executeCount] = [
             'sql' => $sql,
-            'placeholders' => $placeholders,
+            'placeholders' => $params,
         ];
 
         $this->executeAndFetchCalled = true;

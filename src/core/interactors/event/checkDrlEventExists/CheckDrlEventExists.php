@@ -43,6 +43,7 @@ class CheckDrlEventExists extends Interactor
 
     /**
      * @throws AccessDeniedException
+     * @noinspection PhpDocRedundantThrowsInspection
      */
     public function execute(): void
     {

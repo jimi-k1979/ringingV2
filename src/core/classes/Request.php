@@ -112,7 +112,7 @@ class Request
 
                 case self::FIELD_TYPE_FILE_ENTITY:
 
-                    $this->verifyFileEntity($this->schema[$field], $value);
+           //         $this->verifyFileEntity($this->schema[$field], $value);
                     break;
 
                 default:
@@ -240,33 +240,33 @@ class Request
     }
 
 
-    private function verifyFileEntity(array $field, $value): void
-    {
-        if (!is_object($value) && !$value instanceof FileEntity) {
-            throw new InvalidArgumentException('Invalid file');
-        }
+    /*  private function verifyFileEntity(array $field, $value): void
+      {
+          if (!is_object($value) && !$value instanceof FileEntity) {
+              throw new InvalidArgumentException('Invalid file');
+          }
 
-        $not_strict = false;
+          $not_strict = false;
 
-        if (
-            isset($field['allowed']) &&
-            in_array(
-                $value->getType(),
-                $field['allowed'],
-                $not_strict
-            ) === false
-        ) {
-            throw new InvalidArgumentException(
-                'Invalid file type, must be one of "'
-                . implode(', ', $field['allowed']));
-        }
+          if (
+              isset($field['allowed']) &&
+              in_array(
+                  $value->getType(),
+                  $field['allowed'],
+                  $not_strict
+              ) === false
+          ) {
+              throw new InvalidArgumentException(
+                  'Invalid file type, must be one of "'
+                  . implode(', ', $field['allowed']));
+          }
 
-    }
-
+      }
+  */
 
     /**
+     * @param string $field
      * @param mixed $value
-     *
      * @return mixed
      */
     private function sanitizeData(string $field, $value)

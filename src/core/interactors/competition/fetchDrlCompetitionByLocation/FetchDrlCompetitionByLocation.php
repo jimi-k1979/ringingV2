@@ -19,14 +19,11 @@ use Exception;
 class FetchDrlCompetitionByLocation extends Interactor
 {
 
-    /**
-     * @var CompetitionRepositoryInterface
-     */
-    private $competitionRepository;
+    private CompetitionRepositoryInterface $competitionRepository;
     /**
      * @var DrlCompetitionEntity[]
      */
-    private $queryData;
+    private array $queryData;
 
     public function setCompetitionRepository(
         CompetitionRepositoryInterface $repository

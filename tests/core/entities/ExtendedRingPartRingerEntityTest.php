@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\ExtendedRingPartEntity;
-use DrlArchive\core\entities\ExtendedRingPartRingerEntity;
-use DrlArchive\core\entities\RingerEntity;
 use PHPUnit\Framework\TestCase;
 
 class ExtendedRingPartRingerEntityTest extends TestCase
@@ -27,7 +23,7 @@ class ExtendedRingPartRingerEntityTest extends TestCase
 
         $this->assertEquals(
             123,
-            $entity->getId(123)
+            $entity->getId()
         );
     }
 

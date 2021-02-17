@@ -16,18 +16,12 @@ class JudgeSpy implements JudgeRepositoryInterface
 
     use CreateMockJudgeTrait;
 
-    /**
-     * @var bool
-     */
-    private $repositoryThrowsException = false;
-    /**
-     * @var bool
-     */
-    private $fetchJudgesByDrlEventCalled = false;
+    private bool $repositoryThrowsException = false;
+    private bool $fetchJudgesByDrlEventCalled = false;
     /**
      * @var JudgeEntity[]
      */
-    private $fetchJudgesByDrlEventValue;
+    private array $fetchJudgesByDrlEventValue;
 
     public function setRepositoryThrowsException(): void
     {

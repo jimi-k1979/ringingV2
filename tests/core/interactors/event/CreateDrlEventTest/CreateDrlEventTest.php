@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\CreateDrlEventTest;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
@@ -156,15 +155,10 @@ class CreateDrlEventTest extends TestCase
 
     public function testSuccessfulResponse(): void
     {
-        $drlEvent = new DrlEventEntity();
-        $drlEvent->setId(TestConstants::TEST_EVENT_ID);
-        $drlEvent->setYear(TestConstants::TEST_EVENT_YEAR);
-        $drlEvent->setLocation($this->CreateMockLocation());
-        $drlEvent->setCompetition($this->createMockDrlCompetition());
 
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setDrlEventValue($drlEvent);
+        $eventSpy->setInsertDrlEventIdValue(TestConstants::TEST_EVENT_ID);
 
         $useCase = $this->createNewUseCase();
         $useCase->setPresenter($presenterSpy);
