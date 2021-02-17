@@ -19,7 +19,6 @@ class EventSpy implements EventRepositoryInterface
     private bool $insertEventCalled = false;
     private int $insertDrlEventIdValue = TestConstants::TEST_EVENT_ID;
     private bool $insertDrlEventThrowsException = false;
-    private ?DrlEventEntity $drlEventValue;
     private bool $fetchDrlEventCalled = false;
     private bool $fetchDrlEventThrowsException = false;
     private DrlEventEntity $fetchDrlEventValue;
@@ -80,15 +79,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->insertDrlEventIdValue = $insertDrlEventIdValue;
     }
-
-    /**
-     * @param DrlEventEntity|null $drlEventValue
-     */
-    public function setDrlEventValue(?DrlEventEntity $drlEventValue): void
-    {
-        $this->drlEventValue = $drlEventValue;
-    }
-
+    
     public function setInsertDrlEventThrowsException(): void
     {
         $this->insertDrlEventThrowsException = true;

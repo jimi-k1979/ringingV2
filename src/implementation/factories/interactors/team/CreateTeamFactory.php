@@ -10,8 +10,10 @@ use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
 use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
 use DrlArchive\implementation\factories\repositories\DeaneryRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\DeaneryDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
@@ -37,10 +39,10 @@ class CreateTeamFactory implements InteractorFactoryInterface
             (new TeamDoctrineFactory())->create()
         );
         $useCase->setDeaneryRepository(
-            (new DeaneryRepositoryFactory())->create()
+            (new DeaneryDoctrineFactory())->create()
         );
         $useCase->setTransactionManager(
-            (new TransactionManagerFactory())->create()
+            (new DoctrineTransactionManagerFactory())->create()
         );
 
         return $useCase;

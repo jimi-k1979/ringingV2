@@ -11,7 +11,7 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\EventRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -35,7 +35,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsFactory implements
             (new SecurityRepositoryFactory())->create()
         );
         $useCase->setEventRepository(
-            (new EventRepositoryFactory())->create()
+            (new EventDoctrineFactory())->create()
         );
 
         return $useCase;

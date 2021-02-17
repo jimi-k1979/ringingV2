@@ -11,10 +11,10 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\EventRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\JudgeRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\LocationRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\ResultRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\JudgeDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\LocationDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -37,16 +37,16 @@ class FetchDrlEventAndResultsFactory implements InteractorFactoryInterface
             (new SecurityRepositoryFactory())->create()
         );
         $useCase->setEventRepository(
-            (new EventRepositoryFactory())->create()
+            (new EventDoctrineFactory())->create()
         );
         $useCase->setResultRepository(
-            (new ResultRepositoryFactory())->create()
+            (new ResultDoctrineFactory())->create()
         );
         $useCase->setJudgeRepository(
-            (new JudgeRepositoryFactory())->create()
+            (new JudgeDoctrineFactory())->create()
         );
         $useCase->setLocationRepository(
-            (new LocationRepositoryFactory())->create()
+            (new LocationDoctrineFactory())->create()
         );
 
         return $useCase;

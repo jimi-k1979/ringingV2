@@ -11,7 +11,7 @@ use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearch
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\LocationRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\LocationDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -28,7 +28,7 @@ class LocationFuzzySearchFactory implements InteractorFactoryInterface
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
         $useCase->setLocationRepository(
-            (new LocationRepositoryFactory())->create()
+            (new LocationDoctrineFactory())->create()
         );
         $useCase->setUserRepository(
             (new UserRepositoryFactory())->create($loggedInUserId)

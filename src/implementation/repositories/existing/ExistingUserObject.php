@@ -9,6 +9,7 @@ use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\repositories\doctrine\UserManagementDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\UserManagementRepositoryFactory;
 
 class ExistingUserObject
@@ -45,7 +46,7 @@ class ExistingUserObject
                 $this->user->setUsername('guestUser');
                 $this->user->setLoginCount(0);
             } else {
-                $repo = (new UserManagementRepositoryFactory)->create();
+                $repo = (new UserManagementDoctrineFactory())->create();
                 $this->user = $repo->fetchById($this->userId);
             }
         }

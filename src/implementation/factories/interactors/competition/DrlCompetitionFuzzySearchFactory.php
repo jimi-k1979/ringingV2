@@ -11,7 +11,7 @@ use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompeti
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\CompetitionRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\CompetitionDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -28,7 +28,7 @@ class DrlCompetitionFuzzySearchFactory implements InteractorFactoryInterface
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
         $useCase->setCompetitionRepository(
-            (new CompetitionRepositoryFactory())->create()
+            (new CompetitionDoctrineFactory())->create()
         );
         $useCase->setUserRepository(
             (new UserRepositoryFactory())->create($loggedInUserId)
