@@ -11,7 +11,7 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\CompetitionRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\CompetitionDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -32,7 +32,7 @@ class FetchDrlCompetitionByLocationFactory implements InteractorFactoryInterface
             (new SecurityRepositoryFactory())->create()
         );
         $useCase->setCompetitionRepository(
-            (new CompetitionRepositoryFactory())->create()
+            (new CompetitionDoctrineFactory())->create()
         );
 
         return $useCase;

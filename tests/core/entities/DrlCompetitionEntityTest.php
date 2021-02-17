@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\AbstractCompetitionEntity;
-use DrlArchive\core\entities\DrlCompetitionEntity;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class DrlCompetitionEntityTest extends TestCase
@@ -28,9 +25,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $competition = new DrlCompetitionEntity();
-        $competition->setId(4);
+        $competition->setId(TestConstants::TEST_DRL_COMPETITION_ID);
         $this->assertEquals(
-            4,
+            TestConstants::TEST_DRL_COMPETITION_ID,
             $competition->getId()
         );
     }
@@ -38,9 +35,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testNameProperty(): void
     {
         $competition = new DrlCompetitionEntity();
-        $competition->setName('Test');
+        $competition->setName(TestConstants::TEST_DRL_COMPETITION_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_DRL_COMPETITION_NAME,
             $competition->getName()
         );
     }
@@ -48,12 +45,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testSingleTowerCompetitionProperty(): void
     {
         $competition = new DrlCompetitionEntity();
-        $competition->setSingleTowerCompetition(true);
-        $this->assertTrue(
-            $competition->isSingleTowerCompetition()
+        $competition->setSingleTowerCompetition(
+            TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION
         );
-
-        $competition->setSingleTowerCompetition(false);
         $this->assertFalse(
             $competition->isSingleTowerCompetition()
         );

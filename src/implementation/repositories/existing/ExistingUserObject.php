@@ -9,20 +9,14 @@ use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\repositories\UserManagementRepositoryFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\UserManagementDoctrineFactory;
 
 class ExistingUserObject
     extends Repository
     implements UserRepositoryInterface
 {
-    /**
-     * @var int
-     */
-    private $userId;
-    /**
-     * @var UserEntity
-     */
-    private $user;
+    private int $userId;
+    private UserEntity $user;
 
     public function setUserId(int $userId): void
     {
@@ -45,7 +39,7 @@ class ExistingUserObject
                 $this->user->setUsername('guestUser');
                 $this->user->setLoginCount(0);
             } else {
-                $repo = (new UserManagementRepositoryFactory)->create();
+                $repo = (new UserManagementDoctrineFactory())->create();
                 $this->user = $repo->fetchById($this->userId);
             }
         }

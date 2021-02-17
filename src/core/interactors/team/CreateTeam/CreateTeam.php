@@ -6,6 +6,7 @@ namespace DrlArchive\core\interactors\team\CreateTeam;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
@@ -13,25 +14,18 @@ use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
+/**
+ * Class CreateTeam
+ * @package DrlArchive\core\interactors\team\CreateTeam
+ * @property CreateTeamRequest $request
+ */
 class CreateTeam extends Interactor
 {
 
-    /**
-     * @var TeamRepositoryInterface
-     */
-    private $teamRepository;
-    /**
-     * @var DeaneryRepositoryInterface
-     */
-    private $deaneryRepository;
-    /**
-     * @var TransactionManagerInterface
-     */
-    private $transactionManager;
-    /**
-     * @var TeamEntity
-     */
-    private $teamEntity;
+    private TeamRepositoryInterface $teamRepository;
+    private DeaneryRepositoryInterface $deaneryRepository;
+    private TransactionManagerInterface $transactionManager;
+    private TeamEntity $teamEntity;
 
     /**
      * @param TeamRepositoryInterface $teamRepository
@@ -40,7 +34,6 @@ class CreateTeam extends Interactor
         TeamRepositoryInterface $teamRepository
     ): void {
         $this->teamRepository = $teamRepository;
-
     }
 
     /**
@@ -61,7 +54,9 @@ class CreateTeam extends Interactor
         $this->transactionManager = $transactionManager;
     }
 
-
+    /**
+     * @throws AccessDeniedException
+     */
     public function execute(): void
     {
         $this->checkUserIsAuthorised(
@@ -96,8 +91,7 @@ class CreateTeam extends Interactor
 
     private function writeToDatabase(): void
     {
-        $this->teamEntity = $this->teamRepository
-            ->insertTeam($this->teamEntity);
+        $this->teamRepository->insertTeam($this->teamEntity);
     }
 
     private function createResponse(): void

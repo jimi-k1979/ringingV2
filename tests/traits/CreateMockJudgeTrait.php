@@ -6,15 +6,16 @@ namespace DrlArchive\traits;
 
 
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\TestConstants;
 
 trait CreateMockJudgeTrait
 {
     private function createMockJudge(): JudgeEntity
     {
         $entity = new JudgeEntity();
-        $entity->setId(4321);
-        $entity->setFirstName('Test');
-        $entity->setLastName('Judge');
+        $entity->setId(TestConstants::TEST_JUDGE_ID);
+        $entity->setFirstName(TestConstants::TEST_JUDGE_FIRST_NAME);
+        $entity->setLastName(TestConstants::TEST_JUDGE_LAST_NAME);
 
         return $entity;
     }

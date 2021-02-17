@@ -20,18 +20,9 @@ use Exception;
 class FetchDrlCompetitionById extends Interactor
 {
 
-    /**
-     * @var CompetitionRepositoryInterface
-     */
-    private $competitionRepository;
-    /**
-     * @var LocationRepositoryInterface
-     */
-    private $locationRepository;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $competition;
+    private CompetitionRepositoryInterface $competitionRepository;
+    private LocationRepositoryInterface $locationRepository;
+    private DrlCompetitionEntity $competition;
 
     public function setCompetitionRepository(
         CompetitionRepositoryInterface $repository

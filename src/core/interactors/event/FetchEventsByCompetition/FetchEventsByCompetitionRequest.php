@@ -12,7 +12,7 @@ class FetchEventsByCompetitionRequest extends Request
     public const COMPETITION_ID = 'competitionId';
     public const COMPETITION_TYPE = 'competitionType';
 
-    protected $schema = [
+    protected array $schema = [
         self::COMPETITION_ID => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_REQUIRED => true,
@@ -44,6 +44,5 @@ class FetchEventsByCompetitionRequest extends Request
     {
         $this->updateModel(self::COMPETITION_TYPE, $input);
     }
-
 
 }

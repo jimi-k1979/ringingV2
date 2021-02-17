@@ -7,6 +7,7 @@ namespace DrlArchive\traits;
 
 use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\TestConstants;
 
 trait CreateMockDrlResultTrait
 {
@@ -15,17 +16,17 @@ trait CreateMockDrlResultTrait
     public function createMockDrlResult(): DrlResultEntity
     {
         $team = new TeamEntity();
-        $team->setId(1);
-        $team->setName('First Place');
+        $team->setId(TestConstants::TEST_TEAM_ID);
+        $team->setName(TestConstants::TEST_TEAM_NAME);
 
         $entity = new DrlResultEntity();
-        $entity->setId(123);
-        $entity->setPosition(1);
-        $entity->setFaults(10.25);
-        $entity->setPealNumber(1);
+        $entity->setId(TestConstants::TEST_RESULT_ID);
+        $entity->setPosition(TestConstants::TEST_RESULT_POSITION);
+        $entity->setFaults(TestConstants::TEST_RESULT_FAULTS);
+        $entity->setPealNumber(TestConstants::TEST_RESULT_PEAL_NUMBER);
         $entity->setTeam($team);
         $entity->setEvent($this->createMockDrlEvent());
-        $entity->setPoints(10);
+        $entity->setPoints(TestConstants::TEST_RESULT_POINTS);
 
         return $entity;
     }

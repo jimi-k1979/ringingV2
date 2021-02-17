@@ -7,6 +7,7 @@ namespace DrlArchive\core\interfaces\repositories;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\OtherCompetitionEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
 interface CompetitionRepositoryInterface
 {
@@ -17,39 +18,45 @@ interface CompetitionRepositoryInterface
 
     /**
      * @param DrlCompetitionEntity $entity
-     * @return DrlCompetitionEntity
+     * @return void
+     * @throws CleanArchitectureException
      */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity;
+    ): void;
 
     /**
      * @param int $id
      * @return DrlCompetitionEntity
+     * @throws CleanArchitectureException
      */
     public function selectDrlCompetition(int $id): DrlCompetitionEntity;
 
     /**
      * @param string $string
      * @return DrlCompetitionEntity[]
+     * @throws CleanArchitectureException
      */
     public function fuzzySearchDrlCompetitions(string $string): array;
 
     /**
      * @param int $locationId
      * @return DrlCompetitionEntity[]
+     * @throws CleanArchitectureException
      */
     public function fetchDrlCompetitionByLocationId(int $locationId): array;
 
     /**
      * @param string $search
      * @return AbstractCompetitionEntity[]
+     * @throws CleanArchitectureException
      */
     public function fuzzySearchAllCompetitions(string $search): array;
 
     /**
      * @param string $competitionName
      * @return DrlCompetitionEntity
+     * @throws CleanArchitectureException
      */
     public function fetchDrlCompetitionByName(
         string $competitionName
@@ -58,6 +65,7 @@ interface CompetitionRepositoryInterface
     /**
      * @param string $search
      * @return OtherCompetitionEntity[]
+     * @throws CleanArchitectureException
      */
     public function fuzzySearchOtherCompetitions(string $search): array;
 }

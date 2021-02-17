@@ -10,76 +10,35 @@ use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionSpy implements CompetitionRepositoryInterface
 {
     use CreateMockDrlCompetitionTrait;
 
-    /**
-     * @var bool
-     */
-    private $throwException = false;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $insertDrlCompetitionValue;
-    /**
-     * @var bool
-     */
-    private $insertDrlCompetitionCalled = false;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $selectDrlCompetitionValue;
-    /**
-     * @var bool
-     */
-    private $selectDrlCompetitionCalled = false;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchDrlCompetitionCalled = false;
+    private bool $throwException = false;
+    private int $insertDrlCompetitionValue = TestConstants::TEST_DRL_COMPETITION_ID;
+    private bool $insertDrlCompetitionCalled = false;
+    private DrlCompetitionEntity $selectDrlCompetitionValue;
+    private bool $selectDrlCompetitionCalled = false;
+    private bool $fuzzySearchDrlCompetitionCalled = false;
     /**
      * @var DrlCompetitionEntity[]
      */
-    private $fuzzySearchDrlCompetitionValue;
-    /**
-     * @var bool
-     */
-    private $fetchDrlCompetitionByLocationCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchDrlCompetitionByLocationCalledThrowsException = false;
-    /**
-     * @var array
-     */
-    private $fetchDrlCompetitionByLocationCalledValue = [];
-    /**
-     * @var bool
-     */
-    private $fuzzySearchAllCompetitionsCalled = false;
-    /**
-     * @var bool
-     */
-    private $fuzzySearchAllCompetitionsThrowsException = false;
+    private array $fuzzySearchDrlCompetitionValue;
+    private bool $fetchDrlCompetitionByLocationCalled = false;
+    private bool $fetchDrlCompetitionByLocationCalledThrowsException = false;
+    private array $fetchDrlCompetitionByLocationCalledValue = [];
+    private bool $fuzzySearchAllCompetitionsCalled = false;
+    private bool $fuzzySearchAllCompetitionsThrowsException = false;
     /**
      * @var AbstractCompetitionEntity[]
      */
-    private $fuzzySearchAllCompetitionsValue = [];
-    /**
-     * @var bool
-     */
-    private $fetchDrlCompetitionByNameCalled = false;
-    /**
-     * @var bool
-     */
-    private $fetchDrlCompetitionByNameThrowsException = false;
-    /**
-     * @var DrlCompetitionEntity
-     */
-    private $fetchDrlCompetitionByNameValue;
+    private array $fuzzySearchAllCompetitionsValue = [];
+    private bool $fetchDrlCompetitionByNameCalled = false;
+    private bool $fetchDrlCompetitionByNameThrowsException = false;
+    private DrlCompetitionEntity $fetchDrlCompetitionByNameValue;
 
 
     public function setRepositoryThrowsException(): void
@@ -89,12 +48,12 @@ class CompetitionSpy implements CompetitionRepositoryInterface
 
     /**
      * @param DrlCompetitionEntity $entity
-     * @return DrlCompetitionEntity
+     * @return void
      * @throws GeneralRepositoryErrorException
      */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity {
+    ): void {
         $this->insertDrlCompetitionCalled = true;
         if ($this->throwException) {
             throw new GeneralRepositoryErrorException(
@@ -102,17 +61,15 @@ class CompetitionSpy implements CompetitionRepositoryInterface
                 CompetitionRepositoryInterface::NO_ROWS_CREATED_EXCEPTION
             );
         }
-        return $this->insertDrlCompetitionValue ??
-            $this->createMockDrlCompetition();
+        $entity->setId($this->insertDrlCompetitionValue);
     }
 
     /**
-     * @param DrlCompetitionEntity $entity
+     * @param int $value
      */
-    public function setInsertDrlCompetitionValue(
-        DrlCompetitionEntity $entity
-    ): void {
-        $this->insertDrlCompetitionValue = $entity;
+    public function setInsertDrlCompetitionValue(int $value): void
+    {
+        $this->insertDrlCompetitionValue = $value;
     }
 
     /**

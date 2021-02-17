@@ -4,36 +4,17 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
-use DrlArchive\core\entities\TeamEntity;
-
 abstract class AbstractResultEntity extends Entity
 {
     public const RESULT_TYPE_OTHER = 0;
     public const RESULT_TYPE_DRL = 1;
     public const RESULT_TYPE_LADDER = 2;
 
-    /**
-     * @var int
-     */
-    private $position;
-    /**
-     * @var null|int
-     */
-    private $pealNumber;
-    /**
-     * @var float
-     */
-    private $faults;
-    /**
-     * @var TeamEntity
-     */
-    private $team;
-    /**
-     * @var AbstractEventEntity
-     */
-    private $event;
+    private int $position;
+    private ?int $pealNumber = null;
+    private float $faults;
+    private TeamEntity $team;
+    private AbstractEventEntity $event;
 
     /**
      * @return int

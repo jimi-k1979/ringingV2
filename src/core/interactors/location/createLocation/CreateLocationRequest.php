@@ -13,7 +13,7 @@ class CreateLocationRequest extends Request
     public const DEDICATION = 'dedication';
     public const TENOR_WEIGHT = 'tenorWeight';
 
-    protected $schema = [
+    protected array $schema = [
         self::LOCATION_NAME => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

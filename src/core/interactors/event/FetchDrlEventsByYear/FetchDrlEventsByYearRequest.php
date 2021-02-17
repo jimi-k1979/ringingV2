@@ -11,7 +11,7 @@ class FetchDrlEventsByYearRequest extends Request
 {
     public const YEAR = 'year';
 
-    protected $schema = [
+    protected array $schema = [
         self::YEAR => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

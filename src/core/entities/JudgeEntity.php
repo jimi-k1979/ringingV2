@@ -6,18 +6,9 @@ namespace DrlArchive\core\entities;
 
 class JudgeEntity extends Entity
 {
-    /**
-     * @var string
-     */
-    private $firstName;
-    /**
-     * @var string
-     */
-    private $lastName;
-    /**
-     * @var null|RingerEntity
-     */
-    private $ringer;
+    private string $firstName;
+    private string $lastName;
+    private ?RingerEntity $ringer;
 
     /**
      * @return string

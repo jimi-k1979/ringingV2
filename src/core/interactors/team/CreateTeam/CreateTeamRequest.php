@@ -11,7 +11,7 @@ class CreateTeamRequest extends Request
     public const NAME = 'name';
     public const DEANERY = 'deanery';
 
-    protected $schema = [
+    protected array $schema = [
         self::NAME => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

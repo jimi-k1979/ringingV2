@@ -6,10 +6,7 @@ namespace DrlArchive\core\entities;
 
 class DrlResultEntity extends AbstractResultEntity
 {
-    /**
-     * @var null|int
-     */
-    private $points;
+    private ?int $points;
 
     /**
      * @return int|null

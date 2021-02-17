@@ -9,6 +9,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
 class EventSpy implements EventRepositoryInterface
@@ -16,9 +17,8 @@ class EventSpy implements EventRepositoryInterface
     use CreateMockDrlEventTrait;
 
     private bool $insertEventCalled = false;
-    private int $insertDrlEventIdValue = 0;
+    private int $insertDrlEventIdValue = TestConstants::TEST_EVENT_ID;
     private bool $insertDrlEventThrowsException = false;
-    private ?DrlEventEntity $drlEventValue;
     private bool $fetchDrlEventCalled = false;
     private bool $fetchDrlEventThrowsException = false;
     private DrlEventEntity $fetchDrlEventValue;
@@ -79,15 +79,7 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->insertDrlEventIdValue = $insertDrlEventIdValue;
     }
-
-    /**
-     * @param DrlEventEntity|null $drlEventValue
-     */
-    public function setDrlEventValue(?DrlEventEntity $drlEventValue): void
-    {
-        $this->drlEventValue = $drlEventValue;
-    }
-
+    
     public function setInsertDrlEventThrowsException(): void
     {
         $this->insertDrlEventThrowsException = true;
@@ -136,8 +128,7 @@ class EventSpy implements EventRepositoryInterface
     }
 
     /**
-     * @param int $competitionId
-     * @return DrlEventEntity[]
+     * @inheritDoc
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {

@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventAndResults;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResults;
-use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
@@ -18,12 +16,13 @@ use DrlArchive\mocks\JudgeDummy;
 use DrlArchive\mocks\JudgeSpy;
 use DrlArchive\mocks\LocationDummy;
 use DrlArchive\mocks\LocationSpy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class FetchDrlEventAndResultsTest extends TestCase
@@ -64,7 +63,7 @@ class FetchDrlEventAndResultsTest extends TestCase
         $useCase = new FetchDrlEventAndResults();
 
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -151,11 +150,11 @@ class FetchDrlEventAndResultsTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedResponse = [
             'event' => [
-                'year' => '1970',
-                'competition' => 'Test competition',
-                'singleTower' => false,
-                'location' => 'Test tower',
-                'unusualTower' => false,
+                'year' => TestConstants::TEST_EVENT_YEAR,
+                'competition' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'singleTower' => TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION,
+                'location' => TestConstants::TEST_LOCATION_NAME,
+                'unusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
             ],
             'results' => [
                 [
@@ -185,7 +184,7 @@ class FetchDrlEventAndResultsTest extends TestCase
             ],
             'judges' => [
                 [
-                    'name' => 'Test Judge',
+                    'name' => TestConstants::TEST_JUDGE_FIRST_NAME . ' ' . TestConstants::TEST_JUDGE_LAST_NAME,
                 ],
             ],
         ];

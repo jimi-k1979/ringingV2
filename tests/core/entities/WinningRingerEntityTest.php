@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
-use DrlArchive\core\entities\RingerEntity;
-use DrlArchive\core\entities\WinningRingerEntity;
 use PHPUnit\Framework\TestCase;
 
 class WinningRingerEntityTest extends TestCase

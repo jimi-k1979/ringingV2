@@ -6,18 +6,9 @@ namespace DrlArchive\core\entities;
 
 class WinningRingerEntity extends Entity
 {
-    /**
-     * @var string
-     */
-    private $bell;
-    /**
-     * @var RingerEntity
-     */
-    private $ringer;
-    /**
-     * @var AbstractEventEntity
-     */
-    private $event;
+    private string $bell;
+    private RingerEntity $ringer;
+    private AbstractEventEntity $event;
 
     /**
      * @return string

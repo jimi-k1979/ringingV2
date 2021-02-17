@@ -19,14 +19,11 @@ use Exception;
 class FetchDrlEventsByYear extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
+    private EventRepositoryInterface $eventRepository;
     /**
      * @var DrlEventEntity[]
      */
-    private $data;
+    private array $data;
 
     public function setEventRepository(EventRepositoryInterface $repository): void
     {

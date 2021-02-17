@@ -21,14 +21,11 @@ use Exception;
 class FetchEventsByCompetition extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
+    private EventRepositoryInterface $eventRepository;
     /**
      * @var AbstractEventEntity[]
      */
-    private $eventList;
+    private array $eventList;
 
     public function setEventRepository(EventRepositoryInterface $repository)
     {

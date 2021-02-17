@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class RingerEntityTest extends TestCase
@@ -21,9 +20,9 @@ class RingerEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $ringer = new RingerEntity();
-        $ringer->setId(123);
+        $ringer->setId(TestConstants::TEST_RINGER_ID);
         $this->assertEquals(
-            123,
+            TestConstants::TEST_RINGER_ID,
             $ringer->getId()
         );
     }
@@ -31,9 +30,9 @@ class RingerEntityTest extends TestCase
     public function testFirstNameProperty(): void
     {
         $ringer = new RingerEntity();
-        $ringer->setFirstName('Test');
+        $ringer->setFirstName(TestConstants::TEST_RINGER_FIRST_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_RINGER_FIRST_NAME,
             $ringer->getFirstName()
         );
     }
@@ -41,9 +40,9 @@ class RingerEntityTest extends TestCase
     public function testLastNameProperty(): void
     {
         $ringer = new RingerEntity();
-        $ringer->setLastName('Test');
+        $ringer->setLastName(TestConstants::TEST_RINGER_LAST_NAME);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_RINGER_LAST_NAME,
             $ringer->getLastName()
         );
     }
@@ -51,9 +50,9 @@ class RingerEntityTest extends TestCase
     public function testNotes(): void
     {
         $ringer = new RingerEntity();
-        $ringer->setNotes('Test');
+        $ringer->setNotes(TestConstants::TEST_RINGER_NOTES);
         $this->assertEquals(
-            'Test',
+            TestConstants::TEST_RINGER_NOTES,
             $ringer->getNotes()
         );
     }
@@ -61,10 +60,10 @@ class RingerEntityTest extends TestCase
     public function testGetFullName(): void
     {
         $ringer = new RingerEntity();
-        $ringer->setFirstName('Test');
-        $ringer->setLastName('Ringer');
+        $ringer->setFirstName(TestConstants::TEST_RINGER_FIRST_NAME);
+        $ringer->setLastName(TestConstants::TEST_RINGER_LAST_NAME);
         $this->assertEquals(
-            'Test Ringer',
+            TestConstants::TEST_RINGER_FIRST_NAME . ' ' . TestConstants::TEST_RINGER_LAST_NAME,
             $ringer->getFullName()
         );
     }

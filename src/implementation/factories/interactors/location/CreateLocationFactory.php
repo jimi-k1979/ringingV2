@@ -11,9 +11,9 @@ use DrlArchive\core\interactors\location\createLocation\CreateLocation;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
-use DrlArchive\implementation\factories\repositories\DeaneryRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\LocationRepositoryFactory;
+use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\DeaneryDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\LocationDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -35,13 +35,13 @@ class CreateLocationFactory implements InteractorFactoryInterface
             (new SecurityRepositoryFactory())->create()
         );
         $useCase->setDeaneryRepository(
-            (new DeaneryRepositoryFactory())->create()
+            (new DeaneryDoctrineFactory())->create()
         );
         $useCase->setLocationRepository(
-            (new LocationRepositoryFactory())->create()
+            (new LocationDoctrineFactory())->create()
         );
         $useCase->setTransactionManager(
-            (new TransactionManagerFactory())->create()
+            (new DoctrineTransactionManagerFactory())->create()
         );
 
         return $useCase;

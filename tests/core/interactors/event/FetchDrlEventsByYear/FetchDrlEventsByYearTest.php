@@ -5,15 +5,14 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventsByYear;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYear;
-use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -48,12 +47,12 @@ class FetchDrlEventsByYearTest extends TestCase
     {
         $request = new FetchDrlEventsByYearRequest(
             [
-                FetchDrlEventsByYearRequest::YEAR => '1970',
+                FetchDrlEventsByYearRequest::YEAR => TestConstants::TEST_EVENT_YEAR,
             ]
         );
         $useCase = new FetchDrlEventsByYear();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -97,8 +96,8 @@ class FetchDrlEventsByYearTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedData = [
             [
-                'id' => 1234,
-                'text' => 'Test competition',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'text' => TestConstants::TEST_DRL_COMPETITION_NAME,
             ],
         ];
         $this->assertEquals(

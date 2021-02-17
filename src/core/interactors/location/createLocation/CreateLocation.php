@@ -5,7 +5,6 @@ namespace DrlArchive\core\interactors\location\createLocation;
 
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
@@ -14,25 +13,18 @@ use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
+/**
+ * Class CreateLocation
+ * @package DrlArchive\core\interactors\location\createLocation
+ * @property CreateLocationRequest $request
+ */
 class CreateLocation extends Interactor
 {
 
-    /**
-     * @var DeaneryRepositoryInterface
-     */
-    private $deaneryRepository;
-    /**
-     * @var LocationRepositoryInterface
-     */
-    private $locationRepository;
-    /**
-     * @var TransactionManagerInterface
-     */
-    private $transactionManager;
-    /**
-     * @var LocationEntity
-     */
-    private $locationEntity;
+    private DeaneryRepositoryInterface $deaneryRepository;
+    private LocationRepositoryInterface $locationRepository;
+    private TransactionManagerInterface $transactionManager;
+    private LocationEntity $locationEntity;
 
     /**
      * @param DeaneryRepositoryInterface $deaneryRepository
@@ -99,7 +91,7 @@ class CreateLocation extends Interactor
 
     private function writeToDatabase(): void
     {
-        $this->locationEntity = $this->locationRepository->insertLocation(
+        $this->locationRepository->insertLocation(
             $this->locationEntity
         );
     }

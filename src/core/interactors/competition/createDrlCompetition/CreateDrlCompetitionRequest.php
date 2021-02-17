@@ -11,7 +11,7 @@ class CreateDrlCompetitionRequest extends Request
     public const COMPETITION_NAME = 'name';
     public const IS_SINGLE_TOWER = 'singleTower';
 
-    protected $schema = [
+    protected array $schema = [
         self::COMPETITION_NAME => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,

@@ -8,30 +8,18 @@ use DateTime;
 
 class ExtendedRingEntity extends Entity
 {
-    /**
-     * @var LocationEntity
-     */
-    private $location;
-    /**
-     * @var DateTime
-     */
-    private $date;
-    /**
-     * @var string
-     */
-    private $footnote;
-    /**
-     * @var string
-     */
-    private $name;
+    private LocationEntity $location;
+    private DateTime $date;
+    private string $footnote;
+    private string $name;
     /**
      * @var ExtendedRingPartEntity[]
      */
-    private $parts = [];
+    private array $parts = [];
     /**
      * @var null|JudgeEntity[]
      */
-    private $judges;
+    private ?array $judges;
 
     /**
      * @return LocationEntity

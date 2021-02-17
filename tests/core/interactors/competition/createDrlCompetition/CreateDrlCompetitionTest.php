@@ -12,12 +12,13 @@ use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\mocks\TransactionManagerDummy;
 use DrlArchive\mocks\TransactionManagerSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class CreateDrlCompetitionTest extends TestCase
@@ -39,14 +40,14 @@ class CreateDrlCompetitionTest extends TestCase
     {
         $request = new CreateDrlCompetitionRequest(
             [
-                CreateDrlCompetitionRequest::COMPETITION_NAME => 'Test competition',
-                CreateDrlCompetitionRequest::IS_SINGLE_TOWER => false,
+                CreateDrlCompetitionRequest::COMPETITION_NAME => TestConstants::TEST_DRL_COMPETITION_NAME,
+                CreateDrlCompetitionRequest::IS_SINGLE_TOWER => TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION,
             ]
         );
 
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
@@ -161,9 +162,9 @@ class CreateDrlCompetitionTest extends TestCase
 
         $this->assertEquals(
             [
-                'id' => 999,
-                'name' => 'Test competition',
-                'singleTower' => false,
+                'id' => TestConstants::TEST_DRL_COMPETITION_ID,
+                'name' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                'singleTower' => TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION,
             ],
             $response->getData()
         );

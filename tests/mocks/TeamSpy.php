@@ -6,16 +6,16 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamSpy implements TeamRepositoryInterface
 {
     use CreateMockTeamTrait;
 
-    private int $insertTeamIdValue;
+    private int $insertTeamIdValue = TestConstants::TEST_TEAM_ID;
     private bool $insertCalled = false;
     private TeamEntity $selectTeamValue;
     private bool $selectCalled = false;
@@ -90,13 +90,15 @@ class TeamSpy implements TeamRepositoryInterface
 
     /**
      * @param TeamEntity $teamEntity
-     * @return TeamEntity
+     * @return void
      */
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): void
     {
         $this->updateCalled = true;
 
-        return $this->updateTeamValue ?? $this->createMockTeam();
+        if (isset($this->updateTeamValue)) {
+            $teamEntity = $this->updateTeamValue;
+        }
     }
 
     /**

@@ -19,14 +19,11 @@ use Exception;
 class DrlCompetitionFuzzySearch extends Interactor
 {
 
-    /**
-     * @var CompetitionRepositoryInterface
-     */
-    private $competitionRepository;
+    private CompetitionRepositoryInterface $competitionRepository;
     /**
      * @var DrlCompetitionEntity[]
      */
-    private $foundCompetitions;
+    private array $foundCompetitions;
 
     /**
      * @param CompetitionRepositoryInterface $repository

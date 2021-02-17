@@ -13,24 +13,20 @@ use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use Exception;
 
+/**
+ * Class ReadDrlEvent
+ * @package DrlArchive\core\interactors\event\readDrlEvent
+ * @property ReadDrlEventRequest $request
+ */
 class ReadDrlEvent extends Interactor
 {
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
-    /**
-     * @var ResultRepositoryInterface
-     */
-    private $resultRepository;
-    /**
-     * @var DrlEventEntity
-     */
-    private $eventEntity;
+    private EventRepositoryInterface $eventRepository;
+    private ResultRepositoryInterface $resultRepository;
+    private DrlEventEntity $eventEntity;
     /**
      * @var DrlResultEntity[]
      */
-    private $resultsArray;
+    private array $resultsArray;
 
     /**
      * @param EventRepositoryInterface $eventRepository
@@ -128,7 +124,7 @@ class ReadDrlEvent extends Interactor
      */
     private function putEventIntoResponseArray(): array
     {
-        $responseArray = [
+        return [
             'event' => [
                 'id' => $this->eventEntity->getId(),
                 'competition' =>
@@ -139,7 +135,6 @@ class ReadDrlEvent extends Interactor
                 'results' => [],
             ],
         ];
-        return $responseArray;
     }
 
 

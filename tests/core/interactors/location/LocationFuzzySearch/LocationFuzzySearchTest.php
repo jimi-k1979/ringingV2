@@ -7,16 +7,15 @@ namespace DrlArchive\core\interactors\location\LocationFuzzySearch;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearch;
-use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LocationDummy;
 use DrlArchive\mocks\LocationSpy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockLocationTrait;
 
@@ -60,7 +59,7 @@ class LocationFuzzySearchTest extends TestCase
 
         $useCase = new LocationFuzzySearch();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setLocationRepository(new LocationDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
@@ -119,8 +118,8 @@ class LocationFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 999,
-                'name' => 'Test tower',
+                'id' => TestConstants::TEST_LOCATION_ID,
+                'name' => TestConstants::TEST_LOCATION_NAME,
             ],
             [
                 'id' => 333,
@@ -153,8 +152,8 @@ class LocationFuzzySearchTest extends TestCase
         $this->assertEquals(
             [
                 [
-                    'id' => 999,
-                    'name' => 'Test tower',
+                    'id' => TestConstants::TEST_LOCATION_ID,
+                    'name' => TestConstants::TEST_LOCATION_NAME,
                 ],
             ],
             $response->getData()

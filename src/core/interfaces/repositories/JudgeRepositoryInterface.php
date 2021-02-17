@@ -7,6 +7,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 
 interface JudgeRepositoryInterface
 {
@@ -18,6 +19,7 @@ interface JudgeRepositoryInterface
     /**
      * @param DrlEventEntity $entity
      * @return JudgeEntity[]
+     * @throws CleanArchitectureException
      */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array;
 

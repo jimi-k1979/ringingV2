@@ -16,21 +16,17 @@ use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
+/**
+ * Class CreateDrlEvent
+ * @package DrlArchive\core\interactors\event\createDrlEvent
+ * @property CreateDrlEventRequest $request
+ */
 class CreateDrlEvent extends Interactor
 {
 
-    /**
-     * @var EventRepositoryInterface
-     */
-    private $eventRepository;
-    /**
-     * @var TransactionManagerInterface
-     */
-    private $transactionManager;
-    /**
-     * @var DrlEventEntity
-     */
-    private $eventEntity;
+    private EventRepositoryInterface $eventRepository;
+    private TransactionManagerInterface $transactionManager;
+    private DrlEventEntity $eventEntity;
 
     /**
      * @param EventRepositoryInterface $eventRepository
@@ -97,7 +93,7 @@ class CreateDrlEvent extends Interactor
 
     private function insertNewEvent(): void
     {
-        $this->eventEntity = $this->eventRepository->insertDrlEvent(
+        $this->eventRepository->insertDrlEvent(
             $this->eventEntity
         );
     }

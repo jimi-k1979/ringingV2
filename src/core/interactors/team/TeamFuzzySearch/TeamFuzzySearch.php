@@ -11,17 +11,19 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use Exception;
 
+/**
+ * Class TeamFuzzySearch
+ * @package DrlArchive\core\interactors\team\TeamFuzzySearch
+ * @property TeamFuzzySearchRequest $request
+ */
 class TeamFuzzySearch extends Interactor
 {
 
-    /**
-     * @var TeamRepositoryInterface
-     */
-    private $teamRepository;
+    private TeamRepositoryInterface $teamRepository;
     /**
      * @var TeamEntity[]
      */
-    private $teams;
+    private array $teams;
 
     /**
      * @param TeamRepositoryInterface $repository

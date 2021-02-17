@@ -9,7 +9,7 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LocationDummy;
 use DrlArchive\mocks\LocationSpy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -46,7 +46,7 @@ class FetchLocationByNameTest extends TestCase
 
         $useCase = new FetchLocationByName();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setLocationRepository(new LocationDummy());
@@ -96,7 +96,7 @@ class FetchLocationByNameTest extends TestCase
         );
         $this->assertEquals(
             [
-                'id' => TestConstants::TEST_LOCATION_ID,
+                'locationId' => TestConstants::TEST_LOCATION_ID,
                 'name' => TestConstants::TEST_LOCATION_NAME,
                 'dedication' => TestConstants::TEST_LOCATION_DEDICATION,
                 'tenorWeight' => TestConstants::TEST_LOCATION_WEIGHT,

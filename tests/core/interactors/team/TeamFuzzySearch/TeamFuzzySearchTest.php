@@ -9,12 +9,13 @@ use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
 use DrlArchive\mocks\TeamDummy;
 use DrlArchive\mocks\TeamSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockTeamTrait;
 
@@ -59,7 +60,7 @@ class TeamFuzzySearchTest extends TestCase
 
         $useCase = new TeamFuzzySearch();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setTeamRepository(new TeamDummy());
@@ -122,8 +123,8 @@ class TeamFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 123,
-                'name' => 'Test team',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
             ],
             [
                 'id' => 9999,
@@ -157,8 +158,8 @@ class TeamFuzzySearchTest extends TestCase
 
         $expectedResponse = [
             [
-                'id' => 123,
-                'name' => 'Test team',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
             ],
         ];
 

@@ -10,6 +10,7 @@ use DrlArchive\core\entities\DeaneryEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryInsertFailedException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
@@ -24,15 +25,47 @@ class TeamDoctrine extends DoctrineRepository implements
     private const FIELD_DEANERY_NAME = 'd.deaneryName';
     private const FIELD_DEANERY_REGION = 'd.northSouth';
 
+    /**
+     * @inheritDoc
+     */
     public function insertTeam(TeamEntity $teamEntity): void
     {
-        // TODO: Implement insertTeam() method.
+        try {
+            $query = $this->database->createQueryBuilder();
+
+            $query->insert('team')
+                ->values(
+                    [
+                        'teamName' => ':name',
+                        'deaneryID' => ':deaneryId',
+                    ]
+                )
+                ->setParameters(
+                    [
+                        'name' => $teamEntity->getName(),
+                        'deaneryId' => $teamEntity->getDeanery()->getId()
+                    ]
+                );
+            $rowCount = $query->execute();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'Team insert failed - connection error',
+                TeamRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+            );
+        }
+
+        if ($rowCount === 0) {
+            throw new RepositoryInsertFailedException(
+                'Team insert failed',
+                TeamRepositoryInterface::UNABLE_TO_INSERT_EXCEPTION
+            );
+        }
+
+        $teamEntity->setId((int)$this->database->getLastInsertId());
     }
 
     /**
-     * @param int $teamId
-     * @return TeamEntity
-     * @throws CleanArchitectureException
+     * @inheritDoc
      */
     public function selectTeam(int $teamId): TeamEntity
     {
@@ -63,14 +96,33 @@ class TeamDoctrine extends DoctrineRepository implements
         return $this->generateTeamEntity($result);
     }
 
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity
+    /**
+     * @inheritDoc
+     */
+    public function updateTeam(TeamEntity $teamEntity): void
     {
-        // TODO: Implement updateTeam() method.
-    }
+        try {
+            $query = $this->database->createQueryBuilder();
 
-    public function deleteTeam(TeamEntity $teamEntity): bool
-    {
-        // TODO: Implement deleteTeam() method.
+            $query->update('team', 't')
+                ->set(self::FIELD_TEAM_NAME, ':name')
+                ->set(self::FIELD_DEANERY_ID, ':deaneryId')
+                ->where(
+                    $query->expr()->eq(self::FIELD_TEAM_ID, ':id')
+                )
+                ->setParameters(
+                    [
+                        'name' => $teamEntity->getName(),
+                        'deaneryId' => $teamEntity->getDeanery()->getId()
+                    ]
+                );
+            $query->execute();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'Team not updated - connection error',
+                TeamRepositoryInterface::NO_ROWS_UPDATED
+            );
+        }
     }
 
     /**
@@ -96,12 +148,7 @@ class TeamDoctrine extends DoctrineRepository implements
             );
         }
 
-        $returnArray = [];
-        foreach ($results as $result) {
-            $returnArray[] = $this->generateTeamEntity($result);
-        }
-
-        return $returnArray;
+        return $this->generateTeamEntityArray($results);
     }
 
     private function baseTeamSelectQueryBuilder(): QueryBuilder
@@ -127,6 +174,11 @@ class TeamDoctrine extends DoctrineRepository implements
         return $queryBuilder;
     }
 
+    /**
+     * @param array $result
+     * @return TeamEntity
+     * @throws CleanArchitectureException
+     */
     private function generateTeamEntity(array $result): TeamEntity
     {
         $entity = new TeamEntity();
@@ -184,5 +236,20 @@ class TeamDoctrine extends DoctrineRepository implements
         }
 
         return $this->generateTeamEntity($result);
+    }
+
+    /**
+     * @param array $results
+     * @return TeamEntity[]
+     * @throws CleanArchitectureException
+     */
+    private function generateTeamEntityArray(array $results): array
+    {
+        $returnArray = [];
+        foreach ($results as $result) {
+            $returnArray[] = $this->generateTeamEntity($result);
+        }
+
+        return $returnArray;
     }
 }

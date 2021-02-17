@@ -10,8 +10,8 @@ use DrlArchive\core\interactors\competition\createDrlCompetition\CreateDrlCompet
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
-use DrlArchive\implementation\factories\managers\TransactionManagerFactory;
-use DrlArchive\implementation\factories\repositories\CompetitionRepositoryFactory;
+use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\CompetitionDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
@@ -33,10 +33,10 @@ class CreateDrlCompetitionFactory implements InteractorFactoryInterface
             (new SecurityRepositoryFactory())->create()
         );
         $useCase->setCompetitionRepository(
-            (new CompetitionRepositoryFactory())->create()
+            (new CompetitionDoctrineFactory())->create()
         );
         $useCase->setTransactionManager(
-            (new TransactionManagerFactory())->create()
+            (new DoctrineTransactionManagerFactory())->create()
         );
         return $useCase;
     }

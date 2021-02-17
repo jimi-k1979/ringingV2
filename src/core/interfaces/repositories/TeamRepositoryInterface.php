@@ -14,17 +14,29 @@ interface TeamRepositoryInterface
     public const NO_ROWS_UPDATED = 2203;
     public const NO_ROWS_DELETED = 2204;
 
+    /**
+     * @param TeamEntity $teamEntity
+     * @throws CleanArchitectureException
+     */
     public function insertTeam(TeamEntity $teamEntity): void;
 
+    /**
+     * @param int $teamId
+     * @return TeamEntity
+     * @throws CleanArchitectureException
+     */
     public function selectTeam(int $teamId): TeamEntity;
 
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity;
-
-    public function deleteTeam(TeamEntity $teamEntity): bool;
+    /**
+     * @param TeamEntity $teamEntity
+     * @throws CleanArchitectureException
+     */
+    public function updateTeam(TeamEntity $teamEntity): void;
 
     /**
      * @param string $searchTerm
      * @return TeamEntity[]
+     * @throws CleanArchitectureException
      */
     public function fuzzySearchTeam(string $searchTerm): array;
 

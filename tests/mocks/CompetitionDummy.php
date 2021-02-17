@@ -7,6 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 
 class CompetitionDummy implements CompetitionRepositoryInterface
@@ -15,8 +16,8 @@ class CompetitionDummy implements CompetitionRepositoryInterface
 
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity {
-        return $this->createMockDrlCompetition();
+    ): void {
+        $entity->setId(TestConstants::TEST_DRL_COMPETITION_ID);
     }
 
     public function selectDrlCompetition(int $id): DrlCompetitionEntity

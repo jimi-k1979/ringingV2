@@ -5,12 +5,7 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 
-use DrlArchive\core\entities\AbstractResultEntity;
-use DrlArchive\core\entities\DrlResultEntity;
-use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\AbstractEventEntity;
-use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 
 class DrlResultEntityTest extends TestCase
@@ -31,10 +26,10 @@ class DrlResultEntityTest extends TestCase
     public function testIdProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setId(4);
+        $result->setId(TestConstants::TEST_RESULT_ID);
 
         $this->assertEquals(
-            4,
+            TestConstants::TEST_RESULT_ID,
             $result->getId()
         );
     }
@@ -42,9 +37,9 @@ class DrlResultEntityTest extends TestCase
     public function testPositionProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setPosition(3);
+        $result->setPosition(TestConstants::TEST_RESULT_POSITION);
         $this->assertEquals(
-            3,
+            TestConstants::TEST_RESULT_POSITION,
             $result->getPosition()
         );
     }
@@ -52,9 +47,9 @@ class DrlResultEntityTest extends TestCase
     public function testPealNumberProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setPealNumber(3);
+        $result->setPealNumber(TestConstants::TEST_RESULT_PEAL_NUMBER);
         $this->assertEquals(
-            3,
+            TestConstants::TEST_RESULT_PEAL_NUMBER,
             $result->getPealNumber()
         );
     }
@@ -62,9 +57,9 @@ class DrlResultEntityTest extends TestCase
     public function testFaultsProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setFaults(20.5);
+        $result->setFaults(TestConstants::TEST_RESULT_FAULTS);
         $this->assertEquals(
-            20.5,
+            TestConstants::TEST_RESULT_FAULTS,
             $result->getFaults()
         );
     }
@@ -72,9 +67,9 @@ class DrlResultEntityTest extends TestCase
     public function testPointsProperty(): void
     {
         $result = new DrlResultEntity();
-        $result->setPoints(20);
+        $result->setPoints(TestConstants::TEST_RESULT_POINTS);
         $this->assertEquals(
-            20,
+            TestConstants::TEST_RESULT_POINTS,
             $result->getPoints()
         );
     }
@@ -99,5 +94,3 @@ class DrlResultEntityTest extends TestCase
         );
     }
 }
-
-

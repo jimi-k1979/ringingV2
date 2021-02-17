@@ -5,11 +5,6 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 use DateTime;
-use DrlArchive\core\entities\Entity;
-use DrlArchive\core\entities\ExtendedRingEntity;
-use DrlArchive\core\entities\ExtendedRingPartEntity;
-use DrlArchive\core\entities\JudgeEntity;
-use DrlArchive\core\entities\LocationEntity;
 use PHPUnit\Framework\TestCase;
 
 class ExtendedRingEntityTest extends TestCase

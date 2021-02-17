@@ -5,17 +5,16 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\competition\allCompetitionFuzzySearch;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearch;
-use DrlArchive\core\interactors\competition\allCompetitionFuzzySearch\AllCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
 use DrlArchive\traits\CreateMockOtherCompetitionTrait;
@@ -58,7 +57,7 @@ class AllCompetitionFuzzySearchTest extends TestCase
         );
         $useCase = new AllCompetitionFuzzySearch();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
@@ -110,12 +109,12 @@ class AllCompetitionFuzzySearchTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedData = [
             [
-                'id' => 888,
-                'name' => 'Other competition',
+                'id' => TestConstants::TEST_OTHER_COMPETITION_ID,
+                'name' => TestConstants::TEST_OTHER_COMPETITION_NAME,
             ],
             [
-                'id' => 999,
-                'name' => 'Test competition',
+                'id' => TestConstants::TEST_DRL_COMPETITION_ID,
+                'name' => TestConstants::TEST_DRL_COMPETITION_NAME,
             ],
         ];
 

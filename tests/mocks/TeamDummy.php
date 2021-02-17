@@ -6,8 +6,8 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\TeamEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockTeamTrait;
 
 class TeamDummy implements TeamRepositoryInterface
@@ -16,6 +16,7 @@ class TeamDummy implements TeamRepositoryInterface
 
     public function insertTeam(TeamEntity $teamEntity): void
     {
+        $teamEntity->setId(TestConstants::TEST_TEAM_ID);
     }
 
     public function selectTeam(int $teamId): TeamEntity
@@ -23,9 +24,8 @@ class TeamDummy implements TeamRepositoryInterface
         return $this->createMockTeam();
     }
 
-    public function updateTeam(TeamEntity $teamEntity): TeamEntity
+    public function updateTeam(TeamEntity $teamEntity): void
     {
-        return $this->createMockTeam();
     }
 
     public function deleteTeam(TeamEntity $teamEntity): bool

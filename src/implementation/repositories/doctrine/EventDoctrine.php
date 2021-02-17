@@ -9,7 +9,6 @@ use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\LocationEntity;
-use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryInsertFailedException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
@@ -32,9 +31,7 @@ class EventDoctrine extends DoctrineRepository implements
     private const FIELD_DRL_SINGLE_TOWER = 'dc.isSingleTower';
 
     /**
-     * @param DrlEventEntity $entity
-     * @return void
-     * @throws CleanArchitectureException
+     * @inheritDoc
      */
     public function insertDrlEvent(DrlEventEntity $entity): void
     {
@@ -77,7 +74,6 @@ class EventDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlEvent(int $id): DrlEventEntity
     {
@@ -197,7 +193,6 @@ class EventDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByCompetitionId(int $competitionId): array
     {
@@ -233,7 +228,6 @@ class EventDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByCompetitionAndLocationIds(
         int $competitionId,
@@ -266,7 +260,6 @@ class EventDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlEventsByYear(string $year): array
     {
@@ -288,7 +281,6 @@ class EventDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlEventByYearAndCompetitionName(
         string $year,

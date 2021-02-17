@@ -7,6 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
 class EventDummy implements EventRepositoryInterface
@@ -15,6 +16,7 @@ class EventDummy implements EventRepositoryInterface
 
     public function insertDrlEvent(DrlEventEntity $entity): void
     {
+        $entity->setId(TestConstants::TEST_EVENT_ID);
     }
 
     public function fetchDrlEvent(int $id): DrlEventEntity

@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace DrlArchive\core\entities;
 
-use DrlArchive\core\entities\AbstractCompetitionEntity;
-use DrlArchive\core\entities\DrlCompetitionEntity;
-use DrlArchive\core\entities\LocationEntity;
-use DrlArchive\core\entities\OtherCompetitionEntity;
-use DrlArchive\core\entities\Entity;
 use PHPUnit\Framework\TestCase;
 
 class OtherCompetitionEntityTest extends TestCase

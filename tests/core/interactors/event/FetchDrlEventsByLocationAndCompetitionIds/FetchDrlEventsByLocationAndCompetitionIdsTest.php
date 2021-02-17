@@ -5,17 +5,16 @@ declare(strict_types=1);
 namespace DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIds;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -52,15 +51,15 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
         $request = new FetchDrlEventsByLocationAndCompetitionIdsRequest(
             [
                 FetchDrlEventsByLocationAndCompetitionIdsRequest::COMPETITION_ID =>
-                    111,
+                    TestConstants::TEST_DRL_COMPETITION_ID,
                 FetchDrlEventsByLocationAndCompetitionIdsRequest::LOCATION_ID =>
-                    222,
+                    TestConstants::TEST_LOCATION_ID,
             ]
         );
 
         $useCase = new FetchDrlEventsByLocationAndCompetitionIds();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -109,8 +108,8 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
         $response = $presenterSpy->getResponse();
         $expectedResponse = [
             [
-                'id' => 1234,
-                'text' => '1970',
+                'id' => TestConstants::TEST_EVENT_ID,
+                'text' => TestConstants::TEST_EVENT_YEAR,
             ],
         ];
 

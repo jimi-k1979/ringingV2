@@ -7,14 +7,12 @@ namespace DrlArchive\core\interactors\team\CreateTeam;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
-use DrlArchive\core\interactors\team\CreateTeam\CreateTeam;
-use DrlArchive\core\interactors\team\CreateTeam\CreateTeamRequest;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
 use DrlArchive\mocks\DeaneryDummy;
 use DrlArchive\mocks\DeanerySpy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
-use DrlArchive\mocks\PreseenterDummy;
+use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\SecurityRepositorySpy;
@@ -22,12 +20,12 @@ use DrlArchive\mocks\TeamDummy;
 use DrlArchive\mocks\TeamSpy;
 use DrlArchive\mocks\TransactionManagerDummy;
 use DrlArchive\mocks\TransactionManagerSpy;
+use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockTeamTrait;
 
 class CreateTeamTest extends TestCase
 {
-
     use CreateMockTeamTrait;
 
     public function testInstantiation(): void
@@ -42,13 +40,13 @@ class CreateTeamTest extends TestCase
     {
         $request = new CreateTeamRequest(
             [
-                CreateTeamRequest::NAME => 'Test Team',
-                CreateTeamRequest::DEANERY => 1,
+                CreateTeamRequest::NAME => TestConstants::TEST_TEAM_NAME,
+                CreateTeamRequest::DEANERY => TestConstants::TEST_DEANERY_ID,
             ]
         );
         $useCase = new CreateTeam();
         $useCase->setRequest($request);
-        $useCase->setPresenter(new PreseenterDummy());
+        $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setTeamRepository(new TeamDummy());
@@ -174,9 +172,9 @@ class CreateTeamTest extends TestCase
 
         $this->assertEquals(
             [
-                'id' => 123,
-                'name' => 'Test team',
-                'deanery' => 'Test deanery',
+                'id' => TestConstants::TEST_TEAM_ID,
+                'name' => TestConstants::TEST_TEAM_NAME,
+                'deanery' => TestConstants::TEST_DEANERY_NAME,
             ],
             $response->getData()
         );

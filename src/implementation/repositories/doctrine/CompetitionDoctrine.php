@@ -40,11 +40,10 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function insertDrlCompetition(
         DrlCompetitionEntity $entity
-    ): DrlCompetitionEntity {
+    ): void {
         try {
             $queryBuilder = $this->database->createQueryBuilder();
             $queryBuilder->insert('DRL_competition')
@@ -78,13 +77,10 @@ class CompetitionDoctrine extends DoctrineRepository implements
         }
 
         $entity->setId((int)$this->database->getLastInsertId());
-
-        return $entity;
     }
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function selectDrlCompetition(int $id): DrlCompetitionEntity
     {
@@ -249,7 +245,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlCompetitionByLocationId(int $locationId): array
     {
@@ -286,7 +281,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fuzzySearchAllCompetitions(string $search): array
     {
@@ -298,7 +292,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fuzzySearchDrlCompetitions(string $string): array
     {
@@ -325,7 +318,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fuzzySearchOtherCompetitions(string $search): array
     {
@@ -423,7 +415,6 @@ class CompetitionDoctrine extends DoctrineRepository implements
 
     /**
      * @inheritDoc
-     * @throws CleanArchitectureException
      */
     public function fetchDrlCompetitionByName(
         string $competitionName

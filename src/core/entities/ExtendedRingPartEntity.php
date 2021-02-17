@@ -9,22 +9,10 @@ use DateTime;
 class ExtendedRingPartEntity extends Entity
 {
 
-    /**
-     * @var int
-     */
-    private $numberOfChanges;
-    /**
-     * @var int
-     */
-    private $partNumber;
-    /**
-     * @var DateTime
-     */
-    private $time;
-    /**
-     * @var string
-     */
-    private $name;
+    private int $numberOfChanges;
+    private int $partNumber;
+    private DateTime $time;
+    private string $name;
 
     /**
      * @return int

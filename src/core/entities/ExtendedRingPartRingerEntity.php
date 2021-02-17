@@ -6,22 +6,10 @@ namespace DrlArchive\core\entities;
 
 class ExtendedRingPartRingerEntity extends Entity
 {
-    /**
-     * @var ExtendedRingPartEntity
-     */
-    private $extendedRingPart;
-    /**
-     * @var RingerEntity
-     */
-    private $ringer;
-    /**
-     * @var string
-     */
-    private $bell;
-    /**
-     * @var bool
-     */
-    private $conductor;
+    private ExtendedRingPartEntity $extendedRingPart;
+    private RingerEntity $ringer;
+    private string $bell;
+    private bool $conductor;
 
     /**
      * @return ExtendedRingPartEntity

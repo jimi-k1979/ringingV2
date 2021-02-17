@@ -6,14 +6,8 @@ namespace DrlArchive\core\entities;
 
 class TeamEntity extends Entity
 {
-    /**
-     * @var string
-     */
-    private $name;
-    /**
-     * @var DeaneryEntity
-     */
-    private $deanery;
+    private string $name;
+    private DeaneryEntity $deanery;
 
     /**
      * @return string

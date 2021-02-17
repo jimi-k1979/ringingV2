@@ -12,7 +12,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsRequest extends Request
     public const LOCATION_ID = 'locationId';
     public const COMPETITION_ID = 'competitionId';
 
-    protected $schema = [
+    protected array $schema = [
         self::LOCATION_ID => [
             parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
             parent::OPTION_REQUIRED => true,
@@ -44,6 +44,5 @@ class FetchDrlEventsByLocationAndCompetitionIdsRequest extends Request
     {
         $this->updateModel(self::COMPETITION_ID, $input);
     }
-
 
 }

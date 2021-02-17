@@ -10,18 +10,9 @@ abstract class AbstractCompetitionEntity extends Entity
     public const COMPETITION_TYPE_DRL = 1;
     public const COMPETITION_TYPE_LADDER = 2;
 
-    /**
-     * @var string
-     */
-    protected $name;
-    /**
-     * @var bool
-     */
-    protected $singleTowerCompetition;
-    /**
-     * @var null|LocationEntity
-     */
-    protected $usualLocation = null;
+    protected string $name;
+    protected bool $singleTowerCompetition;
+    protected ?LocationEntity $usualLocation = null;
 
     /**
      * @return string

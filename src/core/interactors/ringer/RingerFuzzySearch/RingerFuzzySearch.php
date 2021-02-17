@@ -11,17 +11,19 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
 use Exception;
 
+/**
+ * Class RingerFuzzySearch
+ * @package DrlArchive\core\interactors\ringer\RingerFuzzySearch
+ * @property RingerFuzzySearchRequest $request
+ */
 class RingerFuzzySearch extends Interactor
 {
 
-    /**
-     * @var RingerRepositoryInterface
-     */
-    private $ringerRepository;
+    private RingerRepositoryInterface $ringerRepository;
     /**
      * @var RingerEntity[]
      */
-    private $ringersList;
+    private array $ringersList;
 
     public function setRingerRepository(
         RingerRepositoryInterface $repository
