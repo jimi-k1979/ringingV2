@@ -6,7 +6,7 @@ namespace DrlArchive\implementation\repositories\doctrine;
 
 
 use DrlArchive\core\Exceptions\CleanArchitectureException;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 
 class DoctrineTransactionManager implements TransactionManagerInterface
 {
