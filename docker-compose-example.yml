@@ -12,7 +12,8 @@ services:
       context: .docker/php-cli
     tty: true
     volumes:
-      - ../:/var/www
+      - ./:/var/www
+      - ./.docker/php-cli/php.ini-development:/usr/local/etc/php/php.ini
     networks:
       - web-network
 
@@ -22,7 +23,8 @@ services:
       context: .docker/php-fpm
     tty: true
     volumes:
-      - ../:/var/www
+      - ./:/var/www
+      - ./.docker/php-cli/php.ini-development:/usr/local/etc/php/php.ini
     networks:
       - web-network
 
@@ -36,7 +38,7 @@ services:
     # connect to code and nginx config
     volumes:
       - ../:/var/www/
-      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./.docker/nginx/conf.d:/etc/nginx/conf.d
     networks:
       - web-network
 
@@ -45,8 +47,8 @@ services:
     build:
       context: .docker/mysql
     volumes:
-      - ../dbFiles:/dbFiles/
-      - ../dbScripts:/docker-entrypoint-initdb.d/
+      - ./dbFiles:/dbFiles/
+      - ./dbScripts:/docker-entrypoint-initdb.d/
     networks:
       - web-network
     ports:
