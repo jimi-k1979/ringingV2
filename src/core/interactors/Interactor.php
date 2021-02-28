@@ -10,6 +10,7 @@ use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 
@@ -23,6 +24,7 @@ abstract class Interactor implements InteractorInterface
     private UserRepositoryInterface $userRepository;
     private UserEntity $loggedInUser;
     private SecurityRepositoryInterface $securityRepository;
+    private AuthenticationManagerInterface $authenticationManager;
 
     /**
      * @param Request|null $request
@@ -40,14 +42,21 @@ abstract class Interactor implements InteractorInterface
         $this->presenter = $presenter;
     }
 
-    public function setSecurityRepository(SecurityRepositoryInterface $securityRepository): void
-    {
+    public function setSecurityRepository(
+        SecurityRepositoryInterface $securityRepository
+    ): void {
         $this->securityRepository = $securityRepository;
     }
 
+    public function setAuthenticationRepository(
+        AuthenticationManagerInterface $authenticationManager
+    ): void {
+        $this->authenticationManager = $authenticationManager;
+    }
 
-    public function setUserRepository(UserRepositoryInterface $userRepository): void
-    {
+    public function setUserRepository(
+        UserRepositoryInterface $userRepository
+    ): void {
         $this->userRepository = $userRepository;
         $this->loggedInUser = $userRepository->getLoggedInUser();
     }

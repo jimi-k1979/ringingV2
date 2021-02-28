@@ -15,7 +15,6 @@ class UserEntity extends Entity
     private string $username;
     private ?string $emailAddress;
     private ?string $password;
-    private ?int $loginCount;
     /**
      * @var bool[]
      */
@@ -72,22 +71,6 @@ class UserEntity extends Entity
     public function setPassword(string $password): void
     {
         $this->password = $password;
-    }
-
-    /**
-     * @return null|int
-     */
-    public function getLoginCount(): ?int
-    {
-        return $this->loginCount;
-    }
-
-    /**
-     * @param int $loginCount
-     */
-    public function setLoginCount(int $loginCount): void
-    {
-        $this->loginCount = $loginCount;
     }
 
     /**
