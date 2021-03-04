@@ -11,7 +11,7 @@ use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 class PresenterDummy implements PresenterInterface
 {
 
-    public function send(?Response $response = null)
+    public function send(?Response $response = null): void
     {
     }
 }

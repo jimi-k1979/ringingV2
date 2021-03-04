@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\core\interactors;
@@ -18,11 +19,10 @@ abstract class Interactor implements InteractorInterface
 {
     public const ACCESS_DENIED_EXCEPTION_CODE = 9901;
 
-    protected ?Request $request;
-    protected ?Response $response;
-    protected ?PresenterInterface $presenter;
-    private UserRepositoryInterface $userRepository;
-    private UserEntity $loggedInUser;
+    protected ?Request $request = null;
+    protected ?Response $response = null;
+    protected ?PresenterInterface $presenter = null;
+    protected UserEntity $loggedInUser;
     private SecurityRepositoryInterface $securityRepository;
     private AuthenticationManagerInterface $authenticationManager;
 
@@ -83,4 +83,16 @@ abstract class Interactor implements InteractorInterface
         $this->presenter->send($this->response);
     }
 
+    /**
+     * @
+     */
+    protected function getUserDetails(): void
+    {
+        if ($this->authenticationManager->isLoggedIn()) {
+            $this->loggedInUser =
+                $this->authenticationManager->loggedInUserDetails();
+        } else {
+            $this->loggedInUser = new UserEntity();
+        }
+    }
 }

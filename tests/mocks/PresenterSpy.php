@@ -14,7 +14,7 @@ class PresenterSpy implements PresenterInterface
     private ?Response $response;
     private bool $sendCalled = false;
 
-    public function send(?Response $response = null)
+    public function send(?Response $response = null): void
     {
         $this->response = $response;
         $this->sendCalled = true;

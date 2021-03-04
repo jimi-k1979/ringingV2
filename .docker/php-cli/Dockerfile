@@ -19,12 +19,11 @@ RUN curl -sSL https://getcomposer.org/installer | php \
 RUN echo "xdebug.mode = debug" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.discover_client_host = 1" \
-        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
 #    && echo "xdebug.idekey = \"PHPSTORM\"" \
 #        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-#    && echo "xdebug.remote_host = docker.for.win.localhost" \
-#    && echo "xdebug.remote_host = host.docker.internal" \
-#        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "xdebug.client_host = docker.for.win.localhost" \
+        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 #    && echo "xdebug.remote_port = 9003" \
 #        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 

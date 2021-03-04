@@ -24,8 +24,6 @@ interface AuthenticationManagerInterface
     public const NOT_LOGGED_IN = 1311;
     public const UNKNOWN_USER_ID = 1312;
 
-    public static function createManager(): self;
-
     /**
      * @param UserEntity $userEntity
      * @throws CleanArchitectureException

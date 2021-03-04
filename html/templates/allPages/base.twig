@@ -51,11 +51,19 @@
                     Call-change Ringing Resources
                 </a>
             </div>
-            <div class="col col-sm-2 d-flex justify-content-end align-items-center">
-                <a class="btn btn-sm btn-outline-secondary" href="#">
-                    Login
-                </a>
-            </div>
+            {% if loggedIn == true %}
+                <div class="col col-sm-2 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-sm btn-outline-secondary" href="#">
+                        Log out
+                    </a>
+                </div>
+            {% else %}
+                <div class="col col-sm-2 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-sm btn-outline-secondary" href="#">
+                        Log in
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </header>
 

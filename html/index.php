@@ -1,16 +1,33 @@
 <?php
 
-/**
- * @var Environment $twig
- */
 declare(strict_types=1);
 
-use Twig\Environment;
+require_once(__DIR__ . '/../vendor/autoload.php');
 
-require_once __DIR__ . '/init.php';
+use DrlArchive\core\classes\Response;
+use DrlArchive\implementation\factories\interactors\pages\indexPage\IndexPageFactory;
+use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
-try {
-    $twig->display('index.twig');
-} catch (Throwable $e) {
-    include __DIR__ . '/templates/failed.html';
-}
+$presenter = new class extends AbstractTwigPagePresenter {
+    public function send(?Response $response = null): void
+    {
+        parent::send($response);
+        try {
+            $this->twig->display(
+                'index.twig',
+                [
+                    'loggedIn' => $this->loggedInStatus,
+                ]
+            );
+        } catch (Throwable $e) {
+            include __DIR__ . '/templates/failed.html';
+        }
+    }
+};
+
+$useCase = (new IndexPageFactory())->create(
+    $presenter
+);
+
+$useCase->execute();
+

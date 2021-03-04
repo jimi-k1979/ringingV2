@@ -11,7 +11,7 @@ use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 class FuzzySearchPresenterJson implements PresenterInterface
 {
 
-    public function send(?Response $response = null)
+    public function send(?Response $response = null): void
     {
         if ($response->getStatus() !== Response::STATUS_SUCCESS) {
             echo json_encode(
