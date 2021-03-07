@@ -17,6 +17,15 @@ class IndexPageTest extends TestCase
 {
     use CreateMockUserTrait;
 
+    public function testRequestDefaults(): void
+    {
+        $request = new IndexPageRequest();
+        $this->assertEquals(
+            Response::STATUS_SUCCESS,
+            $request->getPreviousStatus()
+        );
+    }
+
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(
@@ -30,7 +39,7 @@ class IndexPageTest extends TestCase
         $authenticationSpy = new AuthenticationManagerSpy();
 
         $useCase = $this->createUseCase();
-        $useCase->setAuthenticationRepository($authenticationSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
 
         $this->assertTrue(
@@ -41,8 +50,9 @@ class IndexPageTest extends TestCase
     private function createUseCase(): IndexPage
     {
         $useCase = new IndexPage();
+        $useCase->setRequest(new IndexPageRequest());
         $useCase->setPresenter(new PresenterDummy());
-        $useCase->setAuthenticationRepository(new AuthenticationManagerDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
 
         return $useCase;
     }
@@ -52,7 +62,7 @@ class IndexPageTest extends TestCase
         $authenticationSpy = new AuthenticationManagerSpy();
 
         $useCase = $this->createUseCase();
-        $useCase->setAuthenticationRepository($authenticationSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
 
         $this->assertTrue(
@@ -66,7 +76,7 @@ class IndexPageTest extends TestCase
         $authenticationSpy->setIsLoggedInToFalse();
 
         $useCase = $this->createUseCase();
-        $useCase->setAuthenticationRepository($authenticationSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
 
         $this->assertFalse(
@@ -95,9 +105,9 @@ class IndexPageTest extends TestCase
             $this->createMockSuperAdmin()
         );
 
-        $useCase = new IndexPage();
+        $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
-        $useCase->setAuthenticationRepository($authenticationSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
 
         $response = $presenterSpy->getResponse();
@@ -106,11 +116,18 @@ class IndexPageTest extends TestCase
             Response::STATUS_SUCCESS,
             $response->getStatus()
         );
-
+        $this->assertEquals(
+            [
+                'previousStatus' => Response::STATUS_SUCCESS,
+            ],
+            $response->getData()
+        );
         $this->assertEquals(
             $this->createMockSuperAdmin(),
             $response->getLoggedInUser()
         );
     }
+    
+    
 
 }

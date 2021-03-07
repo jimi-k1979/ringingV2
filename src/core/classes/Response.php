@@ -9,8 +9,10 @@ use DrlArchive\core\entities\UserEntity;
 class Response
 {
     public const STATUS_SUCCESS = 200;
+    public const STATUS_LOGGED_OUT = 299;
     public const STATUS_FORBIDDEN = 403;
     public const STATUS_NOT_FOUND = 400;
+    public const STATUS_TOO_MANY_REQUESTS = 429;
     public const STATUS_UNKNOWN_ERROR = 500;
 
     public const STATUS_DUPLICATE = 1;
@@ -22,6 +24,7 @@ class Response
     public const RESPONSE_MESSAGE = 'message';
     public const RESPONSE_DATA = 'data';
     public const RESPONSE_LOGGED_IN_USER = 'loggedInUser';
+
 
     private int $status = self::STATUS_SUCCESS;
     private string $message = '';

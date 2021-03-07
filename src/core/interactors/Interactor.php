@@ -22,9 +22,16 @@ abstract class Interactor implements InteractorInterface
     protected ?Request $request = null;
     protected ?Response $response = null;
     protected ?PresenterInterface $presenter = null;
+    protected AuthenticationManagerInterface $authenticationManager;
+    /**
+     * @var UserEntity
+     */
     protected UserEntity $loggedInUser;
+    /**
+     * @var SecurityRepositoryInterface
+     * @deprecated
+     */
     private SecurityRepositoryInterface $securityRepository;
-    private AuthenticationManagerInterface $authenticationManager;
 
     /**
      * @param Request|null $request
@@ -42,28 +49,36 @@ abstract class Interactor implements InteractorInterface
         $this->presenter = $presenter;
     }
 
+    /**
+     * @param SecurityRepositoryInterface $securityRepository
+     * @deprecated
+     */
     public function setSecurityRepository(
         SecurityRepositoryInterface $securityRepository
     ): void {
         $this->securityRepository = $securityRepository;
     }
 
-    public function setAuthenticationRepository(
+    public function setAuthenticationManager(
         AuthenticationManagerInterface $authenticationManager
     ): void {
         $this->authenticationManager = $authenticationManager;
     }
 
+    /**
+     * @param UserRepositoryInterface $userRepository
+     * @deprecated
+     */
     public function setUserRepository(
         UserRepositoryInterface $userRepository
     ): void {
-        $this->userRepository = $userRepository;
         $this->loggedInUser = $userRepository->getLoggedInUser();
     }
 
     /**
      * @param string|null $permission
      * @throws AccessDeniedException
+     * @deprecated
      */
     protected function checkUserIsAuthorised(?string $permission = null): void
     {
@@ -83,9 +98,6 @@ abstract class Interactor implements InteractorInterface
         $this->presenter->send($this->response);
     }
 
-    /**
-     * @
-     */
     protected function getUserDetails(): void
     {
         if ($this->authenticationManager->isLoggedIn()) {

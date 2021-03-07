@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-require_once(__DIR__ . '/../vendor/autoload.php');
+require_once(__DIR__ . '/init.php');
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\implementation\factories\interactors\pages\indexPage\IndexPageFactory;
+use DrlArchive\core\interactors\pages\indexPage\IndexPageRequest;
+use DrlArchive\implementation\factories\interactors\pages\IndexPageFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 $presenter = new class extends AbstractTwigPagePresenter {
@@ -17,6 +18,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 'index.twig',
                 [
                     'loggedIn' => $this->loggedInStatus,
+                    'previousStatus' => $response->getData()['previousStatus']
                 ]
             );
         } catch (Throwable $e) {
@@ -25,8 +27,15 @@ $presenter = new class extends AbstractTwigPagePresenter {
     }
 };
 
+$request = new IndexPageRequest();
+if (isset($_SESSION['previousStatus'])) {
+    $request->setPreviousStatus((int)$_SESSION['previousStatus']);
+    unset($_SESSION['previousStatus']);
+}
+
 $useCase = (new IndexPageFactory())->create(
-    $presenter
+    $presenter,
+    $request
 );
 
 $useCase->execute();

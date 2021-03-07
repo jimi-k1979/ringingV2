@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
+require_once(__DIR__ . '/../init.php');
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\newEventPage\NewEventPageRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\implementation\factories\interactors\event\NewEventPageFactory;
-
-require_once __DIR__ . '/../init.php';
 
 if (!empty($_POST)) {
     $request = new NewEventPageRequest();
@@ -32,7 +31,7 @@ if (!empty($_POST)) {
 
 $presenter = new class implements PresenterInterface {
 
-    public function send(?Response $response = null)
+    public function send(?Response $response = null): void
     {
         global $twig;
 

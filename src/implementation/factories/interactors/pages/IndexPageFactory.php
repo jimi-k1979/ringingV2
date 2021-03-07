@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DrlArchive\implementation\factories\interactors\pages\indexPage;
+namespace DrlArchive\implementation\factories\interactors\pages;
 
 
 use DrlArchive\core\classes\Request;
@@ -23,8 +23,9 @@ class IndexPageFactory implements InteractorFactoryInterface
     ): InteractorInterface {
         $useCase = new IndexPage();
 
+        $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
-        $useCase->setAuthenticationRepository(
+        $useCase->setAuthenticationManager(
             (new AuthenticationManagerFactory())->create()
         );
 
