@@ -5,7 +5,7 @@ FROM php:7.4
 
 # install php modules, removed --with-libzip from zip line
 RUN apt-get update -yq \
-    && apt-get install -y zip libzip-dev libpng-dev libxml2-dev git wget \
+    && apt-get install -y zip libzip-dev libpng-dev libxml2-dev git wget nano \
     && pecl -q install xdebug \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-configure zip \
@@ -20,12 +20,12 @@ RUN echo "xdebug.mode = debug" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.discover_client_host = 1" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-#    && echo "xdebug.idekey = \"PHPSTORM\"" \
-#        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "xdebug.idekey = \"PHPSTORM\"" \
+        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.client_host = docker.for.win.localhost" \
+        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "xdebug.client_port = 9003" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
-#    && echo "xdebug.remote_port = 9003" \
-#        >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # mailhog smtp server
 RUN wget https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64 \
