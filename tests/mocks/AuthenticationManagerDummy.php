@@ -7,9 +7,12 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
+use DrlArchive\TestConstants;
+use DrlArchive\traits\CreateMockUserTrait;
 
 class AuthenticationManagerDummy implements AuthenticationManagerInterface
 {
+    use CreateMockUserTrait;
 
     /**
      * @inheritDoc
@@ -79,7 +82,7 @@ class AuthenticationManagerDummy implements AuthenticationManagerInterface
      */
     public function loggedInUserDetails(): UserEntity
     {
-        return new UserEntity();
+        return $this->createMockSuperAdmin();
     }
 
     /**
@@ -87,6 +90,7 @@ class AuthenticationManagerDummy implements AuthenticationManagerInterface
      */
     public function adminCreateUser(UserEntity $userEntity): void
     {
+        $userEntity->setId(TestConstants::TEST_USER_ID);
     }
 
     /**

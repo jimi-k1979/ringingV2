@@ -56,33 +56,23 @@ class UserEntityTest extends TestCase
         );
     }
 
-    public function testLoginCountProperty(): void
-    {
-        $entity = new UserEntity();
-        $entity->setLoginCount(1);
-        $this->assertEquals(
-            1,
-            $entity->getLoginCount()
-        );
-    }
-
     public function testPermissionsProperty(): void
     {
         $entity = new UserEntity();
         $entity->setPermissions(
             [
-                'addNew' => true,
-                'editExisting' => true,
-                'approveEdit' => true,
-                'delete' => false,
+                UserEntity::ADD_NEW_PERMISSION => true,
+                UserEntity::EDIT_EXISTING_PERMISSION => true,
+                UserEntity::APPROVE_EDIT_PERMISSION => true,
+                UserEntity::CONFIRM_DELETE_PERMISSION => false,
             ]
         );
         $this->assertEquals(
             [
-                'addNew' => true,
-                'editExisting' => true,
-                'approveEdit' => true,
-                'delete' => false,
+                UserEntity::ADD_NEW_PERMISSION => true,
+                UserEntity::EDIT_EXISTING_PERMISSION => true,
+                UserEntity::APPROVE_EDIT_PERMISSION => true,
+                UserEntity::CONFIRM_DELETE_PERMISSION => false,
             ],
             $entity->getPermissions()
         );

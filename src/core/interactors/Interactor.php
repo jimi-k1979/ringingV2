@@ -18,6 +18,7 @@ use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 abstract class Interactor implements InteractorInterface
 {
     public const ACCESS_DENIED_EXCEPTION_CODE = 9901;
+    public const NOT_LOGGED_IN_EXCEPTION_CODE = 9902;
 
     protected ?Request $request = null;
     protected ?Response $response = null;
@@ -29,7 +30,6 @@ abstract class Interactor implements InteractorInterface
     protected UserEntity $loggedInUser;
     /**
      * @var SecurityRepositoryInterface
-     * @deprecated
      */
     private SecurityRepositoryInterface $securityRepository;
 
@@ -51,7 +51,6 @@ abstract class Interactor implements InteractorInterface
 
     /**
      * @param SecurityRepositoryInterface $securityRepository
-     * @deprecated
      */
     public function setSecurityRepository(
         SecurityRepositoryInterface $securityRepository
@@ -78,7 +77,6 @@ abstract class Interactor implements InteractorInterface
     /**
      * @param string|null $permission
      * @throws AccessDeniedException
-     * @deprecated
      */
     protected function checkUserIsAuthorised(?string $permission = null): void
     {

@@ -19,10 +19,10 @@ class UserEntity extends Entity
      * @var bool[]
      */
     private array $permissions = [
-        'addNew' => false,
-        'editExisting' => false,
-        'approveEdit' => false,
-        'delete' => false,
+        self::ADD_NEW_PERMISSION => false,
+        self::EDIT_EXISTING_PERMISSION => false,
+        self::APPROVE_EDIT_PERMISSION => false,
+        self::CONFIRM_DELETE_PERMISSION => false,
     ];
 
     /**

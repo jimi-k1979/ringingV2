@@ -52,6 +52,7 @@ class TestConstants
     public const TEST_USER_ID = 555;
     public const TEST_USER_EMAIL = 'testUser@example.com';
     public const TEST_USER_USERNAME = 'testUser';
+    public const TEST_USER_PASSWORD = 'testPassword';
     public const TEST_USER_SUPER_ADMIN_ROLE = [
         UserEntity::ADD_NEW_PERMISSION => true,
         UserEntity::EDIT_EXISTING_PERMISSION => true,

@@ -263,7 +263,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
      */
     public function adminCreateUser(UserEntity $userEntity): void
     {
-        $this->adminCreateUserCalled = false;
+        $this->adminCreateUserCalled = true;
         if ($this->adminCreateUserThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
