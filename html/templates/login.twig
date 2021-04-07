@@ -1,0 +1,72 @@
+{% extends 'base.twig' %}
+
+{% block title %}Log in{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block extraStyles %}
+    <link rel="stylesheet" href="/assets/css/login.css">
+{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <main class="form-signin">
+        {% if error is not empty %}
+            <div class="alert {{ error.type }} alert-dismissible fade show"
+                 role="alert"
+            >
+                {{ error.message }}
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                ></button>
+            </div>
+        {% endif %}
+        <form method="post"
+              autocomplete="off"
+        >
+            <!--<img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+                <input type="email"
+                       class="form-control"
+                       id="email-address"
+                       placeholder="name@example.com"
+                       name="email-address"
+                       required
+                        {% if error is not empty %}
+                            value="{{ user.emailAddress }}"
+                        {% endif %}
+                >
+                <label for="email-address">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password"
+                       class="form-control"
+                       id="password"
+                       placeholder="Password"
+                       name="password"
+                       required
+                >
+                <label for="password">Password</label>
+            </div>
+
+            {# <div class="checkbox mb-3"> #}
+            {# <label> #}
+            {# <input type="checkbox" #}
+            {# value="remember-me" #}
+            {# > Remember me #}
+            {# </label> #}
+            {# </div> #}
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2020–{{ 'now'|date('Y') }}</p>
+        </form>
+    </main>
+{% endblock %}
+

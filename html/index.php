@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once(__DIR__ . '/init.php');
+require_once __DIR__ . '/init.php';
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\pages\indexPage\IndexPageRequest;
@@ -13,16 +13,19 @@ $presenter = new class extends AbstractTwigPagePresenter {
     public function send(?Response $response = null): void
     {
         parent::send($response);
+
+        $this->dataForTemplate['previousStatus'] =
+            $response->getData()['previousStatus'];
+        $this->dataForTemplate['nav']['highlighted'] = 'home';
+
         try {
             $this->twig->display(
                 'index.twig',
-                [
-                    'loggedIn' => $this->loggedInStatus,
-                    'previousStatus' => $response->getData()['previousStatus']
-                ]
+                $this->dataForTemplate
             );
         } catch (Throwable $e) {
-            include __DIR__ . '/templates/failed.html';
+            echo $e->getMessage();
+            die();
         }
     }
 };

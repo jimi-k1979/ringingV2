@@ -1,0 +1,300 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light"
+     aria-label="Navigation bar"
+>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Branding</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main-navbar"
+                aria-controls="main-navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="main-navbar"
+        >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a href="/"
+                            {% if nav.highlighted == 'home' %}
+                                class="nav-link active"
+                                aria-current="page"
+                            {% else %}
+                                class="nav-link"
+                            {% endif %}
+                    >
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"
+                            {% if nav.highlighted == 'compositions' %}
+                                class="nav-link active"
+                                aria-current="page"
+                            {% else %}
+                                class="nav-link"
+                            {% endif %}
+                    >
+                        Compositions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/events/resultArchive.php"
+                            {% if nav.highlighted == 'archive' %}
+                                class="nav-link active"
+                                aria-current="page"
+                            {% else %}
+                                class="nav-link"
+                            {% endif %}
+                    >
+                        Results Archive
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                            {% if nav.highlighted == 'statistics' %}
+                                class="nav-link dropdown-toggle active"
+                            {% else %}
+                                class="nav-link dropdown-toggle"
+                            {% endif %}
+                       id="statsDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                    >
+                        Statistics
+                    </a>
+                    <ul class="dropdown-menu"
+                        aria-labelledby="statsDropdown"
+                    >
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Records
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                By Competition
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                By Team
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                By Ringer
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                By Year
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                            {% if nav.highlighted == 'league' %}
+                                class="nav-link dropdown-toggle active"
+                            {% else %}
+                                class="nav-link dropdown-toggle"
+                            {% endif %}
+                       id="leagueDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                    >
+                        League
+                    </a>
+                    <ul class="dropdown-menu"
+                        aria-labelledby="leagueDropdown"
+                    >
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Current Table
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Full Table
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Records
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                How It Works
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                            {% if nav.highlighted == 'extendedRings' %}
+                                class="nav-link dropdown-toggle active"
+                            {% else %}
+                                class="nav-link dropdown-toggle"
+                            {% endif %}
+                       id="extendedRingDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                    >
+                        Extended Rings
+                    </a>
+                    <ul class="dropdown-menu"
+                        aria-labelledby="extendedRingDropdown"
+                    >
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Archive
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Records and Statistics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                About Extended Rings
+                            </a>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                            {% if nav.highlighted == 'ladder' %}
+                                class="nav-link dropdown-toggle active"
+                            {% else %}
+                                class="nav-link dropdown-toggle"
+                            {% endif %}
+                       id="ladderDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                    >
+                        Ladder
+                    </a>
+                    <ul class="dropdown-menu"
+                        aria-labelledby="ladderDropdown"
+                    >
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Results Archive
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Table Archive
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                Records and Stats
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="#"
+                            >
+                                How It Works
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                {% if user.isloggedIn == true %}
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                                {% if nav.highlighted == 'account' %}
+                                    class="nav-link dropdown-toggle active"
+                                {% else %}
+                                    class="nav-link dropdown-toggle"
+                                {% endif %}
+                           id="loggedInDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                        >
+                            My Details
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="loggedInDropdown"
+                        >
+                            <li>
+                                <a class="dropdown-item"
+                                   href="#"
+                                >
+                                    Edit settings
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"
+                                   href="#"
+                                >
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href="login.php"
+                                {% if nav.highlighted == 'logIn' %}
+                                    class="nav-link active"
+                                    aria-current="page"
+                                {% else %}
+                                    class="nav-link"
+                                {% endif %}
+                        >
+                            Log In
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+
+        </div>
+    </div>
+</nav>

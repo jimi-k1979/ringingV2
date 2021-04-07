@@ -13,7 +13,7 @@ use Twig\Loader\FilesystemLoader;
 class AbstractTwigPagePresenter implements PresenterInterface
 {
     protected Environment $twig;
-    protected bool $loggedInStatus;
+    protected array $dataForTemplate = [];
 
     /**
      * AbstractTwigPagePresenter constructor.
@@ -22,16 +22,25 @@ class AbstractTwigPagePresenter implements PresenterInterface
     {
         $loader = new FilesystemLoader(__DIR__ . '/../../../html/templates');
         $this->twig = new Environment(
-            $loader,
-            [
-            ]
+            $loader
         );
+
+        $this->dataForTemplate = [
+            'error' => [],
+        ];
     }
 
     public function send(?Response $response = null): void
     {
-        $this->loggedInStatus = is_numeric(
-            $response->getLoggedInUser()->getId()
-        );
+        $loggedInStatus = false;
+        if (!empty($response->getLoggedInUser())) {
+            $loggedInStatus = is_numeric(
+                $response->getLoggedInUser()->getId()
+            );
+            $this->dataForTemplate['user']['userId'] =
+                $response->getLoggedInUser()->getId();
+        }
+
+        $this->dataForTemplate['user']['isLoggedIn'] = $loggedInStatus;
     }
 }
