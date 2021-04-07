@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\UserEntity;
+use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
 
@@ -71,7 +72,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
     {
         $this->loginUserCalled = true;
         if ($this->loginUserThrowsException) {
-            throw new CleanArchitectureException(
+            throw new AccessDeniedException(
                 'Something went wrong',
                 AuthenticationManagerInterface::NOT_LOGGED_IN
             );

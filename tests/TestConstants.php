@@ -60,4 +60,6 @@ class TestConstants
         UserEntity::CONFIRM_DELETE_PERMISSION => true,
     ];
 
+    public const TEST_REDIRECT_TO = 'newPage.php';
+
 }
