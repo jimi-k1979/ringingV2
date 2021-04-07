@@ -24,7 +24,7 @@ use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\FeatureDisabledException;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
-use DrlArchive\Settings;
+use DrlArchive\Config;
 use PDO;
 
 class AuthenticationManager implements AuthenticationManagerInterface
@@ -48,11 +48,11 @@ class AuthenticationManager implements AuthenticationManagerInterface
     private static function createPDO(): PDO
     {
         return new PDO(
-            'mysql:dbname=' . Settings::DB_SCHEMA
-            . ';host=' . Settings::DB_HOST
+            'mysql:dbname=' . Config::DB_SCHEMA
+            . ';host=' . Config::DB_HOST
             . ';charset=utf8mb4',
-            Settings::DB_USER,
-            Settings::DB_PASSWORD
+            Config::DB_USER,
+            Config::DB_PASSWORD
         );
     }
 
