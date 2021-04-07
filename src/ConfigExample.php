@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace DrlArchive;
+
 /**
  * Class Config
  * File that sets the environmental configuration
