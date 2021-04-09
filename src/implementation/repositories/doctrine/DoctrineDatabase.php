@@ -16,7 +16,7 @@ use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\implementation\interfaces\DoctrineDatabaseInterface;
-use DrlArchive\Settings;
+use DrlArchive\Config;
 use Throwable;
 
 class DoctrineDatabase implements DoctrineDatabaseInterface
@@ -64,10 +64,10 @@ class DoctrineDatabase implements DoctrineDatabaseInterface
     private static function createPDO(): Connection
     {
         $connectionParams = [
-            'dbname' => Settings::DB_SCHEMA,
-            'user' => Settings::DB_USER,
-            'password' => Settings::DB_PASSWORD,
-            'host' => Settings::DB_HOST,
+            'dbname' => Config::DB_SCHEMA,
+            'user' => Config::DB_USER,
+            'password' => Config::DB_PASSWORD,
+            'host' => Config::DB_HOST,
             'driver' => self::PDO_MYSQL_DRIVER,
         ];
 

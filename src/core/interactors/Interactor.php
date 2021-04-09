@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace DrlArchive\core\interactors;
@@ -10,18 +11,26 @@ use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 
 abstract class Interactor implements InteractorInterface
 {
     public const ACCESS_DENIED_EXCEPTION_CODE = 9901;
+    public const NOT_LOGGED_IN_EXCEPTION_CODE = 9902;
 
-    protected ?Request $request;
-    protected ?Response $response;
-    protected ?PresenterInterface $presenter;
-    private UserRepositoryInterface $userRepository;
-    private UserEntity $loggedInUser;
+    protected ?Request $request = null;
+    protected ?Response $response = null;
+    protected ?PresenterInterface $presenter = null;
+    protected AuthenticationManagerInterface $authenticationManager;
+    /**
+     * @var UserEntity
+     */
+    protected UserEntity $loggedInUser;
+    /**
+     * @var SecurityRepositoryInterface
+     */
     private SecurityRepositoryInterface $securityRepository;
 
     /**
@@ -40,15 +49,28 @@ abstract class Interactor implements InteractorInterface
         $this->presenter = $presenter;
     }
 
-    public function setSecurityRepository(SecurityRepositoryInterface $securityRepository): void
-    {
+    /**
+     * @param SecurityRepositoryInterface $securityRepository
+     */
+    public function setSecurityRepository(
+        SecurityRepositoryInterface $securityRepository
+    ): void {
         $this->securityRepository = $securityRepository;
     }
 
+    public function setAuthenticationManager(
+        AuthenticationManagerInterface $authenticationManager
+    ): void {
+        $this->authenticationManager = $authenticationManager;
+    }
 
-    public function setUserRepository(UserRepositoryInterface $userRepository): void
-    {
-        $this->userRepository = $userRepository;
+    /**
+     * @param UserRepositoryInterface $userRepository
+     * @deprecated
+     */
+    public function setUserRepository(
+        UserRepositoryInterface $userRepository
+    ): void {
         $this->loggedInUser = $userRepository->getLoggedInUser();
     }
 
@@ -74,4 +96,13 @@ abstract class Interactor implements InteractorInterface
         $this->presenter->send($this->response);
     }
 
+    protected function getUserDetails(): void
+    {
+        if ($this->authenticationManager->isLoggedIn()) {
+            $this->loggedInUser =
+                $this->authenticationManager->loggedInUserDetails();
+        } else {
+            $this->loggedInUser = new UserEntity();
+        }
+    }
 }

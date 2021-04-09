@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-use Twig\Environment;
-
 require_once __DIR__ . '/../init.php';
+
+use Twig\Environment;
 
 try {
     $twig->display('events/eventSearch.twig');

@@ -15,15 +15,14 @@ class UserEntity extends Entity
     private string $username;
     private ?string $emailAddress;
     private ?string $password;
-    private ?int $loginCount;
     /**
      * @var bool[]
      */
     private array $permissions = [
-        'addNew' => false,
-        'editExisting' => false,
-        'approveEdit' => false,
-        'delete' => false,
+        self::ADD_NEW_PERMISSION => false,
+        self::EDIT_EXISTING_PERMISSION => false,
+        self::APPROVE_EDIT_PERMISSION => false,
+        self::CONFIRM_DELETE_PERMISSION => false,
     ];
 
     /**
@@ -72,22 +71,6 @@ class UserEntity extends Entity
     public function setPassword(string $password): void
     {
         $this->password = $password;
-    }
-
-    /**
-     * @return null|int
-     */
-    public function getLoginCount(): ?int
-    {
-        return $this->loginCount;
-    }
-
-    /**
-     * @param int $loginCount
-     */
-    public function setLoginCount(int $loginCount): void
-    {
-        $this->loginCount = $loginCount;
     }
 
     /**

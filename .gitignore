@@ -6,3 +6,4 @@ vendor
 /node_modules/
 /.phpunit.result.cache
 /phpunit.xml.bak
+src/Config.php

@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace DrlArchive;
 
 
+use DrlArchive\core\entities\UserEntity;
+
 class TestConstants
 {
     public const TEST_LOCATION_ID = 999;
@@ -46,5 +48,18 @@ class TestConstants
     public const TEST_OTHER_COMPETITION_ID = 888;
     public const TEST_OTHER_COMPETITION_NAME = 'Test other competition';
     public const TEST_OTHER_SINGLE_TOWER_COMPETITION = true;
+
+    public const TEST_USER_ID = 555;
+    public const TEST_USER_EMAIL = 'testUser@example.com';
+    public const TEST_USER_USERNAME = 'testUser';
+    public const TEST_USER_PASSWORD = 'testPassword';
+    public const TEST_USER_SUPER_ADMIN_ROLE = [
+        UserEntity::ADD_NEW_PERMISSION => true,
+        UserEntity::EDIT_EXISTING_PERMISSION => true,
+        UserEntity::APPROVE_EDIT_PERMISSION => true,
+        UserEntity::CONFIRM_DELETE_PERMISSION => true,
+    ];
+
+    public const TEST_REDIRECT_TO = 'newPage.php';
 
 }

@@ -5,7 +5,7 @@ FROM php:7.4
 
 # install php modules, removed --with-libzip from zip line
 RUN apt-get update -yq \
-    && apt-get install -y zip libzip-dev libpng-dev libxml2-dev git \
+    && apt-get install -y zip libzip-dev libpng-dev libxml2-dev git wget nano \
     && pecl -q install xdebug \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-configure zip \
@@ -16,21 +16,20 @@ RUN curl -sSL https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
 # ini settings for xdebug
-RUN echo "xdebug.remote_enable = 1" \
+RUN echo "xdebug.mode = debug" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.remote_autostart = 1" \
+    && echo "xdebug.discover_client_host = 1" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.idekey = \"PHPSTORM\"" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-#    && echo "xdebug.remote_host = docker.for.win.localhost" \
-    && echo "xdebug.remote_host = host.docker.internal" \
+    && echo "xdebug.client_host = host.docker.internal" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
-    && echo "xdebug.remote_port = 9000" \
+    && echo "xdebug.client_port = 9003" \
         >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
-WORKDIR /tmp
+# mailhog smtp server
+RUN wget https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64 \
+    && chmod +x mhsendmail_linux_amd64 \
+    && mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail
 
-## PHPUnit installation
-#RUN composer selfupdate \
-#    && composer require "phpunit/phpunit" --prefer-source --no-interaction \
-#    && ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit
+WORKDIR /tmp

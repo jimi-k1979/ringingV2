@@ -11,6 +11,7 @@
   "require": {
     "twig/twig": "^3.0",
     "doctrine/dbal": "^3.0",
+    "delight-im/auth": "^8.2",
     "ext-pdo": "*",
     "ext-json": "*"
   },

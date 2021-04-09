@@ -8,6 +8,5 @@ use DrlArchive\core\classes\Response;
 
 interface PresenterInterface
 {
-
-    public function send(?Response $response = null);
+    public function send(?Response $response = null): void;
 }
