@@ -1,4 +1,4 @@
-{% extends "allPages/base.twig" %}
+{% extends "base.twig" %}
 
 {% block title %}Results Archive - event search{% endblock %}
 
@@ -9,7 +9,10 @@
     >
 {% endblock %}
 
-{% block mainContent %}
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+{% block mainBody %}
     <div class="col blog-main">
         <h3 class="pb-1 my-4 font-italic border-bottom">
             Results Archive
