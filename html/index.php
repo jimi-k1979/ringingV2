@@ -14,8 +14,6 @@ $presenter = new class extends AbstractTwigPagePresenter {
     {
         parent::send($response);
 
-        $this->dataForTemplate['previousStatus'] =
-            $response->getData()['previousStatus'];
         $this->dataForTemplate['nav']['highlighted'] = 'home';
 
         try {
@@ -31,10 +29,6 @@ $presenter = new class extends AbstractTwigPagePresenter {
 };
 
 $request = new IndexPageRequest();
-if (isset($_SESSION['previousStatus'])) {
-    $request->setPreviousStatus((int)$_SESSION['previousStatus']);
-    unset($_SESSION['previousStatus']);
-}
 
 $useCase = (new IndexPageFactory())->create(
     $presenter,

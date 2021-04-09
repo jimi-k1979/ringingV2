@@ -10,6 +10,11 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 require_once __DIR__ . '/init.php';
 
+if (isset($_SESSION['auth_logged_in'])) {
+    header('Location: /index.php');
+    exit;
+}
+
 $presenter = new class extends AbstractTwigPagePresenter {
     public function send(?Response $response = null): void
     {

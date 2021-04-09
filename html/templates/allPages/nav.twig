@@ -244,7 +244,7 @@
                         </li>
                     </ul>
                 </li>
-                {% if user.isloggedIn == true %}
+                {% if user.isLoggedIn %}
                     <li class="nav-item dropdown">
                         <a href="#"
                                 {% if nav.highlighted == 'account' %}
@@ -272,7 +272,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item"
-                                   href="#"
+                                   href="logout.php"
                                 >
                                     Log out
                                 </a>

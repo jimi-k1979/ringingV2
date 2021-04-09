@@ -11,6 +11,11 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 require_once __DIR__ . '/../html/init.php';
 
+if (isset($_SESSION['auth_logged_in'])) {
+    header('Location: /index.php');
+    exit;
+}
+
 $presenter = new class extends AbstractTwigPagePresenter {
     public function send(?Response $response = null): void
     {
@@ -22,6 +27,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
             } else {
                 $nextPage = '/index.php';
             }
+            unset($_SESSION['redirectTo']);
             header('Location: ' . $nextPage);
             exit;
         }
@@ -56,11 +62,15 @@ $presenter = new class extends AbstractTwigPagePresenter {
 $request = new LoginUserRequest();
 
 $referer = parse_url($_SERVER['HTTP_REFERER']);
-if ($referer['host'] === Config::HOST_NAME) {
-    $request->setRedirectTo($referer['path']);
-} else {
-    $request->setRedirectTo('/index.php');
+
+if (empty($_SESSION['redirectTo'])) {
+    if ($referer['host'] === Config::HOST_NAME) {
+        $_SESSION['redirectTo'] = $referer['path'];
+    } else {
+        $_SESSION['redirectTo'] = '/index.php';
+    }
 }
+$request->setRedirectTo($_SESSION['redirectTo']);
 
 if (isset($_POST['password'], $_POST['email-address'])) {
     $request->setPassword($_POST['password']);
