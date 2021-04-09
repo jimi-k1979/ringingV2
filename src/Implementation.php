@@ -7,8 +7,5 @@ namespace DrlArchive;
 
 class Implementation
 {
-
-
-    // --Commented out by Inspection (17/02/2021 20:18):public const PUBLIC_FOLDER = __DIR__ . '/../html/';
-
+    public const DEFAULT_EMAIL_FROM_ADDRESS = 'site@ringing-archive.com';
 }

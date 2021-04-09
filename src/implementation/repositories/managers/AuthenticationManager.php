@@ -21,6 +21,7 @@ use Delight\Auth\UnknownIdException;
 use Delight\Auth\UserAlreadyExistsException;
 use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
+use DrlArchive\core\Exceptions\AuthenticationException;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\FeatureDisabledException;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
@@ -81,28 +82,28 @@ class AuthenticationManager implements AuthenticationManagerInterface
             } else {
                 throw new BadDataException(
                     'Username cannot have control characters in it',
-                    AuthenticationManagerInterface::INVALID_USERNAME
+                    AuthenticationManagerInterface::INVALID_USERNAME_EXCEPTION
                 );
             }
         } catch (InvalidEmailException $e) {
             throw new BadDataException(
                 'Invalid email address',
-                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS
+                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS_EXCEPTION
             );
         } catch (InvalidPasswordException $e) {
             throw new BadDataException(
                 'Invalid password',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         } catch (UserAlreadyExistsException $e) {
             throw new BadDataException(
                 'User already exists',
-                AuthenticationManagerInterface::USER_EXISTS
+                AuthenticationManagerInterface::USER_EXISTS_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many request',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -123,17 +124,17 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (InvalidEmailException | InvalidPasswordException $e) {
             throw new AccessDeniedException(
                 'Unknown email or password',
-                AuthenticationManagerInterface::INVALID_CREDENTIALS
+                AuthenticationManagerInterface::INVALID_CREDENTIALS_EXCEPTION
             );
         } catch (EmailNotVerifiedException $e) {
             throw new AccessDeniedException(
                 'Email not verified',
-                AuthenticationManagerInterface::EMAIL_NOT_VERIFIED
+                AuthenticationManagerInterface::EMAIL_NOT_VERIFIED_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many requests',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -159,22 +160,22 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (InvalidEmailException $e) {
             throw new AccessDeniedException(
                 'Unknown email address',
-                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS
+                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS_EXCEPTION
             );
         } catch (EmailNotVerifiedException $e) {
             throw new AccessDeniedException(
                 'Email address not verified',
-                AuthenticationManagerInterface::EMAIL_NOT_VERIFIED
+                AuthenticationManagerInterface::EMAIL_NOT_VERIFIED_EXCEPTION
             );
         } catch (ResetDisabledException $e) {
             throw new FeatureDisabledException(
                 'Password reset is disabled',
-                AuthenticationManagerInterface::FEATURE_DISABLED
+                AuthenticationManagerInterface::FEATURE_DISABLED_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many requests',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -188,24 +189,24 @@ class AuthenticationManager implements AuthenticationManagerInterface
         try {
             $this->auth->canResetPasswordOrThrow($selector, $token);
         } catch (InvalidSelectorTokenPairException $e) {
-            throw new BadDataException(
+            throw new AuthenticationException(
                 'Invalid token',
-                AuthenticationManagerInterface::INVALID_TOKEN
+                AuthenticationManagerInterface::INVALID_TOKEN_EXCEPTION
             );
         } catch (TokenExpiredException $e) {
             throw new AccessDeniedException(
                 'Token expired',
-                AuthenticationManagerInterface::TOKEN_EXPIRED
+                AuthenticationManagerInterface::TOKEN_EXPIRED_EXCEPTION
             );
         } catch (ResetDisabledException $e) {
             throw new FeatureDisabledException(
                 'Password reset is disabled',
-                AuthenticationManagerInterface::FEATURE_DISABLED
+                AuthenticationManagerInterface::FEATURE_DISABLED_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many requests',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -221,30 +222,31 @@ class AuthenticationManager implements AuthenticationManagerInterface
     ): void {
         try {
             $this->auth->resetPassword($selector, $token, $user->getPassword());
+            $user->setPassword('');
         } catch (InvalidSelectorTokenPairException $e) {
             throw new BadDataException(
                 'Invalid Token',
-                AuthenticationManagerInterface::INVALID_TOKEN
+                AuthenticationManagerInterface::INVALID_TOKEN_EXCEPTION
             );
         } catch (TokenExpiredException $e) {
             throw new AccessDeniedException(
                 'Token expired',
-                AuthenticationManagerInterface::TOKEN_EXPIRED
+                AuthenticationManagerInterface::TOKEN_EXPIRED_EXCEPTION
             );
         } catch (ResetDisabledException $e) {
             throw new FeatureDisabledException(
                 'Password reset is disabled',
-                AuthenticationManagerInterface::FEATURE_DISABLED
+                AuthenticationManagerInterface::FEATURE_DISABLED_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many requests',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         } catch (InvalidPasswordException $e) {
             throw new BadDataException(
                 'Invalid password',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         }
     }
@@ -262,17 +264,17 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (NotLoggedInException $e) {
             throw new AccessDeniedException(
                 'Not logged in, password cannot be changed',
-                AuthenticationManagerInterface::NOT_LOGGED_IN
+                AuthenticationManagerInterface::NOT_LOGGED_IN_EXCEPTION
             );
         } catch (InvalidPasswordException $e) {
             throw new BadDataException(
                 'Invalid password',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         } catch (TooManyRequestsException $e) {
             throw new AccessDeniedException(
                 'Too many requests',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -288,7 +290,7 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (NotLoggedInException $e) {
             throw new AccessDeniedException(
                 'Not logged in',
-                AuthenticationManagerInterface::NOT_LOGGED_IN
+                AuthenticationManagerInterface::NOT_LOGGED_IN_EXCEPTION
             );
         }
     }
@@ -366,23 +368,23 @@ class AuthenticationManager implements AuthenticationManagerInterface
             } else {
                 throw new BadDataException(
                     'Invalid username',
-                    AuthenticationManagerInterface::INVALID_USERNAME
+                    AuthenticationManagerInterface::INVALID_USERNAME_EXCEPTION
                 );
             }
         } catch (InvalidEmailException $e) {
             throw new BadDataException(
                 'Invalid email address',
-                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS
+                AuthenticationManagerInterface::INVALID_EMAIL_ADDRESS_EXCEPTION
             );
         } catch (InvalidPasswordException $e) {
             throw new BadDataException(
                 'Invalid password',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         } catch (UserAlreadyExistsException $e) {
             throw new BadDataException(
                 'User already exists',
-                AuthenticationManagerInterface::USER_EXISTS
+                AuthenticationManagerInterface::USER_EXISTS_EXCEPTION
             );
         }
     }
@@ -398,7 +400,7 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (UnknownIdException $e) {
             throw new BadDataException(
                 'Unknown user id',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
@@ -439,7 +441,7 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (UnknownIdException $e) {
             throw new BadDataException(
                 'Unknown user id',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
@@ -480,7 +482,7 @@ class AuthenticationManager implements AuthenticationManagerInterface
         } catch (UnknownIdException $e) {
             throw new BadDataException(
                 'Unknown user id',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }

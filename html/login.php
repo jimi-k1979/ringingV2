@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use DrlArchive\Config;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\userManagement\loginUser\LoginUser;
 use DrlArchive\core\interactors\userManagement\loginUser\LoginUserRequest;
@@ -26,18 +27,20 @@ $presenter = new class extends AbstractTwigPagePresenter {
         }
 
         $this->dataForTemplate['nav']['highlighted'] = 'logIn';
-        $this->dataForTemplate['user']['emailAddress'] =
-            $response->getData()[LoginUser::EMAIL_ADDRESS];
         if ($response->getStatus() === Response::STATUS_FORBIDDEN) {
             $this->dataForTemplate['error'] = [
                 'type' => 'alert-danger',
                 'message' => 'Username or password incorrect. Please try again'
             ];
-        } else {
+            $this->dataForTemplate['user']['emailAddress'] =
+                $response->getData()[LoginUser::EMAIL_ADDRESS];
+        } elseif ($response->getStatus() !== Response::STATUS_SUCCESS) {
             $this->dataForTemplate['error'] = [
                 'type' => 'alert-danger',
                 'message' => 'Something went wrong, please try again later',
             ];
+            $this->dataForTemplate['user']['emailAddress'] =
+                $response->getData()[LoginUser::EMAIL_ADDRESS];
         }
         try {
             $this->twig->display(

@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace DrlArchive\core\entities;
 
 
+use DrlArchive\Implementation;
+
 class EmailMessageEntity
 {
     /**
@@ -13,7 +15,9 @@ class EmailMessageEntity
     private array $recipientAddresses = [];
     private string $messageBody;
     private string $subject;
-    private array $headers = [];
+    private array $headers = [
+        'From' => Implementation::DEFAULT_EMAIL_FROM_ADDRESS,
+    ];
 
     /**
      * @return string[]
@@ -81,7 +85,36 @@ class EmailMessageEntity
      */
     public function setHeaders(array $headers): void
     {
+        // ensure there is always a 'from' header
+        if (!isset($headers['From'])) {
+            $headers['From'] = Implementation::DEFAULT_EMAIL_FROM_ADDRESS;
+        }
         $this->headers = $headers;
     }
 
+    /**
+     * @param string $header
+     * @param string $value
+     */
+    public function addHeader(string $header, string $value)
+    {
+        $this->headers[$header] = $value;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFromAddress(): string
+    {
+        return $this->headers['From'];
+    }
+
+    /**
+     * Syntactic sugar for setting the 'from' address
+     * @param string $emailAddress
+     */
+    public function setFromAddress(string $emailAddress): void
+    {
+        $this->addHeader('From', $emailAddress);
+    }
 }

@@ -53,7 +53,7 @@ class Logout extends Interactor
     {
         $this->response = new LogoutResponse();
         if (
-            $e->getCode() === AuthenticationManagerInterface::TOO_MANY_REQUESTS
+            $e->getCode() === AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
         ) {
             $this->response->setStatus(Response::STATUS_TOO_MANY_REQUESTS);
         } else {

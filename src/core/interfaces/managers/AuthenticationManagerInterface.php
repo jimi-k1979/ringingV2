@@ -11,18 +11,18 @@ use DrlArchive\core\Exceptions\CleanArchitectureException;
 interface AuthenticationManagerInterface
 {
 
-    public const INVALID_USERNAME = 1301;
-    public const INVALID_EMAIL_ADDRESS = 1302;
-    public const INVALID_PASSWORD = 1303;
-    public const USER_EXISTS = 1304;
-    public const TOO_MANY_REQUESTS = 1305;
-    public const INVALID_CREDENTIALS = 1306;
-    public const EMAIL_NOT_VERIFIED = 1307;
-    public const FEATURE_DISABLED = 1308;
-    public const INVALID_TOKEN = 1309;
-    public const TOKEN_EXPIRED = 1310;
-    public const NOT_LOGGED_IN = 1311;
-    public const UNKNOWN_USER_ID = 1312;
+    public const INVALID_USERNAME_EXCEPTION = 1301;
+    public const INVALID_EMAIL_ADDRESS_EXCEPTION = 1302;
+    public const INVALID_PASSWORD_EXCEPTION = 1303;
+    public const USER_EXISTS_EXCEPTION = 1304;
+    public const TOO_MANY_REQUESTS_EXCEPTION = 1305;
+    public const INVALID_CREDENTIALS_EXCEPTION = 1306;
+    public const EMAIL_NOT_VERIFIED_EXCEPTION = 1307;
+    public const FEATURE_DISABLED_EXCEPTION = 1308;
+    public const INVALID_TOKEN_EXCEPTION = 1309;
+    public const TOKEN_EXPIRED_EXCEPTION = 1310;
+    public const NOT_LOGGED_IN_EXCEPTION = 1311;
+    public const UNKNOWN_USER_ID_EXCEPTION = 1312;
 
     /**
      * @param UserEntity $userEntity

@@ -64,8 +64,19 @@
             {# > Remember me #}
             {# </label> #}
             {# </div> #}
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2020–{{ 'now'|date('Y') }}</p>
+            <button class="w-100 btn btn-lg btn-primary"
+                    type="submit"
+            >
+                Sign in
+            </button>
+            <p class="mt-1">
+                <a href="forgottenPassword.php">
+                    I've forgotten my password
+                </a>
+            </p>
+            <p class="mt-5 mb-3 text-muted">
+                &copy; 2020–{{ 'now'|date('Y') }} James Kerslake
+            </p>
         </form>
     </main>
 {% endblock %}

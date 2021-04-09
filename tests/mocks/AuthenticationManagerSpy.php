@@ -7,6 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\Exceptions\AccessDeniedException;
+use DrlArchive\core\Exceptions\AuthenticationException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
 
@@ -50,7 +51,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->registerUserThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::INVALID_USERNAME
+                AuthenticationManagerInterface::INVALID_USERNAME_EXCEPTION
             );
         }
     }
@@ -74,7 +75,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->loginUserThrowsException) {
             throw new AccessDeniedException(
                 'Something went wrong',
-                AuthenticationManagerInterface::NOT_LOGGED_IN
+                AuthenticationManagerInterface::NOT_LOGGED_IN_EXCEPTION
             );
         }
     }
@@ -98,7 +99,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->requestPasswordResetThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         }
 
@@ -127,9 +128,9 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
     {
         $this->verifyResetAttemptCalled = true;
         if ($this->verifyResetAttemptThrowsException) {
-            throw new CleanArchitectureException(
+            throw new AuthenticationException(
                 'Something went wrong',
-                AuthenticationManagerInterface::INVALID_TOKEN
+                AuthenticationManagerInterface::INVALID_TOKEN_EXCEPTION
             );
         }
     }
@@ -156,7 +157,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->completeResetAttemptThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::INVALID_TOKEN
+                AuthenticationManagerInterface::INVALID_TOKEN_EXCEPTION
             );
         }
     }
@@ -182,7 +183,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->changePasswordThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::INVALID_PASSWORD
+                AuthenticationManagerInterface::INVALID_PASSWORD_EXCEPTION
             );
         }
     }
@@ -206,7 +207,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->logOutUserThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::TOO_MANY_REQUESTS
+                AuthenticationManagerInterface::TOO_MANY_REQUESTS_EXCEPTION
             );
         }
     }
@@ -268,7 +269,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->adminCreateUserThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
@@ -292,7 +293,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->adminDeleteUserThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
@@ -316,7 +317,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->adminAssignRolesThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
@@ -340,7 +341,7 @@ class AuthenticationManagerSpy implements AuthenticationManagerInterface
         if ($this->adminRemoveRolesThrowsException) {
             throw new CleanArchitectureException(
                 'Something went wrong',
-                AuthenticationManagerInterface::UNKNOWN_USER_ID
+                AuthenticationManagerInterface::UNKNOWN_USER_ID_EXCEPTION
             );
         }
     }
