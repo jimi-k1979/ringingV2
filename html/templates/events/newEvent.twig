@@ -1,4 +1,4 @@
-{% extends "allPages/base.twig" %}
+{% extends "base.twig" %}
 
 {% block title %}Results Archive - add new event{% endblock %}
 
@@ -9,20 +9,24 @@
     >
 {% endblock %}
 
-{% block mainContent %}
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
     <div class="col blog-main">
         <h3 class="pb-1 my-4 font-italic border-bottom">
             Add Event to Archive
         </h3>
 
-        {% if status == 200 and message != '' %}
+        {% if messaging.status == 200 and messaging.message != '' %}
             <div class="alert alert-success" role="alert">
-                {{ message }}
+                {{ messaging.message }}
             </div>
-        {% elseif status != 200 %}
+        {% elseif messaging.status != 200 %}
             <div class="alert alert-danger" role="alert">
                 <span class="bold">New event not added:</span>
-                {{ message }}
+                {{ messaging.message }}
             </div>
         {% endif %}
         <p>
@@ -57,7 +61,7 @@
                                            autocomplete="off"
                                            placeholder="Type year here"
                                            min="1920"
-                                           max="{{ maxYear.format('Y') }}"
+                                           max="{{ settings.maxYear.format('Y') }}"
                                            required
                                     >
                                 </div>

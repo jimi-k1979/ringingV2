@@ -11,6 +11,7 @@ class Constants
 
     public const FIELD_MESSAGE = 'message';
     public const FIELD_CODE = 'code';
+    public const FIELD_STATUS = 'status';
 
     public const INDEX_PAGE_ADDRESS = '/index.php';
 }

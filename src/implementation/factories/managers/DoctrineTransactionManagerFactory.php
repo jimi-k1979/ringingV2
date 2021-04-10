@@ -6,7 +6,7 @@ namespace DrlArchive\implementation\factories\managers;
 
 
 use DrlArchive\core\interfaces\factories\managers\TransactionManagerFactoryInterface;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 use DrlArchive\implementation\repositories\doctrine\DoctrineDatabase;
 use DrlArchive\implementation\repositories\doctrine\DoctrineTransactionManager;
 

@@ -16,10 +16,11 @@ use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Throwable;
 
 /**
@@ -74,7 +75,7 @@ class NewEventPage extends Interactor
     {
         try {
             $this->checkUserIsAuthorised(
-//                SecurityRepositoryInterface::ADD_NEW_PERMISSION
+                SecurityRepositoryInterface::ADD_NEW_PERMISSION
             );
 
             if (isset($this->request)) {
@@ -212,6 +213,7 @@ class NewEventPage extends Interactor
     {
         $this->response = new NewEventPageResponse();
         $this->response->setStatus(Response::STATUS_SUCCESS);
+        $this->response->setLoggedInUser($this->loggedInUser);
         if (isset($this->event)) {
             $this->response->setData(
                 [

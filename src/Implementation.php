@@ -18,5 +18,5 @@ class Implementation
     public const NAV_HIGHLIGHT_EXTENDED_RINGS = 'extendedRings';
     public const NAV_HIGHLIGHT_LADDER = 'ladder';
     public const NAV_HIGHLIGHT_ACCOUNT = 'account';
-    public const NAV_HIHGLIGHT_LOGIN = 'logIn';
+    public const NAV_HIGHLIGHT_LOGIN = 'logIn';
 }

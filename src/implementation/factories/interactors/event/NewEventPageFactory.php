@@ -11,12 +11,12 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
 class NewEventPageFactory implements InteractorFactoryInterface
 {
@@ -32,8 +32,8 @@ class NewEventPageFactory implements InteractorFactoryInterface
         $useCase->setSecurityRepository(
             (new SecurityRepositoryFactory())->create()
         );
-        $useCase->setUserRepository(
-            (new UserRepositoryFactory())->create($loggedInUserId)
+        $useCase->setAuthenticationManager(
+            (new AuthenticationManagerFactory())->create()
         );
         $useCase->setTeamRepository(
             (new TeamDoctrineFactory())->create()

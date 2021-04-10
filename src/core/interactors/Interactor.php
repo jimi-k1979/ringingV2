@@ -80,6 +80,7 @@ abstract class Interactor implements InteractorInterface
      */
     protected function checkUserIsAuthorised(?string $permission = null): void
     {
+        $this->loggedInUser = $this->authenticationManager->loggedInUserDetails();
         if (!$this->securityRepository->isUserAuthorised(
             $this->loggedInUser,
             $permission
