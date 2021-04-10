@@ -4,9 +4,7 @@
   "description": "ringing db fe",
   "main": "./html/node/index.js",
   "dependencies": {},
-  "devDependencies": {
-    "cypress": "^4.10.0"
-  },
+  "devDependencies": {},
   "directories": {
     "test": "tests"
   },
