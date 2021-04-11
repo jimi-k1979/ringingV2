@@ -1,3 +1,8 @@
+const ready = (callback) => {
+    if (document.readyState !== "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
+}
+
 function ucwords(str) {
     return (str + '').replace(/^([a-z])|\s+([a-z])/g, function ($1) {
         return $1.toUpperCase();
@@ -26,4 +31,22 @@ function renderFaults(faultInt) {
     return faultInt;
 }
 
+function ajaxPostRequest(jsonData, url, successfulCallback) {
+    let data = new URLSearchParams(jsonData).toString();
+    let request = new XMLHttpRequest();
+    request.open(
+        'POST',
+        url,
+        true
+    );
+
+    request.setRequestHeader(
+        'Content-type',
+        'application/x-www-form-urlencoded'
+    );
+    request.onload = successfulCallback;
+    request.send(data);
+}
+
 const earliestYear = 1920;
+

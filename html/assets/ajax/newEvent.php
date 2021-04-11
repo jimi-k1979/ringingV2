@@ -22,14 +22,8 @@ try {
                 $request->setEventYear($_POST['year']);
 
                 $presenter = new class implements PresenterInterface {
-                    private array $data;
 
-                    public function getData(): array
-                    {
-                        return $this->data;
-                    }
-
-                    public function send(?Response $response = null)
+                    public function send(?Response $response = null): void
                     {
                         if ($response->getStatus() === Response::STATUS_SUCCESS) {
                             $data = $response->getData();
@@ -72,7 +66,6 @@ try {
                 $useCase = (new CheckDrlEventExistsFactory())->create(
                     $presenter,
                     $request
-                // todo - add logged in user ID
                 );
 
                 $useCase->execute();
@@ -92,14 +85,8 @@ try {
                 $request->setName($_POST['location']);
 
                 $presenter = new class implements PresenterInterface {
-                    private array $data;
 
-                    public function getData(): array
-                    {
-                        return $this->data;
-                    }
-
-                    public function send(?Response $response = null)
+                    public function send(?Response $response = null): void
                     {
                         if ($response->getStatus() === Response::STATUS_SUCCESS) {
                             $data = $response->getData();
