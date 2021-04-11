@@ -140,7 +140,7 @@ try {
 
             $presenter = new class implements PresenterInterface {
 
-                public function send(?Response $response = null)
+                public function send(?Response $response = null): void
                 {
                     $data = $response->getData();
                     if ($response->getStatus() === Response::STATUS_SUCCESS) {
