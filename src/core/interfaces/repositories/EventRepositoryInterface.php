@@ -78,4 +78,11 @@ interface EventRepositoryInterface
         string $year,
         int $competitionId
     ): DrlEventEntity;
+
+    /**
+     * @param string $name
+     * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventsByCompetitionName(string $name): array;
 }

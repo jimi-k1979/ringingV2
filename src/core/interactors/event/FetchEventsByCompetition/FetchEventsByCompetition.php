@@ -8,6 +8,7 @@ namespace DrlArchive\core\interactors\event\FetchEventsByCompetition;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\AbstractEventEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
@@ -34,8 +35,8 @@ class FetchEventsByCompetition extends Interactor
 
     public function execute(): void
     {
-        $this->checkUserIsAuthorised();
         try {
+            $this->checkUserIsAuthorised();
             $this->fetchCompetitionList();
             $this->createSuccessfulResponse();
         } catch (Exception $e) {
@@ -44,6 +45,10 @@ class FetchEventsByCompetition extends Interactor
         $this->sendResponse();
     }
 
+    /**
+     * @throws CleanArchitectureException
+     * @throws GeneralRepositoryErrorException
+     */
     private function fetchCompetitionList(): void
     {
         if (
@@ -51,8 +56,8 @@ class FetchEventsByCompetition extends Interactor
             AbstractCompetitionEntity::COMPETITION_TYPE_DRL
         ) {
             $this->eventList = $this->eventRepository
-                ->fetchDrlEventsByCompetitionId(
-                    $this->request->getCompetitionId()
+                ->fetchDrlEventsByCompetitionName(
+                    $this->request->getCompetition()
                 );
         } else {
             throw new GeneralRepositoryErrorException(

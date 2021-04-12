@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
@@ -42,9 +43,15 @@ class EventSpy implements EventRepositoryInterface
     private array $fetchDrlEventsByYearValue = [];
     private bool $fetchDrlEventByYearAndCompetitionNameCalled = false;
     private bool $fetchDrlEventByYearAndCompetitionNameThrowsException = false;
-
+    private bool $fetchDrlEventByYearAndCompetitionIdCalled = false;
+    private bool $fetchDrlEventByYearAndCompetitionIdThrowsException = false;
+    private DrlEventEntity $fetchDrlEventByYearAndCompetitionIdValue;
 
     private DrlEventEntity $fetchDrlEventByYearAndCompetitionNameValue;
+
+    private bool $fetchDrlEventsByCompetitionNameCalled = false;
+    private bool $fetchDrlEventsByCompetitionNameThrowsException = false;
+    private array $fetchDrlEventsByCompetitionNameValue = [];
 
 
     /**
@@ -286,7 +293,35 @@ class EventSpy implements EventRepositoryInterface
         $this->fetchDrlEventByYearAndCompetitionIdValue = $value;
     }
 
-    private bool $fetchDrlEventByYearAndCompetitionIdCalled = false;
-    private bool $fetchDrlEventByYearAndCompetitionIdThrowsException = false;
-    private DrlEventEntity $fetchDrlEventByYearAndCompetitionIdValue;
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionName(string $name): array
+    {
+        $this->fetchDrlEventsByCompetitionNameCalled = true;
+        if ($this->fetchDrlEventsByCompetitionNameThrowsException) {
+            throw new CleanArchitectureException(
+                'something went wrong',
+                EventRepositoryInterface::INVALID_EVENT_TYPE_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventsByCompetitionNameValue;
+    }
+
+    public function hasFetchDrlEventsByCompetitionNameBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByCompetitionNameCalled;
+    }
+
+    public function setFetchDrlEventsByCompetitionNameThrowsException(): void
+    {
+        $this->fetchDrlEventsByCompetitionNameThrowsException = true;
+    }
+
+    public function setFetchDrlEventsByCompetitionNameValue(array $value): void
+    {
+        $this->fetchDrlEventsByCompetitionNameValue = $value;
+    }
+
 }
