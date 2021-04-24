@@ -7,6 +7,8 @@ namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use Exception;
@@ -33,9 +35,9 @@ class FetchDrlCompetitionByLocation extends Interactor
 
     public function execute(): void
     {
-        $this->checkUserIsAuthorised();
 
         try {
+            $this->checkUserIsAuthorised();
             $this->fetchData();
             $this->createResponse();
         } catch (Exception $e) {
@@ -45,12 +47,15 @@ class FetchDrlCompetitionByLocation extends Interactor
         $this->sendResponse();
     }
 
+    /**
+     * @throws CleanArchitectureException
+     */
     private function fetchData(): void
     {
+        $location = new LocationEntity();
+        $location->setLocation($this->request->getLocationName());
         $this->queryData = $this->competitionRepository
-            ->fetchDrlCompetitionByLocationId(
-                $this->request->getLocationId()
-            );
+            ->fetchDrlCompetitionByLocation($location);
     }
 
     private function createResponse(): void

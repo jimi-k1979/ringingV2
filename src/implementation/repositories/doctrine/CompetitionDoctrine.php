@@ -37,6 +37,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
     public const FIELD_OTHER_COMPETITION_NAME = 'oc.competitionName';
     public const FIELD_OTHER_SINGLE_TOWER = 'oc.isSingleTower';
     public const FIELD_OTHER_USUAL_LOCATION_ID = 'oc.usualLocationID';
+    public const FIELD_DRL_EVENT_LOCATION_ID = 'de.locationID';
 
     /**
      * @inheritDoc
@@ -246,7 +247,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
     /**
      * @inheritDoc
      */
-    public function fetchDrlCompetitionByLocationId(int $locationId): array
+    public function fetchDrlCompetitionByUsualLocationId(int $locationId): array
     {
         try {
             $query = $this->baseDrlCompetitionSelectQuery();
@@ -439,5 +440,100 @@ class CompetitionDoctrine extends DoctrineRepository implements
         }
 
         return $this->generateDrlCompetitionEntity($result);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByLocation(LocationEntity $location): array
+    {
+        return array_merge(
+            $this->fetchDrlCompetitionByUsualLocation($location),
+            $this->fetchDrlCompetitionByVenue($location)
+        );
+    }
+
+    public function fetchDrlCompetitionByUsualLocation(
+        LocationEntity $location
+    ): array {
+        if ($location->getId()) {
+            return $this->fetchDrlCompetitionByUsualLocationId(
+                $location->getId()
+            );
+        }
+        try {
+            $query = $this->baseDrlCompetitionSelectQuery();
+            $query->where(self::FIELD_LOCATION . ' = :location')
+                ->setParameter('location', $location->getLocation())
+                ->distinct();
+
+            $results = $query->execute()->fetchAllAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'Competition not found - connection error',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateDrlCompetitionEntityArray($results);
+    }
+
+    public function fetchDrlCompetitionByVenue(
+        LocationEntity $location
+    ): array {
+        try {
+            $query = $this->database->createQueryBuilder();
+
+            $query->distinct()
+                ->select(
+                    array_merge(
+                        $this->allDrlCompetitionFields(),
+                        $this->usualLocationFields()
+                    )
+                )
+                ->from('DRL_competition', 'dc')
+                ->leftJoin(
+                    'dc',
+                    'DRL_event',
+                    'de',
+                    'dc.id = de.competitionID'
+                )
+                ->leftJoin(
+                    'dc',
+                    'location',
+                    'l',
+                    'de.locationID = l.id'
+                )
+                ->leftJoin(
+                    'dc',
+                    'deanery',
+                    'd',
+                    'l.deaneryID = d.id'
+                )
+                ->where(
+                    $query->expr()->and(
+                        $query->expr()->eq(self::FIELD_LOCATION, ':location'),
+                        $query->expr()->or(
+                            $query->expr()->neq(
+                                self::FIELD_DRL_USUAL_LOCATION_ID,
+                                self::FIELD_DRL_EVENT_LOCATION_ID
+                            ),
+                            $query->expr()->isNull(
+                                self::FIELD_DRL_USUAL_LOCATION_ID
+                            )
+                        )
+                    )
+                )
+                ->setParameter('location', $location->getLocation());
+
+            $results = $query->execute()->fetchAllAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'Competition not found - connection error',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateDrlCompetitionEntityArray($results);
     }
 }

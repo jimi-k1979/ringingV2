@@ -7,6 +7,8 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
@@ -27,9 +29,9 @@ class CompetitionSpy implements CompetitionRepositoryInterface
      * @var DrlCompetitionEntity[]
      */
     private array $fuzzySearchDrlCompetitionValue;
-    private bool $fetchDrlCompetitionByLocationCalled = false;
-    private bool $fetchDrlCompetitionByLocationCalledThrowsException = false;
-    private array $fetchDrlCompetitionByLocationCalledValue = [];
+    private bool $fetchDrlCompetitionByLocationIdCalled = false;
+    private bool $fetchDrlCompetitionByLocationIdCalledThrowsException = false;
+    private array $fetchDrlCompetitionByLocationIdCalledValue = [];
     private bool $fuzzySearchAllCompetitionsCalled = false;
     private bool $fuzzySearchAllCompetitionsThrowsException = false;
     /**
@@ -39,6 +41,9 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     private bool $fetchDrlCompetitionByNameCalled = false;
     private bool $fetchDrlCompetitionByNameThrowsException = false;
     private DrlCompetitionEntity $fetchDrlCompetitionByNameValue;
+    private bool $fetchDrlCompetitionByLocationCalled = false;
+    private bool $fetchDrlCompetitionByLocationCalledThrowsException = false;
+    private array $fetchDrlCompetitionByLocationCalledValue = [];
 
 
     public function setRepositoryThrowsException(): void
@@ -154,32 +159,32 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fetchDrlCompetitionByLocationId(int $locationId): array
+    public function fetchDrlCompetitionByUsualLocationId(int $locationId): array
     {
-        $this->fetchDrlCompetitionByLocationCalled = true;
-        if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
+        $this->fetchDrlCompetitionByLocationIdCalled = true;
+        if ($this->fetchDrlCompetitionByLocationIdCalledThrowsException) {
             throw new RepositoryNoResultsException(
                 'No rows found',
                 CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
             );
         }
 
-        return $this->fetchDrlCompetitionByLocationCalledValue;
+        return $this->fetchDrlCompetitionByLocationIdCalledValue;
     }
 
-    public function hasFetchDrlCompetitionByLocationBeenCalled(): bool
+    public function hasFetchDrlCompetitionByLocationIdBeenCalled(): bool
     {
-        return $this->fetchDrlCompetitionByLocationCalled;
+        return $this->fetchDrlCompetitionByLocationIdCalled;
     }
 
-    public function setFetchDrlCompetitionByLocationThrowsException(): void
+    public function setFetchDrlCompetitionByLocationIdThrowsException(): void
     {
-        $this->fetchDrlCompetitionByLocationCalledThrowsException = true;
+        $this->fetchDrlCompetitionByLocationIdCalledThrowsException = true;
     }
 
-    public function setFetchDrlCompetitionByLocationValue(array $value): void
+    public function setFetchDrlCompetitionByLocationIdValue(array $value): void
     {
-        $this->fetchDrlCompetitionByLocationCalledValue = $value;
+        $this->fetchDrlCompetitionByLocationIdCalledValue = $value;
     }
 
     /**
@@ -252,4 +257,36 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         return [];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByLocation(LocationEntity $location): array
+    {
+        $this->fetchDrlCompetitionByLocationCalled = true;
+        if ($this->fetchDrlCompetitionByLocationCalledThrowsException) {
+            throw new RepositoryNoResultsException(
+                'No rows found',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlCompetitionByLocationCalledValue;
+    }
+
+    public function hasFetchDrlCompetitionByLocationBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByLocationCalled;
+    }
+
+    public function setFetchDrlCompetitionByLocationThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByLocationCalledThrowsException = true;
+    }
+
+    public function setFetchDrlCompetitionByLocationValue(array $value): void
+    {
+        $this->fetchDrlCompetitionByLocationCalledValue = $value;
+    }
 }
+

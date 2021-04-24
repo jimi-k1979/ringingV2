@@ -9,24 +9,24 @@ use DrlArchive\core\classes\Request;
 
 class FetchDrlCompetitionByLocationRequest extends Request
 {
-    public const LOCATION_ID = 'locationId';
+    public const LOCATION_NAME = 'locationId';
 
     protected array $schema = [
-        self::LOCATION_ID => [
-            parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
+        self::LOCATION_NAME => [
+            parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,
             parent::OPTION_ALLOW_NULL => false,
         ],
     ];
 
-    public function getLocationId(): int
+    public function getLocationName(): string
     {
-        return $this->data[self::LOCATION_ID];
+        return $this->data[self::LOCATION_NAME];
     }
 
-    public function setLocationId(int $input): void
+    public function setLocationName(string $input): void
     {
-        $this->updateModel(self::LOCATION_ID, $input);
+        $this->updateModel(self::LOCATION_NAME, $input);
     }
 
 }
