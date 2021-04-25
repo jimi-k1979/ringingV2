@@ -78,4 +78,22 @@ interface CompetitionRepositoryInterface
     public function fetchDrlCompetitionByLocation(
         LocationEntity $location
     ): array;
+
+    /**
+     * @param LocationEntity $location
+     * @return DrlCompetitionEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlCompetitionByUsualLocation(
+        LocationEntity $location
+    ): array;
+
+    /**
+     * @param LocationEntity $location
+     * @return array
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlCompetitionByVenue(
+        LocationEntity $location
+    ): array;
 }

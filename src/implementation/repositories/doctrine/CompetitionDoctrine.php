@@ -453,6 +453,9 @@ class CompetitionDoctrine extends DoctrineRepository implements
         );
     }
 
+    /**
+     * @inheritDoc
+     */
     public function fetchDrlCompetitionByUsualLocation(
         LocationEntity $location
     ): array {
@@ -478,6 +481,9 @@ class CompetitionDoctrine extends DoctrineRepository implements
         return $this->generateDrlCompetitionEntityArray($results);
     }
 
+    /**
+     * @inheritDoc
+     */
     public function fetchDrlCompetitionByVenue(
         LocationEntity $location
     ): array {
