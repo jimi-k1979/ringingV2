@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
@@ -73,6 +74,16 @@ class EventDummy implements EventRepositoryInterface
      */
     public function fetchDrlEventsByCompetitionName(string $name): array
     {
+        return [$this->createMockDrlEvent()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionIdAndVenue(
+        int $competitionId,
+        string $locationName
+    ): array {
         return [$this->createMockDrlEvent()];
     }
 }

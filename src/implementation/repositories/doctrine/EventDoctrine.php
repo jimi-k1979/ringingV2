@@ -397,4 +397,36 @@ class EventDoctrine extends DoctrineRepository implements
 
         return $this->generateDrlEventEntityArray($results);
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionIdAndVenue(
+        int $competitionId,
+        string $locationName
+    ): array {
+        try {
+            $query = $this->baseDrlEventSelectQuery();
+            $query->where(
+                $query->expr()->and(
+                    $query->expr()->eq(self::FIELD_DRL_COMPETITION_ID, ':comp'),
+                    $query->expr()->eq(self::FIELD_LOCATION_NAME, ':location')
+                )
+            )
+                ->setParameters(
+                    [
+                        'comp' => $competitionId,
+                        'location' => $locationName
+                    ]
+                );
+            $results = $query->execute()->fetchAllAssociative();
+        } catch (Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No event found - connection error',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateDrlEventEntityArray($results);
+    }
 }

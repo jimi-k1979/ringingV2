@@ -7,7 +7,7 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIdsRequest;
+use DrlArchive\core\interactors\event\fetchDrlEventsByCompetitionIdAndLocation\FetchDrlEventsByCompetitionIdAndLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
 use DrlArchive\core\interactors\location\locationFuzzySearch\LocationFuzzySearchRequest;
@@ -17,7 +17,7 @@ use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
 use DrlArchive\implementation\factories\interactors\competition\DrlCompetitionFuzzySearchFactory;
 use DrlArchive\implementation\factories\interactors\competition\FetchDrlCompetitionByLocationFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventAndResultsFactory;
-use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByLocationAndCompetitionIdsFactory;
+use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByCompetitionIdAndLocationFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchDrlEventsByYearFactory;
 use DrlArchive\implementation\factories\interactors\event\FetchEventsByCompetitionFactory;
 use DrlArchive\implementation\factories\interactors\location\LocationFuzzySearchFactory;
@@ -77,8 +77,8 @@ try {
         case 'getCompetitionYears':
             $request = new FetchEventsByCompetitionRequest(
                 [
-                    FetchEventsByCompetitionRequest::COMPETITION_ID =>
-                        $_POST['competitionId'],
+                    FetchEventsByCompetitionRequest::COMPETITION =>
+                        $_POST['competition'],
                     FetchEventsByCompetitionRequest::COMPETITION_TYPE =>
                         AbstractCompetitionEntity::COMPETITION_TYPE_DRL,
                 ]
@@ -94,8 +94,8 @@ try {
         case 'getLocationEvents':
             $request = new FetchDrlCompetitionByLocationRequest(
                 [
-                    FetchDrlCompetitionByLocationRequest::LOCATION_ID =>
-                        $_POST['locationId'],
+                    FetchDrlCompetitionByLocationRequest::LOCATION_NAME =>
+                        $_POST['location'],
                 ]
             );
             $useCase = (new FetchDrlCompetitionByLocationFactory())->create(
@@ -107,11 +107,11 @@ try {
             break;
 
         case 'getLocationEventYears':
-            $request = new FetchDrlEventsByLocationAndCompetitionIdsRequest();
+            $request = new FetchDrlEventsByCompetitionIdAndLocationRequest();
             $request->setCompetitionId((int)$_POST['competitionId']);
-            $request->setLocationId((int)$_POST['locationId']);
+            $request->setLocation($_POST['location']);
 
-            $useCase = (new FetchDrlEventsByLocationAndCompetitionIdsFactory())
+            $useCase = (new FetchDrlEventsByCompetitionIdAndLocationFactory())
                 ->create(
                     new ResultsSearchDropdownPresenter(),
                     $request

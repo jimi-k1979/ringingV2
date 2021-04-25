@@ -52,7 +52,9 @@ class EventSpy implements EventRepositoryInterface
     private bool $fetchDrlEventsByCompetitionNameCalled = false;
     private bool $fetchDrlEventsByCompetitionNameThrowsException = false;
     private array $fetchDrlEventsByCompetitionNameValue = [];
-
+    private bool $fetchDrlEventsByCompetitionIdAndVenueCalled = false;
+    private bool $fetchDrlEventsByCompetitionIdAndVenueThrowsException = false;
+    private array $fetchDrlEventsByCompetitionIdAndVenueValue = [];
 
     /**
      * @param DrlEventEntity $entity
@@ -324,4 +326,36 @@ class EventSpy implements EventRepositoryInterface
         $this->fetchDrlEventsByCompetitionNameValue = $value;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventsByCompetitionIdAndVenue(
+        int $competitionId,
+        string $locationName
+    ): array {
+        $this->fetchDrlEventsByCompetitionIdAndVenueCalled = true;
+        if ($this->fetchDrlEventsByCompetitionIdAndVenueThrowsException) {
+            throw new RepositoryNoResultsException(
+                'No events found',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlEventsByCompetitionIdAndVenueValue;
+    }
+
+    public function hasFetchDrlEventsByCompetitionIdAndVenueBeenCalled(): bool
+    {
+        return $this->fetchDrlEventsByCompetitionIdAndVenueCalled;
+    }
+
+    public function setFetchDrlEventsByCompetitionIdAndVenueThrowsException(): void
+    {
+        $this->fetchDrlEventsByCompetitionIdAndVenueThrowsException = true;
+    }
+
+    public function setFetchDrlEventsByCompetitionIdAndVenueValue(array $value): void
+    {
+        $this->fetchDrlEventsByCompetitionIdAndVenueValue = $value;
+    }
 }

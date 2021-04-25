@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
+namespace DrlArchive\core\interactors\event\fetchDrlEventsByCompetitionIdAndLocation;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
-use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
@@ -18,7 +18,7 @@ use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
-class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
+class FetchDrlEventsByCompetitionIdAndLocationTest extends TestCase
 {
     use CreateMockDrlEventTrait;
 
@@ -26,7 +26,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
     {
         $this->assertInstanceOf(
             Interactor::class,
-            new FetchDrlEventsByLocationAndCompetitionIds()
+            new FetchDrlEventsByCompetitionIdAndLocation()
         );
     }
 
@@ -44,23 +44,23 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
     }
 
     /**
-     * @return FetchDrlEventsByLocationAndCompetitionIds
+     * @return FetchDrlEventsByCompetitionIdAndLocation
      */
-    private function createUseCase(): FetchDrlEventsByLocationAndCompetitionIds
+    private function createUseCase(): FetchDrlEventsByCompetitionIdAndLocation
     {
-        $request = new FetchDrlEventsByLocationAndCompetitionIdsRequest(
+        $request = new FetchDrlEventsByCompetitionIdAndLocationRequest(
             [
-                FetchDrlEventsByLocationAndCompetitionIdsRequest::COMPETITION_ID =>
+                FetchDrlEventsByCompetitionIdAndLocationRequest::COMPETITION_ID =>
                     TestConstants::TEST_DRL_COMPETITION_ID,
-                FetchDrlEventsByLocationAndCompetitionIdsRequest::LOCATION_ID =>
-                    TestConstants::TEST_LOCATION_ID,
+                FetchDrlEventsByCompetitionIdAndLocationRequest::LOCATION =>
+                    TestConstants::TEST_LOCATION_NAME,
             ]
         );
 
-        $useCase = new FetchDrlEventsByLocationAndCompetitionIds();
+        $useCase = new FetchDrlEventsByCompetitionIdAndLocation();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
-        $useCase->setUserRepository(new GuestUserDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
         return $useCase;
@@ -75,7 +75,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
         $useCase->execute();
 
         $this->assertTrue(
-            $eventSpy->hasFetchDrlEventsByCompetitionAndLocationIdsBeenCalled()
+            $eventSpy->hasFetchDrlEventsByCompetitionIdAndVenueBeenCalled()
         );
     }
 
@@ -96,7 +96,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchDrlEventsByCompetitionAndLocationIdsValue(
+        $eventSpy->setFetchDrlEventsByCompetitionIdAndVenueValue(
             [$this->createMockDrlEvent()]
         );
 
@@ -129,7 +129,7 @@ class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchDrlEventsByCompetitionAndLocationIdsThrowsException();
+        $eventSpy->setFetchDrlEventsByCompetitionIdAndVenueThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
