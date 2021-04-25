@@ -1,6 +1,9 @@
 const ready = (callback) => {
-    if (document.readyState !== "loading") callback();
-    else document.addEventListener("DOMContentLoaded", callback);
+    if (document.readyState !== "loading") {
+        callback();
+    } else {
+        document.addEventListener("DOMContentLoaded", callback);
+    }
 }
 
 function ucwords(str) {
@@ -46,6 +49,33 @@ function ajaxPostRequest(jsonData, url, successfulCallback) {
     );
     request.onload = successfulCallback;
     request.send(data);
+}
+
+function fuzzySearchResponse(action, term, response) {
+    let data = {
+        action: action,
+        term: term,
+    };
+    ajaxPostRequest(
+        data,
+        '/assets/ajax/fuzzySearches.php',
+        function () {
+            if (this.status >= 200 && this.status < 400) {
+                let output = JSON.parse(this.response);
+                let data = [];
+                output.forEach(element => data.push(element.name));
+                response(data);
+            }
+        }
+    );
+}
+
+function emptyDropDown(selector) {
+    while (selector.firstChild) {
+        selector.removeChild(
+            selector.firstChild
+        );
+    }
 }
 
 const earliestYear = 1920;

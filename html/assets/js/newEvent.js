@@ -1,22 +1,3 @@
-function fuzzySearchResponse(action, term, response) {
-    let data = {
-        action: action,
-        term: term,
-    };
-    ajaxPostRequest(
-        data,
-        '/assets/ajax/fuzzySearches.php',
-        function () {
-            if (this.status >= 200 && this.status < 400) {
-                let output = JSON.parse(this.response);
-                let data = [];
-                output.forEach(element => data.push(element.name));
-                response(data);
-            }
-        }
-    );
-}
-
 function enableCompetitionFieldIfInYearRange(enteredDate) {
     let dateNow = new Date();
     let searchField = document.querySelector('#competition-fuzzy-search');

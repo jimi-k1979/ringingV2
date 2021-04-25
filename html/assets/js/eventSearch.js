@@ -1,301 +1,342 @@
-function getFuzzySearchData(request, response, action) {
-    $.ajax({
-        url: '/assets/ajax/fuzzySearches.php',
-        type: 'POST',
-        dataType: 'json',
-        data: {
-            term: request.term,
-            action: action,
-        },
-        success: function (output) {
-            if (output.message) {
-                response($.map(output, function () {
-                    return {
-                        value: 'Database error, try again later',
-                        label: 'Database error, try again later',
-                        id: 0,
-                    }
-                }));
-            } else {
-                response($.map(output, function (item) {
-                    return {
-                        value: item.name,
-                        label: item.name,
-                        id: item.id,
-                    }
-                }));
-            }
-        }
-    });
-}
-
 function populateDropDown(data) {
-    data.selector.empty()
+    emptyDropDown(data.selector);
     if (data.firstEntryText.length > 0) {
-        data.selector.append(
-            $("<option />").val('0').text(data.firstEntryText)
-        );
+        let option = document.createElement('option');
+        option.value = '0';
+        option.text = data.firstEntryText;
+        data.selector.add(option);
     }
-    $.each(data.output, function () {
-        data.selector.append(
-            $("<option />").val(this.id)
-                .text(this.text)
-        );
+
+    data.output.forEach(row => {
+        let option = document.createElement('option');
+        option.value = row.id;
+        option.text = row.text;
+        data.selector.add(option);
     });
-    data.selector.attr('disabled', false);
+
+    data.selector.disabled = false;
 }
 
 function yearChangeAction(value) {
-    let $eventSelect = $('#year-event');
-    let $resultsButton = $('#year-get-results');
+    const eventSelect = document.querySelector('#year-event');
+    const resultsButton = document.querySelector('#year-get-results');
+
     if (
         value > 1920 &&
         value <= new Date().getFullYear()
     ) {
-        $.ajax({
-            url: '/assets/ajax/fuzzySearches.php',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                eventYear: value,
-                action: 'getYearEvents',
-            },
-            success: function (output) {
-                if (output.message) {
-                    alert('fuck a duck, it failed');
-                } else {
+        let data = {
+            eventYear: value,
+            action: 'getYearEvents',
+        };
+        ajaxPostRequest(
+            data,
+            '/assets/ajax/fuzzySearches.php',
+            function () {
+                if (this.status >= 200 && this.status < 400) {
+                    let output = JSON.parse(this.response);
                     let dataForDropdown = {
-                        selector: $eventSelect,
-                        firstEntryText: '',
+                        selector: eventSelect,
+                        firstEntryText: 'Events',
                         output: output,
                     }
                     populateDropDown(dataForDropdown);
-                    $resultsButton.text('Get these results!')
-                        .attr('disabled', false);
+                    resultsButton.textContent = 'Get these results';
+                    resultsButton.disabled = false;
                 }
             }
-        });
+        )
 
     } else {
-        $eventSelect.empty().append(
-            $("<option />").val('0').text('Select an event')
-        ).attr('disabled', true);
-        $resultsButton.text('Waiting...').attr('disabled', true);
+        let emptyOption = document.createElement('option');
+        emptyOption.value = '0';
+        emptyOption.text = 'Select a year';
+
+        emptyDropDown(eventSelect);
+        eventSelect.add(emptyOption);
+        eventSelect.disabled = true;
+
+        resultsButton.textContent = 'Waiting...';
+        resultsButton.disabled = true;
     }
 }
 
 function getEventResults(eventId) {
-    // do ajax and display results
-    $.ajax({
-        url: '/assets/ajax/fuzzySearches.php',
-        type: 'POST',
-        dataType: 'json',
-        data: {
-            eventId: eventId,
-            action: 'getResults',
-        },
-        success: function (output) {
-            if (output.message) {
-                if (output.code === 2302) { // no results for event
-                    buildResultTitleSection(output.event);
-                    $('#result-table').hide();
-                    $('#judges-section').hide();
-                    $('#results-section').removeClass('hidden');
+    const resultTable = document.querySelector('#result-table');
+    const judgesSection = document.querySelector('#judges-section');
+    const resultsSection = document.querySelector('#results-section');
 
+    let data = {
+        eventId: eventId,
+        action: 'getResults',
+    };
+
+    ajaxPostRequest(
+        data,
+        '/assets/ajax/fuzzySearches.php',
+        function () {
+            if (this.status >= 200 && this.status < 400) {
+                let output = JSON.parse(this.response);
+                if (output.message) {
+                    if (output.code === 2302) { // no results for event
+                        buildResultTitleSection(output.event);
+                        resultTable.style.display = 'none';
+                        judgesSection.style.display = 'none';
+                        resultsSection.classList.remove('hidden');
+                    }
+                } else {
+                    resultTable.innerHTML = '';
+                    resultTable.style.display = '';
+                    buildTable(output.results);
+                    buildResultTitleSection(output.event);
+                    buildResultJudgesSection(output.judges);
+                    resultsSection.classList.remove('hidden');
                 }
-            } else {
-                $('#result-table').html('').show();
-                buildTable(output.results);
-                buildResultTitleSection(output.event);
-                buildResultJudgesSection(output.judges);
-                $('#results-section').removeClass('hidden');
             }
         }
-    });
+    );
 }
 
 function buildResultTitleSection(eventData) {
-    $('#result-year').text(eventData.year);
-    $('#result-competition-name').text(eventData.competition);
+    document.querySelector('#result-year').textContent = eventData.year;
+    document.querySelector('#result-competition-name').textContent =
+        eventData.competition;
+
     if (
         eventData.singleTower === false ||
         eventData.unusualTower === true
     ) {
-        $('#held-at').show();
-        $('#result-location').text(eventData.location);
+        document.querySelector('#held-at').style.display = '';
+        document.querySelector('#result-location').textContent =
+            eventData.location;
     } else {
-        $('#held-at').hide();
+        document.querySelector('#held-at').style.display = 'none';
     }
 }
 
 function buildResultJudgesSection(judgesData) {
-    let $judgesSection = $('#judges-section');
+    const judgesSection = document.querySelector('#judges-section');
 
     if (judgesData.length > 0) {
-        let $judgesList = $('#result-judges-list');
+        const judgesList = document.querySelector('#result-judges-list');
 
-        $judgesSection.show();
-        $judgesList.html('');
-        $.each(judgesData, function () {
-            $judgesList.append(
-                $("<li />").text(this.name)
-            );
+        judgesSection.style.display = '';
+        judgesList.innerHTML = '';
+        judgesData.forEach(function () {
+            let li = document.createElement('li');
+            judgesList.appendChild(li);
+            li.innerHTML = this.name;
         });
     } else {
-        $judgesSection.hide();
+        judgesSection.style.display = 'hide';
     }
 }
 
-$(function () {
-    $('#competition-text-search').autocomplete({
-        minLength: 0,
-        source: function (request, response) {
-            let length = request.term.length;
-            if (length > 2) {
-                getFuzzySearchData(
-                    request,
-                    response,
-                    'fuzzySearchCompetitions'
+ready(() => {
+    const eventYearDropDown = document.querySelector('#event-year');
+    const eventGetResultsButton = document.querySelector('#event-get-results');
+    const locationEventDropDown = document.querySelector('#location-event');
+    const locationYearDropDown = document.querySelector('#location-year');
+    const locationGetResultsButton = document.querySelector('#location-get-results');
+    const locationTextSearch = document.querySelector('#location-text-search');
+    const yearTextSearch = document.querySelector('#year-text-search');
+    const yearGetResultsButton = document.querySelector('#year-get-results');
+    const yearEventDropDown = document.querySelector('#year-event');
+
+    new autoComplete({
+        selector: '#competition-text-search',
+        minChars: 1,
+        source: function (term, response) {
+            let length = term.length;
+            if (length >= 3) {
+                fuzzySearchResponse(
+                    'fuzzySearchCompetitions',
+                    term,
+                    response
                 );
             } else {
-                if (length === 0) {
-                    $('#event-year').empty().append(
-                        $("<option />").val('0').text('Select an event')
-                    ).attr('disabled', true);
-                    $('#event-get-results').text('Waiting...')
-                        .attr('disabled', true)
-                }
-            }
-        },
-        select: function (e, data) {
-            $.ajax({
-                url: '/assets/ajax/fuzzySearches.php',
-                type: 'POST',
-                dataType: 'json',
-                data: {
-                    competitionId: data.item.id,
-                    action: 'getCompetitionYears',
-                },
-                success: function (output) {
-                    if (output.message) {
-                        alert('fuck a duck, it failed');
-                    } else {
-                        let dataForDropdown = {
-                            selector: $('#event-year'),
-                            firstEntryText: '',
-                            output: output,
-                        };
-                        populateDropDown(dataForDropdown);
-                        $('#event-get-results').attr('disabled', false)
-                            .text('Get these results!');
-                    }
-                }
-            });
-        },
-    });
+                let emptyOption = document.createElement('option');
+                emptyOption.value = '0';
+                emptyOption.text = 'Select an event';
 
-    $('#location-text-search').autocomplete({
-        minLength: 0,
-        source: function (request, response) {
-            let length = request.term.length;
-            if (length > 2) {
-                getFuzzySearchData(request, response, 'fuzzySearchLocations');
-            } else {
-                if (length === 0) {
-                    $('#location-event').empty().append(
-                        $("<option />").val('0').text('Select a location')
-                    ).attr('disabled', true);
-                    $('#location-year').empty().append(
-                        $("<option />").val('0').text('Select a location and event')
-                    ).attr('disabled', true);
-                    $('#location-get-results').text('Waiting...')
-                        .attr('disabled', true)
-                }
+                emptyDropDown(eventYearDropDown);
+                eventYearDropDown.add(emptyOption);
+
+                eventGetResultsButton.textContent = 'Waiting...';
+                eventGetResultsButton.disabled = true;
             }
         },
-        select: function (e, data) {
-            $('#hidden-location-id').val(data.item.id);
-            $.ajax({
-                url: '/assets/ajax/fuzzySearches.php',
-                type: 'POST',
-                dataType: 'json',
-                data: {
-                    locationId: data.item.id,
-                    action: 'getLocationEvents',
-                },
-                success: function (output) {
-                    if (output.message) {
-                        alert('fuck a duck, it failed');
-                    } else {
-                        let dataForDropdown = {
-                            selector: $('#location-event'),
-                            firstEntryText: 'Select an event',
-                            output: output,
+        onSelect: function (e, competition, item) {
+            let data = {
+                action: 'getCompetitionYears',
+                competition: competition,
+            };
+            ajaxPostRequest(
+                data,
+                '/assets/ajax/fuzzySearches.php',
+                function () {
+                    if (this.status >= 200 && this.status < 400) {
+                        let output = JSON.parse(this.response);
+                        if (output.message) {
+                            alert('fuck a duck, it failed');
+                        } else {
+                            let dataForDropdown = {
+                                selector: eventYearDropDown,
+                                firstEntryText: 'Years',
+                                output: output,
+                            };
+                            populateDropDown(dataForDropdown);
+                            eventGetResultsButton.disabled = false;
+                            eventGetResultsButton.textContent =
+                                'Get these results!';
                         }
-                        populateDropDown(dataForDropdown);
-                        $('#location-year:first-child option')
-                            .text('Select an event');
                     }
                 }
-            });
-        }
+            )
+        },
     });
 
-    $('#location-event').on('change', function () {
-        let competitionId = parseInt($(this).val());
-        let $yearSelect = $('#location-year');
-        let $resultsButton = $('#location-get-results');
-        if (competitionId === 0) {
-            $yearSelect.empty().append(
-                $("<option />").val('0').text('Select an event')
-            ).attr('disabled', true);
-            $resultsButton.text('Waiting...').attr('disabled', true);
-        } else {
-            $.ajax({
-                url: '/assets/ajax/fuzzySearches.php',
-                type: 'POST',
-                dataType: 'json',
-                data: {
-                    locationId: $('#hidden-location-id').val(),
+    new autoComplete({
+        selector: '#location-text-search',
+        minChars: 1,
+        source: function (term, response) {
+            let length = term.length;
+            if (length >= 3) {
+                fuzzySearchResponse(
+                    'fuzzySearchLocations',
+                    term,
+                    response
+                );
+            } else {
+                let emptyOption = document.createElement('option');
+                emptyOption.value = '0';
+                emptyOption.text = 'Select a location';
+
+                emptyDropDown(locationEventDropDown);
+                locationEventDropDown.add(emptyOption);
+
+                let anotherEmptyOption = document.createElement('option');
+                anotherEmptyOption.value = '0';
+                anotherEmptyOption.text = 'Select a location and event';
+
+                emptyDropDown(locationYearDropDown);
+                locationYearDropDown.add(anotherEmptyOption);
+
+                locationGetResultsButton.textContent = 'Waiting...';
+                locationGetResultsButton.disabled = true;
+            }
+        },
+        onSelect: function (e, location, item) {
+            let data = {
+                action: 'getLocationEvents',
+                location: location,
+            };
+            ajaxPostRequest(
+                data,
+                '/assets/ajax/fuzzySearches.php',
+                function () {
+                    if (this.status >= 200 && this.status < 400) {
+                        let output = JSON.parse(this.response);
+                        if (output.message) {
+                            alert('fuck a duck, it failed');
+                        } else {
+                            let dataForDropdown = {
+                                selector: locationEventDropDown,
+                                firstEntryText: 'Events',
+                                output: output,
+                            };
+                            populateDropDown(dataForDropdown);
+
+                            let emptyOption = document.createElement('option');
+                            emptyOption.value = '0';
+                            emptyOption.text = 'Select an event';
+
+                            emptyDropDown(locationYearDropDown);
+                            locationYearDropDown.add(emptyOption);
+                        }
+                    }
+                }
+            )
+        },
+    });
+
+    locationEventDropDown.addEventListener(
+        'change',
+        function () {
+            let competitionId = parseInt(this.value);
+
+            if (competitionId === 0) {
+                emptyDropDown(locationYearDropDown);
+                let option = document.createElement('option');
+                option.value = '0';
+                option.text = 'Select an event';
+                locationYearDropDown.add(option);
+                locationYearDropDown.disabled = true;
+
+                locationGetResultsButton.disabled = true;
+                locationGetResultsButton.textContent = 'Waiting...';
+            } else {
+                let data = {
+                    location: locationTextSearch.value,
                     competitionId: competitionId,
                     action: 'getLocationEventYears',
-                },
-                success: function (output) {
-                    if (output.message) {
-                        alert('fuck a duck, it failed');
-                    } else {
-                        let dataForDropdown = {
-                            selector: $yearSelect,
-                            firstEntryText: '',
-                            output: output,
+                };
+                ajaxPostRequest(
+                    data,
+                    '/assets/ajax/fuzzySearches.php',
+                    function () {
+                        if (this.status >= 200 && this.status < 400) {
+                            let output = JSON.parse(this.response);
+                            if (output.message) {
+                                alert('fuck a duck, it failed');
+                            } else {
+                                let dataForDropdown = {
+                                    selector: locationYearDropDown,
+                                    firstEntryText: 'Years',
+                                    output: output,
+                                }
+                                populateDropDown(dataForDropdown);
+                                locationGetResultsButton.textContent = 'Get these results!';
+                                locationGetResultsButton.disabled = false;
+                            }
                         }
-                        populateDropDown(dataForDropdown);
-                        $resultsButton.text('Get these results!')
-                            .attr('disabled', false);
                     }
-                }
-            })
+                );
+            }
         }
+    );
 
-    });
+    yearTextSearch.addEventListener(
+        'keyup',
+        function () {
+            yearChangeAction(this.value);
+        }
+    );
+    yearTextSearch.addEventListener(
+        'change',
+        function () {
+            yearChangeAction(this.value);
+        }
+    );
 
-    $('#year-text-search')
-        .on('keyup', function () {
-            yearChangeAction($(this).val());
-        })
-        .on('change', function () {
-            yearChangeAction($(this).val());
-        });
+    eventGetResultsButton.addEventListener(
+        'click',
+        function () {
+            getEventResults(eventYearDropDown.value);
+        }
+    );
 
-    $('#event-get-results').on('click', function () {
-        getEventResults($('#event-year').val());
-    });
+    locationGetResultsButton.addEventListener(
+        'click',
+        function () {
+            getEventResults(locationYearDropDown.value);
+        }
+    );
 
-    $('#location-get-results').on('click', function () {
-        getEventResults($('#location-year').val());
-    });
-
-    $('#year-get-results').on('click', function () {
-        getEventResults($('#year-event').val());
-    });
+    yearGetResultsButton.addEventListener(
+        'click',
+        function () {
+            getEventResults(yearEventDropDown.value);
+        }
+    )
 });
