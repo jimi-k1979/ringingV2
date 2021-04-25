@@ -6,16 +6,17 @@ namespace DrlArchive\implementation\factories\interactors\event;
 
 
 use DrlArchive\core\classes\Request;
-use DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds\FetchDrlEventsByLocationAndCompetitionIds;
+use DrlArchive\core\interactors\event\fetchDrlEventsByCompetitionIdAndLocation\FetchDrlEventsByCompetitionIdAndLocation;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
-class FetchDrlEventsByLocationAndCompetitionIdsFactory implements
+class FetchDrlEventsByCompetitionIdAndLocationFactory implements
     InteractorFactoryInterface
 {
 
@@ -24,12 +25,12 @@ class FetchDrlEventsByLocationAndCompetitionIdsFactory implements
         ?Request $request = null,
         int $loggedInUserId = UserRepositoryInterface::GUEST_USER
     ): InteractorInterface {
-        $useCase = new FetchDrlEventsByLocationAndCompetitionIds();
+        $useCase = new FetchDrlEventsByCompetitionIdAndLocation();
 
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
-        $useCase->setUserRepository(
-            (new UserRepositoryFactory())->create($loggedInUserId)
+        $useCase->setAuthenticationManager(
+            (new AuthenticationManagerFactory())->create()
         );
         $useCase->setSecurityRepository(
             (new SecurityRepositoryFactory())->create()

@@ -22,7 +22,7 @@ class ResultDoctrine extends DoctrineRepository
     private const FIELD_DRL_POSITION = 'dr.position';
     private const FIELD_DRL_PEAL = 'dr.pealNumber';
     private const FIELD_DRL_FAULTS = 'dr.faults';
-    private const FIELD_DRL_TEAM_ID = 'dr.teamsID';
+    private const FIELD_DRL_TEAM_ID = 'dr.teamID';
     private const FIELD_TEAM_NAME = 't.teamName';
     private const FIELD_DRL_EVENT_ID = 'dr.eventID';
     private const FIELD_POINTS = 'dr.points';
@@ -156,7 +156,7 @@ class ResultDoctrine extends DoctrineRepository
             $entity->setFaults((float)$row[Repository::ALIAS_FAULTS]);
         }
         if (isset($row[Repository::ALIAS_POINTS])) {
-            $entity->setPosition((int)$row[Repository::ALIAS_POINTS]);
+            $entity->setPoints((int)$row[Repository::ALIAS_POINTS]);
         }
         if (isset($row[Repository::ALIAS_TEAM_ID])) {
             $entity->getTeam()->setId((int)$row[Repository::ALIAS_TEAM_ID]);

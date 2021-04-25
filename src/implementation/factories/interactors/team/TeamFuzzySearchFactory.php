@@ -11,6 +11,7 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
@@ -30,8 +31,8 @@ class TeamFuzzySearchFactory implements InteractorFactoryInterface
         $useCase->setSecurityRepository(
             (new SecurityRepositoryFactory())->create()
         );
-        $useCase->setUserRepository(
-            (new UserRepositoryFactory())->create()
+        $useCase->setAuthenticationManager(
+            (new AuthenticationManagerFactory())->create()
         );
         $useCase->setTeamRepository(
             (new TeamDoctrineFactory())->create()

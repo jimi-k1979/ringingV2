@@ -7,9 +7,9 @@ namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
-use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
@@ -50,14 +50,15 @@ class FetchDrlCompetitionByLocationTest extends TestCase
     {
         $request = new FetchDrlCompetitionByLocationRequest(
             [
-                FetchDrlCompetitionByLocationRequest::LOCATION_ID => TestConstants::TEST_LOCATION_ID,
+                FetchDrlCompetitionByLocationRequest::LOCATION_NAME =>
+                    TestConstants::TEST_LOCATION_NAME,
             ]
         );
 
         $useCase = new FetchDrlCompetitionByLocation();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
-        $useCase->setUserRepository(new GuestUserDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         return $useCase;

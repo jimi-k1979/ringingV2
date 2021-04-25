@@ -59,6 +59,9 @@ class JudgeDoctrine extends DoctrineRepository implements
             );
         }
 
+        if (empty($results)) {
+            return [];
+        }
         return $this->generateJudgeEntityArray($results);
     }
 

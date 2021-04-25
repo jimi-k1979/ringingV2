@@ -11,9 +11,9 @@ use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
+use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
 class FetchEventsByCompetitionFactory implements InteractorFactoryInterface
 {
@@ -27,8 +27,8 @@ class FetchEventsByCompetitionFactory implements InteractorFactoryInterface
 
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
-        $useCase->setUserRepository(
-            (new UserRepositoryFactory())->create($loggedInUserId)
+        $useCase->setAuthenticationManager(
+            (new AuthenticationManagerFactory())->create()
         );
         $useCase->setSecurityRepository(
             (new SecurityRepositoryFactory())->create()

@@ -36,8 +36,8 @@ class DrlCompetitionFuzzySearch extends Interactor
 
     public function execute(): void
     {
-        $this->checkUserIsAuthorised();
         try {
+            $this->checkUserIsAuthorised();
             $this->searchForCompetitions();
             $this->createSuccessfulResponse();
         } catch (Exception $e) {

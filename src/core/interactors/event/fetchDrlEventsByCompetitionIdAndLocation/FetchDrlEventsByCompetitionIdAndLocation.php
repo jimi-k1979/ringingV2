@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds;
+namespace DrlArchive\core\interactors\event\fetchDrlEventsByCompetitionIdAndLocation;
 
 
 use DrlArchive\core\classes\Response;
@@ -12,11 +12,11 @@ use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use Exception;
 
 /**
- * Class FetchDrlEventsByLocationAndCompetitionIds
- * @package DrlArchive\core\interactors\event\FetchDrlEventsByLocationAndCompetitionIds
- * @property FetchDrlEventsByLocationAndCompetitionIdsRequest $request
+ * Class FetchDrlEventsByCompetitionIdAndLocation
+ * @package DrlArchive\core\interactors\event\FetchDrlEventsByCompetitionIdAndLocation
+ * @property FetchDrlEventsByCompetitionIdAndLocationRequest $request
  */
-class FetchDrlEventsByLocationAndCompetitionIds extends Interactor
+class FetchDrlEventsByCompetitionIdAndLocation extends Interactor
 {
 
     private EventRepositoryInterface $eventRepository;
@@ -48,9 +48,9 @@ class FetchDrlEventsByLocationAndCompetitionIds extends Interactor
     private function fetchData(): void
     {
         $this->queryData = $this->eventRepository
-            ->fetchDrlEventsByCompetitionAndLocationIds(
+            ->fetchDrlEventsByCompetitionIdAndVenue(
                 $this->request->getCompetitionId(),
-                $this->request->getLocationId()
+                $this->request->getLocation()
             );
     }
 
@@ -64,7 +64,7 @@ class FetchDrlEventsByLocationAndCompetitionIds extends Interactor
             ];
         }
 
-        $this->response = new FetchDrlEventsByLocationAndCompetitionIdsResponse(
+        $this->response = new FetchDrlEventsByCompetitionIdAndLocationResponse(
             [
                 Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
                 Response::RESPONSE_DATA => $dataArray,
@@ -74,7 +74,7 @@ class FetchDrlEventsByLocationAndCompetitionIds extends Interactor
 
     private function createFailureResponse(Exception $e): void
     {
-        $this->response = new FetchDrlEventsByLocationAndCompetitionIdsResponse(
+        $this->response = new FetchDrlEventsByCompetitionIdAndLocationResponse(
             [
                 Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
                 Response::RESPONSE_MESSAGE => 'No events found',

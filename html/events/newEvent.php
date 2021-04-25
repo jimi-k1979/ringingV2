@@ -5,9 +5,67 @@ declare(strict_types=1);
 require_once __DIR__ . '/../init.php';
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\Constants;
 use DrlArchive\core\interactors\event\newEventPage\NewEventPageRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\event\NewEventPageFactory;
+use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
+
+if (empty($_SESSION['auth_logged_in'])) {
+    // not logged in - redirect to results archive
+    header('Location: /events/resultArchive.php');
+    exit;
+}
+
+$presenter = new class extends AbstractTwigPagePresenter {
+
+    public function send(?Response $response = null): void
+    {
+        parent::send($response);
+
+        $this->dataForTemplate['nav']['highlighted'] =
+            Implementation::NAV_HIGHLIGHT_ARCHIVE;
+
+        if ($response->getStatus() === Response::STATUS_FORBIDDEN) {
+            header('Location:./resultArchive.php');
+            exit;
+        } elseif ($response->getStatus() === Response::STATUS_SUCCESS) {
+            if (!empty($response->getData())) {
+                $_SESSION['message'] =
+                    'Success! New event added to the archive.';
+                header('Location:./newEvent.php');
+                exit;
+            }
+
+            $this->dataForTemplate['messaging'] = [
+                Constants::FIELD_STATUS => $_SESSION['status'] ?? 200,
+                Constants::FIELD_MESSAGE => $_SESSION['message'] ?? '',
+            ];
+            unset($_SESSION['message']);
+            unset($_SESSION['status']);
+
+            $this->dataForTemplate['settings'] = [
+                'maxYear' => new DateTime(),
+                'minYear' => Constants::MINIMUM_YEAR,
+            ];
+
+            try {
+                $this->twig->display(
+                    'events/newEvent.twig',
+                    $this->dataForTemplate
+                );
+            } catch (Throwable $e) {
+                include __DIR__ . '/../templates/failed.html';
+            }
+        } else {
+            $_SESSION['message'] = $response->getMessage();
+            $_SESSION['status'] = $response->getStatus();
+            header('Location:./newEvent.php');
+            exit;
+        }
+    }
+};
 
 if (!empty($_POST)) {
     $request = new NewEventPageRequest();
@@ -29,49 +87,8 @@ if (!empty($_POST)) {
     $request = null;
 }
 
-$presenter = new class implements PresenterInterface {
-
-    public function send(?Response $response = null): void
-    {
-        global $twig;
-
-        if ($response->getStatus() === Response::STATUS_FORBIDDEN) {
-            header('Location:./resultArchive.php');
-            exit;
-        } elseif ($response->getStatus() === Response::STATUS_SUCCESS) {
-            if (!empty($response->getData())) {
-                $_SESSION['message'] =
-                    'Success! New event added to the archive.';
-                header('Location:./newEvent.php');
-                exit;
-            }
-            $message = $_SESSION['message'] ?? '';
-            $status = $_SESSION['status'] ?? 200;
-            unset($_SESSION['message']);
-            unset($_SESSION['status']);
-            try {
-                echo $twig->render(
-                    'events/newEvent.twig',
-                    [
-                        'maxYear' => new DateTime(),
-                        'message' => $message,
-                        'status' => $status,
-                    ]
-                );
-            } catch (Throwable $e) {
-                include __DIR__ . '/../templates/failed.html';
-            }
-        } else {
-            $_SESSION['message'] = $response->getMessage();
-            $_SESSION['status'] = $response->getStatus();
-            header('Location:./newEvent.php');
-            exit;
-        }
-    }
-};
-
 $useCase = (new NewEventPageFactory())->create(
     $presenter,
-    $request,
+    $request
 );
 $useCase->execute();

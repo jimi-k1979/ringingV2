@@ -6,6 +6,8 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlCompetitionEntity;
+use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlCompetitionTrait;
@@ -36,7 +38,7 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function fetchDrlCompetitionByLocationId(int $locationId): array
+    public function fetchDrlCompetitionByUsualLocationId(int $locationId): array
     {
         return [$this->createMockDrlCompetition()];
     }
@@ -62,6 +64,14 @@ class CompetitionDummy implements CompetitionRepositoryInterface
      * @inheritDoc
      */
     public function fuzzySearchOtherCompetitions(string $search): array
+    {
+        return [];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByLocation(LocationEntity $location): array
     {
         return [];
     }

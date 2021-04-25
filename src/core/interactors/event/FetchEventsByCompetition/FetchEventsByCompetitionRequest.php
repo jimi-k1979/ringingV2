@@ -9,12 +9,12 @@ use DrlArchive\core\classes\Request;
 
 class FetchEventsByCompetitionRequest extends Request
 {
-    public const COMPETITION_ID = 'competitionId';
+    public const COMPETITION = 'competition';
     public const COMPETITION_TYPE = 'competitionType';
 
     protected array $schema = [
-        self::COMPETITION_ID => [
-            parent::OPTION_TYPE => parent::FIELD_TYPE_INT,
+        self::COMPETITION => [
+            parent::OPTION_TYPE => parent::FIELD_TYPE_STRING,
             parent::OPTION_REQUIRED => true,
             parent::OPTION_ALLOW_NULL => true,
         ],
@@ -25,14 +25,14 @@ class FetchEventsByCompetitionRequest extends Request
         ]
     ];
 
-    public function getCompetitionId(): int
+    public function getCompetition(): string
     {
-        return $this->data[self::COMPETITION_ID];
+        return $this->data[self::COMPETITION];
     }
 
-    public function setCompetitionId(int $input): void
+    public function setCompetition(string $input): void
     {
-        $this->updateModel(self::COMPETITION_ID, $input);
+        $this->updateModel(self::COMPETITION, $input);
     }
 
     public function getCompetitionType(): int

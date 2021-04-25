@@ -11,7 +11,7 @@ abstract class AbstractCompetitionEntity extends Entity
     public const COMPETITION_TYPE_LADDER = 2;
 
     protected string $name;
-    protected bool $singleTowerCompetition;
+    protected bool $singleTowerCompetition = true;
     protected ?LocationEntity $usualLocation = null;
 
     /**

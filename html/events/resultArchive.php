@@ -7,10 +7,26 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../init.php';
 
+use DrlArchive\core\classes\Response;
+use DrlArchive\Implementation;
+use DrlArchive\implementation\factories\interactors\pages\ResultsArchiveFactory;
+use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 use Twig\Environment;
 
-try {
-    $twig->display('events/eventSearch.twig');
-} catch (Throwable $e) {
-    include __DIR__ . '/../templates/failed.html';
-}
+$presenter = new class extends AbstractTwigPagePresenter {
+    public function send(?Response $response = null): void
+    {
+        parent::send($response);
+        $this->dataForTemplate['nav']['highlighted'] = Implementation::NAV_HIGHLIGHT_ARCHIVE;
+
+        $this->twig->display(
+            'events/eventSearch.twig',
+            $this->dataForTemplate
+        );
+    }
+};
+
+$useCase = (new ResultsArchiveFactory())->create(
+    $presenter
+);
+$useCase->execute();

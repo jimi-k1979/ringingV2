@@ -1,3 +1,11 @@
+const ready = (callback) => {
+    if (document.readyState !== "loading") {
+        callback();
+    } else {
+        document.addEventListener("DOMContentLoaded", callback);
+    }
+}
+
 function ucwords(str) {
     return (str + '').replace(/^([a-z])|\s+([a-z])/g, function ($1) {
         return $1.toUpperCase();
@@ -26,4 +34,49 @@ function renderFaults(faultInt) {
     return faultInt;
 }
 
+function ajaxPostRequest(jsonData, url, successfulCallback) {
+    let data = new URLSearchParams(jsonData).toString();
+    let request = new XMLHttpRequest();
+    request.open(
+        'POST',
+        url,
+        true
+    );
+
+    request.setRequestHeader(
+        'Content-type',
+        'application/x-www-form-urlencoded'
+    );
+    request.onload = successfulCallback;
+    request.send(data);
+}
+
+function fuzzySearchResponse(action, term, response) {
+    let data = {
+        action: action,
+        term: term,
+    };
+    ajaxPostRequest(
+        data,
+        '/assets/ajax/fuzzySearches.php',
+        function () {
+            if (this.status >= 200 && this.status < 400) {
+                let output = JSON.parse(this.response);
+                let data = [];
+                output.forEach(element => data.push(element.name));
+                response(data);
+            }
+        }
+    );
+}
+
+function emptyDropDown(selector) {
+    while (selector.firstChild) {
+        selector.removeChild(
+            selector.firstChild
+        );
+    }
+}
+
 const earliestYear = 1920;
+

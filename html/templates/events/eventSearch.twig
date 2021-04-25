@@ -1,15 +1,19 @@
-{% extends "allPages/base.twig" %}
+{% extends "base.twig" %}
 
 {% block title %}Results Archive - event search{% endblock %}
 
 {% block extraStyles %}
-    <link href="/assets/css/fuzzySearchResponse.css"
+    <link href="/assets/css/auto-complete.css"
           rel="stylesheet"
           type="text/css"
     >
 {% endblock %}
 
-{% block mainContent %}
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
     <div class="col blog-main">
         <h3 class="pb-1 my-4 font-italic border-bottom">
             Results Archive
@@ -184,7 +188,7 @@
                                     disabled
                             >
                                 <option value="0">
-                                    Select a location
+                                    Select a year
                                 </option>
                             </select>
                         </div>
@@ -230,6 +234,9 @@
 
 {% block scripts %}
     {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/auto-complete.min.js"
+    ></script>
     <script type="application/javascript"
             src="/assets/js/tableBuilder.js"
     ></script>

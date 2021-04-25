@@ -8,9 +8,9 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
-use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
@@ -48,8 +48,8 @@ class FetchEventsByCompetitionTest extends TestCase
     {
         $request = new FetchEventsByCompetitionRequest(
             [
-                FetchEventsByCompetitionRequest::COMPETITION_ID =>
-                    TestConstants::TEST_DRL_COMPETITION_ID,
+                FetchEventsByCompetitionRequest::COMPETITION =>
+                    TestConstants::TEST_DRL_COMPETITION_NAME,
                 FetchEventsByCompetitionRequest::COMPETITION_TYPE =>
                     AbstractCompetitionEntity::COMPETITION_TYPE_DRL,
             ]
@@ -58,7 +58,7 @@ class FetchEventsByCompetitionTest extends TestCase
 
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
-        $useCase->setUserRepository(new GuestUserDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
 
@@ -73,7 +73,7 @@ class FetchEventsByCompetitionTest extends TestCase
         $useCase->execute();
 
         $this->assertTrue(
-            $eventSpy->hasFetchDrlEventsByCompetitionIdBeenCalled()
+            $eventSpy->hasFetchDrlEventsByCompetitionNameBeenCalled()
         );
     }
 
@@ -97,7 +97,7 @@ class FetchEventsByCompetitionTest extends TestCase
         $event->setId(555);
 
         $eventSpy = new EventSpy();
-        $eventSpy->setFetchDrlEventsByCompetitionIdValue(
+        $eventSpy->setFetchDrlEventsByCompetitionNameValue(
             [
                 $this->createMockDrlEvent(),
                 $event,
@@ -140,7 +140,7 @@ class FetchEventsByCompetitionTest extends TestCase
     {
         $presenterSpy = new PresenterSpy();
         $eventSpy = new EventSpy();
-        $eventSpy->setfetchDrlEventsByCompetitionIdThrowsException();
+        $eventSpy->setfetchDrlEventsByCompetitionNameThrowsException();
 
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
