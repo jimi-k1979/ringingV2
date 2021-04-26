@@ -447,10 +447,19 @@ class CompetitionDoctrine extends DoctrineRepository implements
      */
     public function fetchDrlCompetitionByLocation(LocationEntity $location): array
     {
-        return array_merge(
+        $events = array_merge(
             $this->fetchDrlCompetitionByUsualLocation($location),
             $this->fetchDrlCompetitionByVenue($location)
         );
+
+        usort(
+            $events,
+            function (DrlCompetitionEntity $a, DrlCompetitionEntity $b): int {
+                return strcmp($a->getName(), $b->getName());
+            }
+        );
+
+        return $events;
     }
 
     /**
@@ -468,6 +477,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             $query = $this->baseDrlCompetitionSelectQuery();
             $query->where(self::FIELD_LOCATION . ' = :location')
                 ->setParameter('location', $location->getLocation())
+                ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->distinct();
 
             $results = $query->execute()->fetchAllAssociative();
@@ -530,6 +540,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
                         )
                     )
                 )
+                ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->setParameter('location', $location->getLocation());
 
             $results = $query->execute()->fetchAllAssociative();

@@ -148,7 +148,7 @@ class FetchDrlEventAndResults extends Interactor
             }
         }
 
-        if ($this->judges !== null) {
+        if (!empty($this->judges)) {
             foreach ($this->judges as $judge) {
                 $dataArray['judges'][] = [
                     'name' => $judge->getFullName()

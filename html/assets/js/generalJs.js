@@ -49,6 +49,7 @@ function ajaxPostRequest(jsonData, url, successfulCallback) {
     );
     request.onload = successfulCallback;
     request.send(data);
+    return true;
 }
 
 function fuzzySearchResponse(action, term, response) {
@@ -66,6 +67,7 @@ function fuzzySearchResponse(action, term, response) {
                 output.forEach(element => data.push(element.name));
                 response(data);
             }
+            return true;
         }
     );
 }

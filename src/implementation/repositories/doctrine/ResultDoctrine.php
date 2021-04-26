@@ -84,6 +84,7 @@ class ResultDoctrine extends DoctrineRepository
             $query->where(
                 $query->expr()->eq(self::FIELD_DRL_EVENT_ID, ':eventId')
             )
+                ->orderBy(self::ALIAS_POSITION)
                 ->setParameter('eventId', $event->getId());
             $results = $query->execute()->fetchAllAssociative();
         } catch (Throwable $e) {

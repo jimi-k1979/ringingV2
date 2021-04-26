@@ -29,6 +29,7 @@ class EventDoctrine extends DoctrineRepository implements
     private const FIELD_DRL_USUAL_LOCATION_ID = 'dc.usualLocationID';
     private const FIELD_USUAL_LOCATION_NAME = 'ul.location';
     private const FIELD_DRL_SINGLE_TOWER = 'dc.isSingleTower';
+    private const FIELD_DRL_IS_SINGLE_TOWER = 'dc.isSingleTower';
 
     /**
      * @inheritDoc
@@ -113,6 +114,7 @@ class EventDoctrine extends DoctrineRepository implements
                 self::FIELD_DRL_COMPETITION_ID . ' AS ' . Repository::ALIAS_COMPETITION_ID,
                 self::FIELD_DRL_LOCATION_ID . ' AS ' . Repository::ALIAS_LOCATION_ID,
                 self::FIELD_DRL_COMPETITION_NAME . ' AS ' . Repository::ALIAS_COMPETITION_NAME,
+                self::FIELD_DRL_IS_SINGLE_TOWER . ' AS ' . Repository::ALIAS_IS_SINGLE_TOWER,
                 self::FIELD_LOCATION_NAME . ' AS ' . Repository::ALIAS_LOCATION_NAME,
             ]
         )
@@ -199,6 +201,7 @@ class EventDoctrine extends DoctrineRepository implements
         try {
             $query = $this->baseDrlEventSelectQuery();
             $query->where(self::FIELD_DRL_COMPETITION_ID . ' = :competition')
+                ->orderBy(Repository::ALIAS_YEAR)
                 ->setParameter('competition', $competitionId);
 
             $results = $query->execute()->fetchAllAssociative();
@@ -266,6 +269,7 @@ class EventDoctrine extends DoctrineRepository implements
         try {
             $query = $this->baseDrlEventSelectQuery();
             $query->where(self::FIELD_DRL_YEAR . ' = :year')
+                ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->setParameter('year', $year);
 
             $results = $query->execute()->fetchAllAssociative();
@@ -385,6 +389,7 @@ class EventDoctrine extends DoctrineRepository implements
         try {
             $query = $this->baseDrlEventSelectQuery();
             $query->where(self::FIELD_DRL_COMPETITION_NAME . ' = :competition')
+                ->orderBy(Repository::ALIAS_YEAR)
                 ->setParameter('competition', $name);
 
             $results = $query->execute()->fetchAllAssociative();
@@ -413,6 +418,7 @@ class EventDoctrine extends DoctrineRepository implements
                     $query->expr()->eq(self::FIELD_LOCATION_NAME, ':location')
                 )
             )
+                ->orderBy(Repository::ALIAS_YEAR)
                 ->setParameters(
                     [
                         'comp' => $competitionId,
