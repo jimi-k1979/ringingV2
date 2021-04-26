@@ -183,9 +183,8 @@ ready(() => {
                                 text: output.message,
                             });
                         }
-
                     }
-
+                    return true;
                 }
             );
             // $.ajax({
@@ -264,6 +263,7 @@ ready(() => {
                             });
                         }
                     }
+                    return true;
                 }
             );
         }

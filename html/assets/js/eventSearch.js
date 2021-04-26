@@ -44,6 +44,7 @@ function yearChangeAction(value) {
                     resultsButton.textContent = 'Get these results';
                     resultsButton.disabled = false;
                 }
+                return true;
             }
         )
 
@@ -87,31 +88,15 @@ function getEventResults(eventId) {
                 } else {
                     resultTable.innerHTML = '';
                     resultTable.style.display = '';
-                    buildTable(output.results);
                     buildResultTitleSection(output.event);
+                    buildTable(output.results);
                     buildResultJudgesSection(output.judges);
                     resultsSection.classList.remove('hidden');
                 }
             }
+            return true;
         }
     );
-}
-
-function buildResultTitleSection(eventData) {
-    document.querySelector('#result-year').textContent = eventData.year;
-    document.querySelector('#result-competition-name').textContent =
-        eventData.competition;
-
-    if (
-        eventData.singleTower === false ||
-        eventData.unusualTower === true
-    ) {
-        document.querySelector('#held-at').style.display = '';
-        document.querySelector('#result-location').textContent =
-            eventData.location;
-    } else {
-        document.querySelector('#held-at').style.display = 'none';
-    }
 }
 
 function buildResultJudgesSection(judgesData) {
@@ -128,7 +113,7 @@ function buildResultJudgesSection(judgesData) {
             li.innerHTML = this.name;
         });
     } else {
-        judgesSection.style.display = 'hide';
+        judgesSection.style.display = 'none';
     }
 }
 
@@ -191,6 +176,7 @@ ready(() => {
                                 'Get these results!';
                         }
                     }
+                    return true;
                 }
             )
         },
@@ -255,6 +241,7 @@ ready(() => {
                             locationYearDropDown.add(emptyOption);
                         }
                     }
+                    return true;
                 }
             )
         },
@@ -300,6 +287,7 @@ ready(() => {
                                 locationGetResultsButton.disabled = false;
                             }
                         }
+                        return true;
                     }
                 );
             }

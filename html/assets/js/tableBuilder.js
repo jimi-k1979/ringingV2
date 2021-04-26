@@ -41,7 +41,34 @@ function generateTable(table, data) {
 
 function buildTable(tableData) {
     let table = document.querySelector('#result-table');
-    generateTableHead(table, Object.keys(tableData[0]));
-    generateTable(table, tableData);
+    if (tableData.length > 0) {
+        generateTableHead(table, Object.keys(tableData[0]));
+        generateTable(table, tableData);
+    } else {
+        let data = {
+            year: '',
+            competition: 'No results for this event',
+            singleTower: true,
+            unusualTower: false,
+        };
+        buildResultTitleSection(data);
+    }
 
+}
+
+function buildResultTitleSection(eventData) {
+    document.querySelector('#result-year').textContent = eventData.year;
+    document.querySelector('#result-competition-name').textContent =
+        eventData.competition;
+
+    if (
+        eventData.singleTower === false ||
+        eventData.unusualTower === true
+    ) {
+        document.querySelector('#held-at').style.display = '';
+        document.querySelector('#result-location').textContent =
+            eventData.location;
+    } else {
+        document.querySelector('#held-at').style.display = 'none';
+    }
 }
