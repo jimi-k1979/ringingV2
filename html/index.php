@@ -28,11 +28,9 @@ $presenter = new class extends AbstractTwigPagePresenter {
     }
 };
 
-$request = new IndexPageRequest();
 
 $useCase = (new IndexPageFactory())->create(
     $presenter,
-    $request
 );
 
 $useCase->execute();

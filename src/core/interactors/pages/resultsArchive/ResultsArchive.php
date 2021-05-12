@@ -13,6 +13,7 @@ class ResultsArchive extends Interactor
 
     public function execute(): void
     {
+        $this->getUserDetails();
         $this->createResponse();
         $this->sendResponse();
     }
@@ -21,5 +22,6 @@ class ResultsArchive extends Interactor
     {
         $this->response = new ResultsArchiveResponse();
         $this->response->setStatus(Response::STATUS_SUCCESS);
+        $this->response->setLoggedInUser($this->loggedInUser);
     }
 }

@@ -75,4 +75,21 @@ class CompetitionDummy implements CompetitionRepositoryInterface
     {
         return [];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByUsualLocation(
+        LocationEntity $location
+    ): array {
+        return [];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByVenue(LocationEntity $location): array
+    {
+        return [];
+    }
 }

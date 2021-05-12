@@ -44,6 +44,12 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     private bool $fetchDrlCompetitionByLocationCalled = false;
     private bool $fetchDrlCompetitionByLocationCalledThrowsException = false;
     private array $fetchDrlCompetitionByLocationCalledValue = [];
+    private bool $fetchDrlCompetitionByUsualLocationCalled = false;
+    private bool $fetchDrlCompetitionByUsualLocationThrowsException = false;
+    private array $fetchDrlCompetitionByUsualLocationValue = [];
+    private bool $fetchDrlCompetitionByVenueCalled = false;
+    private bool $fetchDrlCompetitionByVenueThrowsException = false;
+    private array $fetchDrlCompetitionByVenueValue = [];
 
 
     public function setRepositoryThrowsException(): void
@@ -288,5 +294,67 @@ class CompetitionSpy implements CompetitionRepositoryInterface
     {
         $this->fetchDrlCompetitionByLocationCalledValue = $value;
     }
-}
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByUsualLocation(LocationEntity $location): array
+    {
+        $this->fetchDrlCompetitionByUsualLocationCalled = true;
+        if ($this->fetchDrlCompetitionByUsualLocationThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlCompetitionByUsualLocationValue;
+    }
+
+    public function hasFetchDrlCompetitionByUsualLocationBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByUsualLocationCalled;
+    }
+
+    public function setFetchDrlCompetitionByUsualLocationThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByUsualLocationThrowsException = true;
+    }
+
+    public function setFetchDrlCompetitionByUsualLocationValue(array $value): void
+    {
+        $this->fetchDrlCompetitionByUsualLocationValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlCompetitionByVenue(LocationEntity $location): array
+    {
+        $this->fetchDrlCompetitionByVenueCalled = true;
+        if ($this->fetchDrlCompetitionByVenueThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                CompetitionRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchDrlCompetitionByVenueValue;
+    }
+
+    public function hasFetchDDrlCompetitionByVenueBeenCalled(): bool
+    {
+        return $this->fetchDrlCompetitionByVenueCalled;
+    }
+
+    public function setFetchDDrlCompetitionByVenueThrowsException(): void
+    {
+        $this->fetchDrlCompetitionByVenueThrowsException = true;
+    }
+
+    public function setFetchDDrlCompetitionByVenueValue(array $value): void
+    {
+        $this->fetchDrlCompetitionByVenueValue = $value;
+    }
+
+}

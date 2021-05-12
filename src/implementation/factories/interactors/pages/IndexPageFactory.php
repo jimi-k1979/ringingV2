@@ -23,7 +23,6 @@ class IndexPageFactory implements InteractorFactoryInterface
     ): InteractorInterface {
         $useCase = new IndexPage();
 
-        $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
         $useCase->setAuthenticationManager(
             (new AuthenticationManagerFactory())->create()

@@ -27,11 +27,6 @@ class IndexPage extends Interactor
     {
         $this->response = new IndexPageResponse();
         $this->response->setStatus(Response::STATUS_SUCCESS);
-        $this->response->setData(
-            [
-                'previousStatus' => $this->request->getPreviousStatus(),
-            ]
-        );
         $this->response->setLoggedInUser($this->loggedInUser);
     }
 
