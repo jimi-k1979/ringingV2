@@ -20,7 +20,7 @@ class AbstractTwigPagePresenter implements PresenterInterface
      */
     public function __construct()
     {
-        $loader = new FilesystemLoader(__DIR__ . '/../../../html/templates');
+        $loader = new FilesystemLoader(__DIR__ . '/../../../templates');
         $this->twig = new Environment(
             $loader
         );
