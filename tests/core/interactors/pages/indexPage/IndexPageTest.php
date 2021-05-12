@@ -17,15 +17,6 @@ class IndexPageTest extends TestCase
 {
     use CreateMockUserTrait;
 
-    public function testRequestDefaults(): void
-    {
-        $request = new IndexPageRequest();
-        $this->assertEquals(
-            Response::STATUS_SUCCESS,
-            $request->getPreviousStatus()
-        );
-    }
-
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(
@@ -50,7 +41,6 @@ class IndexPageTest extends TestCase
     private function createUseCase(): IndexPage
     {
         $useCase = new IndexPage();
-        $useCase->setRequest(new IndexPageRequest());
         $useCase->setPresenter(new PresenterDummy());
         $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
 
@@ -116,10 +106,7 @@ class IndexPageTest extends TestCase
             Response::STATUS_SUCCESS,
             $response->getStatus()
         );
-        $this->assertEquals(
-            [
-                'previousStatus' => Response::STATUS_SUCCESS,
-            ],
+        $this->assertEmpty(
             $response->getData()
         );
         $this->assertEquals(
@@ -127,7 +114,27 @@ class IndexPageTest extends TestCase
             $response->getLoggedInUser()
         );
     }
-    
-    
+
+    public function testNotLoggedInResponse(): void
+    {
+        $presenterSpy = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenterSpy);
+        $useCase->execute();
+
+        $response = $presenterSpy->getResponse();
+
+        $this->assertEquals(
+            Response::STATUS_SUCCESS,
+            $response->getStatus()
+        );
+        $this->assertEmpty(
+            $response->getData()
+        );
+        $this->assertNull(
+            $response->getLoggedInUser()->getId()
+        );
+    }
 
 }
