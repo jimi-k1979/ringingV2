@@ -26,6 +26,7 @@ use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\FeatureDisabledException;
 use DrlArchive\core\interfaces\managers\AuthenticationManagerInterface;
 use DrlArchive\Config;
+use DrlArchive\Implementation;
 use PDO;
 
 class AuthenticationManager implements AuthenticationManagerInterface
@@ -118,7 +119,8 @@ class AuthenticationManager implements AuthenticationManagerInterface
         try {
             $this->auth->login(
                 $userEntity->getEmailAddress(),
-                $userEntity->getPassword()
+                $userEntity->getPassword(),
+                Implementation::LOGIN_PERSISTENCE
             );
             $userEntity->setPassword('');
         } catch (InvalidEmailException | InvalidPasswordException $e) {

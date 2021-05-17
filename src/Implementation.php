@@ -9,6 +9,7 @@ class Implementation
 {
     public const DEFAULT_EMAIL_FROM_ADDRESS = 'site@' . Config::HOST_NAME;
     public const USE_SMTP_MAILER = true;
+    public const LOGIN_PERSISTENCE = 3600 * 24 * 7;
 
     public const NAV_HIGHLIGHT_HOME = 'home';
     public const NAV_HIGHLIGHT_COMPOSITIONS = 'compositions';
