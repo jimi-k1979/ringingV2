@@ -263,6 +263,42 @@
                         <ul class="dropdown-menu"
                             aria-labelledby="loggedInDropdown"
                         >
+                            {% if user.permission.isDelete == true %}
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="#"
+                                    >
+                                        Edit users
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if user.permission.isApprove == true %}
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="#"
+                                    >
+                                        Approve changes
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if user.permission.isEdit == true %}
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="#"
+                                    >
+                                        Edit event
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if user.permission.isAdd == true %}
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="/events/newEvent.php"
+                                    >
+                                        Add new event
+                                    </a>
+                                </li>
+                            {% endif %}
                             <li>
                                 <a class="dropdown-item"
                                    href="#"
