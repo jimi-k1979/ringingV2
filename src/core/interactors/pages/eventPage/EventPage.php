@@ -109,6 +109,7 @@ class EventPage extends Interactor
                 'position' => $result->getPosition(),
                 'pealNumber' => $result->getPealNumber(),
                 'team' => $result->getTeam()->getName(),
+                'teamId' => $result->getTeam()->getId(),
                 'faults' => $result->getFaults()
             ];
         }
@@ -120,11 +121,14 @@ class EventPage extends Interactor
             ];
         }
 
+        $isUnusualTower = !$this->event->getCompetition()->isSingleTowerCompetition()
+            || $this->event->isUnusualTower();
+
         $data = [
             'eventId' => $this->event->getId(),
             'eventYear' => $this->event->getYear(),
             'eventLocation' => $this->event->getLocation()->getLocation(),
-            'isUnusualLocation' => $this->event->isUnusualTower(),
+            'isUnusualLocation' => $isUnusualTower,
             'competitionName' => $this->event->getCompetition()->getName(),
             'results' => $eventResults,
             'judges' => $eventJudges,

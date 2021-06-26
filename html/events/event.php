@@ -17,6 +17,23 @@ $presenter = new class extends AbstractTwigPagePresenter {
         parent::send($response);
         $this->dataForTemplate['nav']['highlighted'] =
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
+
+        if ($response->getStatus() !== Response::STATUS_SUCCESS) {
+        } else {
+            $this->dataForTemplate['event'] = $response->getData();
+            $this->dataForTemplate['event']['pealNumbers'] =
+                !empty($this->dataForTemplate['event']['results'][0]['pealNumber']);
+
+            try {
+                $this->twig->display(
+                    'events/event.twig',
+                    $this->dataForTemplate
+                );
+            } catch (Throwable $e) {
+                echo $e->getMessage();
+                die();
+            }
+        }
     }
 };
 

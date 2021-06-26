@@ -172,7 +172,7 @@ class EventPageTest extends TestCase
             'eventId' => TestConstants::TEST_EVENT_ID,
             'eventYear' => TestConstants::TEST_EVENT_YEAR,
             'eventLocation' => TestConstants::TEST_LOCATION_NAME,
-            'isUnusualLocation' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+            'isUnusualLocation' => true,
             'competitionName' => TestConstants::TEST_DRL_COMPETITION_NAME,
             'results' => [
                 [
@@ -180,24 +180,28 @@ class EventPageTest extends TestCase
                     'faults' => 10.25,
                     'team' => 'Team 1',
                     'pealNumber' => 4,
+                    'teamId' => 1,
                 ],
                 [
                     'position' => 2,
                     'faults' => 20.5,
                     'team' => 'Team 2',
                     'pealNumber' => 3,
+                    'teamId' => 2,
                 ],
                 [
                     'position' => 3,
                     'faults' => 30.75,
                     'team' => 'Team 3',
                     'pealNumber' => 2,
+                    'teamId' => 3,
                 ],
                 [
                     'position' => 4,
                     'faults' => 41.0,
                     'team' => 'Team 4',
                     'pealNumber' => 1,
+                    'teamId' => 4,
                 ],
             ],
             'judges' => [
