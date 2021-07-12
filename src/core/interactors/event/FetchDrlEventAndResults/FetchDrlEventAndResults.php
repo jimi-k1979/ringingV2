@@ -27,17 +27,12 @@ class FetchDrlEventAndResults extends Interactor
 
     private EventRepositoryInterface $eventRepository;
     private ResultRepositoryInterface $resultRepository;
-    private JudgeRepositoryInterface $judgeRepository;
     private LocationRepositoryInterface $locationRepository;
     private DrlEventEntity $event;
     /**
      * @var DrlResultEntity[]
      */
     private array $results;
-    /**
-     * @var null|JudgeEntity[]
-     */
-    private ?array $judges;
 
     public function setEventRepository(
         EventRepositoryInterface $repository
@@ -49,12 +44,6 @@ class FetchDrlEventAndResults extends Interactor
         ResultRepositoryInterface $repository
     ): void {
         $this->resultRepository = $repository;
-    }
-
-    public function setJudgeRepository(
-        JudgeRepositoryInterface $repository
-    ): void {
-        $this->judgeRepository = $repository;
     }
 
     public function setLocationRepository(
@@ -70,7 +59,6 @@ class FetchDrlEventAndResults extends Interactor
         try {
             $this->fetchEventDetails();
             $this->fetchResults();
-            $this->fetchJudges();
             $this->createSuccessfulResponse();
         } catch (Exception $e) {
             $this->createFailureResponse($e);
@@ -97,17 +85,6 @@ class FetchDrlEventAndResults extends Interactor
         );
     }
 
-    private function fetchJudges(): void
-    {
-        try {
-            $this->judges = $this->judgeRepository->fetchJudgesByDrlEvent(
-                $this->event
-            );
-        } catch (RepositoryNoResultsException $e) {
-            $this->judges = null;
-        }
-    }
-
     private function createSuccessfulResponse(): void
     {
         $dataArray = [
@@ -118,9 +95,9 @@ class FetchDrlEventAndResults extends Interactor
                     ->isSingleTowerCompetition(),
                 'location' => $this->event->getLocation()->getLocation(),
                 'unusualTower' => $this->event->isUnusualTower(),
+                'eventId' => $this->event->getId(),
             ],
             'results' => [],
-            'judges' => [],
         ];
 
         $pealNumbers = false;
@@ -144,14 +121,6 @@ class FetchDrlEventAndResults extends Interactor
                     'position' => $result->getPosition(),
                     'team' => $result->getTeam()->getName(),
                     'faults' => $result->getFaults(),
-                ];
-            }
-        }
-
-        if (!empty($this->judges)) {
-            foreach ($this->judges as $judge) {
-                $dataArray['judges'][] = [
-                    'name' => $judge->getFullName()
                 ];
             }
         }

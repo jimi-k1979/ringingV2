@@ -15,6 +15,7 @@ use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\JudgeDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\RingerDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 
 class EventPageFactory implements InteractorFactoryInterface
@@ -42,6 +43,9 @@ class EventPageFactory implements InteractorFactoryInterface
         );
         $useCase->setJudgeRepository(
             (new JudgeDoctrineFactory())->create()
+        );
+        $useCase->setRingerRepository(
+            (new RingerDoctrineFactory())->create()
         );
 
         return $useCase;

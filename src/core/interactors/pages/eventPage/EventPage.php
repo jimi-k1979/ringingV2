@@ -8,12 +8,14 @@ namespace DrlArchive\core\interactors\pages\eventPage;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\DrlResultEntity;
+use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
 
 /**
  * Class EventPage
@@ -27,11 +29,16 @@ class EventPage extends Interactor
     private EventRepositoryInterface $eventRepository;
     private ResultRepositoryInterface $resultRepository;
     private JudgeRepositoryInterface $judgeRepository;
+    private RingerRepositoryInterface $ringerRepository;
     private DrlEventEntity $event;
     /**
      * @var DrlResultEntity[]
      */
     private array $results;
+    /**
+     * @var WinningRingerEntity[]
+     */
+    private array $winningTeam;
 
     /**
      * @param EventRepositoryInterface $repository
@@ -54,12 +61,20 @@ class EventPage extends Interactor
         $this->judgeRepository = $repository;
     }
 
+    public function setRingerRepository(
+        RingerRepositoryInterface $repository
+    ): void {
+        $this->ringerRepository = $repository;
+    }
+
     public function execute(): void
     {
         try {
             $this->getUserDetails();
             $this->checkRequestData();
             $this->fetchEventDetails();
+            $this->fetchWinningTeam();
+//            $this->fetchStatistics();
             $this->createResponse();
         } catch (CleanArchitectureException $e) {
             $this->createFailingResponse($e);
@@ -103,6 +118,7 @@ class EventPage extends Interactor
     {
         $eventResults = [];
         $eventJudges = [];
+        $eventRingers = [];
 
         foreach ($this->results as $result) {
             $eventResults[] = [
@@ -121,6 +137,14 @@ class EventPage extends Interactor
             ];
         }
 
+        foreach ($this->winningTeam as $ringer) {
+            $eventRingers[] = [
+                'id' => $ringer->getRinger()->getId(),
+                'name' => $ringer->getRinger()->getFullName(),
+                'bell' => $ringer->getBell(),
+            ];
+        }
+
         $isUnusualTower = !$this->event->getCompetition()->isSingleTowerCompetition()
             || $this->event->isUnusualTower();
 
@@ -132,6 +156,8 @@ class EventPage extends Interactor
             'competitionName' => $this->event->getCompetition()->getName(),
             'results' => $eventResults,
             'judges' => $eventJudges,
+            'winningTeam' => $eventRingers,
+            'statistics' => [],
         ];
 
         $this->response = new EventPageResponse();
@@ -145,6 +171,13 @@ class EventPage extends Interactor
         $this->response = new EventPageResponse();
         $this->response->setStatus(Response::STATUS_BAD_REQUEST);
         $this->response->setMessage($e->getMessage());
+    }
+
+    private function fetchWinningTeam(): void
+    {
+        $this->winningTeam = $this->ringerRepository->fetchWinningTeamByEvent(
+            $this->event
+        );
     }
 
 }

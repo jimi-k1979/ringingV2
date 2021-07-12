@@ -62,4 +62,7 @@ class TestConstants
 
     public const TEST_REDIRECT_TO = 'newPage.php';
 
+    public const TEST_WINNING_RINGER_ID = 777;
+    public const TEST_WINNING_RINGER_BELL = '1';
+    
 }

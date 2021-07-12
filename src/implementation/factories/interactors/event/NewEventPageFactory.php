@@ -14,7 +14,7 @@ use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
-use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\RingerDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 
@@ -42,7 +42,7 @@ class NewEventPageFactory implements InteractorFactoryInterface
             (new EventDoctrineFactory())->create()
         );
         $useCase->setResultRepository(
-            (new ResultDoctrineFactory())->create()
+            (new RingerDoctrineFactory())->create()
         );
         $useCase->setTransactionManager(
             (new DoctrineTransactionManagerFactory())->create()

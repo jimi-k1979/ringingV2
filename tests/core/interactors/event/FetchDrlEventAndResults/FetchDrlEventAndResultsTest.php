@@ -9,6 +9,7 @@ use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\ResultRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -64,12 +65,11 @@ class FetchDrlEventAndResultsTest extends TestCase
 
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
-        $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());
         $useCase->setResultRepository(new ResultDummy());
-        $useCase->setJudgeRepository(new JudgeDummy());
         $useCase->setLocationRepository(new LocationDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
 
         return $useCase;
     }
@@ -113,19 +113,6 @@ class FetchDrlEventAndResultsTest extends TestCase
         );
     }
 
-    public function testJudgesAreFetched(): void
-    {
-        $judgeSpy = new JudgeSpy();
-
-        $useCase = $this->createUseCase();
-        $useCase->setJudgeRepository($judgeSpy);
-        $useCase->execute();
-
-        $this->assertTrue(
-            $judgeSpy->hasFetchJudgesByDrlEventBeenCalled()
-        );
-    }
-
     public function testSendIsCalled(): void
     {
         $presenter = new PresenterSpy();
@@ -155,72 +142,8 @@ class FetchDrlEventAndResultsTest extends TestCase
                 'singleTower' => TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION,
                 'location' => TestConstants::TEST_LOCATION_NAME,
                 'unusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+                'eventId' => TestConstants::TEST_EVENT_ID,
             ],
-            'results' => [
-                [
-                    'position' => 1,
-                    'peal number' => 4,
-                    'team' => 'Team 1',
-                    'faults' => 10.25,
-                ],
-                [
-                    'position' => 2,
-                    'peal number' => 3,
-                    'team' => 'Team 2',
-                    'faults' => 20.5,
-                ],
-                [
-                    'position' => 3,
-                    'peal number' => 2,
-                    'team' => 'Team 3',
-                    'faults' => 30.75,
-                ],
-                [
-                    'position' => 4,
-                    'peal number' => 1,
-                    'team' => 'Team 4',
-                    'faults' => 41.0,
-                ],
-            ],
-            'judges' => [
-                [
-                    'name' => TestConstants::TEST_JUDGE_FIRST_NAME . ' ' . TestConstants::TEST_JUDGE_LAST_NAME,
-                ],
-            ],
-        ];
-
-        $this->assertEquals(
-            Response::STATUS_SUCCESS,
-            $response->getStatus()
-        );
-
-        $this->assertEquals(
-            $expectedResponse,
-            $response->getData()
-        );
-    }
-
-    public function testResponseNoJudges(): void
-    {
-        $judgeSpy = new JudgeSpy();
-        $judgeSpy->setRepositoryThrowsException();
-        $presenterSpy = new PresenterSpy();
-
-        $useCase = $this->createUseCase();
-        $useCase->setPresenter($presenterSpy);
-        $useCase->setJudgeRepository($judgeSpy);
-        $useCase->execute();
-
-        $response = $presenterSpy->getResponse();
-        $expectedResponse = [
-            'event' => [
-                'year' => '1970',
-                'competition' => 'Test competition',
-                'singleTower' => false,
-                'location' => 'Test tower',
-                'unusualTower' => false,
-            ],
-            'judges' => [],
             'results' => [
                 [
                     'position' => 1,

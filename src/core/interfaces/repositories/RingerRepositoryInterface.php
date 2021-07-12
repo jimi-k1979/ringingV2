@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace DrlArchive\core\interfaces\repositories;
 
 
+use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\core\entities\WinningRingerEntity;
 
 interface RingerRepositoryInterface
 {
@@ -19,4 +21,10 @@ interface RingerRepositoryInterface
      * @return RingerEntity[]
      */
     public function fuzzySearchRinger(string $searchTerm): array;
+
+    /**
+     * @param DrlEventEntity $event
+     * @return WinningRingerEntity[]
+     */
+    public function fetchWinningTeamByEvent(DrlEventEntity $event): array;
 }

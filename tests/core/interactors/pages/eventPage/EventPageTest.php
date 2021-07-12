@@ -16,6 +16,8 @@ use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\mocks\ResultDummy;
 use DrlArchive\mocks\ResultSpy;
+use DrlArchive\mocks\RingerDummy;
+use DrlArchive\mocks\RingerSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
@@ -66,6 +68,7 @@ class EventPageTest extends TestCase
         $useCase->setEventRepository(new EventDummy());
         $useCase->setResultRepository(new ResultDummy());
         $useCase->setJudgeRepository(new JudgeDummy());
+        $useCase->setRingerRepository(new RingerDummy());
 
         return $useCase;
     }
@@ -145,7 +148,7 @@ class EventPageTest extends TestCase
         );
     }
 
-    public function testJudgesAreFetch(): void
+    public function testJudgesAreFetched(): void
     {
         $judgeSpy = new JudgeSpy();
 
@@ -157,6 +160,18 @@ class EventPageTest extends TestCase
             $judgeSpy->hasFetchJudgesByDrlEventBeenCalled()
         );
     }
+
+    public function testEventWinningTeamIsFetched(): void
+    {
+        $ringerSpy = new RingerSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setRingerRepository($ringerSpy);
+        $useCase->execute();
+
+        $this->assertTrue($ringerSpy->hasFetchWinningTeamByEventBeenCalled());
+    }
+
 
     public function testSuccessfulResponse(): void
     {
@@ -210,6 +225,14 @@ class EventPageTest extends TestCase
                     'name' => 'Test Judge',
                 ],
             ],
+            'winningTeam' => [
+                [
+                    'id' => 4321,
+                    'name' => 'Test Ringer',
+                    'bell' => '1',
+                ]
+            ],
+            'statistics' => [],
         ];
         $this->assertEquals(
             Response::STATUS_SUCCESS,
