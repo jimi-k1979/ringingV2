@@ -46,6 +46,7 @@ class RingerDoctrine extends DoctrineRepository implements
             ->where(
                 $query->expr()->eq('dewr.eventID', ':eventId')
             )
+            ->orderBy(self::ALIAS_BELL)
             ->setParameter('eventId', $event->getId());
 
         $results = $query->executeQuery()->fetchAllAssociative();
