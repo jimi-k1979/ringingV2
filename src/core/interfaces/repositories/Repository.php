@@ -51,5 +51,6 @@ class Repository
     public const ALIAS_EDIT_EXISTING = 'editExisting';
     public const ALIAS_APPROVE_EDIT = 'approveEdit';
     public const ALIAS_CONFIRM_DELETE = 'confirmDelete';
+    public const ALIAS_BELL = 'bell';
 
 }
