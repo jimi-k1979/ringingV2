@@ -10,14 +10,18 @@ abstract class AbstractEventEntity extends Entity
     public const EVENT_TYPE_DRL = 1;
     public const EVENT_TYPE_LADDER = 2;
 
-    private string $year;
-    private AbstractCompetitionEntity $competition;
-    private LocationEntity $location;
+    private string $year = '';
+    private ?AbstractCompetitionEntity $competition = null;
+    private ?LocationEntity $location = null;
     /**
-     * @var null|JudgeEntity[]
+     * @var JudgeEntity[]
      */
-    private ?array $judges;
+    private array $judges = [];
     private bool $unusualTower = false;
+
+    private ?float $totalFaults = null;
+    private ?float $meanFaults = null;
+    private ?float $winningMargin = null;
 
     /**
      * @return string
@@ -36,49 +40,49 @@ abstract class AbstractEventEntity extends Entity
     }
 
     /**
-     * @return AbstractCompetitionEntity
+     * @return null|AbstractCompetitionEntity
      */
-    public function getCompetition(): AbstractCompetitionEntity
+    public function getCompetition(): ?AbstractCompetitionEntity
     {
         return $this->competition;
     }
 
     /**
-     * @param AbstractCompetitionEntity $competition
+     * @param null|AbstractCompetitionEntity $competition
      */
-    public function setCompetition(AbstractCompetitionEntity $competition): void
+    public function setCompetition(?AbstractCompetitionEntity $competition): void
     {
         $this->competition = $competition;
     }
 
     /**
-     * @return LocationEntity
+     * @return null|LocationEntity
      */
-    public function getLocation(): LocationEntity
+    public function getLocation(): ?LocationEntity
     {
         return $this->location;
     }
 
     /**
-     * @param LocationEntity $location
+     * @param null|LocationEntity $location
      */
-    public function setLocation(LocationEntity $location): void
+    public function setLocation(?LocationEntity $location): void
     {
         $this->location = $location;
     }
 
     /**
-     * @return JudgeEntity[]|null
+     * @return JudgeEntity[]
      */
-    public function getJudges(): ?array
+    public function getJudges(): array
     {
         return $this->judges;
     }
 
     /**
-     * @param JudgeEntity[]|null $judges
+     * @param JudgeEntity[] $judges
      */
-    public function setJudges(?array $judges): void
+    public function setJudges(array $judges): void
     {
         $this->judges = $judges;
     }
@@ -99,4 +103,52 @@ abstract class AbstractEventEntity extends Entity
         $this->unusualTower = $unusualTower;
     }
 
+    /**
+     * @return float|null
+     */
+    public function getTotalFaults(): ?float
+    {
+        return $this->totalFaults;
+    }
+
+    /**
+     * @param float|null $totalFaults
+     */
+    public function setTotalFaults(?float $totalFaults): void
+    {
+        $this->totalFaults = $totalFaults;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getMeanFaults(): ?float
+    {
+        return $this->meanFaults;
+    }
+
+    /**
+     * @param float|null $meanFaults
+     */
+    public function setMeanFaults(?float $meanFaults): void
+    {
+        $this->meanFaults = $meanFaults;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getWinningMargin(): ?float
+    {
+        return $this->winningMargin;
+    }
+
+    /**
+     * @param float|null $winningMargin
+     */
+    public function setWinningMargin(?float $winningMargin): void
+    {
+        $this->winningMargin = $winningMargin;
+    }
+    
 }
