@@ -26,6 +26,9 @@ class TestConstants
     public const TEST_EVENT_ID = 1234;
     public const TEST_EVENT_YEAR = '1970';
     public const TEST_EVENT_UNUSUAL_TOWER = false;
+    public const TEST_EVENT_TOTAL_FAULTS = 123.5;
+    public const TEST_EVENT_MEAN_FAULTS = 12.3;
+    public const TEST_EVENT_WINNING_MARGIN = 5.5;
 
     public const TEST_TEAM_ID = 123;
     public const TEST_TEAM_NAME = 'Test team';
