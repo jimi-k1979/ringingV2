@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace DrlArchive\implementation\factories\interactors\event;
+namespace DrlArchive\implementation\factories\interactors\pages;
 
 
 use DrlArchive\core\classes\Request;
-use DrlArchive\core\interactors\event\newEventPage\NewEventPage;
+use DrlArchive\core\interactors\pages\eventPage\EventPage;
 use DrlArchive\core\interfaces\boundaries\InteractorInterface;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
-use DrlArchive\implementation\factories\managers\DoctrineTransactionManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\JudgeDoctrineFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\RingerDoctrineFactory;
-use DrlArchive\implementation\factories\repositories\doctrine\TeamDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 
-class NewEventPageFactory implements InteractorFactoryInterface
+class EventPageFactory implements InteractorFactoryInterface
 {
 
     public function create(
@@ -26,7 +26,7 @@ class NewEventPageFactory implements InteractorFactoryInterface
         ?Request $request = null,
         int $loggedInUserId = UserRepositoryInterface::GUEST_USER
     ): InteractorInterface {
-        $useCase = new NewEventPage();
+        $useCase = new EventPage();
         $useCase->setRequest($request);
         $useCase->setPresenter($presenter);
         $useCase->setSecurityRepository(
@@ -35,17 +35,17 @@ class NewEventPageFactory implements InteractorFactoryInterface
         $useCase->setAuthenticationManager(
             (new AuthenticationManagerFactory())->create()
         );
-        $useCase->setTeamRepository(
-            (new TeamDoctrineFactory())->create()
-        );
         $useCase->setEventRepository(
             (new EventDoctrineFactory())->create()
         );
         $useCase->setResultRepository(
-            (new RingerDoctrineFactory())->create()
+            (new ResultDoctrineFactory())->create()
         );
-        $useCase->setTransactionManager(
-            (new DoctrineTransactionManagerFactory())->create()
+        $useCase->setJudgeRepository(
+            (new JudgeDoctrineFactory())->create()
+        );
+        $useCase->setRingerRepository(
+            (new RingerDoctrineFactory())->create()
         );
 
         return $useCase;

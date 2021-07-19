@@ -64,8 +64,8 @@ function yearChangeAction(value) {
 
 function getEventResults(eventId) {
     const resultTable = document.querySelector('#result-table');
-    const judgesSection = document.querySelector('#judges-section');
     const resultsSection = document.querySelector('#results-section');
+    const link = document.querySelector('#more-link');
 
     let data = {
         eventId: eventId,
@@ -82,7 +82,6 @@ function getEventResults(eventId) {
                     if (output.code === 2302) { // no results for event
                         buildResultTitleSection(output.event);
                         resultTable.style.display = 'none';
-                        judgesSection.style.display = 'none';
                         resultsSection.classList.remove('hidden');
                     }
                 } else {
@@ -90,31 +89,13 @@ function getEventResults(eventId) {
                     resultTable.style.display = '';
                     buildResultTitleSection(output.event);
                     buildTable(output.results);
-                    buildResultJudgesSection(output.judges);
                     resultsSection.classList.remove('hidden');
+                    link.href = '/events/event.php?eventId=' + output.event.eventId
                 }
             }
             return true;
         }
     );
-}
-
-function buildResultJudgesSection(judgesData) {
-    const judgesSection = document.querySelector('#judges-section');
-
-    if (judgesData.length > 0) {
-        const judgesList = document.querySelector('#result-judges-list');
-
-        judgesSection.style.display = '';
-        judgesList.innerHTML = '';
-        judgesData.forEach(function () {
-            let li = document.createElement('li');
-            judgesList.appendChild(li);
-            li.innerHTML = this.name;
-        });
-    } else {
-        judgesSection.style.display = 'none';
-    }
 }
 
 ready(() => {

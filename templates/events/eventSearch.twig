@@ -207,26 +207,33 @@
 
         </div>
 
-        <div class="blog-post hidden" id="results-section">
-            <h2>
-                <span id="result-year">Year</span>
-                <span id="result-competition-name">Competition Name</span>
-            </h2>
-            <h3 id="held-at">
-                Held at <span id="result-location">Location</span>
-            </h3>
+        <div class="row">
+            <div class="blog-post hidden col-md-8 offset-md-2 align-self-center"
+                 id="results-section"
+            >
 
-            <table id="result-table" class="table table-sm">
+                <div class="row">
+                    <div class="col">
+                        <h2>
+                            <span id="result-year">Year</span>
+                            <span id="result-competition-name">Competition Name</span>
+                        </h2>
+                        <h3 id="held-at">
+                            Held at <span id="result-location">Location</span>
+                        </h3>
+                        <div class="row align-items-end col-3 offset-9 text-end">
+                            <a id="more-link"
+                               href="#"
+                            >More details</a>
+                        </div>
+                    </div>
+                </div>
 
-            </table>
+                <table id="result-table"
+                       class="table table-sm table-light table-striped">
+                </table>
 
-            <!-- if judges known -->
-            <div id="judges-section">
-                <h5>Judges:</h5>
-                <ul id="result-judges-list" style="list-style: none">
-                </ul>
             </div>
-
         </div>
     </div>
 

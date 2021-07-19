@@ -13,11 +13,9 @@ use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
-use DrlArchive\implementation\factories\repositories\doctrine\JudgeDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\LocationDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\ResultDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
-use DrlArchive\implementation\factories\repositories\UserRepositoryFactory;
 
 class FetchDrlEventAndResultsFactory implements InteractorFactoryInterface
 {
@@ -43,9 +41,6 @@ class FetchDrlEventAndResultsFactory implements InteractorFactoryInterface
         );
         $useCase->setResultRepository(
             (new ResultDoctrineFactory())->create()
-        );
-        $useCase->setJudgeRepository(
-            (new JudgeDoctrineFactory())->create()
         );
         $useCase->setLocationRepository(
             (new LocationDoctrineFactory())->create()

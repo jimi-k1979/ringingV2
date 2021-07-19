@@ -12,9 +12,9 @@ class UserEntity extends Entity
     public const APPROVE_EDIT_PERMISSION = 'approveEdit';
     public const CONFIRM_DELETE_PERMISSION = 'confirmDelete';
 
-    private string $username;
-    private ?string $emailAddress;
-    private ?string $password;
+    private ?string $username = null;
+    private ?string $emailAddress = null;
+    private ?string $password = null;
     /**
      * @var bool[]
      */
@@ -26,33 +26,33 @@ class UserEntity extends Entity
     ];
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUsername(): string
+    public function getUsername(): ?string
     {
         return $this->username;
     }
 
     /**
-     * @param string $username
+     * @param string|null $username
      */
-    public function setUsername(string $username): void
+    public function setUsername(?string $username): void
     {
         $this->username = $username;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getEmailAddress(): string
+    public function getEmailAddress(): ?string
     {
         return $this->emailAddress;
     }
 
     /**
-     * @param string $emailAddress
+     * @param string|null $emailAddress
      */
-    public function setEmailAddress(string $emailAddress): void
+    public function setEmailAddress(?string $emailAddress): void
     {
         $this->emailAddress = $emailAddress;
     }

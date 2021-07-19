@@ -97,4 +97,9 @@ interface EventRepositoryInterface
         string $locationName
     ): array;
 
+    /**
+     * @param DrlEventEntity $event
+     * @throws CleanArchitectureException
+     */
+    public function fetchSingleDrlEventStatistics(DrlEventEntity $event): void;
 }
