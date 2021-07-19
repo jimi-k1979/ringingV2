@@ -73,8 +73,6 @@ class EventPage extends Interactor
             $this->getUserDetails();
             $this->checkRequestData();
             $this->fetchEventDetails();
-            $this->fetchWinningTeam();
-//            $this->fetchStatistics();
             $this->createResponse();
         } catch (CleanArchitectureException $e) {
             $this->createFailingResponse($e);
@@ -112,6 +110,8 @@ class EventPage extends Interactor
                 $this->event
             )
         );
+        $this->fetchWinningTeam();
+        $this->fetchStatistics();
     }
 
     private function createResponse(): void
@@ -157,7 +157,11 @@ class EventPage extends Interactor
             'results' => $eventResults,
             'judges' => $eventJudges,
             'winningTeam' => $eventRingers,
-            'statistics' => [],
+            'statistics' => [
+                'totalFaults' => $this->event->getTotalFaults(),
+                'meanFaults' => $this->event->getMeanFaults(),
+                'winningMargin' => $this->event->getWinningMargin(),
+            ],
         ];
 
         $this->response = new EventPageResponse();
@@ -178,6 +182,11 @@ class EventPage extends Interactor
         $this->winningTeam = $this->ringerRepository->fetchWinningTeamByEvent(
             $this->event
         );
+    }
+
+    private function fetchStatistics(): void
+    {
+        $this->eventRepository->fetchSingleDrlEventStatistics($this->event);
     }
 
 }

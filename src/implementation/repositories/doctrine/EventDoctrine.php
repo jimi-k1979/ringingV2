@@ -5,10 +5,12 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\doctrine;
 
 
+use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\LocationEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryInsertFailedException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
@@ -434,5 +436,69 @@ class EventDoctrine extends DoctrineRepository implements
         }
 
         return $this->generateDrlEventEntityArray($results);
+    }
+
+    /**
+     * @inheritDoc
+     * @throws Exception
+     */
+    public function fetchSingleDrlEventStatistics(DrlEventEntity $event): void
+    {
+        $query = $this->database->createQueryBuilder();
+        $query->select(
+            'SUM(dr.faults) AS ' . Repository::ALIAS_TOTAL_FAULTS,
+            'AVG(dr.faults) AS ' . Repository::ALIAS_MEAN_FAULTS,
+            'margin.margin AS ' . Repository::ALIAS_WINNING_MARGIN
+        )
+            ->from('DRL_result', 'dr')
+            ->innerJoin(
+                'dr',
+                "({$this->eventMarginQuery()})",
+                'margin',
+                'dr.eventID = margin.eventID'
+            )
+            ->where(
+                $query->expr()->and(
+                    $query->expr()->neq('dr.faults', 0),
+                    $query->expr()->eq('dr.eventID', ':eventId')
+                )
+            )
+            ->groupBy('margin.margin')
+            ->setParameter('eventId', $event->getId());
+        $result = $query->executeQuery()->fetchAssociative();
+
+        if (empty($result)) {
+            throw new RepositoryNoResultsException(
+                'No statistics for that event'
+            );
+        }
+
+        $event->setTotalFaults((float)$result[Repository::ALIAS_TOTAL_FAULTS]);
+        $event->setMeanFaults((float)$result[Repository::ALIAS_MEAN_FAULTS]);
+        $event->setWinningMargin((float)$result[Repository::ALIAS_WINNING_MARGIN]);
+    }
+
+    private function eventMarginQuery(): string
+    {
+        $query = $this->database->createQueryBuilder();
+        $query->select(
+            'dr2.faults - dr1.faults AS margin',
+            'dr1.eventID'
+        )
+            ->from('DRL_result', 'dr1')
+            ->innerJoin(
+                'dr1',
+                'DRL_result',
+                'dr2',
+                'dr1.eventID = dr2.eventID AND dr2.position = 2'
+            )
+            ->where(
+                $query->expr()->and(
+                    $query->expr()->eq('dr1.position', 1),
+                    $query->expr()->eq('dr1.eventID', ':eventId')
+                )
+            );
+
+        return $query->getSQL();
     }
 }

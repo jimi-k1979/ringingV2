@@ -52,5 +52,8 @@ class Repository
     public const ALIAS_APPROVE_EDIT = 'approveEdit';
     public const ALIAS_CONFIRM_DELETE = 'confirmDelete';
     public const ALIAS_BELL = 'bell';
+    public const ALIAS_TOTAL_FAULTS = 'totalFaults';
+    public const ALIAS_MEAN_FAULTS = 'meanFaults';
+    public const ALIAS_WINNING_MARGIN = 'winningMargin';
 
 }

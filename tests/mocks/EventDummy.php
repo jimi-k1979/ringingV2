@@ -86,4 +86,14 @@ class EventDummy implements EventRepositoryInterface
     ): array {
         return [$this->createMockDrlEvent()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchSingleDrlEventStatistics(DrlEventEntity $event): void
+    {
+        $event->setTotalFaults(TestConstants::TEST_EVENT_TOTAL_FAULTS);
+        $event->setMeanFaults(TestConstants::TEST_EVENT_MEAN_FAULTS);
+        $event->setWinningMargin(TestConstants::TEST_EVENT_WINNING_MARGIN);
+    }
 }

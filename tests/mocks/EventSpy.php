@@ -55,6 +55,12 @@ class EventSpy implements EventRepositoryInterface
     private bool $fetchDrlEventsByCompetitionIdAndVenueCalled = false;
     private bool $fetchDrlEventsByCompetitionIdAndVenueThrowsException = false;
     private array $fetchDrlEventsByCompetitionIdAndVenueValue = [];
+    private bool $fetchSingleDrlEventStatisticsCalled = false;
+    private bool $fetchSingleDrlEventStatisticsThrowsException = false;
+    /**
+     * @var float[]
+     */
+    private array $eventStats;
 
     /**
      * @param DrlEventEntity $entity
@@ -357,5 +363,44 @@ class EventSpy implements EventRepositoryInterface
     public function setFetchDrlEventsByCompetitionIdAndVenueValue(array $value): void
     {
         $this->fetchDrlEventsByCompetitionIdAndVenueValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchSingleDrlEventStatistics(DrlEventEntity $event): void
+    {
+        $this->fetchSingleDrlEventStatisticsCalled = true;
+        if ($this->fetchDrlEventsByCompetitionNameThrowsException) {
+            throw new CleanArchitectureException('something went wrong');
+        }
+        $event->setTotalFaults(
+            $this->eventStats['totalFaults'] ?? TestConstants::TEST_EVENT_TOTAL_FAULTS
+        );
+        $event->setMeanFaults(
+            $this->eventStats['meanFaults'] ?? TestConstants::TEST_EVENT_MEAN_FAULTS
+        );
+        $event->setWinningMargin(
+            $this->eventStats['winningMargin'] ?? TestConstants::TEST_EVENT_WINNING_MARGIN
+        );
+    }
+
+    public function hasFetchSingleDrlEventStatisticsBeenCalled(): bool
+    {
+        return $this->fetchSingleDrlEventStatisticsCalled;
+    }
+
+    public function setFetchSingleDrlEventStatisticsThrowsException(): void
+    {
+        $this->fetchSingleDrlEventStatisticsThrowsException = true;
+    }
+
+    public function setFetchSingleDrlEventStatisticsValues(float $total, float $mean, float $margin): void
+    {
+        $this->eventStats = [
+            'totalFaults' => $total,
+            'meanFaults' => $mean,
+            'winningMargin' => $margin,
+        ];
     }
 }

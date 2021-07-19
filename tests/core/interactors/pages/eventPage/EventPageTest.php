@@ -172,6 +172,18 @@ class EventPageTest extends TestCase
         $this->assertTrue($ringerSpy->hasFetchWinningTeamByEventBeenCalled());
     }
 
+    public function testStatisticsAreFetched(): void
+    {
+        $eventSpy = new EventSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setEventRepository($eventSpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $eventSpy->hasFetchSingleDrlEventStatisticsBeenCalled()
+        );
+    }
 
     public function testSuccessfulResponse(): void
     {
@@ -232,7 +244,11 @@ class EventPageTest extends TestCase
                     'bell' => '1',
                 ]
             ],
-            'statistics' => [],
+            'statistics' => [
+                'totalFaults' => TestConstants::TEST_EVENT_TOTAL_FAULTS,
+                'meanFaults' => TestConstants::TEST_EVENT_MEAN_FAULTS,
+                'winningMargin' => TestConstants::TEST_EVENT_WINNING_MARGIN,
+            ],
         ];
         $this->assertEquals(
             Response::STATUS_SUCCESS,
