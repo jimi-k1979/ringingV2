@@ -24,6 +24,11 @@ $presenter = new class extends AbstractTwigPagePresenter {
             $this->dataForTemplate['event']['pealNumbers'] =
                 !empty($this->dataForTemplate['event']['results'][0]['pealNumber']);
 
+            $this->dataForTemplate['event']['statistics']['meanFaults'] =
+                number_format(
+                    $this->dataForTemplate['event']['statistics']['meanFaults'],
+                    2
+                );
             try {
                 $this->twig->display(
                     'events/event.twig',
