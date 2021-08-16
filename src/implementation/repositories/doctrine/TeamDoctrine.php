@@ -46,7 +46,7 @@ class TeamDoctrine extends DoctrineRepository implements
                         'deaneryId' => $teamEntity->getDeanery()->getId()
                     ]
                 );
-            $rowCount = $query->execute();
+            $rowCount = $query->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Team insert failed - connection error',
@@ -78,7 +78,7 @@ class TeamDoctrine extends DoctrineRepository implements
                 )
             )
                 ->setParameter('teamId', $teamId);
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No team found - connection error',
@@ -116,7 +116,7 @@ class TeamDoctrine extends DoctrineRepository implements
                         'deaneryId' => $teamEntity->getDeanery()->getId()
                     ]
                 );
-            $query->execute();
+            $query->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Team not updated - connection error',
@@ -140,7 +140,7 @@ class TeamDoctrine extends DoctrineRepository implements
                 )
             )
                 ->setParameter('search', "%{$searchTerm}%");
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Unable to fetch teams - connection error',
@@ -220,7 +220,7 @@ class TeamDoctrine extends DoctrineRepository implements
                 )
             )
                 ->setParameter('name', $teamName);
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No team found - connection error',

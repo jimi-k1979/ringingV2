@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\doctrine;
 
 
+use Doctrine\DBAL\Exception;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\entities\WinningRingerEntity;
@@ -21,10 +22,12 @@ class RingerDoctrine extends DoctrineRepository implements
     public function fuzzySearchRinger(string $searchTerm): array
     {
         // TODO: Implement fuzzySearchRinger() method.
+        return [];
     }
 
     /**
      * @inheritDoc
+     * @throws Exception
      */
     public function fetchWinningTeamByEvent(DrlEventEntity $event): array
     {

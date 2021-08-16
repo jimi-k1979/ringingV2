@@ -56,7 +56,7 @@ class ResultDoctrine extends DoctrineRepository
                         'points' => $result->getPoints(),
                     ]
                 );
-            $rowCount = $query->execute();
+            $rowCount = $query->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No result inserted - connection error',
@@ -86,7 +86,7 @@ class ResultDoctrine extends DoctrineRepository
             )
                 ->orderBy(self::ALIAS_POSITION)
                 ->setParameter('eventId', $event->getId());
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No results found - connection error',

@@ -24,6 +24,7 @@ class UserEntity extends Entity
         self::APPROVE_EDIT_PERMISSION => false,
         self::CONFIRM_DELETE_PERMISSION => false,
     ];
+    private int $loginCount = 0;
 
     /**
      * @return string|null
@@ -87,6 +88,22 @@ class UserEntity extends Entity
     public function setPermissions(array $permission): void
     {
         $this->permissions = $permission;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLoginCount(): int
+    {
+        return $this->loginCount;
+    }
+
+    /**
+     * @param int $param
+     */
+    public function setLoginCount(int $param): void
+    {
+        $this->loginCount = $param;
     }
 
 

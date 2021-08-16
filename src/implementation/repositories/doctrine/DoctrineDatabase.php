@@ -7,10 +7,10 @@ namespace DrlArchive\implementation\repositories\doctrine;
 
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Statement;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Query\QueryBuilder;
-use Doctrine\DBAL\Statement;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
@@ -220,8 +220,8 @@ class DoctrineDatabase implements DoctrineDatabaseInterface
     ): Statement {
         try {
             $statement = $this->connection->prepare($query);
-            $statement->execute($params);
-            return $statement;
+            $statement->executeQuery($params);
+            return $statement->getWrappedStatement();
         } catch (Throwable $e) {
             $this->handleError($e);
         }

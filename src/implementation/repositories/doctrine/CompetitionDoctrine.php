@@ -63,7 +63,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
                     ]
                 );
 
-            $rows = $queryBuilder->execute()->columnCount();
+            $rows = $queryBuilder->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No competition inserted - connection error',
@@ -90,7 +90,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             $query->where(self::FIELD_DRL_COMPETITION_ID . ' = :id')
                 ->setParameter('id', $id);
 
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -254,7 +254,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             $query->where(self::FIELD_DRL_USUAL_LOCATION_ID . ' = :locationId')
                 ->setParameter('locationId', $locationId);
 
-            $results = $query->execute()->fetchAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -306,7 +306,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             )
                 ->setParameter('string', "%{$string}%");
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -332,7 +332,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             )
                 ->setParameter('string', "%{$search}%");
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -425,7 +425,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
             $query->where(self::FIELD_DRL_COMPETITION_NAME . ' = :name')
                 ->setParameter('name', $competitionName);
 
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -480,7 +480,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
                 ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->distinct();
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',
@@ -543,7 +543,7 @@ class CompetitionDoctrine extends DoctrineRepository implements
                 ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->setParameter('location', $location->getLocation());
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Competition not found - connection error',

@@ -33,7 +33,7 @@ class DeaneryDoctrine extends DoctrineRepository implements
             )
                 ->setParameter('id', $id);
 
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No deanery found - connection error',
@@ -95,7 +95,7 @@ class DeaneryDoctrine extends DoctrineRepository implements
             )
                 ->setParameter('name', $name);
 
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No deanery found - connection error',

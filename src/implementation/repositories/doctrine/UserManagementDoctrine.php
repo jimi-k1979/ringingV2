@@ -60,7 +60,7 @@ class UserManagementDoctrine extends DoctrineRepository implements
                     $query->expr()->eq(self::FIELD_USER_ID, ':id')
                 )
                 ->setParameter('id', $userId);
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No user found - connection error',
