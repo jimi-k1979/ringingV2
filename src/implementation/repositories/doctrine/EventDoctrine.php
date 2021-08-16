@@ -57,7 +57,7 @@ class EventDoctrine extends DoctrineRepository implements
                         'isUnusualTower' => (int)$entity->isUnusualTower(),
                     ]
                 );
-            $rows = $query->execute();
+            $rows = $query->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event inserted - connection error',
@@ -84,7 +84,7 @@ class EventDoctrine extends DoctrineRepository implements
             $query = $this->baseDrlEventSelectQuery();
             $query->where(self::FIELD_DRL_EVENT_ID . ' = :id')
                 ->setParameter('id', $id);
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -206,7 +206,7 @@ class EventDoctrine extends DoctrineRepository implements
                 ->orderBy(Repository::ALIAS_YEAR)
                 ->setParameter('competition', $competitionId);
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -252,7 +252,7 @@ class EventDoctrine extends DoctrineRepository implements
                         'location' => $locationId
                     ]
                 );
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -274,7 +274,7 @@ class EventDoctrine extends DoctrineRepository implements
                 ->orderBy(Repository::ALIAS_COMPETITION_NAME)
                 ->setParameter('year', $year);
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -323,7 +323,7 @@ class EventDoctrine extends DoctrineRepository implements
                     ]
                 );
 
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -365,7 +365,7 @@ class EventDoctrine extends DoctrineRepository implements
                         'competitionId' => $competitionId
                     ]
                 );
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -394,7 +394,7 @@ class EventDoctrine extends DoctrineRepository implements
                 ->orderBy(Repository::ALIAS_YEAR)
                 ->setParameter('competition', $name);
 
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',
@@ -427,7 +427,7 @@ class EventDoctrine extends DoctrineRepository implements
                         'location' => $locationName
                     ]
                 );
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No event found - connection error',

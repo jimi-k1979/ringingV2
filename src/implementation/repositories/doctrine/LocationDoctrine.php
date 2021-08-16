@@ -20,14 +20,14 @@ class LocationDoctrine extends DoctrineRepository implements
     LocationRepositoryInterface
 {
 
-    const FIELD_LOCATION_ID = 'l.id';
-    const FIELD_LOCATION_NAME = 'l.location';
-    const FIELD_LOCATION_DEANERY_ID = 'l.deaneryID';
-    const FIELD_DEDICATION = 'l.dedication';
-    const FIELD_TENOR_WEIGHT = 'l.tenorWeight';
-    const FIELD_NUMBER_OF_BELLS = 'l.noOfBells';
-    const FIELD_DEANERY_NAME = 'd.deaneryName';
-    const FIELD_DEANERY_REGION = 'd.northSouth';
+    private const FIELD_LOCATION_ID = 'l.id';
+    private const FIELD_LOCATION_NAME = 'l.location';
+    private const FIELD_LOCATION_DEANERY_ID = 'l.deaneryID';
+    private const FIELD_DEDICATION = 'l.dedication';
+    private const FIELD_TENOR_WEIGHT = 'l.tenorWeight';
+    private const FIELD_NUMBER_OF_BELLS = 'l.noOfBells';
+    private const FIELD_DEANERY_NAME = 'd.deaneryName';
+    private const FIELD_DEANERY_REGION = 'd.northSouth';
 
     /**
      * @inheritDoc
@@ -55,7 +55,7 @@ class LocationDoctrine extends DoctrineRepository implements
                         'bells' => $location->getNumberOfBells(),
                     ]
                 );
-            $rows = $query->execute();
+            $rows = $query->executeStatement();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'Unable to insert location - connection error',
@@ -84,7 +84,7 @@ class LocationDoctrine extends DoctrineRepository implements
                 $query->expr()->eq(self::FIELD_LOCATION_ID, ':id')
             )
                 ->setParameter('id', $locationId);
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No location found - connection error',
@@ -113,7 +113,7 @@ class LocationDoctrine extends DoctrineRepository implements
                 $query->expr()->like(self::FIELD_LOCATION_NAME, ':search')
             )
                 ->setParameter('search', "%{$search}%");
-            $results = $query->execute()->fetchAllAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No location found - connection error',
@@ -135,7 +135,7 @@ class LocationDoctrine extends DoctrineRepository implements
                 $query->expr()->eq(self::FIELD_LOCATION_NAME, ':name')
             )
                 ->setParameter('name', strtolower($name));
-            $result = $query->execute()->fetchAssociative();
+            $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No location found - connection error',

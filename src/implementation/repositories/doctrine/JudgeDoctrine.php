@@ -51,7 +51,7 @@ class JudgeDoctrine extends DoctrineRepository implements
                     )
                 )
                 ->setParameter('event', $entity->getId());
-            $results = $query->execute()->fetchAssociative();
+            $results = $query->executeQuery()->fetchAllAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 'No judges found - connection error',
