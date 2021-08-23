@@ -77,11 +77,6 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    {% if event.judges is not empty %}
-                        <div id="judges-section">
-                            <h3>Judges</h3>
-                        </div>
-                    {% endif %}
                     {% if event.winningTeam is not empty %}
                         <div id="winning-team-section">
                             <h3>Winning Team</h3>
@@ -107,6 +102,20 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
+                        </div>
+                    {% endif %}
+                    {% if event.judges is not empty %}
+                        <div id="judges-section">
+                            <h3>Judges</h3>
+                            <ul style="list-style: none">
+                                {% for judge in event.judges %}
+                                    <li>
+                                        <a href="#?id={{ judge.id }}">
+                                            {{ judge.name }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     {% endif %}
                 </div>
