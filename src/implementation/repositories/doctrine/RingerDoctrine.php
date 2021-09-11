@@ -6,9 +6,12 @@ namespace DrlArchive\implementation\repositories\doctrine;
 
 
 use Doctrine\DBAL\Exception;
+use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\entities\WinningRingerEntity;
+use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
 
@@ -31,15 +34,11 @@ class RingerDoctrine extends DoctrineRepository implements
      */
     public function fetchWinningTeamByEvent(DrlEventEntity $event): array
     {
-        $query = $this->database->createQueryBuilder();
+        $query = $this->createAllFieldsBaseQuery();
 
-        $query->select(
-            'r.id AS ' . self::ALIAS_RINGER_ID,
-            'r.firstName AS ' . self::ALIAS_FIRST_NAME,
-            'r.lastName AS ' . self::ALIAS_LAST_NAME,
+        $query->addSelect(
             'dewr.bell AS ' . self::ALIAS_BELL
         )
-            ->from('ringer', 'r')
             ->innerJoin(
                 'r',
                 'DRL_event_winning_ringer',
@@ -62,32 +61,106 @@ class RingerDoctrine extends DoctrineRepository implements
         $team = [];
         foreach ($results as $result) {
             $winningRinger = new WinningRingerEntity();
-            $ringer = new RingerEntity();
-
             if (isset($result[Repository::ALIAS_BELL])) {
                 $winningRinger->setBell(
                     $result[Repository::ALIAS_BELL]
                 );
             }
-            if (isset($result[Repository::ALIAS_FIRST_NAME])) {
-                $ringer->setFirstName(
-                    $result[Repository::ALIAS_FIRST_NAME]
-                );
-            }
-            if (isset($result[Repository::ALIAS_LAST_NAME])) {
-                $ringer->setLastName(
-                    $result[Repository::ALIAS_LAST_NAME]
-                );
-            }
-            if (isset($result[Repository::ALIAS_RINGER_ID])) {
-                $ringer->setId(
-                    (int)$result[Repository::ALIAS_RINGER_ID]
-                );
-            }
-            $winningRinger->setRinger($ringer);
+            $winningRinger->setRinger(
+                $this->generateRingerEntity($result)
+            );
             $team[] = $winningRinger;
         }
 
         return $team;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchRingerById(int $ringerId): RingerEntity
+    {
+        try {
+            $query = $this->createAllFieldsBaseQuery();
+            $query->addSelect(
+                'IF(j.id IS NOT NULL, TRUE, FALSE) AS ' . Repository::ALIAS_IS_JUDGE
+            )
+                ->leftJoin(
+                    'r',
+                    'judge',
+                    'j',
+                    'r.id = j.ringerId'
+                )
+                ->where(
+                    $query->expr()->eq(
+                        'r.id',
+                        ':ringerId'
+                    )
+                )
+                ->setParameter('ringerId', $ringerId);
+            $result = $query->executeQuery()->fetchAssociative();
+        } catch (\Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'Cannot fetch ringer - connection error',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        if (empty($result)) {
+            throw new RepositoryNoResultsException(
+                'Ringer not found',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateRingerEntity($result);
+    }
+
+    private function createAllFieldsBaseQuery(): QueryBuilder
+    {
+        $queryBuilder = $this->database->createQueryBuilder();
+
+        $queryBuilder->select(
+            'r.id AS ' . Repository::ALIAS_RINGER_ID,
+            'r.firstName AS ' . Repository::ALIAS_FIRST_NAME,
+            'r.lastName AS ' . Repository::ALIAS_LAST_NAME,
+            'r.notes AS ' . Repository::ALIAS_NOTES
+        )
+            ->from('ringer', 'r');
+
+        return $queryBuilder;
+    }
+
+    private function generateRingerEntity(array $result): RingerEntity
+    {
+        $entity = new RingerEntity();
+
+        if (isset($result[Repository::ALIAS_RINGER_ID])) {
+            $entity->setId(
+                (int)$result[Repository::ALIAS_RINGER_ID]
+            );
+        }
+        if (isset($result[Repository::ALIAS_FIRST_NAME])) {
+            $entity->setFirstName(
+                $result[Repository::ALIAS_FIRST_NAME]
+            );
+        }
+        if (isset($result[Repository::ALIAS_LAST_NAME])) {
+            $entity->setLastName(
+                $result[Repository::ALIAS_LAST_NAME]
+            );
+        }
+        if (isset($result[Repository::ALIAS_NOTES])) {
+            $entity->setNotes(
+                $result[Repository::ALIAS_NOTES]
+            );
+        }
+        if (isset($result[Repository::ALIAS_IS_JUDGE])) {
+            $entity->setAlsoJudge(
+                (bool)$result[Repository::ALIAS_IS_JUDGE]
+            );
+        }
+
+        return $entity;
     }
 }

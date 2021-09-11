@@ -29,4 +29,12 @@ class RingerDummy implements RingerRepositoryInterface
     {
         return [$this->createMockWinningRinger()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchRingerById(int $ringerId): RingerEntity
+    {
+        return $this->createMockRinger();
+    }
 }

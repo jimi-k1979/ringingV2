@@ -7,6 +7,7 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
@@ -21,11 +22,16 @@ class RingerSpy implements RingerRepositoryInterface
     /**
      * @var null|RingerEntity[]
      */
-    private ?array $fuzzySearchValue;
-
+    private ?array $fuzzySearchValue = null;
     private bool $fetchWinningTeamByEventCalled = false;
     private bool $fetchWinningTeamByEventThrowsException = false;
-    private array $fetchWinningTeamByEventValue = [];
+    /**
+     * @var WinningRingerEntity[]|null
+     */
+    private ?array $fetchWinningTeamByEventValue = null;
+    private bool $fetchRingerByIdCalled = false;
+    private bool $fetchRingerByIdThrowsException = false;
+    private ?RingerEntity $fetchRingerByIdValue = null;
 
     /**
      * @inheritDoc
@@ -94,6 +100,37 @@ class RingerSpy implements RingerRepositoryInterface
     public function setFetchWinningTeamByEventValue(array $value): void
     {
         $this->fetchWinningTeamByEventValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchRingerById(int $ringerId): RingerEntity
+    {
+        $this->fetchRingerByIdCalled = true;
+        if ($this->fetchRingerByIdThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchRingerByIdValue ?? $this->createMockRinger();
+    }
+
+    public function hasFetchRingerByIdBeenCalled(): bool
+    {
+        return $this->fetchRingerByIdCalled;
+    }
+
+    public function setFetchRingerByIdThrowsException(): void
+    {
+        $this->fetchRingerByIdThrowsException = true;
+    }
+
+    public function setFetchRingerByIdValue(array $value): void
+    {
+        $this->fetchRingerByIdValue = $value;
     }
 
 }
