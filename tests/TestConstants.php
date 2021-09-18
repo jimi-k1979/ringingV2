@@ -37,6 +37,7 @@ class TestConstants
     public const TEST_RINGER_FIRST_NAME = 'Test';
     public const TEST_RINGER_LAST_NAME = 'Ringer';
     public const TEST_RINGER_NOTES = 'Known as Barry';
+    public const TEST_RINGER_IS_JUDGE = true;
 
     public const TEST_JUDGE_ID = 4321;
     public const TEST_JUDGE_FIRST_NAME = 'Test';
@@ -67,5 +68,5 @@ class TestConstants
 
     public const TEST_WINNING_RINGER_ID = 777;
     public const TEST_WINNING_RINGER_BELL = '1';
-    
+
 }

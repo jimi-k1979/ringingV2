@@ -32,6 +32,12 @@ class RingerSpy implements RingerRepositoryInterface
     private bool $fetchRingerByIdCalled = false;
     private bool $fetchRingerByIdThrowsException = false;
     private ?RingerEntity $fetchRingerByIdValue = null;
+    private bool $fetchRingerEventListCalled = false;
+    private bool $fetchRingerEventListThrowsException = false;
+    /**
+     * @var WinningRingerEntity[]|null
+     */
+    private ?array $fetchRingerEventListValue = null;
 
     /**
      * @inheritDoc
@@ -128,9 +134,41 @@ class RingerSpy implements RingerRepositoryInterface
         $this->fetchRingerByIdThrowsException = true;
     }
 
-    public function setFetchRingerByIdValue(array $value): void
+    public function setFetchRingerByIdValue(RingerEntity $value): void
     {
         $this->fetchRingerByIdValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchWinningRingerDetailsByRinger(RingerEntity $ringer): array
+    {
+        $this->fetchRingerEventListCalled = true;
+        if ($this->fetchRingerEventListThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchRingerEventListValue
+            ?? [$this->createMockWinningRinger()];
+    }
+
+    public function hasFetchRingerEventListBeenCalled(): bool
+    {
+        return $this->fetchRingerEventListCalled;
+    }
+
+    public function setFetchRingerEventListThrowsException(): void
+    {
+        $this->fetchRingerEventListThrowsException = true;
+    }
+
+    public function setFetchRingerEventListValue(array $value): void
+    {
+        $this->fetchRingerEventListValue = $value;
     }
 
 }

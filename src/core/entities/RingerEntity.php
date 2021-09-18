@@ -10,6 +10,7 @@ class RingerEntity extends Entity
     private ?string $lastName = null;
     private ?string $notes = null;
     private bool $alsoJudge = false;
+    private ?int $judgeId = null;
 
     /**
      * @return string|null
@@ -81,6 +82,22 @@ class RingerEntity extends Entity
     public function setAlsoJudge(bool $alsoJudge): void
     {
         $this->alsoJudge = $alsoJudge;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getJudgeId(): ?int
+    {
+        return $this->judgeId;
+    }
+
+    /**
+     * @param int|null $judgeId
+     */
+    public function setJudgeId(?int $judgeId): void
+    {
+        $this->judgeId = $judgeId;
     }
 
 }

@@ -35,4 +35,12 @@ interface RingerRepositoryInterface
      * @throws CleanArchitectureException
      */
     public function fetchRingerById(int $ringerId): RingerEntity;
+
+    /**
+     * @param RingerEntity $ringer
+     * @return WinningRingerEntity[]
+     */
+    public function fetchWinningRingerDetailsByRinger(
+        RingerEntity $ringer
+    ): array;
 }

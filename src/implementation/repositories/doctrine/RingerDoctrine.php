@@ -7,7 +7,9 @@ namespace DrlArchive\implementation\repositories\doctrine;
 
 use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Query\QueryBuilder;
+use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
@@ -85,6 +87,9 @@ class RingerDoctrine extends DoctrineRepository implements
             $query->addSelect(
                 'IF(j.id IS NOT NULL, TRUE, FALSE) AS ' . Repository::ALIAS_IS_JUDGE
             )
+                ->addSelect(
+                    'j.id AS ' . Repository::ALIAS_JUDGE_ID
+                )
                 ->leftJoin(
                     'r',
                     'judge',
@@ -160,7 +165,88 @@ class RingerDoctrine extends DoctrineRepository implements
                 (bool)$result[Repository::ALIAS_IS_JUDGE]
             );
         }
+        if (isset($result[Repository::ALIAS_JUDGE_ID])) {
+            $entity->setJudgeId(
+                (int)$result[Repository::ALIAS_JUDGE_ID]
+            );
+        }
 
         return $entity;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchWinningRingerDetailsByRinger(RingerEntity $ringer): array
+    {
+        $query = $this->database->createQueryBuilder();
+        $query->select(
+            'de.id AS ' . Repository::ALIAS_EVENT_ID,
+            'dewr.bell AS ' . Repository::ALIAS_BELL,
+            'de.year AS ' . Repository::ALIAS_YEAR,
+            'dc.isSingleTower AS ' . Repository::ALIAS_IS_SINGLE_TOWER,
+            'de.isUnusualTower AS ' . Repository::ALIAS_IS_UNUSUAL_TOWER,
+            'dc.competitionName AS ' . Repository::ALIAS_COMPETITION_NAME,
+            'IF(el.location IS NULL, cl.location, el.location) AS ' . Repository::ALIAS_LOCATION_NAME
+        )
+            ->from('DRL_event_winning_ringer', 'dewr')
+            ->innerJoin(
+                'dewr',
+                'DRL_event',
+                'de',
+                'dewr.eventID = de.id'
+            )
+            ->innerJoin(
+                'dewr',
+                'DRL_competition',
+                'dc',
+                'de.competitionID = dc.id'
+            )
+            ->leftJoin(
+                'dewr',
+                'location',
+                'el',
+                'de.locationID = el.id'
+            )
+            ->leftJoin(
+                'dewr',
+                'location',
+                'cl',
+                'dc.usualLocationID = cl.id'
+            )
+            ->where(
+                $query->expr()->eq('dewr.ringerID', ':ringerId')
+            )
+            ->setParameter(
+                'ringerId',
+                $ringer->getId()
+            );
+
+        $results = $query->executeQuery()->fetchAllAssociative();
+
+        $eventList = [];
+        foreach ($results as $result) {
+            $competition = new DrlCompetitionEntity();
+            $competition->setName($result[Repository::ALIAS_COMPETITION_NAME]);
+            $competition->setSingleTowerCompetition((bool)$result[Repository::ALIAS_IS_SINGLE_TOWER]);
+
+            $location = new LocationEntity();
+            $location->setLocation($result[Repository::ALIAS_LOCATION_NAME]);
+
+            $event = new DrlEventEntity();
+            $event->setId((int)$result[Repository::ALIAS_EVENT_ID]);
+            $event->setYear($result[Repository::ALIAS_YEAR]);
+            $event->setUnusualTower((bool)$result[Repository::ALIAS_IS_UNUSUAL_TOWER]);
+            $event->setLocation($location);
+            $event->setCompetition($competition);
+
+            $winningRinger = new WinningRingerEntity();
+            $winningRinger->setBell($result[Repository::ALIAS_BELL]);
+            $winningRinger->setEvent($event);
+            $winningRinger->setRinger($ringer);
+
+            $eventList[] = $winningRinger;
+        }
+        return $eventList;
     }
 }
