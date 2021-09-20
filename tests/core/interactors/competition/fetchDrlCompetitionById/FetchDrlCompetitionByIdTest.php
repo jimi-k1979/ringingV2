@@ -8,6 +8,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -60,6 +61,7 @@ class FetchDrlCompetitionByIdTest extends TestCase
         $useCase = new FetchDrlCompetitionById();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());

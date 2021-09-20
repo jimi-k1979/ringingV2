@@ -7,6 +7,7 @@ namespace DrlArchive\core\interactors\ringer\RingerFuzzySearch;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
 use DrlArchive\mocks\PresenterDummy;
@@ -61,6 +62,7 @@ class RingerFuzzySearchTest extends TestCase
         $useCase = new RingerFuzzySearch();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setRingerRepository(new RingerDummy());

@@ -10,6 +10,7 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\DrlResultEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\LoggedInUserDummy;
@@ -83,6 +84,7 @@ class NewEventPageTest extends TestCase
         $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setTeamRepository(new TeamDummy());
         $useCase->setResultRepository(new ResultDummy());
         $useCase->setEventRepository(new EventDummy());
@@ -227,6 +229,7 @@ class NewEventPageTest extends TestCase
 
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositorySpy());
         $useCase->setTeamRepository(new TeamDummy());
@@ -416,6 +419,7 @@ class NewEventPageTest extends TestCase
 
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositorySpy());
         $useCase->setTeamRepository(new TeamDummy());

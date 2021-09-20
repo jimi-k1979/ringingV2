@@ -8,6 +8,8 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
+use DrlArchive\mocks\AuthenticationManagerSpy;
 use DrlArchive\mocks\DeaneryDummy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LocationDummy;
@@ -46,6 +48,7 @@ class CreateLocationTest extends TestCase
         $useCase = new CreateLocation();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setDeaneryRepository(new DeaneryDummy());
         $useCase->setLocationRepository(new LocationDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
@@ -71,7 +74,7 @@ class CreateLocationTest extends TestCase
     public function testGuestUserIsNotAuthorised(): void
     {
         $securitySpy = new SecurityRepositorySpy();
-        $userSpy = new GuestUserDummy();
+        $authenticationSpy = new AuthenticationManagerSpy();
 
         $this->expectException(
             AccessDeniedException::class
@@ -79,7 +82,7 @@ class CreateLocationTest extends TestCase
 
         $useCase = $this->createUseCase();
         $useCase->setSecurityRepository($securitySpy);
-        $useCase->setUserRepository($userSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
     }
 

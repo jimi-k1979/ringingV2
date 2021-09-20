@@ -6,6 +6,7 @@ namespace DrlArchive\core\interactors\competition\fetchDrlCompetitionByName;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -52,6 +53,7 @@ class FetchDrlCompetitionByNameTest extends TestCase
         $entity = new FetchDrlCompetitionByName();
         $entity->setRequest($request);
         $entity->setPresenter(new PresenterDummy());
+        $entity->setAuthenticationManager(new AuthenticationManagerDummy());
         $entity->setSecurityRepository(new SecurityRepositoryDummy());
         $entity->setUserRepository(new GuestUserDummy());
         $entity->setCompetitionRepository(new CompetitionDummy());

@@ -10,6 +10,8 @@ use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEvent;
 use DrlArchive\core\interactors\event\createDrlEvent\CreateDrlEventRequest;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
+use DrlArchive\mocks\AuthenticationManagerSpy;
 use DrlArchive\mocks\EventDummy;
 use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -64,6 +66,7 @@ class CreateDrlEventTest extends TestCase
         $useCase = new CreateDrlEvent();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setEventRepository(new EventDummy());
         $useCase->setTransactionRepository(new TransactionManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
@@ -74,13 +77,14 @@ class CreateDrlEventTest extends TestCase
 
     public function testGuestUserIsUnauthorised(): void
     {
-        $userSpy = new GuestUserDummy();
         $securitySpy = new SecurityRepositorySpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setIsLoggedInToFalse();
 
         $this->expectException(AccessDeniedException::class);
 
         $useCase = $this->createNewUseCase();
-        $useCase->setUserRepository($userSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->setSecurityRepository($securitySpy);
         $useCase->execute();
     }

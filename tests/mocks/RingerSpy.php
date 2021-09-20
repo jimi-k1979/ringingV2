@@ -92,7 +92,8 @@ class RingerSpy implements RingerRepositoryInterface
             );
         }
 
-        return $this->fetchWinningTeamByEventValue;
+        return $this->fetchWinningTeamByEventValue
+            ?? [$this->createMockWinningRinger()];
     }
 
     public function hasFetchWinningTeamByEventBeenCalled(): bool

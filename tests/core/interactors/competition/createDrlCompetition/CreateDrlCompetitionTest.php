@@ -8,6 +8,8 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
+use DrlArchive\mocks\AuthenticationManagerSpy;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -48,6 +50,7 @@ class CreateDrlCompetitionTest extends TestCase
         $useCase = new CreateDrlCompetition();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setTransactionManager(new TransactionManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
@@ -71,13 +74,14 @@ class CreateDrlCompetitionTest extends TestCase
 
     public function testGuestUserIsUnauthorised(): void
     {
-        $userRepository = new GuestUserDummy();
         $securitySpy = new SecurityRepositorySpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setIsLoggedInToFalse();
 
         $this->expectException(AccessDeniedException::class);
 
         $useCase = $this->createUseCase();
-        $useCase->setUserRepository($userRepository);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->setSecurityRepository($securitySpy);
         $useCase->execute();
     }

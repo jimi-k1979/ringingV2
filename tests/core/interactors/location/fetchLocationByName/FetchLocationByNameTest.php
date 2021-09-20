@@ -6,6 +6,7 @@ namespace DrlArchive\core\interactors\location\fetchLocationByName;
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LocationDummy;
 use DrlArchive\mocks\LocationSpy;
@@ -47,6 +48,7 @@ class FetchLocationByNameTest extends TestCase
         $useCase = new FetchLocationByName();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setLocationRepository(new LocationDummy());
