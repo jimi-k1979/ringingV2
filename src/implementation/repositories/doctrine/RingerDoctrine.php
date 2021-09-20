@@ -85,9 +85,6 @@ class RingerDoctrine extends DoctrineRepository implements
         try {
             $query = $this->createAllFieldsBaseQuery();
             $query->addSelect(
-                'IF(j.id IS NOT NULL, TRUE, FALSE) AS ' . Repository::ALIAS_IS_JUDGE
-            )
-                ->addSelect(
                     'j.id AS ' . Repository::ALIAS_JUDGE_ID
                 )
                 ->leftJoin(
@@ -158,11 +155,6 @@ class RingerDoctrine extends DoctrineRepository implements
         if (isset($result[Repository::ALIAS_NOTES])) {
             $entity->setNotes(
                 $result[Repository::ALIAS_NOTES]
-            );
-        }
-        if (isset($result[Repository::ALIAS_IS_JUDGE])) {
-            $entity->setAlsoJudge(
-                (bool)$result[Repository::ALIAS_IS_JUDGE]
             );
         }
         if (isset($result[Repository::ALIAS_JUDGE_ID])) {

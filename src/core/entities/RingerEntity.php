@@ -9,7 +9,6 @@ class RingerEntity extends Entity
     private ?string $firstName = null;
     private ?string $lastName = null;
     private ?string $notes = null;
-    private bool $alsoJudge = false;
     private ?int $judgeId = null;
 
     /**
@@ -66,22 +65,6 @@ class RingerEntity extends Entity
     public function getFullName(): ?string
     {
         return $this->firstName . ' ' . $this->lastName;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isAlsoJudge(): bool
-    {
-        return $this->alsoJudge;
-    }
-
-    /**
-     * @param bool $alsoJudge
-     */
-    public function setAlsoJudge(bool $alsoJudge): void
-    {
-        $this->alsoJudge = $alsoJudge;
     }
 
     /**

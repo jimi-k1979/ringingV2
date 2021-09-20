@@ -11,11 +11,13 @@ use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 use DrlArchive\traits\CreateMockRingerTrait;
 
 class RingerSpy implements RingerRepositoryInterface
 {
     use CreateMockRingerTrait;
+    use CreateMockDrlEventTrait;
 
     private bool $fuzzySearchRingerCalled = false;
     private bool $fuzzySearchThrowsException = false;
@@ -152,8 +154,11 @@ class RingerSpy implements RingerRepositoryInterface
             );
         }
 
+        $defaultWinningRinger = $this->createMockWinningRinger();
+        $defaultWinningRinger->setEvent($this->createMockDrlEvent());
+
         return $this->fetchRingerEventListValue
-            ?? [$this->createMockWinningRinger()];
+            ?? [$defaultWinningRinger];
     }
 
     public function hasFetchRingerEventListBeenCalled(): bool

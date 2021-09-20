@@ -9,11 +9,13 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
 use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 use DrlArchive\traits\CreateMockRingerTrait;
 
 class RingerDummy implements RingerRepositoryInterface
 {
     use CreateMockRingerTrait;
+    use CreateMockDrlEventTrait;
 
     /**
      * @inheritDoc
@@ -44,6 +46,11 @@ class RingerDummy implements RingerRepositoryInterface
      */
     public function fetchWinningRingerDetailsByRinger(RingerEntity $ringer): array
     {
-        return [$this->createMockWinningRinger()];
+        $mockWinningRinger = $this->createMockWinningRinger();
+        $mockWinningRinger->setEvent($this->createMockDrlEvent());
+
+        return [
+            $mockWinningRinger
+        ];
     }
 }
