@@ -90,7 +90,7 @@ function getEventResults(eventId) {
                     buildResultTitleSection(output.event);
                     buildTable(output.results);
                     resultsSection.classList.remove('hidden');
-                    link.href = '/events/event.php?eventId=' + output.event.eventId
+                    link.href = '/archive/event.php?eventId=' + output.event.eventId
                 }
             }
             return true;

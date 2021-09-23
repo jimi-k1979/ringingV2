@@ -14,7 +14,7 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 if (empty($_SESSION['auth_logged_in'])) {
     // not logged in - redirect to results archive
-    header('Location: /events/resultArchive.php');
+    header('Location: /archive/resultArchive.php');
     exit;
 }
 
@@ -52,7 +52,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
 
             try {
                 $this->twig->display(
-                    'events/newEvent.twig',
+                    'archive/newEvent.twig',
                     $this->dataForTemplate
                 );
             } catch (Throwable $e) {

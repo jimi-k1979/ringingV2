@@ -19,6 +19,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         if ($response->getStatus() !== Response::STATUS_SUCCESS) {
+            echo $response->getMessage();
         } else {
             $this->dataForTemplate['event'] = $response->getData();
             $this->dataForTemplate['event']['pealNumbers'] =
@@ -31,7 +32,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 );
             try {
                 $this->twig->display(
-                    'events/event.twig',
+                    'archive/event.twig',
                     $this->dataForTemplate
                 );
             } catch (Throwable $e) {

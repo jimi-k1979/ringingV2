@@ -1,6 +1,6 @@
 {% extends "base.twig" %}
 
-{% block title %}Event archive - results{% endblock %}
+{% block title %}Event archive - event details{% endblock %}
 
 {% block extraStyles %}
     <link href="/assets/css/tableStyles.css" rel="stylesheet">
@@ -94,7 +94,7 @@
                                             {{ ringer.bell }}
                                         </td>
                                         <td>
-                                            <a href="#?ringerId={{ ringer.id }}">
+                                            <a href="ringer.php?ringerId={{ ringer.id }}">
                                                 {{ ringer.name }}
                                             </a>
                                         </td>
