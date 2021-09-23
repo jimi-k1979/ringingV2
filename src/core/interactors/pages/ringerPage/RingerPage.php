@@ -100,6 +100,7 @@ class RingerPage extends Interactor
                 'id' => $event->getEvent()->getId(),
                 'year' => $event->getEvent()->getYear(),
                 'event' => $eventName,
+                'bell' => $event->getBell(),
             ];
         }
 

@@ -209,6 +209,9 @@ class RingerDoctrine extends DoctrineRepository implements
             ->where(
                 $query->expr()->eq('dewr.ringerID', ':ringerId')
             )
+            ->orderBy(
+                Repository::ALIAS_YEAR
+            )
             ->setParameter(
                 'ringerId',
                 $ringer->getId()

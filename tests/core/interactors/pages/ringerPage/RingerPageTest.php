@@ -153,6 +153,7 @@ class RingerPageTest extends TestCase
                     'year' => TestConstants::TEST_EVENT_YEAR,
                     'event' => TestConstants::TEST_DRL_COMPETITION_NAME
                         . ' @ ' . TestConstants::TEST_LOCATION_NAME,
+                    'bell' => TestConstants::TEST_WINNING_RINGER_BELL,
                 ],
             ],
         ];
