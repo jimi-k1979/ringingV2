@@ -177,6 +177,7 @@ class RingerDoctrine extends DoctrineRepository implements
             'dewr.bell AS ' . Repository::ALIAS_BELL,
             'de.year AS ' . Repository::ALIAS_YEAR,
             'dc.isSingleTower AS ' . Repository::ALIAS_IS_SINGLE_TOWER,
+            'dc.numberOfBells AS ' . Repository::ALIAS_NUMBER_OF_BELLS,
             'de.isUnusualTower AS ' . Repository::ALIAS_IS_UNUSUAL_TOWER,
             'dc.competitionName AS ' . Repository::ALIAS_COMPETITION_NAME,
             'IF(el.location IS NULL, cl.location, el.location) AS ' . Repository::ALIAS_LOCATION_NAME
@@ -224,6 +225,7 @@ class RingerDoctrine extends DoctrineRepository implements
             $competition = new DrlCompetitionEntity();
             $competition->setName($result[Repository::ALIAS_COMPETITION_NAME]);
             $competition->setSingleTowerCompetition((bool)$result[Repository::ALIAS_IS_SINGLE_TOWER]);
+            $competition->setNumberOfBells($result[Repository::ALIAS_NUMBER_OF_BELLS]);
 
             $location = new LocationEntity();
             $location->setLocation($result[Repository::ALIAS_LOCATION_NAME]);

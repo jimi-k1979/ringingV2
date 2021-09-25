@@ -137,6 +137,55 @@ class RingerPageTest extends TestCase
         );
     }
 
+    public function testStatisticsCalculated(): void
+    {
+        $useCase = new class extends RingerPage {
+            public function getStats(): array
+            {
+                return $this->stats;
+            }
+        };
+        $useCase->setPresenter(new PresenterDummy());
+        $useCase->setRequest(
+            new RingerPageRequest(
+                [RingerPageRequest::RINGER_ID => TestConstants::TEST_RINGER_ID]
+            )
+        );
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
+        $useCase->setRingerRepository(new RingerDummy());
+        $useCase->execute();
+
+        $expectedData = [
+            'numberOfWins' => 1,
+            'winsByBell' => [
+                'treble' => 1,
+                '2' => 0,
+                '3' => 0,
+                '4' => 0,
+                '5' => 0,
+                '6' => 0,
+                '7' => 0,
+                'tenor' => 0,
+                'strapper' => 0,
+            ],
+            'winsByDecade' => [
+                '197' => 1,
+            ],
+            'winsByNumberOfBells' => [
+                '6' => 1,
+                '8' => 0,
+            ],
+            'winsByCompetition' => [
+                TestConstants::TEST_DRL_COMPETITION_NAME => 1,
+            ]
+        ];
+        $this->assertSame(
+            $expectedData,
+            $useCase->getStats()
+        );
+    }
+
     public function testSuccessfulResponse(): void
     {
         $expectedResponse = [
@@ -156,6 +205,30 @@ class RingerPageTest extends TestCase
                     'bell' => TestConstants::TEST_WINNING_RINGER_BELL,
                 ],
             ],
+            'statistics' => [
+                'numberOfWins' => 1,
+                'winsByBell' => [
+                    'treble' => 1,
+                    '2' => 0,
+                    '3' => 0,
+                    '4' => 0,
+                    '5' => 0,
+                    '6' => 0,
+                    '7' => 0,
+                    'tenor' => 0,
+                    'strapper' => 0,
+                ],
+                'winsByDecade' => [
+                    '197' => 1,
+                ],
+                'winsByNumberOfBells' => [
+                    '6' => 1,
+                    '8' => 0,
+                ],
+                'winsByCompetition' => [
+                    TestConstants::TEST_DRL_COMPETITION_NAME => 1,
+                ]
+            ]
         ];
 
         $presenter = new PresenterSpy();
@@ -177,5 +250,5 @@ class RingerPageTest extends TestCase
             'Unexpected response data'
         );
     }
-    
+
 }

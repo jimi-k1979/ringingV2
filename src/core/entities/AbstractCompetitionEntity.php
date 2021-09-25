@@ -13,7 +13,7 @@ abstract class AbstractCompetitionEntity extends Entity
     protected string $name;
     protected bool $singleTowerCompetition = true;
     protected ?LocationEntity $usualLocation = null;
-    protected ?int $numberOfBells = null;
+    protected ?string $numberOfBells = null;
 
     /**
      * @return string
@@ -64,17 +64,17 @@ abstract class AbstractCompetitionEntity extends Entity
     }
 
     /**
-     * @return int|null
+     * @return string|null
      */
-    public function getNumberOfBells(): ?int
+    public function getNumberOfBells(): ?string
     {
         return $this->numberOfBells;
     }
 
     /**
-     * @param int|null $numberOfBells
+     * @param string|null $numberOfBells
      */
-    public function setNumberOfBells(?int $numberOfBells): void
+    public function setNumberOfBells(?string $numberOfBells): void
     {
         $this->numberOfBells = $numberOfBells;
     }
