@@ -22,7 +22,7 @@ class TestConstants
     public const TEST_DRL_COMPETITION_ID = 999;
     public const TEST_DRL_COMPETITION_NAME = 'Test competition';
     public const TEST_DRL_SINGLE_TOWER_COMPETITION = false;
-    public const TEST_DRL_COMPETITION_NO_OF_BELLS = 6;
+    public const TEST_DRL_COMPETITION_NO_OF_BELLS = '6';
 
     public const TEST_EVENT_ID = 1234;
     public const TEST_EVENT_YEAR = '1970';
