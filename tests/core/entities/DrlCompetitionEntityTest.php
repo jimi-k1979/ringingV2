@@ -45,6 +45,9 @@ class DrlCompetitionEntityTest extends TestCase
     public function testSingleTowerCompetitionProperty(): void
     {
         $competition = new DrlCompetitionEntity();
+        $this->assertTrue(
+            $competition->isSingleTowerCompetition()
+        );
         $competition->setSingleTowerCompetition(
             TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION
         );
@@ -56,10 +59,27 @@ class DrlCompetitionEntityTest extends TestCase
     public function testUsualLocationProperty(): void
     {
         $competition = new DrlCompetitionEntity();
+        $this->assertNull(
+            $competition->getUsualLocation()
+        );
         $competition->setUsualLocation(new LocationEntity());
         $this->assertInstanceOf(
             LocationEntity::class,
             $competition->getUsualLocation()
         );
     }
+
+    public function testNumberOfBellsProperty(): void
+    {
+        $competition = new DrlCompetitionEntity();
+        $this->assertNull(
+            $competition->getNumberOfBells()
+        );
+        $competition->setNumberOfBells(6);
+        $this->assertEquals(
+            6,
+            $competition->getNumberofBells()
+        );
+    }
+
 }
