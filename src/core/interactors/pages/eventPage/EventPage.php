@@ -122,26 +122,36 @@ class EventPage extends Interactor
 
         foreach ($this->results as $result) {
             $eventResults[] = [
-                'position' => $result->getPosition(),
-                'pealNumber' => $result->getPealNumber(),
-                'team' => $result->getTeam()->getName(),
-                'teamId' => $result->getTeam()->getId(),
-                'faults' => $result->getFaults()
+                EventPageResponse::DATA_RESULTS_POSITION =>
+                    $result->getPosition(),
+                EventPageResponse::DATA_RESULTS_PEAL_NUMBER =>
+                    $result->getPealNumber(),
+                EventPageResponse::DATA_RESULTS_TEAM =>
+                    $result->getTeam()->getName(),
+                EventPageResponse::DATA_RESULTS_TEAM_ID =>
+                    $result->getTeam()->getId(),
+                EventPageResponse::DATA_RESULTS_FAULTS =>
+                    $result->getFaults(),
             ];
         }
 
         foreach ($this->event->getJudges() as $judge) {
             $eventJudges[] = [
-                'id' => $judge->getId(),
-                'name' => $judge->getFullName(),
+                EventPageResponse::DATA_JUDGES_ID =>
+                    $judge->getId(),
+                EventPageResponse::DATA_JUDGES_NAME =>
+                    $judge->getFullName(),
             ];
         }
 
         foreach ($this->winningTeam as $ringer) {
             $eventRingers[] = [
-                'id' => $ringer->getRinger()->getId(),
-                'name' => $ringer->getRinger()->getFullName(),
-                'bell' => $ringer->getBell(),
+                EventPageResponse::DATA_WINNING_TEAM_ID =>
+                    $ringer->getRinger()->getId(),
+                EventPageResponse::DATA_WINNING_TEAM_NAME =>
+                    $ringer->getRinger()->getFullName(),
+                EventPageResponse::DATA_WINNING_TEAM_BELL =>
+                    $ringer->getBell(),
             ];
         }
 
@@ -149,18 +159,29 @@ class EventPage extends Interactor
             || $this->event->isUnusualTower();
 
         $data = [
-            'eventId' => $this->event->getId(),
-            'eventYear' => $this->event->getYear(),
-            'eventLocation' => $this->event->getLocation()->getLocation(),
-            'isUnusualLocation' => $isUnusualTower,
-            'competitionName' => $this->event->getCompetition()->getName(),
-            'results' => $eventResults,
-            'judges' => $eventJudges,
-            'winningTeam' => $eventRingers,
-            'statistics' => [
-                'totalFaults' => $this->event->getTotalFaults(),
-                'meanFaults' => $this->event->getMeanFaults(),
-                'winningMargin' => $this->event->getWinningMargin(),
+            EventPageResponse::DATA_EVENT_ID =>
+                $this->event->getId(),
+            EventPageResponse::DATA_EVENT_YEAR =>
+                $this->event->getYear(),
+            EventPageResponse::DATA_EVENT_LOCATION =>
+                $this->event->getLocation()->getLocation(),
+            EventPageResponse::DATA_IS_UNUSUAL_LOCATION =>
+                $isUnusualTower,
+            EventPageResponse::DATA_COMPETITION_NAME =>
+                $this->event->getCompetition()->getName(),
+            EventPageResponse::DATA_RESULTS =>
+                $eventResults,
+            EventPageResponse::DATA_JUDGES =>
+                $eventJudges,
+            EventPageResponse::DATA_WINNING_TEAM =>
+                $eventRingers,
+            EventPageResponse::DATA_STATS => [
+                EventPageResponse::DATA_STATS_TOTAL_FAULTS =>
+                    $this->event->getTotalFaults(),
+                EventPageResponse::DATA_STATS_MEAN_FAULTS =>
+                    $this->event->getMeanFaults(),
+                EventPageResponse::DATA_STATS_WINNING_MARGIN =>
+                    $this->event->getWinningMargin(),
             ],
         ];
 
