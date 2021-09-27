@@ -26,7 +26,106 @@
         {% endif %}
         <div class="blog-post">
             <div class="row">
-                <div class="col-md-6 align-self-top">
+                <div class="col-lg-6 align-self-top">
+                    <h3>Statistics</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h5 class="text-center">Number of Wins</h5>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-center">{{ stats.numberOfWins }}</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h5>Bells Rung</h5>
+                            <p>'6' only includes rings in 8 bell competitions,
+                                'tenor' is the 6th in 6 bell competitions and 8th
+                                in 8 bell competitions.
+                            </p>
+                            <table class="table table-light">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        Bell
+                                    </th>
+                                    <th>
+                                        Count
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for bell,count in stats.winsByBell %}
+                                    <tr>
+                                        <td>{{ bell }}</td>
+                                        <td>{{ count }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h5>Wins by Number of Bells</h5>
+                            <table class="table table-light">
+                                <thead>
+                                <tr>
+                                    <th>Number of Bells</th>
+                                    <th>Count</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for bells,count in stats.winsByNumberOfBells %}
+                                    <tr>
+                                        <td>{{ bells }}</td>
+                                        <td>{{ count }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                            <h5>Wins by Decade</h5>
+                            <table class="table table-light">
+                                <thead>
+                                <tr>
+                                    <th>Decade</th>
+                                    <th>Wins</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for decade,count in stats.winsByDecade %}
+                                    <tr>
+                                        <td>{{ decade }}0s</td>
+                                        <td>{{ count }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h5>Wins by Competition</h5>
+                            <table class="table table-light">
+                                <thead>
+                                <tr>
+                                    <th>Competition</th>
+                                    <th>Wins</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for event,count in stats.winsByCompetition %}
+                                    <tr>
+                                        <td>{{ event }}</td>
+                                        <td>{{ count }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-top">
                     <h3>Events won</h3>
                     <table class="table table-striped table-light">
                         <thead>
@@ -50,10 +149,6 @@
                         {% endfor %}
                         </tbody>
                     </table>
-                </div>
-                <div class="col-md-6 align-self-top">
-                    <h3>Statistics</h3>
-                    <!-- put statistics here -->
                 </div>
             </div>
         </div>

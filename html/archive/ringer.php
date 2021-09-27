@@ -6,6 +6,7 @@ require_once __DIR__ . '/../init.php';
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\pages\ringerPage\RingerPageRequest;
+use DrlArchive\core\interactors\pages\ringerPage\RingerPageResponse;
 use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\pages\RingerPageFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
@@ -19,8 +20,12 @@ $presenter = new class extends AbstractTwigPagePresenter {
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         if ($response->getStatus() === Response::STATUS_SUCCESS) {
-            $this->dataForTemplate['ringer'] = $response->getData()['ringer'];
-            $this->dataForTemplate['events'] = $response->getData()['events'];
+            $this->dataForTemplate['ringer'] = 
+                $response->getData()[RingerPageResponse::DATA_RINGER];
+            $this->dataForTemplate['events'] = 
+                $response->getData()[RingerPageResponse::DATA_EVENTS];
+            $this->dataForTemplate['stats'] = 
+                $response->getData()[RingerPageResponse::DATA_STATS];
             try {
                 $this->twig->display(
                     'archive/ringer.twig',
