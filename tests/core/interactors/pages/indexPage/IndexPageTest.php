@@ -118,9 +118,12 @@ class IndexPageTest extends TestCase
     public function testNotLoggedInResponse(): void
     {
         $presenterSpy = new PresenterSpy();
-
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setIsLoggedInToFalse();
+        
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenterSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
 
         $response = $presenterSpy->getResponse();

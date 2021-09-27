@@ -7,6 +7,7 @@ namespace DrlArchive\core\interactors\event\FetchDrlEventsByYear;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\mocks\EventDummy;
@@ -53,6 +54,7 @@ class FetchDrlEventsByYearTest extends TestCase
         $useCase = new FetchDrlEventsByYear();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new GuestUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setEventRepository(new EventDummy());

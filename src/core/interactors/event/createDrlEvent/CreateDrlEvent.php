@@ -11,9 +11,9 @@ use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
 /**

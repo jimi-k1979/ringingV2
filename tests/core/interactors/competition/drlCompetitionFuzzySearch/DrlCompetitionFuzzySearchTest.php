@@ -7,6 +7,7 @@ namespace DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\CompetitionDummy;
 use DrlArchive\mocks\CompetitionSpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -43,6 +44,7 @@ class DrlCompetitionFuzzySearchTest extends TestCase
         $useCase = new DrlCompetitionFuzzySearch();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setCompetitionRepository(new CompetitionDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());

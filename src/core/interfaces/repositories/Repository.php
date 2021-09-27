@@ -55,5 +55,5 @@ class Repository
     public const ALIAS_TOTAL_FAULTS = 'totalFaults';
     public const ALIAS_MEAN_FAULTS = 'meanFaults';
     public const ALIAS_WINNING_MARGIN = 'winningMargin';
-
+    public const ALIAS_NOTES = 'notes';
 }

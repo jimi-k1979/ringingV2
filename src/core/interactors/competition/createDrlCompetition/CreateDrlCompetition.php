@@ -7,9 +7,9 @@ namespace DrlArchive\core\interactors\competition\createDrlCompetition;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 use DrlArchive\core\interfaces\repositories\CompetitionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
 /**

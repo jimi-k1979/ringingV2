@@ -6,61 +6,81 @@ namespace DrlArchive\core\entities;
 
 class RingerEntity extends Entity
 {
-    private string $firstName;
-    private string $lastName;
-    private string $notes;
+    private ?string $firstName = null;
+    private ?string $lastName = null;
+    private ?string $notes = null;
+    private ?int $judgeId = null;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
 
     /**
-     * @param string $firstName
+     * @param string|null $firstName
      */
-    public function setFirstName(string $firstName): void
+    public function setFirstName(?string $firstName): void
     {
         $this->firstName = $firstName;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
 
     /**
-     * @param string $lastName
+     * @param string|null $lastName
      */
-    public function setLastName(string $lastName): void
+    public function setLastName(?string $lastName): void
     {
         $this->lastName = $lastName;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getNotes(): string
+    public function getNotes(): ?string
     {
         return $this->notes;
     }
 
     /**
-     * @param string $notes
+     * @param string|null $notes
      */
-    public function setNotes(string $notes): void
+    public function setNotes(?string $notes): void
     {
         $this->notes = $notes;
     }
 
-    public function getFullName(): string
+    /**
+     * @return string|null
+     */
+    public function getFullName(): ?string
     {
         return $this->firstName . ' ' . $this->lastName;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getJudgeId(): ?int
+    {
+        return $this->judgeId;
+    }
+
+    /**
+     * @param int|null $judgeId
+     */
+    public function setJudgeId(?int $judgeId): void
+    {
+        $this->judgeId = $judgeId;
     }
 
 }

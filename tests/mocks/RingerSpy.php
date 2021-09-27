@@ -7,25 +7,39 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\core\entities\WinningRingerEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\RingerRepositoryInterface;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 use DrlArchive\traits\CreateMockRingerTrait;
 
 class RingerSpy implements RingerRepositoryInterface
 {
     use CreateMockRingerTrait;
+    use CreateMockDrlEventTrait;
 
     private bool $fuzzySearchRingerCalled = false;
     private bool $fuzzySearchThrowsException = false;
     /**
      * @var null|RingerEntity[]
      */
-    private ?array $fuzzySearchValue;
-
+    private ?array $fuzzySearchValue = null;
     private bool $fetchWinningTeamByEventCalled = false;
     private bool $fetchWinningTeamByEventThrowsException = false;
-    private array $fetchWinningTeamByEventValue = [];
+    /**
+     * @var WinningRingerEntity[]|null
+     */
+    private ?array $fetchWinningTeamByEventValue = null;
+    private bool $fetchRingerByIdCalled = false;
+    private bool $fetchRingerByIdThrowsException = false;
+    private ?RingerEntity $fetchRingerByIdValue = null;
+    private bool $fetchRingerEventListCalled = false;
+    private bool $fetchRingerEventListThrowsException = false;
+    /**
+     * @var WinningRingerEntity[]|null
+     */
+    private ?array $fetchRingerEventListValue = null;
 
     /**
      * @inheritDoc
@@ -78,7 +92,8 @@ class RingerSpy implements RingerRepositoryInterface
             );
         }
 
-        return $this->fetchWinningTeamByEventValue;
+        return $this->fetchWinningTeamByEventValue
+            ?? [$this->createMockWinningRinger()];
     }
 
     public function hasFetchWinningTeamByEventBeenCalled(): bool
@@ -94,6 +109,72 @@ class RingerSpy implements RingerRepositoryInterface
     public function setFetchWinningTeamByEventValue(array $value): void
     {
         $this->fetchWinningTeamByEventValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchRingerById(int $ringerId): RingerEntity
+    {
+        $this->fetchRingerByIdCalled = true;
+        if ($this->fetchRingerByIdThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchRingerByIdValue ?? $this->createMockRinger();
+    }
+
+    public function hasFetchRingerByIdBeenCalled(): bool
+    {
+        return $this->fetchRingerByIdCalled;
+    }
+
+    public function setFetchRingerByIdThrowsException(): void
+    {
+        $this->fetchRingerByIdThrowsException = true;
+    }
+
+    public function setFetchRingerByIdValue(RingerEntity $value): void
+    {
+        $this->fetchRingerByIdValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchWinningRingerDetailsByRinger(RingerEntity $ringer): array
+    {
+        $this->fetchRingerEventListCalled = true;
+        if ($this->fetchRingerEventListThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                RingerRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        $defaultWinningRinger = $this->createMockWinningRinger();
+        $defaultWinningRinger->setEvent($this->createMockDrlEvent());
+
+        return $this->fetchRingerEventListValue
+            ?? [$defaultWinningRinger];
+    }
+
+    public function hasFetchRingerEventListBeenCalled(): bool
+    {
+        return $this->fetchRingerEventListCalled;
+    }
+
+    public function setFetchRingerEventListThrowsException(): void
+    {
+        $this->fetchRingerEventListThrowsException = true;
+    }
+
+    public function setFetchRingerEventListValue(array $value): void
+    {
+        $this->fetchRingerEventListValue = $value;
     }
 
 }

@@ -8,6 +8,8 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\Exceptions\AccessDeniedException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
+use DrlArchive\mocks\AuthenticationManagerDummy;
+use DrlArchive\mocks\AuthenticationManagerSpy;
 use DrlArchive\mocks\DeaneryDummy;
 use DrlArchive\mocks\DeanerySpy;
 use DrlArchive\mocks\GuestUserDummy;
@@ -48,6 +50,7 @@ class CreateTeamTest extends TestCase
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setTeamRepository(new TeamDummy());
         $useCase->setDeaneryRepository(new DeaneryDummy());
@@ -72,7 +75,7 @@ class CreateTeamTest extends TestCase
     public function testGuestUserIsNotAuthorised(): void
     {
         $securitySpy = new SecurityRepositorySpy();
-        $userSpy = new GuestUserDummy();
+        $authenticationSpy = new AuthenticationManagerSpy();
 
         $this->expectException(
             AccessDeniedException::class
@@ -80,7 +83,7 @@ class CreateTeamTest extends TestCase
 
         $useCase = $this->createUseCase();
         $useCase->setSecurityRepository($securitySpy);
-        $useCase->setUserRepository($userSpy);
+        $useCase->setAuthenticationManager($authenticationSpy);
         $useCase->execute();
     }
 

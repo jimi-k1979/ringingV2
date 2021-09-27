@@ -7,6 +7,7 @@ namespace DrlArchive\core\interactors\team\TeamFuzzySearch;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\GuestUserDummy;
 use DrlArchive\mocks\LoggedInUserDummy;
 use DrlArchive\mocks\PresenterDummy;
@@ -61,6 +62,7 @@ class TeamFuzzySearchTest extends TestCase
         $useCase = new TeamFuzzySearch();
         $useCase->setRequest($request);
         $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setUserRepository(new LoggedInUserDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setTeamRepository(new TeamDummy());

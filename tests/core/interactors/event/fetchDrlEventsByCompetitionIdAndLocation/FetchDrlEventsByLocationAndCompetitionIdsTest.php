@@ -18,7 +18,7 @@ use DrlArchive\TestConstants;
 use PHPUnit\Framework\TestCase;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
-class FetchDrlEventsByCompetitionIdAndLocationTest extends TestCase
+class FetchDrlEventsByLocationAndCompetitionIdsTest extends TestCase
 {
     use CreateMockDrlEventTrait;
 

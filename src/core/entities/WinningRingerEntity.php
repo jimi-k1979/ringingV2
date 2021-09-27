@@ -6,8 +6,9 @@ namespace DrlArchive\core\entities;
 
 class WinningRingerEntity extends Entity
 {
-    private string $bell;
-    private RingerEntity $ringer;
+    private ?string $bell = null;
+    private ?RingerEntity $ringer = null;
+    private ?DrlEventEntity $event = null;
 
     /**
      * @return string
@@ -39,6 +40,22 @@ class WinningRingerEntity extends Entity
     public function setRinger(RingerEntity $ringer): void
     {
         $this->ringer = $ringer;
+    }
+
+    /**
+     * @return DrlEventEntity|null
+     */
+    public function getEvent(): ?DrlEventEntity
+    {
+        return $this->event;
+    }
+
+    /**
+     * @param DrlEventEntity|null $event
+     */
+    public function setEvent(?DrlEventEntity $event): void
+    {
+        $this->event = $event;
     }
 
 }

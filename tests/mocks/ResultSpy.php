@@ -126,5 +126,4 @@ class ResultSpy implements ResultRepositoryInterface
         return $this->fetchDrlEventResultsCalled;
     }
 
-
 }

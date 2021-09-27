@@ -18,6 +18,9 @@ trait CreateMockDrlCompetitionTrait
         $entity->setSingleTowerCompetition(
             TestConstants::TEST_DRL_SINGLE_TOWER_COMPETITION
         );
+        $entity->setNumberOfBells(
+            TestConstants::TEST_DRL_COMPETITION_NO_OF_BELLS
+        );
 
         return $entity;
     }

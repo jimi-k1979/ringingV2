@@ -7,10 +7,10 @@ namespace DrlArchive\core\interactors\location\createLocation;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\core\interfaces\managers\TransactionManagerInterface;
 use DrlArchive\core\interfaces\repositories\DeaneryRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\LocationRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\SecurityRepositoryInterface;
-use DrlArchive\core\interfaces\repositories\TransactionManagerInterface;
 use Exception;
 
 /**

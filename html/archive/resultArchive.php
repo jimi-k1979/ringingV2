@@ -20,7 +20,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
         $this->dataForTemplate['nav']['highlighted'] = Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         $this->twig->display(
-            'events/eventSearch.twig',
+            'archive/eventSearch.twig',
             $this->dataForTemplate
         );
     }

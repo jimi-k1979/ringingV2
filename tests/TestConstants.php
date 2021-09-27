@@ -22,6 +22,7 @@ class TestConstants
     public const TEST_DRL_COMPETITION_ID = 999;
     public const TEST_DRL_COMPETITION_NAME = 'Test competition';
     public const TEST_DRL_SINGLE_TOWER_COMPETITION = false;
+    public const TEST_DRL_COMPETITION_NO_OF_BELLS = '6';
 
     public const TEST_EVENT_ID = 1234;
     public const TEST_EVENT_YEAR = '1970';
@@ -36,7 +37,7 @@ class TestConstants
     public const TEST_RINGER_ID = 4321;
     public const TEST_RINGER_FIRST_NAME = 'Test';
     public const TEST_RINGER_LAST_NAME = 'Ringer';
-    public const TEST_RINGER_NOTES = 'Known as Barry';
+    public const TEST_RINGER_NOTES = 'Known as Dinsdale';
 
     public const TEST_JUDGE_ID = 4321;
     public const TEST_JUDGE_FIRST_NAME = 'Test';
@@ -67,5 +68,5 @@ class TestConstants
 
     public const TEST_WINNING_RINGER_ID = 777;
     public const TEST_WINNING_RINGER_BELL = '1';
-    
+
 }

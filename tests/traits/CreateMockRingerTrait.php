@@ -18,6 +18,7 @@ trait CreateMockRingerTrait
         $entity->setFirstName(TestConstants::TEST_RINGER_FIRST_NAME);
         $entity->setLastName(TestConstants::TEST_RINGER_LAST_NAME);
         $entity->setNotes(TestConstants::TEST_RINGER_NOTES);
+        $entity->setJudgeId(TestConstants::TEST_JUDGE_ID);
 
         return $entity;
     }
