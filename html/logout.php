@@ -7,6 +7,7 @@ require_once(__DIR__ . '/init.php');
 use DrlArchive\Config;
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\userManagement\logoutUser\LogoutUserRequest;
+use DrlArchive\core\interactors\userManagement\logoutUser\LogoutUserResponse;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\implementation\factories\interactors\userManagement\LogoutUserFactory;
 
@@ -18,7 +19,7 @@ if (empty($_SESSION['auth_logged_in'])) {
 $presenter = new class implements PresenterInterface {
     public function send(?Response $response = null): void
     {
-        header("Location: {$response->getData()['redirectTo']}");
+        header("Location: {$response->getData()[LogoutUserResponse::DATA_REDIRECT_TO]}");
     }
 };
 

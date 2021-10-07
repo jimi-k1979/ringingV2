@@ -58,16 +58,18 @@ class DrlCompetitionFuzzySearch extends Interactor
         $dataArray = [];
         foreach ($this->foundCompetitions as $competition) {
             $dataArray[] = [
-                'id' => $competition->getId(),
-                'name' => $competition->getName(),
+                DrlCompetitionFuzzySearchResponse::DATA_ID =>
+                    $competition->getId(),
+                DrlCompetitionFuzzySearchResponse::DATA_NAME =>
+                    $competition->getName(),
             ];
         }
 
         $this->response = new DrlCompetitionFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_MESSAGE => 'Success',
-                Response::RESPONSE_DATA => $dataArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::MESSAGE => 'Success',
+                Response::DATA => $dataArray,
             ]
         );
     }
@@ -76,10 +78,10 @@ class DrlCompetitionFuzzySearch extends Interactor
     {
         $this->response = new DrlCompetitionFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => 'No competitions found',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode()
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => 'No competitions found',
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode()
                 ]
             ]
         );

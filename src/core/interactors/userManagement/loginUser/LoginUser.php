@@ -22,8 +22,6 @@ use function Webmozart\Assert\Tests\StaticAnalysis\null;
  */
 class LoginUser extends Interactor
 {
-    public const REDIRECT_TO = 'redirectTo';
-    public const EMAIL_ADDRESS = 'emailAddress';
 
     /**
      * @var ?UserEntity
@@ -73,7 +71,7 @@ class LoginUser extends Interactor
         $this->response->setStatus(Response::STATUS_SUCCESS);
 
         $responseData = [
-            self::REDIRECT_TO => $this->request->getRedirectTo(),
+            LoginUserResponse::DATA_REDIRECT_TO => $this->request->getRedirectTo(),
         ];
 
         $this->response->setData($responseData);
@@ -95,8 +93,8 @@ class LoginUser extends Interactor
         }
         $this->response->setData(
             [
-                self::REDIRECT_TO => $this->request->getRedirectTo(),
-                self::EMAIL_ADDRESS => $this->request->getEmailAddress(),
+                LoginUserResponse::DATA_REDIRECT_TO => $this->request->getRedirectTo(),
+                LoginUserResponse::DATA_EMAIL_ADDRESS => $this->request->getEmailAddress(),
             ]
         );
         $this->response->setMessage(

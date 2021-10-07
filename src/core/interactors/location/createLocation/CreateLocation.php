@@ -20,7 +20,6 @@ use Exception;
  */
 class CreateLocation extends Interactor
 {
-
     private DeaneryRepositoryInterface $deaneryRepository;
     private LocationRepositoryInterface $locationRepository;
     private TransactionManagerInterface $transactionManager;
@@ -29,24 +28,27 @@ class CreateLocation extends Interactor
     /**
      * @param DeaneryRepositoryInterface $deaneryRepository
      */
-    public function setDeaneryRepository(DeaneryRepositoryInterface $deaneryRepository): void
-    {
+    public function setDeaneryRepository(
+        DeaneryRepositoryInterface $deaneryRepository
+    ): void {
         $this->deaneryRepository = $deaneryRepository;
     }
 
     /**
      * @param LocationRepositoryInterface $locationRepository
      */
-    public function setLocationRepository(LocationRepositoryInterface $locationRepository): void
-    {
+    public function setLocationRepository(
+        LocationRepositoryInterface $locationRepository
+    ): void {
         $this->locationRepository = $locationRepository;
     }
 
     /**
      * @param TransactionManagerInterface $transactionManager
      */
-    public function setTransactionManager(TransactionManagerInterface $transactionManager): void
-    {
+    public function setTransactionManager(
+        TransactionManagerInterface $transactionManager
+    ): void {
         $this->transactionManager = $transactionManager;
     }
 
@@ -99,30 +101,35 @@ class CreateLocation extends Interactor
     private function createResponse()
     {
         $data = [
-            'id' => $this->locationEntity->getId(),
-            'location' => $this->locationEntity->getLocation(),
-            'deanery' => $this->locationEntity->getDeanery()->getName(),
-            'dedication' => $this->locationEntity->getDedication(),
-            'tenorWeight' => $this->locationEntity->getTenorWeight(),
+            CreateLocationResponse::DATA_ID =>
+                $this->locationEntity->getId(),
+            CreateLocationResponse::DATA_LOCATION =>
+                $this->locationEntity->getLocation(),
+            CreateLocationResponse::DATA_DEANERY =>
+                $this->locationEntity->getDeanery()->getName(),
+            CreateLocationResponse::DATA_DEDICATION =>
+                $this->locationEntity->getDedication(),
+            CreateLocationResponse::DATA_TENOR_WEIGHT =>
+                $this->locationEntity->getTenorWeight(),
         ];
         $this->response = new CreateLocationResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-            Response::RESPONSE_MESSAGE => 'Location successfully created',
-            Response::RESPONSE_DATA => $data,
-        ]);
+                                                         Response::STATUS => Response::STATUS_SUCCESS,
+                                                         Response::MESSAGE => 'Location successfully created',
+                                                         Response::DATA => $data,
+                                                     ]);
     }
 
     private function createFailingResponse(Exception $e)
     {
         $data = [
-            'message' => $e->getMessage(),
-            'code' => $e->getCode(),
+            Response::DATA_MESSAGE => $e->getMessage(),
+            Response::DATA_CODE => $e->getCode(),
         ];
         $this->response = new CreateLocationResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
-            Response::RESPONSE_MESSAGE => 'Location not created',
-            Response::RESPONSE_DATA => $data,
-        ]);
+                                                         Response::STATUS => Response::STATUS_NOT_CREATED,
+                                                         Response::MESSAGE => 'Location not created',
+                                                         Response::DATA => $data,
+                                                     ]);
     }
 
 }

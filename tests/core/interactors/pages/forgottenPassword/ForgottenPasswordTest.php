@@ -71,7 +71,7 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE => 'getEmail',
+                ForgottenPassword::DATA_TEMPLATE => 'getEmail',
             ],
             $response->getData()
         );
@@ -133,7 +133,7 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE => 'getEmail',
+                ForgottenPassword::DATA_TEMPLATE => 'getEmail',
             ],
             $response->getData()
         );
@@ -184,10 +184,10 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE =>
+                ForgottenPassword::DATA_TEMPLATE =>
                     ForgottenPassword::TEMPLATE_GET_NEW_PASSWORD,
-                ForgottenPassword::DATA_FIELD_TOKEN => 'testToken',
-                ForgottenPassword::DATA_FIELD_SELECTOR => 'testSelector',
+                ForgottenPassword::DATA_TOKEN => 'testToken',
+                ForgottenPassword::DATA_SELECTOR => 'testSelector',
             ],
             $response->getData()
         );
@@ -217,7 +217,7 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE =>
+                ForgottenPassword::DATA_TEMPLATE =>
                     ForgottenPassword::TEMPLATE_GET_EMAIL,
             ],
             $response->getData()
@@ -248,7 +248,7 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE =>
+                ForgottenPassword::DATA_TEMPLATE =>
                     ForgottenPassword::TEMPLATE_GET_EMAIL,
             ],
             $response->getData()
@@ -300,7 +300,7 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE =>
+                ForgottenPassword::DATA_TEMPLATE =>
                     ForgottenPassword::TEMPLATE_GET_EMAIL,
             ],
             $response->getData()
@@ -331,10 +331,10 @@ class ForgottenPasswordTest extends TestCase
         );
         $this->assertEquals(
             [
-                ForgottenPassword::DATA_FIELD_TEMPLATE =>
+                ForgottenPassword::DATA_TEMPLATE =>
                     ForgottenPassword::TEMPLATE_GET_NEW_PASSWORD,
-                ForgottenPassword::DATA_FIELD_TOKEN => 'testToken',
-                ForgottenPassword::DATA_FIELD_SELECTOR => 'testSelector',
+                ForgottenPassword::DATA_TOKEN => 'testToken',
+                ForgottenPassword::DATA_SELECTOR => 'testSelector',
             ],
             $response->getData()
         );

@@ -7,6 +7,7 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\interactors\competition\drlCompetitionFuzzySearch\DrlCompetitionFuzzySearchRequest;
 use DrlArchive\core\interactors\competition\fetchDrlCompetitionByLocation\FetchDrlCompetitionByLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsRequest;
+use DrlArchive\core\interactors\event\FetchDrlEventAndResults\FetchDrlEventAndResultsResponse;
 use DrlArchive\core\interactors\event\fetchDrlEventsByCompetitionIdAndLocation\FetchDrlEventsByCompetitionIdAndLocationRequest;
 use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearRequest;
 use DrlArchive\core\interactors\event\FetchEventsByCompetition\FetchEventsByCompetitionRequest;
@@ -139,7 +140,6 @@ try {
             );
 
             $presenter = new class implements PresenterInterface {
-
                 public function send(?Response $response = null): void
                 {
                     $data = $response->getData();
@@ -147,13 +147,14 @@ try {
                         $responseArray = $data;
                     } else {
                         $responseArray = [
-                            'code' => $data['code'],
+                            'code' => $data[Response::DATA_CODE],
                         ];
                         if (
-                            $data['code'] ===
+                            $data[Response::DATA_CODE] ===
                             ResultRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
                         ) {
-                            $responseArray['event'] = $data['event'];
+                            $responseArray['event'] =
+                                $data[Response::DATA];
                         }
                     }
 

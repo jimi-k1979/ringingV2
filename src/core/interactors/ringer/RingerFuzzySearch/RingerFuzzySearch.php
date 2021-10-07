@@ -57,17 +57,21 @@ class RingerFuzzySearch extends Interactor
 
         foreach ($this->ringersList as $entity) {
             $responseArray[] = [
-                'id' => $entity->getId(),
-                'firstName' => $entity->getFirstName(),
-                'lastName' => $entity->getLastName(),
-                'fullName' => $entity->getFullName()
+                RingerFuzzySearchResponse::DATA_ID =>
+                    $entity->getId(),
+                RingerFuzzySearchResponse::DATA_FIRST_NAME =>
+                    $entity->getFirstName(),
+                RingerFuzzySearchResponse::DATA_LAST_NAME =>
+                    $entity->getLastName(),
+                RingerFuzzySearchResponse::DATA_FULL_NAME =>
+                    $entity->getFullName(),
             ];
         }
 
         $this->response = new RingerFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $responseArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $responseArray,
             ]
         );
     }
@@ -76,8 +80,8 @@ class RingerFuzzySearch extends Interactor
     {
         $this->response = new RingerFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => [],
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => [],
             ]
         );
     }

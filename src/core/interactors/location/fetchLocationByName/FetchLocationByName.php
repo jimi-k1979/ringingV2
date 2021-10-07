@@ -60,13 +60,20 @@ class FetchLocationByName extends Interactor
         $this->response->setStatus(Response::STATUS_SUCCESS);
         $this->response->setData(
             [
-                'locationId' => $this->location->getId(),
-                'name' => $this->location->getLocation(),
-                'dedication' => $this->location->getDedication(),
-                'tenorWeight' => $this->location->getTenorWeight(),
-                'numberOfBells' => $this->location->getNumberOfBells(),
-                'deanery' => $this->location->getDeanery()->getName(),
-                'region' => $this->location->getDeanery()->getRegion(),
+                FetchLocationByNameResponse::DATA_LOCATION_ID =>
+                    $this->location->getId(),
+                FetchLocationByNameResponse::DATA_NAME =>
+                    $this->location->getLocation(),
+                FetchLocationByNameResponse::DATA_DEDICATION =>
+                    $this->location->getDedication(),
+                FetchLocationByNameResponse::DATA_TENOR_WEIGHT =>
+                    $this->location->getTenorWeight(),
+                FetchLocationByNameResponse::DATA_NUMBER_OF_BELLS =>
+                    $this->location->getNumberOfBells(),
+                FetchLocationByNameResponse::DATA_DEANERY =>
+                    $this->location->getDeanery()->getName(),
+                FetchLocationByNameResponse::DATA_REGION =>
+                    $this->location->getDeanery()->getRegion(),
             ]
         );
     }

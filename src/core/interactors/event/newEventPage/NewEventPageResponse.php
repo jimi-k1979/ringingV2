@@ -9,5 +9,5 @@ use DrlArchive\core\classes\Response;
 
 class NewEventPageResponse extends Response
 {
-
+    public const DATA_EVENT_ID = 'eventId';
 }

@@ -17,8 +17,6 @@ use DrlArchive\core\interactors\Interactor;
 class LogoutUser extends Interactor
 {
 
-    public const DATA_FIELD_REDIRECT_TO = 'redirectTo';
-
     public function execute(): void
     {
         try {
@@ -44,7 +42,8 @@ class LogoutUser extends Interactor
         $this->response->setStatus(Response::STATUS_SUCCESS);
         $this->response->setData(
             [
-                self::DATA_FIELD_REDIRECT_TO => $this->request->getRedirectTo(),
+                LogoutUserResponse::DATA_REDIRECT_TO =>
+                    $this->request->getRedirectTo(),
             ]
         );
     }

@@ -11,7 +11,6 @@ use DrlArchive\core\interactors\Interactor;
 /**
  * Class IndexPage
  * @package DrlArchive\core\interactors\pages\indexPage
- * @property IndexPageRequest $request
  */
 class IndexPage extends Interactor
 {

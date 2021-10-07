@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\event\checkDrlEventExists\CheckDrlEventExistsRequest;
+use DrlArchive\core\interactors\event\checkDrlEventExists\CheckDrlEventExistsResponse;
 use DrlArchive\core\interactors\location\fetchLocationByName\FetchLocationByNameRequest;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\implementation\factories\interactors\event\CheckDrlEventExistsFactory;
@@ -27,7 +28,9 @@ try {
                     {
                         if ($response->getStatus() === Response::STATUS_SUCCESS) {
                             $data = $response->getData();
-                            if (isset($data['eventId'])) {
+                            if (
+                                isset($data[CheckDrlEventExistsResponse::DATA_EVENT_ID])
+                            ) {
                                 echo json_encode(
                                     [
                                         'message' => 'Event already exists in database',
@@ -37,14 +40,17 @@ try {
                             } else {
                                 $competition = [
                                     'status' => 200,
-                                    'competitionId' => $data['competitionId'],
+                                    'competitionId' =>
+                                        $data[CheckDrlEventExistsResponse::DATA_COMPETITION_ID],
                                 ];
                                 if ($data['singleTower']) {
                                     $competition = array_merge(
                                         $competition,
                                         [
-                                            'usualLocationId' => $data['usualLocationId'],
-                                            'usualLocation' => $data['usualLocation'],
+                                            'usualLocationId' =>
+                                                $data[CheckDrlEventExistsResponse::DATA_USUAL_LOCATION_ID],
+                                            'usualLocation' =>
+                                                $data[CheckDrlEventExistsResponse::DATA_USUAL_LOCATION],
                                         ]
                                     );
                                 }

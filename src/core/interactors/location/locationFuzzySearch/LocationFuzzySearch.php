@@ -50,15 +50,17 @@ class LocationFuzzySearch extends Interactor
 
         foreach ($this->locationList as $locationEntity) {
             $responseData[] = [
-                'id' => $locationEntity->getId(),
-                'name' => $locationEntity->getLocation()
+                LocationFuzzySearchResponse::DATA_ID =>
+                    $locationEntity->getId(),
+                LocationFuzzySearchResponse::DATA_NAME =>
+                    $locationEntity->getLocation(),
             ];
         }
 
         $this->response = new LocationFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $responseData,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $responseData,
             ]
         );
     }

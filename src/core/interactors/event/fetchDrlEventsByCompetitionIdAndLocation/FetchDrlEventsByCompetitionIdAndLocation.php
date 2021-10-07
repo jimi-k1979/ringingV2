@@ -59,15 +59,17 @@ class FetchDrlEventsByCompetitionIdAndLocation extends Interactor
         $dataArray = [];
         foreach ($this->queryData as $queryDatum) {
             $dataArray[] = [
-                'id' => $queryDatum->getId(),
-                'text' => $queryDatum->getYear(),
+                FetchDrlEventsByCompetitionIdAndLocationResponse::DATA_ID =>
+                    $queryDatum->getId(),
+                FetchDrlEventsByCompetitionIdAndLocationResponse::DATA_TEXT =>
+                    $queryDatum->getYear(),
             ];
         }
 
         $this->response = new FetchDrlEventsByCompetitionIdAndLocationResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $dataArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $dataArray,
             ]
         );
     }
@@ -76,10 +78,10 @@ class FetchDrlEventsByCompetitionIdAndLocation extends Interactor
     {
         $this->response = new FetchDrlEventsByCompetitionIdAndLocationResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => 'No events found',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode(),
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => 'No events found',
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode(),
                 ],
             ]
         );

@@ -22,9 +22,6 @@ use DrlArchive\Config;
  */
 class ForgottenPassword extends Interactor
 {
-    public const DATA_FIELD_TEMPLATE = 'template';
-    public const DATA_FIELD_TOKEN = 'token';
-    public const DATA_FIELD_SELECTOR = 'selector';
 
     public const TEMPLATE_GET_EMAIL = 'getEmail';
     public const TEMPLATE_GET_NEW_PASSWORD = 'getNewPassword';
@@ -147,13 +144,14 @@ message
     private function createResponse(): void
     {
         $dataArray = [
-            self::DATA_FIELD_TEMPLATE => $this->template,
+            ForgottenPasswordResponse::DATA_TEMPLATE =>
+                $this->template,
         ];
 
         if ($this->template === self::TEMPLATE_GET_NEW_PASSWORD) {
-            $dataArray[self::DATA_FIELD_TOKEN] =
+            $dataArray[ForgottenPasswordResponse::DATA_TOKEN] =
                 $this->request->getToken();
-            $dataArray[self::DATA_FIELD_SELECTOR] =
+            $dataArray[ForgottenPasswordResponse::DATA_SELECTOR] =
                 $this->request->getSelector();
         }
 
@@ -168,7 +166,8 @@ message
         $this->response = new ForgottenPasswordResponse();
         $this->response->setData(
             [
-                self::DATA_FIELD_TEMPLATE => self::TEMPLATE_GET_EMAIL
+                ForgottenPasswordResponse::DATA_TEMPLATE =>
+                    self::TEMPLATE_GET_EMAIL,
             ]
         );
 
@@ -196,11 +195,11 @@ message
             ) {
                 $this->response->setData(
                     [
-                        self::DATA_FIELD_TEMPLATE =>
+                        ForgottenPasswordResponse::DATA_TEMPLATE =>
                             self::TEMPLATE_GET_NEW_PASSWORD,
-                        self::DATA_FIELD_SELECTOR =>
+                        ForgottenPasswordResponse::DATA_SELECTOR =>
                             $this->request->getSelector(),
-                        self::DATA_FIELD_TOKEN =>
+                        ForgottenPasswordResponse::DATA_TOKEN =>
                             $this->request->getToken(),
                     ]
                 );

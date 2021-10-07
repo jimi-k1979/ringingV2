@@ -217,7 +217,8 @@ class NewEventPage extends Interactor
         if (isset($this->event)) {
             $this->response->setData(
                 [
-                    'eventId' => $this->event->getId(),
+                    NewEventPageResponse::DATA_EVENT_ID =>
+                        $this->event->getId(),
                 ]
             );
         }

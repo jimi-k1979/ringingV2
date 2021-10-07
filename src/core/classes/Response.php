@@ -22,11 +22,13 @@ class Response
     public const STATUS_NOT_UPDATED = 4;
     public const STATUS_NOT_DELETED = 5;
 
-    public const RESPONSE_STATUS = 'status';
-    public const RESPONSE_MESSAGE = 'message';
-    public const RESPONSE_DATA = 'data';
-    public const RESPONSE_LOGGED_IN_USER = 'loggedInUser';
+    public const STATUS = 'status';
+    public const MESSAGE = 'message';
+    public const DATA = 'data';
+    public const LOGGED_IN_USER = 'loggedInUser';
 
+    public const DATA_CODE = 'code';
+    public const DATA_MESSAGE = 'message';
 
     private int $status = self::STATUS_SUCCESS;
     private string $message = '';
@@ -62,10 +64,10 @@ class Response
 
     private function processData(array $data): void
     {
-        $this->status = $data[self::RESPONSE_STATUS] ?? self::STATUS_SUCCESS;
-        $this->message = $data[self::RESPONSE_MESSAGE] ?? '';
-        $this->data = $data[self::RESPONSE_DATA] ?? [];
-        $this->loggedInUser = $data[self::RESPONSE_LOGGED_IN_USER] ?? null;
+        $this->status = $data[self::STATUS] ?? self::STATUS_SUCCESS;
+        $this->message = $data[self::MESSAGE] ?? '';
+        $this->data = $data[self::DATA] ?? [];
+        $this->loggedInUser = $data[self::LOGGED_IN_USER] ?? null;
     }
 
     public function setStatus(int $status): void

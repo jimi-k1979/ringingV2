@@ -9,5 +9,6 @@ use DrlArchive\core\classes\Response;
 
 class DrlCompetitionFuzzySearchResponse extends Response
 {
-
+    public const DATA_ID = 'id';
+    public const DATA_NAME = 'name';
 }

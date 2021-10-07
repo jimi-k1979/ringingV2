@@ -58,14 +58,16 @@ class TeamFuzzySearch extends Interactor
         $responseArray = [];
         foreach ($this->teams as $currentTeam) {
             $responseArray[] = [
-                'id' => $currentTeam->getId(),
-                'name' => $currentTeam->getName()
+                TeamFuzzySearchResponse::DATA_ID =>
+                    $currentTeam->getId(),
+                TeamFuzzySearchResponse::DATA_NAME =>
+                    $currentTeam->getName(),
             ];
         }
         $this->response = new TeamFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $responseArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $responseArray,
             ]
         );
     }
@@ -74,8 +76,8 @@ class TeamFuzzySearch extends Interactor
     {
         $this->response = new TeamFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => [],
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => [],
             ]
         );
     }

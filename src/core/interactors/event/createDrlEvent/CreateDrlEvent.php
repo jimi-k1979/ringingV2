@@ -102,14 +102,17 @@ class CreateDrlEvent extends Interactor
     {
         $this->response = new CreateDrlEventResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_MESSAGE => 'Succesfully created event',
-                Response::RESPONSE_DATA => [
-                    'drlEventId' => $this->eventEntity->getId(),
-                    'locationId' => $this->eventEntity->getLocation()->getId(),
-                    'competitionId' => $this->eventEntity->getCompetition()
-                        ->getId(),
-                    'year' => $this->eventEntity->getYear(),
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::MESSAGE => 'Succesfully created event',
+                Response::DATA => [
+                    CreateDrlEventResponse::DATA_DRL_EVENT_ID =>
+                        $this->eventEntity->getId(),
+                    CreateDrlEventResponse::DATA_LOCATION_ID =>
+                        $this->eventEntity->getLocation()->getId(),
+                    CreateDrlEventResponse::DATA_COMPETITION_ID =>
+                        $this->eventEntity->getCompetition()->getId(),
+                    CreateDrlEventResponse::DATA_YEAR =>
+                        $this->eventEntity->getYear(),
                 ],
             ]
         );
@@ -119,11 +122,11 @@ class CreateDrlEvent extends Interactor
     {
         $this->response = new CreateDrlEventResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
-                Response::RESPONSE_MESSAGE => 'Unable to create event',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode(),
-                    'message' => $e->getMessage(),
+                Response::STATUS => Response::STATUS_NOT_CREATED,
+                Response::MESSAGE => 'Unable to create event',
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode(),
+                    Response::DATA_MESSAGE => $e->getMessage(),
                 ],
             ]
         );

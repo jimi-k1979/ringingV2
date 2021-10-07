@@ -59,15 +59,17 @@ class AllCompetitionFuzzySearch extends Interactor
         $dataArray = [];
         foreach ($this->data as $datum) {
             $dataArray[] = [
-                'id' => $datum->getId(),
-                'name' => $datum->getName(),
+                AllCompetitionFuzzySearchResponse::DATA_ID =>
+                    $datum->getId(),
+                AllCompetitionFuzzySearchResponse::DATA_NAME =>
+                    $datum->getName(),
             ];
         }
 
         $this->response = new AllCompetitionFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $dataArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $dataArray,
             ]
         );
     }
@@ -76,10 +78,11 @@ class AllCompetitionFuzzySearch extends Interactor
     {
         $this->response = new AllCompetitionFuzzySearchResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => 'No competitions found',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode(),
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => 'No competitions found',
+                Response::DATA => [
+                    Response::DATA_CODE =>
+                        $e->getCode(),
                 ],
             ]
         );
