@@ -88,16 +88,21 @@ class FetchDrlEventAndResults extends Interactor
     private function createSuccessfulResponse(): void
     {
         $dataArray = [
-            'event' => [
-                'year' => $this->event->getYear(),
-                'competition' => $this->event->getCompetition()->getName(),
-                'singleTower' => $this->event->getCompetition()
-                    ->isSingleTowerCompetition(),
-                'location' => $this->event->getLocation()->getLocation(),
-                'unusualTower' => $this->event->isUnusualTower(),
-                'eventId' => $this->event->getId(),
+            FetchDrlEventAndResultsResponse::DATA_EVENT => [
+                FetchDrlEventAndResultsResponse::DATA_EVENT_YEAR =>
+                    $this->event->getYear(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT_COMPETITION =>
+                    $this->event->getCompetition()->getName(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT_SINGLE_TOWER =>
+                    $this->event->getCompetition()->isSingleTowerCompetition(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT_LOCATION =>
+                    $this->event->getLocation()->getLocation(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT_UNUSUAL_TOWER =>
+                    $this->event->isUnusualTower(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT_ID =>
+                    $this->event->getId(),
             ],
-            'results' => [],
+            FetchDrlEventAndResultsResponse::DATA_RESULTS => [],
         ];
 
         $pealNumbers = false;
@@ -110,25 +115,32 @@ class FetchDrlEventAndResults extends Interactor
                 }
             }
             if ($pealNumbers) {
-                $dataArray['results'][] = [
-                    'position' => $result->getPosition(),
-                    'peal number' => $result->getPealNumber(),
-                    'team' => $result->getTeam()->getName(),
-                    'faults' => $result->getFaults(),
+                $dataArray[FetchDrlEventAndResultsResponse::DATA_RESULTS][] = [
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_POSITION =>
+                        $result->getPosition(),
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_PEAL_NUMBER =>
+                        $result->getPealNumber(),
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_TEAM =>
+                        $result->getTeam()->getName(),
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_FAULTS =>
+                        $result->getFaults(),
                 ];
             } else {
-                $dataArray['results'][] = [
-                    'position' => $result->getPosition(),
-                    'team' => $result->getTeam()->getName(),
-                    'faults' => $result->getFaults(),
+                $dataArray[FetchDrlEventAndResultsResponse::DATA_RESULTS][] = [
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_POSITION =>
+                        $result->getPosition(),
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_TEAM =>
+                        $result->getTeam()->getName(),
+                    FetchDrlEventAndResultsResponse::DATA_RESULTS_FAULTS =>
+                        $result->getFaults(),
                 ];
             }
         }
 
         $this->response = new FetchDrlEventAndResultsResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $dataArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $dataArray,
             ]
         );
     }
@@ -140,29 +152,34 @@ class FetchDrlEventAndResults extends Interactor
             ResultRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
         ) {
             $dataArray = [
-                'code' => $e->getCode(),
-                'event' => [
-                    'year' => $this->event->getYear(),
-                    'competition' => $this->event->getCompetition()->getName(),
-                    'singleTower' => $this->event->getCompetition()
-                        ->isSingleTowerCompetition(),
-                    'location' => $this->event->getLocation()->getLocation(),
-                    'unusualTower' => $this->event->isUnusualTower(),
+                Response::DATA_CODE => $e->getCode(),
+                FetchDrlEventAndResultsResponse::DATA_EVENT => [
+                    FetchDrlEventAndResultsResponse::DATA_EVENT_YEAR =>
+                        $this->event->getYear(),
+                    FetchDrlEventAndResultsResponse::DATA_EVENT_COMPETITION =>
+                        $this->event->getCompetition()->getName(),
+                    FetchDrlEventAndResultsResponse::DATA_EVENT_SINGLE_TOWER =>
+                        $this->event->getCompetition()
+                            ->isSingleTowerCompetition(),
+                    FetchDrlEventAndResultsResponse::DATA_EVENT_LOCATION =>
+                        $this->event->getLocation()->getLocation(),
+                    FetchDrlEventAndResultsResponse::DATA_EVENT_UNUSUAL_TOWER =>
+                        $this->event->isUnusualTower(),
                 ],
             ];
             $message = 'No results found';
         } else {
             $dataArray = [
-                'code' => $e->getCode()
+                Response::DATA_CODE => $e->getCode()
             ];
             $message = 'No event data';
         }
 
         $this->response = new FetchDrlEventAndResultsResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => $message,
-                Response::RESPONSE_DATA => $dataArray,
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => $message,
+                Response::DATA => $dataArray,
             ]
         );
     }

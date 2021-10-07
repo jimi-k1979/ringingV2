@@ -75,7 +75,7 @@ class LogoutUserTest extends TestCase
         );
         $this->assertEquals(
             [
-                LogoutUser::DATA_FIELD_REDIRECT_TO => '/index.php',
+                LogoutUser::DATA_REDIRECT_TO => '/index.php',
             ],
             $response->getData()
         );

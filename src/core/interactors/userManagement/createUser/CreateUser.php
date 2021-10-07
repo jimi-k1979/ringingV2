@@ -72,9 +72,12 @@ class CreateUser extends Interactor
         if ($this->request != null) {
             $this->response->setData(
                 [
-                    'username' => $this->createdUser->getUsername(),
-                    'emailAddress' => $this->createdUser->getEmailAddress(),
-                    'userId' => $this->createdUser->getId(),
+                    CreateUserResponse::DATA_USERNAME =>
+                        $this->createdUser->getUsername(),
+                    CreateUserResponse::DATA_EMAIL_ADDRESS =>
+                        $this->createdUser->getEmailAddress(),
+                    CreateUserResponse::DATA_USER_ID =>
+                        $this->createdUser->getId(),
                 ]
             );
         }

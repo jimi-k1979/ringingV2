@@ -9,5 +9,6 @@ use DrlArchive\core\classes\Response;
 
 class FetchDrlCompetitionByLocationResponse extends Response
 {
-
+    public const DATA_ID = 'id';
+    public const DATA_TEXT = 'text';
 }

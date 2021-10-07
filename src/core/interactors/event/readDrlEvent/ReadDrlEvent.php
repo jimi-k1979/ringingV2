@@ -91,8 +91,8 @@ class ReadDrlEvent extends Interactor
         }
         $this->response = new ReadDrlEventResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $responseArray,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $responseArray,
             ]
         );
     }
@@ -104,16 +104,16 @@ class ReadDrlEvent extends Interactor
         ) {
             $this->response = new ReadDrlEventResponse(
                 [
-                    Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                    Response::RESPONSE_DATA =>
+                    Response::STATUS => Response::STATUS_SUCCESS,
+                    Response::DATA =>
                         $this->putEventIntoResponseArray(),
                 ]
             );
         } else {
             $this->response = new ReadDrlEventResponse(
                 [
-                    Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                    Response::RESPONSE_MESSAGE => 'Event not found',
+                    Response::STATUS => Response::STATUS_NOT_FOUND,
+                    Response::MESSAGE => 'Event not found',
                 ]
             );
         }

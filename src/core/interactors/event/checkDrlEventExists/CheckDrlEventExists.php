@@ -82,12 +82,16 @@ class CheckDrlEventExists extends Interactor
     {
         $this->response = new CheckDrlEventExistsResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => [
-                    'eventId' => $this->event->getId(),
-                    'year' => $this->event->getYear(),
-                    'competition' => $this->event->getCompetition()->getName(),
-                    'location' => $this->event->getLocation()->getLocation(),
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => [
+                    CheckDrlEventExistsResponse::DATA_EVENT_ID =>
+                        $this->event->getId(),
+                    CheckDrlEventExistsResponse::DATA_YEAR =>
+                        $this->event->getYear(),
+                    CheckDrlEventExistsResponse::DATA_COMPETITION =>
+                        $this->event->getCompetition()->getName(),
+                    CheckDrlEventExistsResponse::DATA_LOCATION =>
+                        $this->event->getLocation()->getLocation(),
                 ],
             ]
         );
@@ -108,26 +112,36 @@ class CheckDrlEventExists extends Interactor
     {
         if ($this->competition->isSingleTowerCompetition()) {
             $data = [
-                'competitionId' => $this->competition->getId(),
-                'competitionName' => $this->competition->getName(),
-                'singleTower' => $this->competition->isSingleTowerCompetition(),
-                'usualLocation' => $this->competition->getUsualLocation()->getLocation(),
-                'usualLocationId' => $this->competition->getUsualLocation()->getId(),
+                CheckDrlEventExistsResponse::DATA_COMPETITION_ID =>
+                    $this->competition->getId(),
+                CheckDrlEventExistsResponse::DATA_COMPETITION_NAME =>
+                    $this->competition->getName(),
+                CheckDrlEventExistsResponse::DATA_SINGLE_TOWER =>
+                    $this->competition->isSingleTowerCompetition(),
+                CheckDrlEventExistsResponse::DATA_USUAL_LOCATION =>
+                    $this->competition->getUsualLocation()->getLocation(),
+                CheckDrlEventExistsResponse::DATA_USUAL_LOCATION_ID =>
+                    $this->competition->getUsualLocation()->getId(),
             ];
         } else {
             $data = [
-                'competitionId' => $this->competition->getId(),
-                'competitionName' => $this->competition->getName(),
-                'singleTower' => $this->competition->isSingleTowerCompetition(),
-                'usualLocation' => null,
-                'usualLocationId' => null,
+                CheckDrlEventExistsResponse::DATA_COMPETITION_ID =>
+                    $this->competition->getId(),
+                CheckDrlEventExistsResponse::DATA_COMPETITION_NAME =>
+                    $this->competition->getName(),
+                CheckDrlEventExistsResponse::DATA_SINGLE_TOWER =>
+                    $this->competition->isSingleTowerCompetition(),
+                CheckDrlEventExistsResponse::DATA_USUAL_LOCATION =>
+                    null,
+                CheckDrlEventExistsResponse::DATA_USUAL_LOCATION_ID =>
+                    null,
             ];
         }
 
         $this->response = new CheckDrlEventExistsResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $data,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $data,
             ]
         );
     }
@@ -144,10 +158,10 @@ class CheckDrlEventExists extends Interactor
 
         $this->response = new CheckDrlEventExistsResponse(
             [
-                Response::RESPONSE_STATUS => $status,
-                Response::RESPONSE_MESSAGE => $message,
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode(),
+                Response::STATUS => $status,
+                Response::MESSAGE => $message,
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode(),
                 ],
             ]
         );

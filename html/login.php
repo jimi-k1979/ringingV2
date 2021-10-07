@@ -22,8 +22,8 @@ $presenter = new class extends AbstractTwigPagePresenter {
         parent::send($response);
 
         if ($response->getLoggedInUser() !== null) {
-            if (!empty($response->getData()[LoginUser::REDIRECT_TO])) {
-                $nextPage = $response->getData()[LoginUser::REDIRECT_TO];
+            if (!empty($response->getData()[LoginUser::DATA_REDIRECT_TO])) {
+                $nextPage = $response->getData()[LoginUser::DATA_REDIRECT_TO];
             } else {
                 $nextPage = '/index.php';
             }
@@ -39,14 +39,14 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 'message' => 'Username or password incorrect. Please try again'
             ];
             $this->dataForTemplate['user']['emailAddress'] =
-                $response->getData()[LoginUser::EMAIL_ADDRESS];
+                $response->getData()[LoginUser::DATA_EMAIL_ADDRESS];
         } elseif ($response->getStatus() !== Response::STATUS_SUCCESS) {
             $this->dataForTemplate['error'] = [
                 'type' => 'alert-danger',
                 'message' => 'Something went wrong, please try again later',
             ];
             $this->dataForTemplate['user']['emailAddress'] =
-                $response->getData()[LoginUser::EMAIL_ADDRESS];
+                $response->getData()[LoginUser::DATA_EMAIL_ADDRESS];
         }
         try {
             $this->twig->display(

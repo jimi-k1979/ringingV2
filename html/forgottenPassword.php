@@ -23,7 +23,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
         $data = $response->getData();
         $this->dataForTemplate['nav']['highlighted'] = 'home';
         $this->dataForTemplate['templates']['body'] =
-            $data[ForgottenPassword::DATA_FIELD_TEMPLATE];
+            $data[ForgottenPassword::DATA_TEMPLATE];
 
         if ($response->getStatus() !== Response::STATUS_SUCCESS) {
             $this->dataForTemplate['error'] = [
@@ -44,10 +44,10 @@ $presenter = new class extends AbstractTwigPagePresenter {
             ];
         }
 
-        if (isset($data[ForgottenPassword::DATA_FIELD_TOKEN])) {
+        if (isset($data[ForgottenPassword::DATA_TOKEN])) {
             $this->dataForTemplate['formValues'] = [
-                'token' => $data[ForgottenPassword::DATA_FIELD_TOKEN],
-                'selector' => $data[ForgottenPassword::DATA_FIELD_SELECTOR],
+                'token' => $data[ForgottenPassword::DATA_TOKEN],
+                'selector' => $data[ForgottenPassword::DATA_SELECTOR],
             ];
         }
 

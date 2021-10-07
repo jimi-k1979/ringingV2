@@ -65,9 +65,10 @@ class FetchDrlCompetitionById extends Interactor
     {
         $this->response = new FetchDrlCompetitionByIdResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => [
-                    'competition' => $this->competition,
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => [
+                    FetchDrlCompetitionByIdResponse::DATA_COMPETITION =>
+                        $this->competition,
                 ],
             ]
         );
@@ -77,10 +78,10 @@ class FetchDrlCompetitionById extends Interactor
     {
         $this->response = new FetchDrlCompetitionByIdResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => 'Competition not found',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode(),
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => 'Competition not found',
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode(),
                 ]
             ]
         );

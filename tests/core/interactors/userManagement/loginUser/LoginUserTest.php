@@ -85,7 +85,7 @@ class LoginUserTest extends TestCase
         );
         $this->assertEquals(
             [
-                LoginUser::REDIRECT_TO => '/index.php',
+                LoginUser::DATA_REDIRECT_TO => '/index.php',
             ],
             $response->getData()
         );
@@ -153,8 +153,8 @@ class LoginUserTest extends TestCase
         );
         $this->assertEquals(
             [
-                LoginUser::EMAIL_ADDRESS => TestConstants::TEST_USER_EMAIL,
-                LoginUser::REDIRECT_TO => TestConstants::TEST_REDIRECT_TO,
+                LoginUser::DATA_EMAIL_ADDRESS => TestConstants::TEST_USER_EMAIL,
+                LoginUser::DATA_REDIRECT_TO => TestConstants::TEST_REDIRECT_TO,
             ],
             $response->getData()
         );
@@ -206,7 +206,7 @@ class LoginUserTest extends TestCase
         );
         $this->assertEquals(
             [
-                LoginUser::REDIRECT_TO => TestConstants::TEST_REDIRECT_TO,
+                LoginUser::DATA_REDIRECT_TO => TestConstants::TEST_REDIRECT_TO,
             ],
             $response->getData()
         );

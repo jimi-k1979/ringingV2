@@ -83,26 +83,30 @@ class CreateDrlCompetition extends Interactor
     {
         $this->response = new CreateDrlCompetitionResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_MESSAGE => 'Competition created successfully',
-                Response::RESPONSE_DATA => [
-                    'id' => $this->competitionEntity->getId(),
-                    'name' => $this->competitionEntity->getName(),
-                    'singleTower' => $this->competitionEntity
-                        ->isSingleTowerCompetition()
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::MESSAGE => 'Competition created successfully',
+                Response::DATA => [
+                    CreateDrlCompetitionResponse::DATA_ID =>
+                        $this->competitionEntity->getId(),
+                    CreateDrlCompetitionResponse::DATA_NAME =>
+                        $this->competitionEntity->getName(),
+                    CreateDrlCompetitionResponse::DATA_SINGLE_TOWER =>
+                        $this->competitionEntity->isSingleTowerCompetition(),
                 ],
-        ]);
+            ]);
     }
 
     private function createFailingResponse(Exception $e): void
     {
         $this->response = new CreateDrlCompetitionResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
-                Response::RESPONSE_MESSAGE => 'Unable to create competition',
-                Response::RESPONSE_DATA => [
-                    'message' => $e->getMessage(),
-                    'code' => $e->getCode(),
+                Response::STATUS => Response::STATUS_NOT_CREATED,
+                Response::MESSAGE => 'Unable to create competition',
+                Response::DATA => [
+                    Response::DATA_MESSAGE =>
+                        $e->getMessage(),
+                    Response::DATA_CODE =>
+                        $e->getCode(),
                 ],
             ]
         );

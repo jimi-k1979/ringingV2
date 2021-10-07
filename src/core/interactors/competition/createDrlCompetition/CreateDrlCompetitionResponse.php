@@ -8,5 +8,7 @@ use DrlArchive\core\classes\Response;
 
 class CreateDrlCompetitionResponse extends Response
 {
-
+    public const DATA_ID = 'id';
+    public const DATA_NAME = 'name';
+    public const DATA_SINGLE_TOWER = 'singleTower';
 }

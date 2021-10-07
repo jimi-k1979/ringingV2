@@ -10,6 +10,7 @@ use DrlArchive\core\entities\AbstractCompetitionEntity;
 use DrlArchive\core\entities\AbstractEventEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
+use DrlArchive\core\interactors\event\FetchDrlEventsByYear\FetchDrlEventsByYearResponse;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use Exception;
@@ -72,15 +73,17 @@ class FetchEventsByCompetition extends Interactor
         $dataArray = [];
         foreach ($this->eventList as $eventEntity) {
             $dataArray[] = [
-                'text' => $eventEntity->getYear(),
-                'id' => $eventEntity->getId(),
+                FetchDrlEventsByYearResponse::DATA_TEXT =>
+                    $eventEntity->getYear(),
+                FetchDrlEventsByYearResponse::DATA_ID =>
+                    $eventEntity->getId(),
             ];
         }
 
         $this->response = new FetchEventsByCompetitionResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-                Response::RESPONSE_DATA => $dataArray
+                Response::STATUS => Response::STATUS_SUCCESS,
+                Response::DATA => $dataArray
             ]
         );
     }
@@ -89,10 +92,10 @@ class FetchEventsByCompetition extends Interactor
     {
         $this->response = new FetchEventsByCompetitionResponse(
             [
-                Response::RESPONSE_STATUS => Response::STATUS_NOT_FOUND,
-                Response::RESPONSE_MESSAGE => 'No events found for that competition id',
-                Response::RESPONSE_DATA => [
-                    'code' => $e->getCode()
+                Response::STATUS => Response::STATUS_NOT_FOUND,
+                Response::MESSAGE => 'No events found for that competition id',
+                Response::DATA => [
+                    Response::DATA_CODE => $e->getCode()
                 ],
             ]
         );

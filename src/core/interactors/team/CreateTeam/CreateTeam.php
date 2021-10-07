@@ -99,26 +99,31 @@ class CreateTeam extends Interactor
     private function createResponse(): void
     {
         $this->response = new CreateTeamResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_SUCCESS,
-            Response::RESPONSE_MESSAGE => 'Team created successfully',
-            Response::RESPONSE_DATA => [
-                'id' => $this->teamEntity->getId(),
-                'name' => $this->teamEntity->getName(),
-                'deanery' => $this->teamEntity->getDeanery()->getName(),
-            ],
-        ]);
+                                                     Response::STATUS => Response::STATUS_SUCCESS,
+                                                     Response::MESSAGE => 'Team created successfully',
+                                                     Response::DATA => [
+                                                         CreateTeamResponse::DATA_ID =>
+                                                             $this->teamEntity->getId(),
+                                                         CreateTeamResponse::DATA_NAME =>
+                                                             $this->teamEntity->getName(),
+                                                         CreateTeamResponse::DATA_DEANERY =>
+                                                             $this->teamEntity->getDeanery()->getName(),
+                                                     ],
+                                                 ]);
     }
 
     private function createFailingResponse(Exception $e): void
     {
         $this->response = new CreateTeamResponse([
-            Response::RESPONSE_STATUS => Response::STATUS_NOT_CREATED,
-            Response::RESPONSE_MESSAGE => 'Team not created',
-            Response::RESPONSE_DATA => [
-                'message' => $e->getMessage(),
-                'code' => $e->getCode(),
-            ],
-        ]);
+                                                     Response::STATUS => Response::STATUS_NOT_CREATED,
+                                                     Response::MESSAGE => 'Team not created',
+                                                     Response::DATA => [
+                                                         Response::DATA_MESSAGE =>
+                                                             $e->getMessage(),
+                                                         Response::DATA_CODE =>
+                                                             $e->getCode(),
+                                                     ],
+                                                 ]);
     }
 
 
