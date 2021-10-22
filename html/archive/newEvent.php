@@ -12,19 +12,21 @@ use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\event\NewEventPageFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
-if (empty($_SESSION['auth_logged_in'])) {
+if (empty($_SESSION[Implementation::SESSION_AUTH_LOGGED_IN])) {
     // not logged in - redirect to results archive
     header('Location: /archive/resultArchive.php');
     exit;
 }
 
 $presenter = new class extends AbstractTwigPagePresenter {
+    private const MAX_YEAR = 'maxYear';
+    private const MIN_YEAR = 'minYear';
 
     public function send(?Response $response = null): void
     {
         parent::send($response);
 
-        $this->dataForTemplate['nav']['highlighted'] =
+        $this->dataForTemplate[self::NAV][self::NAV_HIGHLIGHTED] =
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         if ($response->getStatus() === Response::STATUS_FORBIDDEN) {
@@ -32,22 +34,24 @@ $presenter = new class extends AbstractTwigPagePresenter {
             exit;
         } elseif ($response->getStatus() === Response::STATUS_SUCCESS) {
             if (!empty($response->getData())) {
-                $_SESSION['message'] =
+                $_SESSION[Implementation::SESSION_MESSAGE] =
                     'Success! New event added to the archive.';
                 header('Location:./newEvent.php');
                 exit;
             }
 
-            $this->dataForTemplate['messaging'] = [
-                Constants::FIELD_STATUS => $_SESSION['status'] ?? 200,
-                Constants::FIELD_MESSAGE => $_SESSION['message'] ?? '',
+            $this->dataForTemplate[self::MESSAGING] = [
+                Constants::FIELD_STATUS =>
+                    $_SESSION[Implementation::SESSION_STATUS] ?? 200,
+                Constants::FIELD_MESSAGE =>
+                    $_SESSION[Implementation::SESSION_MESSAGE] ?? '',
             ];
-            unset($_SESSION['message']);
-            unset($_SESSION['status']);
+            unset($_SESSION[Implementation::SESSION_MESSAGE]);
+            unset($_SESSION[Implementation::SESSION_STATUS]);
 
-            $this->dataForTemplate['settings'] = [
-                'maxYear' => new DateTime(),
-                'minYear' => Constants::MINIMUM_YEAR,
+            $this->dataForTemplate[self::SETTINGS] = [
+                self::MAX_YEAR => new DateTime(),
+                self::MIN_YEAR => Constants::MINIMUM_YEAR,
             ];
 
             try {
@@ -59,8 +63,10 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 include __DIR__ . '/../templates/failed.html';
             }
         } else {
-            $_SESSION['message'] = $response->getMessage();
-            $_SESSION['status'] = $response->getStatus();
+            $_SESSION[Implementation::SESSION_MESSAGE] =
+                $response->getMessage();
+            $_SESSION[Implementation::SESSION_STATUS] =
+                $response->getStatus();
             header('Location:./newEvent.php');
             exit;
         }

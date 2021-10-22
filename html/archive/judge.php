@@ -5,10 +5,10 @@ declare(strict_types=1);
 require_once __DIR__ . '/../init.php';
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\interactors\pages\ringerPage\RingerPageRequest;
-use DrlArchive\core\interactors\pages\ringerPage\RingerPageResponse;
+use DrlArchive\core\interactors\pages\judgePage\JudgePageRequest;
+use DrlArchive\core\interactors\pages\judgePage\JudgePageResponse;
 use DrlArchive\Implementation;
-use DrlArchive\implementation\factories\interactors\pages\RingerPageFactory;
+use DrlArchive\implementation\factories\interactors\pages\JudgePageFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 
@@ -20,19 +20,19 @@ $presenter = new class extends AbstractTwigPagePresenter {
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         if ($response->getStatus() === Response::STATUS_SUCCESS) {
-            $this->dataForTemplate[self::RINGER] =
-                $response->getData()[RingerPageResponse::DATA_RINGER];
+            $this->dataForTemplate[self::JUDGE] =
+                $response->getData()[JudgePageResponse::DATA_JUDGE];
             $this->dataForTemplate[self::EVENTS] =
-                $response->getData()[RingerPageResponse::DATA_EVENTS];
+                $response->getData()[JudgePageResponse::DATA_EVENTS];
             $this->dataForTemplate[self::STATS] =
-                $response->getData()[RingerPageResponse::DATA_STATS];
+                $response->getData()[JudgePageResponse::DATA_STATS];
             try {
                 $this->twig->display(
-                    'archive/ringer.twig',
+                    '',
                     $this->dataForTemplate
                 );
             } catch (Throwable $e) {
-                echo $e->getMessage();
+                echo $response->getMessage();
                 die();
             }
         } else {
@@ -41,10 +41,10 @@ $presenter = new class extends AbstractTwigPagePresenter {
     }
 };
 
-$request = new RingerPageRequest();
-$request->setRingerId((int)$_GET['ringerId'] ?? 0);
+$request = new JudgePageRequest();
+$request->setJudgeId((int)$_GET['judgeId']);
 
-$useCase = (new RingerPageFactory())->create(
+$useCase = (new JudgePageFactory())->create(
     $presenter,
     $request
 );
