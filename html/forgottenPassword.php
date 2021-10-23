@@ -5,30 +5,37 @@ declare(strict_types=1);
 use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\pages\forgottenPassword\ForgottenPassword;
 use DrlArchive\core\interactors\pages\forgottenPassword\ForgottenPasswordRequest;
+use DrlArchive\core\interactors\pages\forgottenPassword\ForgottenPasswordResponse;
+use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\pages\ForgottenPasswordFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 require_once __DIR__ . '/init.php';
 
-if (isset($_SESSION['auth_logged_in'])) {
+if (isset($_SESSION[Implementation::SESSION_AUTH_LOGGED_IN])) {
     header('Location: /index.php');
     exit;
 }
 
 $presenter = new class extends AbstractTwigPagePresenter {
+    private const TOKEN = 'token';
+    private const SELECTOR = 'selector';
+    private const FORM_VALUES = 'formValues';
+
     public function send(?Response $response = null): void
     {
         parent::send($response);
 
         $data = $response->getData();
-        $this->dataForTemplate['nav']['highlighted'] = 'home';
-        $this->dataForTemplate['templates']['body'] =
-            $data[ForgottenPassword::DATA_TEMPLATE];
+        $this->dataForTemplate[self::NAV][self::NAV_HIGHLIGHTED] =
+            Implementation::NAV_HIGHLIGHT_HOME;
+        $this->dataForTemplate[self::TEMPLATES][self::TEMPLATES_BODY] =
+            $data[ForgottenPasswordResponse::DATA_TEMPLATE];
 
         if ($response->getStatus() !== Response::STATUS_SUCCESS) {
-            $this->dataForTemplate['error'] = [
-                'message' => $response->getMessage(),
-                'type' => 'alert-danger',
+            $this->dataForTemplate[self::ERROR] = [
+                self::ERROR_MESSAGE => $response->getMessage(),
+                self::ERROR_TYPE => Implementation::ALERT_DANGER,
             ];
         }
 
@@ -38,16 +45,18 @@ $presenter = new class extends AbstractTwigPagePresenter {
             || $response->getMessage() ===
             ForgottenPassword::EMAIL_SENT_SUCCESSFULLY
         ) {
-            $this->dataForTemplate['error'] = [
-                'message' => $response->getMessage(),
-                'type' => 'alert-success',
+            $this->dataForTemplate[self::ERROR] = [
+                self::ERROR_MESSAGE => $response->getMessage(),
+                self::ERROR_TYPE => Implementation::ALERT_SUCCESS,
             ];
         }
 
-        if (isset($data[ForgottenPassword::DATA_TOKEN])) {
-            $this->dataForTemplate['formValues'] = [
-                'token' => $data[ForgottenPassword::DATA_TOKEN],
-                'selector' => $data[ForgottenPassword::DATA_SELECTOR],
+        if (isset($data[ForgottenPasswordResponse::DATA_TOKEN])) {
+            $this->dataForTemplate[self::FORM_VALUES] = [
+                self::TOKEN =>
+                    $data[ForgottenPasswordResponse::DATA_TOKEN],
+                self::SELECTOR =>
+                    $data[ForgottenPasswordResponse::DATA_SELECTOR],
             ];
         }
 

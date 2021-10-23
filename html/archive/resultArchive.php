@@ -17,7 +17,8 @@ $presenter = new class extends AbstractTwigPagePresenter {
     public function send(?Response $response = null): void
     {
         parent::send($response);
-        $this->dataForTemplate['nav']['highlighted'] = Implementation::NAV_HIGHLIGHT_ARCHIVE;
+        $this->dataForTemplate[self::NAV][self::NAV_HIGHLIGHTED] =
+            Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         $this->twig->display(
             'archive/eventSearch.twig',

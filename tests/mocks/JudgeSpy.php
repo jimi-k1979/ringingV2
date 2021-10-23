@@ -7,21 +7,29 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
+use DrlArchive\traits\CreateMockDrlEventTrait;
 use DrlArchive\traits\CreateMockJudgeTrait;
+use DrlArchive\traits\CreateMockRingerTrait;
 
 class JudgeSpy implements JudgeRepositoryInterface
 {
 
     use CreateMockJudgeTrait;
+    use CreateMockDrlEventTrait;
 
     private bool $repositoryThrowsException = false;
     private bool $fetchJudgesByDrlEventCalled = false;
     /**
-     * @var JudgeEntity[]
+     * @var JudgeEntity[]|null
      */
-    private array $fetchJudgesByDrlEventValue;
+    private ?array $fetchJudgesByDrlEventValue = null;
+    private bool $fetchJudgeByIdCalled = false;
+    private bool $fetchJudgeByIdThrowsException = false;
+    private ?JudgeEntity $fetchJudgeByIdValue = null;
+
 
     public function setRepositoryThrowsException(): void
     {
@@ -55,4 +63,36 @@ class JudgeSpy implements JudgeRepositoryInterface
     {
         $this->fetchJudgesByDrlEventValue = $value;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchJudgeById(int $id): JudgeEntity
+    {
+        $this->fetchJudgeByIdCalled = true;
+        if ($this->fetchJudgeByIdThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION,
+            );
+        }
+
+        return $this->fetchJudgeByIdValue ?? $this->createMockJudge();
+    }
+
+    public function hasFetchJudgeByIdBeenCalled(): bool
+    {
+        return $this->fetchJudgeByIdCalled;
+    }
+
+    public function setFetchJudgeByIdThrowsException(): void
+    {
+        $this->fetchJudgeByIdThrowsException = true;
+    }
+
+    public function setFetchJudgeByIdValue(JudgeEntity $value): void
+    {
+        $this->fetchJudgeByIdValue = $value;
+    }
+
 }

@@ -75,9 +75,9 @@ class DrlCompetitionEntityTest extends TestCase
         $this->assertNull(
             $competition->getNumberOfBells()
         );
-        $competition->setNumberOfBells(6);
+        $competition->setNumberOfBells('6');
         $this->assertEquals(
-            6,
+            '6',
             $competition->getNumberofBells()
         );
     }

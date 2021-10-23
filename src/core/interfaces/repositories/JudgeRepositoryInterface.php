@@ -23,4 +23,11 @@ interface JudgeRepositoryInterface
      */
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array;
 
+    /**
+     * @param int $id
+     * @return JudgeEntity
+     * @throws CleanArchitectureException
+     */
+    public function fetchJudgeById(int $id): JudgeEntity;
+
 }

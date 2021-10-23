@@ -6,10 +6,12 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -61,6 +63,12 @@ class EventSpy implements EventRepositoryInterface
      * @var float[]
      */
     private array $eventStats;
+    private bool $fetchJudgeDrlEventListCalled = false;
+    private bool $fetchJudgeDrlEventListThrowsException = false;
+    /**
+     * @var DrlEventEntity[]|null
+     */
+    private array $fetchJudgeDrlEventListValue = [];
 
     /**
      * @param DrlEventEntity $entity
@@ -403,4 +411,36 @@ class EventSpy implements EventRepositoryInterface
             'winningMargin' => $margin,
         ];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByJudge(JudgeEntity $judge): array
+    {
+        $this->fetchJudgeDrlEventListCalled = true;
+        if ($this->fetchJudgeDrlEventListThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                EventRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+        return $this->fetchJudgeDrlEventListValue
+            ?? [$this->createMockDrlEvent()];
+    }
+
+    public function hasFetchJudgeDrlEventListBeenCalled(): bool
+    {
+        return $this->fetchJudgeDrlEventListCalled;
+    }
+
+    public function setFetchJudgeDrlEventListThrowsException(): void
+    {
+        $this->fetchJudgeDrlEventListThrowsException = true;
+    }
+
+    public function setFetchJudgeDrlEventListValue(array $value): void
+    {
+        $this->fetchJudgeDrlEventListValue = $value;
+    }
+
 }

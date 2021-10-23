@@ -12,22 +12,28 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 
 $presenter = new class extends AbstractTwigPagePresenter {
+    private const PEAL = 'pealNumber';
+    private const PEAL_NUMBERS = 'pealNumbers';
+    private const RESULTS = 'results';
+    private const STATISTICS = 'statistics';
+    private const MEAN_FAULTS = 'meanFaults';
+
     public function send(?Response $response = null): void
     {
         parent::send($response);
-        $this->dataForTemplate['nav']['highlighted'] =
+        $this->dataForTemplate[self::NAV][self::NAV_HIGHLIGHTED] =
             Implementation::NAV_HIGHLIGHT_ARCHIVE;
 
         if ($response->getStatus() !== Response::STATUS_SUCCESS) {
             echo $response->getMessage();
         } else {
-            $this->dataForTemplate['event'] = $response->getData();
-            $this->dataForTemplate['event']['pealNumbers'] =
-                !empty($this->dataForTemplate['event']['results'][0]['pealNumber']);
+            $this->dataForTemplate[self::EVENT] = $response->getData();
+            $this->dataForTemplate[self::EVENT][self::PEAL_NUMBERS] =
+                !empty($this->dataForTemplate[self::EVENT][self::RESULTS][0][self::PEAL]);
 
-            $this->dataForTemplate['event']['statistics']['meanFaults'] =
+            $this->dataForTemplate[self::EVENT][self::STATISTICS][self::MEAN_FAULTS] =
                 number_format(
-                    $this->dataForTemplate['event']['statistics']['meanFaults'],
+                    $this->dataForTemplate[self::EVENT][self::STATISTICS][self::MEAN_FAULTS],
                     2
                 );
             try {

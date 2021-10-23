@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\doctrine;
 
 
+use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\RingerEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 use Throwable;
@@ -105,5 +108,43 @@ class JudgeDoctrine extends DoctrineRepository implements
         }
 
         return $entity;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchJudgeById(int $id): JudgeEntity
+    {
+        $query = $this->baseJudgeAllFieldsSelect();
+
+        $query->where(
+            $query->expr()->eq('j.id', ':id')
+        )
+            ->setParameter('id', $id);
+        $result = $query->executeQuery()->fetchAssociative();
+
+        if (empty($result)) {
+            throw new RepositoryNoResultsException(
+                'No judge found with that id',
+                JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->generateJudgeEntity($result);
+    }
+
+    private function baseJudgeAllFieldsSelect(): QueryBuilder
+    {
+        $query = $this->database->createQueryBuilder();
+
+        $query->select(
+            'j.id AS ' . Repository::ALIAS_JUDGE_ID,
+            'j.firstName AS ' . Repository::ALIAS_FIRST_NAME,
+            'j.lastName AS ' . Repository::ALIAS_LAST_NAME,
+            'j.ringerID AS ' . Repository::ALIAS_RINGER_ID
+        )
+            ->from('judge', 'j');
+
+        return $query;
     }
 }

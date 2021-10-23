@@ -6,6 +6,7 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\TestConstants;
@@ -96,4 +97,13 @@ class EventDummy implements EventRepositoryInterface
         $event->setMeanFaults(TestConstants::TEST_EVENT_MEAN_FAULTS);
         $event->setWinningMargin(TestConstants::TEST_EVENT_WINNING_MARGIN);
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByJudge(JudgeEntity $judge): array
+    {
+        return [$this->createMockDrlEvent()];
+    }
+
 }

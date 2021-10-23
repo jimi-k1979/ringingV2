@@ -9,9 +9,10 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\userManagement\logoutUser\LogoutUserRequest;
 use DrlArchive\core\interactors\userManagement\logoutUser\LogoutUserResponse;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
+use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\userManagement\LogoutUserFactory;
 
-if (empty($_SESSION['auth_logged_in'])) {
+if (empty($_SESSION[Implementation::SESSION_AUTH_LOGGED_IN])) {
     header('Location: /index.php');
     exit;
 }
@@ -27,8 +28,8 @@ $request = new LogoutUserRequest();
 
 $referer = parse_url($_SERVER['HTTP_REFERER']);
 
-if ($referer['host'] === Config::HOST_NAME) {
-    $request->setRedirectTo($referer['path']);
+if ($referer[Implementation::REFERER_HOST] === Config::HOST_NAME) {
+    $request->setRedirectTo($referer[Implementation::REFERER_PATH]);
 } else {
     $request->setRedirectTo('/index.php');
 }

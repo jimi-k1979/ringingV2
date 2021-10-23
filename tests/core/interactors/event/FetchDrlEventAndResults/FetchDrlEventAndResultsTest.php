@@ -147,25 +147,25 @@ class FetchDrlEventAndResultsTest extends TestCase
             'results' => [
                 [
                     'position' => 1,
-                    'peal number' => 4,
+                    'pealNumber' => 4,
                     'team' => 'Team 1',
                     'faults' => 10.25,
                 ],
                 [
                     'position' => 2,
-                    'peal number' => 3,
+                    'pealNumber' => 3,
                     'team' => 'Team 2',
                     'faults' => 20.5,
                 ],
                 [
                     'position' => 3,
-                    'peal number' => 2,
+                    'pealNumber' => 2,
                     'team' => 'Team 3',
                     'faults' => 30.75,
                 ],
                 [
                     'position' => 4,
-                    'peal number' => 1,
+                    'pealNumber' => 1,
                     'team' => 'Team 4',
                     'faults' => 41.0,
                 ],
