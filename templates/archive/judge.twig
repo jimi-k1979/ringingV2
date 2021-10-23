@@ -1,0 +1,47 @@
+{% extends "base.twig" %}
+
+{% block title %}
+    Event archive - judge record
+{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <div class="col blog-main">
+        <h1 class="blog-post-title">
+            Judge record for {{ judge.firstName }} {{ judge.lastName }}
+        </h1>
+        {% if judge.ringerId is not null %}
+            <p>
+                <a href="ringer.php?ringerId={{ judge.ringerId }}">
+                    Also been a winning ringer
+                </a>
+            </p>
+        {% endif %}
+        <div class="blog-post">
+            <div class="row">
+                <div class="col-12 align-self-top">
+                    <h3>Statistics</h3>
+                    <h5>Number of competitions judged</h5>
+                    <p>{{ stats.numberOfEvents }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 align-self-top">
+                    <h3>Events judged</h3>
+                    <ul style="list-style-type: none">
+                        {% for event in events %}
+                            <li>
+                                <a href="event.php?eventId={{ event.id }}">
+                                    {{ event.year }} {{ event.event }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
