@@ -8,6 +8,8 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\AuthenticationManagerSpy;
+use DrlArchive\mocks\EventDummy;
+use DrlArchive\mocks\EventSpy;
 use DrlArchive\mocks\JudgeDummy;
 use DrlArchive\mocks\JudgeSpy;
 use DrlArchive\mocks\PresenterDummy;
@@ -69,6 +71,7 @@ class JudgePageTest extends TestCase
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
         $useCase->setJudgeRepository(new JudgeDummy());
+        $useCase->setEventRepository(new EventDummy());
 
         return $useCase;
     }
@@ -135,14 +138,14 @@ class JudgePageTest extends TestCase
 
     public function testEventDataIsFetched(): void
     {
-        $judgeSpy = new JudgeSpy();
+        $eventSpy = new EventSpy();
 
         $useCase = $this->createUseCase();
-        $useCase->setJudgeRepository($judgeSpy);
+        $useCase->setEventRepository($eventSpy);
         $useCase->execute();
 
         $this->assertTrue(
-            $judgeSpy->hasFetchJudgeDrlEventListBeenCalled()
+            $eventSpy->hasFetchJudgeDrlEventListBeenCalled()
         );
     }
 
@@ -176,7 +179,9 @@ class JudgePageTest extends TestCase
 
         $judgeSpy = new JudgeSpy();
         $judgeSpy->setFetchJudgeByIdValue($judge);
-        $judgeSpy->setFetchJudgeDrlEventListValue(
+
+        $eventSpy = new EventSpy();
+        $eventSpy->setFetchJudgeDrlEventListValue(
             [$this->createMockDrlEvent()]
         );
 
@@ -185,6 +190,7 @@ class JudgePageTest extends TestCase
         $useCase = $this->createUseCase();
         $useCase->setPresenter($presenter);
         $useCase->setJudgeRepository($judgeSpy);
+        $useCase->setEventRepository($eventSpy);
         $useCase->execute();
 
         $response = $presenter->getResponse();

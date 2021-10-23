@@ -5,6 +5,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 
@@ -102,4 +103,10 @@ interface EventRepositoryInterface
      * @throws CleanArchitectureException
      */
     public function fetchSingleDrlEventStatistics(DrlEventEntity $event): void;
+
+    /**
+     * @param JudgeEntity $judge
+     * @return DrlEventEntity[]
+     */
+    public function fetchDrlEventListByJudge(JudgeEntity $judge): array;
 }

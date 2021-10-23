@@ -9,6 +9,7 @@ use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Query\QueryBuilder;
 use DrlArchive\core\entities\DrlCompetitionEntity;
 use DrlArchive\core\entities\DrlEventEntity;
+use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\entities\LocationEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
@@ -501,4 +502,60 @@ class EventDoctrine extends DoctrineRepository implements
 
         return $query->getSQL();
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByJudge(JudgeEntity $judge): array
+    {
+        $query = $this->database->createQueryBuilder();
+
+        $query->select(
+            'de.id AS ' . Repository::ALIAS_EVENT_ID,
+            'de.year AS ' . Repository::ALIAS_YEAR,
+            'de.isUnusualTower AS ' . Repository::ALIAS_IS_UNUSUAL_TOWER,
+            'dc.isSingleTower AS ' . Repository::ALIAS_IS_SINGLE_TOWER,
+            'dc.competitionName AS ' . Repository::ALIAS_COMPETITION_NAME,
+            'l.location AS ' . Repository::ALIAS_LOCATION_NAME,
+        )
+            ->from('DRL_event', 'de')
+            ->innerJoin(
+                'de',
+                'DRL_event_judge',
+                'dej',
+                $query->expr()->and(
+                    $query->expr()->eq(
+                        'de.id',
+                        'dej.eventID'
+                    ),
+                    $query->expr()->eq(
+                        'dej.judgeID',
+                        ':judgeId'
+                    )
+                )
+            )
+            ->innerJoin(
+                'de',
+                'DRL_competition',
+                'dc',
+                $query->expr()->eq(
+                    'de.competitionID',
+                    'dc.id'
+                )
+            )
+            ->innerJoin(
+                'de',
+                'location',
+                'l',
+                $query->expr()->eq(
+                    'de.locationID',
+                    'l.id'
+                )
+            )
+            ->setParameter('judgeId', $judge->getId());
+        $results = $query->executeQuery()->fetchAllAssociative();
+
+        return $this->generateDrlEventEntityArray($results);
+    }
+
 }

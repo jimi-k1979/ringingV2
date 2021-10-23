@@ -28,7 +28,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 $response->getData()[JudgePageResponse::DATA_STATS];
             try {
                 $this->twig->display(
-                    '',
+                    'archive/judge.twig',
                     $this->dataForTemplate
                 );
             } catch (Throwable $e) {

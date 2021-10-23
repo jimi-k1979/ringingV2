@@ -10,6 +10,7 @@ use DrlArchive\core\entities\JudgeEntity;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 
 /**
@@ -18,6 +19,7 @@ use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
 class JudgePage extends Interactor
 {
     private JudgeRepositoryInterface $judgeRepository;
+    private EventRepositoryInterface $eventRepository;
     private JudgeEntity $judgeEntity;
     /**
      * @var DrlEventEntity[]
@@ -25,9 +27,15 @@ class JudgePage extends Interactor
     private array $eventList = [];
 
     public function setJudgeRepository(
-        JudgeRepositoryInterface $create
+        JudgeRepositoryInterface $repository
     ): void {
-        $this->judgeRepository = $create;
+        $this->judgeRepository = $repository;
+    }
+
+    public function setEventRepository(
+        EventRepositoryInterface $repository
+    ): void {
+        $this->eventRepository = $repository;
     }
 
     public function execute(): void
@@ -75,7 +83,7 @@ class JudgePage extends Interactor
 
     private function fetchEventList(): void
     {
-        $this->eventList = $this->judgeRepository->fetchJudgeDrlEventList(
+        $this->eventList = $this->eventRepository->fetchDrlEventListByJudge(
             $this->judgeEntity
         );
     }

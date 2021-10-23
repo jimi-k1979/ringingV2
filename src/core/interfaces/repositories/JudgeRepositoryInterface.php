@@ -30,9 +30,4 @@ interface JudgeRepositoryInterface
      */
     public function fetchJudgeById(int $id): JudgeEntity;
 
-    /**
-     * @param JudgeEntity $judge
-     * @return DrlEventEntity[]
-     */
-    public function fetchJudgeDrlEventList(JudgeEntity $judge): array;
 }

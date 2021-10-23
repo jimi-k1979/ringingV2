@@ -11,6 +11,7 @@ use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use DrlArchive\core\interfaces\factories\interactors\InteractorFactoryInterface;
 use DrlArchive\core\interfaces\repositories\UserRepositoryInterface;
 use DrlArchive\implementation\factories\managers\AuthenticationManagerFactory;
+use DrlArchive\implementation\factories\repositories\doctrine\EventDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\doctrine\JudgeDoctrineFactory;
 use DrlArchive\implementation\factories\repositories\SecurityRepositoryFactory;
 
@@ -33,6 +34,9 @@ class JudgePageFactory implements InteractorFactoryInterface
         );
         $useCase->setJudgeRepository(
             (new JudgeDoctrineFactory())->create()
+        );
+        $useCase->setEventRepository(
+            (new EventDoctrineFactory())->create()
         );
         return $useCase;
     }

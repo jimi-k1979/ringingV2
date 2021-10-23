@@ -29,12 +29,6 @@ class JudgeSpy implements JudgeRepositoryInterface
     private bool $fetchJudgeByIdCalled = false;
     private bool $fetchJudgeByIdThrowsException = false;
     private ?JudgeEntity $fetchJudgeByIdValue = null;
-    private bool $fetchJudgeDrlEventListCalled = false;
-    private bool $fetchJudgeDrlEventListThrowsException = false;
-    /**
-     * @var DrlEventEntity[]|null
-     */
-    private array $fetchJudgeDrlEventListValue = [];
 
 
     public function setRepositoryThrowsException(): void
@@ -99,38 +93,6 @@ class JudgeSpy implements JudgeRepositoryInterface
     public function setFetchJudgeByIdValue(JudgeEntity $value): void
     {
         $this->fetchJudgeByIdValue = $value;
-    }
-
-
-    /**
-     * @inheritDoc
-     */
-    public function fetchJudgeDrlEventList(JudgeEntity $judge): array
-    {
-        $this->fetchJudgeDrlEventListCalled = true;
-        if ($this->fetchJudgeDrlEventListThrowsException) {
-            throw new CleanArchitectureException(
-                'Something went wrong',
-                JudgeRepositoryInterface::NO_RECORDS_FOUND_EXCEPTION
-            );
-        }
-        return $this->fetchJudgeDrlEventListValue
-            ?? [$this->createMockDrlEvent()];
-    }
-
-    public function hasFetchJudgeDrlEventListBeenCalled(): bool
-    {
-        return $this->fetchJudgeDrlEventListCalled;
-    }
-
-    public function setFetchJudgeDrlEventListThrowsException(): void
-    {
-        $this->fetchJudgeDrlEventListThrowsException = true;
-    }
-
-    public function setFetchJudgeDrlEventListValue(array $value): void
-    {
-        $this->fetchJudgeDrlEventListValue = $value;
     }
 
 }

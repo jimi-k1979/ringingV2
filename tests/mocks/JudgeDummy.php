@@ -17,7 +17,6 @@ class JudgeDummy implements JudgeRepositoryInterface
 {
 
     use CreateMockJudgeTrait;
-    use CreateMockDrlEventTrait;
 
     public function fetchJudgesByDrlEvent(DrlEventEntity $entity): array
     {
@@ -32,11 +31,4 @@ class JudgeDummy implements JudgeRepositoryInterface
         return $this->createMockJudge();
     }
 
-    /**
-     * @inheritDoc
-     */
-    public function fetchJudgeDrlEventList(JudgeEntity $judge): array
-    {
-        return [$this->createMockDrlEvent()];
-    }
 }
