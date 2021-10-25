@@ -8,5 +8,8 @@ use DrlArchive\core\classes\Response;
 
 class CompositionPageResponse extends Response
 {
-
+    public const DATA_COMPOSITION_ID = 'compositionId';
+    public const DATA_COMPOSITION = 'composition';
+    public const DATA_BELLS = 'numberOfBells';
+    public const DATA_TENOR = 'tenorTurnedIn';
 }
