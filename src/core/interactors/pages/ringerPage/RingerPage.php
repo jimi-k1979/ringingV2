@@ -147,6 +147,7 @@ class RingerPage extends Interactor
         $this->response = new RingerPageResponse();
         $this->response->setStatus(Response::STATUS_SUCCESS);
         $this->response->setData($data);
+        $this->response->setLoggedInUser($this->loggedInUser);
     }
 
     private function createFailureResponse(CleanArchitectureException $e)
@@ -162,6 +163,7 @@ class RingerPage extends Interactor
         $this->response = new RingerPageResponse();
         $this->response->setStatus($status);
         $this->response->setMessage($message);
+        $this->response->setLoggedInUser($this->loggedInUser);
     }
 
     private function updateStatistics(WinningRingerEntity $event): void

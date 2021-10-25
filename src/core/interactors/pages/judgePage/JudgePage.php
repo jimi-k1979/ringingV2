@@ -69,6 +69,7 @@ class JudgePage extends Interactor
         $this->response = new JudgePageResponse();
         $this->response->setStatus(Response::STATUS_BAD_REQUEST);
         $this->response->setMessage($e->getMessage());
+        $this->response->setLoggedInUser($this->loggedInUser);
     }
 
     /**
@@ -136,6 +137,7 @@ class JudgePage extends Interactor
             [
                 Response::STATUS => Response::STATUS_SUCCESS,
                 Response::DATA => $data,
+                Response::LOGGED_IN_USER => $this->loggedInUser,
             ]
         );
     }
