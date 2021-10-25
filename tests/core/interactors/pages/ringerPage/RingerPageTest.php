@@ -14,10 +14,12 @@ use DrlArchive\mocks\RingerDummy;
 use DrlArchive\mocks\RingerSpy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\TestConstants;
+use DrlArchive\traits\CreateMockUserTrait;
 use PHPUnit\Framework\TestCase;
 
 class RingerPageTest extends TestCase
 {
+    use CreateMockUserTrait;
 
     public function testInstantiation(): void
     {
@@ -108,6 +110,10 @@ class RingerPageTest extends TestCase
         $this->assertEquals(
             'No ringer id given',
             $response->getMessage()
+        );
+        $this->assertEquals(
+            $this->createMockSuperAdmin(),
+            $response->getLoggedInUser()
         );
     }
 
@@ -244,10 +250,45 @@ class RingerPageTest extends TestCase
             $actualResponse->getStatus(),
             'Unexpected response status'
         );
-        $this->assertSame(
+        $this->assertEquals(
             $expectedResponse,
             $actualResponse->getData(),
             'Unexpected response data'
+        );
+    }
+
+    public function testLoggedInResponse(): void
+    {
+        $presenter = new PresenterSpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setLoggedInUserDetailsValue(
+            $this->createMockSuperAdmin()
+        );
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->setAuthenticationManager($authenticationSpy);
+        $useCase->execute();
+
+        $this->assertEquals(
+            $this->createMockSuperAdmin(),
+            $presenter->getResponse()->getLoggedInUser()
+        );
+    }
+
+    public function testLoggedOutResponse(): void
+    {
+        $presenter = new PresenterSpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setIsLoggedInToFalse();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->setAuthenticationManager($authenticationSpy);
+        $useCase->execute();
+
+        $this->assertNull(
+            $presenter->getResponse()->getLoggedInUser()->getId()
         );
     }
 
