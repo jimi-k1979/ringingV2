@@ -1,0 +1,66 @@
+{% extends "base.twig" %}
+
+{% block title %}Compositions{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <div class="col blog-main">
+        <h1 class="blog-post-title">
+            Compositions
+        </h1>
+
+        <p>hello, this is some text.</p>
+
+        <div class="row mb-2">
+            {% for composition in compositions %}
+                <div class="col-md-4"
+                     data-bells="{{ composition.numberOfBells }}"
+                     data-tenor="{{ composition.tenorTurnedIn }}"
+                     data-composition="{{ composition.compositionId }}"
+                >
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">{{ composition.composition }}</h3>
+                            <div class="mb-1 text-muted">
+                                For {{ composition.numberOfBells }} bells.
+                            </div>
+                            {% if composition.tenorTurnedIn %}
+                                <p class="card-text mb-auto">Turns in the tenor</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-auto d-lg-block py-1">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary"
+                                        data-pdfId="{{ composition.compositionId }}"
+                                >
+                                    Download pdf
+                                </button>
+
+                                <button class="btn btn-primary"
+                                        data-viewId="{{ composition.compositionId }}"
+                                >
+                                    View changes
+                                </button>
+                            </div>
+                            <div>
+                                <label for="direction-{{ composition.compositionId }}">
+                                    Direction
+                                </label>
+                                <select class="form-select form-select-sm"
+                                        id="direction-{{ composition.compositionId }}"
+                                >
+                                    <option value="up">Called up</option>
+                                    <option value="down">Called down</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}

@@ -56,4 +56,7 @@ class Repository
     public const ALIAS_MEAN_FAULTS = 'meanFaults';
     public const ALIAS_WINNING_MARGIN = 'winningMargin';
     public const ALIAS_NOTES = 'notes';
+    public const ALIAS_COMPOSITION_ID = 'compositionId';
+    public const ALIAS_COMPOSITION = 'composition';
+    public const ALIAS_TENOR_TURNED_IN = 'tenorTurnedIn';
 }
