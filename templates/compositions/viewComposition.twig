@@ -1,0 +1,21 @@
+{% extends "base.twig" %}
+
+{% block title %}Composition{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+<div class="col blog-main">
+    <h1 class="blog-post-title">
+        composition
+    </h1>
+
+    <div class="visible-lg">
+        large and above
+    </div>
+    <div class="visible-xs">
+        x-small
+    </div>
+</div>
