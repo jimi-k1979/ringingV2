@@ -33,17 +33,19 @@
                         </div>
                         <div class="col-auto d-lg-block py-1">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary"
-                                        data-pdfId="{{ composition.compositionId }}"
+                                <a class="btn btn-primary btn-pdf"
+                                   href="/compositions/pdfComposition.php"
+                                   data-id="{{ composition.compositionId }}"
                                 >
                                     Download pdf
-                                </button>
+                                </a>
 
-                                <button class="btn btn-primary"
-                                        data-viewId="{{ composition.compositionId }}"
+                                <a class="btn btn-primary btn-view"
+                                   href="/compositions/viewComposition.php"
+                                   data-id="{{ composition.compositionId }}"
                                 >
                                     View changes
-                                </button>
+                                </a>
                             </div>
                             <div>
                                 <label for="direction-{{ composition.compositionId }}">
@@ -63,4 +65,11 @@
         </div>
 
     </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/compositions.js"
+    ></script>
 {% endblock %}
