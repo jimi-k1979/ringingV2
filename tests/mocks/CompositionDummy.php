@@ -20,4 +20,20 @@ class CompositionDummy implements CompositionRepositoryInterface
     {
         return [$this->createMockComposition()];
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchCompositionById(int $id): CompositionEntity
+    {
+        return $this->createMockComposition();
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchChangesByComposition(CompositionEntity $composition): void
+    {
+        $composition->setChanges([$this->createMockChange()]);
+    }
 }
