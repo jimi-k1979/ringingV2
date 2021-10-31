@@ -108,7 +108,7 @@ class ViewComposition extends Interactor
                 );
             } else {
                 $changeToAdd = sprintf(
-                    '%d-%s',
+                    '%d - %s',
                     $change->getDownBell(),
                     $change->getBellToFollow() === 0
                         ? 'Lead'

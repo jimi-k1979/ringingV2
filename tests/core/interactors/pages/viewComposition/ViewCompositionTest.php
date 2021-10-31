@@ -13,12 +13,14 @@ use DrlArchive\mocks\CompositionSpy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
 use DrlArchive\TestConstants;
+use DrlArchive\traits\CreateMockCompositionTrait;
 use DrlArchive\traits\CreateMockUserTrait;
 use PHPUnit\Framework\TestCase;
 
 class ViewCompositionTest extends TestCase
 {
     use CreateMockUserTrait;
+    use CreateMockCompositionTrait;
 
     public function testInstantiation(): void
     {
@@ -160,6 +162,57 @@ class ViewCompositionTest extends TestCase
                 [
                     'changeNumber' => 1,
                     'changeText' => '1 - 2',
+                ]
+            ]
+        ];
+
+        $this->assertEquals(
+            Response::STATUS_SUCCESS,
+            $response->getStatus(),
+        );
+        $this->assertEquals(
+            $expectedData,
+            $response->getData()
+        );
+    }
+
+    public function testSuccessfulResponseCalledDown(): void
+    {
+        $request = new ViewCompositionRequest();
+        $request->setCompositionId(TestConstants::TEST_COMPOSITION_ID);
+        $request->setUpChanges(false);
+
+        $change2 = $this->createMockChange(2);
+        $change2->setBellToFollow(TestConstants::TEST_CHANGE_BELL_TO_LEAD);
+
+        $compositionSpy = new CompositionSpy();
+        $compositionSpy->setFetchChangesByCompositionValue(
+            [
+                $this->createMockChange(1),
+                $change2,
+            ]
+        );
+
+        $presenterSpy = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenterSpy);
+        $useCase->setRequest($request);
+        $useCase->setCompositionRepository($compositionSpy);
+        $useCase->execute();
+        $response = $presenterSpy->getResponse();
+
+        $expectedData = [
+            'compositionName' => TestConstants::TEST_COMPOSITION_NAME,
+            'numberOfChanges' => 2,
+            'changes' => [
+                [
+                    'changeNumber' => 1,
+                    'changeText' => '2 - 3',
+                ],
+                [
+                    'changeNumber' => 2,
+                    'changeText' => '2 - Lead',
                 ]
             ]
         ];
