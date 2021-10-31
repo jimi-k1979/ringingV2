@@ -5,9 +5,11 @@ declare(strict_types=1);
 namespace DrlArchive\implementation\repositories\doctrine;
 
 use Doctrine\DBAL\Query\QueryBuilder;
+use DrlArchive\core\entities\ChangeEntity;
 use DrlArchive\core\entities\CompositionEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
+use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\CompositionRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\Repository;
 
@@ -94,4 +96,110 @@ class CompositionDoctrine extends DoctrineRepository implements
         return $entity;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchCompositionById(int $id): CompositionEntity
+    {
+        try {
+            $query = $this->baseFetchAllCompositionFieldsSelect();
+            $query->where(
+                $query->expr()->eq('c.id', ':id')
+            )
+                ->setParameter('id', $id);
+            $result = $query->executeQuery()->fetchAssociative();
+        } catch (\Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No composition found - database connection error',
+                Repository::REPOSITORY_ERROR_CONNECTION
+            );
+        }
+
+        if (empty($result)) {
+            throw new RepositoryNoResultsException(
+                'No composition found',
+                CompositionRepositoryInterface::NO_RESULTS_FOUND_EXCEPTION_CODE
+            );
+        }
+
+        return $this->generateCompositionEntity($result);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchChangesByComposition(CompositionEntity $composition): void
+    {
+        try {
+            $query = $this->database->createQueryBuilder();
+
+            $query->select(
+                'chg.changeNumber AS ' . Repository::ALIAS_CHANGE_NUMBER,
+                'chg.upBell AS ' . Repository::ALIAS_UP_BELL,
+                'chg.downBell AS ' . Repository::ALIAS_DOWN_BELL,
+                'chg.bellToFollow AS ' . Repository::ALIAS_BELL_TO_FOLLOW,
+            )
+                ->from('`change`', 'chg')
+                ->where(
+                    $query->expr()->eq('chg.compositionID', ':id')
+                )
+                ->orderBy(Repository::ALIAS_CHANGE_NUMBER)
+                ->setParameter('id', $composition->getId());
+            $results = $query->executeQuery()->fetchAllAssociative();
+        } catch (\Throwable $e) {
+            throw new RepositoryConnectionErrorException(
+                'No changes found - database connection error',
+                Repository::REPOSITORY_ERROR_CONNECTION
+            );
+        }
+
+        $composition->setChanges(
+            $this->generateChangeEntityArray($results)
+        );
+    }
+
+    /**
+     * @param array $results
+     * @return ChangeEntity[]
+     */
+    private function generateChangeEntityArray(array $results): array
+    {
+        $returnArray = [];
+        foreach ($results as $result) {
+            $returnArray[] = $this->generateChangeEntity($result);
+        }
+        return $returnArray;
+    }
+
+    private function generateChangeEntity($result): ChangeEntity
+    {
+        $entity = new ChangeEntity();
+
+        if (isset($result[Repository::ALIAS_CHANGE_ID])) {
+            $entity->setId(
+                (int)$result[Repository::ALIAS_CHANGE_ID]
+            );
+        }
+        if (isset($result[Repository::ALIAS_CHANGE_NUMBER])) {
+            $entity->setChangeNumber(
+                (int)$result[Repository::ALIAS_CHANGE_NUMBER]
+            );
+        }
+        if (isset($result[Repository::ALIAS_UP_BELL])) {
+            $entity->setUpBell(
+                (int)$result[Repository::ALIAS_UP_BELL]
+            );
+        }
+        if (isset($result[Repository::ALIAS_DOWN_BELL])) {
+            $entity->setDownBell(
+                (int)$result[Repository::ALIAS_DOWN_BELL]
+            );
+        }
+        if (isset($result[Repository::ALIAS_BELL_TO_FOLLOW])) {
+            $entity->setBellToFollow(
+                (int)$result[Repository::ALIAS_BELL_TO_FOLLOW]
+            );
+        }
+        return $entity;
+    }
 }

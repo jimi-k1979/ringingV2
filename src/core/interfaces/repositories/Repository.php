@@ -59,4 +59,9 @@ class Repository
     public const ALIAS_COMPOSITION_ID = 'compositionId';
     public const ALIAS_COMPOSITION = 'composition';
     public const ALIAS_TENOR_TURNED_IN = 'tenorTurnedIn';
+    public const ALIAS_CHANGE_NUMBER = 'changeNumber';
+    public const ALIAS_UP_BELL = 'upBell';
+    public const ALIAS_DOWN_BELL = 'downBell';
+    public const ALIAS_BELL_TO_FOLLOW = 'bellToFollow';
+    public const ALIAS_CHANGE_ID = 'changeId';
 }
