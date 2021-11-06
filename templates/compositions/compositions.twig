@@ -12,14 +12,31 @@
             Compositions
         </h1>
 
-        <p>hello, this1 is some text.</p>
+        <p>
+            This section has call change compositions that you can view or
+            download as pdf files. The list is filterable on the number of
+            bells, number of changes, and whether or not the tenor gets turned
+            in by clicking on the 'show' button. Compositions that turn the
+            tenor in are clearly labelled.
+        </p>
+
+        <p>
+            A note on calling direction: if you want to go from 123456 to 124356
+            then the call when <strong>calling up</strong> is <em>3 - 4</em>,
+            whereas when <strong>calling down</strong> it is <em>4 - 2</em>. You
+            can choose which way to view the changes in each composition's box.
+        </p>
 
         <div class="row">
             <div class="col-6">
                 <h3>Filters</h3>
             </div>
             <div class="col-6 text-end">
-                <a href="#" id="show-filters">show</a>
+                <button class="btn btn-sm btn-outline-secondary"
+                        id="show-filters"
+                >
+                    Show
+                </button>
             </div>
         </div>
         <div class="row mb-2 hidden" id="filters">
@@ -155,7 +172,7 @@
                                 <p class="card-text mb-auto">Turns in the tenor</p>
                             {% endif %}
                         </div>
-                        <div class="col-auto d-lg-block py-1">
+                        <div class="col-auto d-lg-block py-3">
                             <div class="d-grid gap-2">
                                 <a class="btn btn-primary btn-pdf"
                                    href="/compositions/pdfComposition.php"

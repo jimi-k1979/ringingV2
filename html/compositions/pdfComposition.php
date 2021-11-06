@@ -67,13 +67,16 @@ $presenter = new class implements PresenterInterface {
             if ($i === 0) {
                 $this->html[] = <<<html
 <h1 style="text-align: center">{$this->data[ViewCompositionResponse::DATA_COMPOSITION_NAME]}</h1>
-<h2 style="text-align: center">{$this->data[ViewCompositionResponse::DATA_NUMBER_OF_CHANGES]} changes</h2>
-<table>
+<h3 style="text-align: center">({$this->data[ViewCompositionResponse::DATA_NUMBER_OF_CHANGES]} changes)</h3>
 html;
+                if (
+                    !empty($this->data[ViewCompositionResponse::DATA_DESCRIPTION])
+                ) {
+                    $this->html[] = "<p>{$this->data[ViewCompositionResponse::DATA_DESCRIPTION]}</p>";
+                }
+                $this->html[] = "<table>";
             } else {
-                $this->html[] = <<<html
-<table>
-html;
+                $this->html[] = "<table>";
             }
 
             $this->changes = $this->data[ViewCompositionResponse::DATA_CHANGES];

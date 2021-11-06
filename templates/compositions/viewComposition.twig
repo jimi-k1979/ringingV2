@@ -11,6 +11,11 @@
         <h1 class="blog-post-title">
             {{ composition.compositionName }}
         </h1>
+        {% if composition.description is not empty %}
+            <h4>
+                {{ composition.description }}
+            </h4>
+        {% endif %}
         <p>
             The changes should be read from top to bottom going down each column in turn.
         </p>

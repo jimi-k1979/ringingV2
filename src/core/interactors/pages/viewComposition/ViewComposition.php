@@ -97,6 +97,8 @@ class ViewComposition extends Interactor
             ViewCompositionResponse::DATA_NUMBER_OF_CHANGES =>
                 count($this->composition->getChanges()),
             ViewCompositionResponse::DATA_CHANGES => [],
+            ViewCompositionResponse::DATA_DESCRIPTION =>
+                $this->composition->getDescription(),
         ];
 
         foreach ($this->composition->getChanges() as $change) {

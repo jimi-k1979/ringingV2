@@ -34,13 +34,12 @@ ready(() => {
         });
     });
 
-    showFiltersLink.addEventListener('click', event => {
-        event.preventDefault();
+    showFiltersLink.addEventListener('click', () => {
         if (filtersDiv.classList.contains('hidden')) {
-            showFiltersLink.innerHTML = 'hide';
+            showFiltersLink.innerHTML = 'Hide';
             filtersDiv.classList.remove('hidden');
         } else {
-            showFiltersLink.innerHTML = 'show';
+            showFiltersLink.innerHTML = 'Show';
             filtersDiv.classList.add('hidden');
         }
     });

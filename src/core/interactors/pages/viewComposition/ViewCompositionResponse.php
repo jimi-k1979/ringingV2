@@ -13,4 +13,5 @@ class ViewCompositionResponse extends Response
     public const DATA_CHANGES = 'changes';
     public const DATA_CHANGE_NUMBER = 'changeNumber';
     public const DATA_CHANGE_TEXT = 'changeText';
+    public const DATA_DESCRIPTION = 'description';
 }
