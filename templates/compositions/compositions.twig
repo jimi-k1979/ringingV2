@@ -12,14 +12,138 @@
             Compositions
         </h1>
 
-        <p>hello, this is some text.</p>
+        <p>hello, this1 is some text.</p>
 
+        <div class="row">
+            <div class="col-6">
+                <h3>Filters</h3>
+            </div>
+            <div class="col-6 text-end">
+                <a href="#" id="show-filters">show</a>
+            </div>
+        </div>
+        <div class="row mb-2 hidden" id="filters">
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Bells</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="6"
+                           id="bells6"
+                           checked
+                    >
+                    <label for="bells6"
+                           class="form-check-label"
+                    >
+                        5 or 6
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="8"
+                           id="bells8"
+                           checked
+                    >
+                    <label for="bells8"
+                           class="form-check-label"
+                    >
+                        7 or 8
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="10"
+                           id="bells10"
+                           checked
+                    >
+                    <label for="bells10"
+                           class="form-check-label"
+                    >
+                        9 or more
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Changes</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="short"
+                           id="changes40"
+                           checked
+                    >
+                    <label for="changes40"
+                           class="form-check-label"
+                    >
+                        40 or fewer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="medium"
+                           id="changes80"
+                           checked
+                    >
+                    <label for="changes80"
+                           class="form-check-label"
+                    >
+                        41 - 80
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="long"
+                           id="changes100"
+                           checked
+                    >
+                    <label for="changes100"
+                           class="form-check-label"
+                    >
+                        81 or more
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Tenor</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="in"
+                           id="tenor-in"
+                           checked
+                    >
+                    <label for="tenor-in"
+                           class="form-check-label"
+                    >
+                        Turned in
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="behind"
+                           id="tenor-behind"
+                           checked
+                    >
+                    <label for="bells10"
+                           class="form-check-label"
+                    >
+                        Behind
+                    </label>
+                </div>
+            </div>
+        </div>
         <div class="row mb-2">
             {% for composition in compositions %}
-                <div class="col-md-4"
+                <div class="col-md-4 composition-card"
                      data-bells="{{ composition.numberOfBells }}"
                      data-tenor="{{ composition.tenorTurnedIn }}"
                      data-composition="{{ composition.compositionId }}"
+                     data-change-count="{{ composition.length }}"
                 >
                     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
@@ -27,7 +151,7 @@
                             <div class="mb-1 text-muted">
                                 For {{ composition.numberOfBells }} bells.
                             </div>
-                            {% if composition.tenorTurnedIn %}
+                            {% if composition.tenorTurnedIn == 'true' %}
                                 <p class="card-text mb-auto">Turns in the tenor</p>
                             {% endif %}
                         </div>

@@ -9,6 +9,7 @@ class CompositionEntity extends Entity
     private string $name = '';
     private int $numberOfBells = 0;
     private bool $tenorTurnedIn = false;
+    private ?string $description = null;
     /**
      * @var ChangeEntity[]
      */
@@ -78,4 +79,19 @@ class CompositionEntity extends Entity
         $this->changes = $changes;
     }
 
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string|null $description
+     */
+    public function setDescription(?string $description): void
+    {
+        $this->description = $description;
+    }
 }

@@ -12,6 +12,10 @@ use DrlArchive\core\interfaces\repositories\CompositionRepositoryInterface;
 class CompositionPage extends Interactor
 {
 
+    public const SHORT_LENGTH = 'short';
+    public const MEDIUM_LENGTH = 'medium';
+    public const LONG_LENGTH = 'long';
+
     private CompositionRepositoryInterface $compositionRepository;
     /**
      * @var CompositionEntity[]
@@ -45,6 +49,15 @@ class CompositionPage extends Interactor
     {
         $data = [];
         foreach ($this->compositions as $composition) {
+            $changeCount = count($composition->getChanges());
+            if ($changeCount <= 40) {
+                $length = self::SHORT_LENGTH;
+            } elseif ($changeCount <= 80) {
+                $length = self::MEDIUM_LENGTH;
+            } else {
+                $length = self::LONG_LENGTH;
+            }
+
             $data[] = [
                 CompositionPageResponse::DATA_COMPOSITION_ID =>
                     $composition->getId(),
@@ -53,7 +66,11 @@ class CompositionPage extends Interactor
                 CompositionPageResponse::DATA_BELLS =>
                     $composition->getNumberOfBells(),
                 CompositionPageResponse::DATA_TENOR =>
-                    $composition->isTenorTurnedIn(),
+                    $composition->isTenorTurnedIn() ? "true" : "false",
+                CompositionPageResponse::DATA_DESCRIPTION =>
+                    $composition->getDescription(),
+                CompositionPageResponse::DATA_LENGTH =>
+                    $length,
             ];
         }
         $this->response = new CompositionPageResponse();

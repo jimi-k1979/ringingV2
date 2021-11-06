@@ -12,4 +12,6 @@ class CompositionPageResponse extends Response
     public const DATA_COMPOSITION = 'composition';
     public const DATA_BELLS = 'numberOfBells';
     public const DATA_TENOR = 'tenorTurnedIn';
+    public const DATA_DESCRIPTION = 'description';
+    public const DATA_LENGTH = 'length';
 }

@@ -64,4 +64,6 @@ class Repository
     public const ALIAS_DOWN_BELL = 'downBell';
     public const ALIAS_BELL_TO_FOLLOW = 'bellToFollow';
     public const ALIAS_CHANGE_ID = 'changeId';
+    public const ALIAS_NUMBER_OF_CHANGES = 'numberOfChanges';
+    public const ALIAS_COMPOSITION_DESCRIPTION = 'compositionDescription';
 }

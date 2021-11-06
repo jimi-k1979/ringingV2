@@ -141,8 +141,9 @@ class CompositionPageTest extends TestCase
                     TestConstants::TEST_COMPOSITION_NAME,
                 'numberOfBells' =>
                     TestConstants::TEST_COMPOSITION_NUMBER_OF_BELLS,
-                'tenorTurnedIn' =>
-                    TestConstants::TEST_COMPOSITION_TENOR_TURNED_IN,
+                'tenorTurnedIn' => 'false',
+                'description' => null,
+                'length' => 'short',
             ]
         ];
     }

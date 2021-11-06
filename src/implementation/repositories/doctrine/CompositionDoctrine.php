@@ -24,6 +24,22 @@ class CompositionDoctrine extends DoctrineRepository implements
     {
         try {
             $query = $this->baseFetchAllCompositionFieldsSelect();
+            $query->addSelect(
+                'COUNT(chg.id) AS ' . Repository::ALIAS_NUMBER_OF_CHANGES
+            )
+                ->innerJoin(
+                    'c',
+                    '`change`',
+                    'chg',
+                    'c.id = chg.compositionID'
+                )
+                ->groupBy(
+                    Repository::ALIAS_COMPOSITION_ID,
+                    Repository::ALIAS_COMPOSITION,
+                    Repository::ALIAS_NUMBER_OF_BELLS,
+                    Repository::ALIAS_TENOR_TURNED_IN,
+                    Repository::ALIAS_COMPOSITION_DESCRIPTION
+                );
             $results = $query->executeQuery()->fetchAllAssociative();
         } catch (\Throwable $e) {
             throw new RepositoryConnectionErrorException(
@@ -43,6 +59,7 @@ class CompositionDoctrine extends DoctrineRepository implements
             'c.compositionName AS ' . Repository::ALIAS_COMPOSITION,
             'c.numberOfBells AS ' . Repository::ALIAS_NUMBER_OF_BELLS,
             'c.tenorTurnedIn AS ' . Repository::ALIAS_TENOR_TURNED_IN,
+            'c.description AS ' . Repository::ALIAS_COMPOSITION_DESCRIPTION
         )
             ->from(
                 'composition',
@@ -91,6 +108,20 @@ class CompositionDoctrine extends DoctrineRepository implements
         if (isset($result[Repository::ALIAS_TENOR_TURNED_IN])) {
             $entity->setTenorTurnedIn(
                 (bool)$result[Repository::ALIAS_TENOR_TURNED_IN]
+            );
+        }
+        if (isset($result[Repository::ALIAS_COMPOSITION_DESCRIPTION])) {
+            $entity->setDescription(
+                $result[Repository::ALIAS_COMPOSITION_DESCRIPTION]
+            );
+        }
+        if (isset($result[Repository::ALIAS_NUMBER_OF_CHANGES])) {
+            $entity->setChanges(
+                array_fill(
+                    0,
+                    (int)$result[Repository::ALIAS_NUMBER_OF_CHANGES],
+                    new ChangeEntity()
+                )
             );
         }
         return $entity;
