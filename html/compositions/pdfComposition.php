@@ -98,23 +98,25 @@ html;
                         );
                     }
                 }
-            } elseif ($additionalRows <= 31) {
-                for ($j = 0; $j < $additionalRows; $j++) {
-                    $row = ($additionalRows * ($i - 1)) + (27 * 4);
+            } elseif ($i === $numberOfPages - 1) {
+                $rowsOnLastPage = $additionalRows % 31;
+                for ($j = 0; $j < $rowsOnLastPage; $j++) {
+                    $firstCell = (31 * ($i - 1)) + 108;
                     $this->htmlRowBuilder(
-                        $row,
-                        $j + $additionalRows,
-                        $j + ($additionalRows * 2),
-                        $j + ($additionalRows * 3)
+                        $firstCell + $j,
+                        $firstCell + $j + $rowsOnLastPage,
+                        $firstCell + $j + ($rowsOnLastPage * 2),
+                        $firstCell + $j + ($rowsOnLastPage * 3)
                     );
                 }
             } else {
                 for ($j = 0; $j < 31; $j++) {
+                    $firstCell = (31 * ($i - 1)) + 108;
                     $this->htmlRowBuilder(
-                        $j,
-                        $j + 31,
-                        $j + 62,
-                        $j + 93
+                        $firstCell + $j,
+                        $firstCell + $j + 31,
+                        $firstCell + $j + 62,
+                        $firstCell + $j + 93
                     );
                 }
             }
