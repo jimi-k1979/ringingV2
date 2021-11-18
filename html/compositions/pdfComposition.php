@@ -12,6 +12,9 @@ use DrlArchive\delivery\services\pdfCreatorService;
 use DrlArchive\implementation\factories\interactors\pages\ViewCompositionFactory;
 
 $presenter = new class implements PresenterInterface {
+    private const FIRST_PAGE_ROWS = 20;
+    private const OTHER_PAGE_ROWS = 24;
+
     private array $data;
     private array $pages = [];
     private array $html = [];
@@ -54,12 +57,12 @@ $presenter = new class implements PresenterInterface {
             $this->data[ViewCompositionResponse::DATA_NUMBER_OF_CHANGES] / 4
         );
 
-        if ($rows <= 27) {
+        if ($rows <= self::FIRST_PAGE_ROWS) {
             $numberOfPages = 1;
             $additionalRows = 0;
         } else {
-            $additionalRows = $rows - 27;
-            $numberOfPages = ceil($additionalRows / 31) + 1;
+            $additionalRows = $rows - self::FIRST_PAGE_ROWS;
+            $numberOfPages = ceil($additionalRows / self::OTHER_PAGE_ROWS) + 1;
         }
 
         for ($i = 0; $i < $numberOfPages; $i++) {
@@ -72,17 +75,15 @@ html;
                 if (
                     !empty($this->data[ViewCompositionResponse::DATA_DESCRIPTION])
                 ) {
-                    $this->html[] = "<p>{$this->data[ViewCompositionResponse::DATA_DESCRIPTION]}</p>";
+                    $this->html[] = "<p style=\"text-align: center\">{$this->data[ViewCompositionResponse::DATA_DESCRIPTION]}</p>";
                 }
-                $this->html[] = "<table>";
-            } else {
-                $this->html[] = "<table>";
             }
+            $this->html[] = "<table>";
 
             $this->changes = $this->data[ViewCompositionResponse::DATA_CHANGES];
 
             if ($i === 0) {
-                if ($rows <= 27) {
+                if ($rows <= self::FIRST_PAGE_ROWS) {
                     for ($j = 0; $j < $rows; $j++) {
                         $this->htmlRowBuilder(
                             $j,
@@ -92,19 +93,22 @@ html;
                         );
                     }
                 } else {
-                    for ($j = 0; $j < 27; $j++) {
+                    for ($j = 0; $j < self::FIRST_PAGE_ROWS; $j++) {
                         $this->htmlRowBuilder(
                             $j,
-                            $j + 27,
-                            $j + 54,
-                            $j + 81
+                            $j + self::FIRST_PAGE_ROWS,
+                            $j + (self::FIRST_PAGE_ROWS * 2),
+                            $j + (self::FIRST_PAGE_ROWS * 3)
                         );
                     }
                 }
-            } elseif ($i === $numberOfPages - 1) {
-                $rowsOnLastPage = $additionalRows % 31;
+            } elseif ($i === (int)$numberOfPages - 1) {
+                $rowsOnLastPage = $additionalRows % self::OTHER_PAGE_ROWS;
                 for ($j = 0; $j < $rowsOnLastPage; $j++) {
-                    $firstCell = (31 * ($i - 1)) + 108;
+                    $firstCell =
+                        (
+                            (self::OTHER_PAGE_ROWS * 4) * ($i - 1)
+                        ) + (self::FIRST_PAGE_ROWS * 4);
                     $this->htmlRowBuilder(
                         $firstCell + $j,
                         $firstCell + $j + $rowsOnLastPage,
@@ -113,20 +117,21 @@ html;
                     );
                 }
             } else {
-                for ($j = 0; $j < 31; $j++) {
-                    $firstCell = (31 * ($i - 1)) + 108;
+                for ($j = 0; $j < self::OTHER_PAGE_ROWS; $j++) {
+                    $firstCell =
+                        (
+                            (self::OTHER_PAGE_ROWS * 4) * ($i - 1)
+                        ) + (self::FIRST_PAGE_ROWS * 4);
                     $this->htmlRowBuilder(
                         $firstCell + $j,
-                        $firstCell + $j + 31,
-                        $firstCell + $j + 62,
-                        $firstCell + $j + 93
+                        $firstCell + $j + self::OTHER_PAGE_ROWS,
+                        $firstCell + $j + (self::OTHER_PAGE_ROWS * 2),
+                        $firstCell + $j + (self::OTHER_PAGE_ROWS * 3)
                     );
                 }
             }
 
-            $this->html[] = <<<html
-</table>
-html;
+            $this->html[] = '</table>';
 
             $this->pages[] = implode("\n", $this->html);
         }
@@ -160,17 +165,17 @@ html;
 
         $this->html[] = <<<html
 <tr>
-<td style="text-align: center; font-size: 25px">
-{$firstChange}
+<td style="text-align: center; font-size: 23px">
+$firstChange
 </td>
-<td style="text-align: center; font-size: 25px">
-{$secondChange}
+<td style="text-align: center; font-size: 23px">
+$secondChange
 </td>
-<td style="text-align: center; font-size: 25px">
-{$thirdChange}
+<td style="text-align: center; font-size: 23px">
+$thirdChange
 </td>
-<td style="text-align: center; font-size: 25px">
-{$fourthChange}
+<td style="text-align: center; font-size: 23px">
+$fourthChange
 </td>
 </tr>
 html;
