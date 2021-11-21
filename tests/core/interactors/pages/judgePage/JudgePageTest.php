@@ -19,6 +19,7 @@ use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 use DrlArchive\traits\CreateMockJudgeTrait;
 use DrlArchive\traits\CreateMockRingerTrait;
+use DrlArchive\traits\CreateMockUserTrait;
 use PHPUnit\Framework\TestCase;
 
 class JudgePageTest extends TestCase
@@ -26,6 +27,7 @@ class JudgePageTest extends TestCase
     use CreateMockJudgeTrait;
     use CreateMockRingerTrait;
     use CreateMockDrlEventTrait;
+    use CreateMockUserTrait;
 
     public function testInstantiation(): void
     {
@@ -121,6 +123,10 @@ class JudgePageTest extends TestCase
             'No judge id given',
             $response->getMessage()
         );
+        $this->assertEquals(
+            $this->createMockSuperAdmin(),
+            $response->getLoggedInUser()
+        );
     }
 
     public function testJudgeDataIsFetched(): void
@@ -206,5 +212,41 @@ class JudgePageTest extends TestCase
             'Unexpected response data'
         );
     }
+
+    public function testLoggedInResponse(): void
+    {
+        $presenter = new PresenterSpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setLoggedInUserDetailsValue(
+            $this->createMockSuperAdmin()
+        );
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->setAuthenticationManager($authenticationSpy);
+        $useCase->execute();
+
+        $this->assertEquals(
+            $this->createMockSuperAdmin(),
+            $presenter->getResponse()->getLoggedInUser()
+        );
+    }
+
+    public function testLoggedOutResponse(): void
+    {
+        $presenter = new PresenterSpy();
+        $authenticationSpy = new AuthenticationManagerSpy();
+        $authenticationSpy->setIsLoggedInToFalse();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->setAuthenticationManager($authenticationSpy);
+        $useCase->execute();
+
+        $this->assertNull(
+            $presenter->getResponse()->getLoggedInUser()->getId()
+        );
+    }
+
 
 }
