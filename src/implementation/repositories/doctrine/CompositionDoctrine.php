@@ -64,7 +64,8 @@ class CompositionDoctrine extends DoctrineRepository implements
             ->from(
                 'composition',
                 'c'
-            );
+            )
+            ->orderBy(Repository::ALIAS_COMPOSITION);
 
         return $query;
     }
