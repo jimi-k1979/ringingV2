@@ -1,0 +1,216 @@
+{% extends "base.twig" %}
+
+{% block title %}Compositions{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <div class="col blog-main">
+        <h1 class="blog-post-title">
+            Compositions
+        </h1>
+
+        <p>
+            This section has call change compositions that you can view or
+            download as pdf files. The list is filterable on the number of
+            bells, number of changes, and whether or not the tenor gets turned
+            in by clicking on the 'show' button. Compositions that turn the
+            tenor in are clearly labelled.
+        </p>
+
+        <p>
+            A note on calling direction: if you want to go from 123456 to 124356
+            then the call when <strong>calling up</strong> is <em>3 - 4</em>,
+            whereas when <strong>calling down</strong> it is <em>4 - 2</em>. You
+            can choose which way to view the changes in each composition's box.
+        </p>
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Filters</h3>
+            </div>
+            <div class="col-6 text-end">
+                <button class="btn btn-sm btn-outline-secondary"
+                        id="show-filters"
+                >
+                    Show
+                </button>
+            </div>
+        </div>
+        <div class="row mb-2 hidden" id="filters">
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Bells</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="6"
+                           id="bells6"
+                           checked
+                    >
+                    <label for="bells6"
+                           class="form-check-label"
+                    >
+                        5 or 6
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="8"
+                           id="bells8"
+                           checked
+                    >
+                    <label for="bells8"
+                           class="form-check-label"
+                    >
+                        7 or 8
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="10"
+                           id="bells10"
+                           checked
+                    >
+                    <label for="bells10"
+                           class="form-check-label"
+                    >
+                        9 or more
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Changes</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="short"
+                           id="changes40"
+                           checked
+                    >
+                    <label for="changes40"
+                           class="form-check-label"
+                    >
+                        40 or fewer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="medium"
+                           id="changes80"
+                           checked
+                    >
+                    <label for="changes80"
+                           class="form-check-label"
+                    >
+                        41 - 80
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="long"
+                           id="changes100"
+                           checked
+                    >
+                    <label for="changes100"
+                           class="form-check-label"
+                    >
+                        81 or more
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 border p-2">
+                <h5>Tenor</h5>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="in"
+                           id="tenor-in"
+                           checked
+                    >
+                    <label for="tenor-in"
+                           class="form-check-label"
+                    >
+                        Turned in
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           value="behind"
+                           id="tenor-behind"
+                           checked
+                    >
+                    <label for="bells10"
+                           class="form-check-label"
+                    >
+                        Behind
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            {% for composition in compositions %}
+                <div class="col-md-4 composition-card"
+                     data-bells="{{ composition.numberOfBells }}"
+                     data-tenor="{{ composition.tenorTurnedIn }}"
+                     data-composition="{{ composition.compositionId }}"
+                     data-change-count="{{ composition.length }}"
+                >
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">{{ composition.composition }}</h3>
+                            <div class="mb-1 text-muted">
+                                For {{ composition.numberOfBells }} bells.
+                            </div>
+                            {% if composition.tenorTurnedIn == 'true' %}
+                                <p class="card-text mb-auto">Turns in the tenor</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-auto d-lg-block py-3">
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-primary btn-pdf"
+                                   href="/compositions/pdfComposition.php"
+                                   data-id="{{ composition.compositionId }}"
+                                >
+                                    Download pdf
+                                </a>
+
+                                <a class="btn btn-primary btn-view"
+                                   href="/compositions/viewComposition.php"
+                                   data-id="{{ composition.compositionId }}"
+                                >
+                                    View changes
+                                </a>
+                            </div>
+                            <div>
+                                <label for="direction-{{ composition.compositionId }}">
+                                    Direction
+                                </label>
+                                <select class="form-select form-select-sm"
+                                        id="direction-{{ composition.compositionId }}"
+                                >
+                                    <option value="up">Called up</option>
+                                    <option value="down">Called down</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="application/javascript"
+            src="/assets/js/compositions.js"
+    ></script>
+{% endblock %}

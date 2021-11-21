@@ -1,0 +1,86 @@
+{% extends "base.twig" %}
+
+{% block title %}Composition - {{ composition.compositionName }}{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <div class="col blog-main">
+        <h1 class="blog-post-title">
+            {{ composition.compositionName }}
+        </h1>
+        {% if composition.description is not empty %}
+            <h4>
+                {{ composition.description }}
+            </h4>
+        {% endif %}
+        <p>
+            The changes should be read from top to bottom going down each column in turn.
+        </p>
+        <div class="d-none d-lg-block">
+            {% for i in 0..(construction.sixColumnRows - 1) %}
+                <div class="row">
+                    <div class="col-2 text-center fs-2">
+                        {{ composition.changes[i].changeText }}
+                    </div>
+                    <div class="col-2 text-center fs-2">
+                        {% set change = i + construction.sixColumnRows %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-2 text-center fs-2">
+                        {% set change = i + (construction.sixColumnRows * 2) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-2 text-center fs-2">
+                        {% set change = i + (construction.sixColumnRows * 3) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-2 text-center fs-2">
+                        {% set change = i + (construction.sixColumnRows * 4) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-2 text-center fs-2">
+                        {% set change = i + (construction.sixColumnRows * 5) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="d-none d-md-block d-lg-none">
+            {% for i in 0..(construction.fourColumnRows - 1) %}
+                <div class="row">
+                    <div class="col-3 text-center fs-2">
+                        {{ composition.changes[i].changeText }}
+                    </div>
+                    <div class="col-3 text-center fs-2">
+                        {% set change = i + construction.fourColumnRows %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-3 text-center fs-2">
+                        {% set change = i + (construction.fourColumnRows * 2) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                    <div class="col-3 text-center fs-2">
+                        {% set change = i + (construction.fourColumnRows * 3) %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="d-block d-md-none">
+            {% for i in 0..(construction.twoColumnRows - 1) %}
+                <div class="row">
+                    <div class="col-6 text-center fs-2">
+                        {{ composition.changes[i].changeText }}
+                    </div>
+                    <div class="col-6 text-center fs-2">
+                        {% set change = i + construction.twoColumnRows %}
+                        {{ composition.changes[change].changeText }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

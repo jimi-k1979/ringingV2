@@ -69,4 +69,16 @@ class TestConstants
     public const TEST_WINNING_RINGER_ID = 777;
     public const TEST_WINNING_RINGER_BELL = '1';
 
+    public const TEST_COMPOSITION_ID = 22;
+    public const TEST_COMPOSITION_NAME = 'Test composition';
+    public const TEST_COMPOSITION_NUMBER_OF_BELLS = 6;
+    public const TEST_COMPOSITION_TENOR_TURNED_IN = false;
+
+    public const TEST_CHANGE_ID = 11;
+    public const TEST_CHANGE_NUMBER = 1;
+    public const TEST_CHANGE_BELL_UP = 1;
+    public const TEST_CHANGE_BELL_DOWN = 2;
+    public const TEST_CHANGE_BELL_TO_FOLLOW = 3;
+    public const TEST_CHANGE_BELL_TO_LEAD = 0;
+
 }
