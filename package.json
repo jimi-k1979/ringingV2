@@ -2,7 +2,7 @@
   "name": "ringingv2",
   "version": "1.0.0",
   "description": "ringing db fe",
-  "main": "./html/node/index.js",
+  "main": "public/node/index.js",
   "dependencies": {},
   "devDependencies": {},
   "directories": {

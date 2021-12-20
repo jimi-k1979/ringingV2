@@ -2,7 +2,7 @@
 docker-compose.yml
 dbFiles
 vendor
-/html/phpinfo.php
+/public/phpinfo.php
 /node_modules/
 /.phpunit.result.cache
 /phpunit.xml.bak
