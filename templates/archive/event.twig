@@ -94,7 +94,7 @@
                                             {{ ringer.bell }}
                                         </td>
                                         <td>
-                                            <a href="ringer.php?ringerId={{ ringer.id }}">
+                                            <a href="/statistics/ringer.php?ringerId={{ ringer.id }}">
                                                 {{ ringer.name }}
                                             </a>
                                         </td>
@@ -110,7 +110,7 @@
                             <ul style="list-style: none">
                                 {% for judge in event.judges %}
                                     <li>
-                                        <a href="judge.php?judgeId={{ judge.id }}">
+                                        <a href="/statistics/judge.php?judgeId={{ judge.id }}">
                                             {{ judge.name }}
                                         </a>
                                     </li>

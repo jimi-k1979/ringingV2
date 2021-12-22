@@ -60,7 +60,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
                     $this->dataForTemplate
                 );
             } catch (Throwable $e) {
-                include __DIR__ . '/../templates/failed.html';
+                include __DIR__ . '/../templates/failed.public';
             }
         } else {
             $_SESSION[Implementation::SESSION_MESSAGE] =

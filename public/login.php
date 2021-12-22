@@ -10,7 +10,7 @@ use DrlArchive\Implementation;
 use DrlArchive\implementation\factories\interactors\userManagement\LoginUserFactory;
 use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
-require_once __DIR__ . '/../html/init.php';
+require_once __DIR__ . '/../public/init.php';
 
 if (isset($_SESSION[Implementation::SESSION_AUTH_LOGGED_IN])) {
     header('Location: /index.php');
@@ -56,7 +56,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
                 $this->dataForTemplate
             );
         } catch (Throwable $e) {
-            include __DIR__ . '/templates/failed.html';
+            include __DIR__ . '/templates/failed.public';
         }
     }
 };
