@@ -2,11 +2,22 @@
 
 namespace DrlArchive\core\interactors\pages\teamPage;
 
+use DrlArchive\core\classes\Response;
 use DrlArchive\core\interactors\Interactor;
+use DrlArchive\mocks\AuthenticationManagerDummy;
+use DrlArchive\mocks\AuthenticationManagerSpy;
+use DrlArchive\mocks\PresenterDummy;
+use DrlArchive\mocks\PresenterSpy;
+use DrlArchive\mocks\SecurityRepositoryDummy;
+use DrlArchive\mocks\TeamDummy;
+use DrlArchive\TestConstants;
+use DrlArchive\traits\CreateMockUserTrait;
 use PHPUnit\Framework\TestCase;
 
 class TeamPageTest extends TestCase
 {
+    use CreateMockUserTrait;
+
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(
@@ -89,5 +100,90 @@ class TeamPageTest extends TestCase
             'Invalid show results'
         );
     }
+
+    public function testFindOutIfUserIsLoggedIn(): void
+    {
+        $authenticationSpy = new AuthenticationManagerSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setAuthenticationManager(
+            $authenticationSpy
+        );
+        $useCase->execute();
+
+        $this->assertTrue(
+            $authenticationSpy->hasIsLoggedInBeenCalled()
+        );
+    }
+
+    private function createUseCase(): TeamPage
+    {
+        $request = new TeamPageRequest();
+        $request->setTeamId(TestConstants::TEST_TEAM_ID);
+
+        $useCase = new TeamPage();
+        $useCase->setRequest(new TeamPageRequest());
+        $useCase->setPresenter(new PresenterDummy());
+        $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
+        $useCase->setSecurityRepository(new SecurityRepositoryDummy());
+        $useCase->setTeamRepository(new TeamDummy());
+
+        return $useCase;
+    }
+
+    public function testUserDetailsFetchedIfLoggedIn(): void
+    {
+        $authenticationSpy = new AuthenticationManagerSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setAuthenticationManager($authenticationSpy);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $authenticationSpy->hasLoggedInUserDetailsBeenCalled()
+        );
+    }
+
+    public function testSendIsCalled(): void
+    {
+        $presenter = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->execute();
+
+        $this->assertTrue(
+            $presenter->hasSendBeenCalled()
+        );
+    }
+
+    public function testFailingResponseNoTeamId(): void
+    {
+        $presenter = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setPresenter($presenter);
+        $useCase->setRequest(new TeamPageRequest());
+        $useCase->execute();
+
+        $response = $presenter->getResponse();
+
+        $this->assertEquals(
+            Response::STATUS_BAD_REQUEST,
+            $response->getStatus(),
+            'Incorrect response status'
+        );
+        $this->assertEquals(
+            'No team id given',
+            $response->getMessage(),
+            'Incorrect response messages'
+        );
+        $this->assertEquals(
+            $this->createMockSuperAdmin(),
+            $response->getLoggedInUser(),
+            'Incorrect response user'
+        );
+    }
+
 
 }
