@@ -12,12 +12,14 @@ use DrlArchive\mocks\SecurityRepositoryDummy;
 use DrlArchive\mocks\TeamDummy;
 use DrlArchive\mocks\TeamSpy;
 use DrlArchive\TestConstants;
+use DrlArchive\traits\CreateMockTeamTrait;
 use DrlArchive\traits\CreateMockUserTrait;
 use PHPUnit\Framework\TestCase;
 
 class TeamPageTest extends TestCase
 {
     use CreateMockUserTrait;
+    use CreateMockTeamTrait;
 
     public function testInstantiation(): void
     {
@@ -60,7 +62,7 @@ class TeamPageTest extends TestCase
                     'positionRange' => false,
                     'faultTotal' => true,
                     'faultMean' => true,
-                    'faultMedian' => true,
+                    'faultMedian' => false,
                     // 'faultMode' is not greatly informative
                     'faultRange' => false,
                     'faultDifferenceTotal' => true,
@@ -79,6 +81,7 @@ class TeamPageTest extends TestCase
                     'eventCount' => true,
                     'faultTotal' => true,
                     'faultMean' => true,
+                    'faultMedian' => false,
                     'faultRange' => false,
                     'positionMean' => true,
                     'positionMedian' => false,
@@ -273,16 +276,212 @@ class TeamPageTest extends TestCase
                 'deanery' => TestConstants::TEST_DEANERY_NAME,
                 'region' => TestConstants::TEST_DEANERY_REGION,
             ],
-            'stats' => [],
-            'results' => [],
+            'stats' => [
+                'startYear' => 1925,
+                'endYear' => date('Y'),
+                'rangeSummary' => [
+                    'firstYear' => 1925,
+                    'mostRecentYear' => date('Y'),
+                    'seasonCount' => ((int)date('Y')) - 1925,
+                    'eventCount' => 2,
+                    'eventsPerSeason' => 1,
+                    'rankingMean' => 10,
+                    'rankingMedian' => 10,
+                    'rankingMode' => 10,
+                    'rankingRange' => 0,
+                    'positionMean' => 1,
+                    'positionMedian' => 1,
+                    'positionMode' => 1,
+                    'positionRange' => 0,
+                    'faultTotal' => 10,
+                    'faultMean' => 5,
+                    'faultMedian' => 5,
+                    'faultRange' => 0,
+                    'faultDifferenceTotal' => 200,
+                    'faultDifferenceMean' => 100,
+                    'faultDifferenceMedian' => 100,
+                    'faultDifferenceRange' => 0,
+                    'leaguePointTotal' => 20,
+                    'leaguePointMean' => 10,
+                    'leaguePointMedian' => 10,
+                    'leaguePointRange' => 0,
+                    'noResultCount' => 0,
+                ],
+                'seasonal' => [
+                    '1925' => [
+                        'eventCount' => 1,
+                        'faultTotal' => 5,
+                        'faultMean' => 5,
+                        'faultMedian' => 5,
+                        'faultRange' => 0,
+                        'positionMean' => 1,
+                        'positionMedian' => 1,
+                        'positionMode' => 1,
+                        'positionRange' => 0,
+                        'noResultCount' => 0,
+                        'leaguePointTotal' => 10,
+                        'leaguePointMean' => 10,
+                        'leaguePointMedian' => 10,
+                        'leaguePointMode' => 10,
+                        'leaguePointRange' => 0,
+                        'faultDifference' => 100,
+                    ],
+                    date('Y') => [
+                        'eventCount' => 1,
+                        'faultTotal' => 5,
+                        'faultMean' => 5,
+                        'faultMedian' => 5,
+                        'faultRange' => 0,
+                        'positionMean' => 1,
+                        'positionMedian' => 1,
+                        'positionMode' => 1,
+                        'positionRange' => 0,
+                        'noResultCount' => 0,
+                        'leaguePointTotal' => 10,
+                        'leaguePointMean' => 10,
+                        'leaguePointMedian' => 10,
+                        'leaguePointMode' => 10,
+                        'leaguePointRange' => 0,
+                        'faultDifference' => 100,
+                    ],
+                ],
+            ],
+            'results' => [
+                [
+                    'eventId' => 1,
+                    'season' => '1925',
+                    'eventName' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                    'isUnusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+                    'eventLocation' => TestConstants::TEST_LOCATION_NAME,
+                    'totalTeams' => 20,
+                    'position' => TestConstants::TEST_RESULT_POSITION,
+                    'pealNumber' => TestConstants::TEST_RESULT_PEAL_NUMBER,
+                    'faults' => TestConstants::TEST_RESULT_FAULTS,
+                ],
+                [
+                    'eventId' => 100,
+                    'season' => date('Y'),
+                    'eventName' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                    'isUnusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+                    'eventLocation' => TestConstants::TEST_LOCATION_NAME,
+                    'totalTeams' => 20,
+                    'position' => TestConstants::TEST_RESULT_POSITION,
+                    'pealNumber' => TestConstants::TEST_RESULT_PEAL_NUMBER,
+                    'faults' => TestConstants::TEST_RESULT_FAULTS,
+                ],
+            ],
             'statsOptions' => $request->getStatsOptions(),
         ];
 
         $presenterSpy = new PresenterSpy();
 
+        $teamSpy = new TeamSpy();
+        $teamSpy->setFetchTeamByIdValue(
+            $this->createMockTeam()
+        );
+        $teamSpy->setFetchTeamStatisticsValue(
+            [
+                'startYear' => 1925,
+                'endYear' => date('Y'),
+                'rangeSummary' => [
+                    'firstYear' => 1925,
+                    'mostRecentYear' => date('Y'),
+                    'seasonCount' => ((int)date('Y')) - 1925,
+                    'eventCount' => 2,
+                    'eventsPerSeason' => 1,
+                    'rankingMean' => 10,
+                    'rankingMedian' => 10,
+                    'rankingMode' => 10,
+                    'rankingRange' => 0,
+                    'positionMean' => 1,
+                    'positionMedian' => 1,
+                    'positionMode' => 1,
+                    'positionRange' => 0,
+                    'faultTotal' => 10,
+                    'faultMean' => 5,
+                    'faultMedian' => 5,
+                    'faultRange' => 0,
+                    'faultDifferenceTotal' => 200,
+                    'faultDifferenceMean' => 100,
+                    'faultDifferenceMedian' => 100,
+                    'faultDifferenceRange' => 0,
+                    'leaguePointTotal' => 20,
+                    'leaguePointMean' => 10,
+                    'leaguePointMedian' => 10,
+                    'leaguePointRange' => 0,
+                    'noResultCount' => 0,
+                ],
+                'seasonal' => [
+                    '1925' => [
+                        'eventCount' => 1,
+                        'faultTotal' => 5,
+                        'faultMean' => 5,
+                        'faultMedian' => 5,
+                        'faultRange' => 0,
+                        'positionMean' => 1,
+                        'positionMedian' => 1,
+                        'positionMode' => 1,
+                        'positionRange' => 0,
+                        'noResultCount' => 0,
+                        'leaguePointTotal' => 10,
+                        'leaguePointMean' => 10,
+                        'leaguePointMedian' => 10,
+                        'leaguePointMode' => 10,
+                        'leaguePointRange' => 0,
+                        'faultDifference' => 100,
+                    ],
+                    date('Y') => [
+                        'eventCount' => 1,
+                        'faultTotal' => 5,
+                        'faultMean' => 5,
+                        'faultMedian' => 5,
+                        'faultRange' => 0,
+                        'positionMean' => 1,
+                        'positionMedian' => 1,
+                        'positionMode' => 1,
+                        'positionRange' => 0,
+                        'noResultCount' => 0,
+                        'leaguePointTotal' => 10,
+                        'leaguePointMean' => 10,
+                        'leaguePointMedian' => 10,
+                        'leaguePointMode' => 10,
+                        'leaguePointRange' => 0,
+                        'faultDifference' => 100,
+                    ],
+                ],
+            ]
+        );
+        $teamSpy->setFetchTeamResultsValue(
+            [
+                [
+                    'eventId' => 1,
+                    'season' => '1925',
+                    'eventName' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                    'isUnusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+                    'eventLocation' => TestConstants::TEST_LOCATION_NAME,
+                    'totalTeams' => 20,
+                    'position' => TestConstants::TEST_RESULT_POSITION,
+                    'pealNumber' => TestConstants::TEST_RESULT_PEAL_NUMBER,
+                    'faults' => TestConstants::TEST_RESULT_FAULTS,
+                ],
+                [
+                    'eventId' => 100,
+                    'season' => date('Y'),
+                    'eventName' => TestConstants::TEST_DRL_COMPETITION_NAME,
+                    'isUnusualTower' => TestConstants::TEST_EVENT_UNUSUAL_TOWER,
+                    'eventLocation' => TestConstants::TEST_LOCATION_NAME,
+                    'totalTeams' => 20,
+                    'position' => TestConstants::TEST_RESULT_POSITION,
+                    'pealNumber' => TestConstants::TEST_RESULT_PEAL_NUMBER,
+                    'faults' => TestConstants::TEST_RESULT_FAULTS,
+                ],
+            ]
+        );
+
         $useCase = $this->createUseCase();
         $useCase->setRequest($request);
         $useCase->setPresenter($presenterSpy);
+        $useCase->setTeamRepository($teamSpy);
         $useCase->execute();
 
         $response = $presenterSpy->getResponse();
@@ -332,6 +531,41 @@ class TeamPageTest extends TestCase
 
         $this->assertNull(
             $presenter->getResponse()->getLoggedInUser()->getId()
+        );
+    }
+
+    public function testResponseTeamOnly(): void
+    {
+        $request = new TeamPageRequest();
+        $request->setTeamId(TestConstants::TEST_TEAM_ID);
+        $request->setShowStats(false);
+
+        $presenter = new PresenterSpy();
+
+        $useCase = $this->createUseCase();
+        $useCase->setRequest($request);
+        $useCase->setPresenter($presenter);
+        $useCase->execute();
+
+        $response = $presenter->getResponse();
+
+        $this->assertEquals(
+            Response::STATUS_SUCCESS,
+            $response->getStatus()
+        );
+        $this->assertEquals(
+            [
+                'team' => [
+                    'id' => TestConstants::TEST_TEAM_ID,
+                    'name' => TestConstants::TEST_TEAM_NAME,
+                    'deanery' => TestConstants::TEST_DEANERY_NAME,
+                    'region' => TestConstants::TEST_DEANERY_REGION,
+                ],
+                'stats' => [],
+                'results' => [],
+                'statsOptions' => $request->getStatsOptions()
+            ],
+            $response->getData()
         );
     }
 

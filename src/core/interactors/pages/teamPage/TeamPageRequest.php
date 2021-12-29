@@ -88,7 +88,7 @@ class TeamPageRequest extends Request
                     self::STATS_POSITION_RANGE => false,
                     self::STATS_FAULT_TOTAL => true,
                     self::STATS_FAULT_MEAN => true,
-                    self::STATS_FAULT_MEDIAN => true,
+                    self::STATS_FAULT_MEDIAN => false,
                     // 'faultMode' is not greatly informative
                     self::STATS_FAULT_RANGE => false,
                     self::STATS_FAULT_DIFFERENCE_TOTAL => true,
@@ -107,6 +107,7 @@ class TeamPageRequest extends Request
                     self::STATS_EVENT_COUNT => true,
                     self::STATS_FAULT_TOTAL => true,
                     self::STATS_FAULT_MEAN => true,
+                    self::STATS_FAULT_MEDIAN => false,
                     self::STATS_FAULT_RANGE => false,
                     self::STATS_POSITION_MEAN => true,
                     self::STATS_POSITION_MEDIAN => false,
