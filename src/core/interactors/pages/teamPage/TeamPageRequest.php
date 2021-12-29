@@ -3,6 +3,7 @@
 namespace DrlArchive\core\interactors\pages\teamPage;
 
 use DrlArchive\core\classes\Request;
+use DrlArchive\core\Constants;
 
 class TeamPageRequest extends Request
 {
@@ -69,8 +70,8 @@ class TeamPageRequest extends Request
             parent::OPTION_REQUIRED => true,
             parent::OPTION_ALLOW_NULL => false,
             parent::OPTION_DEFAULT => [
-                self::STATS_START_YEAR => 0,
-                self::STATS_END_YEAR => 0,
+                self::STATS_START_YEAR => Constants::MINIMUM_YEAR,
+                self::STATS_END_YEAR => null,
                 self::STATS_RANGE_SUMMARY => [
                     self::STATS_FIRST_YEAR => true,
                     self::STATS_MOST_RECENT_YEAR => true,

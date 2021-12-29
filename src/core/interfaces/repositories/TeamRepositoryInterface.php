@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace DrlArchive\core\interfaces\repositories;
 
 
+use DrlArchive\core\Constants;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 
@@ -25,7 +26,7 @@ interface TeamRepositoryInterface
      * @return TeamEntity
      * @throws CleanArchitectureException
      */
-    public function selectTeam(int $teamId): TeamEntity;
+    public function fetchTeamById(int $teamId): TeamEntity;
 
     /**
      * @param TeamEntity $teamEntity
@@ -46,4 +47,25 @@ interface TeamRepositoryInterface
      * @throws CleanArchitectureException
      */
     public function fetchTeamByName(string $teamName): TeamEntity;
+
+    /**
+     * @param TeamEntity $team
+     * @return array
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamStatistics(TeamEntity $team): array;
+
+    /**
+     * @param TeamEntity $team
+     * @param int $startYear
+     * @param int|null $endYear
+     * @return array
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamResults(
+        TeamEntity $team,
+        int $startYear = Constants::MINIMUM_YEAR,
+        ?int $endYear = null
+    ): array;
+
 }

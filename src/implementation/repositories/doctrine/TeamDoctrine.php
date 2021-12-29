@@ -67,7 +67,7 @@ class TeamDoctrine extends DoctrineRepository implements
     /**
      * @inheritDoc
      */
-    public function selectTeam(int $teamId): TeamEntity
+    public function fetchTeamById(int $teamId): TeamEntity
     {
         try {
             $query = $this->baseTeamSelectQueryBuilder();
