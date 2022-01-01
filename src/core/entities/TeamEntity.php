@@ -8,6 +8,8 @@ class TeamEntity extends Entity
 {
     private string $name;
     private DeaneryEntity $deanery;
+    private ?int $earliestYear = null;
+    private ?int $latestYear = null;
 
     /**
      * @return string
@@ -39,6 +41,38 @@ class TeamEntity extends Entity
     public function setDeanery(DeaneryEntity $deanery): void
     {
         $this->deanery = $deanery;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getEarliestYear(): ?int
+    {
+        return $this->earliestYear;
+    }
+
+    /**
+     * @param int|null $earliestYear
+     */
+    public function setEarliestYear(?int $earliestYear): void
+    {
+        $this->earliestYear = $earliestYear;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getLatestYear(): ?int
+    {
+        return $this->latestYear;
+    }
+
+    /**
+     * @param int|null $latestYear
+     */
+    public function setLatestYear(?int $latestYear): void
+    {
+        $this->latestYear = $latestYear;
     }
 
 }

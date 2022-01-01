@@ -3,12 +3,15 @@
 namespace DrlArchive\core\interactors\pages\teamPage;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\Constants;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\core\StatFieldNames;
+
+use function Webmozart\Assert\Tests\StaticAnalysis\null;
 
 /**
  * @property TeamPageRequest $request
@@ -20,6 +23,8 @@ class TeamPage extends Interactor
     private TeamEntity $team;
     private array $statistics = [];
     private array $results = [];
+    private int $earliestYear = Constants::MINIMUM_YEAR;
+    private int $latestYear = Constants::MINIMUM_YEAR;
 
     public function setTeamRepository(TeamRepositoryInterface $repository): void
     {
@@ -63,6 +68,43 @@ class TeamPage extends Interactor
         $this->team = $this->teamRepository->fetchTeamById(
             $this->request->getTeamId()
         );
+        if ($this->team->getEarliestYear() === null) {
+            $this->request->setShowStats(false);
+            $this->request->setShowResults(false);
+        }
+
+        if (
+            $this->team->getEarliestYear() !== null
+            &&
+            $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR]
+            < $this->team->getEarliestYear()
+        ) {
+            $this->earliestYear = $this->team->getEarliestYear();
+        } else {
+            $this->earliestYear =
+                (int)$this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR];
+        }
+
+        if (
+            $this->team->getLatestYear() !== null
+            && (
+                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
+                > $this->team->getLatestYear()
+                ||
+                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
+                === null
+            )
+        ) {
+            $this->latestYear = $this->team->getLatestYear();
+        } elseif (
+            $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
+            === null
+        ) {
+            $this->latestYear = (int)date('Y');
+        } else {
+            $this->latestYear =
+                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR];
+        }
     }
 
     /**
@@ -74,8 +116,8 @@ class TeamPage extends Interactor
         if ($this->request->isShowStats()) {
             $this->statistics = $this->teamRepository->fetchTeamStatistics(
                 $this->team,
-                $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR],
-                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
+                $this->earliestYear,
+                $this->latestYear
             );
         }
     }
@@ -89,8 +131,8 @@ class TeamPage extends Interactor
         if ($this->request->isShowResults()) {
             $this->results = $this->teamRepository->fetchTeamResults(
                 $this->team,
-                $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR],
-                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
+                $this->earliestYear,
+                $this->latestYear
             );
         }
     }

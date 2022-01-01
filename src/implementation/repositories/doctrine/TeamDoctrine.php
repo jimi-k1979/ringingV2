@@ -74,12 +74,28 @@ class TeamDoctrine extends DoctrineRepository implements
     {
         try {
             $query = $this->baseTeamSelectQueryBuilder();
-            $query->where(
-                $query->expr()->eq(
-                    self::FIELD_TEAM_ID,
-                    ':teamId'
-                )
+            $query->addSelect(
+                'MIN(De.year) AS ' . StatFieldNames::STATS_FIRST_YEAR,
+                'MAX(De.year) AS ' . StatFieldNames::STATS_MOST_RECENT_YEAR,
             )
+                ->leftJoin(
+                    't',
+                    'DRL_result',
+                    'dr',
+                    $query->expr()->eq('t.id', ' dr.teamID')
+                )
+                ->leftJoin(
+                    't',
+                    'DRL_event',
+                    'de',
+                    $query->expr()->eq('dr.eventID', 'de.id')
+                )
+                ->where(
+                    $query->expr()->eq(
+                        self::FIELD_TEAM_ID,
+                        ':teamId'
+                    )
+                )
                 ->setParameter('teamId', $teamId);
             $result = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
@@ -178,32 +194,46 @@ class TeamDoctrine extends DoctrineRepository implements
     }
 
     /**
-     * @param array $result
+     * @param array $row
      * @return TeamEntity
      * @throws CleanArchitectureException
      */
-    private function generateTeamEntity(array $result): TeamEntity
+    private function generateTeamEntity(array $row): TeamEntity
     {
         $entity = new TeamEntity();
         $entity->setDeanery(new DeaneryEntity());
 
-        if (isset($result[Repository::ALIAS_TEAM_ID])) {
-            $entity->setId((int)$result[Repository::ALIAS_TEAM_ID]);
+        if (isset($row[Repository::ALIAS_TEAM_ID])) {
+            $entity->setId((int)$row[Repository::ALIAS_TEAM_ID]);
         }
-        if (isset($result[Repository::ALIAS_TEAM_NAME])) {
-            $entity->setName($result[Repository::ALIAS_TEAM_NAME]);
+        if (isset($row[Repository::ALIAS_TEAM_NAME])) {
+            $entity->setName($row[Repository::ALIAS_TEAM_NAME]);
         }
-        if (isset($result[Repository::ALIAS_DEANERY_ID])) {
+        if (isset($row[Repository::ALIAS_DEANERY_ID])) {
             $entity->getDeanery()
-                ->setId((int)$result[Repository::ALIAS_DEANERY_ID]);
+                ->setId((int)$row[Repository::ALIAS_DEANERY_ID]);
         }
-        if (isset($result[Repository::ALIAS_DEANERY_NAME])) {
+        if (isset($row[Repository::ALIAS_DEANERY_NAME])) {
             $entity->getDeanery()
-                ->setName($result[Repository::ALIAS_DEANERY_NAME]);
+                ->setName($row[Repository::ALIAS_DEANERY_NAME]);
         }
-        if (isset($result[Repository::ALIAS_DEANERY_REGION])) {
+        if (isset($row[Repository::ALIAS_DEANERY_REGION])) {
             $entity->getDeanery()
-                ->setRegion($result[Repository::ALIAS_DEANERY_REGION]);
+                ->setRegion($row[Repository::ALIAS_DEANERY_REGION]);
+        }
+        if (
+            isset($row[StatFieldNames::STATS_FIRST_YEAR])
+        ) {
+            $entity->setEarliestYear(
+                (int)$row[StatFieldNames::STATS_FIRST_YEAR]
+            );
+        }
+        if (
+            isset($row[StatFieldNames::STATS_MOST_RECENT_YEAR])
+        ) {
+            $entity->setLatestYear(
+                (int)$row[StatFieldNames::STATS_MOST_RECENT_YEAR]
+            );
         }
 
         return $entity;
@@ -321,26 +351,26 @@ class TeamDoctrine extends DoctrineRepository implements
                 'COUNT(DISTINCT De.year) AS ' . StatFieldNames::STATS_SEASON_COUNT,
                 'COUNT(De.id) / COUNT(DISTINCT De.year) AS ' . StatFieldNames::STATS_EVENTS_PER_SEASON,
                 'r.rankingMean AS ' . StatFieldNames::STATS_RANKING_MEAN,
-                'f_team_medianRanking(:teamId, :startYear, :lastYear) AS ' . StatFieldNames::STATS_RANKING_MEDIAN,
+                'f_team_medianRanking(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_RANKING_MEDIAN,
                 'r.rankingRange AS ' . StatFieldNames::STATS_RANKING_RANGE,
                 'AVG(Dr.position) AS ' . StatFieldNames::STATS_POSITION_MEAN,
-                'f_team_medianPosition(:teamId, :startYear, :lastYear) AS ' . StatFieldNames::STATS_POSITION_MEDIAN,
-                'f_team_modalPosition(:teamId, :startYear, :lastYear) AS ' . StatFieldNames::STATS_POSITION_MODE,
+                'f_team_medianPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_POSITION_MEDIAN,
+                'f_team_modalPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_POSITION_MODE,
                 'MAX(Dr.position) - MIN(Dr.position) AS ' . StatFieldNames::STATS_POSITION_RANGE,
                 'SUM(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_TOTAL,
                 'AVG(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_MEAN,
-                'f_team_medianFaults(:teamId, :startYear, :lastYear) AS ' . StatFieldNames::STATS_FAULT_MEDIAN,
+                'f_team_medianFaults(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_FAULT_MEDIAN,
                 'MAX(Dr.faults) - MIN(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_RANGE,
                 'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_TOTAL,
                 'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_MEAN,
-                'f_team_medianFaultDifference(:teamId, :startYear, :lastYear) AS '
+                'f_team_medianFaultDifference(:teamId, :startYear, :endYear) AS '
                 . StatFieldNames::STATS_FAULT_DIFFERENCE_MEDIAN,
                 'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_RANGE,
                 'SUM(Dr.points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_TOTAL,
                 'AVG(Dr.points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_MEAN,
-                'f_team_medianLeaguePoints(:teamId, :startYear, :lastYear) AS '
+                'f_team_medianLeaguePoints(:teamId, :startYear, :endYear) AS '
                 . StatFieldNames::STATS_LEAGUE_POINT_MEDIAN,
-                'f_team_modalLeaguePoints(:teamId, :startYear, : lastYear) AS '
+                'f_team_modalLeaguePoints(:teamId, :startYear, :endYear) AS '
                 . StatFieldNames::STATS_LEAGUE_POINT_MODE,
                 'MAX(Dr.points) - MIN(Dr.Points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_RANGE
             )
@@ -380,7 +410,7 @@ class TeamDoctrine extends DoctrineRepository implements
                         'endYear' => $endYear,
                     ]
                 );
-            return $query->executeQuery()->fetchAssociative();
+            $results = $query->executeQuery()->fetchAssociative();
         } catch (Throwable $e) {
             throw new RepositoryConnectionErrorException(
                 "Connection error getting team stats",
@@ -388,6 +418,10 @@ class TeamDoctrine extends DoctrineRepository implements
                 $e
             );
         }
+        if (empty($results)) {
+            return [];
+        }
+        return $results;
     }
 
     private function faultDifferenceStatsQuery(): QueryBuilder
@@ -490,15 +524,24 @@ field
         return $query;
     }
 
+    /**
+     * @param TeamEntity $team
+     * @param int $startYear
+     * @param int $endYear
+     * @return array
+     * @throws RepositoryConnectionErrorException
+     */
     private function fetchSeasonalStats(
         TeamEntity $team,
         int $startYear,
         int $endYear
     ): array {
         $returnArray = [];
-        for ($year = $startYear; $year++; $year <= $endYear) {
-            $returnArray[(string)$year] =
-                $this->fetchRangeSummaryStats($team, $year, $year);
+        for ($year = $startYear; $year <= $endYear; $year++) {
+            $stats = $this->fetchRangeSummaryStats($team, $year, $year);
+            if (!empty($stats)) {
+                $returnArray[(string)$year] = $stats;
+            }
         }
 
         return $returnArray;
@@ -581,7 +624,7 @@ field
     {
         $query = $this->database->createQueryBuilder();
         $query->select(
-            '(SUM(r.faults) - D.faults) - ((f_event_numberOfTeams(Dr.eventID) - 1 * d.faults)'
+            '(SUM(r.faults) - D.faults) - ((f_event_numberOfTeams(Dr.eventID) - 1) * d.faults)'
         )
             ->from('DRL_event', 'e')
             ->innerJoin(
