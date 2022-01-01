@@ -80,7 +80,7 @@ class TeamPageRequest extends Request
                     self::STATS_EVENTS_PER_SEASON => false,
                     self::STATS_RANKING_MEAN => true,
                     self::STATS_RANKING_MEDIAN => false,
-                    self::STATS_RANKING_MODE => false,
+                    // 'rankingMode' is not greatly informative
                     self::STATS_RANKING_RANGE => false,
                     self::STATS_POSITION_MEAN => true,
                     self::STATS_POSITION_MEDIAN => false,
