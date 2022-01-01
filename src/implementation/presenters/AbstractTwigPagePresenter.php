@@ -25,6 +25,7 @@ class AbstractTwigPagePresenter implements PresenterInterface
     public const RINGER = 'ringer';
     public const SETTINGS = 'settings';
     public const STATS = 'stats';
+    public const STATS_OPTIONS = 'statsOptions';
     public const TEAM = 'team';
     public const TEMPLATES = 'templates';
     public const TEMPLATES_BODY = 'body';
