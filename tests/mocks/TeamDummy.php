@@ -56,10 +56,15 @@ class TeamDummy implements TeamRepositoryInterface
     }
 
     /**
+     * @param int|null $endYear
+     * @param int $startYear
      * @inheritDoc
      */
-    public function fetchTeamStatistics(TeamEntity $team): array
-    {
+    public function fetchTeamStatistics(
+        TeamEntity $team,
+        int $startYear = Constants::MINIMUM_YEAR,
+        ?int $endYear = null
+    ): array {
         return [];
     }
 

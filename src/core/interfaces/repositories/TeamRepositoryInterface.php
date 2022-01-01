@@ -50,10 +50,16 @@ interface TeamRepositoryInterface
 
     /**
      * @param TeamEntity $team
+     * @param int $startYear
+     * @param int|null $endYear
      * @return array
      * @throws CleanArchitectureException
      */
-    public function fetchTeamStatistics(TeamEntity $team): array;
+    public function fetchTeamStatistics(
+        TeamEntity $team,
+        int $startYear = Constants::MINIMUM_YEAR,
+        ?int $endYear = null
+    ): array;
 
     /**
      * @param TeamEntity $team

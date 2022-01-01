@@ -8,6 +8,7 @@ use DrlArchive\core\Exceptions\BadDataException;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
+use DrlArchive\core\StatFieldNames;
 
 /**
  * @property TeamPageRequest $request
@@ -72,7 +73,9 @@ class TeamPage extends Interactor
     {
         if ($this->request->isShowStats()) {
             $this->statistics = $this->teamRepository->fetchTeamStatistics(
-                $this->team
+                $this->team,
+                $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR],
+                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
             );
         }
     }
@@ -86,8 +89,8 @@ class TeamPage extends Interactor
         if ($this->request->isShowResults()) {
             $this->results = $this->teamRepository->fetchTeamResults(
                 $this->team,
-                $this->request->getStatsOptions()[TeamPageRequest::STATS_START_YEAR],
-                $this->request->getStatsOptions()[TeamPageRequest::STATS_END_YEAR]
+                $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR],
+                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
             );
         }
     }
