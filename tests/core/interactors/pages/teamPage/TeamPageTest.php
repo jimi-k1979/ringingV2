@@ -3,6 +3,7 @@
 namespace DrlArchive\core\interactors\pages\teamPage;
 
 use DrlArchive\core\classes\Response;
+use DrlArchive\core\Constants;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\AuthenticationManagerSpy;
@@ -43,54 +44,61 @@ class TeamPageTest extends TestCase
             'Invalid show stats'
         );
         $this->assertEquals(
+            Constants::MINIMUM_YEAR,
+            $request->getStartYear(),
+            'Invalid start year'
+        );
+        $this->assertNull(
+            $request->getEndYear(),
+            'Invalid end year'
+        );
+        $this->assertEquals(
             [
-                'startYear' => 1925,
-                'endYear' => null,
                 'rangeSummary' => [
                     'firstYear' => true,
                     'mostRecentYear' => true,
-                    'seasonCount' => false,
-                    'eventCount' => true,
+                    'seasonsEntered' => false,
+                    'eventsEntered' => true,
                     'eventsPerSeason' => false,
-                    'rankingMean' => true,
-                    'rankingMedian' => false,
+                    'meanRanking' => true,
+                    'medianRanking' => false,
                     // 'rankingMode' is not greatly informative,
                     'rankingRange' => false,
-                    'positionMean' => true,
-                    'positionMedian' => false,
+                    'meanPosition' => true,
+                    'medianPosition' => false,
                     'positionMode' => false,
                     'positionRange' => false,
-                    'faultTotal' => true,
-                    'faultMean' => true,
-                    'faultMedian' => false,
+                    'totalFaults' => true,
+                    'meanFaults' => true,
+                    'medianFaults' => false,
                     // 'faultMode' is not greatly informative
                     'faultRange' => false,
-                    'faultDifferenceTotal' => true,
-                    'faultDifferenceMean' => false,
-                    'faultDifferenceMedian' => false,
+                    'totalFaultDifference' => true,
+                    'meanFaultDifference' => false,
+                    'medianFaultDifference' => false,
                     // 'faultDifferenceMode' is not greatly informative
                     'faultDifferenceRange' => false,
-                    'leaguePointTotal' => true,
-                    'leaguePointMean' => true,
-                    'leaguePointMedian' => false,
+                    'totalLeaguePoints' => true,
+                    'meanLeaguePoints' => true,
+                    'medianLeaguePoints' => false,
                     // 'leaguePointMode' is not greatly informative
                     'leaguePointRange' => false,
-                    'noResultCount' => true,
+                    'noResults' => true,
                 ],
                 'seasonal' => [
-                    'eventCount' => true,
-                    'faultTotal' => true,
-                    'faultMean' => true,
-                    'faultMedian' => false,
+                    'eventsEntered' => true,
+                    'totalFaults' => true,
+                    'meanFaults' => true,
+                    'medianFaults' => false,
                     'faultRange' => false,
-                    'positionMean' => true,
-                    'positionMedian' => false,
+                    'meanPosition' => true,
+                    'medianPosition' => false,
                     'positionMode' => false,
                     'positionRange' => false,
-                    'noResultCount' => true,
-                    'leaguePointTotal' => true,
-                    'leaguePointMean' => true, // aka ranking
-                    'leaguePointMedian' => false,
+                    'noResults' => true,
+                    'totalLeaguePoints' => true,
+                    'meanLeaguePoints' => true, // aka ranking
+                    'medianLeaguePoints' => false,
                     'leaguePointMode' => false,
                     'leaguePointRange' => false,
                     'faultDifference' => true,
@@ -274,7 +282,9 @@ class TeamPageTest extends TestCase
                 'id' => TestConstants::TEST_TEAM_ID,
                 'name' => TestConstants::TEST_TEAM_NAME,
                 'deanery' => TestConstants::TEST_DEANERY_NAME,
-                'region' => TestConstants::TEST_DEANERY_REGION,
+                'region' => 'South',
+                'earliestYear' => TestConstants::TEST_TEAM_EARLIEST_YEAR,
+                'mostRecentYear' => TestConstants::TEST_TEAM_MOST_RECENT_YEAR,
             ],
             'stats' => [
                 'startYear' => 1925,
@@ -557,7 +567,9 @@ class TeamPageTest extends TestCase
                     'id' => TestConstants::TEST_TEAM_ID,
                     'name' => TestConstants::TEST_TEAM_NAME,
                     'deanery' => TestConstants::TEST_DEANERY_NAME,
-                    'region' => TestConstants::TEST_DEANERY_REGION,
+                    'region' => 'South',
+                    'earliestYear' => TestConstants::TEST_TEAM_EARLIEST_YEAR,
+                    'mostRecentYear' => TestConstants::TEST_TEAM_MOST_RECENT_YEAR,
                 ],
                 'stats' => [],
                 'results' => [],

@@ -14,7 +14,6 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 $presenter = new class extends AbstractTwigPagePresenter {
     private const PEAL = 'pealNumber';
     private const PEAL_NUMBERS = 'pealNumbers';
-    private const RESULTS = 'results';
     private const STATISTICS = 'statistics';
     private const MEAN_FAULTS = 'meanFaults';
 

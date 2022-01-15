@@ -33,6 +33,8 @@ class TestConstants
 
     public const TEST_TEAM_ID = 123;
     public const TEST_TEAM_NAME = 'Test team';
+    public const TEST_TEAM_EARLIEST_YEAR = 1990;
+    public const TEST_TEAM_MOST_RECENT_YEAR = 1999;
 
     public const TEST_RINGER_ID = 4321;
     public const TEST_RINGER_FIRST_NAME = 'Test';

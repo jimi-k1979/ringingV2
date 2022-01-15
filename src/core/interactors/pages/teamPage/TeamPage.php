@@ -76,34 +76,27 @@ class TeamPage extends Interactor
         if (
             $this->team->getEarliestYear() !== null
             &&
-            $this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR]
-            < $this->team->getEarliestYear()
+            $this->request->getStartYear() < $this->team->getEarliestYear()
         ) {
             $this->earliestYear = $this->team->getEarliestYear();
         } else {
-            $this->earliestYear =
-                (int)$this->request->getStatsOptions()[StatFieldNames::STATS_START_YEAR];
+            $this->earliestYear = $this->request->getStartYear();
         }
 
         if (
             $this->team->getLatestYear() !== null
             && (
-                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
-                > $this->team->getLatestYear()
-                ||
-                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
-                === null
+                $this->request->getEndYear() > $this->team->getLatestYear()
+                || $this->request->getEndYear() === null
             )
         ) {
             $this->latestYear = $this->team->getLatestYear();
         } elseif (
-            $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR]
-            === null
+            $this->request->getEndYear() === null
         ) {
             $this->latestYear = (int)date('Y');
         } else {
-            $this->latestYear =
-                $this->request->getStatsOptions()[StatFieldNames::STATS_END_YEAR];
+            $this->latestYear = $this->request->getEndYear();
         }
     }
 
@@ -147,7 +140,11 @@ class TeamPage extends Interactor
             TeamPageResponse::DATA_TEAM_DEANERY =>
                 $this->team->getDeanery()->getName(),
             TeamPageResponse::DATA_TEAM_REGION =>
-                $this->team->getDeanery()->getRegion(),
+                ucwords($this->team->getDeanery()->getRegion()),
+            TeamPageResponse::DATA_TEAM_EARLIEST_YEAR =>
+                $this->team->getEarliestYear(),
+            TeamPageResponse::DATA_TEAM_MOST_RECENT_YEAR =>
+                $this->team->getLatestYear(),
         ];
 
         $this->response = new TeamPageResponse();

@@ -75,8 +75,8 @@ class TeamDoctrine extends DoctrineRepository implements
         try {
             $query = $this->baseTeamSelectQueryBuilder();
             $query->addSelect(
-                'MIN(De.year) AS ' . StatFieldNames::STATS_FIRST_YEAR,
-                'MAX(De.year) AS ' . StatFieldNames::STATS_MOST_RECENT_YEAR,
+                'MIN(De.year) AS ' . StatFieldNames::FIRST_YEAR,
+                'MAX(De.year) AS ' . StatFieldNames::MOST_RECENT_YEAR,
             )
                 ->leftJoin(
                     't',
@@ -222,17 +222,17 @@ class TeamDoctrine extends DoctrineRepository implements
                 ->setRegion($row[Repository::ALIAS_DEANERY_REGION]);
         }
         if (
-            isset($row[StatFieldNames::STATS_FIRST_YEAR])
+            isset($row[StatFieldNames::FIRST_YEAR])
         ) {
             $entity->setEarliestYear(
-                (int)$row[StatFieldNames::STATS_FIRST_YEAR]
+                (int)$row[StatFieldNames::FIRST_YEAR]
             );
         }
         if (
-            isset($row[StatFieldNames::STATS_MOST_RECENT_YEAR])
+            isset($row[StatFieldNames::MOST_RECENT_YEAR])
         ) {
             $entity->setLatestYear(
-                (int)$row[StatFieldNames::STATS_MOST_RECENT_YEAR]
+                (int)$row[StatFieldNames::MOST_RECENT_YEAR]
             );
         }
 
@@ -295,13 +295,20 @@ class TeamDoctrine extends DoctrineRepository implements
         TeamEntity $team,
         int $startYear = Constants::MINIMUM_YEAR,
         ?int $endYear = null
-    ): array {
+    ): array
+    {
         [$startYear, $endYear] = $this->yearCheck($startYear, $endYear);
 
-        $returnArray[StatFieldNames::STATS_RANGE_SUMMARY] =
+        $returnArray[StatFieldNames::RANGE_SUMMARY] =
             $this->fetchRangeSummaryStats($team, $startYear, $endYear);
+        if (isset(
+            $returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE]
+        )) {
+            $returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE_TOTAL] =
+                $returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE];
+        }
 
-        $returnArray[StatFieldNames::STATS_SEASONAL] =
+        $returnArray[StatFieldNames::SEASONAL] =
             $this->fetchSeasonalStats($team, $startYear, $endYear);
 
         return $returnArray;
@@ -344,35 +351,41 @@ class TeamDoctrine extends DoctrineRepository implements
         int $endYear
     ): array {
         try {
+            $faultDifferenceFieldName = $startYear === $endYear
+                ? StatFieldNames::FAULT_DIFFERENCE
+                : StatFieldNames::FAULT_DIFFERENCE_TOTAL;
+
             $query = $this->database->createQueryBuilder();
             $query->select(
-                'MIN(De.year) AS ' . StatFieldNames::STATS_FIRST_YEAR,
-                'MAX(De.year) AS ' . StatFieldNames::STATS_MOST_RECENT_YEAR,
-                'COUNT(DISTINCT De.year) AS ' . StatFieldNames::STATS_SEASON_COUNT,
-                'COUNT(De.id) / COUNT(DISTINCT De.year) AS ' . StatFieldNames::STATS_EVENTS_PER_SEASON,
-                'r.rankingMean AS ' . StatFieldNames::STATS_RANKING_MEAN,
-                'f_team_medianRanking(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_RANKING_MEDIAN,
-                'r.rankingRange AS ' . StatFieldNames::STATS_RANKING_RANGE,
-                'AVG(Dr.position) AS ' . StatFieldNames::STATS_POSITION_MEAN,
-                'f_team_medianPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_POSITION_MEDIAN,
-                'f_team_modalPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_POSITION_MODE,
-                'MAX(Dr.position) - MIN(Dr.position) AS ' . StatFieldNames::STATS_POSITION_RANGE,
-                'SUM(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_TOTAL,
-                'AVG(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_MEAN,
-                'f_team_medianFaults(:teamId, :startYear, :endYear) AS ' . StatFieldNames::STATS_FAULT_MEDIAN,
-                'MAX(Dr.faults) - MIN(Dr.faults) AS ' . StatFieldNames::STATS_FAULT_RANGE,
-                'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_TOTAL,
-                'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_MEAN,
+                'MIN(De.year) AS ' . StatFieldNames::FIRST_YEAR,
+                'MAX(De.year) AS ' . StatFieldNames::MOST_RECENT_YEAR,
+                'COUNT(De.id) AS ' . StatFieldNames::EVENT_COUNT,
+                'COUNT(DISTINCT De.year) AS ' . StatFieldNames::SEASON_COUNT,
+                'COUNT(De.id) / COUNT(DISTINCT De.year) AS ' . StatFieldNames::EVENTS_PER_SEASON,
+                'r.meanRanking AS ' . StatFieldNames::RANKING_MEAN,
+                'f_team_medianRanking(:teamId, :startYear, :endYear) AS ' . StatFieldNames::RANKING_MEDIAN,
+                'r.rankingRange AS ' . StatFieldNames::RANKING_RANGE,
+                'AVG(Dr.position) AS ' . StatFieldNames::POSITION_MEAN,
+                'f_team_medianPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::POSITION_MEDIAN,
+                'f_team_modalPosition(:teamId, :startYear, :endYear) AS ' . StatFieldNames::POSITION_MODE,
+                'MAX(Dr.position) - MIN(Dr.position) AS ' . StatFieldNames::POSITION_RANGE,
+                'SUM(Dr.faults) AS ' . StatFieldNames::FAULT_TOTAL,
+                'AVG(Dr.faults) AS ' . StatFieldNames::FAULT_MEAN,
+                'f_team_medianFaults(:teamId, :startYear, :endYear) AS ' . StatFieldNames::FAULT_MEDIAN,
+                'MAX(Dr.faults) - MIN(Dr.faults) AS ' . StatFieldNames::FAULT_RANGE,
+                'f.' . StatFieldNames::FAULT_DIFFERENCE_TOTAL . ' AS ' . $faultDifferenceFieldName,
+                'f.' . StatFieldNames::FAULT_DIFFERENCE_MEAN,
                 'f_team_medianFaultDifference(:teamId, :startYear, :endYear) AS '
-                . StatFieldNames::STATS_FAULT_DIFFERENCE_MEDIAN,
-                'f.' . StatFieldNames::STATS_FAULT_DIFFERENCE_RANGE,
-                'SUM(Dr.points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_TOTAL,
-                'AVG(Dr.points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_MEAN,
+                . StatFieldNames::FAULT_DIFFERENCE_MEDIAN,
+                'f.' . StatFieldNames::FAULT_DIFFERENCE_RANGE,
+                'SUM(Dr.points) AS ' . StatFieldNames::LEAGUE_POINT_TOTAL,
+                'AVG(Dr.points) AS ' . StatFieldNames::LEAGUE_POINT_MEAN,
                 'f_team_medianLeaguePoints(:teamId, :startYear, :endYear) AS '
-                . StatFieldNames::STATS_LEAGUE_POINT_MEDIAN,
+                . StatFieldNames::LEAGUE_POINT_MEDIAN,
                 'f_team_modalLeaguePoints(:teamId, :startYear, :endYear) AS '
-                . StatFieldNames::STATS_LEAGUE_POINT_MODE,
-                'MAX(Dr.points) - MIN(Dr.Points) AS ' . StatFieldNames::STATS_LEAGUE_POINT_RANGE
+                . StatFieldNames::LEAGUE_POINT_MODE,
+                'MAX(Dr.points) - MIN(Dr.points) AS ' . StatFieldNames::LEAGUE_POINT_RANGE,
+                'n.' . StatFieldNames::NO_RESULT_COUNT
             )
                 ->from('DRL_result', 'Dr')
                 ->from(
@@ -382,6 +395,10 @@ class TeamDoctrine extends DoctrineRepository implements
                 ->from(
                     "({$this->rankingStatsQuery()->getSQL()})",
                     'r'
+                )
+                ->from(
+                    "({$this->noResultCountQuery()->getSQL()})",
+                    'n'
                 )
                 ->innerJoin(
                     'Dr',
@@ -397,11 +414,12 @@ class TeamDoctrine extends DoctrineRepository implements
                     $query->expr()->eq('Dr.teamID', ':teamId')
                 )
                 ->groupBy(
-                    StatFieldNames::STATS_FAULT_DIFFERENCE_TOTAL,
-                    StatFieldNames::STATS_FAULT_DIFFERENCE_RANGE,
-                    StatFieldNames::STATS_FAULT_DIFFERENCE_MEAN,
-                    StatFieldNames::STATS_RANKING_MEAN,
-                    StatFieldNames::STATS_RANKING_RANGE
+                    StatFieldNames::FAULT_DIFFERENCE_TOTAL,
+                    StatFieldNames::FAULT_DIFFERENCE_RANGE,
+                    StatFieldNames::FAULT_DIFFERENCE_MEAN,
+                    StatFieldNames::RANKING_MEAN,
+                    StatFieldNames::RANKING_RANGE,
+                    StatFieldNames::NO_RESULT_COUNT
                 )
                 ->setParameters(
                     [
@@ -430,9 +448,9 @@ class TeamDoctrine extends DoctrineRepository implements
 
         $query = $this->database->createQueryBuilder();
         $query->select(
-            "SUM(FDs.{$fdAlias}) AS " . StatFieldNames::STATS_FAULT_DIFFERENCE_TOTAL,
-            "AVG(FDs.{$fdAlias}) AS " . StatFieldNames::STATS_FAULT_DIFFERENCE_MEAN,
-            "MAX(FDs.{$fdAlias}) - MIN(FDs.{$fdAlias}) AS " . StatFieldNames::STATS_FAULT_DIFFERENCE_RANGE
+            "SUM(FDs.{$fdAlias}) AS " . StatFieldNames::FAULT_DIFFERENCE_TOTAL,
+            "AVG(FDs.{$fdAlias}) AS " . StatFieldNames::FAULT_DIFFERENCE_MEAN,
+            "MAX(FDs.{$fdAlias}) - MIN(FDs.{$fdAlias}) AS " . StatFieldNames::FAULT_DIFFERENCE_RANGE
         )
             ->from("({$this->baseFaultDifferenceCalculatorQuery()->getSQL()}) FDs");
 
@@ -485,8 +503,8 @@ field
         $rankAlias = Repository::ALIAS_RANKING;
         $query = $this->database->createQueryBuilder();
         $query->select(
-            "AVG({$rankAlias}) AS " . StatFieldNames::STATS_RANKING_MEAN,
-            "MAX({$rankAlias}) - MIN({$rankAlias}) AS " . StatFieldNames::STATS_RANKING_RANGE
+            "AVG({$rankAlias}) AS " . StatFieldNames::RANKING_MEAN,
+            "MAX({$rankAlias}) - MIN({$rankAlias}) AS " . StatFieldNames::RANKING_RANGE
         )
             ->from("({$this->baseRankingCalculatorQuery()->getSQL()}) rankings");
 
@@ -519,6 +537,32 @@ field
             )
             ->groupBy(
                 'De.year'
+            );
+
+        return $query;
+    }
+
+    private function noResultCountQuery(): QueryBuilder
+    {
+        $query = $this->database->createQueryBuilder();
+        $query->select(
+            'COUNT(*) AS ' . StatFieldNames::NO_RESULT_COUNT
+        )
+            ->from('DRL_result', 'r')
+            ->innerJoin(
+                'r',
+                'DRL_event',
+                'e',
+                $query->expr()->and(
+                    $query->expr()->eq('r.eventID', 'e.id'),
+                    $query->expr()->gte('e.year', ':startYear'),
+                    $query->expr()->lte('e.year', ':endYear')
+                )
+            )
+            ->where(
+                $query->expr()->eq('r.teamID', ':teamId'),
+                $query->expr()->eq('r.faults', 0),
+                $query->expr()->eq('r.points', 0)
             );
 
         return $query;

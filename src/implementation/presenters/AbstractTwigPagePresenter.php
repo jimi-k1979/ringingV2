@@ -9,6 +9,7 @@ use DrlArchive\core\classes\Response;
 use DrlArchive\core\entities\UserEntity;
 use DrlArchive\core\interfaces\boundaries\PresenterInterface;
 use Twig\Environment;
+use Twig\Extra\Intl\IntlExtension;
 use Twig\Loader\FilesystemLoader;
 
 class AbstractTwigPagePresenter implements PresenterInterface
@@ -22,6 +23,7 @@ class AbstractTwigPagePresenter implements PresenterInterface
     public const MESSAGING = 'messaging';
     public const NAV = 'nav';
     public const NAV_HIGHLIGHTED = 'highlighted';
+    public const RESULTS = 'results';
     public const RINGER = 'ringer';
     public const SETTINGS = 'settings';
     public const STATS = 'stats';
@@ -51,6 +53,7 @@ class AbstractTwigPagePresenter implements PresenterInterface
         $this->twig = new Environment(
             $loader
         );
+        $this->twig->addExtension(new IntlExtension());
 
         $this->dataForTemplate = [
             self::ERROR => [],
