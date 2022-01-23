@@ -306,6 +306,7 @@ class TeamDoctrine extends DoctrineRepository implements
         )) {
             $returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE_TOTAL] =
                 $returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE];
+            unset($returnArray[StatFieldNames::RANGE_SUMMARY][StatFieldNames::FAULT_DIFFERENCE]);
         }
 
         $returnArray[StatFieldNames::SEASONAL] =

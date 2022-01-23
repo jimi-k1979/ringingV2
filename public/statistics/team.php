@@ -14,6 +14,14 @@ use DrlArchive\implementation\presenters\AbstractTwigPagePresenter;
 
 
 $presenter = new class extends AbstractTwigPagePresenter {
+    private const GENERAL_TYPE = 'general';
+    private const EVENT_TYPE = 'event';
+    private const LEAGUE_TYPE = 'league';
+    private const STAT_HEADER = 'statHeaders';
+    private const VALUE = 'value';
+    private const TYPE = 'type';
+    private const TEXT_END = 'text-end';
+
     private array $stats;
     private array $statsOptions;
     private array $statsToShow = [
@@ -21,6 +29,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
         StatFieldNames::SEASONAL => [],
     ];
     private array $results;
+    private array $statHeaders = [];
 
     public function send(?Response $response = null): void
     {
@@ -39,12 +48,15 @@ $presenter = new class extends AbstractTwigPagePresenter {
             if (!empty($this->stats)) {
                 $this->filterForRequiredStats();
             }
-            $this->processResults();
+            if (!empty($this->results)) {
+                $this->processResults();
+            }
 
             $this->dataForTemplate[self::TEAM] =
                 $response->getData()[TeamPageResponse::DATA_TEAM];
             $this->dataForTemplate[self::STATS] = $this->statsToShow;
             $this->dataForTemplate[self::RESULTS] = $this->results;
+            $this->dataForTemplate[self::STAT_HEADER] = $this->statHeaders;
 
             try {
                 $this->twig->display(
@@ -91,14 +103,17 @@ $presenter = new class extends AbstractTwigPagePresenter {
 
                 switch ($stat) {
                     case StatFieldNames::FIRST_YEAR:
-                        $summary['Years'] = $data[$stat];
+                        $summary['Years'][self::VALUE] = $data[$stat];
                         if (
                             isset($data[StatFieldNames::MOST_RECENT_YEAR])
                             && $data[$stat] != $data[StatFieldNames::MOST_RECENT_YEAR]
                         ) {
-                            $summary['Years'] = $data[$stat] . ' - '
+                            $summary['Years'][self::VALUE] = $data[$stat] . ' - '
                                 . $data[StatFieldNames::MOST_RECENT_YEAR];
                         }
+                        $summary['Years'][self::TYPE] = self::GENERAL_TYPE;
+                        $this->statHeaders[$fieldName] = self::GENERAL_TYPE;
+
                         break;
 
                     case StatFieldNames::MOST_RECENT_YEAR:
@@ -106,11 +121,30 @@ $presenter = new class extends AbstractTwigPagePresenter {
                         break;
 
                     case StatFieldNames::EVENTS_PER_SEASON:
+                    case StatFieldNames::POSITION_MEAN:
+                    case StatFieldNames::POSITION_MEDIAN:
+                        $summary[$fieldName][self::VALUE] = number_format(
+                            (float)$data[$stat],
+                            2
+                        );
+                        $summary[$fieldName][self::TYPE] = self::GENERAL_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::GENERAL_TYPE;
+                        break;
+
                     case StatFieldNames::RANKING_MEAN:
                     case StatFieldNames::RANKING_MEDIAN:
                     case StatFieldNames::RANKING_RANGE:
-                    case StatFieldNames::POSITION_MEAN:
-                    case StatFieldNames::POSITION_MEDIAN:
+                    case StatFieldNames::LEAGUE_POINT_MEAN:
+                        $summary[$fieldName][self::VALUE] = number_format(
+                            (float)$data[$stat],
+                            2
+                        );
+                        $summary[$fieldName][self::TYPE] = self::LEAGUE_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::LEAGUE_TYPE;
+                        break;
+
                     case StatFieldNames::FAULT_TOTAL:
                     case StatFieldNames::FAULT_MEAN:
                     case StatFieldNames::FAULT_MEDIAN:
@@ -120,26 +154,43 @@ $presenter = new class extends AbstractTwigPagePresenter {
                     case StatFieldNames::FAULT_DIFFERENCE_MEAN:
                     case StatFieldNames::FAULT_DIFFERENCE_MEDIAN:
                     case StatFieldNames::FAULT_DIFFERENCE_RANGE:
-                    case StatFieldNames::LEAGUE_POINT_MEAN:
-                        $summary[$fieldName] = number_format(
+                        $summary[$fieldName][self::VALUE] = number_format(
                             (float)$data[$stat],
                             2
                         );
+                        $summary[$fieldName][self::TYPE] = self::EVENT_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::EVENT_TYPE;
                         break;
 
                     case StatFieldNames::LEAGUE_POINT_MEDIAN:
                         if ($data[$stat] % 2 === 0) {
-                            $summary[$fieldName] = $data[$stat];
+                            $summary[$fieldName][self::VALUE] = $data[$stat];
                         } else {
-                            $summary[$fieldName] = number_format(
+                            $summary[$fieldName][self::VALUE] = number_format(
                                 (float)$data[$stat],
                                 1
                             );
                         }
+                        $summary[$fieldName][self::TYPE] = self::LEAGUE_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::LEAGUE_TYPE;
+                        break;
+
+                    case StatFieldNames::EVENT_COUNT:
+                    case StatFieldNames::NO_RESULT_COUNT:
+                    case StatFieldNames::SEASON_COUNT:
+                        $summary[$fieldName][self::VALUE] = $data[$stat];
+                        $summary[$fieldName][self::TYPE] = self::GENERAL_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::GENERAL_TYPE;
                         break;
 
                     default:
-                        $summary[$fieldName] = $data[$stat];
+                        $summary[$fieldName][self::VALUE] = $data[$stat];
+                        $summary[$fieldName][self::TYPE] = self::LEAGUE_TYPE
+                            . ' ' . self::TEXT_END;
+                        $this->statHeaders[$fieldName] = self::LEAGUE_TYPE;
                 }
             }
         }
