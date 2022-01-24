@@ -217,7 +217,65 @@ $request->setShowStats(true);
 $request->setShowResults(true);
 
 if (isset($_GET['statsOptions'])) {
-    // decode and apply
+    $binary = array_reverse(
+        str_split(
+            str_pad(
+                decbin($_GET['statsOptions']),
+                24,
+                '0'
+            )
+        )
+    );
+
+    $request->setStatsOptions(
+        [
+            StatFieldNames::RANGE_SUMMARY => [
+                StatFieldNames::FIRST_YEAR => true,
+                StatFieldNames::MOST_RECENT_YEAR => true,
+                StatFieldNames::SEASON_COUNT => (bool)$binary[0],
+                StatFieldNames::EVENT_COUNT => (bool)$binary[1],
+                StatFieldNames::EVENTS_PER_SEASON => (bool)$binary[2],
+                StatFieldNames::RANKING_MEAN => (bool)$binary[3],
+                StatFieldNames::RANKING_MEDIAN => (bool)$binary[4],
+                StatFieldNames::RANKING_RANGE => (bool)$binary[5],
+                StatFieldNames::POSITION_MEAN => (bool)$binary[6],
+                StatFieldNames::POSITION_MEDIAN => (bool)$binary[7],
+                StatFieldNames::POSITION_MODE => (bool)$binary[8],
+                StatFieldNames::POSITION_RANGE => (bool)$binary[9],
+                StatFieldNames::FAULT_TOTAL => (bool)$binary[10],
+                StatFieldNames::FAULT_MEAN => (bool)$binary[11],
+                StatFieldNames::FAULT_MEDIAN => (bool)$binary[12],
+                StatFieldNames::FAULT_RANGE => (bool)$binary[13],
+                StatFieldNames::FAULT_DIFFERENCE_TOTAL => (bool)$binary[14],
+                StatFieldNames::FAULT_DIFFERENCE_MEAN => (bool)$binary[15],
+                StatFieldNames::FAULT_DIFFERENCE_MEDIAN => (bool)$binary[16],
+                StatFieldNames::FAULT_DIFFERENCE_RANGE => (bool)$binary[17],
+                StatFieldNames::LEAGUE_POINT_TOTAL => (bool)$binary[18],
+                StatFieldNames::LEAGUE_POINT_MEAN => (bool)$binary[19],
+                StatFieldNames::LEAGUE_POINT_MEDIAN => (bool)$binary[20],
+                StatFieldNames::LEAGUE_POINT_RANGE => (bool)$binary[22],
+                StatFieldNames::NO_RESULT_COUNT => (bool)$binary[23],
+            ],
+            StatFieldNames::SEASONAL => [
+                StatFieldNames::EVENT_COUNT => (bool)$binary[1],
+                StatFieldNames::FAULT_TOTAL => (bool)$binary[10],
+                StatFieldNames::FAULT_MEAN => (bool)$binary[11],
+                StatFieldNames::FAULT_MEDIAN => (bool)$binary[12],
+                StatFieldNames::FAULT_RANGE => (bool)$binary[13],
+                StatFieldNames::POSITION_MEAN => (bool)$binary[6],
+                StatFieldNames::POSITION_MEDIAN => (bool)$binary[7],
+                StatFieldNames::POSITION_MODE => (bool)$binary[8],
+                StatFieldNames::POSITION_RANGE => (bool)$binary[9],
+                StatFieldNames::NO_RESULT_COUNT => (bool)$binary[23],
+                StatFieldNames::LEAGUE_POINT_TOTAL => (bool)$binary[18],
+                StatFieldNames::LEAGUE_POINT_MEAN => (bool)$binary[19],
+                StatFieldNames::LEAGUE_POINT_MEDIAN => (bool)$binary[20],
+                StatFieldNames::LEAGUE_POINT_MODE => (bool)$binary[21],
+                StatFieldNames::LEAGUE_POINT_RANGE => (bool)$binary[22],
+                StatFieldNames::FAULT_DIFFERENCE => (bool)$binary[14],
+            ],
+        ]
+    );
 }
 if (isset($_GET['startYear'])) {
     $request->setStartYear((int)$_GET['startYear']);

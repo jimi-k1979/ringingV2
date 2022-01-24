@@ -100,7 +100,7 @@ class TeamPageRequest extends Request
                     StatFieldNames::LEAGUE_POINT_RANGE => false,
                     StatFieldNames::FAULT_DIFFERENCE => true,
                 ],
-            ]
+            ],
         ],
     ];
 
