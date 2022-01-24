@@ -42,7 +42,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
 };
 
 $request = new JudgePageRequest();
-$request->setJudgeId((int)$_GET['judgeId']);
+$request->setJudgeId((int)$_GET['id']);
 
 $useCase = (new JudgePageFactory())->create(
     $presenter,

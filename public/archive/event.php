@@ -49,7 +49,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
 };
 
 $request = new EventPageRequest();
-$request->setEventId((int)$_GET['eventId'] ?? 0);
+$request->setEventId((int)$_GET['id'] ?? 0);
 
 $useCase = (new EventPageFactory())->create(
     $presenter,

@@ -15,9 +15,7 @@
         </h1>
         {% if judge.ringerId is not null %}
             <p>
-                <a href="ringer.php?ringerId={{ judge.ringerId }}">
-                    Also been a winning ringer
-                </a>
+                <a href="ringer.php?id={{ judge.ringerId }}"> Also been a winning ringer </a>
             </p>
         {% endif %}
         <div class="blog-post">
@@ -34,7 +32,7 @@
                     <ul style="list-style-type: none">
                         {% for event in events %}
                             <li>
-                                <a href="/archive/event.php?eventId={{ event.eventId }}">
+                                <a href="/archive/event.php?id={{ event.eventId }}">
                                     {{ event.year }} {{ event.event }}
                                 </a>
                             </li>

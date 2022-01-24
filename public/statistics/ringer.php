@@ -42,7 +42,7 @@ $presenter = new class extends AbstractTwigPagePresenter {
 };
 
 $request = new RingerPageRequest();
-$request->setRingerId((int)$_GET['ringerId'] ?? 0);
+$request->setRingerId((int)$_GET['id'] ?? 0);
 
 $useCase = (new RingerPageFactory())->create(
     $presenter,
