@@ -1,8 +1,5 @@
 ready(() => {
-    let faultTextFields = document.querySelectorAll('.fault-field');
-
-    Array.prototype.forEach.call(faultTextFields, function (el, i) {
-        el.textContent = renderFaults(el.textContent);
+    document.querySelectorAll('.fault-field').forEach(function (e) {
+        e.textContent = renderFaults(e.textContent);
     });
-
 });

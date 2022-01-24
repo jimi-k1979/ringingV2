@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace DrlArchive\mocks;
 
 
+use DrlArchive\core\Constants;
 use DrlArchive\core\entities\TeamEntity;
+use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\TeamRepositoryInterface;
 use DrlArchive\TestConstants;
@@ -33,6 +35,13 @@ class TeamSpy implements TeamRepositoryInterface
     private int $fetchTeamByNameCallCount = 0;
     private bool $fetchTeamByNameThrowsException = false;
     private TeamEntity $fetchTeamByNameValue;
+    private bool $fetchTeamStatisticsCalled = false;
+    private bool $fetchTeamStatisticsThrowsException = false;
+    private array $fetchTeamStatisticsValue = [];
+    private bool $fetchTeamResultsCalled = false;
+    private bool $fetchTeamResultsThrowsException = false;
+    private array $fetchTeamResultsValue = [];
+
 
     /**
      * @param TeamEntity $teamEntity
@@ -65,7 +74,7 @@ class TeamSpy implements TeamRepositoryInterface
      * @param int $teamId
      * @return TeamEntity
      */
-    public function selectTeam(int $teamId): TeamEntity
+    public function fetchTeamById(int $teamId): TeamEntity
     {
         $this->selectCalled = true;
 
@@ -75,7 +84,7 @@ class TeamSpy implements TeamRepositoryInterface
     /**
      * @param TeamEntity $teamEntity
      */
-    public function setSelectTeamValue(TeamEntity $teamEntity): void
+    public function setFetchTeamByIdValue(TeamEntity $teamEntity): void
     {
         $this->selectTeamValue = $teamEntity;
     }
@@ -83,7 +92,7 @@ class TeamSpy implements TeamRepositoryInterface
     /**
      * @return bool
      */
-    public function hasSelectTeamBeenCalled(): bool
+    public function hasFetchTeamByIdBeenCalled(): bool
     {
         return $this->selectCalled;
     }
@@ -209,6 +218,78 @@ class TeamSpy implements TeamRepositoryInterface
     public function setFetchTeamByNameValue(TeamEntity $value): void
     {
         $this->fetchTeamByNameValue = $value;
+    }
+
+    /**
+     * @param int|null $endYear
+     * @param int $startYear
+     * @inheritDoc
+     */
+    public function fetchTeamStatistics(
+        TeamEntity $team,
+        int $startYear = Constants::MINIMUM_YEAR,
+        ?int $endYear = null
+    ): array {
+        $this->fetchTeamStatisticsCalled = true;
+
+        if ($this->fetchTeamStatisticsThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchTeamStatisticsValue;
+    }
+
+    public function hasFetchTeamStatisticsBeenCalled(): bool
+    {
+        return $this->fetchTeamStatisticsCalled;
+    }
+
+    public function setFetchTeamStatisticsThrowsException(): void
+    {
+        $this->fetchTeamStatisticsThrowsException = true;
+    }
+
+    public function setFetchTeamStatisticsValue(array $value): void
+    {
+        $this->fetchTeamStatisticsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamResults(
+        TeamEntity $team,
+        int $startYear = Constants::MINIMUM_YEAR,
+        ?int $endYear = null
+    ): array {
+        $this->fetchTeamResultsCalled = true;
+
+        if ($this->fetchTeamResultsThrowsException) {
+            throw new CleanArchitectureException(
+                'Something went wrong',
+                TeamRepositoryInterface::NO_ROWS_FOUND_EXCEPTION
+            );
+        }
+
+        return $this->fetchTeamResultsValue;
+    }
+
+    public function hasFetchTeamResultsBeenCalled(): bool
+    {
+        return $this->fetchTeamResultsCalled;
+    }
+
+    public function setFetchTeamResultsThrowsException(): void
+    {
+        $this->fetchTeamResultsThrowsException = true;
+    }
+
+    public function setFetchTeamResultsValue(array $value): void
+    {
+        $this->fetchTeamResultsValue = $value;
     }
 
 }
