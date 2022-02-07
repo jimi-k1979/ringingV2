@@ -69,4 +69,7 @@ class Repository
     public const ALIAS_USUAL_LOCATION_NAME = 'usualLocation';
     public const ALIAS_WINNING_MARGIN = 'winningMargin';
     public const ALIAS_YEAR = 'year';
+
+    public const ORDER_BY_ASC = 'ASC';
+    public const ORDER_BY_DESC = 'DESC';
 }

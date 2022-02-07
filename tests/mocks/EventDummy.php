@@ -7,8 +7,10 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -106,4 +108,40 @@ class EventDummy implements EventRepositoryInterface
         return [$this->createMockDrlEvent()];
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByEntry(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        return [$this->createMockDrlEvent()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByTotalFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        return [$this->createMockDrlEvent()];
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByMeanFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        return [$this->createMockDrlEvent()];
+    }
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @inheritDoc
+     */
+    public function fetchDrlEventsListByVictoryMargin(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        return [$this->createMockDrlEvent()];
+    }
 }

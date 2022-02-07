@@ -6,6 +6,7 @@ namespace DrlArchive\core\interfaces\repositories;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 
@@ -109,4 +110,41 @@ interface EventRepositoryInterface
      * @return DrlEventEntity[]
      */
     public function fetchDrlEventListByJudge(JudgeEntity $judge): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventListByEntry(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return DrlEventEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventListByTotalFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return array
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventListByMeanFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return array
+     * @throws CleanArchitectureException
+     */
+    public function fetchDrlEventsListByVictoryMargin(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
 }

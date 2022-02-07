@@ -7,11 +7,13 @@ namespace DrlArchive\mocks;
 
 use DrlArchive\core\entities\DrlEventEntity;
 use DrlArchive\core\entities\JudgeEntity;
+use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\GeneralRepositoryErrorException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
 use DrlArchive\core\interfaces\repositories\EventRepositoryInterface;
 use DrlArchive\core\interfaces\repositories\JudgeRepositoryInterface;
+use DrlArchive\core\interfaces\repositories\Repository;
 use DrlArchive\TestConstants;
 use DrlArchive\traits\CreateMockDrlEventTrait;
 
@@ -66,9 +68,38 @@ class EventSpy implements EventRepositoryInterface
     private bool $fetchJudgeDrlEventListCalled = false;
     private bool $fetchJudgeDrlEventListThrowsException = false;
     /**
-     * @var DrlEventEntity[]|null
+     * @var DrlEventEntity[]
      */
     private array $fetchJudgeDrlEventListValue = [];
+    private bool $fetchDrlEventListByEntryCalled = false;
+    private int $fetchDrlEventListByEntryCallCount = 0;
+    private ?CleanArchitectureException $fetchDrlEventListByEntryException = null;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private array $fetchDrlEventListByEntryValue = [];
+    private bool $fetchDrlEventListByTotalFaultsCalled = false;
+    private int $fetchDrlEventListByTotalFaultsCallCount = 0;
+    private ?CleanArchitectureException $fetchDrlEventListByTotalFaultsException = null;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private array $fetchDrlEventListByTotalFaultsValue = [];
+    private bool $fetchDrlEventListByMeanFaultsCalled = false;
+    private int $fetchDrlEventListByMeanFaultsCallCount = 0;
+    private ?CleanArchitectureException $fetchDrlEventListByMeanFaultsException = null;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private array $fetchDrlEventListByMeanFaultsValue = [];
+    private bool $fetchDrlEventListByVictoryMarginCalled;
+    private int $fetchDrlEventListByVictoryMarginCallCount = 0;
+    private ?CleanArchitectureException $fetchDrlEventListByVictoryMarginException = null;
+    /**
+     * @var DrlEventEntity[]
+     */
+    private array $fetchDrlEventListByVictoryMarginValue = [];
+
 
     /**
      * @param DrlEventEntity $entity
@@ -442,5 +473,203 @@ class EventSpy implements EventRepositoryInterface
     {
         $this->fetchJudgeDrlEventListValue = $value;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByEntry(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchDrlEventListByEntryCalled = true;
+        $this->fetchDrlEventListByEntryCallCount++;
+        if ($this->fetchDrlEventListByEntryException) {
+            throw $this->fetchDrlEventListByEntryException;
+        }
+        return $this->fetchDrlEventListByEntryValue;
+    }
+
+    public function hasFetchDrlEventListByEntryBeenCalled(): bool
+    {
+        return $this->fetchDrlEventListByEntryCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFetchDrlEventListByEntryCallCount(): int
+    {
+        return $this->fetchDrlEventListByEntryCallCount;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $fetchDrlEventListByEntryException
+     */
+    public function setFetchDrlEventListByEntryException(
+        ?CleanArchitectureException $fetchDrlEventListByEntryException
+    ): void {
+        $this->fetchDrlEventListByEntryException =
+            $fetchDrlEventListByEntryException;
+    }
+
+    /**
+     * @param DrlEventEntity[] $fetchDrlEventListByEntryValue
+     */
+    public function setFetchDrlEventListByEntryValue(
+        array $fetchDrlEventListByEntryValue
+    ): void {
+        $this->fetchDrlEventListByEntryValue = $fetchDrlEventListByEntryValue;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByTotalFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchDrlEventListByTotalFaultsCalled = true;
+        $this->fetchDrlEventListByTotalFaultsCallCount++;
+        if ($this->fetchDrlEventListByTotalFaultsException) {
+            throw $this->fetchDrlEventListByTotalFaultsException;
+        }
+        return $this->fetchDrlEventListByTotalFaultsValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchDrlEventListByTotalFaultsBeenCalled(): bool
+    {
+        return $this->fetchDrlEventListByTotalFaultsCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFetchDrlEventListByTotalFaultsCallCount(): int
+    {
+        return $this->fetchDrlEventListByTotalFaultsCallCount;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $fetchDrlEventListByTotalFaultsException
+     */
+    public function setFetchDrlEventListByTotalFaultsException(
+        ?CleanArchitectureException $fetchDrlEventListByTotalFaultsException
+    ): void {
+        $this->fetchDrlEventListByTotalFaultsException =
+            $fetchDrlEventListByTotalFaultsException;
+    }
+
+    /**
+     * @param DrlEventEntity[] $fetchDrlEventListByTotalFaultsValue
+     */
+    public function setFetchDrlEventListByTotalFaultsValue(
+        array $fetchDrlEventListByTotalFaultsValue
+    ): void {
+        $this->fetchDrlEventListByTotalFaultsValue =
+            $fetchDrlEventListByTotalFaultsValue;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchDrlEventListByMeanFaults(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchDrlEventListByMeanFaultsCalled = true;
+        $this->fetchDrlEventListByMeanFaultsCallCount++;
+        if ($this->fetchDrlEventListByMeanFaultsException) {
+            throw $this->fetchDrlEventListByMeanFaultsException;
+        }
+        return $this->fetchDrlEventListByMeanFaultsValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchDrlEventListByMeanFaultsBeenCalled(): bool
+    {
+        return $this->fetchDrlEventListByMeanFaultsCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFetchDrlEventListByMeanFaultsCallCount(): int
+    {
+        return $this->fetchDrlEventListByMeanFaultsCallCount;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $exception
+     */
+    public function setFetchDrlEventListByMeanFaultsException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchDrlEventListByMeanFaultsException =
+            $exception;
+    }
+
+    /**
+     * @param DrlEventEntity[] $fetchDrlEventListByMeanFaultsValue
+     */
+    public function setFetchDrlEventListByMeanFaultsValue(
+        array $fetchDrlEventListByMeanFaultsValue
+    ): void {
+        $this->fetchDrlEventListByMeanFaultsValue =
+            $fetchDrlEventListByMeanFaultsValue;
+    }
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @inheritDoc
+     */
+    public function fetchDrlEventsListByVictoryMargin(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchDrlEventListByVictoryMarginCalled = true;
+        $this->fetchDrlEventListByVictoryMarginCallCount++;
+        if ($this->fetchDrlEventListByVictoryMarginException) {
+            throw $this->fetchDrlEventListByVictoryMarginException;
+        }
+        return $this->fetchDrlEventListByVictoryMarginValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchDrlEventListByVictoryMarginBeenCalled(): bool
+    {
+        return $this->fetchDrlEventListByVictoryMarginCalled;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFetchDrlEventListByVictoryMarginCallCount(): int
+    {
+        return $this->fetchDrlEventListByVictoryMarginCallCount;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $fetchDrlEventListByVictoryMarginException
+     */
+    public function setFetchDrlEventListByVictoryMarginException(
+        ?CleanArchitectureException $fetchDrlEventListByVictoryMarginException
+    ): void {
+        $this->fetchDrlEventListByVictoryMarginException =
+            $fetchDrlEventListByVictoryMarginException;
+    }
+
+    /**
+     * @param DrlEventEntity[] $fetchDrlEventListByVictoryMarginValue
+     */
+    public function setFetchDrlEventListByVictoryMarginValue(
+        array $fetchDrlEventListByVictoryMarginValue
+    ): void {
+        $this->fetchDrlEventListByVictoryMarginValue =
+            $fetchDrlEventListByVictoryMarginValue;
+    }
+
 
 }
