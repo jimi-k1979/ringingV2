@@ -6,6 +6,8 @@ namespace DrlArchive\mocks;
 
 
 use DrlArchive\core\Constants;
+use DrlArchive\core\entities\RecordStatisticFieldEntity;
+use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\Exceptions\repositories\RepositoryNoResultsException;
@@ -41,6 +43,61 @@ class TeamSpy implements TeamRepositoryInterface
     private bool $fetchTeamResultsCalled = false;
     private bool $fetchTeamResultsThrowsException = false;
     private array $fetchTeamResultsValue = [];
+    private bool $fetchTeamListByNumberOfCompetitionsCalled = false;
+    private int $fetchTeamListByNumberOfCompetitionsCallCount = 0;
+    private ?CleanArchitectureException $fetchTeamListByNumberOfCompetitionsException = null;
+    /**
+     * @var RecordStatisticFieldEntity[]
+     */
+    private array $fetchTeamListByNumberOfCompetitionsValue = [];
+    private bool $fetchTeamListByNumberOfWinsCalled = false;
+    private ?CleanArchitectureException $fetchTeamListByNumberOfWinsException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByNumberOfWinsValue = [];
+    private bool $fetchTeamListByWinPercentageCalled = false;
+    private ?CleanArchitectureException $fetchTeamListByWinPercentageException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByWinPercentageValue = [];
+    private bool $fetchTeamListByFaultScoreCalled = true;
+    private ?CleanArchitectureException $fetchTeamListByFaultScoreException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByFaultScoreValue = [];
+    private bool $fetchTeamListByMeanFaultScoreCalled = false;
+    private ?CleanArchitectureException $fetchTeamListByMeanFaultScoreException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByMeanFaultScoreValue = [];
+    private bool $fetchTeamListByTotalFaultScoreCalled = false;
+    private ?CleanArchitectureException $fetchTeamListByTotalFaultScoreException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByTotalFaultScoreValue = [];
+    private bool $fetchTeamListByFaultDifferenceCalled = false;
+    private ?CleanArchitectureException $fetchTeamListByFaultDifferenceException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchTeamListByFaultDifferenceValue = [];
+    private bool $fetchWinningTeamListByFaultScoreCalled = false;
+    private ?CleanArchitectureException $fetchWinningTeamListByFaultScoreException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchWinningTeamListByFaultScoreValue = [];
+    private bool $fetchLastPlaceTeamListByFaultScoreCalled = false;
+    private ?CleanArchitectureException $fetchLastPlaceTeamListByFaultScoreException = null;
+    /**
+     * @var TeamEntity[]
+     */
+    private array $fetchLastPlaceTeamListByFaultScoreValue = [];
 
 
     /**
@@ -292,4 +349,299 @@ class TeamSpy implements TeamRepositoryInterface
         $this->fetchTeamResultsValue = $value;
     }
 
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByNumberOfCompetitions(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByNumberOfCompetitionsCalled = true;
+        $this->fetchTeamListByNumberOfCompetitionsCallCount++;
+        if ($this->fetchTeamListByNumberOfCompetitionsException) {
+            throw $this->fetchTeamListByNumberOfCompetitionsException;
+        }
+
+        return $this->fetchTeamListByNumberOfCompetitionsValue;
+    }
+
+    public function hasFetchTeamListByNumberOfCompetitionsBeenCalled(): bool
+    {
+        return $this->fetchTeamListByNumberOfCompetitionsCalled;
+    }
+
+    public function getFetchTeamListByNumberOfCompetitionsCallCount(): int
+    {
+        return $this->fetchTeamListByNumberOfCompetitionsCallCount;
+    }
+
+    public function setFetchTeamListByNumberOfCompetitionsException(
+        CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByNumberOfCompetitionsException = $exception;
+    }
+
+    public function setFetchTeamListByNumberOfCompetitionsValue(
+        array $value
+    ): void {
+        $this->fetchTeamListByNumberOfCompetitionsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByNumberOfWins(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByNumberOfWinsCalled = true;
+        if ($this->fetchTeamListByNumberOfWinsException) {
+            throw $this->fetchTeamListByNumberOfWinsException;
+        }
+
+        return $this->fetchTeamListByNumberOfWinsValue;
+    }
+
+    public function hasFetchTeamListByNumberOfWinsBeenCalled(): bool
+    {
+        return $this->fetchTeamListByNumberOfWinsCalled;
+    }
+
+    public function setFetchTeamListByNumberOfWinsException(
+        CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByNumberOfWinsException = $exception;
+    }
+
+    /**
+     *
+     * @param TeamEntity[] $value
+     * @return void
+     */
+    public function setFetchTeamListByNumberOfWinsValue(array $value): void
+    {
+        $this->fetchTeamListByNumberOfWinsValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByWinPercentage(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByWinPercentageCalled = true;
+        if ($this->fetchTeamListByWinPercentageException) {
+            throw $this->fetchTeamListByWinPercentageException;
+        }
+        return $this->fetchTeamListByWinPercentageValue;
+    }
+
+    public function hasFetchTeamListByWinPercentageBeenCalled(): bool
+    {
+        return $this->fetchTeamListByWinPercentageCalled;
+    }
+
+    public function setFetchTeamListByWinPercentageException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByWinPercentageException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $value
+     * @return void
+     */
+    public function setFetchTeamListByWinPercentageValue(array $value): void
+    {
+        $this->fetchTeamListByWinPercentageValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByFaultScore(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByFaultScoreCalled = true;
+        if ($this->fetchTeamListByFaultScoreException) {
+            throw $this->fetchTeamListByFaultScoreException;
+        }
+        return $this->fetchTeamListByFaultScoreValue;
+    }
+
+    public function hasFetchTeamListByFaultScoreBeenCalled(): bool
+    {
+        return $this->fetchTeamListByFaultScoreCalled;
+    }
+
+    public function setFetchTeamListByFaultScoreException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByFaultScoreException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $list
+     */
+    public function setFetchTeamListByFaultScoreValue(array $list): void
+    {
+        $this->fetchTeamListByFaultScoreValue = $list;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByMeanFaultScore(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByMeanFaultScoreCalled = true;
+        if ($this->fetchTeamListByMeanFaultScoreException) {
+            throw $this->fetchTeamListByMeanFaultScoreException;
+        }
+        return $this->fetchTeamListByMeanFaultScoreValue;
+    }
+
+    public function hasFetchTeamListByMeanFaultScoreBeenCalled(): bool
+    {
+        return $this->fetchTeamListByMeanFaultScoreCalled;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $exception
+     */
+    public function setFetchTeamListByMeanFaultScoreException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByMeanFaultScoreException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $value
+     */
+    public function setFetchTeamListByMeanFaultScoreValue(array $value): void
+    {
+        $this->fetchTeamListByMeanFaultScoreValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByTotalFaultScore(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByTotalFaultScoreCalled = true;
+        if ($this->fetchTeamListByTotalFaultScoreException) {
+            throw $this->fetchTeamListByTotalFaultScoreException;
+        }
+        return $this->fetchTeamListByTotalFaultScoreValue;
+    }
+
+    public function hasFetchTeamListByTotalFaultScoreBeenCalled(): bool
+    {
+        return $this->fetchTeamListByTotalFaultScoreCalled;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $exception
+     */
+    public function setFetchTeamListByTotalFaultScoreException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByTotalFaultScoreException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $value
+     */
+    public function setFetchTeamListByTotalFaultScoreValue(array $value): void
+    {
+        $this->fetchTeamListByTotalFaultScoreValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchTeamListByFaultDifference(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchTeamListByFaultDifferenceCalled = true;
+        if ($this->fetchTeamListByFaultDifferenceException) {
+            throw $this->fetchTeamListByFaultDifferenceException;
+        }
+        return $this->fetchTeamListByFaultDifferenceValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchTeamListByFaultDifferenceBeenCalled(): bool
+    {
+        return $this->fetchTeamListByFaultDifferenceCalled;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $exception
+     */
+    public function setFetchTeamListByFaultDifferenceException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchTeamListByFaultDifferenceException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $value
+     */
+    public function setFetchTeamListByFaultDifferenceValue(array $value): void
+    {
+        $this->fetchTeamListByFaultDifferenceValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchWinningTeamListByFaultScore(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchWinningTeamListByFaultScoreCalled = true;
+        if ($this->fetchWinningTeamListByFaultScoreException) {
+            throw $this->fetchWinningTeamListByFaultScoreException;
+        }
+        return $this->fetchWinningTeamListByFaultScoreValue;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasFetchWinningTeamListByFaultScoreBeenCalled(): bool
+    {
+        return $this->fetchWinningTeamListByFaultScoreCalled;
+    }
+
+    /**
+     * @param CleanArchitectureException|null $exception
+     */
+    public function setFetchWinningTeamListByFaultScoreException(
+        ?CleanArchitectureException $exception
+    ): void {
+        $this->fetchWinningTeamListByFaultScoreException = $exception;
+    }
+
+    /**
+     * @param TeamEntity[] $value
+     */
+    public function setFetchWinningTeamListByFaultScoreValue(array $value): void
+    {
+        $this->fetchWinningTeamListByFaultScoreValue = $value;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function fetchLastPlaceTeamListByFaultScore(
+        RecordRequestOptionsEntity $inputData
+    ): array {
+        $this->fetchLastPlaceTeamListByFaultScoreCalled = true;
+        if ($this->fetchLastPlaceTeamListByFaultScoreException) {
+            throw $this->fetchWinningTeamListByFaultScoreException;
+        }
+        return $this->fetchLastPlaceTeamListByFaultScoreValue;
+    }
 }

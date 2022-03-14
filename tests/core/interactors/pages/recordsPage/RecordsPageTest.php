@@ -2,21 +2,23 @@
 
 namespace DrlArchive\core\interactors\pages\recordsPage;
 
+use DrlArchive\core\classes\Response;
+use DrlArchive\core\Exceptions\repositories\RepositoryConnectionErrorException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\mocks\AuthenticationManagerDummy;
 use DrlArchive\mocks\AuthenticationManagerSpy;
-use DrlArchive\mocks\CompetitionDummy;
-use DrlArchive\mocks\EventDummy;
-use DrlArchive\mocks\EventSpy;
+use DrlArchive\mocks\PageRepositoryDummy;
+use DrlArchive\mocks\PageRepositorySpy;
 use DrlArchive\mocks\PresenterDummy;
 use DrlArchive\mocks\PresenterSpy;
-use DrlArchive\mocks\RingerDummy;
 use DrlArchive\mocks\SecurityRepositoryDummy;
-use DrlArchive\mocks\TeamDummy;
+use DrlArchive\traits\CreateMockStatisticsRecordTrait;
 use PHPUnit\Framework\TestCase;
 
 class RecordsPageTest extends TestCase
 {
+    use CreateMockStatisticsRecordTrait;
+
     public function testInstantiation(): void
     {
         $this->assertInstanceOf(
@@ -46,10 +48,7 @@ class RecordsPageTest extends TestCase
         $useCase->setPresenter(new PresenterDummy());
         $useCase->setSecurityRepository(new SecurityRepositoryDummy());
         $useCase->setAuthenticationManager(new AuthenticationManagerDummy());
-        $useCase->setCompetitionRepository(new CompetitionDummy());
-        $useCase->setEventRepository(new EventDummy());
-        $useCase->setTeamRepository(new TeamDummy());
-        $useCase->setRingerRepository(new RingerDummy());
+        $useCase->setPageRepository(new PageRepositoryDummy());
 
         return $useCase;
     }
@@ -80,60 +79,68 @@ class RecordsPageTest extends TestCase
         );
     }
 
-    public function testHighestEventEntryFetched(): void
+    public function testListOfStatsFetched(): void
     {
-        $eventSpy = new EventSpy();
+        $pageSpy = new PageRepositorySpy();
 
         $useCase = $this->createUseCase();
-        $useCase->setEventRepository($eventSpy);
+        $useCase->setPageRepository($pageSpy);
         $useCase->execute();
 
         $this->assertTrue(
-            $eventSpy->hasFetchDrlEventListByEntryBeenCalled()
+            $pageSpy->hasFetchRecordsPageListBeenCalled()
         );
     }
 
-    public function testHighestAndLowestTotalFaultsFetched(): void
+    public function testSuccessfulResponse(): void
     {
-        $eventSpy = new EventSpy();
+        $presenterSpy = new PresenterSpy();
 
         $useCase = $this->createUseCase();
-        $useCase->setEventRepository($eventSpy);
+        $useCase->setPresenter($presenterSpy);
         $useCase->execute();
 
+        $response = $presenterSpy->getResponse();
+
         $this->assertEquals(
-            2,
-            $eventSpy->getFetchDrlEventListByTotalFaultsCallCount()
+            Response::STATUS_SUCCESS,
+            $response->getStatus(),
+            'Invalid response status'
+        );
+        $this->assertEquals(
+            [$this->createMockStatisticsRecord()],
+            $response->getData(),
+            'Invalid response dat'
         );
     }
 
-    public function testHighestAndLowestAverageFaultsFetched(): void
+    public function testBadConnectionFailureResponse(): void
     {
-        $eventSpy = new EventSpy();
+        $presenterSpy = new PresenterSpy();
+
+        $pageRepo = new PageRepositorySpy();
+        $pageRepo->setFetchRecordsPageListException(
+            new RepositoryConnectionErrorException(
+                'Something went wrong',
+            )
+        );
 
         $useCase = $this->createUseCase();
-        $useCase->setEventRepository($eventSpy);
+        $useCase->setPresenter($presenterSpy);
+        $useCase->setPageRepository($pageRepo);
         $useCase->execute();
 
+        $response = $presenterSpy->getResponse();
         $this->assertEquals(
-            2,
-            $eventSpy->getFetchDrlEventListByMeanFaultsCallCount()
+            Response::STATUS_UNKNOWN_ERROR,
+            $response->getStatus(),
+            'Invalid response status'
+        );
+        $this->assertEquals(
+            'Unknown error',
+            $response->getMessage(),
+            'Invalid response message'
         );
     }
-
-    public function testHighestAndLowestVictoryMarginFetched(): void
-    {
-        $eventSpy = new EventSpy();
-
-        $useCase = $this->createUseCase();
-        $useCase->setEventRepository($eventSpy);
-        $useCase->execute();
-
-        $this->assertEquals(
-            2,
-            $eventSpy->getFetchDrlEventListByVictoryMarginCallCount()
-        );
-    }
-
 
 }

@@ -83,4 +83,10 @@ class TestConstants
     public const TEST_CHANGE_BELL_TO_FOLLOW = 3;
     public const TEST_CHANGE_BELL_TO_LEAD = 0;
 
+    public const TEST_RECORD_ID = 123;
+    public const TEST_RECORD_NAME = 'test record';
+    public const TEST_RECORD_CATEGORY = 'team';
+    public const TEST_SHOW_RECORD_ON_INDEX = true;
+
+
 }

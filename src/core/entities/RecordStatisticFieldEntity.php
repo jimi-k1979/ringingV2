@@ -2,7 +2,7 @@
 
 namespace DrlArchive\core\entities;
 
-class RecordEntity
+class RecordStatisticFieldEntity
 {
     private ?TeamEntity $team = null;
     private ?AbstractEventEntity $event = null;

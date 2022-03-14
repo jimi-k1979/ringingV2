@@ -5,6 +5,8 @@ namespace DrlArchive\core\interfaces\repositories;
 
 
 use DrlArchive\core\Constants;
+use DrlArchive\core\entities\RecordStatisticFieldEntity;
+use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\entities\TeamEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 
@@ -73,5 +75,74 @@ interface TeamRepositoryInterface
         int $startYear = Constants::MINIMUM_YEAR,
         ?int $endYear = null
     ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByNumberOfCompetitions(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByNumberOfWins(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByWinPercentage(
+        RecordRequestOptionsEntity $inputData
+    ): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByFaultScore(RecordRequestOptionsEntity $inputData): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByMeanFaultScore(RecordRequestOptionsEntity $inputData): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByTotalFaultScore(RecordRequestOptionsEntity $inputData): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchTeamListByFaultDifference(RecordRequestOptionsEntity $inputData): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchWinningTeamListByFaultScore(RecordRequestOptionsEntity $inputData): array;
+
+    /**
+     * @param RecordRequestOptionsEntity $inputData
+     * @return RecordStatisticFieldEntity[]
+     * @throws CleanArchitectureException
+     */
+    public function fetchLastPlaceTeamListByFaultScore(RecordRequestOptionsEntity $inputData): array;
 
 }
