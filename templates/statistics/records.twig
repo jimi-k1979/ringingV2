@@ -1,0 +1,90 @@
+{% extends "base.twig" %}
+
+{% block title %}
+    Statistics - records
+{% endblock %}
+
+{% block nav %}
+    {% include ('allPages/nav.twig') %}
+{% endblock %}
+
+{% block mainBody %}
+    <div class="col blog-main">
+        <h1 class="blog-post-title">
+            Records Index </h1>
+        <div class="blog-post">
+            <div class="row">
+                {% if seasonal is not empty %}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3>Seasonal Records</h3>
+                        <ul style="list-style-type: none">
+                            {% for record in seasonal %}
+                                <li>
+                                    <a href="/statistics/record.php?id={{ record.id }}">
+                                        {{ record.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if competition is not empty %}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3>Competition Records</h3>
+                        <ul style="list-style-type: none">
+                            {% for record in competition %}
+                                <li>
+                                    <a href="/statistics/record.php?id={{ record.id }}">
+                                        {{ record.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if event is not empty %}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3>Event Records</h3>
+                        <ul style="list-style-type: none">
+                            {% for record in event %}
+                                <li>
+                                    <a href="/statistics/record.php?id={{ record.id }}">
+                                        {{ record.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if ringer is not empty %}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3>Ringer Records</h3>
+                        <ul style="list-style-type: none">
+                            {% for record in ringer %}
+                                <li>
+                                    <a href="/statistics/record.php?id={{ record.id }}">
+                                        {{ record.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if team is not empty %}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3>Team Records</h3>
+                        <ul style="list-style-type: none">
+                            {% for record in team %}
+                                <li>
+                                    <a href="/statistics/record.php?id={{ record.id }}">
+                                        {{ record.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

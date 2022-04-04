@@ -55,6 +55,9 @@ class Repository
     public const ALIAS_POINTS = 'points';
     public const ALIAS_POSITION = 'position';
     public const ALIAS_RANKING = 'ranking';
+    public const ALIAS_RECORD_CATEGORY = 'recordCategory';
+    public const ALIAS_RECORD_ID = 'recordId';
+    public const ALIAS_RECORD_NAME = 'recordName';
     public const ALIAS_RESULT_ID = 'resultId';
     public const ALIAS_RINGER_ID = 'ringerId';
     public const ALIAS_TEAM_ID = 'teamId';

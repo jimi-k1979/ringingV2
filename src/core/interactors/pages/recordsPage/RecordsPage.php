@@ -3,9 +3,6 @@
 namespace DrlArchive\core\interactors\pages\recordsPage;
 
 use DrlArchive\core\classes\Response;
-use DrlArchive\core\Constants;
-use DrlArchive\core\entities\DrlEventEntity;
-use DrlArchive\core\entities\RecordRequestOptionsEntity;
 use DrlArchive\core\Exceptions\CleanArchitectureException;
 use DrlArchive\core\interactors\Interactor;
 use DrlArchive\core\interfaces\repositories\PagesRepositoryInterface;
